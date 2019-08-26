@@ -1,0 +1,82 @@
+---
+title: "SDS 192: Introduction to Data Science"
+author: "Albert Y. Kim"
+date: "Last updated on `r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    df_print: kable
+---
+
+<style>
+h1{font-weight: 400;}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE, message=FALSE, warning = FALSE, eval = TRUE, 
+  fig.width = 16/2, fig.height = 9/2
+)
+
+# CRAN R packages:
+library(tidyverse)
+library(stringr)
+library(knitr)
+library(lubridate)
+library(forcats)
+library(fivethirtyeight)
+library(nycflights13)
+library(gapminder)
+library(babynames)
+library(scales)
+library(moderndive)
+library(leaflet)
+library(maps)
+library(mapproj)
+
+# Install emo package from GitHub for emoji functionality:
+# devtools::install_github("hadley/emo")
+library(emo)
+
+# Install patchwork package from GitHub for composing ggplots:
+# devtools::install_github("thomasp85/patchwork")
+library(patchwork)
+
+# Set seed value of random number generator to get "replicable" random numbers.
+# Why 76? Because of https://www.youtube.com/watch?v=xjJ7FheCkCU
+set.seed(76)
+```
+
+<style>
+h1{font-weight: 400;}
+</style>
+
+***
+
+# Schedule 
+
+**Topics**:
+
+1. Tools of the trade (orange): R, RStudio, R packages, R Markdown, Git & GitHub
+1. Data visualization (pink): Grammar of Graphics, Five Named Graphs (5NG), color theory.
+1. Working with data (blue): data wrangling, importing, and formatting
+1. Maps and spatial data (green): Maps and geospatial data.
+1. Learning how to learn new data science tools (yellow): Text data, webscraping, SQL.
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRvggFhESyu_EFxrcFQXsZtdaQqaqcQ6kgWg173WTkTeWV67RWiZ01G8jhJsQ2b5VUVCJqQ8xo6COWM/pubhtml?gid=864197397&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="810"></iframe>
+
+<!--
+{target="_blank"}
+-->
+
+
+
+***
+
+
+
+# Lec 01: Fri 9/6 {#Lec01}
+
+## Announcements
