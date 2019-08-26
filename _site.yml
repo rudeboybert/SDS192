@@ -31,8 +31,8 @@ navbar:
 #    href: PS.html
 #  - text: Projects
 #    href: projects.html
-#  - text: Syllabus
-#    href: syllabus.html
+  - text: Syllabus
+    href: syllabus.html
 #  - icon: fa-github fa-lg
 #    href: https://github.com/rudeboybert/SDS192
 

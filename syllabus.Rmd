@@ -1,0 +1,196 @@
+---
+title: "Syllabus"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float:
+      collapsed: no
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE, message=FALSE, warning = FALSE, eval = TRUE, 
+  fig.width = 16/2, fig.height = 9/2
+)
+
+# Set seed value of random number generator to get "replicable" random numbers.
+# Why 76? Because of https://www.youtube.com/watch?v=xjJ7FheCkCU
+set.seed(76)
+```
+
+<style>
+h1{font-weight: 400;}
+</style>
+
+
+# Basic information {#basicinfo}
+
+* **Course title:** SDS 192 Introduction to Data Science
+* **Instructor:** [Albert Y. Kim](https://rudeboybert.rbind.io/) - Assistant Professor of Statistical & Data Sciences
+* **~~Email:~~ Slack team**: Click hashtag icon in navbar for the browser interface or use the [desktop app](https://slack.com/downloads/){target="_blank"}.
+* **Meeting locations/times:** 
+    + Section 01: MWF 10:50 AM-12:05 PM / Sabin-Reed 220
+    + Section 02: MWF 1:20 PM-2:35 PM / Sabin-Reed 220
+* **Outside help**:
+    + The `#questions` channel on Slack.
+    + [Spinelli Center for Quantitative Learning Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm in TBD. 
+    + Albert's office hours in McConnell Hall 215: TBD and by apppointment (click [here](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"} to book). **If you're having R or RStudio issues, please have your computer and RStudio loaded and ready to go.**
+<!--    
+    + Spinelli Center Data Counselor Vahab Khademi in Seelye 207: By [appointment](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
+-->    
+
+## Instructor work-life balance {#work-life-balance}
+
+* I will respond to Slack messages sent during the week within 24h. I will respond to Slack messages sent during the weekend at my own discretion.
+* If possible, please only Slack me with briefer and administrative questions; I prefer having more substantive conversations in person as it takes me less energy to understand where you are at.
+* I will do my best to return all grading as promptly as possible.
+* I will rarely be on campus on Thursdays as this is my self-care day.
+
+
+
+***
+
+
+
+# How can I succeed in this class?
+
+Ask yourself:
+
+* **When I have questions or don't understand something:**
+    + *"Am I asking questions in class?"*
+    + *"Am I asking questions on Slack in the `#questions` channel?"* Even better: *"Am I answering my peers' questions on Slack?"*
+    + *"Having I been going to the Spinelli tutoring center for help on R and the tidyverse?"*
+    + *"Have I been coming to office hours?"*
+* **Lectures, labs, and readings:**
+    + *"Am I staying on top Slack notifications sent between lectures?"* If you need help developing a notification strategy that best suits your lifestyle, please speak to me. 
+    + *"Am I attending lectures consistently?"*
+    + *"Am I actually running the code and studying the outputs in R during in-class exercises, or am I just going through the motions?"*
+    + *"During in-class exercises, am I taking full advantage that I'm in the same place at the same time with the instructor, the lab assistants, and most importantly your peers, or am I browsing the web/texting the whole time?"*
+    + *"Have I been doing the associated readings for each lecture?"*
+
+
+
+***
+
+
+
+# Course Description & Objectives
+
+
+
+
+
+***
+
+
+
+# Lecture schedule {#topicschedule}
+
+The lecture schedule and associated readings can be found on the [main page](index.html) of this course webpage.
+
+## Policies {#policies}
+
+* Bring your laptop, a set of headphones, colored pens/pencils, and your paper notebook to every lecture.
+* You are expected to stay until the end of lecture. If you need to leave before the end of lecture, please confirm with me first.
+* Attendance will not be explicitly taken and occasional absenses are excused. However, extended absenses should be mentioned to me.
+* However, you are responsible for asking your peers for what you missed. For example, makeup lectures will not be held during office hours.
+
+
+
+***
+
+
+
+# Evaluation
+
+<!--
+## Engagement 10% {#engagement}
+
+It is difficult to explicit codify what constitutes "an engaged student," so
+instead I present the following rough principle I will follow: *you'll only get
+out of this class as much as you put in*. That being said, here are multiple
+pathways for you to stay engaged in this class:
+
+* Asking and answering questions in class.
+* Coming to office hours.
+* Posting questions on Slack. Even better, responding to questions on Slack.
+* Your peer evaluations for your mini-projects.
+
+
+## Midterms 35%
+
+* Two midterms during the semester
+* Lower score weighted 15% and higher score weighted 20%.
+
+
+## Five mini-projects 50%
+
+* Mini-project 1: 5% - Groups of 2 selected by instructor.
+* Mini-project 2: 7.5% - Groups of 2 selected by yourselves, must be a new partner.
+* Mini-project 3: 10% - Groups of 2 selected by instructor, you'll be assigned a new partner.
+* Mini-project 4: 12.5% - Groups of 2 selected by yourselves, must be a new partner.
+* Mini-project 5: 15% - Groups of 2-3 freely chosen by yourselves.
+
+
+## Policies
+
+1. **Collaboration**: While I encourage you to work with your peers for problem
+sets and labs, you must submit your own answers and not simple rewordings of
+another's work. Furthermore, all collaborations must be explicitly acknowledged
+in your submissions.
+1. **Honor Code**: All your work must follow the [Smith College Academic Honor
+Code Statement](https://www.smith.edu/sao/handbook/socialconduct/honorcode.php){target="_blank"};
+in particular all external sources must be cited in your submissions.
+1. **Mini-projects and DataCamp**:
+    + No extensions will be granted without a dean's note.
+1. **Midterms/quizzes**:
+    + No make-up quizzes or midterms will be allowed without a dean's note. 
+    + Timestamps for all midterms will be strictly enforced.
+1. **Grading**: I reserve the right to not discuss any grading issues in class and instead direct you to office hours. 
+
+-->
+
+
+
+***
+
+
+
+# Accommodations {#accommodations}
+ 
+Smith is committed to providing support services and reasonable accommodations to all students with disabilities. To request an accommodation, please register with the Disability Services Office at the beginning of the semester. To do so, call 413.585.2071 to arrange an appointment with Laura Rauscher, Director of Disability Services.
+
+
+
+***
+
+
+
+# Code of Conduct {#codeofconduct}
+
+As the instructor and assistants for this course, we are committed to making
+participation in this course a harassment-free experience for everyone,
+regardless of level of experience, gender, gender identity and expression,
+sexual orientation, disability, personal appearance, body size, race, ethnicity,
+age, or religion. Examples of unacceptable behavior by participants in this
+course include the use of sexual language or imagery, derogatory comments or
+personal attacks, trolling, public or private harassment, insults, or other
+unprofessional conduct.
+
+As the instructor and assistants we have the right and responsibility to point
+out and stop behavior that is not aligned to this Code of Conduct. Participants
+who do not follow the Code of Conduct may be reprimanded for such behavior.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported by contacting the instructor.
+
+**All students, the instructor, the lab instructor, and all data assistants are
+expected to adhere to this Code of Conduct in all settings for this course:
+lectures, labs, office hours, tutoring hours, and over Slack.**
+
+This Code of Conduct is adapted from the [Contributor
+Covenant](http://contributor-covenant.org){target="_blank"}, version 1.0.0,
+available [here](http://contributor-covenant.org/version/1/0/0/){target="_blank"}.
+
+
+
