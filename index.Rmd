@@ -59,13 +59,15 @@ h1{font-weight: 400;}
 
 **Topics**:
 
-1. Tools of the trade (orange): R, RStudio, R packages, R Markdown, Git & GitHub
+<!--1. Tools of the trade (orange): R, RStudio, R packages, R Markdown, Git & GitHub-->
 1. Data visualization (pink): Grammar of Graphics, Five Named Graphs (5NG), color theory.
 1. Working with data (blue): data wrangling, importing, and formatting
 1. Maps and spatial data (green): Maps and geospatial data.
-1. Learning how to learn new data science tools (yellow): Text data, webscraping, SQL.
+1. Learning how to learn new data science tools (yellow): SQL, TBD.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRvggFhESyu_EFxrcFQXsZtdaQqaqcQ6kgWg173WTkTeWV67RWiZ01G8jhJsQ2b5VUVCJqQ8xo6COWM/pubhtml?gid=864197397&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="810"></iframe>
+Note that while topics and topics dates may change, all problem sets (PS), project, and midterm dates will not. 
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRvggFhESyu_EFxrcFQXsZtdaQqaqcQ6kgWg173WTkTeWV67RWiZ01G8jhJsQ2b5VUVCJqQ8xo6COWM/pubhtml?gid=864197397&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="850"></iframe>
 
 <!--
 {target="_blank"}
@@ -80,3 +82,16 @@ h1{font-weight: 400;}
 # Lec 01: Fri 9/6 {#Lec01}
 
 ## Announcements
+
+Welcome!
+
+## Today's Topics/Activities
+
+* My story.
+* What this class is about: Answering questions with data.
+* Executive summary of syllabus; finalized syllabus will be published next week.
+
+
+
+
+
