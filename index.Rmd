@@ -90,7 +90,7 @@ Welcome!
 * My story.
 * What this class is about: Answering questions with data.
 * Executive summary of syllabus; finalized syllabus will be published next week.
-
+* Coding: it's normal to be `r emo::ji("scream")`
 
 
 
