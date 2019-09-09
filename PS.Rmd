@@ -1,0 +1,43 @@
+---
+title: "Problem Sets"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE, message=FALSE, warning = FALSE, eval = TRUE, 
+  fig.width = 16/2, fig.height = 9/2
+)
+
+# Set seed value of random number generator to get "replicable" random numbers.
+# Why 76? Because of https://www.youtube.com/watch?v=xjJ7FheCkCU
+set.seed(76)
+```
+
+<!--
+{target="_blank"}
+-->
+
+<style>
+h1{font-weight: 400;}
+</style>
+
+
+
+***
+
+
+
+# Problem set 01 {#PS01}
+
+*Assigned Monday 9/9, due **Friday 9/13***
+
+## 1. Background info
+
+* Complete the following [Pre-Course Questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSfd47VMRlRbBErxEWCtvUYoOhKIbN6kx8jpzn5mqOThk7EDMw/viewform){target="_blank"} online for Prof. Baumer, Prof. Crouser, and my study.
+* Complete the following [intro survey](https://docs.google.com/forms/d/e/1FAIpQLSe2r9v-i4u2Zlq4By3Y9AzUSR41x8T3fjRORaqbtBloBJDnfg/viewform){target="_blank"} online with info about you. 
+* Answer all questions in the [syllabus quiz](https://docs.google.com/document/d/1WknUhbtDeTGw8vvO8ytTURkF1_72ve4UXF5-SPk5NO8/){target="_blank"} and submit ON PAPER OR NOT?

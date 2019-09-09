@@ -1,5 +1,5 @@
 ---
-title: "Syllabus (to be finalized week of Sept 9th)"
+title: "Syllabus"
 output:
   html_document:
     toc: yes
@@ -31,15 +31,20 @@ h1{font-weight: 400;}
 # Basic information {#basicinfo}
 
 * **Course title:** SDS 192 Introduction to Data Science
-* **Instructor:** [Albert Y. Kim](https://rudeboybert.rbind.io/) - Assistant Professor of Statistical & Data Sciences
-* **~~Email:~~ Slack team**: Click hashtag icon in navbar for the browser interface or use the [desktop app](https://slack.com/downloads/){target="_blank"}.
+* **Instructor:** [Albert Y. Kim](https://rudeboybert.rbind.io/){target="_blank"} - Assistant Professor of Statistical & Data Sciences.
+* **Office location:** McConnell Hall 215 (accessible from stairwell closest to Bass Hall)
+* **~~Email:~~ Slack team**: Click hashtag icon in navbar for the browser interface or use the [desktop/mobile app](https://slack.com/downloads/){target="_blank"}.
 * **Meeting locations/times:** 
     + Section 01: MWF 10:50 AM-12:05 PM / Sabin-Reed 220
     + Section 02: MWF 1:20 PM-2:35 PM / Sabin-Reed 220
 * **Outside help**:
-    + The `#questions` channel on Slack.
-    + [Spinelli Center for Quantitative Learning Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm in TBD. 
-    + Albert's office hours in McConnell Hall 215: TBD and by apppointment (click [here](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"} to book). **If you're having R or RStudio issues, please have your computer and RStudio loaded and ready to go.**
+    + [Spinelli Center for Quantitative Learning Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm in Sabin-Reed 301. 
+    + Albert's office hours. If you have R questions, please be mindful of my time and have your computer & RStudio ready to go:
+        1. Wednesdays 3:00pm-4:30pm
+        1. Fridays 9:00am-10:30am
+        1. Or by apppointment: [bit.ly/meet_with_albert](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"}
+    + The `#questions` channel on Slack. If you have a question of a more private nature, please Slack direct message Albert. 
+    
 <!--    
     + Spinelli Center Data Counselor Vahab Khademi in Seelye 207: By [appointment](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
 -->    
@@ -71,7 +76,7 @@ Ask yourself:
     + *"Am I attending lectures consistently?"*
     + *"During in-class activities, am I actually running code line-by-line and studying the outputs, or am I just going through the motions?"*
     + *"During in-class exercises, am I taking full advantage that I'm in the same place at the same time with the instructor, the lab assistants, and most importantly your peers, or am I browsing the web/texting the whole time?"*
-    + *"Have I been doing the associated readings for each lecture?"*
+    + *"Have I been doing the associated readings for each lecture (either before or after)?"*
 
 
 
@@ -81,12 +86,15 @@ Ask yourself:
 
 # Course Description & Objectives
 
+From course search: *An introduction to data science using Python, R and SQL. Students learn how to scrape, process and clean data from the web; manipulate data in a variety of formats; contextualize variation in data; construct point and interval estimates using resampling techniques; visualize multidimensional data; design accurate, clear and appropriate data graphics; create data maps and perform basic spatial analysis; and query large relational databases. No prerequisites, but a willingness to write code is necessary.*
+
+On top of the goals of the above description, this semester you will:
+
 1. Equip yourselves with the data science tools necessarily to perform effective *exploratory data analysis*.
 1. Learn about project workflows such as
     + Getting a ["minimally viable product"](https://en.wikipedia.org/wiki/Minimum_viable_product){target="_blank"} done *quickly*.
     + Not ["gilding the lily"](https://en.wiktionary.org/wiki/gild_the_lily){target="_blank"} in other words not ["letting the perfect be the enemy of the good"](https://www.entrepreneur.com/article/249676){target="_blank"}.
-1. Learn how to use web search engines like Google effectively.
-
+1. Learn how to use web search engines like Google effectively in a data science setting.
 
 
 
@@ -104,6 +112,7 @@ The lecture schedule and associated readings can be found on the [main page](ind
 * You are expected to stay until the end of lecture. If you need to leave before the end of lecture, please confirm with me first.
 * Attendance will not be explicitly taken and occasional absenses are excused. However, extended absenses should be mentioned to me.
 * However, you are responsible for asking your peers for what you missed. For example, makeup lectures will not be held during office hours.
+* Lecture will be held as usual on Monday 11/25 (before Thanksgiving). 
 
 
 
@@ -117,7 +126,7 @@ All due dates can be found on the [main page](index.html){target="_blank"} of th
 
 ## Midterms 35%
 
-There will be two midterms during the semester. You'll take these midterms in Seelye Self-Scheduled Exam center between Friday at 5pm and Sunday at 10pm. Instructions on taking exams for [Smithies](https://sophia.smith.edu/edtech/documentation/print-an-exam-from-the-direct-to-queue-application/){target="_blank"} and [Five College Students](https://sophia.smith.edu/edtech/documentation/special-instructions-for-five-college-and-high-school-students-using-direct-to-queue-exam-printing/){target="_blank"}
+There will be two midterms during the semester. You'll take these midterms in Seelye Self-Scheduled Exam center between Friday at 5pm and Sunday at 10pm. Instructions on taking exams for [Smithies](https://sophia.smith.edu/edtech/documentation/print-an-exam-from-the-direct-to-queue-application/){target="_blank"} and [Five College Students](https://sophia.smith.edu/edtech/documentation/special-instructions-for-five-college-and-high-school-students-using-direct-to-queue-exam-printing/){target="_blank"}.
 
 * Midterm I: Data visualization
 * Midterm II: Data wrangling
@@ -137,6 +146,8 @@ There will be three mini-projects with particular themes. You'll do these mini-p
 ## Final project 20%
 
 There will be a final project due the last day of exams. You'll do this final project in groups of 2-3 where you can choose your groupmates. 
+
+As for whether you should be on Smith campus during exam week, this is for you and your groupmates to decide. You do not need to consult the instructor. 
 
 
 ## Problem sets 10%
