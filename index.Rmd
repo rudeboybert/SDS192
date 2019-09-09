@@ -78,7 +78,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
-<!--
+
 # Lec 03: Wed 9/11 {#Lec03}
 
 ## Announcements
@@ -87,13 +87,18 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Recap of previous lecture
 
+* `nycflights13` package, has datasets
+* functions. inputs called arguments, outputs
+* Show, don't tell, what their RStudio Cloud should look like.
+* No office hours today.
+
 ## Today's topics/activities
 
 ## Tweet of the day
 
 
+
 ***
--->
 
 
 
