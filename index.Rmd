@@ -78,17 +78,55 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
-
-# Lec 02: Mon 9/9 {#Lec02}
+<!--
+# Lec 03: Wed 9/11 {#Lec03}
 
 ## Announcements
 
 * Problem set 01 posted under [Problem Sets](PS.html)
 
-## Today's Topics/Activities
+## Recap of previous lecture
+
+## Today's topics/activities
+
+## Tweet of the day
+
+
+***
+-->
 
 
 
+# Lec 02: Mon 9/9 {#Lec02}
+
+## Announcements
+
+* [Syllabus](syllabus.html) finalized.
+* Problem Set 01 due this Friday posted under [Problem Sets](PS.html).
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Intro to Slack [slides](static/intro_to_slack.pdf){target="_blank"}
+* What is difference between R and RStudio?
+* What are R packages?
+
+
+### 2. In-class exercise
+
+* Set up RStudio Cloud:
+    + Click [here](https://rstudio.cloud/spaces/28268/join?access_code=qLpXUY0xlUFnViI1SB0Q%2FWd%2BEBw9zzL%2BC%2B8xe65F){target="_blank"} to join the "SDS192" Workspace.
+    + Click on "New Project"
+    + Name it "Class Notes"
+* Go over ModernDive reading in schedule above. 
+
+About readings in this course:
+
+* You are responsible for completing a lecture's readings before the next lecture. Ex: you are responsible to read all of ModernDive Chapter 1 before Wednesday.
+* I teach lectures assuming you have not done the readings beforehand. However, if it suits your learning style better, please do read beforehand.
+* While you don't need to turn in your learning check answers, I *highly* recommend you still do them. The solutions are in Appendix D of the book.
 
 
 ***
@@ -101,7 +139,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 Welcome!
 
-## Today's Topics/Activities
+## Today's topics/activities
 
 * My story.
 * What this class is about: Answering questions with data.

@@ -34,10 +34,12 @@ h1{font-weight: 400;}
 
 # Problem set 01 {#PS01}
 
-*Assigned Monday 9/9, due **Friday 9/13***
+*Assigned Monday 9/9, due Friday 9/13.*
 
-## 1. Background info
-
-* Complete the following [Pre-Course Questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSfd47VMRlRbBErxEWCtvUYoOhKIbN6kx8jpzn5mqOThk7EDMw/viewform){target="_blank"} online for Prof. Baumer, Prof. Crouser, and my study.
-* Complete the following [intro survey](https://docs.google.com/forms/d/e/1FAIpQLSe2r9v-i4u2Zlq4By3Y9AzUSR41x8T3fjRORaqbtBloBJDnfg/viewform){target="_blank"} online with info about you. 
-* Answer all questions in the [syllabus quiz](https://docs.google.com/document/d/1WknUhbtDeTGw8vvO8ytTURkF1_72ve4UXF5-SPk5NO8/){target="_blank"} and submit ON PAPER OR NOT?
+1. Complete the following confidential [Pre-Course Questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSfd47VMRlRbBErxEWCtvUYoOhKIbN6kx8jpzn5mqOThk7EDMw/viewform){target="_blank"} online for Prof. Baumer, Prof. Crouser, and my [Smith College IRB-approved](https://www.smith.edu/academics/institutional-review-board){target="_blank"} study. 
+1. If you don't already have one, create an account on [GitHub](https://github.com/){target="_blank"} *using your smith.edu (or Five College) email address*.
+1. Complete the following [intro survey](https://docs.google.com/forms/d/e/1FAIpQLSe2r9v-i4u2Zlq4By3Y9AzUSR41x8T3fjRORaqbtBloBJDnfg/viewform){target="_blank"} online with info about you. This survey is not part of the above study and is used by me to get to know you better.
+1. Complete a syllabus quiz.
+    + Print out the following [Google Doc](https://docs.google.com/document/d/1WknUhbtDeTGw8vvO8ytTURkF1_72ve4UXF5-SPk5NO8/){target="_blank"}.
+    + Answer the questions based on information in the [syllabus](syllabus.html).
+    + Submit your print out in class on Friday. If you can't make it, have one of your peers submit it for you. 

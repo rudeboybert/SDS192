@@ -42,7 +42,7 @@ h1{font-weight: 400;}
     + Albert's office hours. If you have R questions, please be mindful of my time and have your computer & RStudio ready to go:
         1. Wednesdays 3:00pm-4:30pm
         1. Fridays 9:00am-10:30am
-        1. Or by apppointment: [bit.ly/meet_with_albert](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"}
+        1. Or by apppointment: [bit.ly/meet_with_albert](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"}. If none of the listed times work for you, please Slack me.
     + The `#questions` channel on Slack. If you have a question of a more private nature, please Slack direct message Albert. 
     
 <!--    
@@ -76,7 +76,7 @@ Ask yourself:
     + *"Am I attending lectures consistently?"*
     + *"During in-class activities, am I actually running code line-by-line and studying the outputs, or am I just going through the motions?"*
     + *"During in-class exercises, am I taking full advantage that I'm in the same place at the same time with the instructor, the lab assistants, and most importantly your peers, or am I browsing the web/texting the whole time?"*
-    + *"Have I been doing the associated readings for each lecture (either before or after)?"*
+    + *"Have I been doing the associated readings for each lecture?"*
 
 
 
@@ -86,7 +86,7 @@ Ask yourself:
 
 # Course Description & Objectives
 
-From course search: *An introduction to data science using Python, R and SQL. Students learn how to scrape, process and clean data from the web; manipulate data in a variety of formats; contextualize variation in data; construct point and interval estimates using resampling techniques; visualize multidimensional data; design accurate, clear and appropriate data graphics; create data maps and perform basic spatial analysis; and query large relational databases. No prerequisites, but a willingness to write code is necessary.*
+From [Smith College Course Search](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Fall+2019&dept=&instr=Albert+Y.+Kim&credits=&course_numb=192&course_keywd=&op=Submit&form_build_id=form-V3WH-ixzbA-eyjFrRcImqp_C6DNgVUwcb_Pg8XhbUS8&form_id=campus_course_search_basic_search_form){target="_blank"}: *An introduction to data science using Python, R and SQL. Students learn how to scrape, process and clean data from the web; manipulate data in a variety of formats; contextualize variation in data; construct point and interval estimates using resampling techniques; visualize multidimensional data; design accurate, clear and appropriate data graphics; create data maps and perform basic spatial analysis; and query large relational databases. No prerequisites, but a willingness to write code is necessary.*
 
 On top of the goals of the above description, this semester you will:
 
@@ -109,7 +109,7 @@ The lecture schedule and associated readings can be found on the [main page](ind
 ## Policies {#policies}
 
 * Bring your laptop, a set of headphones, colored pens/pencils, and your paper notebook to every lecture.
-* You are expected to stay until the end of lecture. If you need to leave before the end of lecture, please confirm with me first.
+* You are expected to stay until the end of lecture. If you need to leave early, please confirm with me at the beginning of lecture and sit somewhere where your departure will be minimally disruptive. 
 * Attendance will not be explicitly taken and occasional absenses are excused. However, extended absenses should be mentioned to me.
 * However, you are responsible for asking your peers for what you missed. For example, makeup lectures will not be held during office hours.
 * Lecture will be held as usual on Monday 11/25 (before Thanksgiving). 
