@@ -83,25 +83,22 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
+* Slack updates: custom emojis and vote in today's poll!
 
-## Recap of previous lecture
-
-
-* Screencast: Show, don't tell, what their RStudio Cloud should look like.
-* `nycflights13` package, has datasets
-* functions. inputs called arguments, outputs
-* poll on calendar:
-Google calendar
-Calendar for mac
-outlook 
-other
-I keep a calendar by hand
-I don't keep a calendar
 
 
 ## Today's topics/activities
 
-## Tweet of the day
+### 1. Chalk talk
+
+* Recap of previous lecture
+* Grammar of Graphics
+
+### 2. In-class exercise
+
+* Go over ModernDive 2 - 2.3.1.
+
+
 
 
 
