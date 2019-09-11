@@ -83,14 +83,21 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-* Problem set 01 posted under [Problem Sets](PS.html)
 
 ## Recap of previous lecture
 
+
+* Screencast: Show, don't tell, what their RStudio Cloud should look like.
 * `nycflights13` package, has datasets
 * functions. inputs called arguments, outputs
-* Show, don't tell, what their RStudio Cloud should look like.
-* No office hours today.
+* poll on calendar:
+Google calendar
+Calendar for mac
+outlook 
+other
+I keep a calendar by hand
+I don't keep a calendar
+
 
 ## Today's topics/activities
 
