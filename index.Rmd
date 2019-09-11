@@ -77,6 +77,42 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ***
 
+<!--
+
+# Lec 04: Fri 9/13 {#Lec04}
+
+## Announcements
+
+* Poll on reading pace
+* Explain RStudio Cloud vs Desktop
+* Keep a single workspace for all your course notes, not a new one for each lecture
+
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of previous lecture
+* Grammar of Graphics
+
+### 2. In-class exercise
+
+* Go over ModernDive 2 - 2.3.1.
+
+
+
+***
+
+
+
+-->
+
+
+
+
+
+
 
 
 # Lec 03: Wed 9/11 {#Lec03}
@@ -93,6 +129,8 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 * Recap of previous lecture
 * Grammar of Graphics
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/79aPogjtGm4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 2. In-class exercise
 
