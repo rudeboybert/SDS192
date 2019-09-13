@@ -132,7 +132,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
     + Go to RStudio menu bar -> File -> New File -> R Markdown 
     + Set "Title" to "My first R Markdown report" and "Author" as your name.
 1. **"Knit" a report**:
-    + Click on the disk icon and save this file as `firstname_lastname` somewhere on your computer. This will create a file called `firstname_lastname.Rmd`
+    + Click on the disk icon and save this file as `testing` somewhere on your computer. This will create a file called `testing.Rmd`
     + Click the arrow next to "Knit" -> "Knit to HTML".
     + An HTML webpage should pop up. However, it may be blocked by your browser. If so, in your browser's URL bar on the right, click on "Always allow pop-ups".
 1. **Publish this report on web**:
