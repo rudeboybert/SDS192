@@ -36,6 +36,7 @@ h1{font-weight: 400;}
 
 *Assigned Friday 9/13, due Friday 9/20 at 10:45am on Moodle.*
 
+
 ## 1. R Markdown component {#PS02_R}
 
 * Download the following Rmd template file: <a href="static/PS/PS02.Rmd" download>`PS02.Rmd`</a> and rename it appropriately.
@@ -47,7 +48,9 @@ h1{font-weight: 400;}
 **Hints**:
 
 1. The resulting graph should be similar to the one [here](static/PS/PS02_hint.html){target="_blank"}.
+1. Here is the screencast of the demo:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CL1HOvmGHRs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!--
 ## 3. Solutions & (imperfect) rubric {#PS02_R_solutions}
