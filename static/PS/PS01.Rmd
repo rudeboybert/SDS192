@@ -1,0 +1,72 @@
+
+---
+title: "Problem Set 01"
+author: "WRITE YOUR NAME HERE"
+date: "2019-09-20"
+output:
+  html_document:
+    highlight: tango
+    theme: cosmo
+    toc: no
+    toc_depth: 2
+    toc_float:
+      collapsed: false
+    df_print: kable
+---
+
+```{r, include=FALSE}
+# Do not edit this code block/chunk
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE, fig.width = 16/2, fig.height = 9/2)
+```
+
+# Learning goals
+
+* Baby's first data visualization: Recreating Figure 2.1 in moderndive.
+* Get your feet
+* Acknowledge who you worked with:
+* The you submit on moodle should look like this.
+
+# Blah
+
+Load necessary packages:
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(gapminder)
+```
+
+The `gapminder` package includes a data frame called `gapminder`, containing information about different countries from 1952 to 2007. Let's explore this data:
+
+```{r, eval=FALSE}
+View(gapminder)
+```
+
+We're only going to only focus on data for 2007 and save this in a new data frame `gapminder_2007`. We use data wrangling using code from the `dplyr` package. Don't worry if this doesn't make sense for now, we'll cover data wrangling in Chapter 3 of ModernDive. For now, run the following code by clicking the green arrow on the right:
+
+```{r}
+gapminder_2007 <- gapminder %>% 
+  filter(year == 2007)
+```
+
+Let's explore this data:
+
+```{r, eval=FALSE}
+View(gapminder_2007)
+```
+
+An alternative method for exploring a data frame is by using the `glipmse()` function:
+
+```{r}
+glimpse(gapminder_2007)
+```
+
+This data is in fact the same data as in Table 2.1 of ModernDive.
+
+Create plot but do not worry about labeling axes and legend for now. 
+
+```{r}
+# Write your code below:
+
+```
+
