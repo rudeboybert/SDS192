@@ -39,7 +39,7 @@ h1{font-weight: 400;}
 
 ## 1. R Markdown component {#PS02_R}
 
-* Download the following Rmd template file: <a href="static/PS/PS02.Rmd" download>`PS02.Rmd`</a> and rename it appropriately.
+* Download the following Rmd template file: <a href="static/PS/PS02.Rmd" download>`PS02.Rmd`</a>.
 * Upload the `PS02.Rmd` file to RStudio Cloud. 
 * Complete the problem set.
 * Submit the resulting `PS02.html` file on [Moodle](https://moodle.smith.edu/course/view.php?id=35357){target="_blank"}. Note: you are only submitting the output HTML report file `PS02.html` and not the original `PS02.Rmd` R Markdown file.
