@@ -32,6 +32,42 @@ h1{font-weight: 400;}
 
 
 
+# Problem set 02 {#PS02}
+
+*Assigned Friday 9/13, due Friday 9/20 at 10:45am on Moodle.*
+
+## 1. R Markdown component {#PS02_R}
+
+* Download the following Rmd template file: <a href="static/PS/PS02.Rmd" download>`PS02.Rmd`</a> and rename it appropriately.
+* Upload the `PS02.Rmd` file to RStudio Cloud. 
+* Complete the problem set.
+* Submit the resulting `PS02.html` file on [Moodle](https://moodle.smith.edu/course/view.php?id=35357){target="_blank"}. Note: you are only submitting the output HTML report file `PS02.html` and not the original `PS02.Rmd` R Markdown file.
+
+
+**Hints**:
+
+1. The resulting graph should be similar to the one [here](static/PS/PS02_hint.html){target="_blank"}.
+
+
+<!--
+## 3. Solutions & (imperfect) rubric {#PS02_R_solutions}
+
+**Solution**:
+
+* <a href="static/PS/PS02_solutions.Rmd" download>`PS02_solutions.Rmd`</a> "source code" to create html report output. 
+* Resulting [`PS02_solutions.html`](static/PS/PS02_solutions.html){target="_blank"} output.
+
+
+**Rubric**:
+
+-->
+    
+
+
+***
+
+
+
 # Problem set 01 {#PS01}
 
 *Assigned Monday 9/9, due Friday 9/13.*
