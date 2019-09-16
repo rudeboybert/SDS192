@@ -78,7 +78,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 <!--
-# Lec 05: Mon 9/16 {#Lec05}
+# Lec 06: Wed 9/18 {#Lec06}
 
 ## Announcements
 
@@ -88,8 +88,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ### 1. Chalk talk
 
 * Recap of previous lecture
-* Overplotting: Two approaches to addressing it
-* Linegraphs
+* 
 
 ### 2. In-class exercise
 
@@ -99,6 +98,32 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ***
 -->
+
+
+
+# Lec 05: Mon 9/16 {#Lec05}
+
+## Announcements
+
+* Slack message: Abandoning RStudio Cloud in favor of RStudio Desktop.
+* The art of managing Slack notifications
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of previous lecture
+* Overplotting and two approaches for addressing it
+* Linegraphs
+
+### 2. In-class exercise
+
+* Go over ModernDive 2.3.2 - 2.4
+
+
+
+***
+
 
 
 # Lec 04: Fri 9/13 {#Lec04}
