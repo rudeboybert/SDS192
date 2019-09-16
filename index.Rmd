@@ -77,27 +77,54 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
+
 <!--
+# Lec 07: Fri 9/20 {#Lec07}
+
+## Announcements
+
+* Problem set 02 posted.
+* Calendar
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* 
+
+
+### 2. In-class exercise
+
+* Go over ModernDive 
+
+
+
+***
+-->
+
+
 # Lec 06: Wed 9/18 {#Lec06}
 
 ## Announcements
 
+* Prof. Katie Kinnaird's TRIPODS+X - Data Science Education Investigation
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
 * Recap of previous lecture
-* 
+* Live-demo of creating `classnotes.Rmd`, an R Markdown file of all in-class exercise code: Write and copy/paste/tweak code in `classnotes.Rmd` and not in console. That way you can save it!
+* Histograms for visualizing distribution of a numerical variable.
+
 
 ### 2. In-class exercise
 
-* Go over ModernDive 2.3.2 - 2.4
+* Go over ModernDive 2.5
 
 
 
 ***
--->
 
 
 
