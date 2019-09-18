@@ -105,11 +105,12 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 -->
 
 
+
 # Lec 06: Wed 9/18 {#Lec06}
 
 ## Announcements
 
-* None
+* Prof. Katie Kinnaird's TRIPODS+X - Data Science Education Investigation
 
 ## Today's topics/activities
 
