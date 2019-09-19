@@ -78,31 +78,36 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 
-<!--
+
 # Lec 07: Fri 9/20 {#Lec07}
 
 ## Announcements
 
-* Problem set 02 posted.
-* Calendar exercise
+* Problem set 03 posted
 * Prof. Katie Kinnaird's TRIPODS+X - Data Science Education Investigation
+
+## Tweet of the Day
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://twitter.com/HBO?ref_src=twsrc%5Etfw">@HBO</a> The Wire<br><br>Context: A Johns Hopkins academic presents his research on at-risk youth at a Baltimore middle school <a href="https://twitter.com/hashtag/TheWire?src=hash&amp;ref_src=twsrc%5Etfw">#TheWire</a> <a href="https://t.co/ETC2jYew9v">pic.twitter.com/ETC2jYew9v</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1174729578373423105?ref_src=twsrc%5Etfw">September 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
+<!--
 * Recap: explain that binwidth and number of bins are two different ways of achieving same goal: changing binning structure.
-
+--> 
 
 ### 2. In-class exercise
 
-* Go over ModernDive 
+* Go over ModernDive 2.6 - 2.7
 
 
 
 ***
--->
+
 
 
 
