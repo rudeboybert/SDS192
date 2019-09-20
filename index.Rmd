@@ -78,13 +78,13 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 
-
 # Lec 07: Fri 9/20 {#Lec07}
 
 ## Announcements
 
 * Problem set 03 posted
 * Prof. Katie Kinnaird's TRIPODS+X - Data Science Education Investigation
+* Post on #random
 
 ## Tweet of the Day
 
