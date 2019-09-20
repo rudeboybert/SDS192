@@ -94,7 +94,9 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 1. Chalk talk
 
-* Recap of boxplots. Show points vs boxplot
+* Recap of boxplots.
+    + Explain IQR = measure of spread. Also that role of 1.5 x IQR is to determine what points are outliers and what are not.
+    + Show points vs boxplot
 * Barplots. Two cases: when categorical varible is pre-counted and when it is not.
 
 ### 2. In-class exercise
