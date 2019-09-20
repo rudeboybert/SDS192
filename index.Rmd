@@ -82,7 +82,8 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-
+* Problem sets:
+    + PS01 handed back
 
 ## Tweet of the Day
 
@@ -115,7 +116,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
     + Prof. Katie Kinnaird's TRIPODS+X - Data Science Education Investigation
     + Post on `#random` by Ray
 * Problem sets:
-    + Hand back PS01
+    + PS01 handed back on Monday
     + Go over [PS02 solutions](PS.html#PS02_solutions)
     + PS03 posted
 * Announcement from Smithies in SDS:
