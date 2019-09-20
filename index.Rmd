@@ -82,6 +82,8 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
+* Added boxplot image to Lec07
+* Sec01: ignore dashed blue line
 * Problem sets:
     + PS01 handed back
 
@@ -167,10 +169,10 @@ Min. | 1st Quartile | Median = 2nd Quartile  | 3rd Quartile  |  Max. | IQR
 ---- | ------- | ------  |  ------- | --- | ---
 `r min(example$values)`  |  `r quantile(example$values, probs=0.25, type = 2)` |  `r median(example$values)`  |  `r quantile(example$values, probs=0.75, type=2)`  | `r max(example$values)` | 8 = 13.5 - 5.5
 
-<!--
+
 Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
 
-```{r, echo=FALSE, eval=FALSE, cache=TRUE}
+```{r, echo=FALSE, eval=TRUE}
 plot1 <- ggplot(example, aes(x=factor(1), y=values)) +
   geom_point() +
   labs(title = "Points") +
@@ -190,7 +192,7 @@ plot2 <- ggplot(example, aes(x=factor(1), y=values)) +
   )
 plot1 + plot2
 ```
--->
+
 
 ### 2. In-class exercise
 
