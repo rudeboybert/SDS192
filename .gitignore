@@ -8,4 +8,3 @@ _site/*
 *.DS_Store
 *_files/*
 .httr-oauth
-PS02_solutions.*

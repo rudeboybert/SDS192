@@ -76,15 +76,56 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ***
 
+<!--
+
+# Lec 08: Mon 9/23 {#Lec08}
+
+## Announcements
+
+
+
+## Tweet of the Day
+
+
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of boxplots. Show points vs boxplot
+* Barplots. Two cases: when categorical varible is pre-counted and when it is not.
+
+### 2. In-class exercise
+
+* Go over ModernDive 2.8
+
+
+
+***
+-->
+
 
 
 # Lec 07: Fri 9/20 {#Lec07}
 
 ## Announcements
 
-* Problem set 03 posted
-* Prof. Katie Kinnaird's TRIPODS+X - Data Science Education Investigation
-* Post on #random
+* Slack:
+    + Prof. Katie Kinnaird's TRIPODS+X - Data Science Education Investigation
+    + Post on `#random` by Ray
+* Problem sets:
+    + Hand back PS01
+    + Go over [PS02 solutions](PS.html#PS02_solutions)
+    + PS03 posted
+* Announcement from Smithies in SDS:
+
+![](static/images/announcements/SSDS.png){ width=450px }
+<br>   
+
+
+
+
 
 ## Tweet of the Day
 
@@ -96,14 +137,64 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 1. Chalk talk
 
+* Recap of histograms
+* Facets to split a visualization by the values of another variable
+* Boxplots! Powerful, but tricky!
+
+
+```{r, eval=TRUE, echo=FALSE}
+library(ggplot2)
+library(dplyr)
+example <- tibble(
+  values = c(1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30)
+)
+```
+
+Say we want to study the distribution of the following `r nrow(example)` values which are pre-sorted: 
+
+> `r example %>% pull(values)`
+
+They have the following *summary statistics*. A summary statistic is a single numerical value *summarizing* many values. Examples include the immediately obvious mean AKA average and median. Other less immediately obvious examples include:
+
+* Quartiles (1st, 2nd, and 3rd) that cut up the data into 4 parts, each containing roughly one quarter = 25% of the data
+* Minimum & maximum
+* Interquartile-range (IQR): the distance between the 3rd and 1st quartiles
+
+Min. | 1st Quartile | Median = 2nd Quartile  | 3rd Quartile  |  Max. | IQR
+---- | ------- | ------  |  ------- | --- | ---
+`r min(example$values)`  |  `r quantile(example$values, probs=0.25, type = 2)` |  `r median(example$values)`  |  `r quantile(example$values, probs=0.75, type=2)`  | `r max(example$values)` | 8 = 13.5 - 5.5
+
 <!--
-* Recap: explain that binwidth and number of bins are two different ways of achieving same goal: changing binning structure.
---> 
+Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
+
+```{r, echo=FALSE, eval=FALSE, cache=TRUE}
+plot1 <- ggplot(example, aes(x=factor(1), y=values)) +
+  geom_point() +
+  labs(title = "Points") +
+  theme(
+    axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
+
+plot2 <- ggplot(example, aes(x=factor(1), y=values)) +
+  geom_boxplot() +
+  labs(title = "Boxplot") +
+  theme(
+    axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
+plot1 + plot2
+```
+-->
 
 ### 2. In-class exercise
 
 * Go over ModernDive 2.6 - 2.7
+* Start PS03
 
+I don't mind what you do with your class time, but it is very important that you complete the reading before next lecture. Boxplots take practice.
 
 
 ***
