@@ -76,30 +76,32 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ***
 
-<!--
+
 
 # Lec 08: Mon 9/23 {#Lec08}
 
 ## Announcements
 
-* Added boxplot image to Lec07
-* Sec01: ignore dashed blue line
-* Problem sets:
-    + PS01 handed back
+* In Lec07 below, added image of chalk talk data and boxplot.
+* Problem sets: PS01 handed back
 
 ## Tweet of the Day
-
-
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
+<!--
 * Recap of boxplots.
+    + Sec01: ignore dashed blue line
     + Explain IQR = measure of spread. Also that role of 1.5 x IQR is to determine what points are outliers and what are not.
     + Show points vs boxplot
-* Barplots. Two cases: when categorical varible is pre-counted and when it is not.
+* Barplots.
+    + Distribution of categorical variable
+    + Two cases of geom: when categorical varible is pre-counted and when it is not.
+    + Stacked, side-by-side
+-->
 
 ### 2. In-class exercise
 
@@ -108,7 +110,6 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 ***
--->
 
 
 
