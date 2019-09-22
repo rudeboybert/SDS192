@@ -118,6 +118,10 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 1. Chalk talk
 
+* Recap of boxplots
+* Summary statistics that are robust to outliers: median and IQR
+* Barplots
+
 <!--
 * Recap of boxplots.
     + Sec01: ignore dashed blue line
@@ -127,6 +131,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
     + Distribution of categorical variable
     + Two cases of geom: when categorical varible is pre-counted and when it is not.
     + Stacked, side-by-side
+* Look at book
 -->
 
 ### 2. In-class exercise
