@@ -82,7 +82,9 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
+* Bring Julia and Eloana prize for SDS293.
 * No office hours today
+* Show how to add/mute Slack channel
 
 ## Tweet of the Day
 
