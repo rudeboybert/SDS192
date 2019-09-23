@@ -91,6 +91,8 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 1. Chalk talk
 
+* pie charts vs barplots
+* two categorical variables: stacked or dodged barplots
 
 ### 2. In-class exercise
 
@@ -122,17 +124,6 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 * Summary statistics that are robust to outliers: median and IQR
 * Barplots
 
-<!--
-* Recap of boxplots.
-    + Sec01: ignore dashed blue line
-    + Explain IQR = measure of spread. Also that role of 1.5 x IQR is to determine what points are outliers and what are not.
-    + Show points vs boxplot
-* Barplots.
-    + Distribution of categorical variable
-    + Two cases of geom: when categorical varible is pre-counted and when it is not.
-    + Stacked, side-by-side
-* Look at book
--->
 
 ### 2. In-class exercise
 
