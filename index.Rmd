@@ -95,6 +95,10 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 * pie charts vs barplots
 * two categorical variables: stacked or dodged barplots
+* viridis package
+* polos
+* https://stackoverflow.com/questions/8197559/emulate-ggplot2-default-color-palette
+* https://stackoverflow.com/questions/21490210/how-to-plot-a-colour-wheel-by-using-ggplot
 
 ### 2. In-class exercise
 
