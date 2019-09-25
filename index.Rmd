@@ -78,32 +78,107 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 <!--
-# Lec 09: Wed 9/25 {#Lec09}
+# Lec 10: Mon 9/30 {#Lec10}
 
 ## Announcements
 
-* Bring Julia and Eloana prize for SDS293.
-* No office hours today
-* Show how to add/mute Slack channel
-
-## Tweet of the Day
+1. Slack profile picture
+1. If you want to get fancywith color palettes, use the [`viridis` package](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html){target="_blank"}
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* pie charts vs barplots
-* two categorical variables: stacked or dodged barplots
-* viridis package
-* polos
-* https://stackoverflow.com/questions/8197559/emulate-ggplot2-default-color-palette
-* https://stackoverflow.com/questions/21490210/how-to-plot-a-colour-wheel-by-using-ggplot
+* Recap of barplots
+
 
 ### 2. In-class exercise
 
-* Go over ModernDive 2.9
+
+
+***
 -->
+
+
+# Lec 09: Fri 9/27 {#Lec09}
+
+## Announcements
+
+* Slack:
+    + How to subscribe to a `#channel`
+    + Using threads to keep conversations organized
+* Go over [PS03 solutions](PS.html#PS03_solutions)
+* Mini-project 1
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of barplots
+* Color theory
+    1. `color` vs `fill` aesthetics in `ggplot2`
+    1. Selecting a color palette from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}
+    1. How does `ggplot2` pick default colors? Using a [color wheel](https://stackoverflow.com/questions/21490210/how-to-plot-a-colour-wheel-by-using-ggplot){target="_blank"}
+    1. Get the [color hex codes](https://www.color-hex.com/color/f8766d){target="_blank"} of `ggplot2` default color palette:
+    
+```{r}
+library(scales)
+number_of_colors <- 3
+show_col(hue_pal()(number_of_colors))
+```
+
+    
+### 2. Exercise on pie charts vs barplots
+
+Say the following piecharts represent results of an election poll at time points: A = September, B = October, and C = November. At each time point we present the proportion of the poll respondents who say they will support one of 5 candidates: 1 through 5. 
+
+![](static/images/piecharts.png){ width=600px }
+
+Based on these 3 piecharts, answer the following questions:
+
+1. At time point A, is candidate 5 doing better than candidate 4?
+1. Did candidate 3 do better at time point B or time point C?
+1. Who gained more support between time point A and time point B, candidate 2 or candidate 4?
+
+<!--
+Compare that to using barplots. Which do you prefer?
+
+![](static/images/barplots.png){ width=600px }
+-->
+
+
+
+### 3. In-class exercise
+
+* Quiz on podcast
+* Go over ModernDive 2.9
+* In particular in Section 2.9.3, open the `ggplot2` cheatsheet in RStudio and go over the different `geom` types
+* Experiment with palettes in [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}:
+    1. Copy and paste the code below into your classnotes
+    1. Change both the color of the scatterplot points and the fill of the bars in the barplot by changing the `palette` argument in `scale_color_brewer()` and `scale_fill_brewer()` from `"Set1"` to something else
+    1. Play around with different color palettes
+
+```{r, eval=FALSE}
+library(ggplot2)
+library(dplyr)
+library(nycflights13)
+library(gapminder)
+
+# 1. Recreate plot from PS02, but change default "color" of points:
+gapminder_2007 <- gapminder %>% 
+  filter(year == 2007)
+ggplot(data = gapminder_2007, 
+       mapping = aes(x = gdpPercap, y = lifeExp, size = pop, color = continent)) +
+  geom_point() +
+  scale_color_brewer(palette = "Set1")
+
+# 1. Recreate Figure 2.26, but change default "fill" color of bars:
+ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
+  geom_bar(position = position_dodge(preserve = "single")) +
+  scale_fill_brewer(palette = "Set1")
+```
+
 
 
 ***

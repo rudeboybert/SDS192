@@ -29,8 +29,8 @@ navbar:
 #    href: webpage.html
   - text: Problem Sets
     href: PS.html
-#  - text: Projects
-#    href: projects.html
+  - text: Projects
+    href: projects.html
   - text: Syllabus
     href: syllabus.html
 #  - icon: fa-github fa-lg

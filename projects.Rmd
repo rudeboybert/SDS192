@@ -1,0 +1,44 @@
+---
+title: "Projects"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE, message=FALSE, warning = FALSE, eval = TRUE, 
+  fig.width = 16/2, fig.height = 9/2
+)
+
+# Set seed value of random number generator to get "replicable" random numbers.
+# Why 76? Because of https://www.youtube.com/watch?v=xjJ7FheCkCU
+set.seed(76)
+```
+
+<!--
+{target="_blank"}
+-->
+
+<style>
+h1{font-weight: 400;}
+</style>
+
+
+Everything in this course builds up to the final group project, where there is
+only one learning goal: *Engage in the data/science research pipeline in as
+faithful a manner as possible while maintaining a level suitable for novices.* To get practice however there will be 3 mini-projects first.
+
+<center>
+<img src="static/images/pipeline.png" alt="Drawing" style="width: 600px;" border="10"/>
+</center>
+
+
+
+***
+
+
+
+# Mini-Project 1 {#MP1}
