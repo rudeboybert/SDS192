@@ -82,6 +82,8 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
+* How to run all code in R Markdown
+* From last readings, while tibble() and not data.frame()?
 * Bring Julia and Eloana prize for SDS293.
 * No office hours today
 * Show how to add/mute Slack channel
