@@ -63,12 +63,10 @@ Notes:
 
 ## 3. Solutions & (imperfect) rubric {#PS03_solutions}
 
-<!--
 **Solution**:
 
 * <a href="static/PS/PS03_solutions.Rmd" download>`PS03_solutions.Rmd`</a> R Markdown "source code" to create html report output. 
 * [`PS03_solutions.html`](static/PS/PS03_solutions.html){target="_blank"} html report.
--->
 
 **Rubric**:
 

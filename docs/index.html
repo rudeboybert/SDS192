@@ -29,6 +29,96 @@
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
 
 
 <style type="text/css">
@@ -73,6 +163,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -342,6 +433,9 @@ div.tocify {
   <a href="PS.html">Problem Sets</a>
 </li>
 <li>
+  <a href="projects.html">Projects</a>
+</li>
+<li>
   <a href="syllabus.html">Syllabus</a>
 </li>
       </ul>
@@ -355,7 +449,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS 192: Introduction to Data Science</h1>
 <h4 class="author">Albert Y. Kim</h4>
-<h4 class="date">Last updated on 2019-09-23</h4>
+<h4 class="date">Last updated on 2019-09-25</h4>
 
 </div>
 
@@ -384,31 +478,114 @@ h1{font-weight: 400;}
 -->
 <hr />
 <!--
-# Lec 09: Wed 9/25 {#Lec09}
+# Lec 10: Mon 9/30 {#Lec10}
 
 ## Announcements
 
-* No office hours today
-
-## Tweet of the Day
+1. Slack profile picture
+1. If you want to get fancywith color palettes, use the [`viridis` package](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html){target="_blank"}
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* pie charts vs barplots
-* two categorical variables: stacked or dodged barplots
+* Recap of barplots
+
 
 ### 2. In-class exercise
 
-* Go over ModernDive 2.9
+
+
+***
 -->
+</div>
+<div id="Lec09" class="section level1">
+<h1>Lec 09: Fri 9/27</h1>
+<div id="announcements" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>Slack:
+<ul>
+<li>How to subscribe to a <code>#channel</code></li>
+<li>Using threads to keep conversations organized</li>
+</ul></li>
+<li>Go over <a href="PS.html#PS03_solutions">PS03 solutions</a></li>
+<li>Mini-project 1</li>
+</ul>
+</div>
+<div id="todays-topicsactivities" class="section level2">
+<h2>Today’s topics/activities</h2>
+<div id="chalk-talk" class="section level3">
+<h3>1. Chalk talk</h3>
+<ul>
+<li>Recap of barplots</li>
+<li>Color theory
+<ol style="list-style-type: decimal">
+<li><code>color</code> vs <code>fill</code> aesthetics in <code>ggplot2</code></li>
+<li>Selecting a color palette from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a></li>
+<li>How does <code>ggplot2</code> pick default colors? Using a <a href="https://stackoverflow.com/questions/21490210/how-to-plot-a-colour-wheel-by-using-ggplot" target="_blank">color wheel</a></li>
+<li>Get the <a href="https://www.color-hex.com/color/f8766d" target="_blank">color hex codes</a> of <code>ggplot2</code> default color palette:</li>
+</ol></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(scales)</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">number_of_colors &lt;-<span class="st"> </span><span class="dv">3</span></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">show_col</span>(<span class="kw">hue_pal</span>()(number_of_colors))</a></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="768" /></p>
+</div>
+<div id="exercise-on-pie-charts-vs-barplots" class="section level3">
+<h3>2. Exercise on pie charts vs barplots</h3>
+<p>Say the following piecharts represent results of an election poll at time points: A = September, B = October, and C = November. At each time point we present the proportion of the poll respondents who say they will support one of 5 candidates: 1 through 5.</p>
+<p><img src="static/images/piecharts.png" width="600" /></p>
+<p>Based on these 3 piecharts, answer the following questions:</p>
+<ol style="list-style-type: decimal">
+<li>At time point A, is candidate 5 doing better than candidate 4?</li>
+<li>Did candidate 3 do better at time point B or time point C?</li>
+<li>Who gained more support between time point A and time point B, candidate 2 or candidate 4?</li>
+</ol>
+<!--
+Compare that to using barplots. Which do you prefer?
+
+![](static/images/barplots.png){ width=600px }
+-->
+</div>
+<div id="in-class-exercise" class="section level3">
+<h3>3. In-class exercise</h3>
+<ul>
+<li>Quiz on podcast</li>
+<li>Go over ModernDive 2.9</li>
+<li>In particular in Section 2.9.3, open the <code>ggplot2</code> cheatsheet in RStudio and go over the different <code>geom</code> types</li>
+<li>Experiment with palettes in <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a>:
+<ol style="list-style-type: decimal">
+<li>Copy and paste the code below into your classnotes</li>
+<li>Change both the color of the scatterplot points and the fill of the bars in the barplot by changing the <code>palette</code> argument in <code>scale_color_brewer()</code> and <code>scale_fill_brewer()</code> from <code>&quot;Set1&quot;</code> to something else</li>
+<li>Play around with different color palettes</li>
+</ol></li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">library</span>(nycflights13)</a>
+<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="kw">library</span>(gapminder)</a>
+<a class="sourceLine" id="cb2-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="co"># 1. Recreate plot from PS02, but change default &quot;color&quot; of points:</span></a>
+<a class="sourceLine" id="cb2-7" data-line-number="7">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
+<a class="sourceLine" id="cb2-9" data-line-number="9"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, </a>
+<a class="sourceLine" id="cb2-10" data-line-number="10">       <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop, <span class="dt">color =</span> continent)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-12" data-line-number="12"><span class="st">  </span><span class="kw">scale_color_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
+<a class="sourceLine" id="cb2-13" data-line-number="13"></a>
+<a class="sourceLine" id="cb2-14" data-line-number="14"><span class="co"># 1. Recreate Figure 2.26, but change default &quot;fill&quot; color of bars:</span></a>
+<a class="sourceLine" id="cb2-15" data-line-number="15"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-16" data-line-number="16"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-17" data-line-number="17"><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a></code></pre></div>
 <hr />
+</div>
+</div>
 </div>
 <div id="Lec08" class="section level1">
 <h1>Lec 08: Mon 9/23</h1>
-<div id="announcements" class="section level2">
+<div id="announcements-1" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>No office hours on Wednesday</li>
@@ -426,9 +603,9 @@ We are thrilled to be at <a href="https://twitter.com/Statfest?ref_src=twsrc%5Et
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities" class="section level2">
+<div id="todays-topicsactivities-1" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk" class="section level3">
+<div id="chalk-talk-1" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of boxplots</li>
@@ -436,7 +613,7 @@ We are thrilled to be at <a href="https://twitter.com/Statfest?ref_src=twsrc%5Et
 <li>Barplots</li>
 </ul>
 </div>
-<div id="in-class-exercise" class="section level3">
+<div id="in-class-exercise-1" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.8</li>
@@ -447,7 +624,7 @@ We are thrilled to be at <a href="https://twitter.com/Statfest?ref_src=twsrc%5Et
 </div>
 <div id="Lec07" class="section level1">
 <h1>Lec 07: Fri 9/20</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack:
@@ -475,9 +652,9 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-1" class="section level3">
+<div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of histograms</li>
@@ -517,9 +694,9 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </tbody>
 </table>
 <p>Let’s compare the points and the corresponding boxplot side-by-side with the values on the <span class="math inline">\(y\)</span>-axis matching:</p>
-<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-1" class="section level3">
+<div id="in-class-exercise-2" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.6 - 2.7</li>
@@ -532,15 +709,15 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec06" class="section level1">
 <h1>Lec 06: Wed 9/18</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Prof. Katie Kinnaird’s TRIPODS+X - Data Science Education Investigation</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-2" class="section level3">
+<div id="chalk-talk-3" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -548,7 +725,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>Histograms for visualizing distribution of a numerical variable.</li>
 </ul>
 </div>
-<div id="in-class-exercise-2" class="section level3">
+<div id="in-class-exercise-3" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.5</li>
@@ -559,16 +736,16 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec05" class="section level1">
 <h1>Lec 05: Mon 9/16</h1>
-<div id="announcements-3" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack message: Abandoning RStudio Cloud in favor of RStudio Desktop.</li>
 <li>The art of managing Slack notifications</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-3" class="section level2">
+<div id="todays-topicsactivities-4" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-3" class="section level3">
+<div id="chalk-talk-4" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -576,7 +753,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>Linegraphs</li>
 </ul>
 </div>
-<div id="in-class-exercise-3" class="section level3">
+<div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.3.2 - 2.4</li>
@@ -587,7 +764,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec04" class="section level1">
 <h1>Lec 04: Fri 9/13</h1>
-<div id="announcements-4" class="section level2">
+<div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Screencast from last lecture posted</li>
@@ -595,9 +772,9 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>PS02 posted under <a href="PS.html">Problem Sets</a></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-4" class="section level2">
+<div id="todays-topicsactivities-5" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-4" class="section level3">
+<div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -618,7 +795,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </tbody>
 </table>
 </div>
-<div id="in-class-exercise-4" class="section level3">
+<div id="in-class-exercise-5" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>At a couple of steps in this process, you will be asked to install packages. Say yes to all of them!</li>
@@ -667,15 +844,15 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec03" class="section level1">
 <h1>Lec 03: Wed 9/11</h1>
-<div id="announcements-5" class="section level2">
+<div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack updates: custom emojis and vote in today’s poll!</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-5" class="section level2">
+<div id="todays-topicsactivities-6" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-5" class="section level3">
+<div id="chalk-talk-6" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -686,7 +863,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </iframe>
 <p></br></p>
 </div>
-<div id="in-class-exercise-5" class="section level3">
+<div id="in-class-exercise-6" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2 - 2.3.1.</li>
@@ -697,16 +874,16 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec02" class="section level1">
 <h1>Lec 02: Mon 9/9</h1>
-<div id="announcements-6" class="section level2">
+<div id="announcements-7" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><a href="syllabus.html">Syllabus</a> finalized.</li>
 <li>Problem Set 01 due this Friday posted under <a href="PS.html">Problem Sets</a>.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-6" class="section level2">
+<div id="todays-topicsactivities-7" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-6" class="section level3">
+<div id="chalk-talk-7" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Intro to Slack <a href="static/intro_to_slack.pdf" target="_blank">slides</a></li>
@@ -714,7 +891,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>What are R packages?</li>
 </ul>
 </div>
-<div id="in-class-exercise-6" class="section level3">
+<div id="in-class-exercise-7" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Set up RStudio Cloud:
@@ -738,11 +915,11 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec01" class="section level1">
 <h1>Lec 01: Fri 9/6</h1>
-<div id="announcements-7" class="section level2">
+<div id="announcements-8" class="section level2">
 <h2>Announcements</h2>
 <p>Welcome!</p>
 </div>
-<div id="todays-topicsactivities-7" class="section level2">
+<div id="todays-topicsactivities-8" class="section level2">
 <h2>Today’s topics/activities</h2>
 <ul>
 <li>My story.</li>
