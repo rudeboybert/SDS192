@@ -43,7 +43,7 @@ faithful a manner as possible while maintaining a level suitable for novices.* T
 
 # Mini-Project 1 {#MP1}
 
-<!--
+
 *Partially assigned on Friday 9/27, completely assigned on Monday 9/30, due Friday 10/11 at 5pm.*
 
 
@@ -68,4 +68,3 @@ Here is the code in the screencast:
 <script src="https://gist.github.com/rudeboybert/ebf39a24a03216be55cb20d9c475f57d.js"></script>
 
 
--->
