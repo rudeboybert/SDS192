@@ -116,7 +116,6 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
     + How to subscribe to a `#channel`
     + Using threads to keep conversations organized
 * Go over [PS03 solutions](PS.html#PS03_solutions)
-* Mini-project 1 at end of lecture
 
 ## Today's topics/activities
 
