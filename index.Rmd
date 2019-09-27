@@ -148,11 +148,11 @@ Based on these 3 piecharts, answer the following questions:
 1. Did candidate 3 do better at time point B or time point C?
 1. Who gained more support between time point A and time point B, candidate 2 or candidate 4?
 
-<!--
+
 Compare that to using barplots. Which do you prefer?
 
 ![](static/images/barplots.png){ width=600px }
--->
+
 
 
 
