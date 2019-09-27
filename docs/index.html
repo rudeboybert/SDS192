@@ -501,6 +501,34 @@ h1{font-weight: 400;}
 
 ### 2. In-class exercise
 
+* Go over ModernDive 2.9
+* In particular in Section 2.9.3, open the `ggplot2` cheatsheet in RStudio and go over the different `geom` types
+* Experiment with palettes in [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}:
+    1. Copy and paste the code below into your classnotes
+    1. Change both the color of the scatterplot points and the fill of the bars in the barplot by changing the `palette` argument in `scale_color_brewer()` and `scale_fill_brewer()` from `"Set1"` to something else
+    1. Play around with different color palettes
+
+
+```r
+library(ggplot2)
+library(dplyr)
+library(nycflights13)
+library(gapminder)
+
+# 1. Recreate plot from PS02, but change default "color" of points:
+gapminder_2007 <- gapminder %>% 
+  filter(year == 2007)
+ggplot(data = gapminder_2007, 
+       mapping = aes(x = gdpPercap, y = lifeExp, size = pop, color = continent)) +
+  geom_point() +
+  scale_color_brewer(palette = "Set1")
+
+# 1. Recreate Figure 2.26, but change default "fill" color of bars:
+ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
+  geom_bar(position = position_dodge(preserve = "single")) +
+  scale_fill_brewer(palette = "Set1")
+```
+
 
 
 ***
@@ -536,7 +564,7 @@ h1{font-weight: 400;}
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(scales)</a>
 <a class="sourceLine" id="cb1-2" data-line-number="2">number_of_colors &lt;-<span class="st"> </span><span class="dv">3</span></a>
 <a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">show_col</span>(<span class="kw">hue_pal</span>()(number_of_colors))</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
 </div>
 <div id="exercise-on-pie-charts-vs-barplots" class="section level3">
 <h3>2. Exercise on pie charts vs barplots</h3>
@@ -559,32 +587,8 @@ Compare that to using barplots. Which do you prefer?
 <h3>3. In-class exercise</h3>
 <ul>
 <li>Quiz on podcast</li>
-<li>Go over ModernDive 2.9</li>
-<li>In particular in Section 2.9.3, open the <code>ggplot2</code> cheatsheet in RStudio and go over the different <code>geom</code> types</li>
-<li>Experiment with palettes in <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a>:
-<ol style="list-style-type: decimal">
-<li>Copy and paste the code below into your classnotes</li>
-<li>Change both the color of the scatterplot points and the fill of the bars in the barplot by changing the <code>palette</code> argument in <code>scale_color_brewer()</code> and <code>scale_fill_brewer()</code> from <code>&quot;Set1&quot;</code> to something else</li>
-<li>Play around with different color palettes</li>
-</ol></li>
+<li>First phase of Mini-Project 1 roll-out</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">library</span>(nycflights13)</a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="kw">library</span>(gapminder)</a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"></a>
-<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="co"># 1. Recreate plot from PS02, but change default &quot;color&quot; of points:</span></a>
-<a class="sourceLine" id="cb2-7" data-line-number="7">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
-<a class="sourceLine" id="cb2-9" data-line-number="9"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, </a>
-<a class="sourceLine" id="cb2-10" data-line-number="10">       <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop, <span class="dt">color =</span> continent)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb2-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb2-12" data-line-number="12"><span class="st">  </span><span class="kw">scale_color_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
-<a class="sourceLine" id="cb2-13" data-line-number="13"></a>
-<a class="sourceLine" id="cb2-14" data-line-number="14"><span class="co"># 1. Recreate Figure 2.26, but change default &quot;fill&quot; color of bars:</span></a>
-<a class="sourceLine" id="cb2-15" data-line-number="15"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb2-16" data-line-number="16"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb2-17" data-line-number="17"><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a></code></pre></div>
 <hr />
 </div>
 </div>

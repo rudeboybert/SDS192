@@ -102,6 +102,33 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 2. In-class exercise
 
+* Go over ModernDive 2.9
+* In particular in Section 2.9.3, open the `ggplot2` cheatsheet in RStudio and go over the different `geom` types
+* Experiment with palettes in [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}:
+    1. Copy and paste the code below into your classnotes
+    1. Change both the color of the scatterplot points and the fill of the bars in the barplot by changing the `palette` argument in `scale_color_brewer()` and `scale_fill_brewer()` from `"Set1"` to something else
+    1. Play around with different color palettes
+
+```{r, eval=FALSE}
+library(ggplot2)
+library(dplyr)
+library(nycflights13)
+library(gapminder)
+
+# 1. Recreate plot from PS02, but change default "color" of points:
+gapminder_2007 <- gapminder %>% 
+  filter(year == 2007)
+ggplot(data = gapminder_2007, 
+       mapping = aes(x = gdpPercap, y = lifeExp, size = pop, color = continent)) +
+  geom_point() +
+  scale_color_brewer(palette = "Set1")
+
+# 1. Recreate Figure 2.26, but change default "fill" color of bars:
+ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
+  geom_bar(position = position_dodge(preserve = "single")) +
+  scale_fill_brewer(palette = "Set1")
+```
+
 
 
 ***
@@ -158,32 +185,7 @@ Compare that to using barplots. Which do you prefer?
 ### 3. In-class exercise
 
 * Quiz on podcast
-* Go over ModernDive 2.9
-* In particular in Section 2.9.3, open the `ggplot2` cheatsheet in RStudio and go over the different `geom` types
-* Experiment with palettes in [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}:
-    1. Copy and paste the code below into your classnotes
-    1. Change both the color of the scatterplot points and the fill of the bars in the barplot by changing the `palette` argument in `scale_color_brewer()` and `scale_fill_brewer()` from `"Set1"` to something else
-    1. Play around with different color palettes
-
-```{r, eval=FALSE}
-library(ggplot2)
-library(dplyr)
-library(nycflights13)
-library(gapminder)
-
-# 1. Recreate plot from PS02, but change default "color" of points:
-gapminder_2007 <- gapminder %>% 
-  filter(year == 2007)
-ggplot(data = gapminder_2007, 
-       mapping = aes(x = gdpPercap, y = lifeExp, size = pop, color = continent)) +
-  geom_point() +
-  scale_color_brewer(palette = "Set1")
-
-# 1. Recreate Figure 2.26, but change default "fill" color of bars:
-ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
-  geom_bar(position = position_dodge(preserve = "single")) +
-  scale_fill_brewer(palette = "Set1")
-```
+* First phase of Mini-Project 1 roll-out
 
 
 
