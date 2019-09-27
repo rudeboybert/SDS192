@@ -116,13 +116,13 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
     + How to subscribe to a `#channel`
     + Using threads to keep conversations organized
 * Go over [PS03 solutions](PS.html#PS03_solutions)
-* Mini-project 1
+* Mini-project 1 at end of lecture
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Recap of barplots
+* Recap of barplots: Exercise on pie charts vs barplots below
 * Color theory
     1. `color` vs `fill` aesthetics in `ggplot2`
     1. Selecting a color palette from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}
