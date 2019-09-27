@@ -82,15 +82,10 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-* Bring Julia and Eloana prize for SDS293.
-* No office hours today
-* Show how to add/mute Slack channel
 * How to run all code in R Markdown
 * From last readings, while tibble() and not data.frame()?
-
-1. Slack profile picture
-1. If you want to get fancywith color palettes, use the [`viridis` package](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html){target="_blank"}
-
+* If you want to get fancywith color palettes, use the [`viridis` package](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html){target="_blank"}
+* scale_color_manual() or scale_fill_manual()
 
 
 ## Today's topics/activities
@@ -135,6 +130,7 @@ ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
 -->
 
 
+
 # Lec 09: Fri 9/27 {#Lec09}
 
 ## Announcements
@@ -174,12 +170,12 @@ Based on these 3 piecharts, answer the following questions:
 1. Did candidate 3 do better at time point B or time point C?
 1. Who gained more support between time point A and time point B, candidate 2 or candidate 4?
 
-<!--
+
 Compare that to using barplots. Which do you prefer?
 
 ![](static/images/barplots.png){ width=600px }
 
--->
+
 
 
 ### 3. In-class exercise
