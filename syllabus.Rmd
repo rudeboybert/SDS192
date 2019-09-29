@@ -127,7 +127,7 @@ All due dates can be found on the [main page](index.html){target="_blank"} of th
 
 ## Midterms 35%
 
-There will be two midterms during the semester. You'll take these midterms in Seelye Self-Scheduled Exam center between Friday at 5pm and Sunday at 10pm. Instructions on taking exams for [Smithies](https://sophia.smith.edu/edtech/documentation/print-an-exam-from-the-direct-to-queue-application/){target="_blank"} and [Five College Students](https://sophia.smith.edu/edtech/documentation/special-instructions-for-five-college-and-high-school-students-using-direct-to-queue-exam-printing/){target="_blank"}.
+There will be two midterms during the semester. You'll take these midterms in Seelye Self-Scheduled Exam center between Friday at 5pm and Sunday at 11:55pm. Instructions on taking exams for [Smithies](https://sophia.smith.edu/edtech/documentation/print-an-exam-from-the-direct-to-queue-application/){target="_blank"} and [Five College Students](https://sophia.smith.edu/edtech/documentation/special-instructions-for-five-college-and-high-school-students-using-direct-to-queue-exam-printing/){target="_blank"}.
 
 * Midterm I: Data visualization
 * Midterm II: Data wrangling

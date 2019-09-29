@@ -31,6 +31,8 @@ navbar:
     href: PS.html
   - text: Projects
     href: projects.html
+  - text: Midterms
+    href: midterms.html
   - text: Syllabus
     href: syllabus.html
 #  - icon: fa-github fa-lg

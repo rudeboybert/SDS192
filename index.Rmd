@@ -78,31 +78,82 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 <!--
-# Lec 10: Mon 9/30 {#Lec10}
+# Lec 12: Wed 10/4 {#Lec11}
 
 ## Announcements
 
-* How to run all code in R Markdown
-* From last readings, while tibble() and not data.frame()?
-* If you want to get fancywith color palettes, use the [`viridis` package](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html){target="_blank"}
-* scale_color_manual() or scale_fill_manual()
+* 
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Recap of barplots
-
+* Recap of Lec11
+*
+ 
 
 ### 2. In-class exercise
 
-* Go over ModernDive 2.9
-* In particular in Section 2.9.3, open the `ggplot2` cheatsheet in RStudio and go over the different `geom` types
-* Experiment with palettes in [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}:
-    1. Copy and paste the code below into your classnotes
-    1. Change both the color of the scatterplot points and the fill of the bars in the barplot by changing the `palette` argument in `scale_color_brewer()` and `scale_fill_brewer()` from `"Set1"` to something else
-    1. Play around with different color palettes
+* 
+
+
+
+***
+
+
+
+# Lec 11: Wed 10/2 {#Lec11}
+
+## Announcements
+
+* 
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of Lec10
+*
+ 
+
+### 2. In-class exercise
+
+* Go over ModernDive 5-5.1.1
+
+
+
+***
+
+
+
+-->
+# Lec 10: Mon 9/30 {#Lec10}
+
+## Announcements
+
+* [Midterm I](midterms.html#midtermI) info posted
+* [Mini-Project 1](projects.html#MP1) info posted
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of Lec09:
+    + Color palettes from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}
+    + You can also download color palettes in R packages, like the [`viridis` package](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html){target="_blank"}
+* What are `tibble`s?
+* Recap of "five named graphs"
+ 
+
+### 2. In-class exercise
+
+* Go over ModernDive 2.9. In particular in Section 2.9.3, open the `ggplot2` cheatsheet in RStudio and read over the different `geom` types
+* Changing default `color` and `fill` color aesthetics: 
+    1. Copy and paste the code below into your `classnotes.Rmd` file
+    1. Change both the color of the scatterplot points and the fill of the bars. You can do this by selecting a palette from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"} or by setting them manually
 
 ```{r, eval=FALSE}
 library(ggplot2)
@@ -110,7 +161,7 @@ library(dplyr)
 library(nycflights13)
 library(gapminder)
 
-# 1. Recreate plot from PS02, but change default "color" of points:
+# 1. Recreate plot from PS02, but change default "color" palette of points:
 gapminder_2007 <- gapminder %>% 
   filter(year == 2007)
 ggplot(data = gapminder_2007, 
@@ -118,16 +169,27 @@ ggplot(data = gapminder_2007,
   geom_point() +
   scale_color_brewer(palette = "Set1")
 
-# 1. Recreate Figure 2.26, but change default "fill" color of bars:
-ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
-  geom_bar(position = position_dodge(preserve = "single")) +
+# 2. Recreate Figure 2.26 and "save it" in fig_2_26. That way you don't need to
+# retype ggplot() code more than once.
+fig_2_26 <- ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
+  geom_bar(position = position_dodge(preserve = "single")) 
+fig_2_26
+
+# 2.a) Change default "fill" color of bars by adding a palette layer:
+fig_2_26 +
   scale_fill_brewer(palette = "Set1")
+
+# 2.b) Change default "fill" color of bars by manually changing colors in a layer:
+fig_2_26  +
+  scale_fill_manual(values = c("darkorange", "forestgreen", "navyblue"))
+
+# 2.c) Soooooo many choices...
+colors()
 ```
 
 
 
 ***
--->
 
 
 
