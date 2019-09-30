@@ -144,7 +144,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 * Recap of Lec09:
     + Color palettes from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}
     + You can also download color palettes in R packages, like the [`viridis` package](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html){target="_blank"}
-* What are `tibble`s?
+* Student question: What is a `tibble`?
 * Recap of "five named graphs"
  
 
