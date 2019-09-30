@@ -83,7 +83,7 @@ Here is the code in the screencast:
 ## Step 2: Submit
 
 1. Everyone: Submit the following three files on Moodle:
-    a) The `.ics` calendar file with your partner's calendar data.
+    a) The `.ics` calendar file with your partner's calendar data. **Added 9/30:** You should both be logging calendar data until Wed 10/9.
     a) The `.Rmd` R Markdown file analyzing your partner's calendar data.
     a) The `.html` output file
 1. Everyone: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdINjxeoi0bCsicx8SfcLkjV2V0j4XgMB959oQ5q2GVIhthjg/viewform){target="_blank"}
