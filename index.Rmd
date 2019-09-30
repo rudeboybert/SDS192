@@ -141,9 +141,10 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 1. Chalk talk
 
-* Recap of Lec09:
-    + Color palettes from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}
+* Recap of Lec09: Color palettes from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}
+<!--
     + You can also download color palettes in R packages, like the [`viridis` package](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html){target="_blank"}
+-->
 * Student question: What is a `tibble`?
 * Recap of "five named graphs": ModernDive Table 2.4
  
@@ -169,18 +170,16 @@ ggplot(data = gapminder_2007,
   geom_point() +
   scale_color_brewer(palette = "Set1")
 
-# 2. Recreate Figure 2.26 and "save it" in fig_2_26. That way you don't need to
-# retype ggplot() code more than once.
-fig_2_26 <- ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
-  geom_bar(position = position_dodge(preserve = "single")) 
-fig_2_26
-
-# 2.a) Change default "fill" color of bars by adding a palette layer:
-fig_2_26 +
+# 2.a) Recreate Figure 2.26 but change default "fill" color of bars by adding a 
+# palette layer:
+ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
+  geom_bar(position = position_dodge(preserve = "single")) +
   scale_fill_brewer(palette = "Set1")
 
-# 2.b) Change default "fill" color of bars by manually changing colors in a layer:
-fig_2_26  +
+# 2.b) Recreate Figure 2.26 but change default "fill" color of bars by manually 
+# changing colors in a layer:
+ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
+  geom_bar(position = position_dodge(preserve = "single")) +
   scale_fill_manual(values = c("darkorange", "forestgreen", "navyblue"))
 
 # 2.c) Soooooo many choices...

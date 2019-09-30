@@ -546,11 +546,9 @@ h1{font-weight: 400;}
 <div id="chalk-talk" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
-<li>Recap of Lec09:
-<ul>
-<li>Color palettes from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a></li>
-<li>You can also download color palettes in R packages, like the <a href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html" target="_blank"><code>viridis</code> package</a></li>
-</ul></li>
+<li>Recap of Lec09: Color palettes from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a> <!--
+    + You can also download color palettes in R packages, like the [`viridis` package](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html){target="_blank"}
+--></li>
 <li>Student question: What is a <code>tibble</code>?</li>
 <li>Recap of “five named graphs”: ModernDive Table 2.4</li>
 </ul>
@@ -578,22 +576,20 @@ h1{font-weight: 400;}
 <a class="sourceLine" id="cb1-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb1-12" data-line-number="12"><span class="st">  </span><span class="kw">scale_color_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
 <a class="sourceLine" id="cb1-13" data-line-number="13"></a>
-<a class="sourceLine" id="cb1-14" data-line-number="14"><span class="co"># 2. Recreate Figure 2.26 and &quot;save it&quot; in fig_2_26. That way you don&#39;t need to</span></a>
-<a class="sourceLine" id="cb1-15" data-line-number="15"><span class="co"># retype ggplot() code more than once.</span></a>
-<a class="sourceLine" id="cb1-16" data-line-number="16">fig_<span class="dv">2</span>_<span class="dv">26</span> &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) </a>
-<a class="sourceLine" id="cb1-18" data-line-number="18">fig_<span class="dv">2</span>_<span class="dv">26</span></a>
+<a class="sourceLine" id="cb1-14" data-line-number="14"><span class="co"># 2.a) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by adding a </span></a>
+<a class="sourceLine" id="cb1-15" data-line-number="15"><span class="co"># palette layer:</span></a>
+<a class="sourceLine" id="cb1-16" data-line-number="16"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-18" data-line-number="18"><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
 <a class="sourceLine" id="cb1-19" data-line-number="19"></a>
-<a class="sourceLine" id="cb1-20" data-line-number="20"><span class="co"># 2.a) Change default &quot;fill&quot; color of bars by adding a palette layer:</span></a>
-<a class="sourceLine" id="cb1-21" data-line-number="21">fig_<span class="dv">2</span>_<span class="dv">26</span> <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-22" data-line-number="22"><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
-<a class="sourceLine" id="cb1-23" data-line-number="23"></a>
-<a class="sourceLine" id="cb1-24" data-line-number="24"><span class="co"># 2.b) Change default &quot;fill&quot; color of bars by manually changing colors in a layer:</span></a>
-<a class="sourceLine" id="cb1-25" data-line-number="25">fig_<span class="dv">2</span>_<span class="dv">26</span>  <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-26" data-line-number="26"><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;darkorange&quot;</span>, <span class="st">&quot;forestgreen&quot;</span>, <span class="st">&quot;navyblue&quot;</span>))</a>
-<a class="sourceLine" id="cb1-27" data-line-number="27"></a>
-<a class="sourceLine" id="cb1-28" data-line-number="28"><span class="co"># 2.c) Soooooo many choices...</span></a>
-<a class="sourceLine" id="cb1-29" data-line-number="29"><span class="kw">colors</span>()</a></code></pre></div>
+<a class="sourceLine" id="cb1-20" data-line-number="20"><span class="co"># 2.b) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></a>
+<a class="sourceLine" id="cb1-21" data-line-number="21"><span class="co"># changing colors in a layer:</span></a>
+<a class="sourceLine" id="cb1-22" data-line-number="22"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-23" data-line-number="23"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-24" data-line-number="24"><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;darkorange&quot;</span>, <span class="st">&quot;forestgreen&quot;</span>, <span class="st">&quot;navyblue&quot;</span>))</a>
+<a class="sourceLine" id="cb1-25" data-line-number="25"></a>
+<a class="sourceLine" id="cb1-26" data-line-number="26"><span class="co"># 2.c) Soooooo many choices...</span></a>
+<a class="sourceLine" id="cb1-27" data-line-number="27"><span class="kw">colors</span>()</a></code></pre></div>
 <hr />
 </div>
 </div>
