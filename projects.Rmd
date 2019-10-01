@@ -63,11 +63,6 @@ The following screencast illustrates Steps 2 and 3 above:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vLlR4lBWAoc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<!--
-Here is the code in the screencast:
-<script src="https://gist.github.com/rudeboybert/ebf39a24a03216be55cb20d9c475f57d.js"></script>
--->
-
 
 ## Step 0: Identify groups
 
