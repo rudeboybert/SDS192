@@ -163,7 +163,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -452,7 +451,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS 192: Introduction to Data Science</h1>
 <h4 class="author">Albert Y. Kim</h4>
-<h4 class="date">Last updated on 2019-10-01</h4>
+<h4 class="date">Last updated on 2019-10-02</h4>
 
 </div>
 
@@ -518,9 +517,49 @@ h1{font-weight: 400;}
 <div id="chalk-talk" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
-<li>Trend lines</li>
 <li>Go over Midterm I</li>
+<li>Trend lines. Two types (among many):
+<ul>
+<li>Linear regression</li>
+<li>LOESS smoother</li>
+</ul></li>
 </ul>
+<!--    
+![](static/images/loess.gif)
+
+Copy this to your `classnotes.Rmd`
+
+
+```r
+library(ggplot2)
+library(dplyr)
+library(gapminder)
+
+# 1. Recreate plot from PS02 but with no color:
+gapminder_2007 <- gapminder %>% 
+  filter(year == 2007)
+
+# 1.a) Add LOESS smoother layer with geom_smooth()
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth()
+
+# 1.b) Remove standard error bars
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth(se = FALSE)
+
+# 1.c) Change span of "smoothing" window
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth(se = FALSE, span = 0.25)
+
+# 1.d) Force line to be straight. i.e. linear regression
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+```
+-->
 </div>
 <div id="in-class-exercise" class="section level3">
 <h3>2. In-class exercise</h3>
@@ -623,7 +662,7 @@ h1{font-weight: 400;}
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(scales)</a>
 <a class="sourceLine" id="cb2-2" data-line-number="2">number_of_colors &lt;-<span class="st"> </span><span class="dv">3</span></a>
 <a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">show_col</span>(<span class="kw">hue_pal</span>()(number_of_colors))</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="768" /></p>
 </div>
 <div id="exercise-on-pie-charts-vs-barplots" class="section level3">
 <h3>2. Exercise on pie charts vs barplots</h3>
@@ -759,7 +798,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </tbody>
 </table>
 <p>Let’s compare the points and the corresponding boxplot side-by-side with the values on the <span class="math inline">\(y\)</span>-axis matching:</p>
-<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="768" /></p>
 </div>
 <div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>

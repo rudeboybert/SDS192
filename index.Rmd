@@ -115,9 +115,47 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 1. Chalk talk
 
-* Trend lines
 * Go over Midterm I
- 
+* Trend lines. Two types (among many):
+    + Linear regression
+    + LOESS smoother
+
+<!--    
+![](static/images/loess.gif)
+
+Copy this to your `classnotes.Rmd`
+
+```{r, eval=FALSE}
+library(ggplot2)
+library(dplyr)
+library(gapminder)
+
+# 1. Recreate plot from PS02 but with no color:
+gapminder_2007 <- gapminder %>% 
+  filter(year == 2007)
+
+# 1.a) Add LOESS smoother layer with geom_smooth()
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth()
+
+# 1.b) Remove standard error bars
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth(se = FALSE)
+
+# 1.c) Change span of "smoothing" window
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth(se = FALSE, span = 0.25)
+
+# 1.d) Force line to be straight. i.e. linear regression
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+```
+-->
+
 
 ### 2. In-class exercise
 
