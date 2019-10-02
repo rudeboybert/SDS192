@@ -78,49 +78,28 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 <!--
-# Lec 12: Wed 10/4 {#Lec11}
-
-## Announcements
-
-* 
-
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-* Recap of Lec11
-*
- 
-
-### 2. In-class exercise
-
-* 
-
-
-
-***
 -->
 
 
-
-# Lec 11: Wed 10/2 {#Lec11}
+# Lec 12: Fri 10/4 {#Lec11}
 
 ## Announcements
 
-* 
+* SDS talk on Monday 10/21 at 5pm by Yeshimabeith Milner from [Data for Black Lives](http://d4bl.org/){target="_blank"}. 
 
+<center>
+![](static/images/announcements/Milner_wide.png){ width=600px }
+</center>
+<br>
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Go over Midterm I
 * Trend lines. Two types (among many):
     + Linear regression
     + LOESS smoother
 
-   
 ![](static/images/loess.gif)
 
 Copy this to your `classnotes.Rmd`
@@ -159,6 +138,29 @@ ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = p
 ### 2. In-class exercise
 
 * Go over ModernDive 5-5.1.1
+ 
+
+
+
+
+***
+
+
+
+
+# Lec 11: Wed 10/2 {#Lec11}
+
+## Announcements
+
+* None
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Go over Midterm I
+
 
 
 
