@@ -120,7 +120,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
     + Linear regression
     + LOESS smoother
 
-<!--    
+   
 ![](static/images/loess.gif)
 
 Copy this to your `classnotes.Rmd`
@@ -154,7 +154,6 @@ ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = p
   geom_point() +
   geom_smooth(method = "lm", se = FALSE)
 ```
--->
 
 
 ### 2. In-class exercise

@@ -524,42 +524,35 @@ h1{font-weight: 400;}
 <li>LOESS smoother</li>
 </ul></li>
 </ul>
-<!--    
-![](static/images/loess.gif)
-
-Copy this to your `classnotes.Rmd`
-
-
-```r
-library(ggplot2)
-library(dplyr)
-library(gapminder)
-
-# 1. Recreate plot from PS02 but with no color:
-gapminder_2007 <- gapminder %>% 
-  filter(year == 2007)
-
-# 1.a) Add LOESS smoother layer with geom_smooth()
-ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
-  geom_point() +
-  geom_smooth()
-
-# 1.b) Remove standard error bars
-ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
-  geom_point() +
-  geom_smooth(se = FALSE)
-
-# 1.c) Change span of "smoothing" window
-ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
-  geom_point() +
-  geom_smooth(se = FALSE, span = 0.25)
-
-# 1.d) Force line to be straight. i.e. linear regression
-ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
-  geom_point() +
-  geom_smooth(method = "lm", se = FALSE)
-```
--->
+<p><img src="static/images/loess.gif" /></p>
+<p>Copy this to your <code>classnotes.Rmd</code></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">library</span>(gapminder)</a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="co"># 1. Recreate plot from PS02 but with no color:</span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
+<a class="sourceLine" id="cb1-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="co"># 1.a) Add LOESS smoother layer with geom_smooth()</span></a>
+<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="st">  </span><span class="kw">geom_smooth</span>()</a>
+<a class="sourceLine" id="cb1-13" data-line-number="13"></a>
+<a class="sourceLine" id="cb1-14" data-line-number="14"><span class="co"># 1.b) Remove standard error bars</span></a>
+<a class="sourceLine" id="cb1-15" data-line-number="15"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-16" data-line-number="16"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>)</a>
+<a class="sourceLine" id="cb1-18" data-line-number="18"></a>
+<a class="sourceLine" id="cb1-19" data-line-number="19"><span class="co"># 1.c) Change span of &quot;smoothing&quot; window</span></a>
+<a class="sourceLine" id="cb1-20" data-line-number="20"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-21" data-line-number="21"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-22" data-line-number="22"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>, <span class="dt">span =</span> <span class="fl">0.25</span>)</a>
+<a class="sourceLine" id="cb1-23" data-line-number="23"></a>
+<a class="sourceLine" id="cb1-24" data-line-number="24"><span class="co"># 1.d) Force line to be straight. i.e. linear regression</span></a>
+<a class="sourceLine" id="cb1-25" data-line-number="25"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-26" data-line-number="26"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-27" data-line-number="27"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
 </div>
 <div id="in-class-exercise" class="section level3">
 <h3>2. In-class exercise</h3>
@@ -601,33 +594,33 @@ ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = p
 <li>Change both the color of the scatterplot points and the fill of the bars. You can do this by selecting a palette from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a> or by setting them manually</li>
 </ol></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">library</span>(nycflights13)</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="kw">library</span>(gapminder)</a>
-<a class="sourceLine" id="cb1-5" data-line-number="5"></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="co"># 1. Recreate plot from PS02, but change default &quot;color&quot; palette of points:</span></a>
-<a class="sourceLine" id="cb1-7" data-line-number="7">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
-<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, </a>
-<a class="sourceLine" id="cb1-10" data-line-number="10">       <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop, <span class="dt">color =</span> continent)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="st">  </span><span class="kw">scale_color_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
-<a class="sourceLine" id="cb1-13" data-line-number="13"></a>
-<a class="sourceLine" id="cb1-14" data-line-number="14"><span class="co"># 2.a) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by adding a </span></a>
-<a class="sourceLine" id="cb1-15" data-line-number="15"><span class="co"># palette layer:</span></a>
-<a class="sourceLine" id="cb1-16" data-line-number="16"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-18" data-line-number="18"><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
-<a class="sourceLine" id="cb1-19" data-line-number="19"></a>
-<a class="sourceLine" id="cb1-20" data-line-number="20"><span class="co"># 2.b) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></a>
-<a class="sourceLine" id="cb1-21" data-line-number="21"><span class="co"># changing colors in a layer:</span></a>
-<a class="sourceLine" id="cb1-22" data-line-number="22"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-23" data-line-number="23"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-24" data-line-number="24"><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;darkorange&quot;</span>, <span class="st">&quot;forestgreen&quot;</span>, <span class="st">&quot;navyblue&quot;</span>))</a>
-<a class="sourceLine" id="cb1-25" data-line-number="25"></a>
-<a class="sourceLine" id="cb1-26" data-line-number="26"><span class="co"># 2.c) Soooooo many choices...</span></a>
-<a class="sourceLine" id="cb1-27" data-line-number="27"><span class="kw">colors</span>()</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">library</span>(nycflights13)</a>
+<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="kw">library</span>(gapminder)</a>
+<a class="sourceLine" id="cb2-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="co"># 1. Recreate plot from PS02, but change default &quot;color&quot; palette of points:</span></a>
+<a class="sourceLine" id="cb2-7" data-line-number="7">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
+<a class="sourceLine" id="cb2-9" data-line-number="9"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, </a>
+<a class="sourceLine" id="cb2-10" data-line-number="10">       <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop, <span class="dt">color =</span> continent)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-12" data-line-number="12"><span class="st">  </span><span class="kw">scale_color_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
+<a class="sourceLine" id="cb2-13" data-line-number="13"></a>
+<a class="sourceLine" id="cb2-14" data-line-number="14"><span class="co"># 2.a) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by adding a </span></a>
+<a class="sourceLine" id="cb2-15" data-line-number="15"><span class="co"># palette layer:</span></a>
+<a class="sourceLine" id="cb2-16" data-line-number="16"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-18" data-line-number="18"><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
+<a class="sourceLine" id="cb2-19" data-line-number="19"></a>
+<a class="sourceLine" id="cb2-20" data-line-number="20"><span class="co"># 2.b) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></a>
+<a class="sourceLine" id="cb2-21" data-line-number="21"><span class="co"># changing colors in a layer:</span></a>
+<a class="sourceLine" id="cb2-22" data-line-number="22"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-23" data-line-number="23"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-24" data-line-number="24"><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;darkorange&quot;</span>, <span class="st">&quot;forestgreen&quot;</span>, <span class="st">&quot;navyblue&quot;</span>))</a>
+<a class="sourceLine" id="cb2-25" data-line-number="25"></a>
+<a class="sourceLine" id="cb2-26" data-line-number="26"><span class="co"># 2.c) Soooooo many choices...</span></a>
+<a class="sourceLine" id="cb2-27" data-line-number="27"><span class="kw">colors</span>()</a></code></pre></div>
 <hr />
 </div>
 </div>
@@ -659,9 +652,9 @@ ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = p
 <li>Get the <a href="https://www.color-hex.com/color/f8766d" target="_blank">color hex codes</a> of <code>ggplot2</code> default color palette:</li>
 </ol></li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(scales)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">number_of_colors &lt;-<span class="st"> </span><span class="dv">3</span></a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">show_col</span>(<span class="kw">hue_pal</span>()(number_of_colors))</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">library</span>(scales)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">number_of_colors &lt;-<span class="st"> </span><span class="dv">3</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw">show_col</span>(<span class="kw">hue_pal</span>()(number_of_colors))</a></code></pre></div>
 <p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="768" /></p>
 </div>
 <div id="exercise-on-pie-charts-vs-barplots" class="section level3">
