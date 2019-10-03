@@ -85,7 +85,8 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-* SDS talk on Monday 10/21 at 5pm by Yeshimabeith Milner, founder of [Data for Black Lives](http://d4bl.org/){target="_blank"}. Shout out to Smithie [Laneé Jung](https://twitter.com/laneejung){target="_blank"} for her large role in making this happen.
+* Link to print exam in the Seelye basement lab is posted on Moodle.
+* SDS talk on Monday 10/21 at 5pm by Yeshimabeith Milner, founder of [Data for Black Lives](http://d4bl.org/){target="_blank"}. Shout out to Smithie [Laneé Jung](https://twitter.com/laneejung){target="_blank"} for her important role in making this happen.
 
 <center>
 ![](static/images/announcements/Milner_wide.png){ width=750px }
