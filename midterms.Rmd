@@ -47,9 +47,10 @@ h1{font-weight: 400;}
 * Notes for during exam:
     + Closed-book, no internet, and individually completed.
     + You will be given 140 mins to complete it (including transit time to writing area), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.
+    + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to a 50% penalty and an honor board case.**
     + In case of potential errors or ambiguity on the exam, please note them, state your assumptions, and use your best judgement.
 * Notes for after exam:
-    + Be sure to timestamp your exam before returning. **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to a 50% penalty and an honor board case.**
+    + Be sure to timestamp your exam before returning. 
     + Insert exam in appropriately labeled box in hallway.
 
 
