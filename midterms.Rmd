@@ -38,11 +38,21 @@ h1{font-weight: 400;}
 
 * **Friday 10/4 5pm through Sunday 10/6 11:55pm**. You must submit your midterm no later than Sunday at 11:55pm.
 * Instructions on taking exams for [Smithies](https://sophia.smith.edu/edtech/documentation/print-an-exam-from-the-direct-to-queue-application/){target="_blank"} and [Five College Students](https://sophia.smith.edu/edtech/documentation/special-instructions-for-five-college-and-high-school-students-using-direct-to-queue-exam-printing/){target="_blank"}. **Print the exam in color.**
-* Link to print exam in the Seelye basement lab is posted on Moodle.
-* You will be given 140 mins to complete it (including transit time to writing area), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.
-* **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to a 50% penalty and an honor board case.**
-* Closed-book, no internet, and individually completed.
-* Bring colored pencils/pens
+
+* Notes for before exam:
+    + Link to print exam in the Seelye basement lab is posted on Moodle.
+    + Bring colored pencils/pens.
+    + You do not need a calculator.
+    + Print exam in color.
+* Notes for during exam:
+    + Closed-book, no internet, and individually completed.
+    + You will be given 140 mins to complete it (including transit time to writing area), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.
+    + In case of potential errors or ambiguity on the exam, please note them, state your assumptions, and use your best judgement.
+* Notes for after exam:
+    + Be sure to timestamp your exam before returning. **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to a 50% penalty and an honor board case.**
+    + Insert exam in appropriately labeled box in hallway.
+
+
 
 
 ## Topics
