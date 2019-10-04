@@ -82,7 +82,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-
+* Explain `span` argument
 
 -->
 
@@ -113,7 +113,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
     1. Let's keep things simple and delete everything after line 38
     1. Save it as `loess.Rmd`
     1. Click "Run Document"
-    1. See all possible input methods by looking at cheatsheet. Go to RStudio menu bar -> Help -> Cheatsheets -> Web Applications with Shiny -> Look at right-side of first page
+    1. See all possible input methods by looking at cheatsheet. Go to RStudio menu bar -> Help -> Cheatsheets -> Web Applications with Shiny -> Look at right-side of first page.
 
 
 ### 2. In-class exercise
@@ -150,7 +150,16 @@ ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = p
   geom_smooth(method = "lm", se = FALSE)
 ```
 
-Second, you're going to change the code in `loess.Rmd` to make an interactive version of plot 1.c) above
+Second, in `loess.Rmd` you're change only the code within the code
+
+```
+renderPlot({ 
+    
+    
+})
+```
+
+to make an interactive version of plot 1.c) above.
 
 
 
