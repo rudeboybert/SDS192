@@ -77,14 +77,53 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
-<!--
+
 # Lec 13: Mon 10/7 {#Lec13}
 
 ## Announcements
 
-* Explain `span` argument
+* No talking about midterm until Wednesday's lecture please
 
--->
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of Lec09: `span` argument from `geom_smooth()`
+* Pipe operator
+* Example:
+
+```{r, eval=FALSE}
+# Replace "192.ics" with the name of your calendar file:
+calendar_data <- "192.ics" %>% 
+  # Use ical package to import into R and then convert to "tibble" data frame format:
+  ical_parse_df() %>% 
+  as_tibble() %>% 
+  # Use lubridate packge to wrangle dates and times. We'll do this later this semester:
+  mutate(
+    start_datetime = with_tz(start, tzone = "America/New_York"),
+    end_datetime = with_tz(end, tzone = "America/New_York"),
+    minutes = end_datetime - start_datetime,
+    date = floor_date(start_datetime, unit = "day")
+  ) %>%
+  # Make calendar entry summary all lowercase:
+  mutate(summary = tolower(summary)) %>% 
+  # Do data wrangling to compute number of minutes and hours:
+  group_by(date, summary) %>%
+  summarize(minutes = sum(minutes) %>% as.numeric()) %>%
+  mutate(hours = minutes/60)
+```
+
+
+### 2. In-class exercise
+
+* Go over ModernDive 3 - 3.1
+* Work on MP1
+
+
+
+***
+
 
 
 # Lec 12: Fri 10/4 {#Lec12}
@@ -163,11 +202,7 @@ to make an interactive version of plot 1.c) above.
 
 
 
-
-
-
 ***
-
 
 
 
