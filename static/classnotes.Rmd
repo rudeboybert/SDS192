@@ -1,0 +1,77 @@
+---
+title: "Untitled"
+author: "Albert Y. Kim"
+date: "9/30/2019"
+output: html_document
+---
+
+## R Markdown
+
+
+```{r cars}
+library(ggplot2)
+library(dplyr)
+library(nycflights13)
+library(gapminder)
+
+# 1. Recreate plot from PS02, but change default "color" palette of points:
+gapminder_2007 <- gapminder %>% 
+  filter(year == 2007)
+ggplot(data = gapminder_2007, 
+       mapping = aes(x = gdpPercap, y = lifeExp, size = pop, color = continent)) +
+  geom_point() +
+  scale_color_brewer(palette = "Dark2")
+
+
+
+
+
+# 2. Recreate Figure 2.26 and "save it" in fig_2_26. That way you don't need to
+# retype ggplot() code more than once.
+fig_2_26 <- ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
+  geom_bar(position = position_dodge(preserve = "single")) 
+fig_2_26
+
+# 2.a) Change default "fill" color of bars by adding a palette layer:
+fig_2_26 +
+  scale_fill_brewer(palette = "Set1")
+
+# 2.b) Change default "fill" color of bars by manually changing colors in a layer:
+fig_2_26  +
+  scale_fill_manual(values = c("darkorange", "forestgreen", "navyblue"))
+
+# 2.c) Soooooo many choices...
+colors()
+```
+
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(gapminder)
+
+# 1. Recreate plot from PS02 but with no color:
+gapminder_2007 <- gapminder %>% 
+  filter(year == 2007)
+
+# 1.a) Add LOESS smoother layer with geom_smooth()
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth()
+
+# 1.b) Remove standard error bars
+ggplot(data = gapminder_2007, mxapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth(se = FALSE)
+
+# 1.c) Change span of "smoothing" window by changing span = value. Try different values.
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth(se = TRUE, span = 1.2)
+
+# 1.d) Force line to be straight. i.e. linear regression
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+```
+

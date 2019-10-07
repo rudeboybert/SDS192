@@ -78,6 +78,56 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 
+# Lec 14: Wed 10/9 {#Lec14}
+
+## Announcements
+
+*
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Pipe operator `%>%`
+* `filter()` rows that meet a certain criteria
+
+Example:
+
+```{r, eval=FALSE}
+calendar_data <- "192.ics" %>% 
+  # Use ical package to import into R and then convert to "tibble" data frame format:
+  ical_parse_df() %>% 
+  as_tibble() %>% 
+  # Use lubridate packge to wrangle dates and times. We'll do this later this semester:
+  mutate(
+    start_datetime = with_tz(start, tzone = "America/New_York"),
+    end_datetime = with_tz(end, tzone = "America/New_York"),
+    minutes = end_datetime - start_datetime,
+    date = floor_date(start_datetime, unit = "day")
+  ) %>%
+  # Make calendar entry summary all lowercase:
+  mutate(summary = tolower(summary)) %>% 
+  # Do data wrangling to compute number of minutes and hours:
+  group_by(date, summary) %>%
+  summarize(minutes = sum(minutes) %>% as.numeric()) %>%
+  mutate(hours = minutes/60) %>% 
+  #
+  # I added this. Pick only rows where date is later than
+  # 2019-09-01
+  #
+  filter(date > "2019-09-01")
+```
+
+
+### 2. In-class exercise
+
+* Go over ModernDive 3 - 3.3
+
+***
+
+
+
 # Lec 13: Mon 10/7 {#Lec13}
 
 ## Announcements
@@ -99,32 +149,10 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
     + `span` argument from `geom_smooth()`
     + What is `se = FALSE` mean
 * What is a "minimally viable product"?
-* Pipe operator `%>%`. Example:
-
-```{r, eval=FALSE}
-calendar_data <- "192.ics" %>% 
-  # Use ical package to import into R and then convert to "tibble" data frame format:
-  ical_parse_df() %>% 
-  as_tibble() %>% 
-  # Use lubridate packge to wrangle dates and times. We'll do this later this semester:
-  mutate(
-    start_datetime = with_tz(start, tzone = "America/New_York"),
-    end_datetime = with_tz(end, tzone = "America/New_York"),
-    minutes = end_datetime - start_datetime,
-    date = floor_date(start_datetime, unit = "day")
-  ) %>%
-  # Make calendar entry summary all lowercase:
-  mutate(summary = tolower(summary)) %>% 
-  # Do data wrangling to compute number of minutes and hours:
-  group_by(date, summary) %>%
-  summarize(minutes = sum(minutes) %>% as.numeric()) %>%
-  mutate(hours = minutes/60)
-```
 
 
 ### 2. In-class exercise
 
-* Go over ModernDive 3 - 3.1
 * Work on MP1
 
 

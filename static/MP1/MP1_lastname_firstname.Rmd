@@ -1,0 +1,96 @@
+---
+title: "MP1"
+author: "WRITE YOUR NAME HERE"
+date: "Friday, October 11th, 2019"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    toc_depth: 2
+    theme: cosmo
+    highlight: tango
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+# Do not edit this chunk unless you know what you are doing
+knitr::opts_chunk$set(
+  echo = TRUE, message = FALSE, fig.width = 16/2, fig.height = 9/2
+  )
+```
+
+```{r, warning=FALSE}
+# Load all packages here
+library(ggplot2)
+library(dplyr)
+library(lubridate)
+library(ical)
+```
+
+
+# Setup
+
+## Administrative info:
+
+* Section number:
+* Group number:
+* My partner:
+* My partner's question about how they use their time: 
+
+
+## Importing the calendar
+
+You shouldn't need to modify the following data wrangling code:
+
+```{r, echo=FALSE}
+# Replace "192.ics" with the name of your calendar file:
+calendar_data <- "~/Documents/2. Data Science/SDS192/static/MP1/192.ics" %>% 
+  # Use ical package to import into R and then convert to "tibble" data frame format:
+  ical_parse_df() %>% 
+  as_tibble() %>% 
+  # Use lubridate packge to wrangle dates and times. We'll do this later this semester:
+  mutate(
+    start_datetime = with_tz(start, tzone = "America/New_York"),
+    end_datetime = with_tz(end, tzone = "America/New_York"),
+    minutes = end_datetime - start_datetime,
+    date = floor_date(start_datetime, unit = "day")
+  ) %>%
+  # Make calendar entry summary all lowercase:
+  mutate(summary = tolower(summary)) %>% 
+  # Do data wrangling to compute number of minutes and hours:
+  group_by(date, summary) %>%
+  summarize(minutes = sum(minutes) %>% as.numeric()) %>%
+  mutate(hours = minutes/60)
+```
+
+Make sure you data looks good by looking at raw values
+
+```{r}
+glimpse(calendar_data)
+```
+
+```{r, eval=FALSE}
+# Note by setting eval=FALSE, R Markdown will not "evaluate" this code chunk and 
+# ignore it.
+View(calendar_data)
+```
+
+
+# Analysis
+
+Hello world.
+
+```{r}
+# Write your code to create data visualization #1:
+
+```
+
+Hello world.
+
+```{r}
+# Write your code to create data visualization #2:
+
+```
+
+Hello world.
+
