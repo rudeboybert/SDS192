@@ -451,7 +451,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS 192: Introduction to Data Science</h1>
 <h4 class="author">Albert Y. Kim</h4>
-<h4 class="date">Last updated on 2019-10-04</h4>
+<h4 class="date">Last updated on 2019-10-07</h4>
 
 </div>
 
@@ -479,18 +479,66 @@ h1{font-weight: 400;}
 {target="_blank"}
 -->
 <hr />
-<!--
-# Lec 13: Mon 10/7 {#Lec13}
-
-## Announcements
-
-* Explain `span` argument
-
--->
+</div>
+<div id="Lec13" class="section level1">
+<h1>Lec 13: Mon 10/7</h1>
+<div id="announcements" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>No talking about midterm until Wednesday’s lecture please.</li>
+<li>Sit next to your MP1 partner for today’s lecture.</li>
+<li>If you’re curious about my experiences in grad school, working at Google, switching to academia, and advice for aspiring data scientists, check out my appearance on episode #43 of the DataBytes podcast “To Google and Back.” Also available on <a href="https://podcasts.apple.com/us/podcast/43-to-google-and-back/id1445241846?i=1000452290536" target="_blank">Apple Podcasts</a> and <a href="https://play.google.com/music/listen?u=0#/ps/Itfclix7dvr5c2kbtovrtufki2a" target="_blank">Google Play</a>.</li>
+</ul>
+<center>
+<iframe src="https://open.spotify.com/embed-podcast/episode/4SEcmLwHdJfmXaQEY7NZlV" width="70%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">
+</iframe>
+</center>
+<p><br></p>
+</div>
+<div id="todays-topicsactivities" class="section level2">
+<h2>Today’s topics/activities</h2>
+<div id="chalk-talk" class="section level3">
+<h3>1. Chalk talk</h3>
+<ul>
+<li>Recap of Lec09:
+<ul>
+<li><code>span</code> argument from <code>geom_smooth()</code></li>
+<li>What is <code>se = FALSE</code> mean</li>
+</ul></li>
+<li>What is a “minimally viable product”?</li>
+<li>Pipe operator <code>%&gt;%</code>. Example:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">calendar_data &lt;-<span class="st"> &quot;192.ics&quot;</span> <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="st">  </span><span class="co"># Use ical package to import into R and then convert to &quot;tibble&quot; data frame format:</span></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="st">  </span><span class="kw">ical_parse_df</span>() <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="st">  </span><span class="kw">as_tibble</span>() <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="st">  </span><span class="co"># Use lubridate packge to wrangle dates and times. We&#39;ll do this later this semester:</span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="st">  </span><span class="kw">mutate</span>(</a>
+<a class="sourceLine" id="cb1-7" data-line-number="7">    <span class="dt">start_datetime =</span> <span class="kw">with_tz</span>(start, <span class="dt">tzone =</span> <span class="st">&quot;America/New_York&quot;</span>),</a>
+<a class="sourceLine" id="cb1-8" data-line-number="8">    <span class="dt">end_datetime =</span> <span class="kw">with_tz</span>(end, <span class="dt">tzone =</span> <span class="st">&quot;America/New_York&quot;</span>),</a>
+<a class="sourceLine" id="cb1-9" data-line-number="9">    <span class="dt">minutes =</span> end_datetime <span class="op">-</span><span class="st"> </span>start_datetime,</a>
+<a class="sourceLine" id="cb1-10" data-line-number="10">    <span class="dt">date =</span> <span class="kw">floor_date</span>(start_datetime, <span class="dt">unit =</span> <span class="st">&quot;day&quot;</span>)</a>
+<a class="sourceLine" id="cb1-11" data-line-number="11">  ) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="st">  </span><span class="co"># Make calendar entry summary all lowercase:</span></a>
+<a class="sourceLine" id="cb1-13" data-line-number="13"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">summary =</span> <span class="kw">tolower</span>(summary)) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-14" data-line-number="14"><span class="st">  </span><span class="co"># Do data wrangling to compute number of minutes and hours:</span></a>
+<a class="sourceLine" id="cb1-15" data-line-number="15"><span class="st">  </span><span class="kw">group_by</span>(date, summary) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb1-16" data-line-number="16"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">minutes =</span> <span class="kw">sum</span>(minutes) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">as.numeric</span>()) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb1-17" data-line-number="17"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">hours =</span> minutes<span class="op">/</span><span class="dv">60</span>)</a></code></pre></div>
+</div>
+<div id="in-class-exercise" class="section level3">
+<h3>2. In-class exercise</h3>
+<ul>
+<li>Go over ModernDive 3 - 3.1</li>
+<li>Work on MP1</li>
+</ul>
+<hr />
+</div>
+</div>
 </div>
 <div id="Lec12" class="section level1">
 <h1>Lec 12: Fri 10/4</h1>
-<div id="announcements" class="section level2">
+<div id="announcements-1" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Part of class-time on Monday to work on MP1</li>
@@ -502,9 +550,9 @@ h1{font-weight: 400;}
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities" class="section level2">
+<div id="todays-topicsactivities-1" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk" class="section level3">
+<div id="chalk-talk-1" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Trend lines. Two types (among many):
@@ -523,36 +571,36 @@ h1{font-weight: 400;}
 </ol></li>
 </ul>
 </div>
-<div id="in-class-exercise" class="section level3">
+<div id="in-class-exercise-1" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>First, copy this to your <code>classnotes.Rmd</code> and go over code.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">library</span>(gapminder)</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="co"># 1. Recreate plot from PS02 but with no color:</span></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
-<a class="sourceLine" id="cb1-8" data-line-number="8"></a>
-<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="co"># 1.a) Add LOESS smoother layer with geom_smooth()</span></a>
-<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="st">  </span><span class="kw">geom_smooth</span>()</a>
-<a class="sourceLine" id="cb1-13" data-line-number="13"></a>
-<a class="sourceLine" id="cb1-14" data-line-number="14"><span class="co"># 1.b) Remove standard error bars</span></a>
-<a class="sourceLine" id="cb1-15" data-line-number="15"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-16" data-line-number="16"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb1-18" data-line-number="18"></a>
-<a class="sourceLine" id="cb1-19" data-line-number="19"><span class="co"># 1.c) Change span of &quot;smoothing&quot; window by changing span = value. Try different values.</span></a>
-<a class="sourceLine" id="cb1-20" data-line-number="20"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-21" data-line-number="21"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-22" data-line-number="22"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>, <span class="dt">span =</span> <span class="fl">0.25</span>)</a>
-<a class="sourceLine" id="cb1-23" data-line-number="23"></a>
-<a class="sourceLine" id="cb1-24" data-line-number="24"><span class="co"># 1.d) Force line to be straight. i.e. linear regression</span></a>
-<a class="sourceLine" id="cb1-25" data-line-number="25"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-26" data-line-number="26"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-27" data-line-number="27"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">library</span>(gapminder)</a>
+<a class="sourceLine" id="cb2-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="co"># 1. Recreate plot from PS02 but with no color:</span></a>
+<a class="sourceLine" id="cb2-6" data-line-number="6">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb2-7" data-line-number="7"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
+<a class="sourceLine" id="cb2-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb2-9" data-line-number="9"><span class="co"># 1.a) Add LOESS smoother layer with geom_smooth()</span></a>
+<a class="sourceLine" id="cb2-10" data-line-number="10"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-12" data-line-number="12"><span class="st">  </span><span class="kw">geom_smooth</span>()</a>
+<a class="sourceLine" id="cb2-13" data-line-number="13"></a>
+<a class="sourceLine" id="cb2-14" data-line-number="14"><span class="co"># 1.b) Remove standard error bars</span></a>
+<a class="sourceLine" id="cb2-15" data-line-number="15"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-16" data-line-number="16"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>)</a>
+<a class="sourceLine" id="cb2-18" data-line-number="18"></a>
+<a class="sourceLine" id="cb2-19" data-line-number="19"><span class="co"># 1.c) Change span of &quot;smoothing&quot; window by changing span = value. Try different values.</span></a>
+<a class="sourceLine" id="cb2-20" data-line-number="20"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-21" data-line-number="21"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-22" data-line-number="22"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>, <span class="dt">span =</span> <span class="fl">0.25</span>)</a>
+<a class="sourceLine" id="cb2-23" data-line-number="23"></a>
+<a class="sourceLine" id="cb2-24" data-line-number="24"><span class="co"># 1.d) Force line to be straight. i.e. linear regression</span></a>
+<a class="sourceLine" id="cb2-25" data-line-number="25"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-26" data-line-number="26"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-27" data-line-number="27"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
 <p>Second, in <code>loess.Rmd</code> you’re change only the code within the code</p>
 <pre><code>renderPlot({ 
     
@@ -565,15 +613,15 @@ h1{font-weight: 400;}
 </div>
 <div id="Lec11" class="section level1">
 <h1>Lec 11: Wed 10/2</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>None</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-1" class="section level3">
+<div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Go over Midterm I</li>
@@ -584,16 +632,16 @@ h1{font-weight: 400;}
 </div>
 <div id="Lec10" class="section level1">
 <h1>Lec 10: Mon 9/30</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><a href="midterms.html#midtermI">Midterm I</a> info posted</li>
 <li><a href="projects.html#MP1">Mini-Project 1</a> info posted</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-2" class="section level3">
+<div id="chalk-talk-3" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec09: Color palettes from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a> <!--
@@ -603,7 +651,7 @@ h1{font-weight: 400;}
 <li>Recap of “five named graphs”: ModernDive Table 2.4</li>
 </ul>
 </div>
-<div id="in-class-exercise-1" class="section level3">
+<div id="in-class-exercise-2" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.9. In particular in Section 2.9.3, open the <code>ggplot2</code> cheatsheet in RStudio and read over the different <code>geom</code> types</li>
@@ -613,40 +661,40 @@ h1{font-weight: 400;}
 <li>Change both the color of the scatterplot points and the fill of the bars. You can do this by selecting a palette from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a> or by setting them manually</li>
 </ol></li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw">library</span>(nycflights13)</a>
-<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="kw">library</span>(gapminder)</a>
-<a class="sourceLine" id="cb3-5" data-line-number="5"></a>
-<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co"># 1. Recreate plot from PS02, but change default &quot;color&quot; palette of points:</span></a>
-<a class="sourceLine" id="cb3-7" data-line-number="7">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
-<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, </a>
-<a class="sourceLine" id="cb3-10" data-line-number="10">       <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop, <span class="dt">color =</span> continent)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-12" data-line-number="12"><span class="st">  </span><span class="kw">scale_color_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
-<a class="sourceLine" id="cb3-13" data-line-number="13"></a>
-<a class="sourceLine" id="cb3-14" data-line-number="14"><span class="co"># 2.a) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by adding a </span></a>
-<a class="sourceLine" id="cb3-15" data-line-number="15"><span class="co"># palette layer:</span></a>
-<a class="sourceLine" id="cb3-16" data-line-number="16"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-18" data-line-number="18"><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
-<a class="sourceLine" id="cb3-19" data-line-number="19"></a>
-<a class="sourceLine" id="cb3-20" data-line-number="20"><span class="co"># 2.b) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></a>
-<a class="sourceLine" id="cb3-21" data-line-number="21"><span class="co"># changing colors in a layer:</span></a>
-<a class="sourceLine" id="cb3-22" data-line-number="22"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-23" data-line-number="23"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-24" data-line-number="24"><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;darkorange&quot;</span>, <span class="st">&quot;forestgreen&quot;</span>, <span class="st">&quot;navyblue&quot;</span>))</a>
-<a class="sourceLine" id="cb3-25" data-line-number="25"></a>
-<a class="sourceLine" id="cb3-26" data-line-number="26"><span class="co"># 2.c) Soooooo many choices...</span></a>
-<a class="sourceLine" id="cb3-27" data-line-number="27"><span class="kw">colors</span>()</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="kw">library</span>(nycflights13)</a>
+<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="kw">library</span>(gapminder)</a>
+<a class="sourceLine" id="cb4-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb4-6" data-line-number="6"><span class="co"># 1. Recreate plot from PS02, but change default &quot;color&quot; palette of points:</span></a>
+<a class="sourceLine" id="cb4-7" data-line-number="7">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb4-8" data-line-number="8"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
+<a class="sourceLine" id="cb4-9" data-line-number="9"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, </a>
+<a class="sourceLine" id="cb4-10" data-line-number="10">       <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop, <span class="dt">color =</span> continent)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-12" data-line-number="12"><span class="st">  </span><span class="kw">scale_color_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
+<a class="sourceLine" id="cb4-13" data-line-number="13"></a>
+<a class="sourceLine" id="cb4-14" data-line-number="14"><span class="co"># 2.a) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by adding a </span></a>
+<a class="sourceLine" id="cb4-15" data-line-number="15"><span class="co"># palette layer:</span></a>
+<a class="sourceLine" id="cb4-16" data-line-number="16"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-18" data-line-number="18"><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
+<a class="sourceLine" id="cb4-19" data-line-number="19"></a>
+<a class="sourceLine" id="cb4-20" data-line-number="20"><span class="co"># 2.b) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></a>
+<a class="sourceLine" id="cb4-21" data-line-number="21"><span class="co"># changing colors in a layer:</span></a>
+<a class="sourceLine" id="cb4-22" data-line-number="22"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-23" data-line-number="23"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-24" data-line-number="24"><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;darkorange&quot;</span>, <span class="st">&quot;forestgreen&quot;</span>, <span class="st">&quot;navyblue&quot;</span>))</a>
+<a class="sourceLine" id="cb4-25" data-line-number="25"></a>
+<a class="sourceLine" id="cb4-26" data-line-number="26"><span class="co"># 2.c) Soooooo many choices...</span></a>
+<a class="sourceLine" id="cb4-27" data-line-number="27"><span class="kw">colors</span>()</a></code></pre></div>
 <hr />
 </div>
 </div>
 </div>
 <div id="Lec09" class="section level1">
 <h1>Lec 09: Fri 9/27</h1>
-<div id="announcements-3" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack:
@@ -657,9 +705,9 @@ h1{font-weight: 400;}
 <li>Go over <a href="PS.html#PS03_solutions">PS03 solutions</a></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-3" class="section level2">
+<div id="todays-topicsactivities-4" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-3" class="section level3">
+<div id="chalk-talk-4" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of barplots: Exercise on pie charts vs barplots below</li>
@@ -671,10 +719,10 @@ h1{font-weight: 400;}
 <li>Get the <a href="https://www.color-hex.com/color/f8766d" target="_blank">color hex codes</a> of <code>ggplot2</code> default color palette:</li>
 </ol></li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">library</span>(scales)</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2">number_of_colors &lt;-<span class="st"> </span><span class="dv">3</span></a>
-<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="kw">show_col</span>(<span class="kw">hue_pal</span>()(number_of_colors))</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="768" /></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">library</span>(scales)</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2">number_of_colors &lt;-<span class="st"> </span><span class="dv">3</span></a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="kw">show_col</span>(<span class="kw">hue_pal</span>()(number_of_colors))</a></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
 </div>
 <div id="exercise-on-pie-charts-vs-barplots" class="section level3">
 <h3>2. Exercise on pie charts vs barplots</h3>
@@ -689,7 +737,7 @@ h1{font-weight: 400;}
 <p>Compare that to using barplots. Which do you prefer?</p>
 <p><img src="static/images/barplots.png" width="600" /></p>
 </div>
-<div id="in-class-exercise-2" class="section level3">
+<div id="in-class-exercise-3" class="section level3">
 <h3>3. In-class exercise</h3>
 <ul>
 <li>Quiz on podcast</li>
@@ -701,7 +749,7 @@ h1{font-weight: 400;}
 </div>
 <div id="Lec08" class="section level1">
 <h1>Lec 08: Mon 9/23</h1>
-<div id="announcements-4" class="section level2">
+<div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>No office hours on Wednesday</li>
@@ -719,9 +767,9 @@ We are thrilled to be at <a href="https://twitter.com/Statfest?ref_src=twsrc%5Et
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-4" class="section level2">
+<div id="todays-topicsactivities-5" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-4" class="section level3">
+<div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of boxplots</li>
@@ -729,7 +777,7 @@ We are thrilled to be at <a href="https://twitter.com/Statfest?ref_src=twsrc%5Et
 <li>Barplots</li>
 </ul>
 </div>
-<div id="in-class-exercise-3" class="section level3">
+<div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.8</li>
@@ -740,7 +788,7 @@ We are thrilled to be at <a href="https://twitter.com/Statfest?ref_src=twsrc%5Et
 </div>
 <div id="Lec07" class="section level1">
 <h1>Lec 07: Fri 9/20</h1>
-<div id="announcements-5" class="section level2">
+<div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack:
@@ -768,9 +816,9 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-5" class="section level2">
+<div id="todays-topicsactivities-6" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-5" class="section level3">
+<div id="chalk-talk-6" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of histograms</li>
@@ -810,9 +858,9 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </tbody>
 </table>
 <p>Let’s compare the points and the corresponding boxplot side-by-side with the values on the <span class="math inline">\(y\)</span>-axis matching:</p>
-<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-4" class="section level3">
+<div id="in-class-exercise-5" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.6 - 2.7</li>
@@ -825,15 +873,15 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec06" class="section level1">
 <h1>Lec 06: Wed 9/18</h1>
-<div id="announcements-6" class="section level2">
+<div id="announcements-7" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Prof. Katie Kinnaird’s TRIPODS+X - Data Science Education Investigation</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-6" class="section level2">
+<div id="todays-topicsactivities-7" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-6" class="section level3">
+<div id="chalk-talk-7" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -841,7 +889,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>Histograms for visualizing distribution of a numerical variable.</li>
 </ul>
 </div>
-<div id="in-class-exercise-5" class="section level3">
+<div id="in-class-exercise-6" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.5</li>
@@ -852,16 +900,16 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec05" class="section level1">
 <h1>Lec 05: Mon 9/16</h1>
-<div id="announcements-7" class="section level2">
+<div id="announcements-8" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack message: Abandoning RStudio Cloud in favor of RStudio Desktop.</li>
 <li>The art of managing Slack notifications</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-7" class="section level2">
+<div id="todays-topicsactivities-8" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-7" class="section level3">
+<div id="chalk-talk-8" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -869,7 +917,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>Linegraphs</li>
 </ul>
 </div>
-<div id="in-class-exercise-6" class="section level3">
+<div id="in-class-exercise-7" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.3.2 - 2.4</li>
@@ -880,7 +928,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec04" class="section level1">
 <h1>Lec 04: Fri 9/13</h1>
-<div id="announcements-8" class="section level2">
+<div id="announcements-9" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Screencast from last lecture posted</li>
@@ -888,9 +936,9 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>PS02 posted under <a href="PS.html">Problem Sets</a></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-8" class="section level2">
+<div id="todays-topicsactivities-9" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-8" class="section level3">
+<div id="chalk-talk-9" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -911,7 +959,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </tbody>
 </table>
 </div>
-<div id="in-class-exercise-7" class="section level3">
+<div id="in-class-exercise-8" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>At a couple of steps in this process, you will be asked to install packages. Say yes to all of them!</li>
@@ -960,15 +1008,15 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec03" class="section level1">
 <h1>Lec 03: Wed 9/11</h1>
-<div id="announcements-9" class="section level2">
+<div id="announcements-10" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack updates: custom emojis and vote in today’s poll!</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-9" class="section level2">
+<div id="todays-topicsactivities-10" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-9" class="section level3">
+<div id="chalk-talk-10" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -979,7 +1027,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </iframe>
 <p></br></p>
 </div>
-<div id="in-class-exercise-8" class="section level3">
+<div id="in-class-exercise-9" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2 - 2.3.1.</li>
@@ -990,16 +1038,16 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec02" class="section level1">
 <h1>Lec 02: Mon 9/9</h1>
-<div id="announcements-10" class="section level2">
+<div id="announcements-11" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><a href="syllabus.html">Syllabus</a> finalized.</li>
 <li>Problem Set 01 due this Friday posted under <a href="PS.html">Problem Sets</a>.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-10" class="section level2">
+<div id="todays-topicsactivities-11" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-10" class="section level3">
+<div id="chalk-talk-11" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Intro to Slack <a href="static/intro_to_slack.pdf" target="_blank">slides</a></li>
@@ -1007,7 +1055,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>What are R packages?</li>
 </ul>
 </div>
-<div id="in-class-exercise-9" class="section level3">
+<div id="in-class-exercise-10" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Set up RStudio Cloud:
@@ -1031,11 +1079,11 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec01" class="section level1">
 <h1>Lec 01: Fri 9/6</h1>
-<div id="announcements-11" class="section level2">
+<div id="announcements-12" class="section level2">
 <h2>Announcements</h2>
 <p>Welcome!</p>
 </div>
-<div id="todays-topicsactivities-11" class="section level2">
+<div id="todays-topicsactivities-12" class="section level2">
 <h2>Today’s topics/activities</h2>
 <ul>
 <li>My story.</li>

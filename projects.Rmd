@@ -43,11 +43,7 @@ faithful a manner as possible while maintaining a level suitable for novices.* T
 
 # Mini-Project 1 {#MP1}
 
-
 *Partially assigned on Friday 9/27, completely assigned on Monday 9/30, due Friday 10/11 at 5pm.*
-
-
-**Note: This is a work in progress minimally viable product**: I will have fuller details on Monday 9/30, including submission format and grading rubric.
 
 Basic outline:
 
@@ -83,3 +79,24 @@ The following screencast illustrates Steps 2 and 3 above:
     a) The `.html` output file
 1. Everyone: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdINjxeoi0bCsicx8SfcLkjV2V0j4XgMB959oQ5q2GVIhthjg/viewform){target="_blank"}
 1. Group leader only: Submit the joint reflection piece of no more than 500 words in PDF format. Suggest you write it in Google Docs and then export to PDF.
+
+
+## Tip: Minimally viable product
+
+When building a product, IMO:
+
+**Don't**: Try to do everything completely and perfectly from the beginning. This leads to perfectionist thinking, which leads to procrastination and "analysis paralysis".
+
+**Do**: Start by finishing a [minimially viable product](https://www.forbes.com/sites/quora/2018/02/27/what-is-a-minimum-viable-product-and-why-do-companies-need-them/#178bd8a2382c){target="_blank"} FAST:
+
+<center>
+![](static/images/MVP.png){ width=525px }
+</center>
+
+Only you're done your MVP, iterate and improve by adding complexity.
+
+**In other words**:
+
+* [Done is better than perfect](https://lifehacker.com/done-is-better-than-perfect-5870379){target="_blank"}
+* [Don't let the perfect be the enemy of the good](https://www.huffpost.com/entry/dont-let-the-perfect-be-t_b_158673){target="_blank"}
+* [Think big, start small](https://www.forbes.com/sites/chunkamui/2016/01/03/6-words/#15457a371a3b){target="_blank"}

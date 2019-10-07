@@ -82,19 +82,26 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-* No talking about midterm until Wednesday's lecture please
+* No talking about midterm until Wednesday's lecture please.
+* Sit next to your MP1 partner for today's lecture.
+* If you're curious about my experiences in grad school, working at Google, switching to academia, and advice for aspiring data scientists, check out my appearance on episode #43 of the DataBytes podcast "To Google and Back." Also available on [Apple Podcasts](https://podcasts.apple.com/us/podcast/43-to-google-and-back/id1445241846?i=1000452290536){target="_blank"} and [Google Play](https://play.google.com/music/listen?u=0#/ps/Itfclix7dvr5c2kbtovrtufki2a){target="_blank"}.
 
+<center>
+<iframe src="https://open.spotify.com/embed-podcast/episode/4SEcmLwHdJfmXaQEY7NZlV" width="70%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</center>
+<br>
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Recap of Lec09: `span` argument from `geom_smooth()`
-* Pipe operator
-* Example:
+* Recap of Lec09:
+    + `span` argument from `geom_smooth()`
+    + What is `se = FALSE` mean
+* What is a "minimally viable product"?
+* Pipe operator `%>%`. Example:
 
 ```{r, eval=FALSE}
-# Replace "192.ics" with the name of your calendar file:
 calendar_data <- "192.ics" %>% 
   # Use ical package to import into R and then convert to "tibble" data frame format:
   ical_parse_df() %>% 
