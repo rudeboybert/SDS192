@@ -82,10 +82,18 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-* Office hours today 3-4:30pm and Friday 9-10:30am. I'm going to be off-the-grid Thursday.
-* Due at 5pm on Friday:
-    + Your files on Moodle
-    + Your peer evaluation
+* MP1:
+    + Office hours today 3-4:30pm and Friday 9-10:30am. I'm going to be off-the-grid Thursday.
+    + Due at 5pm on Friday:
+        1. Files on Moodle
+        1. Peer evaluation Google Form
+        1. Group leader only: PDF of reflection piece on Moodle
+* Are you interested in Majoring in SDS?
+
+<center>
+![](static/images/announcements/SDS_major.png){ width=750px }
+</center>
+<br>
 
 
 ## Today's topics/activities
