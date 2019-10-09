@@ -112,7 +112,7 @@ Example:
 
 ### 2. In-class exercise
 
-* Go over ModernDive 3 - 3.3
+* Go over ModernDive 3 - 3.2
 
 
 
