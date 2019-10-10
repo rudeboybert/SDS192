@@ -32,6 +32,40 @@ h1{font-weight: 400;}
 
 
 
+# Problem set 04 {#PS04}
+
+*Assigned Friday 10/11, due Friday 10/18 at 10:45am on Moodle.*
+
+
+## 1. R Markdown component {#PS04_R}
+
+* Download the following Rmd template file: <a href="static/PS/PS04.Rmd" download>`PS04.Rmd`</a>.
+* Complete the problem set.
+* Submit the resulting `PS04.html` file on [Moodle](https://moodle.smith.edu/course/view.php?id=35357){target="_blank"}. Note: you are only submitting the output HTML report file and not the original R Markdown file.
+
+**Hints**:
+
+1. If your R Markdown file won't "knit", go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first, then seek assistance. In my experience, these 6 fixes resolve 85% of issues.
+
+
+## 2. Solutions & (imperfect) rubric {#PS04_solutions}
+
+**Solution**:
+
+* <a href="static/PS/PS04_solutions.Rmd" download>`PS04_solutions.Rmd`</a> R Markdown "source code" to create html report output. 
+* [`PS04_solutions.html`](static/PS/PS04_solutions.html){target="_blank"} html report.
+
+**Rubric**:
+
+1. Q1: 2 + 5 + 2 = 9pts
+1. Bonus: 1 + 1 = 2pts
+
+
+
+***
+
+
+
 # Problem set 03 {#PS03}
 
 *Assigned Friday 9/20, due Friday 9/27 at 10:45am on Moodle.*
