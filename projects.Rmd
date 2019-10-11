@@ -48,6 +48,7 @@ faithful a manner as possible while maintaining a level suitable for novices.* T
 - Enter in at least two types of activities in calendar. this becomes the summary categorical variable
 with two levels.
 - In reflection piece: tie in with podcast. difficulty of collecting data. 
+- Issue with time intervals being imported in seconds, minutes, hours, 
 -->
 
 # Mini-Project 1 {#MP1}
@@ -63,7 +64,8 @@ Basic outline:
 1. Write a joint reflection piece on this experience, keeping the podcast in mind. In particular
     + As someone who provides data: What expectations do you have when you give your data?
     + As someone who analyzes other's data: What legal and ethical responsibilites do you have?
-
+    + The joint reflection piece should be of no more than 500 words. I suggest you write it in Google Docs and then export to PDF.
+    
 The following screencast illustrates Steps 2 and 3 above:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vLlR4lBWAoc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -87,7 +89,7 @@ The following screencast illustrates Steps 2 and 3 above:
     a) The `.Rmd` R Markdown file analyzing your partner's calendar data.
     a) The `.html` output file
 1. Everyone: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdINjxeoi0bCsicx8SfcLkjV2V0j4XgMB959oQ5q2GVIhthjg/viewform){target="_blank"}
-1. Group leader only: Submit the joint reflection piece of no more than 500 words in PDF format. Suggest you write it in Google Docs and then export to PDF.
+1. Group leader only: PDF of 500 word joint reflection piece.
 
 
 ## Tip: Minimally viable product
