@@ -41,6 +41,7 @@ h1{font-weight: 400;}
 
 * Read solutions to previous PS: [`PS03_solutions.html`](static/PS/PS03_solutions.html){target="_blank"} html report.
 * Download the following Rmd template file: <a href="static/PS/PS04.Rmd" download>`PS04.Rmd`</a>.
+* Knit it once and read over the instructions.
 * Complete the problem set.
 * Submit the resulting `PS04.html` file on [Moodle](https://moodle.smith.edu/course/view.php?id=35357){target="_blank"}. Note: you are only submitting the output HTML report file and not the original R Markdown file.
 
