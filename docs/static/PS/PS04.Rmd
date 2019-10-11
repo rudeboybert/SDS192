@@ -96,7 +96,7 @@ Perform the data wrangling necessary to transform the `babynames` data frame inc
 
 ## Part b)
 
-Recreate the above visualization *exactly*, right down to the colors of the lines which were manually set to be `"forestgreen"` and `"orange"` and the capitalization of all text. However this time, the 
+Recreate the above visualization *exactly*, right down to the colors of the lines which were manually set to be `"forestgreen"` and `"orange"` and the capitalization of all text. However this time, the x-axis should only be for years 1960 and later, as saved in the `babynames_riley_casey_1960_later` data frame.
 
 ```{r}
 
