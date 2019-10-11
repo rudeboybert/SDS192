@@ -55,7 +55,6 @@ h1{font-weight: 400;}
 
 
 
-
 ## Topics
     
 * Topics: Lectures 1-10 inclusive (up to and including color theory in-class exercises).
@@ -64,3 +63,82 @@ h1{font-weight: 400;}
     + Lecture notes: both "chalk talk" and what's on webpage. 
     + Problem sets and solutions.
     + ModernDive readings and learning checks.
+    
+    
+    
+## Results
+
+Boxplot of scores (out of 34) with no whiskers below. Quartiles were 30.12 / 32 / 33.
+
+![](static/images/midterm_I_distribution.png){ width=750px }
+
+## Visualizations from midterm
+
+Question 2.b):
+
+```{r}
+library(ggplot2)
+library(dplyr)
+example <- tibble(
+  type = c("D", "B", "A", "C"), 
+  fruit = c("apple", "apple", "orange", "orange"),
+  city = c("Toronto", "Montreal", "Toronto", "Montreal"),
+  number = c(3, 4, 2, 1)
+)
+
+ggplot(data = example, mapping = aes(x = type, y = number)) +
+  geom_col() +
+  labs(x = "Type", y = "Number")
+```
+
+Question 2.c):
+
+```{r}
+ggplot(data = example, mapping = aes(x = fruit)) +
+  geom_bar() +
+  labs(x = "Fruit", y = "Number")
+```
+
+Question 2.d):
+
+```{r}
+ggplot(data = example, mapping = aes(x = fruit, y = number, fill = city)) +
+  geom_col(position = "dodge") +
+  labs(x = "Fruit", y = "Number", fill = "City")
+```
+
+Question 3:
+
+```{r, echo=FALSE}
+prices <- c(-11, 12, 15, 20, 20, 
+            30, 30, 30, 30, 40, 
+            40, 40, 40, 41, 51)
+tibble(prices = prices) %>% 
+  ggplot(aes(x = "", y = prices)) +
+  geom_boxplot() +
+  coord_flip(ylim = c(-15, 60)) +
+  labs(x = "", y = "price") +
+  theme(axis.ticks = element_blank(), axis.text.y = element_blank()) + 
+  scale_y_continuous(breaks = seq(-10, 50, by=10))
+```
+
+Question 4, modified to show difference in proportion
+
+```{r, echo=FALSE}
+library(babynames)
+library(tidyr)
+library(scales)
+
+babynames_subset <- babynames %>%
+  filter(name %in% c("Riley", "Casey")) %>% 
+  pivot_wider(names_from = sex, values_from = prop) %>% 
+  group_by(year, name) %>% 
+  summarize(M = sum(M, na.rm=TRUE), F = sum(F, na.rm=TRUE)) %>% 
+  mutate(diff = F - M)
+
+ggplot(babynames_subset, aes(x=year, y=diff))  +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_line() +
+  facet_wrap(~name) +
+  labs(x = "Year", y = "Female Prop - Male Prop", title = "Comparison of Casey and Riley")
+```

@@ -39,7 +39,16 @@ faithful a manner as possible while maintaining a level suitable for novices.* T
 
 ***
 
-
+<!--
+- Has to involve intervals of time: a start time and end time. For example, not "I went to sleep at." but "I slept during these times."
+- Add grading rubric
+- How long does the analysis need to be? No firm rule, but think: if there are two equally insightful reports, one is 20 pages and the other is 2 pages. which will you read? Or think when you visit a webpage. How long does it take you to decide if you're going to read it.
+- Graphs can't be redundant
+- When calendar entries are set to "repeat" only the first entry shows up
+- Enter in at least two types of activities in calendar. this becomes the summary categorical variable
+with two levels.
+- In reflection piece: tie in with podcast. difficulty of collecting data. 
+-->
 
 # Mini-Project 1 {#MP1}
 

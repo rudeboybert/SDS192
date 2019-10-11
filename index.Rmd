@@ -82,7 +82,6 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-* Go over Slack messages
 * PS04 posted
 * MP1: Due at 5pm on Friday.
     1. Files on Moodle
