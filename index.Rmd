@@ -77,6 +77,57 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
+<!--
+# Lec 17: Fri 10/18 {#Lec17}
+
+## Announcements
+
+* PS05 posted: Due in one week.
+* [Mini-Project 2](projects.html#MP2) posted: Due in two weeks.
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Go over [PS04 solutions](PS.html#PS04_solutions)
+* Recap of Lec16
+* `mutate()` new columns/variables and `arrange()` i.e. sort rows
+
+### 2. In-class exercise
+
+* Go over ModernDive 3.5 - 3.6
+-->
+
+
+
+***
+
+
+
+# Lec 16: Wed 10/16 {#Lec16}
+
+## Announcements
+
+* Slack: Post on `#random` 
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of Lec14
+* `summarize()` rows and `group_by() %>% summarize()`
+
+### 2. In-class exercise
+
+* Keyboard shortcut in RStudio
+* Go over ModernDive 3.3 - 3.4
+
+
+
+***
+
+
 
 # Lec 15: Fri 10/11 {#Lec15}
 

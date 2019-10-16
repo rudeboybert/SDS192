@@ -111,3 +111,15 @@ Only you're done your MVP, iterate and improve by adding complexity.
 * [Done is better than perfect](https://lifehacker.com/done-is-better-than-perfect-5870379){target="_blank"}
 * [Don't let the perfect be the enemy of the good](https://www.huffpost.com/entry/dont-let-the-perfect-be-t_b_158673){target="_blank"}
 * [Think big, start small](https://www.forbes.com/sites/chunkamui/2016/01/03/6-words/#15457a371a3b){target="_blank"}
+
+
+
+***
+
+
+
+# Mini-Project 2 {#MP2}
+
+*Assigned on Friday 10/18, due Friday 11/1 at 5pm.*
+
+Basic outline:
