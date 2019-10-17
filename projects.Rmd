@@ -122,4 +122,4 @@ Only you're done your MVP, iterate and improve by adding complexity.
 
 *Assigned on Friday 10/18, due Friday 11/1 at 5pm.*
 
-Basic outline:
+
