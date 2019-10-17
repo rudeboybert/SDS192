@@ -90,7 +90,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ### 1. Chalk talk
 
 * Go over [PS04 solutions](PS.html#PS04_solutions)
-* Recap of Lec16
+* Recap of Lec16: Go over diagram of group_by + summarize
 * `mutate()` new columns/variables and `arrange()` i.e. sort rows
 
 ### 2. In-class exercise
