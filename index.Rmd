@@ -77,6 +77,27 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
+<!--
+
+# Lec 18: Mon 10/21 {#Lec18}
+
+## Announcements
+
+* MP2 rubric posted
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Go over [PS04 solutions](PS.html#PS04_solutions)
+* Recap of Lec17: `arrange()` by more than one variable
+
+
+### 2. In-class exercise
+
+
+-->
+
 
 # Lec 17: Fri 10/18 {#Lec17}
 
@@ -96,7 +117,6 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 1. Chalk talk
 
-* Go over [PS04 solutions](PS.html#PS04_solutions)
 * Recap of Lec16:
     + Go over diagram of `group_by() %>% summarize()`
     + Difference between `sum()` and `n()` summary functions.
