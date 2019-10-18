@@ -131,8 +131,8 @@ You will work with a partner to analyze Federal Election Commission data and rep
 
 Here are two randomly chosen examples to give a qualitative sense of the outcome. 
 
-* [Example 1](static/projects/mini_project_2/MP2_example_1.html){target="_blank"}
-* [Example 2](static/projects/mini_project_2/MP2_example_2.html){target="_blank"}
+* [Example 1](static/projects/MP2/MP2_example_1.html){target="_blank"}
+* [Example 2](static/projects/MP2/MP2_example_2.html){target="_blank"}
 
 ## Doing the project
 
