@@ -39,6 +39,8 @@ faithful a manner as possible while maintaining a level suitable for novices.* T
 
 ***
 
+
+
 <!--
 - Has to involve intervals of time: a start time and end time. For example, not "I went to sleep at." but "I slept during these times."
 - Add grading rubric
@@ -125,14 +127,21 @@ Only you're done your MVP, iterate and improve by adding complexity.
 
 ## Data
 
-You will work with a partner to analyze Federal Election Commission data and report your findings in a short writeup. These data come from the [Federal Election Commission](http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link) and are based on the 2011--2012 federal election cycle. Be sure to read the [supporting documentation for these data](http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link){target="_blank"}
+You will work with a partner to analyze Federal Election Commission data based on the 2011--2012 federal election cycle, as provided by the [Federal Election Commission](http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link). Be sure to read the [supporting documentation for these data](http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link){target="_blank"}.
+
+The theme of your analysis will be **follow the money** as quoted by Lester Freamon from the HBO show The Wire. Only for your project the context will not be the drug war in Baltimore MD, but rather political contributions in elections.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7M71wmwWRo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+
 
 ## Examples
 
-Here are two randomly chosen examples to give a qualitative sense of the outcome. 
+Here are two randomly chosen examples to give a qualitative sense of the outcome. Note they both can be improved on.
 
 * [Example 1](static/projects/MP2/MP2_example_1.html){target="_blank"}
 * [Example 2](static/projects/MP2/MP2_example_2.html){target="_blank"}
+
 
 ## Doing the project
 
@@ -146,23 +155,25 @@ Here are two randomly chosen examples to give a qualitative sense of the outcome
     ![](static/images/MP2.png){ width=100px }
     1. Verify that you are in RStudio Project mode by looking at the top right corner of RStudio. You should see this:  
     ![](static/images/MP2_2.png){ width=100px }
-    1. Knit `MP2.Rmd` and read it.
+    1. Knit `MP2.Rmd` and go over the example R Markdown presentation tricks.
+    1. `View()` all four data frames that are loaded into R: `candidates`, `committees`, `contributions`, `house_elections`.
 * **Tips**:
     1. Always work in RStudio Project mode. This will help R locate your `.csv` files easily.
     1. Knit early and knit often. For example:
-        + If you add 5 lines of code and the document doesn't knit, you can easily locate the error.
-        + If you add 500 lines of code and the document doesn't knit, you'll have a harder time locating the error.
-
+        + If you add 5 lines of code and the R Markdown doesn't knit, you can easily locate the error.
+        + If you add 500 lines of code and the R Markdown doesn't knit, you'll have a harder time locating the error.
+    1. If you're confused about the meaning of variables in the four datasets, be sure to read the [supporting documentation for these data](http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link){target="_blank"}.
+    1. Ask questions in the `#mp2` slack channel.
 
 ## Grading rubric
 
-To be posted on Monday.
+To be posted on Monday, including information on what's required, the type of question you'll be answering, etc.
 
 
 
 ## To submit
 
-1. **The group leader**: Will make a single submission on behalf of the team on moodle: A .zip file of all the contents of the MP2 folder. 
+1. **The group leader**: Each team will make only one submission. Specifically, the group leader will submit a `.zip` file of all the contents of the MP2 folder on moodle.
 1. **Individually**: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdPAojeiucovzcoKb-6-zrplAvhKGGqt1YXz5dv1JYlQqzbXg/viewform){target="_blank"}
 
 
