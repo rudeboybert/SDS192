@@ -84,6 +84,13 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 * PS05 posted: Due in one week.
 * [Mini-Project 2](projects.html#MP2) posted: Due in two weeks.
+* SDS talk on Monday at 5pm by Yeshimabeith Milner, founder of [Data for Black Lives](http://d4bl.org/){target="_blank"}. Shout out to Smithie [Laneé Jung](https://twitter.com/laneejung){target="_blank"} for her important role in making this happen.
+
+<center>
+![](static/images/announcements/Milner_wide.png){ width=750px }
+</center>
+<br>
+
 
 ## Today's topics/activities
 
@@ -96,7 +103,6 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ### 2. In-class exercise
 
 * Go over ModernDive 3.5 - 3.6
-
 
 
 
@@ -227,12 +233,6 @@ Example:
 
 * Part of class-time on Monday to work on MP1
 * Go over updated [Midterm I](midterms.html) instructions
-* SDS talk on Monday 10/21 at 5pm by Yeshimabeith Milner, founder of [Data for Black Lives](http://d4bl.org/){target="_blank"}. Shout out to Smithie [Laneé Jung](https://twitter.com/laneejung){target="_blank"} for her important role in making this happen.
-
-<center>
-![](static/images/announcements/Milner_wide.png){ width=750px }
-</center>
-<br>
 
 ## Today's topics/activities
 

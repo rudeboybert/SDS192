@@ -455,7 +455,122 @@ with two levels.
 <div id="MP2" class="section level1">
 <h1>Mini-Project 2</h1>
 <p><em>Assigned on Friday 10/18, due Friday 11/1 at 5pm.</em></p>
-<p>Basic outline:</p>
+<div id="data" class="section level2">
+<h2>Data</h2>
+<p>You will work with a partner to analyze Federal Election Commission data and report your findings in a short writeup. These data come from the <a href="http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link">Federal Election Commission</a> and are based on the 2011–2012 federal election cycle. Be sure to read the <a href="http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link" target="_blank">supporting documentation for these data</a></p>
+</div>
+<div id="examples" class="section level2">
+<h2>Examples</h2>
+<p>Here are two randomly chosen examples to give a qualitative sense of the outcome.</p>
+<ul>
+<li><a href="static/projects/mini_project_2/MP2_example_1.html" target="_blank">Example 1</a></li>
+<li><a href="static/projects/mini_project_2/MP2_example_2.html" target="_blank">Example 2</a></li>
+</ul>
+</div>
+<div id="doing-the-project" class="section level2">
+<h2>Doing the project</h2>
+<ul>
+<li><strong>Step 0</strong>: Look in Slack in <code>#mp2</code> channel to see your group, your group number, and who your group leader is.</li>
+<li><strong>Step 1</strong>: Setup the MP2 RStudio project
+<ol style="list-style-type: decimal">
+<li>Download <a href="https://drive.google.com/open?id=1pU9BpVUTBw1AFU8VUknnD6BdwTSPwfCH" download><code>MP2.zip</code></a>.</li>
+<li>Move <code>MP2.zip</code> to wherever you keep your 192 files.
+<ul>
+<li>macOS users: Double-click <code>MP2.zip</code> to extract the <code>MP2</code> folder.</li>
+<li>Windows users: Extract the contents of <code>MP2.zip</code> to a folder.</li>
+</ul></li>
+<li>Double click the <code>MP2.Rproj</code> file to open RStudio in “Project mode”:<br />
+<img src="static/images/MP2.png" width="100" /></li>
+<li>Verify that you are in RStudio Project mode by looking at the top right corner of RStudio. You should see this:<br />
+<img src="static/images/MP2_2.png" width="100" /></li>
+<li>Knit <code>MP2.Rmd</code> and read it.</li>
+</ol></li>
+<li><strong>Tips</strong>:
+<ol style="list-style-type: decimal">
+<li>Always work in RStudio Project mode. This will help R locate your <code>.csv</code> files easily.</li>
+<li>Knit early and knit often. For example:
+<ul>
+<li>If you add 5 lines of code and the document doesn’t knit, you can easily locate the error.</li>
+<li>If you add 500 lines of code and the document doesn’t knit, you’ll have a harder time locating the error.</li>
+</ul></li>
+</ol></li>
+</ul>
+</div>
+<div id="grading-rubric" class="section level2">
+<h2>Grading rubric</h2>
+<p>To be posted on Monday.</p>
+</div>
+<div id="to-submit" class="section level2">
+<h2>To submit</h2>
+<ol style="list-style-type: decimal">
+<li><strong>The group leader</strong>: Will make a single submission on behalf of the team on moodle: A .zip file of all the contents of the MP2 folder.</li>
+<li><strong>Individually</strong>: Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPAojeiucovzcoKb-6-zrplAvhKGGqt1YXz5dv1JYlQqzbXg/viewform" target="_blank">Google Form</a></li>
+</ol>
+<!--
+## Administrative Notes
+
+
+Designate a team leader who will do the following:
+    + Submit the `MP2.Rmd` file for your group on [Moodle](https://moodle.smith.edu/course/view.php?id=29919){target="_blank"}. *Do not* submit any of the other files included in the template `MP2.zip` file; you can assume I have access to those. 
+    + If you are using files (data, images, etc) that are not included in the template `MP2.zip` file, submit these as well. If you do not, I will not be able to *reproduce and replicate* your results.
+    
+    
+
+The best projects will:
+
+* Discuss an interesting and well-motivated topic
+* Involve some non-trivial data wrangling (e.g. not just a bunch of `mutate()`s)
+* Provide a well thought-out, informative analysis
+* Convey some sort of insight
+* Be well-written
+
+
+## What to do {#what-to-do-2}
+
+**Write your report**:
+
+1. Download the `MP2.zip` file from the `#general_annoucements` post on Slack from Monday 10/15.
+    * RStudio Desktop users: Move the `MP2.zip` file to where your 192 files are and click it -> Click on the new MP2 folder -> Click on `MP2.Rproj` to open the "Mini Project 2 RStudio Project" file.
+1. Knit the `MP2.Rmd` file which has a template example. Compare the contents of `MP2.Rmd` and the outputted html webpage file. 
+1. Switch out the template example with your work.
+1. Keep in mind the R Markdown tips:
+    * Knit early, knit often! 
+    * If you have an error, check the [**6 R Markdown Fixes**](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first. These 6 fixes resolve 85% of issues in my experience.
+    * For different text formatting tools available to you in R Markdown, go to:
+        * RStudio menu bar -> Help -> Markdown quick reference
+        * RStudio menu bar -> Help -> Cheatsheets -> R Markdown Cheat Sheet
+
+
+## Grading Rubric
+
+There are 15 possible points for this mini-project.
+
+**Baseline**
+
+* +1 for an `.Rmd` that compiles without errors and is replicable and reproducible by someone else who has the same `MP2.zip` starting point of files.
+* +2 for both group members completing the Individual Google Form
+* **Updated Mon 10/29 - Moved to Advanced**: ~~+1 for using [code folding](https://bookdown.org/yihui/rmarkdown/html-document.html#code-folding) to keep your code hidden, but still make it available.~~ 
+* +1 for using at least two of the five basic verbs (i.e., `select()`, `mutate()`, etc.)
+* +1 for annotating your data wrangling pipeline (this can be in a few sentences in text surrounding the R code chunks, or some informative comments inside the R code chunks)
+* +1 unnecessary messages from R are hidden from being displayed in the HTML
+
+**Average**
+
+* +1 for having at least 400 words and no more than 600 words. **Updated Mon 10/29 - Removed**: ~~(use [the word count add-in](https://github.com/benmarwick/wordcountaddin))~~. Use Google Docs/Microsoft Word to ensure your word count is correct.
+* +1 for explaining in a single coherent sentence what we can learn from these data
+* +1 for using at least one join (e.g. `left_join()`, `inner_join()`, etc.)
+* +1 for providing context or background useful in interpreting the graphic
+
+**Advanced**
+
+* **Updated Mon 10/29 - Removed**: ~~+1 for writing a function to generalize your analysis rather than re-writing the same code multiple times~~
+* **Updated Mon 10/29 - Moved here**: +1 for using [code folding](https://bookdown.org/yihui/rmarkdown/html-document.html#code-folding) to keep your code hidden, but still make it available. You need to figure out how to do this on your own! Example of code folding in practice [here](https://beanumber.github.io/sds192/lab-rmarkdown.html#){target="_blank"}; note all "Code" buttons along right-hand edge of page.
+* +0–4 XXX: awarded at the grader's discretion for submissions that are exceptionally compelling. What does "wow" factor mean? Ask yourself:
+    + What is a checklist of criteria for a "great" calculus assignment?
+    + What is a checklist of criteria for a "great" essay?
+    + Guess what this mini-project is more like? A calculus assignment or an essay?
+-->
+</div>
 </div>
 
 

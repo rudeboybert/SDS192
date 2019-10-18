@@ -59,7 +59,12 @@ h1{font-weight: 400;}
 
 **Rubric**:
 
-1. 
+As stated in lecture, you must *always* labels your axes and add a title. This makes the context of the data easy to understand for the reader.
+
+1. Q1: 3 + 1 + (3 + 2 + 1) = 10pts
+1. Q2: 2 + 2 (+ 2 Bonus) = 4pts
+
+Total: 14pts
 
 
 
@@ -96,6 +101,8 @@ h1{font-weight: 400;}
 
 1. Q1: 2 + 5 + 2 = 9pts
 1. Bonus: 1 + 1 = 2pts
+
+Total: 9pts
 
 
 
