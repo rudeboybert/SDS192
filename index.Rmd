@@ -105,6 +105,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 -->
 
 
+
 # Lec 18: Mon 10/21 {#Lec18}
 
 ## Announcements
@@ -120,7 +121,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 * Go over [PS04 solutions](PS.html#PS04_solutions)
 * Recap of Lec17: How to `arrange()` by more than one variable
-* Last major set of verbs: `_join()` data frames, `select()`, and `rename()` variables.
+* Last major set of verbs: `_join()` data frames, `select()`, and `rename()` variables
 
 ### 2. In-class exercise
 
