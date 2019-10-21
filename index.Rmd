@@ -84,6 +84,12 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ## Announcements
 
 * Sit next to your MP2 partner
+* Are you interested in Majoring in SDS?
+
+<center>
+![](static/images/announcements/SDS_major.png){ width=750px }
+</center>
+<br>
 
 ## Today's topics/activities
 
@@ -105,7 +111,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 * MP2 rubric posted
 * Posting in `#maps` channel on Slack
-* For Wednesday's lecture sit next to your MP2 partner
+* For Wednesday's lecture sit next to your MP2 partner. We'll be doing an in-class data-wrangling exercise
 
 
 ## Today's topics/activities
@@ -211,12 +217,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-* Are you interested in Majoring in SDS?
-
-<center>
-![](static/images/announcements/SDS_major.png){ width=750px }
-</center>
-<br>
+*
 
 
 ## Today's topics/activities
