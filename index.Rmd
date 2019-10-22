@@ -77,14 +77,14 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
-<!--
+
 
 # Lec 19: Wed 10/21 {#Lec19}
 
 ## Announcements
 
-* Sit next to your MP2 partner
-* Are you interested in Majoring in SDS?
+* Sit next to your MP2 partner for today's in-class exercise
+* Are you interested in Majoring in SDS? Check out our presentation of the major tomorrow!
 
 <center>
 ![](static/images/announcements/SDS_major.png){ width=750px }
@@ -95,14 +95,20 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 1. Chalk talk
 
+Recap of Lec18: Click on tweet below to see all 6 different types of joins:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&amp;ref_src=twsrc%5Etfw">#dplyr</a>&#39;s join functions, inspired by this: <a href="http://t.co/40wMQDP0J4">http://t.co/40wMQDP0J4</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="http://t.co/P4XOLs5ov3">pic.twitter.com/P4XOLs5ov3</a></p>&mdash; Hiroaki Yutani (@yutannihilation) <a href="https://twitter.com/yutannihilation/status/551572539697143808?ref_src=twsrc%5Etfw">January 4, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Copy this to your `classnotes.Rmd`
+
+<script src="https://gist.github.com/rudeboybert/968dbf26d5f9407703ae7b24d217af67.js"></script>
+
 
 ### 2. In-class exercise
 
 
 
 ***
-
--->
 
 
 
