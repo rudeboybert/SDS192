@@ -78,8 +78,37 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 
+# Lec 20: Fri 10/25 {#Lec20}
 
-# Lec 19: Wed 10/21 {#Lec19}
+## Announcements
+
+<!--
+solutosn to PS05
+
+
+1: seat dist
+4 3
+2 5
+order of sum and multiplication matters!
+
+2) Go over code solutions. explain inner vs left join
+
+-->
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+
+### 2. In-class exercise
+
+
+
+***
+
+
+
+# Lec 19: Wed 10/23 {#Lec19}
 
 ## Announcements
 
