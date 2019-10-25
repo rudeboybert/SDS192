@@ -82,16 +82,19 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
+* Open floor to share thoughts/feeling about President McCartney's email.
+* Joint SDS/Psychology  to be Honored with Sherrerd Prize Monday, October 28 4:30pm in Campus Center Carroll Room
+https://www.smith.edu/news/sherrerd-2019-oct
+
 <!--
-solutosn to PS05
-
-
-1: seat dist
+1. Solutions to PS05
+2. Order of sum and multiplication matters!
+seat dist
 4 3
 2 5
-order of sum and multiplication matters!
-
-2) Go over code solutions. explain inner vs left join
+3. Explain inner vs left join
+4.
+5. 192: Mid-semester feedback survey???
 
 -->
 
@@ -134,6 +137,8 @@ Copy this to your `classnotes.Rmd`
 
 
 ### 2. In-class exercise
+
+Complete
 
 
 
