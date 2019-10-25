@@ -77,33 +77,62 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
+<!--
+# Lec 21: Mon 10/28 {#Lec21}
+
+## Announcements
+
+* Mid-semester feedback survey
+* Look at tips and tricks page on course webpage.
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Solutions to PS05:
+    + Difference between `ylim(40, 60)` and `coord_cartesian(ylim=c(40, 60))`
+    + 
+
+### 2. In-class exercise
+
+
+
+***
+-->
+
+
 
 # Lec 20: Fri 10/25 {#Lec20}
 
 ## Announcements
 
 * Open floor to share thoughts/feeling about President McCartney's email.
-* Joint SDS/Psychology  to be Honored with Sherrerd Prize Monday, October 28 4:30pm in Campus Center Carroll Room
-https://www.smith.edu/news/sherrerd-2019-oct
+* Joint SDS/PSY faculty member Randi Garci will be Honored with [Sherrerd Prize teaching award](https://www.smith.edu/news/sherrerd-2019-oct){target="_blank"} Monday, October 28 4:30pm in Campus Center Carroll Room. Please attend!
+* MP1 grading update
 
-<!--
-1. Solutions to PS05
-2. Order of sum and multiplication matters!
-seat dist
-4 3
-2 5
-3. Explain inner vs left join
-4.
-5. 192: Mid-semester feedback survey???
 
--->
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
+* Recap of Lec19: In-class exercise, computing available seat miles. Note solution is in ModernDive Appendix D -> Learning Check 3.20.
+    1. Order of arithmetic matters!
+    1. Difference between `inner_join()` and `left_join()`
+* Importing spreadsheet data into R. Either Excel files or `.csv` Comma-Separated Values files. See image of example `.csv` file below.
+* "Tidy" data format, in other words, [long/tall/narrow format](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"}. This is as opposed to wide format. 
+
+<center>
+![](static/images/CSV.png){ width=500px }
+</center>
+<br>
+
+
 
 ### 2. In-class exercise
+
+* Go over ModernDive 4.1 - 4.2
 
 
 
@@ -138,7 +167,12 @@ Copy this to your `classnotes.Rmd`
 
 ### 2. In-class exercise
 
-Complete
+Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, compute available seat miles:
+
+<center>
+![](static/images/ASM.png){ width=750px }
+</center>
+<br>
 
 
 
