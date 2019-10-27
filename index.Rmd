@@ -77,20 +77,41 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
+<!-- 
+
+# Lec 22: Wed 10/30 {#Lec22}
+
+## Announcements
+
+
+* Mid-semester feedback survey
+* https://www.signupgenius.com/go/5080f4eaaa62ba4fd0-spring1
+* 
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+### 2. In-class exercise
+
+Work on MP2!
+
+
+
+***
+-->
+
+
+
 
 # Lec 21: Mon 10/28 {#Lec21}
 
 ## Announcements
 
-<!--
-* Reminder to check in with me if you need to leave lecture early.
-* Mid-semester feedback survey
-* Look at tips and tricks page on course webpage.
-* https://www.signupgenius.com/go/5080f4eaaa62ba4fd0-spring1
--->
-
-* Sit next to your MP2 partner
-* Joint SDS/PSY faculty member Randi Garci will be Honored with [Sherrerd Prize teaching award](https://www.smith.edu/news/sherrerd-2019-oct){target="_blank"} today 4:30pm in Campus Center Carroll Room. Please attend!
+* Lecture policy reminder
+* Sit next to your MP2 partner today
+* Added "Tips & Tricks" tab to menubar of course webpage
+* Reminder: joint SDS/PSY faculty member Randi Garci will be Honored with [Sherrerd Prize teaching award](https://www.smith.edu/news/sherrerd-2019-oct){target="_blank"} today 4:30pm in Campus Center Carroll Room. Please attend!
 * Biennial (every two years) graduate school panel
 
 <center>
@@ -104,13 +125,48 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 1. Chalk talk
 
-<!--
-* Solutions to PS05:
-    + Difference between `ylim(40, 60)` and `coord_cartesian(ylim=c(40, 60))`
-    + 
--->
+Solutions to PS05 Q1.c). What happened to the average age above 60? The hint given on Slack was to look at the `ggplot2` cheatsheet -> 2nd page -> Bottom right corner -> "Zooming"
+
+* `ylim(a, b)` sets the limit on the y-axis to be between `a` to `b` and "clips" (throws out) any points outside this interval
+* `coord_cartesian(ylim=c(40, 60))` zooms in on the the y-axis to be between `a` to `b` but does not "clip" the points outside this interval
+
+For example, consider the following regression line: 
+
+```{r, fig.width = 8/1.5, height = 4.5/1.5}
+library(ggplot2)
+library(dplyr)
+
+example <- tibble(
+  x = c(1, 2, 3, 4, 5),
+  y = c(1, 1, 1, 1, 5)
+)
+
+ggplot(example, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+Let's set the y-axis limit to be between 0 and 3. Using `ylim(0, 3)` clips out the point `(5, 5)` and thus the regression line is flat:
+
+```{r, fig.width = 8/1.5, height = 4.5/1.5}
+ggplot(example, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  ylim(0, 3)
+```
+
+However, using `coord_cartesian(ylim = c(0, 3))` merely zooms in on this part of the y-axis without clipping the point `(5, 5)` and thus the regression line is the original one: 
+
+```{r, fig.width = 8/1.5, height = 4.5/1.5}
+ggplot(example, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  coord_cartesian(ylim = c(0, 3))
+```
 
 ### 2. In-class exercise
+
+Work on MP2!
 
 
 

@@ -22,9 +22,9 @@ navbar:
 #    href: https://rstudio.smith.edu/auth-sign-in
   - text: ModernDive
     href: https://moderndive.netlify.com/
+  - text: Tips & Tricks
+    href: tips_and_tricks.html
   right:
-#  - text: Tips & Tricks
-#    href: tips_and_tricks.html
 #  - text: GitHub Website
 #    href: webpage.html
   - text: Problem Sets
