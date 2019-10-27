@@ -529,7 +529,7 @@ Work on MP2!
 <p>Solutions to PS05 Q1.c). What happened to the average age above 60? The hint given on Slack was to look at the <code>ggplot2</code> cheatsheet -&gt; 2nd page -&gt; Bottom right corner -&gt; “Zooming”</p>
 <ul>
 <li><code>ylim(a, b)</code> sets the limit on the y-axis to be between <code>a</code> to <code>b</code> and “clips” (throws out) any points outside this interval</li>
-<li><code>coord_cartesian(ylim=c(40, 60))</code> zooms in on the the y-axis to be between <code>a</code> to <code>b</code> but does not “clip” the points outside this interval</li>
+<li><code>coord_cartesian(ylim=c(a, b))</code> zooms in on the the y-axis to be between <code>a</code> to <code>b</code> but does not “clip” (throw out) the points outside this interval</li>
 </ul>
 <p>For example, consider the following regression line:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
