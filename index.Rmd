@@ -77,30 +77,44 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
-<!--
+
 # Lec 21: Mon 10/28 {#Lec21}
 
 ## Announcements
 
+<!--
 * Reminder to check in with me if you need to leave lecture early.
 * Mid-semester feedback survey
 * Look at tips and tricks page on course webpage.
+* Grad 
+-->
+
+* Sit next to your MP2 partner
+* Biennial (every two years) graduate school panel
+
+<center>
+![](static/images/announcements/2019_grad_school_panel.png){ width=750px }
+</center>
+<br>
+
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
+<!--
 * Solutions to PS05:
     + Difference between `ylim(40, 60)` and `coord_cartesian(ylim=c(40, 60))`
     + 
+-->
 
 ### 2. In-class exercise
 
 
 
 ***
--->
+
 
 
 
