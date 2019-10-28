@@ -106,6 +106,7 @@ Work on MP2!
 ## Announcements
 
 * Sit next to your MP2 partner today
+* Look at some posts in `#random` channel
 * Lecture policy reminder
 * Added "Tips & Tricks" tab to menu bar of course webpage
 * Reminder: joint SDS/PSY faculty member Randi Garci will be Honored with [Sherrerd Prize teaching award](https://www.smith.edu/news/sherrerd-2019-oct){target="_blank"} today 4:30pm in Campus Center Carroll Room. Please attend!
