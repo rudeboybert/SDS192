@@ -142,7 +142,9 @@ ggplot(data = movies, aes(x = rating, y = revenue)) +
 Google "ggplot2 axis scale dollars" and click on the [first link](http://www.sthda.com/english/wiki/ggplot2-axis-scales-and-transformations) and search for the word "dollars". You'll find:
 
 ```{r fig.height=3, fig.width=5}
+# Don't forget to load the scales package first!
 library(scales)
+
 ggplot(data = movies, aes(x = rating, y = revenue)) + 
   geom_boxplot() + 
   labs(x = "rating", y = "Profit in millions of $", title = "Profits for different movie ratings") +
