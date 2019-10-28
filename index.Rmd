@@ -83,10 +83,8 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-
 * Mid-semester feedback survey
-* https://www.signupgenius.com/go/5080f4eaaa62ba4fd0-spring1
-* 
+* "Be mindful of the work you create for others."
 
 ## Today's topics/activities
 
@@ -95,7 +93,6 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ### 2. In-class exercise
 
 Work on MP2!
-
 
 
 ***
@@ -108,11 +105,11 @@ Work on MP2!
 
 ## Announcements
 
-* Lecture policy reminder
 * Sit next to your MP2 partner today
-* Added "Tips & Tricks" tab to menubar of course webpage
+* Lecture policy reminder
+* Added "Tips & Tricks" tab to menu bar of course webpage
 * Reminder: joint SDS/PSY faculty member Randi Garci will be Honored with [Sherrerd Prize teaching award](https://www.smith.edu/news/sherrerd-2019-oct){target="_blank"} today 4:30pm in Campus Center Carroll Room. Please attend!
-* Biennial (every two years) graduate school panel
+* Biennial (every two years) graduate school panel and discussion on MVP's.
 
 <center>
 ![](static/images/announcements/2019_grad_school_panel.png){ width=750px }
