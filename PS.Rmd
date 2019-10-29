@@ -30,6 +30,19 @@ h1{font-weight: 400;}
 
 ***
 
+<!--
+
+# Problem set 07 {#PS07}
+
+* GitHub classroom
+
+
+# Problem set 06 {#PS06}
+
+* Read DataCamp Buzzfeed article
+
+-->
+
 
 
 # Problem set 05 {#PS05}

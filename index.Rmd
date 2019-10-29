@@ -77,14 +77,11 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
-<!-- 
 
-# Lec 22: Wed 10/30 {#Lec22}
+<!--
+# Lec 23: Fri 11/1 {#Lec23}
 
 ## Announcements
-
-* Mid-semester feedback survey
-* "Be mindful of the work you create for others."
 
 ## Today's topics/activities
 
@@ -92,11 +89,36 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 2. In-class exercise
 
+-->
+
+
+
+# Lec 22: Wed 10/30 {#Lec22}
+
+## Announcements
+
+* If you would like to give mid-semester feedback on how this course is going so far, you can leave feedback (either anonymously or not) via the Google Forms linke posted in the `#general_announcements` channel in Slack. The form will be open until Friday Nov 1st at 5pm.
+* Smithies in SDS FaculTEA on Friday 4pm in CC 103/104 with Albert Y. Kim, Ben Baumer, David Rockoff, Katherine Halvorsen, Miles Ott, and Randi Garcia.
+
+<center>
+![](static/images/announcements/SSDS_faculTEA.png){ width=750px }
+</center>
+<br>
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Strategies for writing reports.
+
+### 2. In-class exercise
+
 Work on MP2!
 
 
+
 ***
--->
+
 
 
 
