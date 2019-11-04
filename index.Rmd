@@ -78,6 +78,27 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 
+# Lec 25: Wed 11/6 {#Lec25}
+
+## Announcements
+
+* 
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Go over Midterm II practice exam solutions (practice exam is posted on Slack under `#general_announcements`)
+
+### 2. In-class exercise
+
+
+
+
+***
+
+
+
 # Lec 24: Mon 11/4 {#Lec24}
 
 ## Announcements
