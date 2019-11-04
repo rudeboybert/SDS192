@@ -142,3 +142,52 @@ ggplot(babynames_subset, aes(x=year, y=diff))  +
   facet_wrap(~name) +
   labs(x = "Year", y = "Female Prop - Male Prop", title = "Comparison of Casey and Riley")
 ```
+
+
+
+***
+
+
+
+# Midterm II {#midtermII}
+
+## Administrative notes
+
+* **Friday 11/8 5pm through Sunday 11/10 11:55pm**. You must submit your midterm no later than Sunday at 11:55pm.
+* Instructions on taking exams for [Smithies](https://sophia.smith.edu/edtech/documentation/print-an-exam-from-the-direct-to-queue-application/){target="_blank"} and [Five College Students](https://sophia.smith.edu/edtech/documentation/special-instructions-for-five-college-and-high-school-students-using-direct-to-queue-exam-printing/){target="_blank"}. **Print the exam in color.**
+
+* Notes for before exam:
+    + Link to print exam in the Seelye basement lab is posted on Moodle.
+    + Bring colored pencils/pens.
+    + You do not need a calculator.
+    + Print exam in color.
+* Notes for during exam:
+    + Closed-book, no internet, and individually completed.
+    + You will be given 140 mins to complete it (including transit time to writing area), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.
+    + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case and depending on decision a 50% penalty.**
+    + In case of potential errors or ambiguity on the exam, please note them, state your assumptions, and use your best judgement.
+* Notes for after exam:
+    + Be sure to timestamp your exam before returning. 
+    + Insert exam in appropriately labeled box in hallway.
+
+
+
+## Topics
+    
+* Topics: 
+    + Lecture 10-12. Last few topics on Data viz: Color theory, trend lines.
+    + Lecture 14-20. Data wrangling, "tidy" data, and importing data.
+* Themes:
+    + The midterm is not "cummulative" in the sense that the focus will be on Lectures 10-20, but you still need to know/understand topics from Midterm I because the materials build on top of each other. 
+    + Know how to write *pseudocode* like in the Available Seat Miles exercise in Lecture 19 on Wed 10/23. Click [here](https://twitter.com/rudeboybert/status/964181298691629056){target="_blank"} for examples. Pseudocode is both:
+        + Just general enough to apply to any programming language/statistical software: R, python, SPSS, STATA, SAS, etc.
+        + Just specific enough that the instructions are unambigious
+* What to study. Here is my suggested order:
+    + Practice midterm posted on Slack under `#general_announcement`: this will give you a feel for the types of questions to expect.
+    + Read chalk talk notes: they emphasize/summarize the most important ideas.
+    + ModernDive Learning Check 3.20 on available seat miles (solutions in Appendix D): this is an all-encompassing problem that draws on nearly all the data wrangling verbs we've seen.
+    + ModernDive readings and learning checks: In particular the more theoretical ideas of "tidy" data.
+    + Problem sets 04 and 05
+    
+    
+  

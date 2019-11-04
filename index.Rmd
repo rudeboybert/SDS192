@@ -78,18 +78,50 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 
-<!--
+# Lec 24: Mon 11/4 {#Lec24}
+
+## Announcements
+
+* Midterm II this weekend.
+* Coming on Wednesday. Organizers have:
+    + Stated "This space is not for debate between speakers and audience. It is for speakers to be heard and listened to."
+    + Asked that you wear black in solidarity.
+
+<center>
+![](static/images/announcements/exposing_the_truth.png){ width=450px }
+</center>
+<br>
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Fact that will `r emo::ji("exploding head")` about MP2 data.
+* Midterm II discussion. See [midterms](midterms.html#midtermII) page.
+
+### 2. In-class exercise
+
+* Practice midterm posted on Slack; we'll go over solutions on Wednesday.
+
+
+
+***
+
+
+
 # Lec 23: Fri 11/1 {#Lec23}
 
 ## Announcements
 
 ## Today's topics/activities
 
-### 1. Chalk talk
+### 1. In-class exercise
 
-### 2. In-class exercise
+* Work on MP2
 
--->
+
+
+***
 
 
 
