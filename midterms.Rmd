@@ -182,7 +182,7 @@ ggplot(babynames_subset, aes(x=year, y=diff))  +
     + Know how to write *pseudocode* like in the Available Seat Miles exercise in Lecture 19 on Wed 10/23. Click [here](https://twitter.com/rudeboybert/status/964181298691629056){target="_blank"} for examples. Pseudocode is both:
         + Just general enough to apply to any programming language/statistical software: R, python, SPSS, STATA, SAS, etc.
         + Just specific enough that the instructions are unambigious
-    + Know the difference between these five joins: `left_join()`, `right_join()`, `inner_join()`, `full_join()`, and `anti_join()`. Go over the examples in Lec19.
+    + Know the difference between these five joins: `left_join()`, `right_join()`, `inner_join()`, `full_join()`, and `anti_join()`. Go over the code examples on the course webpage for [Lec19](index.html#Lec19).
 * What to study. Here is my suggested order:
     + Practice midterm posted on Slack under `#general_announcement`: this will give you a feel for the types of questions to expect.
     + Read chalk talk notes: they emphasize/summarize the most important ideas.
