@@ -77,12 +77,30 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
+<!--
+# Lec 26: Fri 11/8 {#Lec26}
+
+## Announcements
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+### 2. In-class exercise
+-->
+
+
+
+***
+
+
 
 # Lec 25: Wed 11/6 {#Lec25}
 
 ## Announcements
 
-* Smithies in SDS "Data Science Day" this Saturday
+* Smithies in SDS "Data Science Day" this Saturday in the Campus Center
 
 <center>
 ![](static/images/announcements/DSD.png){ width=750px }
