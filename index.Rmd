@@ -82,7 +82,13 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-* 
+* Smithies in SDS "Data Science Day" this Saturday
+
+<center>
+![](static/images/announcements/DSD.png){ width=750px }
+</center>
+<br>
+
 
 ## Today's topics/activities
 
