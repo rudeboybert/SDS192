@@ -100,6 +100,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
+* Install and then load the `tidyverse` package: An umbrella package for data science [tidyverse.org/](https://www.tidyverse.org/){target="_blank"}
 * Smithies in SDS "Data Science Day" this Saturday in the Campus Center
 
 <center>
