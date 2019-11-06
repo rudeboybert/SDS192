@@ -100,11 +100,12 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
+* Office hours today are ~~3-4:30pm~~ 3-4pm
 * Install and then load the `tidyverse` package: An *umbrella* package that installs/loads many useful packages for data science all at once!
     + See [tidyverse.org](https://www.tidyverse.org/){target="_blank"} for more info.
-    + In other words  
+    + In other words, from now on:  
     ```{r, eval = FALSE}
-    # Don't do all this:
+    # Don't do all this
     library(ggplot2)
     library(dplyr)
     library(readr)
@@ -114,7 +115,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
     library(forcats)
     library(purrr)
     
-    # Do this:
+    # Do this
     library(tidyverse)
     ```
 * Smithies in SDS "Data Science Day" this Saturday in the Campus Center featuring:
