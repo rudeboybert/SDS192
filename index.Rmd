@@ -100,8 +100,26 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-* Install and then load the `tidyverse` package: An umbrella package for data science [tidyverse.org/](https://www.tidyverse.org/){target="_blank"}
-* Smithies in SDS "Data Science Day" this Saturday in the Campus Center
+* Install and then load the `tidyverse` package: An *umbrella* package that installs/loads many useful packages for data science all at once!
+    + See [tidyverse.org](https://www.tidyverse.org/){target="_blank"} for more info.
+    + In other words  
+    ```{r, eval = FALSE}
+    # Don't do all this:
+    library(ggplot2)
+    library(dplyr)
+    library(readr)
+    library(tidyr)
+    library(stringr)
+    library(tibble)
+    library(forcats)
+    library(purrr)
+    
+    # Do this:
+    library(tidyverse)
+    ```
+* Smithies in SDS "Data Science Day" this Saturday in the Campus Center featuring:
+    + RStudio tidyverse developer advocate [Mara Averick](https://twitter.com/dataandme){target="_blank"}
+    + BaseballCloud data scientist and UMass MBA/MS in Sports Management student [Christien Wright](https://twitter.com/cfl1ght){target="_blank"}
 
 <center>
 ![](static/images/announcements/DSD.png){ width=750px }
@@ -113,7 +131,9 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 1. Chalk talk
 
-* Go over Midterm II practice exam solutions (practice exam is posted on Slack under `#general_announcements`)
+
+
+* Go over Midterm II practice exam solutions. Practice exam is posted on Slack under `#general_announcements`.
 
 ### 2. In-class exercise
 
