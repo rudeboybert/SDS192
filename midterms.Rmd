@@ -175,7 +175,7 @@ ggplot(babynames_subset, aes(x=year, y=diff))  +
 ## Topics
     
 * Topics: 
-    + Lecture 10-12. Last few topics on Data viz: Color theory, trend lines.
+    + Lecture 10-12. Last few topics on Data viz: Color theory, trend lines. **Added on 11/6**: No Shiny apps.
     + Lecture 14-20. Data wrangling, "tidy" data, and importing data.
 * Themes:
     + The midterm is not "cummulative" in the sense that the focus will be on Lectures 10-20, but you still need to know/understand topics from Midterm I because the materials build on top of each other. 
