@@ -502,63 +502,55 @@ h1{font-weight: 400;}
 <li>You will be making one interactive and one static map. More details on Monday.</li>
 </ul></li>
 </ul>
-<!--
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-* Reading of "On Exactitude in Science" by Borges.
-* Slides on [GIS](https://beanumber.github.io/sds192/lectures/24-shapefiles.html#17){target="_blank"}
-* London underground maps. Compare them. As stated in this [article](https://www.theverge.com/2015/11/11/9712376/london-walk-tube-underground-map){target="_blank"}, the transit map sacrifices accuracy for clarity.
-    + The map of stations as they truly exist: 
-    ![](static/images/underground_real_map.png){ width=700px }
-    + The transit map inside the stations and trains. All lines are either straight or at 45 degrees and futhermore the geographic space is distorted. 
-    ![](static/images/underground_transit_map.gif){ width=700px }
-    
-
-### 2. In-class exercise
-
-Two chief tools we'll be using.
-
-* [`leaflet` package](https://rstudio.github.io/leaflet/){target="_blank"} for interactive maps
-* `sf` package for static maps in `ggplot2` and loading shapefiles. See [Spatial Data Science](https://keen-swartz-3146c4.netlify.com/){target="_blank"}.
-
-
-```r
-# Interactive map example:
-library(leaflet)
-leaflet() %>%
-  addTiles() %>% 
-  addMarkers(lng=-72.6419889, lat=42.3177692)
-```
-
+</div>
+<div id="todays-topicsactivities" class="section level2">
+<h2>Today’s topics/activities</h2>
+<div id="chalk-talk" class="section level3">
+<h3>1. Chalk talk</h3>
+<ul>
+<li>Reading of “On Exactitude in Science” by Borges.</li>
+<li>Slides on <a href="https://beanumber.github.io/sds192/lectures/24-shapefiles.html#17" target="_blank">GIS</a></li>
+<li>London underground maps. Compare them. As stated in this <a href="https://www.theverge.com/2015/11/11/9712376/london-walk-tube-underground-map" target="_blank">article</a>, the transit map sacrifices accuracy for clarity.
+<ul>
+<li>The map of stations as they truly exist: <img src="static/images/underground_real_map.png" width="700" /></li>
+<li>The transit map inside the stations and trains. All lines are either straight or at 45 degrees and futhermore the geographic space is distorted. <img src="static/images/underground_transit_map.gif" width="700" /></li>
+</ul></li>
+</ul>
+</div>
+<div id="in-class-exercise" class="section level3">
+<h3>2. In-class exercise</h3>
+<p>Two chief tools we’ll be using.</p>
+<ul>
+<li><a href="https://rstudio.github.io/leaflet/" target="_blank"><code>leaflet</code> package</a> for interactive maps</li>
+<li><code>sf</code> package for static maps in <code>ggplot2</code> and loading shapefiles. See <a href="https://keen-swartz-3146c4.netlify.com/" target="_blank">Spatial Data Science</a>.</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># Interactive map example:</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(leaflet)</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">leaflet</span>() <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="st">  </span><span class="kw">addTiles</span>() <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="st">  </span><span class="kw">addMarkers</span>(<span class="dt">lng=</span><span class="op">-</span><span class="fl">72.6419889</span>, <span class="dt">lat=</span><span class="fl">42.3177692</span>)</a></code></pre></div>
 <div id="htmlwidget-e4806c1bb1490fee566b" style="width:768px;height:432px;" class="leaflet html-widget"></div>
 <script type="application/json" data-for="htmlwidget-e4806c1bb1490fee566b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[42.3177692,-72.6419889,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[42.3177692,42.3177692],"lng":[-72.6419889,-72.6419889]}},"evals":[],"jsHooks":[]}</script>
-
-```r
-# Static map example:
-library(tidyverse)
-library(fivethirtyeight)
-library(maps)
-library(sf)
-
-USA_sf <- maps::map("state", plot = FALSE, fill = TRUE) %>%
-  sf::st_as_sf() %>%
-  sf::st_transform(crs = 4326)
-
-pres_2016_trail_sf <- pres_2016_trail %>%
-  sf::st_as_sf(coords = c("lng", "lat"), crs = 4326)
-
-ggplot() +
-  geom_sf(data = USA_sf) +
-  geom_sf(data = pres_2016_trail_sf, aes(col = candidate), size = 2) +
-  facet_wrap(~candidate)
-```
-
-<img src="index_files/figure-html/unnamed-chunk-1-2.png" width="768" />
--->
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># Static map example:</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">library</span>(fivethirtyeight)</a>
+<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="kw">library</span>(maps)</a>
+<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="kw">library</span>(sf)</a>
+<a class="sourceLine" id="cb2-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb2-7" data-line-number="7">USA_sf &lt;-<span class="st"> </span>maps<span class="op">::</span><span class="kw">map</span>(<span class="st">&quot;state&quot;</span>, <span class="dt">plot =</span> <span class="ot">FALSE</span>, <span class="dt">fill =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="st">  </span>sf<span class="op">::</span><span class="kw">st_as_sf</span>() <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb2-9" data-line-number="9"><span class="st">  </span>sf<span class="op">::</span><span class="kw">st_transform</span>(<span class="dt">crs =</span> <span class="dv">4326</span>)</a>
+<a class="sourceLine" id="cb2-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb2-11" data-line-number="11">pres_<span class="dv">2016</span>_trail_sf &lt;-<span class="st"> </span>pres_<span class="dv">2016</span>_trail <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb2-12" data-line-number="12"><span class="st">  </span>sf<span class="op">::</span><span class="kw">st_as_sf</span>(<span class="dt">coords =</span> <span class="kw">c</span>(<span class="st">&quot;lng&quot;</span>, <span class="st">&quot;lat&quot;</span>), <span class="dt">crs =</span> <span class="dv">4326</span>)</a>
+<a class="sourceLine" id="cb2-13" data-line-number="13"></a>
+<a class="sourceLine" id="cb2-14" data-line-number="14"><span class="kw">ggplot</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-15" data-line-number="15"><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data =</span> USA_sf) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-16" data-line-number="16"><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data =</span> pres_<span class="dv">2016</span>_trail_sf, <span class="kw">aes</span>(<span class="dt">col =</span> candidate), <span class="dt">size =</span> <span class="dv">2</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-17" data-line-number="17"><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>candidate)</a></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-1-2.png" width="768" /></p>
 <hr />
+</div>
 </div>
 </div>
 <div id="Lec25" class="section level1">
@@ -572,18 +564,18 @@ ggplot() +
 <li>See <a href="https://www.tidyverse.org/" target="_blank">tidyverse.org</a> for more info.</li>
 <li>In other words, from now on:</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># Don&#39;t do all this</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="kw">library</span>(readr)</a>
-<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="kw">library</span>(tidyr)</a>
-<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="kw">library</span>(stringr)</a>
-<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="kw">library</span>(tibble)</a>
-<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="kw">library</span>(forcats)</a>
-<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="kw">library</span>(purrr)</a>
-<a class="sourceLine" id="cb1-10" data-line-number="10"></a>
-<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="co"># Do this</span></a>
-<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="kw">library</span>(tidyverse)</a></code></pre></div></li>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="co"># Don&#39;t do all this</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="kw">library</span>(readr)</a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="kw">library</span>(tidyr)</a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="kw">library</span>(stringr)</a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="kw">library</span>(tibble)</a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="kw">library</span>(forcats)</a>
+<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="kw">library</span>(purrr)</a>
+<a class="sourceLine" id="cb3-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb3-11" data-line-number="11"><span class="co"># Do this</span></a>
+<a class="sourceLine" id="cb3-12" data-line-number="12"><span class="kw">library</span>(tidyverse)</a></code></pre></div></li>
 <li>Smithies in SDS “Data Science Day” this Saturday in the Campus Center featuring:
 <ul>
 <li>RStudio tidyverse developer advocate <a href="https://twitter.com/dataandme" target="_blank">Mara Averick</a></li>
@@ -595,9 +587,9 @@ ggplot() +
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities" class="section level2">
+<div id="todays-topicsactivities-1" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk" class="section level3">
+<div id="chalk-talk-1" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Go over Midterm II practice exam solutions. Practice exam is posted on Slack under <code>#general_announcements</code>.</li>
@@ -623,16 +615,16 @@ ggplot() +
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-1" class="section level3">
+<div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Fact that will 🤯 about MP2 data.</li>
 <li>Midterm II discussion. See <a href="midterms.html#midtermII">midterms</a> page.</li>
 </ul>
 </div>
-<div id="in-class-exercise" class="section level3">
+<div id="in-class-exercise-1" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Practice midterm posted on Slack; we’ll go over solutions on Wednesday.</li>
@@ -646,9 +638,9 @@ ggplot() +
 <div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="in-class-exercise-1" class="section level3">
+<div id="in-class-exercise-2" class="section level3">
 <h3>1. In-class exercise</h3>
 <ul>
 <li>Work on MP2</li>
@@ -670,15 +662,15 @@ ggplot() +
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-3" class="section level2">
+<div id="todays-topicsactivities-4" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-2" class="section level3">
+<div id="chalk-talk-3" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Strategies for writing reports.</li>
 </ul>
 </div>
-<div id="in-class-exercise-2" class="section level3">
+<div id="in-class-exercise-3" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Work on MP2!</p>
 <hr />
@@ -702,9 +694,9 @@ ggplot() +
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-4" class="section level2">
+<div id="todays-topicsactivities-5" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-3" class="section level3">
+<div id="chalk-talk-4" class="section level3">
 <h3>1. Chalk talk</h3>
 <p>Solutions to PS05 Q1.c). What happened to the average age above 60? The hint given on Slack was to look at the <code>ggplot2</code> cheatsheet -&gt; 2nd page -&gt; Bottom right corner -&gt; “Zooming”</p>
 <ul>
@@ -712,32 +704,32 @@ ggplot() +
 <li><code>coord_cartesian(ylim=c(a, b))</code> zooms in on the the y-axis to be between <code>a</code> to <code>b</code> but does not “clip” (throw out) the points outside this interval</li>
 </ul>
 <p>For example, consider the following regression line:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4">example &lt;-<span class="st"> </span><span class="kw">tibble</span>(</a>
-<a class="sourceLine" id="cb2-5" data-line-number="5">  <span class="dt">x =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>),</a>
-<a class="sourceLine" id="cb2-6" data-line-number="6">  <span class="dt">y =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">5</span>)</a>
-<a class="sourceLine" id="cb2-7" data-line-number="7">)</a>
-<a class="sourceLine" id="cb2-8" data-line-number="8"></a>
-<a class="sourceLine" id="cb2-9" data-line-number="9"><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb2-10" data-line-number="10"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb2-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4">example &lt;-<span class="st"> </span><span class="kw">tibble</span>(</a>
+<a class="sourceLine" id="cb4-5" data-line-number="5">  <span class="dt">x =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>),</a>
+<a class="sourceLine" id="cb4-6" data-line-number="6">  <span class="dt">y =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb4-7" data-line-number="7">)</a>
+<a class="sourceLine" id="cb4-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb4-9" data-line-number="9"><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-10" data-line-number="10"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
 <p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="512" /></p>
 <p>Let’s set the y-axis limit to be between 0 and 3. Using <code>ylim(0, 3)</code> clips out the point <code>(5, 5)</code> and thus the regression line is flat:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="st">  </span><span class="kw">ylim</span>(<span class="dv">0</span>, <span class="dv">3</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="st">  </span><span class="kw">ylim</span>(<span class="dv">0</span>, <span class="dv">3</span>)</a></code></pre></div>
 <p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="512" /></p>
 <p>However, using <code>coord_cartesian(ylim = c(0, 3))</code> merely zooms in on this part of the y-axis without clipping the point <code>(5, 5)</code> and thus the regression line is the original one:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="st">  </span><span class="kw">coord_cartesian</span>(<span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">3</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="st">  </span><span class="kw">coord_cartesian</span>(<span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">3</span>))</a></code></pre></div>
 <p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="512" /></p>
 </div>
-<div id="in-class-exercise-3" class="section level3">
+<div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Work on MP2!</p>
 <hr />
@@ -753,9 +745,9 @@ ggplot() +
 <li>MP1 grading update</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-5" class="section level2">
+<div id="todays-topicsactivities-6" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-4" class="section level3">
+<div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec19: In-class exercise, computing available seat miles. Note solution is in ModernDive Appendix D -&gt; Learning Check 3.20.
@@ -771,7 +763,7 @@ ggplot() +
 </center>
 <p><br></p>
 </div>
-<div id="in-class-exercise-4" class="section level3">
+<div id="in-class-exercise-5" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 4.1 - 4.2</li>
@@ -793,9 +785,9 @@ ggplot() +
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-6" class="section level2">
+<div id="todays-topicsactivities-7" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-5" class="section level3">
+<div id="chalk-talk-6" class="section level3">
 <h3>1. Chalk talk</h3>
 <p>Recap of Lec18: Click on tweet below to see all 6 different types of joins:</p>
 <blockquote class="twitter-tweet">
@@ -808,7 +800,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <p>Copy this to your <code>classnotes.Rmd</code></p>
 <script src="https://gist.github.com/rudeboybert/968dbf26d5f9407703ae7b24d217af67.js"></script>
 </div>
-<div id="in-class-exercise-5" class="section level3">
+<div id="in-class-exercise-6" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Complete ModernDive Learning Check 3.20: Using data in <code>nycflights13</code> package, compute available seat miles:</p>
 <center>
@@ -829,9 +821,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>For Wednesday’s lecture sit next to your MP2 partner. We’ll be doing an in-class data-wrangling exercise</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-7" class="section level2">
+<div id="todays-topicsactivities-8" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-6" class="section level3">
+<div id="chalk-talk-7" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Go over <a href="PS.html#PS04_solutions">PS04 solutions</a></li>
@@ -839,7 +831,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>Last major set of verbs: <code>_join()</code> data frames, <code>select()</code>, and <code>rename()</code> variables</li>
 </ul>
 </div>
-<div id="in-class-exercise-6" class="section level3">
+<div id="in-class-exercise-7" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 3.7, 3.8.1 - 3.8.2.</li>
@@ -862,9 +854,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-8" class="section level2">
+<div id="todays-topicsactivities-9" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-7" class="section level3">
+<div id="chalk-talk-8" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec16:
@@ -875,7 +867,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li><code>mutate()</code> new columns/variables and <code>arrange()</code> i.e. sort rows</li>
 </ul>
 </div>
-<div id="in-class-exercise-7" class="section level3">
+<div id="in-class-exercise-8" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 3.5 - 3.6</li>
@@ -892,16 +884,16 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>Slack: Post on <code>#random</code></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-9" class="section level2">
+<div id="todays-topicsactivities-10" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-8" class="section level3">
+<div id="chalk-talk-9" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec14</li>
 <li><code>summarize()</code> rows and <code>group_by() %&gt;% summarize()</code></li>
 </ul>
 </div>
-<div id="in-class-exercise-8" class="section level3">
+<div id="in-class-exercise-9" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Keyboard shortcut in RStudio</li>
@@ -925,9 +917,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </ol></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-10" class="section level2">
+<div id="todays-topicsactivities-11" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="in-class-exercise-9" class="section level3">
+<div id="in-class-exercise-10" class="section level3">
 <h3>1. In-class exercise</h3>
 <ul>
 <li>Put finishing touches on MP1</li>
@@ -946,9 +938,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-11" class="section level2">
+<div id="todays-topicsactivities-12" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-9" class="section level3">
+<div id="chalk-talk-10" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Intro to data wrangling</li>
@@ -958,7 +950,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <p>Example:</p>
 <script src="https://gist.github.com/rudeboybert/ebf39a24a03216be55cb20d9c475f57d.js"></script>
 </div>
-<div id="in-class-exercise-10" class="section level3">
+<div id="in-class-exercise-11" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 3 - 3.2</li>
@@ -982,9 +974,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-12" class="section level2">
+<div id="todays-topicsactivities-13" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-10" class="section level3">
+<div id="chalk-talk-11" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec09:
@@ -995,7 +987,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>What is a “minimally viable product”?</li>
 </ul>
 </div>
-<div id="in-class-exercise-11" class="section level3">
+<div id="in-class-exercise-12" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP1</li>
@@ -1013,9 +1005,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>Go over updated <a href="midterms.html">Midterm I</a> instructions</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-13" class="section level2">
+<div id="todays-topicsactivities-14" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-11" class="section level3">
+<div id="chalk-talk-12" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Trend lines. Two types (among many):
@@ -1034,36 +1026,36 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </ol></li>
 </ul>
 </div>
-<div id="in-class-exercise-12" class="section level3">
+<div id="in-class-exercise-13" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>First, copy this to your <code>classnotes.Rmd</code> and go over code.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="kw">library</span>(gapminder)</a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="co"># 1. Recreate plot from PS02 but with no color:</span></a>
-<a class="sourceLine" id="cb5-6" data-line-number="6">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
-<a class="sourceLine" id="cb5-8" data-line-number="8"></a>
-<a class="sourceLine" id="cb5-9" data-line-number="9"><span class="co"># 1.a) Add LOESS smoother layer with geom_smooth()</span></a>
-<a class="sourceLine" id="cb5-10" data-line-number="10"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-12" data-line-number="12"><span class="st">  </span><span class="kw">geom_smooth</span>()</a>
-<a class="sourceLine" id="cb5-13" data-line-number="13"></a>
-<a class="sourceLine" id="cb5-14" data-line-number="14"><span class="co"># 1.b) Remove standard error bars</span></a>
-<a class="sourceLine" id="cb5-15" data-line-number="15"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-16" data-line-number="16"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb5-18" data-line-number="18"></a>
-<a class="sourceLine" id="cb5-19" data-line-number="19"><span class="co"># 1.c) Change span of &quot;smoothing&quot; window by changing span = value. Try different values.</span></a>
-<a class="sourceLine" id="cb5-20" data-line-number="20"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-21" data-line-number="21"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-22" data-line-number="22"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>, <span class="dt">span =</span> <span class="fl">0.25</span>)</a>
-<a class="sourceLine" id="cb5-23" data-line-number="23"></a>
-<a class="sourceLine" id="cb5-24" data-line-number="24"><span class="co"># 1.d) Force line to be straight. i.e. linear regression</span></a>
-<a class="sourceLine" id="cb5-25" data-line-number="25"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-26" data-line-number="26"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-27" data-line-number="27"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb7-3" data-line-number="3"><span class="kw">library</span>(gapminder)</a>
+<a class="sourceLine" id="cb7-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb7-5" data-line-number="5"><span class="co"># 1. Recreate plot from PS02 but with no color:</span></a>
+<a class="sourceLine" id="cb7-6" data-line-number="6">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb7-7" data-line-number="7"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
+<a class="sourceLine" id="cb7-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb7-9" data-line-number="9"><span class="co"># 1.a) Add LOESS smoother layer with geom_smooth()</span></a>
+<a class="sourceLine" id="cb7-10" data-line-number="10"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb7-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb7-12" data-line-number="12"><span class="st">  </span><span class="kw">geom_smooth</span>()</a>
+<a class="sourceLine" id="cb7-13" data-line-number="13"></a>
+<a class="sourceLine" id="cb7-14" data-line-number="14"><span class="co"># 1.b) Remove standard error bars</span></a>
+<a class="sourceLine" id="cb7-15" data-line-number="15"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb7-16" data-line-number="16"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb7-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>)</a>
+<a class="sourceLine" id="cb7-18" data-line-number="18"></a>
+<a class="sourceLine" id="cb7-19" data-line-number="19"><span class="co"># 1.c) Change span of &quot;smoothing&quot; window by changing span = value. Try different values.</span></a>
+<a class="sourceLine" id="cb7-20" data-line-number="20"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb7-21" data-line-number="21"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb7-22" data-line-number="22"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>, <span class="dt">span =</span> <span class="fl">0.25</span>)</a>
+<a class="sourceLine" id="cb7-23" data-line-number="23"></a>
+<a class="sourceLine" id="cb7-24" data-line-number="24"><span class="co"># 1.d) Force line to be straight. i.e. linear regression</span></a>
+<a class="sourceLine" id="cb7-25" data-line-number="25"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb7-26" data-line-number="26"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb7-27" data-line-number="27"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
 <p>Second, in <code>loess.Rmd</code> you’re change only the code within the code</p>
 <pre><code>renderPlot({ 
     
@@ -1082,9 +1074,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>None</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-14" class="section level2">
+<div id="todays-topicsactivities-15" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-12" class="section level3">
+<div id="chalk-talk-13" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Go over Midterm I</li>
@@ -1102,9 +1094,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li><a href="projects.html#MP1">Mini-Project 1</a> info posted</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-15" class="section level2">
+<div id="todays-topicsactivities-16" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-13" class="section level3">
+<div id="chalk-talk-14" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec09: Color palettes from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a> <!--
@@ -1114,7 +1106,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>Recap of “five named graphs”: ModernDive Table 2.4</li>
 </ul>
 </div>
-<div id="in-class-exercise-13" class="section level3">
+<div id="in-class-exercise-14" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.9. In particular in Section 2.9.3, open the <code>ggplot2</code> cheatsheet in RStudio and read over the different <code>geom</code> types</li>
@@ -1124,33 +1116,33 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>Change both the color of the scatterplot points and the fill of the bars. You can do this by selecting a palette from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a> or by setting them manually</li>
 </ol></li>
 </ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb7-3" data-line-number="3"><span class="kw">library</span>(nycflights13)</a>
-<a class="sourceLine" id="cb7-4" data-line-number="4"><span class="kw">library</span>(gapminder)</a>
-<a class="sourceLine" id="cb7-5" data-line-number="5"></a>
-<a class="sourceLine" id="cb7-6" data-line-number="6"><span class="co"># 1. Recreate plot from PS02, but change default &quot;color&quot; palette of points:</span></a>
-<a class="sourceLine" id="cb7-7" data-line-number="7">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb7-8" data-line-number="8"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
-<a class="sourceLine" id="cb7-9" data-line-number="9"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, </a>
-<a class="sourceLine" id="cb7-10" data-line-number="10">       <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop, <span class="dt">color =</span> continent)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb7-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb7-12" data-line-number="12"><span class="st">  </span><span class="kw">scale_color_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
-<a class="sourceLine" id="cb7-13" data-line-number="13"></a>
-<a class="sourceLine" id="cb7-14" data-line-number="14"><span class="co"># 2.a) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by adding a </span></a>
-<a class="sourceLine" id="cb7-15" data-line-number="15"><span class="co"># palette layer:</span></a>
-<a class="sourceLine" id="cb7-16" data-line-number="16"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb7-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb7-18" data-line-number="18"><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
-<a class="sourceLine" id="cb7-19" data-line-number="19"></a>
-<a class="sourceLine" id="cb7-20" data-line-number="20"><span class="co"># 2.b) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></a>
-<a class="sourceLine" id="cb7-21" data-line-number="21"><span class="co"># changing colors in a layer:</span></a>
-<a class="sourceLine" id="cb7-22" data-line-number="22"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb7-23" data-line-number="23"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb7-24" data-line-number="24"><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;darkorange&quot;</span>, <span class="st">&quot;forestgreen&quot;</span>, <span class="st">&quot;navyblue&quot;</span>))</a>
-<a class="sourceLine" id="cb7-25" data-line-number="25"></a>
-<a class="sourceLine" id="cb7-26" data-line-number="26"><span class="co"># 2.c) Soooooo many choices...</span></a>
-<a class="sourceLine" id="cb7-27" data-line-number="27"><span class="kw">colors</span>()</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb9-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb9-3" data-line-number="3"><span class="kw">library</span>(nycflights13)</a>
+<a class="sourceLine" id="cb9-4" data-line-number="4"><span class="kw">library</span>(gapminder)</a>
+<a class="sourceLine" id="cb9-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb9-6" data-line-number="6"><span class="co"># 1. Recreate plot from PS02, but change default &quot;color&quot; palette of points:</span></a>
+<a class="sourceLine" id="cb9-7" data-line-number="7">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb9-8" data-line-number="8"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
+<a class="sourceLine" id="cb9-9" data-line-number="9"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, </a>
+<a class="sourceLine" id="cb9-10" data-line-number="10">       <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop, <span class="dt">color =</span> continent)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb9-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb9-12" data-line-number="12"><span class="st">  </span><span class="kw">scale_color_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
+<a class="sourceLine" id="cb9-13" data-line-number="13"></a>
+<a class="sourceLine" id="cb9-14" data-line-number="14"><span class="co"># 2.a) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by adding a </span></a>
+<a class="sourceLine" id="cb9-15" data-line-number="15"><span class="co"># palette layer:</span></a>
+<a class="sourceLine" id="cb9-16" data-line-number="16"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb9-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb9-18" data-line-number="18"><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
+<a class="sourceLine" id="cb9-19" data-line-number="19"></a>
+<a class="sourceLine" id="cb9-20" data-line-number="20"><span class="co"># 2.b) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></a>
+<a class="sourceLine" id="cb9-21" data-line-number="21"><span class="co"># changing colors in a layer:</span></a>
+<a class="sourceLine" id="cb9-22" data-line-number="22"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb9-23" data-line-number="23"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb9-24" data-line-number="24"><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;darkorange&quot;</span>, <span class="st">&quot;forestgreen&quot;</span>, <span class="st">&quot;navyblue&quot;</span>))</a>
+<a class="sourceLine" id="cb9-25" data-line-number="25"></a>
+<a class="sourceLine" id="cb9-26" data-line-number="26"><span class="co"># 2.c) Soooooo many choices...</span></a>
+<a class="sourceLine" id="cb9-27" data-line-number="27"><span class="kw">colors</span>()</a></code></pre></div>
 <hr />
 </div>
 </div>
@@ -1168,9 +1160,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>Go over <a href="PS.html#PS03_solutions">PS03 solutions</a></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-16" class="section level2">
+<div id="todays-topicsactivities-17" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-14" class="section level3">
+<div id="chalk-talk-15" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of barplots: Exercise on pie charts vs barplots below</li>
@@ -1182,9 +1174,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>Get the <a href="https://www.color-hex.com/color/f8766d" target="_blank">color hex codes</a> of <code>ggplot2</code> default color palette:</li>
 </ol></li>
 </ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw">library</span>(scales)</a>
-<a class="sourceLine" id="cb8-2" data-line-number="2">number_of_colors &lt;-<span class="st"> </span><span class="dv">3</span></a>
-<a class="sourceLine" id="cb8-3" data-line-number="3"><span class="kw">show_col</span>(<span class="kw">hue_pal</span>()(number_of_colors))</a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="kw">library</span>(scales)</a>
+<a class="sourceLine" id="cb10-2" data-line-number="2">number_of_colors &lt;-<span class="st"> </span><span class="dv">3</span></a>
+<a class="sourceLine" id="cb10-3" data-line-number="3"><span class="kw">show_col</span>(<span class="kw">hue_pal</span>()(number_of_colors))</a></code></pre></div>
 <p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" /></p>
 </div>
 <div id="exercise-on-pie-charts-vs-barplots" class="section level3">
@@ -1200,7 +1192,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <p>Compare that to using barplots. Which do you prefer?</p>
 <p><img src="static/images/barplots.png" width="600" /></p>
 </div>
-<div id="in-class-exercise-14" class="section level3">
+<div id="in-class-exercise-15" class="section level3">
 <h3>3. In-class exercise</h3>
 <ul>
 <li>Quiz on podcast</li>
@@ -1230,9 +1222,9 @@ We are thrilled to be at <a href="https://twitter.com/Statfest?ref_src=twsrc%5Et
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-17" class="section level2">
+<div id="todays-topicsactivities-18" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-15" class="section level3">
+<div id="chalk-talk-16" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of boxplots</li>
@@ -1240,7 +1232,7 @@ We are thrilled to be at <a href="https://twitter.com/Statfest?ref_src=twsrc%5Et
 <li>Barplots</li>
 </ul>
 </div>
-<div id="in-class-exercise-15" class="section level3">
+<div id="in-class-exercise-16" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.8</li>
@@ -1279,9 +1271,9 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-18" class="section level2">
+<div id="todays-topicsactivities-19" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-16" class="section level3">
+<div id="chalk-talk-17" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of histograms</li>
@@ -1323,7 +1315,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <p>Let’s compare the points and the corresponding boxplot side-by-side with the values on the <span class="math inline">\(y\)</span>-axis matching:</p>
 <p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-16" class="section level3">
+<div id="in-class-exercise-17" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.6 - 2.7</li>
@@ -1342,9 +1334,9 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>Prof. Katie Kinnaird’s TRIPODS+X - Data Science Education Investigation</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-19" class="section level2">
+<div id="todays-topicsactivities-20" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-17" class="section level3">
+<div id="chalk-talk-18" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1352,7 +1344,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>Histograms for visualizing distribution of a numerical variable.</li>
 </ul>
 </div>
-<div id="in-class-exercise-17" class="section level3">
+<div id="in-class-exercise-18" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.5</li>
@@ -1370,9 +1362,9 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>The art of managing Slack notifications</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-20" class="section level2">
+<div id="todays-topicsactivities-21" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-18" class="section level3">
+<div id="chalk-talk-19" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1380,7 +1372,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>Linegraphs</li>
 </ul>
 </div>
-<div id="in-class-exercise-18" class="section level3">
+<div id="in-class-exercise-19" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.3.2 - 2.4</li>
@@ -1399,9 +1391,9 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>PS02 posted under <a href="PS.html">Problem Sets</a></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-21" class="section level2">
+<div id="todays-topicsactivities-22" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-19" class="section level3">
+<div id="chalk-talk-20" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1422,7 +1414,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </tbody>
 </table>
 </div>
-<div id="in-class-exercise-19" class="section level3">
+<div id="in-class-exercise-20" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>At a couple of steps in this process, you will be asked to install packages. Say yes to all of them!</li>
@@ -1477,9 +1469,9 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>Slack updates: custom emojis and vote in today’s poll!</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-22" class="section level2">
+<div id="todays-topicsactivities-23" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-20" class="section level3">
+<div id="chalk-talk-21" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1490,7 +1482,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </iframe>
 <p></br></p>
 </div>
-<div id="in-class-exercise-20" class="section level3">
+<div id="in-class-exercise-21" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2 - 2.3.1.</li>
@@ -1508,9 +1500,9 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>Problem Set 01 due this Friday posted under <a href="PS.html">Problem Sets</a>.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-23" class="section level2">
+<div id="todays-topicsactivities-24" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-21" class="section level3">
+<div id="chalk-talk-22" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Intro to Slack <a href="static/intro_to_slack.pdf" target="_blank">slides</a></li>
@@ -1518,7 +1510,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>What are R packages?</li>
 </ul>
 </div>
-<div id="in-class-exercise-21" class="section level3">
+<div id="in-class-exercise-22" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Set up RStudio Cloud:
@@ -1546,7 +1538,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <h2>Announcements</h2>
 <p>Welcome!</p>
 </div>
-<div id="todays-topicsactivities-24" class="section level2">
+<div id="todays-topicsactivities-25" class="section level2">
 <h2>Today’s topics/activities</h2>
 <ul>
 <li>My story.</li>

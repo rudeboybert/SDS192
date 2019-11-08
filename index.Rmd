@@ -86,7 +86,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
     + Groups posted on Slack in `#MP3` channel. 
     + You will be making one interactive and one static map. More details on Monday.
 
-<!--
+
 
 ## Today's topics/activities
 
@@ -133,7 +133,7 @@ ggplot() +
   geom_sf(data = pres_2016_trail_sf, aes(col = candidate), size = 2) +
   facet_wrap(~candidate)
 ```
--->
+
 
 
 ***
