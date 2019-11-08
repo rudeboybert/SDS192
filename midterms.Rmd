@@ -292,7 +292,7 @@ Next we need to identify the "women and children"
 Titanic %>% 
   group_by(Sex, Age, Survived) %>% 
   summarize(n = sum(n)) %>% 
-  # Identify "women and children":
+  # Identify "women and children". Shout out to Adriana B. for suggesting this step to me!
   mutate(w_or_c = Sex == "Female" | Age == "Child")
 ```
 
@@ -315,7 +315,7 @@ Next compute the proportions. We haven't done this much in class, but if you loo
 Titanic %>% 
   group_by(Sex, Age, Survived) %>% 
   summarize(n = sum(n)) %>% 
-  # Identify "women and children":
+  # Identify "women and children". Shout out to Adriana B. for suggesting this step to me!
   mutate(w_or_c = Sex == "Female" | Age == "Child") %>% 
   # Get counts for "women and children":
   group_by(w_or_c, Survived) %>% 
@@ -334,7 +334,7 @@ Lastly, to make things easier to look at, let's only look at `Survived` equals `
 Titanic %>% 
   group_by(Sex, Age, Survived) %>% 
   summarize(n = sum(n)) %>% 
-  # Identify "women and children":
+  # Identify "women and children". Shout out to Adriana B. for suggesting this step to me!
   mutate(w_or_c = Sex == "Female" | Age == "Child") %>% 
   # Get counts for "women and children":
   group_by(w_or_c, Survived) %>% 

@@ -741,7 +741,7 @@ h1{font-weight: 400;}
 <div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" data-line-number="1">Titanic <span class="op">%&gt;%</span><span class="st"> </span></a>
 <a class="sourceLine" id="cb20-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(Sex, Age, Survived) <span class="op">%&gt;%</span><span class="st"> </span></a>
 <a class="sourceLine" id="cb20-3" data-line-number="3"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb20-4" data-line-number="4"><span class="st">  </span><span class="co"># Identify &quot;women and children&quot;:</span></a>
+<a class="sourceLine" id="cb20-4" data-line-number="4"><span class="st">  </span><span class="co"># Identify &quot;women and children&quot;. Shout out to Adriana B. for suggesting this step to me!</span></a>
 <a class="sourceLine" id="cb20-5" data-line-number="5"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">w_or_c =</span> Sex <span class="op">==</span><span class="st"> &quot;Female&quot;</span> <span class="op">|</span><span class="st"> </span>Age <span class="op">==</span><span class="st"> &quot;Child&quot;</span>)</a></code></pre></div>
 <pre><code>## # A tibble: 8 x 5
 ## # Groups:   Sex, Age [4]
@@ -776,7 +776,7 @@ h1{font-weight: 400;}
 <div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" data-line-number="1">Titanic <span class="op">%&gt;%</span><span class="st"> </span></a>
 <a class="sourceLine" id="cb24-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(Sex, Age, Survived) <span class="op">%&gt;%</span><span class="st"> </span></a>
 <a class="sourceLine" id="cb24-3" data-line-number="3"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb24-4" data-line-number="4"><span class="st">  </span><span class="co"># Identify &quot;women and children&quot;:</span></a>
+<a class="sourceLine" id="cb24-4" data-line-number="4"><span class="st">  </span><span class="co"># Identify &quot;women and children&quot;. Shout out to Adriana B. for suggesting this step to me!</span></a>
 <a class="sourceLine" id="cb24-5" data-line-number="5"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">w_or_c =</span> Sex <span class="op">==</span><span class="st"> &quot;Female&quot;</span> <span class="op">|</span><span class="st"> </span>Age <span class="op">==</span><span class="st"> &quot;Child&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></a>
 <a class="sourceLine" id="cb24-6" data-line-number="6"><span class="st">  </span><span class="co"># Get counts for &quot;women and children&quot;:</span></a>
 <a class="sourceLine" id="cb24-7" data-line-number="7"><span class="st">  </span><span class="kw">group_by</span>(w_or_c, Survived) <span class="op">%&gt;%</span><span class="st"> </span></a>
@@ -799,7 +799,7 @@ h1{font-weight: 400;}
 <div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb26-1" data-line-number="1">Titanic <span class="op">%&gt;%</span><span class="st"> </span></a>
 <a class="sourceLine" id="cb26-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(Sex, Age, Survived) <span class="op">%&gt;%</span><span class="st"> </span></a>
 <a class="sourceLine" id="cb26-3" data-line-number="3"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb26-4" data-line-number="4"><span class="st">  </span><span class="co"># Identify &quot;women and children&quot;:</span></a>
+<a class="sourceLine" id="cb26-4" data-line-number="4"><span class="st">  </span><span class="co"># Identify &quot;women and children&quot;. Shout out to Adriana B. for suggesting this step to me!</span></a>
 <a class="sourceLine" id="cb26-5" data-line-number="5"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">w_or_c =</span> Sex <span class="op">==</span><span class="st"> &quot;Female&quot;</span> <span class="op">|</span><span class="st"> </span>Age <span class="op">==</span><span class="st"> &quot;Child&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></a>
 <a class="sourceLine" id="cb26-6" data-line-number="6"><span class="st">  </span><span class="co"># Get counts for &quot;women and children&quot;:</span></a>
 <a class="sourceLine" id="cb26-7" data-line-number="7"><span class="st">  </span><span class="kw">group_by</span>(w_or_c, Survived) <span class="op">%&gt;%</span><span class="st"> </span></a>
