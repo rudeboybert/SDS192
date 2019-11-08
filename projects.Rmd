@@ -41,7 +41,11 @@ faithful a manner as possible while maintaining a level suitable for novices.* T
 
 
 
+# Mini-Project 1 {#MP1}
+
 <!--
+Things to remember for next time
+
 - Has to involve intervals of time: a start time and end time. For example, not "I went to sleep at." but "I slept during these times."
 - Add grading rubric
 - Output the data frame in a kable table
@@ -53,8 +57,6 @@ with two levels.
 - In reflection piece: tie in with podcast. difficulty of collecting data. 
 - Issue with time intervals being imported in seconds, minutes, hours, 
 -->
-
-# Mini-Project 1 {#MP1}
 
 *Partially assigned on Friday 9/27, completely assigned on Monday 9/30, due Friday 10/11 at 5pm.*
 
@@ -123,8 +125,15 @@ Only you're done your MVP, iterate and improve by adding complexity.
 
 # Mini-Project 2 {#MP2}
 
-*Assigned on Friday 10/18, due Friday 11/1 at 5pm.*
+<!--
+Things to remember for next time
 
+- 24A vs 24E transaction_typ varible
+- Write this as an R package?
+- 
+-->
+
+*Assigned on Friday 10/18, due Friday 11/1 at 5pm.*
 
 ## Data
 
@@ -189,12 +198,26 @@ Here are two randomly chosen examples to give a qualitative sense of the outcome
     + Written text does an exceptional job of not only addressing "What is happening?" questions, but also "Why is this happening?" questions (this criteria is subjective).
 
 
-
-
 ## To submit
 
 1. Each group will make only one submission: the group leader will submit a `.zip` file of all the contents of the `MP2` folder on Moodle.
 1. **Individually**: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdPAojeiucovzcoKb-6-zrplAvhKGGqt1YXz5dv1JYlQqzbXg/viewform){target="_blank"}
+
+
+
+***
+
+
+
+# Mini-Project 3 {#MP3}
+
+<!--
+Things to remember for next time
+
+- 
+-->
+
+*Assigned on Monday 11/11, due Friday 11/22 at 5pm.*
 
 
 

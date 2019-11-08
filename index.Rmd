@@ -77,10 +77,12 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
-<!--
+
 # Lec 26: Fri 11/8 {#Lec26}
 
 ## Announcements
+
+* 
 
 
 ## Today's topics/activities
@@ -88,7 +90,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ### 1. Chalk talk
 
 ### 2. In-class exercise
--->
+
 
 
 
@@ -132,11 +134,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 1. Chalk talk
 
-
-
 * Go over Midterm II practice exam solutions. Practice exam is posted on Slack under `#general_announcements`.
-
-### 2. In-class exercise
 
 
 
