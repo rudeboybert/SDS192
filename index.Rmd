@@ -82,15 +82,50 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-* 
-
+* MP3: Maps!
+    + Groups posted on Slack in `#MP3` channel. 
+    + You will be making one interactive and one static map. More details on Monday.
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
+* Reading of "On Exactitude in Science" by Borges.
+* London underground: [Actual map](https://countryofnowhere.files.wordpress.com/2013/06/london_underground_full_map.png) vs [transit map](https://www.theverge.com/2015/11/11/9712376/london-walk-tube-underground-map)
+* Slides on [GIS](https://beanumber.github.io/sds192/lectures/24-shapefiles.html#17){target="_blank"}
+
 ### 2. In-class exercise
 
+Two chief tools we'll be using:
+
+* [`leaflet` package](https://rstudio.github.io/leaflet/){target="_blank"} for interactive maps
+* `sf` package for static maps in `ggplot2`. See [Spatial Data Science](https://keen-swartz-3146c4.netlify.com/){target="_blank"}.
+
+```{r}
+# Interactive map example:
+library(leaflet)
+leaflet() %>%
+  addTiles() %>% 
+  addMarkers(lng=-72.6419889, lat=42.3177692)
+
+# Static map example:
+library(tidyverse)
+library(fivethirtyeight)
+library(maps)
+library(sf)
+
+USA_sf <- maps::map("state", plot = FALSE, fill = TRUE) %>%
+  sf::st_as_sf() %>%
+  sf::st_transform(crs = 4326)
+
+pres_2016_trail_sf <- pres_2016_trail %>%
+  sf::st_as_sf(coords = c("lng", "lat"), crs = 4326)
+
+ggplot() +
+  geom_sf(data = USA_sf) +
+  geom_sf(data = pres_2016_trail_sf, aes(col = candidate), size = 2) +
+  facet_wrap(~candidate)
+```
 
 
 
