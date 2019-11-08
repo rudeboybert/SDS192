@@ -252,7 +252,7 @@ approximately the same number of values in each group.
 
 
 
-# How do I compute proportions?
+# How do I compute proportions? {#prop}
 
 By using a `group_by()` followed not by a `summarize()` as is often the case, but rather a `mutate()`. So say we compute the total revenue millions for each movie rating and type:
 

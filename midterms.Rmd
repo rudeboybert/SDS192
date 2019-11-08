@@ -5,6 +5,7 @@ output:
     toc: yes
     toc_depth: 2
     toc_float: true
+    df_print: default
 ---
 
 ```{r, include=FALSE}
@@ -236,3 +237,117 @@ ggplot(drinks_tidy, aes(x = type, y = servings)) +
   labs(x = "Alcohol type", y = "Number of servings")
 ```
 
+
+### Question 6
+
+You are presented with data on the Titanic disaster of 1912 in a data frame `Titanic`, which cross-classifies survival vs death by class, sex, and age. Write down the *pseudocode* of the commands that will output a table comparing survival vs death counts for the following three scenarios:
+
+* by sex
+* by sex and class and age
+* to answer the question if the "women and children"-first policy of the White Star Line Company (the company that ran the Titanic) held true or not.
+
+Note: you don't need to calculate the output table, just write the pseudocode that would produce it where the more concise the pseudocode the better. Here is what the `Titanic` data looks like:\\
+
+```{r}
+library(tidyverse)
+data(Titanic)
+# Convert to tibble i.e. data frame
+Titanic <- Titanic %>% 
+  as_tibble()
+
+Titanic
+```
+
+#### Solutions
+
+The key thing to note here is that the different combinations of `Class`, `Sex`, `Age`, and `Survived` are *pre-counted* in the `n` variable. Thus the `Titanic` data frame has only 32 rows. This is different than the `titanic` data frame from [PS05 Question 2](static/PS/PS05_solutions.html){target="_blank"} that has 2201 rows: one for each passenger.
+
+So the data wrangling is a little different! Here we must `sum(n)` whereas in PS05 we used the `n()` summary function to count rows. 
+
+
+**Part a)**: by sex
+```{r}
+Titanic %>% 
+  group_by(Sex, Survived) %>% 
+  summarize(n = sum(n))
+```
+
+**Part b)**: by sex, age, and class
+
+Nothing to do! We already have `Survived` (`"No"` vs `"Yes"`) counts split by these categories!
+
+**Part c)**: In retrospect this question is much harder than you can expect on the midterm. However if you're curious:
+
+First we need to have `Survived` (`"No"` vs `"Yes"`) counts for each `Sex` and `Age` combinations:
+
+```{r}
+Titanic %>% 
+  group_by(Sex, Age, Survived) %>% 
+  summarize(n = sum(n))
+```
+
+Next we need to identify the "women and children"
+
+```{r}
+Titanic %>% 
+  group_by(Sex, Age, Survived) %>% 
+  summarize(n = sum(n)) %>% 
+  # Identify "women and children":
+  mutate(w_or_c = Sex == "Female" | Age == "Child")
+```
+
+Next `group_by()` this new variable and get the sum of `n`
+
+```{r}
+Titanic %>% 
+  group_by(Sex, Age, Survived) %>% 
+  summarize(n = sum(n)) %>% 
+  # Identify "women and children". Shout out to Adriana B. for suggesting this step to me!
+  mutate(w_or_c = Sex == "Female" | Age == "Child") %>% 
+  # Get counts for "women and children":
+  group_by(w_or_c, Survived) %>% 
+  summarize(n = sum(n))
+```
+
+Next compute the proportions. We haven't done this much in class, but if you look in [tips and tricks](tips_and_tricks.html#prop), you'll see this is one of the rare cases we use `group_by()`, but not followed by a `summarize()` but a `mutate()` instead:
+
+```{r}
+Titanic %>% 
+  group_by(Sex, Age, Survived) %>% 
+  summarize(n = sum(n)) %>% 
+  # Identify "women and children":
+  mutate(w_or_c = Sex == "Female" | Age == "Child") %>% 
+  # Get counts for "women and children":
+  group_by(w_or_c, Survived) %>% 
+  summarize(n = sum(n)) %>% 
+  # Compute proportions:
+  group_by(w_or_c) %>% 
+  mutate(
+    total = sum(n),
+    prop = n/total
+  )
+```
+
+Lastly, to make things easier to look at, let's only look at `Survived` equals `"Yes"`
+
+```{r}
+Titanic %>% 
+  group_by(Sex, Age, Survived) %>% 
+  summarize(n = sum(n)) %>% 
+  # Identify "women and children":
+  mutate(w_or_c = Sex == "Female" | Age == "Child") %>% 
+  # Get counts for "women and children":
+  group_by(w_or_c, Survived) %>% 
+  summarize(n = sum(n)) %>% 
+  
+  # Compute proportions:
+  group_by(w_or_c) %>% 
+  mutate(
+    total = sum(n),
+    prop = n/total
+  ) %>% 
+  # Only survived:
+  filter(Survived == "Yes")
+```
+
+So yes, it seems "women and children first" did hold as seen by the 69.9% vs 20.3%.

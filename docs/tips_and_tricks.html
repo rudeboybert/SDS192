@@ -678,7 +678,7 @@ div.tocify {
 <li>You could also have Rstudio equally divide the variable into a balanced number of groups. For example, specifying <code>breaks=3</code> would create 4 groups with approximately the same number of values in each group.</li>
 </ul>
 </div>
-<div id="how-do-i-compute-proportions" class="section level1">
+<div id="prop" class="section level1">
 <h1>How do I compute proportions?</h1>
 <p>By using a <code>group_by()</code> followed not by a <code>summarize()</code> as is often the case, but rather a <code>mutate()</code>. So say we compute the total revenue millions for each movie rating and type:</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1">rating_by_type_millions &lt;-<span class="st"> </span>movies <span class="op">%&gt;%</span><span class="st"> </span></a>
