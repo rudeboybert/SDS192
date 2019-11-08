@@ -86,20 +86,27 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
     + Groups posted on Slack in `#MP3` channel. 
     + You will be making one interactive and one static map. More details on Monday.
 
+<!--
+
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
 * Reading of "On Exactitude in Science" by Borges.
-* London underground: [Actual map](https://countryofnowhere.files.wordpress.com/2013/06/london_underground_full_map.png) vs [transit map](https://www.theverge.com/2015/11/11/9712376/london-walk-tube-underground-map)
 * Slides on [GIS](https://beanumber.github.io/sds192/lectures/24-shapefiles.html#17){target="_blank"}
+* London underground maps. Compare them. As stated in this [article](https://www.theverge.com/2015/11/11/9712376/london-walk-tube-underground-map){target="_blank"}, the transit map sacrifices accuracy for clarity.
+    + The map of stations as they truly exist: 
+    ![](static/images/underground_real_map.png){ width=700px }
+    + The transit map inside the stations and trains. All lines are either straight or at 45 degrees and futhermore the geographic space is distorted. 
+    ![](static/images/underground_transit_map.gif){ width=700px }
+    
 
 ### 2. In-class exercise
 
-Two chief tools we'll be using:
+Two chief tools we'll be using.
 
 * [`leaflet` package](https://rstudio.github.io/leaflet/){target="_blank"} for interactive maps
-* `sf` package for static maps in `ggplot2`. See [Spatial Data Science](https://keen-swartz-3146c4.netlify.com/){target="_blank"}.
+* `sf` package for static maps in `ggplot2` and loading shapefiles. See [Spatial Data Science](https://keen-swartz-3146c4.netlify.com/){target="_blank"}.
 
 ```{r}
 # Interactive map example:
@@ -126,7 +133,7 @@ ggplot() +
   geom_sf(data = pres_2016_trail_sf, aes(col = candidate), size = 2) +
   facet_wrap(~candidate)
 ```
-
+-->
 
 
 ***
