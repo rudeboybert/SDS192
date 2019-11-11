@@ -44,7 +44,7 @@ faithful a manner as possible while maintaining a level suitable for novices.* T
 # Mini-Project 1 {#MP1}
 
 <!--
-Things to remember for next time
+Things to remember for next time:
 
 - Has to involve intervals of time: a start time and end time. For example, not "I went to sleep at." but "I slept during these times."
 - Add grading rubric
@@ -126,11 +126,12 @@ Only you're done your MVP, iterate and improve by adding complexity.
 # Mini-Project 2 {#MP2}
 
 <!--
-Things to remember for next time
+Things to remember for next time:
 
 - 24A vs 24E transaction_typ varible
 - Write this as an R package?
-- 
+- Make sure .Rproj file has save .Rdata and .Rhistory set to FALSE
+- Use version of project here: https://drive.google.com/drive/u/1/folders/1Pzzyj1PJd0hNC11DlBC9oKcbYGV8Nc-F
 -->
 
 *Assigned on Friday 10/18, due Friday 11/1 at 5pm.*
@@ -212,63 +213,77 @@ Here are two randomly chosen examples to give a qualitative sense of the outcome
 # Mini-Project 3 {#MP3}
 
 <!--
-Things to remember for next time
-
+Things to remember for next time:
 - 
 -->
 
 *Assigned on Monday 11/11, due Friday 11/22 at 5pm.*
 
+## Data
+
+You will work with a partner to 
+
+The theme 
 
 
 
+## Examples
+
+Here are two randomly chosen examples to give a qualitative sense of the outcome. Note they both can be improved on.
+
+* [Example 1](static/projects/MP2/MP2_example_1.html){target="_blank"}
+* [Example 2](static/projects/MP2/MP2_example_2.html){target="_blank"}
 
 
+## Doing the project
+
+* **Step 0**: Determin a group leader
+* **Step 1**: Setup the MP2 RStudio project
+    1. Download <a href="https://drive.google.com/open?id=1pU9BpVUTBw1AFU8VUknnD6BdwTSPwfCH" download>`MP3.zip`</a>.
+    1. Move `MP3.zip` to wherever you keep your 192 files.
+        + macOS users: Double-click `MP2.zip` to extract the `MP2` folder.
+        + Windows users: Extract the contents of `MP2.zip` to a folder.
+    1. Double click the `MP2.Rproj` file to open RStudio in "Project mode":  
+    ![](static/images/MP2.png){ width=100px }
+    1. Verify that you are in RStudio Project mode by looking at the top right corner of RStudio. You should see this:  
+    ![](static/images/MP2_2.png){ width=100px }
+    1. Knit `MP2.Rmd` and go over the example R Markdown presentation tricks.
+    1. `View()` all four data frames that are loaded into R: `candidates`, `committees`, `contributions`, `house_elections`.
+* **Tips**:
+    1. Always work in RStudio Project mode. This will help R locate your `.csv` files easily.
+    1. Knit early and knit often. For example:
+        + If you add 5 lines of code and the R Markdown doesn't knit, you can easily locate the error.
+        + If you add 500 lines of code and the R Markdown doesn't knit, you'll have a harder time locating the error.
+    1. Ask questions in the `#mp3` slack channel.
 
 
+## Grading rubric
+
+**Note**: This rubric is likely not perfect. Please don't be shy to ask for
+
+1. **Baseline:** Projects that do not satisfy all "baseline" criteria can expect to get a grade of less than 8/10.
+    + The `MP2.Rmd` R Markdown file must "knit" correctly when *someone else* knits it. This is known as producing reproducible research.
+    + All visualizations have appropriately labeled axes, legends, titles, etc. Such information gives the data's context.
+    + All visualizations are mindful of the [ink/information ratio](https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842){target="_blank"}.
+    + From the report reader's perspective, there should be no "superfluous" and non-informative output (examples include instructions text). You must be empathetic to your reader, or your reader will just throw your report in the trash. 
+    + You submit your peer evaluation.
+1. **Minimally viable product:** Grade: 8/10.
+    + Satisfy all "baseline" criteria.
+    + Create one data visualization that "follows the money" i.e. involves campaign contributions and include a written analysis.
+1. **Due diligence:** Grade: 9/10.
+    + Satisfy all "baseline" and "minimally viable product" criteria.
+    + The data visualization from the "minimally viable product" should be based on at least two joined data frames. 
+1. **Point of diminishing returns:** Grade: 9.5/10.
+    + Create a second data visualization that builds on the first data visualization, but is also non-redundant to the first. Include a written analysis.
+1. [**Polishing the cannonball**](https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball){target="_blank"}: Grade: 10/10
+    + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
+    + Written text does an exceptional job of not only addressing "What is happening?" questions, but also "Why is this happening?" questions (this criteria is subjective).
 
 
+## To submit
 
-<!--
-## Administrative Notes
-
-The best projects will:
-
-* Discuss an interesting and well-motivated topic
-* Involve some non-trivial data wrangling (e.g. not just a bunch of `mutate()`s)
-* Provide a well thought-out, informative analysis
-* Convey some sort of insight
-* Be well-written
+1. Each group will make only one submission: the group leader will submit a `.zip` file of all the contents of the `MP3` folder on Moodle.
+1. **Individually**: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfUfxg2j9MYf60O70JerAQBeX0rxEFX6k5749P6gYEIHgr-9g/viewform){target="_blank"}
 
 
-
-## Grading Rubric
-
-There are 15 possible points for this mini-project.
-
-**Baseline**
-
-* +1 for an `.Rmd` that compiles without errors and is replicable and reproducible by someone else who has the same `MP2.zip` starting point of files.
-* +2 for both group members completing the Individual Google Form
-* **Updated Mon 10/29 - Moved to Advanced**: ~~+1 for using [code folding](https://bookdown.org/yihui/rmarkdown/html-document.html#code-folding) to keep your code hidden, but still make it available.~~ 
-* +1 for using at least two of the five basic verbs (i.e., `select()`, `mutate()`, etc.)
-* +1 for annotating your data wrangling pipeline (this can be in a few sentences in text surrounding the R code chunks, or some informative comments inside the R code chunks)
-* +1 unnecessary messages from R are hidden from being displayed in the HTML
-
-**Average**
-
-* +1 for having at least 400 words and no more than 600 words. **Updated Mon 10/29 - Removed**: ~~(use [the word count add-in](https://github.com/benmarwick/wordcountaddin))~~. Use Google Docs/Microsoft Word to ensure your word count is correct.
-* +1 for explaining in a single coherent sentence what we can learn from these data
-* +1 for using at least one join (e.g. `left_join()`, `inner_join()`, etc.)
-* +1 for providing context or background useful in interpreting the graphic
-
-**Advanced**
-
-* **Updated Mon 10/29 - Removed**: ~~+1 for writing a function to generalize your analysis rather than re-writing the same code multiple times~~
-* **Updated Mon 10/29 - Moved here**: +1 for using [code folding](https://bookdown.org/yihui/rmarkdown/html-document.html#code-folding) to keep your code hidden, but still make it available. You need to figure out how to do this on your own! Example of code folding in practice [here](https://beanumber.github.io/sds192/lab-rmarkdown.html#){target="_blank"}; note all "Code" buttons along right-hand edge of page.
-* +0–4 XXX: awarded at the grader's discretion for submissions that are exceptionally compelling. What does "wow" factor mean? Ask yourself:
-    + What is a checklist of criteria for a "great" calculus assignment?
-    + What is a checklist of criteria for a "great" essay?
-    + Guess what this mini-project is more like? A calculus assignment or an essay?
--->
 

@@ -1,3 +1,8 @@
+library(tmaptools)
+geocode_OSM("133 Flat Hills Rd, Amherst MA, 01002, USA")
+
+
+
 # Example 1:
 library(leaflet)
 leaflet() %>%

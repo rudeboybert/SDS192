@@ -82,13 +82,26 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
+* Data Research and Statistics Counselor from Spinelli Center Osman Keshawarz says hello. Office hours [here](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}
+* PS06 posted: Two components
+    + R component due on Friday 11/15 10:45am: Straightforward and serves as practice for MP3.
+    + Ethics reading quiz in-class on Monday 11/18. This is to ensure you are prepared for an in-class discussion. What do we do when "bad" people make "good" technology?
+* MP3 details posted.
+
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
+* Absolute vs relative filepaths
+* We're at the cutting edge of map technology in R!
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;ref_src=twsrc%5Etfw">#rstatdc</a> can be found at <a href="https://t.co/GB58zIy3ND">https://t.co/GB58zIy3ND</a>! My talk was based off of questions I get all the time at the R Spatial Workshop at <a href="https://twitter.com/GeoDaCenter?ref_src=twsrc%5Etfw">@GeoDaCenter</a>: <br><br>1) How to get started with spatial analysis?<br>2) What tools to use?<br>3) What can you do in <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>? <a href="https://t.co/qzEKO0T8Y4">pic.twitter.com/qzEKO0T8Y4</a></p>&mdash; Angela Li (@CivicAngela) <a href="https://twitter.com/CivicAngela/status/1193218533783568385?ref_src=twsrc%5Etfw">November 9, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 ### 2. In-class exercise
+
+
 
 
 
