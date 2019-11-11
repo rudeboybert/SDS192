@@ -82,7 +82,8 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-* Data Research and Statistics Counselor from Spinelli Center Osman Keshawarz says hello. Office hours [here](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}
+* I filled out a rough schedule of topics for the rest of the semester in the spreadsheet above.
+* Data Research and Statistics Counselor from Spinelli Center Osman Keshawarz. You can book office hours [here](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
 * PS06 posted: Two components
     + R component due on Friday 11/15 10:45am: Straightforward and serves as practice for MP3.
     + Ethics reading quiz in-class on Monday 11/18. This is to ensure you are prepared for an in-class discussion. What do we do when "bad" people make "good" technology?
@@ -93,13 +94,34 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 1. Chalk talk
 
-* Absolute vs relative filepaths
-* We're at the cutting edge of map technology in R!
+1. Absolute vs relative filepaths
+1. Converting data in R into `sf` objects. We can then do both
+    + Data wrangling using `dplyr` on them
+    + Plot them in `ggplot2` using `geom_sf()` layers
+1. Centroids: [Geographic](https://en.wikipedia.org/wiki/Geographic_center_of_the_contiguous_United_States){target="_blank"} and [population](https://en.wikipedia.org/wiki/Mean_center_of_the_United_States_population){target="_blank"} weighted. Not coincidentally, check out where FedEx and UPS main airport hubs are [located](https://www.google.com/maps/dir/UPS+Worldport,+Grade+Lane,+Louisville,+KY/FedEx+World+Hub,+2903+Sprankel+Ave,+Memphis,+TN+38118/@36.6002171,-90.0693041,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x88690c2c6dc6fe95:0xae70a6ac610364fe!2m2!1d-85.7307215!2d38.1657255!1m5!1m1!1s0x887f87b59bc63573:0x37d7df503bee2e8f!2m2!1d-89.9608239!2d35.0674784!3e0){target="_blank"}.
+
+
+### 2. In-class exercise
+
+While you are free to work in any order you like, I suggest you:
+
+1. Go thru the `examples.Rmd` file in the `MP3` RStudio Project (be sure to be working in RStudio Project mode):
+    * Section 1: Interactive maps using leaflet
+    * Section 2: Convert data frames into `sf` objects
+    * Section 3: Loading shapefiles into R
+    * Section 4: (We'll do this on Wednesday) Choropleth maps using census data.
+1. Work on PS06. This is direct practice for MP3.
+1. Then start on MP3.
+
+
+### 3. Tweet of the day
+
+We're at the cutting edge of map technology in R!
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;ref_src=twsrc%5Etfw">#rstatdc</a> can be found at <a href="https://t.co/GB58zIy3ND">https://t.co/GB58zIy3ND</a>! My talk was based off of questions I get all the time at the R Spatial Workshop at <a href="https://twitter.com/GeoDaCenter?ref_src=twsrc%5Etfw">@GeoDaCenter</a>: <br><br>1) How to get started with spatial analysis?<br>2) What tools to use?<br>3) What can you do in <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>? <a href="https://t.co/qzEKO0T8Y4">pic.twitter.com/qzEKO0T8Y4</a></p>&mdash; Angela Li (@CivicAngela) <a href="https://twitter.com/CivicAngela/status/1193218533783568385?ref_src=twsrc%5Etfw">November 9, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-### 2. In-class exercise
+
 
 
 
@@ -139,31 +161,7 @@ Two chief tools we'll be using.
 * [`leaflet` package](https://rstudio.github.io/leaflet/){target="_blank"} for interactive maps
 * `sf` package for static maps in `ggplot2` and loading shapefiles. See [Spatial Data Science](https://keen-swartz-3146c4.netlify.com/){target="_blank"}.
 
-```{r}
-# Interactive map example:
-library(leaflet)
-leaflet() %>%
-  addTiles() %>% 
-  addMarkers(lng=-72.6419889, lat=42.3177692)
-
-# Static map example:
-library(tidyverse)
-library(fivethirtyeight)
-library(maps)
-library(sf)
-
-USA_sf <- maps::map("state", plot = FALSE, fill = TRUE) %>%
-  sf::st_as_sf() %>%
-  sf::st_transform(crs = 4326)
-
-pres_2016_trail_sf <- pres_2016_trail %>%
-  sf::st_as_sf(coords = c("lng", "lat"), crs = 4326)
-
-ggplot() +
-  geom_sf(data = USA_sf) +
-  geom_sf(data = pres_2016_trail_sf, aes(col = candidate), size = 2) +
-  facet_wrap(~candidate)
-```
+**Note**: the code that was posted here has now been moved to the `example.Rmd` file in the `MP3` RStudio Project folder. 
 
 
 

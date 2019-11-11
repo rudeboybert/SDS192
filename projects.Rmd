@@ -82,7 +82,7 @@ The following screencast illustrates Steps 2 and 3 above:
 
 ## Step 1: Download starter code
 
-* Download <a href="static/MP1.zip" download>`MP1.zip`</a> and double-click it to "unzip" it
+* Download <a href="static/projects/MP1.zip" download>`MP1.zip`</a> and double-click it to "unzip" it
 * Rename the `MP1_lastname_firstname.Rmd` file to have your last and first name
 * Knit the `.Rmd` file once and read it over
 * Create two data visualizations and provide an analysis to answer your partner's question
@@ -221,9 +221,7 @@ Things to remember for next time:
 
 ## Data
 
-You will work with a partner to 
-
-The theme 
+Any you like, as long as you can make one interactive map using `leaflet` (not `shiny`) and one static map. 
 
 
 
@@ -231,26 +229,25 @@ The theme
 
 Here are two randomly chosen examples to give a qualitative sense of the outcome. Note they both can be improved on.
 
+Coming soon.
+
+<!--
+
 * [Example 1](static/projects/MP2/MP2_example_1.html){target="_blank"}
 * [Example 2](static/projects/MP2/MP2_example_2.html){target="_blank"}
-
+-->
 
 ## Doing the project
 
-* **Step 0**: Determin a group leader
-* **Step 1**: Setup the MP2 RStudio project
-    1. Download <a href="https://drive.google.com/open?id=1pU9BpVUTBw1AFU8VUknnD6BdwTSPwfCH" download>`MP3.zip`</a>.
+* **Step 0**: Determine a group leader
+* **Step 1**: Setup the MP3 RStudio project
+    1. Download <a href="static/projects/MP3.zip" download>`MP3.zip`</a>.
     1. Move `MP3.zip` to wherever you keep your 192 files.
-        + macOS users: Double-click `MP2.zip` to extract the `MP2` folder.
-        + Windows users: Extract the contents of `MP2.zip` to a folder.
-    1. Double click the `MP2.Rproj` file to open RStudio in "Project mode":  
-    ![](static/images/MP2.png){ width=100px }
-    1. Verify that you are in RStudio Project mode by looking at the top right corner of RStudio. You should see this:  
-    ![](static/images/MP2_2.png){ width=100px }
-    1. Knit `MP2.Rmd` and go over the example R Markdown presentation tricks.
-    1. `View()` all four data frames that are loaded into R: `candidates`, `committees`, `contributions`, `house_elections`.
+        + macOS users: Double-click `MP3.zip` to extract the `MP3` folder.
+        + Windows users: Extract the contents of `MP3.zip` to a folder.
+    1. Double click the `MP3.Rproj` file to open RStudio in "Project mode"
 * **Tips**:
-    1. Always work in RStudio Project mode. This will help R locate your `.csv` files easily.
+    1. Always work in RStudio Project mode. This will help R locate your data files easily.
     1. Knit early and knit often. For example:
         + If you add 5 lines of code and the R Markdown doesn't knit, you can easily locate the error.
         + If you add 500 lines of code and the R Markdown doesn't knit, you'll have a harder time locating the error.
@@ -259,6 +256,9 @@ Here are two randomly chosen examples to give a qualitative sense of the outcome
 
 ## Grading rubric
 
+Coming soon.
+
+<!--
 **Note**: This rubric is likely not perfect. Please don't be shy to ask for
 
 1. **Baseline:** Projects that do not satisfy all "baseline" criteria can expect to get a grade of less than 8/10.
@@ -279,6 +279,8 @@ Here are two randomly chosen examples to give a qualitative sense of the outcome
     + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
     + Written text does an exceptional job of not only addressing "What is happening?" questions, but also "Why is this happening?" questions (this criteria is subjective).
 
+
+-->
 
 ## To submit
 

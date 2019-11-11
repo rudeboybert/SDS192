@@ -58,7 +58,7 @@ Learning goals:
 
 To do:
 
-* Download the following template ~`.Rmd` file~ RStudio Project Folder: <a href="static/PS/PS06.zip" download>`PS06.zip`</a>.
+* Download the following template ~~`.Rmd` file~~ RStudio Project Folder: <a href="static/PS/PS06.zip" download>`PS06.zip`</a>.
 * **Be sure to be in RStudio Project mode**
 * Knit it once and read over the instructions.
 * Complete the problem set.
@@ -86,38 +86,6 @@ Total: 12pts
 
 
 
-
-
-
-
-
-**To do**:
-
-* Download the following file <a href="static/PS/PS10.zip" download>`PS10.zip`</a>
-* If you use:
-    + RStudio Server: Upload the `PS10.zip` file to RStudio Server. 
-    + RStudio Desktop: Move the `PS10.zip` file to where all your 192 work is and double-click it to unzip the file.
-* A new folder called `PS10` should appear. Inside this folder, double-click the `PS10.Rproj` RStudio Project file to ensure you are in "PS10 mode". This will set the "working directory" of R so that R knows where to find all necessary files.
-* **DO NOT IGNORE THIS**:
-    + Whenever you are working on PS10, be sure to be in "PS10 RStudio Project" mode. If you do not understand what this means, ask the person sitting next to you. 
-    + When you are not working on PS10, be sure to close the RStudio Project.
-* Submission: Submit only the `PS10.Rmd` file on [Moodle](https://moodle.smith.edu/course/view.php?id=29919){target="_blank"}. You can assume that I will have access to the same `WA_counties/` shapefiles directory/folder.
-
-
-## 3. R Markdown solutions & (imperfect) rubric {#PS10_R_solutions}
-
-<!--
-**Solution**:
-
-* <a href="static/PS/PS10_solutions.Rmd" download>`PS10_solutions.Rmd`</a> "source code" to create html report output. 
-* Resulting [`PS10_solutions.html`](static/PS/PS10_solutions.html){target="_blank"} output.
--->
-
-**Rubric**:
-
-* R Markdown component: 2 pts:
-    + 1: Does the interactive map correctly show when you knit the `.Rmd` file?
-    + 1: Does the static map of Western Washington show when you knit the `.Rmd` file?
 
 
 
