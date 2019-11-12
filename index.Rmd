@@ -83,7 +83,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ## Announcements
 
 * Office hours today ~~3-4:30pm~~ 3-4pm
-* Friday the 22nd: I'm out of town
+* This Friday the 15th: I'm out of town
     + No office hours on 9-10:30am
     + Guest lecturer: Prof. Ben Baumer
     + I will post PS06 solutions no later than Friday 5pm
@@ -95,7 +95,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ### 1. Chalk talk
 
 * Choropleth maps
-* What is an API?
+* [Application Programmer Interfaces](https://en.wikipedia.org/wiki/Application_programming_interface){target="_blank"}
 
 
 ### 2. In-class exercise
