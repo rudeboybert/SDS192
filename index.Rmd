@@ -87,7 +87,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
     + No office hours on 9-10:30am
     + Guest lecturer: Prof. Ben Baumer
     + I will post PS06 solutions no later than Friday 5pm
-
+* MP3 rubric posted
 
 
 ## Today's topics/activities
@@ -95,6 +95,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ### 1. Chalk talk
 
 * Choropleth maps
+* What is an API?
 
 
 ### 2. In-class exercise
