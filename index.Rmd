@@ -88,6 +88,11 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
     + Guest lecturer: Prof. Ben Baumer
     + I will post PS06 solutions no later than Friday 5pm
 * MP3 rubric posted
+* Check out the Jill Ker Conway Innovation & Entrepreneurship Center's feature on [SDS student Rachel Laflamme](https://conway-connect.com/innovation-news/2019/10/31/datascienceatvaliantlabs){target="_blank"}. In particular the quotes from the final paragraph:
+
+> Rachel indicated that being surrounded by "so many really intimidating Smithies" in classes, students who she believed were much smarter than she, caused her to question whether she should even pursue a career as a statistical and data scientist. Needless to say, those of us in attendance during her presentation - one delivered by a knowledgeable, talented and confident Smithie - were surprised by her revelation...
+> 
+> Asked about her most important take-away from the summer, Rachel thoughtfully replied: **"I learned that you have to understand your value and that you have a right to be compensated for the value that you bring. It’s a bold thing to fight for what you know you’re worth."**
 
 
 ## Today's topics/activities
