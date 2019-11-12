@@ -78,6 +78,34 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 
+# Lec 28: Wed 11/13 {#Lec28}
+
+## Announcements
+
+* Office hours today ~~3-4:30pm~~ 3-4pm
+* Friday the 22nd: I'm out of town
+    + No office hours on 9-10:30am
+    + Guest lecturer: Prof. Ben Baumer
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Choropleth maps
+
+
+### 2. In-class exercise
+
+* `tidycensus` package
+
+
+
+***
+
+
+
+
 # Lec 27: Mon 11/11 {#Lec27}
 
 ## Announcements
