@@ -178,7 +178,7 @@ Here are two randomly chosen examples to give a qualitative sense of the outcome
 
 ## Grading rubric
 
-**Note**: This rubric is likely not perfect. Please don't be shy to ask for
+**Note**: This rubric is likely not perfect. Please don't be shy to ask for clarifications.
 
 1. **Baseline:** Projects that do not satisfy all "baseline" criteria can expect to get a grade of less than 8/10.
     + The `MP2.Rmd` R Markdown file must "knit" correctly when *someone else* knits it. This is known as producing reproducible research.
@@ -193,6 +193,7 @@ Here are two randomly chosen examples to give a qualitative sense of the outcome
     + Satisfy all "baseline" and "minimally viable product" criteria.
     + The data visualization from the "minimally viable product" should be based on at least two joined data frames. 
 1. **Point of diminishing returns:** Grade: 9.5/10.
+    + Satisfy all "baseline", "minimally viable product", and "due diligence" criteria.
     + Create a second data visualization that builds on the first data visualization, but is also non-redundant to the first. Include a written analysis.
 1. [**Polishing the cannonball**](https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball){target="_blank"}: Grade: 10/10
     + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
@@ -225,10 +226,9 @@ Things to remember for next time:
 * Any data of your choosing, as long as you can make one interactive map using `leaflet` (not `shiny`) and one static map using the `sf` package. 
 
 
-
 ## Examples
 
-Here are two arbitrarily chosen examples to give a qualitative sense of the outcome. Note they both can be improved on and the criteria has shifted slightly.
+Here are two arbitrarily chosen examples to give a qualitative sense of the outcome. Note they both can be improved and the criteria of the MP has shifted slightly.
 
 * [Example 1](static/projects/MP3/MP3_example_1.html){target="_blank"}
 * [Example 2](static/projects/MP3/MP3_example_2.html){target="_blank"}
@@ -253,31 +253,28 @@ Here are two arbitrarily chosen examples to give a qualitative sense of the outc
 
 ## Grading rubric
 
-Coming soon.
-
-<!--
-**Note**: This rubric is likely not perfect. Please don't be shy to ask for
+**Note**: This rubric is likely not perfect. Please don't be shy to ask for clarifications.
 
 1. **Baseline:** Projects that do not satisfy all "baseline" criteria can expect to get a grade of less than 8/10.
-    + The `MP2.Rmd` R Markdown file must "knit" correctly when *someone else* knits it. This is known as producing reproducible research.
-    + All visualizations have appropriately labeled axes, legends, titles, etc. Such information gives the data's context.
-    + All visualizations are mindful of the [ink/information ratio](https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842){target="_blank"}.
+    + **This will be strictly evaluated**: The `MP3.Rmd` R Markdown file must "knit" correctly when *someone else* knits it. This is known as producing *reproducible research*.
+    + Wherever possible, all maps have appropriately labeled axes, legends, titles, etc. Such information gives the data's context.
+    + All maps are mindful of the [ink/information ratio](https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842){target="_blank"}.
+    + All accompanying write-ups are coherent and respect the word count limit.
     + From the report reader's perspective, there should be no "superfluous" and non-informative output (examples include instructions text). You must be empathetic to your reader, or your reader will just throw your report in the trash. 
     + You submit your peer evaluation.
 1. **Minimally viable product:** Grade: 8/10.
     + Satisfy all "baseline" criteria.
-    + Create one data visualization that "follows the money" i.e. involves campaign contributions and include a written analysis.
+    + Include *either* an interactive map using `leaflet` (not `shiny`) or a static map using the `sf` package.
 1. **Due diligence:** Grade: 9/10.
     + Satisfy all "baseline" and "minimally viable product" criteria.
-    + The data visualization from the "minimally viable product" should be based on at least two joined data frames. 
+    + Include *both* an interactive map and a static map. These two maps may be "redundant" in that they provide the same information.
 1. **Point of diminishing returns:** Grade: 9.5/10.
-    + Create a second data visualization that builds on the first data visualization, but is also non-redundant to the first. Include a written analysis.
+    + Satisfy all "baseline", "minimally viable product", and "due diligence" criteria.
+    + Your interactive map and static map must now not be "redundant."
 1. [**Polishing the cannonball**](https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball){target="_blank"}: Grade: 10/10
     + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
-    + Written text does an exceptional job of not only addressing "What is happening?" questions, but also "Why is this happening?" questions (this criteria is subjective).
+    + Incorporate `shiny` interactivity to your `leaflet` map. For example: a slider, radio buttons, or checkboxes.
 
-
--->
 
 ## To submit
 

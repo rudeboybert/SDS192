@@ -351,3 +351,10 @@ Titanic %>%
 ```
 
 So yes, it seems "women and children first" did hold as seen by the 69.9% vs 20.3%.
+
+
+
+## Results
+
+
+## Visualizations from midterm
