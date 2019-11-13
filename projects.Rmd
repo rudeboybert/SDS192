@@ -273,7 +273,7 @@ Here are two arbitrarily chosen examples to give a qualitative sense of the outc
     + Your interactive map and static map must now not be "redundant."
 1. [**Polishing the cannonball**](https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball){target="_blank"}: Grade: 10/10
     + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
-    + Incorporate `shiny` interactivity to your `leaflet` map. For example: a slider, radio buttons, or checkboxes.
+    + **Changed on 11/13 at 2pm** Include a third map of your choice that it not redundant to the first two. Can be either interactive or static.
 
 
 ## To submit
