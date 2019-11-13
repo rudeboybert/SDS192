@@ -74,8 +74,27 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ***
 
-
 <!--
+# Lec 30: Mon 11/18 {#Lec30}
+
+## Announcements
+
+* Yingke's observation about "tidy" data.
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+### 2. In-class exercise
+
+
+
+
+***
+-->
+
+
 # Lec 29: Fri 11/15 {#Lec29}
 
 ## Announcements
@@ -97,8 +116,7 @@ We are looking for students to join the first cohort. Smith students can earn up
 
 Unfortunately, only US citizens or permanent residents are eligible for funding from the NSF. It is possible that international students could be funded through a different mechanism, but there are no such alternative funding sources in place at present. 
 
-The application is [here](https://dsc-wav.github.io/www/students.html){target="_blank"}, please APPLY NOW!!
-
+The application is [here](https://dsc-wav.github.io/www/students.html){target="_blank"}, please APPLY NOW!! Please contact Ben Baumer if you have more questions.
 
 
 ## Today's topics/activities
@@ -110,7 +128,6 @@ The application is [here](https://dsc-wav.github.io/www/students.html){target="_
 
 
 ***
--->
 
 
 
