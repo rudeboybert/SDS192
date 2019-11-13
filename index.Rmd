@@ -72,9 +72,45 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 {target="_blank"}
 -->
 
+***
+
+
+<!--
+# Lec 29: Fri 11/15 {#Lec29}
+
+## Announcements
+
+* Sit next to your MP3 partner
+* Guest lecturer: Prof. Ben Baumer
+
+### Mega Announcement
+
+Recently, the Five Colleges (with Smith as the lead institution) received a three-year grant from the NSF (totaling $1.2 million) for workforce development in data science. Most of that money will go to students, who will work on real-world data science projects sponsored by local community-based organizations. The Jandon Center for Community Engagement will be integrated into the project to bind all parties together. 
+
+We are looking for students to join the first cohort. Smith students can earn up to $2500 per semester, which is approximately 60% more than you would make in any other campus job. The minimum requirements for data science students are:
+
+* Has taken at least one course in computer programming
+* Has taken at least one course in statistics
+* Has taken at least one additional course in data science, data analysis, etc.
+* Is a sophomore or junior
+* Ability to commit to 8-10 hours per week through the spring semester
+
+Unfortunately, only US citizens or permanent residents are eligible for funding from the NSF. It is possible that international students could be funded through a different mechanism, but there are no such alternative funding sources in place at present. 
+
+The application is [here](https://dsc-wav.github.io/www/students.html){target="_blank"}, please APPLY NOW!!
+
+
+
+## Today's topics/activities
+
+### 1. In-class exercise
+
+* Work on MP3
+
 
 
 ***
+-->
 
 
 
@@ -94,6 +130,28 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 > 
 > Asked about her most important take-away from the summer, Rachel thoughtfully replied: **"I learned that you have to understand your value and that you have a right to be compensated for the value that you bring. It’s a bold thing to fight for what you know you’re worth."**
 
+### Mega Announcement
+
+SDS and GOV are hiring for a new joint position! The search committee would like your feedback which they take *very* seriously.
+
+1. **Tea Times**: They are looking for students who would like to have tea with the candidates on 11/19, 11/21, and 11/22 at 3:30-4:30pm in Bass 418. Sign up [here](https://docs.google.com/spreadsheets/d/15TLrH4DUtDU4M7-yJQ9uKG2oVvERnLBvShw8sABWDwY/edit#gid=0){target="_blank"}. 
+1. **Teaching demos**: Please bring your laptop! We need students here since this is a teaching demonstration!
+    + Ju Yeon (Julia) Park (University of Pittsburgh - Postdoc)  
+    Tue 11/19, 5-6pm, Sabin-Reed 301.
+    + Scott LaCombe (University of Iowa - Doctoral Student)  
+    Thu 11/21, 5-6pm, Sabin-Reed 301.
+    + Stan Oklobdzija (Claremont McKenna College - Postdoc)  
+    Fri 11/22, 5-6pm, Sabin-Reed 301.     
+1. **Research Talks**: A limited number of lunches will be available (first come, first served) at the lunchtime research talks.  This is a chance for you to see how scholars present their work to other scholars.  The talks will be aimed for the professors in the audience. Students are very welcome to attend, though we invite students to observe but not ask questions.
+    + Ju Yeon (Julia) Park (University of Pittsburgh - Postdoc)  
+    Tue 11/19, 12:15-1:15pm, Campus Center 103/104  
+    Title:  *When Do Politicians Grandstand? Measuring Message Politics in Committee Hearings*
+    + Scott LaCombe (University of Iowa-Doctoral Student)  
+    Thu 11/21, 12:15-1:15pm, Campus Center 103/104  
+    Title: *Institutional Design and Policy Responsiveness in US States*
+    + Stan Oklobdzija (Claremont McKenna College - Postdoc)  
+    Fri 11/22, 12:15-1:15pm, McConnell B15  
+    Title: *Dark Money and Political Parties After Citizens United*
 
 ## Today's topics/activities
 

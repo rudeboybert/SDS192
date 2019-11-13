@@ -214,28 +214,25 @@ Here are two randomly chosen examples to give a qualitative sense of the outcome
 
 <!--
 Things to remember for next time:
-- 
+- Contact Smith Spatial Lab MUCH EARLIER
+- Contact Data Counselor MUCH EARLIER
 -->
 
 *Assigned on Monday 11/11, due Friday 11/22 at 5pm.*
 
 ## Data
 
-Any you like, as long as you can make one interactive map using `leaflet` (not `shiny`) and one static map. 
+* Any data of your choosing, as long as you can make one interactive map using `leaflet` (not `shiny`) and one static map using the `sf` package. 
 
 
 
 ## Examples
 
-Here are two randomly chosen examples to give a qualitative sense of the outcome. Note they both can be improved on.
+Here are two arbitrarily chosen examples to give a qualitative sense of the outcome. Note they both can be improved on and the criteria has shifted slightly.
 
-Coming soon.
+* [Example 1](static/projects/MP3/MP3_example_1.html){target="_blank"}
+* [Example 2](static/projects/MP3/MP3_example_2.html){target="_blank"}
 
-<!--
-
-* [Example 1](static/projects/MP2/MP2_example_1.html){target="_blank"}
-* [Example 2](static/projects/MP2/MP2_example_2.html){target="_blank"}
--->
 
 ## Doing the project
 
