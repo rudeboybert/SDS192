@@ -114,9 +114,20 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 * Yingke's observation about "tidy" data using the example from the [Wide and narrow data](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"} Wikipedia page.
 
+<!--
+* [R Markdown websites](https://rmarkdown.rstudio.com/lesson-13.html){target="_blank"}
+    + Inputs: `.Rmd` and `_site.yml` files
+    + Output: webpage in `docs/` folder, in particular `index.html` mainpage
+    + Deploying your webpage
+
 
 ### 2. In-class exercise
 
+* Log into <https://github.com/>
+* Sign into <https://app.netlify.com/> using your GitHub account
+* Play around with R Markdown Websites
+* When you're done, _deploy_ your website by using netlify's drag-and-drop interface <https://app.netlify.com/drop>. Later on, you can sync with GitHub
+-->
 
 
 
