@@ -74,17 +74,46 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ***
 
+
 <!--
-# Lec 30: Mon 11/18 {#Lec30}
+# Lec 31: Wed 11/20 {#Lec31}
 
 ## Announcements
 
-* Yingke's observation about "tidy" data.
+* MP3 due on Friday at ~~5pm~~ 9pm
+* 
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
+
+* Yingke's observation about "tidy" data using the example from the [Wide and narrow data](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"} Wikipedia page.
+
+
+### 2. In-class exercise
+
+
+
+***
+-->
+
+
+
+# Lec 30: Mon 11/18 {#Lec30}
+
+## Announcements
+
+* MP3 due on Friday at ~~5pm~~ 9pm
+* 
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Yingke's observation about "tidy" data using the example from the [Wide and narrow data](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"} Wikipedia page.
+
 
 ### 2. In-class exercise
 
@@ -92,7 +121,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 ***
--->
+
 
 
 # Lec 29: Fri 11/15 {#Lec29}
