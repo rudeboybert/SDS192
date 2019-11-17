@@ -105,7 +105,17 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ## Announcements
 
 * MP3 due on Friday at ~~5pm~~ 9pm
-* 
+* BuzzFeed DataCamp article:
+    + Quiz
+    + Ethics discussion
+
+<!--
+
+* DataCamp background:
+    + Show demo
+    + Show courses
+* [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfnVDe8p2bHgAqROGP4zb304fZWP9kkwrif6Jn4SzsxCl5KGQ/viewform){target="_blank"}
+-->
 
 
 ## Today's topics/activities

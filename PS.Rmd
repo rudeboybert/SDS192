@@ -45,6 +45,7 @@ h1{font-weight: 400;}
 
 * **R component**. A `.zip` file of your `PS06` RStudio Project folder. Due on Friday 11/15 at 10:45am on Moodle.
 * **Quiz**. In-class on Monday 11/18. To do: Read the following Buzzfeed.com [article](https://www.buzzfeednews.com/article/daveyalba/datacamp-sexual-harassment-metoo-tech-startup){target="_blank"} on DataCamp (an online platform for learning data science). We'll be having a brief in-class ethics discussion based on this article: What do we do when "bad" people make "good" technology?
+    + **Added Sun 11/17**: For context, DataCamp is an online and interactive platform for learning data science, featuring [courses in R, python, SQL, and git](https://www.datacamp.com/search){target="_blank"}. 
 
 
 
