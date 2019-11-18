@@ -126,9 +126,14 @@ You'll be submitting your final project using [R Markdown Websites](https://rmar
 
 ### 2. In-class exercise
 
-Today you'll be building your own R Markdown Website and deploying it to the web on [netlify.com](https://www.netlify.com/){target="_blank"}.
+Today you'll be building your own R Markdown Website, which is the technology I use for this 192 webpage. Then you'll be deploying it to the web using [Netlify drop](https://app.netlify.com/drop){target="_blank"}.
 
-1. Setup the example webpage I've given you, which is based off this course webpage
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-LRlQ_jaLAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+</br>
+
+1. Setup the RStudio Project for an example R Markdown Website
     + Download the RStudio Project <a href="static/example_webpage.zip" download>`example_webpage.zip`</a>
     + Move `example_webpage.zip` to where you keep your 192 work, then unzip it to open the RStudio Project folder
     + Click on the `example_webpage.Rproj` RStudio Project file to open RStudio in "Project Mode". **You must do this.**
@@ -143,12 +148,10 @@ Today you'll be building your own R Markdown Website and deploying it to the web
         * windows: Control+Shift+B
     + Inspect your webpage in your browser
 1. Deploy your R Markdown Website
-    + Go to [app.netlify.com/drop](https://app.netlify.com/drop){target="_blank"}
+    + Go to [Netlify Drop](https://app.netlify.com/drop){target="_blank"}
     + Drag-and-drop the `docs/` folder output in your `example_webpage` RStudio Project folder.
     + If you want to rename your webpage's URL rather than use the default one you've been assigned: Click on "Domain settings" -> Click on the "..." next to your default site name -> Click on "Edit site name" -> Rename your site
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-LRlQ_jaLAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
