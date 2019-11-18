@@ -105,39 +105,48 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ## Announcements
 
 * MP3 due on Friday at ~~5pm~~ 9pm
-* BuzzFeed DataCamp article:
+* Updates: MP2 feedback and Midterm II
+* DataCamp article:
     + Quiz
-    + Ethics discussion
-
-<!--
-
-* DataCamp background:
-    + Show demo
-    + Show courses
-* [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfnVDe8p2bHgAqROGP4zb304fZWP9kkwrif6Jn4SzsxCl5KGQ/viewform){target="_blank"}
--->
+    + Brief demo of DataCamp based on the course ["Modeling with Data in the Tidyverse"](https://www.datacamp.com/courses/modeling-with-data-in-the-tidyverse){target="_blank"}: Video lectures + coding
+    + List of [courses](https://www.datacamp.com/courses/){target="_blank"} available
+    + Ethics discussion, followed by sharing your (anonymous) opinions via [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfnVDe8p2bHgAqROGP4zb304fZWP9kkwrif6Jn4SzsxCl5KGQ/viewform){target="_blank"}
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Yingke's observation about "tidy" data using the example from the [Wide and narrow data](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"} Wikipedia page.
+You'll be submitting your final project using [R Markdown Websites](https://rmarkdown.rstudio.com/lesson-13.html){target="_blank"} and if your project has no sensitive data, publishing it on the web as well. Background: 
 
-<!--
-* [R Markdown websites](https://rmarkdown.rstudio.com/lesson-13.html){target="_blank"}
-    + Inputs: `.Rmd` and `_site.yml` files
-    + Output: webpage in `docs/` folder, in particular `index.html` mainpage
-    + Deploying your webpage
+* Inputs: `.Rmd` and `_site.yml` files
+* Output: webpage in `docs/` folder, in particular the `index.html` mainpage
+* "Deploying" your webpage: Many ways
 
 
 ### 2. In-class exercise
 
-* Log into <https://github.com/>
-* Sign into <https://app.netlify.com/> using your GitHub account
-* Play around with R Markdown Websites
-* When you're done, _deploy_ your website by using netlify's drag-and-drop interface <https://app.netlify.com/drop>. Later on, you can sync with GitHub
--->
+Today you'll be building your own R Markdown Website and deploying it to the web on [netlify.com](https://www.netlify.com/){target="_blank"}.
+
+1. Setup the example webpage I've given you, which is based off this course webpage
+    + Download the RStudio Project <a href="static/example_webpage.zip" download>`example_webpage.zip`</a>
+    + Move `example_webpage.zip` to where you keep your 192 work, then unzip it to open the RStudio Project folder
+    + Click on the `example_webpage.Rproj` RStudio Project file to open RStudio in "Project Mode". **You must do this.**
+1. Create an account on netlify.com using your GitHub account
+    + Log into [GitHub](https://github.com/){target="_blank"} first
+    + Sign into [Netlify](https://app.netlify.com/){target="_blank"} using your GitHub account
+1. Change and build your website locally (on your computer)
+    + In `index.Rmd` change the `author` from `"Albert Y. Kim"` to you and change the `title`
+    + Build your R Markdown Website by going to the "Build" panel of RStudio -> Clicking "Build Website".  
+    You can also use the keyboard shortcuts:
+        * macOS: Command+Shift+B
+        * windows: Control+Shift+B
+    + Inspect your webpage in your browser
+1. Deploy your R Markdown Website
+    + Go to [app.netlify.com/drop](https://app.netlify.com/drop){target="_blank"}
+    + Drag-and-drop the `docs/` folder output in your `example_webpage` RStudio Project folder.
+    + If you want to rename your webpage's URL rather than use the default one you've been assigned: Click on "Domain settings" -> Click on the "..." next to your default site name -> Click on "Edit site name" -> Rename your site
+1. Repeat the last two steps as necessary.
 
 
 
