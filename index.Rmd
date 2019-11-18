@@ -75,28 +75,29 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
-<!--
+
 # Lec 31: Wed 11/20 {#Lec31}
 
 ## Announcements
 
-* MP3 due on Friday at ~~5pm~~ 9pm
 * 
-
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
 * Yingke's observation about "tidy" data using the example from the [Wide and narrow data](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"} Wikipedia page.
+* GitHub: Theory and terminology
 
 
 ### 2. In-class exercise
 
+1. Sec01: Visit from Smith GIS Lab
+1. Sec02: Work on R Markdown Website
+
 
 
 ***
--->
 
 
 
