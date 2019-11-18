@@ -146,7 +146,9 @@ Today you'll be building your own R Markdown Website and deploying it to the web
     + Go to [app.netlify.com/drop](https://app.netlify.com/drop){target="_blank"}
     + Drag-and-drop the `docs/` folder output in your `example_webpage` RStudio Project folder.
     + If you want to rename your webpage's URL rather than use the default one you've been assigned: Click on "Domain settings" -> Click on the "..." next to your default site name -> Click on "Edit site name" -> Rename your site
-1. Repeat the last two steps as necessary.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-LRlQ_jaLAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
