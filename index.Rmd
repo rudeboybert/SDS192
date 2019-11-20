@@ -148,12 +148,12 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ### 1. Chalk talk
 
-* Yingke's observation about "tidy" data using the example from the [Wide and narrow data](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"} Wikipedia page.
+* Yingke's observation about "tidy" data using the example from the [Wide and narrow data](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"} Wikipedia page: the "narrow" data example is not a good example of "tidy" data because the Value variable does not have consistent units (years, lbs/kg, m/feet)
 
 
 ### 2. In-class exercise
 
-1. Sec01: Visit from Smith GIS Lab at 11:30am
+1. Sec01: Visit from Smith GIS Lab at 11:30am. Slides on how to find [spatial data](https://docs.google.com/presentation/d/18aJLmC1Quv-VCTVc8htQjcH6R3psyMKKOmSpxQea4Ew/edit?ts=5dd56f96#slide=id.g28549d7dc2_0_24){target="_blank"}
 1. Sec02: Get a version of your R Markdown Website deployed on Netlify
 
 
