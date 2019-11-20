@@ -72,7 +72,69 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 {target="_blank"}
 -->
 
+
+
 ***
+
+<!--
+# Lec 33: Mon 11/25 {#Lec33}
+
+## Announcements
+
+* Install Tableau
+* Final project assigned
+    + Google Form to get groups. If you need a group, let me knowe.
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Grammar of Graphics
+* 
+
+
+### 2. In-class exercise
+
+* Play around with Tableau
+
+
+
+***
+
+
+
+# Lec 32: Fri 11/22 {#Lec32}
+
+## Announcements
+
+* GitHub classroom: 
+* PS07 posted: 
+    + Go to Spinelli Center for help installing GitHub, not me.
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* GitHub: Theory and terminology
+    + What is git?
+    + What is github
+    + Lingo: repo (RStudio Project), clone, pull, commit/push, local vs remote
+    + Important files: README.md, .gitigore, (.Rproj)
+    + On GitHub.com: issues, pull requests, 
+    + Exercise: For now, using GitHub GUI. Later we're going to connect to RStudio
+    
+
+
+### 2. In-class exercise
+
+* reprex posted to README.md?
+
+
+
+***
+
+
+-->
 
 
 
@@ -80,20 +142,19 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-* 
+* MP2 update
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
 * Yingke's observation about "tidy" data using the example from the [Wide and narrow data](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"} Wikipedia page.
-* GitHub: Theory and terminology
 
 
 ### 2. In-class exercise
 
-1. Sec01: Visit from Smith GIS Lab
-1. Sec02: Work on R Markdown Website
+1. Sec01: Visit from Smith GIS Lab at 11:30am
+1. Sec02: Get a version of your R Markdown Website deployed on Netlify
 
 
 
