@@ -107,6 +107,9 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
+* tidyverse style guide
+* log10 transformation Add to tips and tricks
+* Most important collaborator: future you!
 * GitHub classroom: 
 * PS07 posted: 
     + Go to Spinelli Center for help installing GitHub, not me.
