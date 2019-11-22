@@ -90,54 +90,61 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ### 1. Chalk talk
 
 * Grammar of Graphics
-* 
+* \\* log10 transformation Add to tips and tricks
 
 
 ### 2. In-class exercise
 
 * Play around with Tableau
 
-
-
-***
-
-
-
-# Lec 32: Fri 11/22 {#Lec32}
-
-## Announcements
-
-* tidyverse style guide
-* log10 transformation Add to tips and tricks
 * Most important collaborator: future you!
 * GitHub classroom: 
 * PS07 posted: 
     + Go to Spinelli Center for help installing GitHub, not me.
 
+***
+
+-->
+
+# Lec 32: Fri 11/22 {#Lec32}
+
+## Announcements
+
+* Coding style
+    + Check out the [`tidyverse` style guide](https://style.tidyverse.org/){target="_blank"}. First quote: _Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread._
+    + Why is it important to write clean code, that is well documented, and actually works? To be mindful of the work you create for your [most important collaborator](https://rmhogervorst.nl/cleancode/blog/2016/05/26/content/post/2016-05-26-your-most-valuable-collaborator-future-you/){target="_blank"}.
+* Say you're excited about a new battery-powered [leaf blower](https://egopowerplus.com/blower-580cfm/){target="_blank"} you just bought. 
+    + What is a [quickstart guide](https://en.wikipedia.org/wiki/Quickstart_guide){target="_blank"} vs 
+    + The regular instruction manual?
+* Do before chalk talk
+    + Login to GitHub
+    + Open the GitHub repo for the [`fivethirtyeight`](https://github.com/rudeboybert/fivethirtyeight){target="_blank"} R package
+
+
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* GitHub: Theory and terminology
-    + What is git?
-    + What is github
-    + Lingo: repo (RStudio Project), clone, pull, commit/push, local vs remote
-    + Important files: README.md, .gitigore, (.Rproj)
-    + On GitHub.com: issues, pull requests, 
-    + Exercise: For now, using GitHub GUI. Later we're going to connect to RStudio
-    
+GitHub: Theory and terminology
 
+* What is git?
+* What is GitHub?
+* Terminology: Repo, clone, pull, commit/push, local vs remote
+* Important files in any repo: `README.md`, `.gitigore`, and if an RStudio Project `.Rproj`
+* Collaboration tools: Issues, pull requests 
 
 ### 2. In-class exercise
 
-* reprex posted to README.md?
+Accept the following [GitHub classroom assignment](https://classroom.github.com/a/sgKoAnsq){target="_blank"}
+
+
 
 
 
 ***
 
 
--->
+
 
 
 
