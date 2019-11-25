@@ -30,12 +30,21 @@ h1{font-weight: 400;}
 
 ***
 
-<!--
+
 
 # Problem set 07 {#PS07}
 
+*Assigned Monday 11/25, due Friday 12/6 at 10:45am on ~~Moodle~~ GitHub Classroom.*
+
 * GitHub classroom
--->
+
+## 1. R Markdown component {#PS07_R}
+
+## 2. Solutions & (imperfect) rubric {#PS07_solutions}
+
+
+
+***
 
 
 
@@ -45,7 +54,6 @@ h1{font-weight: 400;}
 
 * **R component**. A `.zip` file of your `PS06` RStudio Project folder. Due on Friday 11/15 at 10:45am on Moodle.
 * **Quiz**. In-class on Monday 11/18. To do: Read the following Buzzfeed.com [article](https://www.buzzfeednews.com/article/daveyalba/datacamp-sexual-harassment-metoo-tech-startup){target="_blank"} on DataCamp (an online platform for learning data science). We'll be having a brief in-class ethics discussion based on this article. **Added Sun 11/17**: For context, DataCamp is an online and interactive platform for learning data science, featuring [courses in R, python, SQL, and git](https://www.datacamp.com/search){target="_blank"}. 
-
 
 
 ## 1. R Markdown component {#PS06_R}
@@ -86,13 +94,7 @@ Total: 12pts
 
 
 
-
-
-
-
 ***
-
-
 
 
 
@@ -217,6 +219,7 @@ Notes:
 1. Podcast quiz: 1pt
 
 
+
 ***
 
 
@@ -256,7 +259,7 @@ Notes:
 
 1. Q1: 4pts (one for each of the four aesthetics)
 1. Q2: 1pt
-    
+
 
 
 ***

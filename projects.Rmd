@@ -217,6 +217,7 @@ Here are two randomly chosen examples to give a qualitative sense of the outcome
 Things to remember for next time:
 - Contact Smith Spatial Lab MUCH EARLIER
 - Contact Data Counselor MUCH EARLIER
+- Give example of joining sf object with data frame in examples.Rmd to create choropleth map of external variable
 -->
 
 *Assigned on Monday 11/11, due Friday 11/22 at ~~5pm~~ 9pm.*
@@ -224,7 +225,6 @@ Things to remember for next time:
 ## Data
 
 * Any data of your choosing, as long as you can make one interactive map using `leaflet` (not `shiny`) and one static map using the `sf` package. 
-
 
 ## Examples
 
@@ -283,3 +283,33 @@ Here are two arbitrarily chosen examples to give a qualitative sense of the outc
 
 
 
+***
+
+
+
+# Final Project {#Final}
+
+*Assigned on Monday 11/24, due Friday 12/20 at 12pm*
+
+Choose groups of 2-3 members then fill in your group information in the Google Sheet in the `#final_project` Slack channel.
+
+## Deliverable
+
+* Use any data of your choosing
+* Must be an R Markdown Website
+
+## Examples
+
+
+## Doing the project
+
+
+## Grading rubric
+
+
+
+## To submit
+
+1.  
+1. **Individually**: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfRfVN58QWyv2LRB865eA-JdCIWm-AUUx959cdGBgFo0Wk5MA/viewform){target="_blank"}
+1. **Individually**: Fill out the exit survey [Google Form](){target="_blank"}

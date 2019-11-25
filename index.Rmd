@@ -76,35 +76,53 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ***
 
+
 <!--
 # Lec 33: Mon 11/25 {#Lec33}
 
 ## Announcements
 
-* Install Tableau
-* Final project assigned
-    + Google Form to get groups. If you need a group, let me knowe.
+* Go over `janitor::clean_names()` and `skimr::skim()`
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Grammar of Graphics
-* \\* log10 transformation Add to tips and tricks
+*
+
+### 2. In-class exercise
+
+*
+
+***
+-->
+
+
+
+# Lec 33: Mon 11/25 {#Lec33}
+
+## Announcements
+
+* PS07 [posted](PS.html#PS07)
+* Final project [assigned](projects.html#Final)
+
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+
+* Go over Midterm II
 
 
 ### 2. In-class exercise
 
-* Play around with Tableau
 
-* Most important collaborator: future you!
-* GitHub classroom: 
-* PS07 posted: 
-    + Go to Spinelli Center for help installing GitHub, not me.
 
 ***
 
--->
+
 
 # Lec 32: Fri 11/22 {#Lec32}
 
@@ -139,12 +157,7 @@ Accept the following [GitHub classroom assignment](https://classroom.github.com/
 
 
 
-
-
 ***
-
-
-
 
 
 
