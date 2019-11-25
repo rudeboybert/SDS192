@@ -291,25 +291,100 @@ Here are two arbitrarily chosen examples to give a qualitative sense of the outc
 
 *Assigned on Monday 11/24, due Friday 12/20 at 12pm*
 
-Choose groups of 2-3 members then fill in your group information in the Google Sheet in the `#final_project` Slack channel.
+In groups of 2-3 students of your choosing you will answer any scientific question of your choosing using data. Your submission will be an RStudio Project of an RMarkdown Website. 
 
-## Deliverable
+* Use any data of your choosing that answers your scientific question. 
+* Your website must at least have the following two pages:
+    + An intro `index.html` page in blog-post style that summarizes your work. It should have
+        1. One visualization that best summarizes your work.
+        1. No more than 200 words of text
+    + A second `more_info.html` page going more in-depth for people who want more details. In should have
+        1. Between 2-3 more visualizations.
+        1. No more than 500 words of text
+* Publishing to the web: 
+    + If your data/analysis is not sensitive or private in nature, publish your R Markdown Website on the web and post the URL in the Groups Google Sheet in the `#final_project` Slack team.
+    + If your data/analysis is sensitive or private in nature, please DM me on Slack and we'll work something out.
 
-* Use any data of your choosing
-* Must be an R Markdown Website
+
+
 
 ## Examples
+
+Here are some arbitrarily chosen examples:
+
+1. [America’s Leaky Pipes: The Environmental Impact of Oil Pipeline Spills](https://ctimmons1.github.io/webpage/index.html){target="_blank"}
+1. [💵The Gigantic Gender Pay Gap💵](https://estherrose21.github.io/webpage/index.html){target="_blank"}
+1. [Putting Food on the Table in 50 States](https://jcflohr.github.io/final-project/index.html){target="_blank"}
+1. [Who Are The Noisemakers? | Analyzing the Loudest Parties in NYC](https://lepidopterane-atsmith.github.io/sds192fp/index.html){target="_blank"}
+1. [Bigfoot: True or Real?](https://loblatt.github.io/final_project_webpage/index.html){target="_blank"}
 
 
 ## Doing the project
 
+1. Choose groups of 2-3 members then fill in your group information in the Google Sheet in the `#final_project` Slack channel. If you need a group, DM me on Slack with your Section number.
+1. **Do this as soon as possible**: Finding data is often the hardest part of such projects
+    + Ideally, determine a research question you are interested in. Then find this data.
+    + Often however you can't find data that answers your desired question, but rather only some modified form of your question. This is fine, done is better than perfect.
+    + If you are still stuck, find data first and then reverse-engineer a question. Not ideal, but again, done is better than perfect.
+    + Use Smith College data resources. In particular:
+        + The Spinelli Center [Data Research and Statistics Counselor](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"} Osman Keshawarz
+        + The [Spatial Analysis Lab](http://www.science.smith.edu/sal/){target="_blank"}
+1. Setup the Final Project RStudio Project
+    1. Download <a href="static/projects/final_project.zip" download>`final_project.zip`</a>.
+    1. Move `final_project.zip` to wherever you keep your 192 files.
+        + macOS users: Double-click `final_project.zip` to extract the `final_project` folder.
+        + Windows users: Extract the contents of `final_project.zip` to a folder.
+    1. Double click the `final_project.Rproj` file to open RStudio in "Project mode"
+
+
 
 ## Grading rubric
 
+To be posted after break.
+
+<!--
+There are 16 possible points for this mini-project.
+
+**Baseline**
+
+* +1 for an `.Rmd` that compiles without errors and is replicable and reproducible by someone else.
+* +1 unnecessary messages from R are hidden from being displayed in the HTML
+* +1 for including a problem statement (what are you trying to figure out?)
+* +1 for readable, well-documented code (i.e. appropriate comments, using line breaks, breaking code up into logical chunks) that is human legible. 
+* +1 for including a catchy and/or engaging title
+* +2 for all group members completing the Individual Google Form
+
+**Average**
+
+* +1 for using at least 4 unique `dplyr` verbs
+* +1 for having a blogpost style intro page of no more than 300 words and one visualization.
+* +1 for having a "More information" tab page of no more than 800 words with between 2-3 visualizations.
+* +1 for providing a clear, concise description of the data you used and its original source, which is not necessarily the site you obtained the data from.
 
 
+**Advanced**
+
+* +1 for using at least one `dplyr` `_join`
+* +0–4 Awarded at the grader's discretion for submissions that are exceptionally compelling:
+    + 0: assignment incomplete with little apparent effort
+    + 1: graphics are relatively simple, confusing, sloppily executed, or not well thought out; analysis is muddled or uninformed
+    + 2: a solid all-around effort, graphics are appropriate, labeled, and contextualized; analysis is reasonable, considered, and well-researched
+    + 3: graphics are special, showing creativity, an original design, and/or exceptional attention to detail; analysis is exceptionally thorough and well thought out
+    + 4: truly outstanding work; graphics are something I've never seen before, hadn't thought about, or can't immediately figure out how to do; analysis is of publishable quality
+-->
+    
+    
 ## To submit
 
-1.  
+1. **Group leader**: In the Groups Google Sheet in the `#final_project` Slack team, post the URL to your RMarkdown Website published online (as long as data/work is not private or sensitive in nature).
+1. **Group leader**: The RStudio Project folder necessary to build your RMarkdown Website. There will be only one submission per group. The submission method will either be Moodle or GitHub Classroom (TBD).
 1. **Individually**: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfRfVN58QWyv2LRB865eA-JdCIWm-AUUx959cdGBgFo0Wk5MA/viewform){target="_blank"}
-1. **Individually**: Fill out the exit survey [Google Form](){target="_blank"}
+1. **Individually**: Fill out the "192 exit survey" Google Form where I'll ask you questions about your experience in 192. To be posted later.
+
+
+
+
+
+
+
+

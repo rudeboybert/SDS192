@@ -250,6 +250,12 @@ $(document).ready(function () {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -566,6 +572,7 @@ Things to remember for next time:
 Things to remember for next time:
 - Contact Smith Spatial Lab MUCH EARLIER
 - Contact Data Counselor MUCH EARLIER
+- Give example of joining sf object with data frame in examples.Rmd to create choropleth map of external variable
 -->
 <p><em>Assigned on Monday 11/11, due Friday 11/22 at <del>5pm</del> 9pm.</em></p>
 <div id="data-1" class="section level2">
@@ -648,6 +655,114 @@ Things to remember for next time:
 <ol style="list-style-type: decimal">
 <li>Each group will make only one submission: the group leader will submit a <code>.zip</code> file of all the contents of the <code>MP3</code> folder on Moodle.</li>
 <li><strong>Individually</strong>: Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUfxg2j9MYf60O70JerAQBeX0rxEFX6k5749P6gYEIHgr-9g/viewform" target="_blank">Google Form</a></li>
+</ol>
+<hr />
+</div>
+</div>
+<div id="Final" class="section level1">
+<h1>Final Project</h1>
+<p><em>Assigned on Monday 11/24, due Friday 12/20 at 12pm</em></p>
+<p>In groups of 2-3 students of your choosing you will answer any scientific question of your choosing using data. Your submission will be an RStudio Project of an RMarkdown Website.</p>
+<ul>
+<li>Use any data of your choosing that answers your scientific question.</li>
+<li>Your website must at least have the following two pages:
+<ul>
+<li>An intro <code>index.html</code> page in blog-post style that summarizes your work. It should have
+<ol style="list-style-type: decimal">
+<li>One visualization that best summarizes your work.</li>
+<li>No more than 200 words of text</li>
+</ol></li>
+<li>A second <code>more_info.html</code> page going more in-depth for people who want more details. In should have
+<ol style="list-style-type: decimal">
+<li>Between 2-3 more visualizations.</li>
+<li>No more than 500 words of text</li>
+</ol></li>
+</ul></li>
+<li>Publishing to the web:
+<ul>
+<li>If your data/analysis is not sensitive or private in nature, publish your R Markdown Website on the web and post the URL in the Groups Google Sheet in the <code>#final_project</code> Slack team.</li>
+<li>If your data/analysis is sensitive or private in nature, please DM me on Slack and we’ll work something out.</li>
+</ul></li>
+</ul>
+<div id="examples-2" class="section level2">
+<h2>Examples</h2>
+<p>Here are some arbitrarily chosen examples:</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://ctimmons1.github.io/webpage/index.html" target="_blank">America’s Leaky Pipes: The Environmental Impact of Oil Pipeline Spills</a></li>
+<li><a href="https://estherrose21.github.io/webpage/index.html" target="_blank">💵The Gigantic Gender Pay Gap💵</a></li>
+<li><a href="https://jcflohr.github.io/final-project/index.html" target="_blank">Putting Food on the Table in 50 States</a></li>
+<li><a href="https://lepidopterane-atsmith.github.io/sds192fp/index.html" target="_blank">Who Are The Noisemakers? | Analyzing the Loudest Parties in NYC</a></li>
+<li><a href="https://loblatt.github.io/final_project_webpage/index.html" target="_blank">Bigfoot: True or Real?</a></li>
+</ol>
+</div>
+<div id="doing-the-project-2" class="section level2">
+<h2>Doing the project</h2>
+<ol style="list-style-type: decimal">
+<li>Choose groups of 2-3 members then fill in your group information in the Google Sheet in the <code>#final_project</code> Slack channel. If you need a group, DM me on Slack with your Section number.</li>
+<li><strong>Do this as soon as possible</strong>: Finding data is often the hardest part of such projects
+<ul>
+<li>Ideally, determine a research question you are interested in. Then find this data.</li>
+<li>Often however you can’t find data that answers your desired question, but rather only some modified form of your question. This is fine, done is better than perfect.</li>
+<li>If you are still stuck, find data first and then reverse-engineer a question. Not ideal, but again, done is better than perfect.</li>
+<li>Use Smith College data resources. In particular:
+<ul>
+<li>The Spinelli Center <a href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr" target="_blank">Data Research and Statistics Counselor</a> Osman Keshawarz</li>
+<li>The <a href="http://www.science.smith.edu/sal/" target="_blank">Spatial Analysis Lab</a></li>
+</ul></li>
+</ul></li>
+<li>Setup the Final Project RStudio Project
+<ol style="list-style-type: decimal">
+<li>Download <a href="static/projects/final_project.zip" download><code>final_project.zip</code></a>.</li>
+<li>Move <code>final_project.zip</code> to wherever you keep your 192 files.
+<ul>
+<li>macOS users: Double-click <code>final_project.zip</code> to extract the <code>final_project</code> folder.</li>
+<li>Windows users: Extract the contents of <code>final_project.zip</code> to a folder.</li>
+</ul></li>
+<li>Double click the <code>final_project.Rproj</code> file to open RStudio in “Project mode”</li>
+</ol></li>
+</ol>
+</div>
+<div id="grading-rubric-2" class="section level2">
+<h2>Grading rubric</h2>
+<p>To be posted after break.</p>
+<!--
+There are 16 possible points for this mini-project.
+
+**Baseline**
+
+* +1 for an `.Rmd` that compiles without errors and is replicable and reproducible by someone else.
+* +1 unnecessary messages from R are hidden from being displayed in the HTML
+* +1 for including a problem statement (what are you trying to figure out?)
+* +1 for readable, well-documented code (i.e. appropriate comments, using line breaks, breaking code up into logical chunks) that is human legible. 
+* +1 for including a catchy and/or engaging title
+* +2 for all group members completing the Individual Google Form
+
+**Average**
+
+* +1 for using at least 4 unique `dplyr` verbs
+* +1 for having a blogpost style intro page of no more than 300 words and one visualization.
+* +1 for having a "More information" tab page of no more than 800 words with between 2-3 visualizations.
+* +1 for providing a clear, concise description of the data you used and its original source, which is not necessarily the site you obtained the data from.
+
+
+**Advanced**
+
+* +1 for using at least one `dplyr` `_join`
+* +0–4 Awarded at the grader's discretion for submissions that are exceptionally compelling:
+    + 0: assignment incomplete with little apparent effort
+    + 1: graphics are relatively simple, confusing, sloppily executed, or not well thought out; analysis is muddled or uninformed
+    + 2: a solid all-around effort, graphics are appropriate, labeled, and contextualized; analysis is reasonable, considered, and well-researched
+    + 3: graphics are special, showing creativity, an original design, and/or exceptional attention to detail; analysis is exceptionally thorough and well thought out
+    + 4: truly outstanding work; graphics are something I've never seen before, hadn't thought about, or can't immediately figure out how to do; analysis is of publishable quality
+-->
+</div>
+<div id="to-submit-2" class="section level2">
+<h2>To submit</h2>
+<ol style="list-style-type: decimal">
+<li><strong>Group leader</strong>: In the Groups Google Sheet in the <code>#final_project</code> Slack team, post the URL to your RMarkdown Website published online (as long as data/work is not private or sensitive in nature).</li>
+<li><strong>Group leader</strong>: The RStudio Project folder necessary to build your RMarkdown Website. There will be only one submission per group. The submission method will either be Moodle or GitHub Classroom (TBD).</li>
+<li><strong>Individually</strong>: Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRfVN58QWyv2LRB865eA-JdCIWm-AUUx959cdGBgFo0Wk5MA/viewform" target="_blank">Google Form</a></li>
+<li><strong>Individually</strong>: Fill out the “192 exit survey” Google Form where I’ll ask you questions about your experience in 192. To be posted later.</li>
 </ol>
 </div>
 </div>

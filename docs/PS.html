@@ -250,6 +250,12 @@ $(document).ready(function () {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -375,12 +381,48 @@ div.tocify {
 h1{font-weight: 400;}
 </style>
 <hr />
-<!--
-
-# Problem set 07 {#PS07}
-
-* GitHub classroom
--->
+<div id="PS07" class="section level1">
+<h1>Problem set 07</h1>
+<p><em>Assigned Friday 11/25, due Friday 12/6 at 10:45am on GitHub Classroom.</em></p>
+<ol style="list-style-type: decimal">
+<li><strong>Start this problem set early!</strong> That way you will have time to get help at the Spinelli Center tutoring hours if you run into trouble.</li>
+<li><strong>I will not answer your questions until you’ve been to the Spinelli Center Sun-Thurs 7-9pm tutoring hours first.</strong>
+<ul>
+<li>It will be very difficult for me to help 68 students individually. Please help me spread the workload. If you’re stuck, please get help at the Spinelli Center first: that way they can handle the easy questions, leaving only the harder ones for me. I will be asking you if you’ve already gone to the Spinelli Center first before answering any of your questions.</li>
+<li>Note that tutoring from 6pm on Tuesday November 26th through noon on Sunday December 1st is cancelled.</li>
+</ul></li>
+<li><strong>GitHub frustrations are normal.</strong> Git and GitHub are extremely powerful tools, but they can be very frustrating at times. This normal. Check out the title of this <a href="https://gumroad.com/l/oh-shit-git" target="_blank">zine</a> made by <a href="https://twitter.com/b0rk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Julia Evans</a> for advanced users.</li>
+</ol>
+<div id="PS07_R" class="section level2">
+<h2>1. GitHub component</h2>
+<p>For this PS you will be using the <a href="https://happygitwithr.com/" target="_blank">“Happy Git and GitHub for the useR”</a> book to:</p>
+<ol style="list-style-type: decimal">
+<li>Get familiar with GitHub. Read:
+<ul>
+<li>Chapter 1: Why Git? Why GitHub?</li>
+</ul></li>
+<li>Install GitHub on your computers and set it up. Read and perform all steps in:
+<ul>
+<li><del>Chapter 4: Register a GitHub account</del> You’ve already done</li>
+<li><del>Chapter 5: Install or upgrade R and RStudio</del> You’ve already done</li>
+<li>Chatper 6: Install Git</li>
+<li>Chapter 7: Introduce yourself to Git</li>
+</ul></li>
+<li>“Clone” the GitHub repository you created in Lec32 into RStudio on your computer. If you were not in class that day, get caught up with a peer. Read and perform all steps in:
+<ul>
+<li>Chapter 12: Connect RStudio to Git and GitHub.</li>
+<li><strong>Section 12.2</strong>: Ignore what’s in the book and do the following:
+<ol style="list-style-type: decimal">
+<li>You will not “Make a repo on GitHub,” but rather use the one you created in Lec32 <a href="https://github.com/192-2019-09-Fall">here</a>. It should be named something like <code>learning-github-YOUR_GITHUB_USER_NAME</code>. So for example, my repo would is called <code>learning-github-rudeboybert</code>.</li>
+<li>Click big green button “Create repository.”</li>
+<li>Copy the HTTPS clone URL to your clipboard via the green “Clone or Download” button.</li>
+</ol></li>
+</ul></li>
+<li>You do not need to submit anything. Completing Chapter 12 will automatically update your submission on GitHub classroom.</li>
+</ol>
+<hr />
+</div>
+</div>
 <div id="PS06" class="section level1">
 <h1>Problem set 06</h1>
 <p><em>Assigned Monday 11/11. Two components:</em></p>

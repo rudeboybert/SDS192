@@ -340,6 +340,12 @@ $(document).ready(function () {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -721,7 +727,7 @@ div.tocify {
 <p>What about the other way around? Use the <code>scales</code> package!</p>
 <div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb26-1" data-line-number="1"><span class="kw">library</span>(scales)</a>
 <a class="sourceLine" id="cb26-2" data-line-number="2"><span class="kw">percent</span>(<span class="fl">0.105</span>)</a></code></pre></div>
-<pre><code>## [1] &quot;10.5%&quot;</code></pre>
+<pre><code>## [1] &quot;10%&quot;</code></pre>
 <div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" data-line-number="1"><span class="kw">comma</span>(<span class="dv">145897</span>)</a></code></pre></div>
 <pre><code>## [1] &quot;145,897&quot;</code></pre>
 <div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" data-line-number="1"><span class="kw">dollar</span>(<span class="fl">1234.5</span>)</a></code></pre></div>

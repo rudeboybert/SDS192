@@ -34,14 +34,33 @@ h1{font-weight: 400;}
 
 # Problem set 07 {#PS07}
 
-*Assigned Monday 11/25, due Friday 12/6 at 10:45am on ~~Moodle~~ GitHub Classroom.*
+*Assigned Friday 11/25, due Friday 12/6 at 10:45am on GitHub Classroom.*
 
-* GitHub classroom
+1. **Start this problem set early!** That way you will have time to get help at the Spinelli Center tutoring hours if you run into trouble.
+1. **I will not answer your questions until you've been to the Spinelli Center Sun-Thurs 7-9pm tutoring hours first.**
+    + It will be very difficult for me to help 68 students individually. Please help me spread the workload. If you're stuck, please get help at the Spinelli Center first: that way they can handle the easy questions, leaving only the harder ones for me. I will be asking you if you've already gone to the Spinelli Center first before answering any of your questions.
+    + Note that tutoring from 6pm on Tuesday November 26th through noon on Sunday December 1st is cancelled.
+1. **GitHub frustrations are normal.** Git and GitHub are extremely powerful tools, but they can be very frustrating at times. This normal. Check out the title of this [zine](https://gumroad.com/l/oh-shit-git){target="_blank"} made by [Julia Evans](https://twitter.com/b0rk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor){target="_blank"} for advanced users.
 
-## 1. R Markdown component {#PS07_R}
+## 1. GitHub component {#PS07_R}
 
-## 2. Solutions & (imperfect) rubric {#PS07_solutions}
+For this PS you will be using the ["Happy Git and GitHub for the useR"](https://happygitwithr.com/){target="_blank"} book to:
 
+1. Get familiar with GitHub. Read:
+    + Chapter 1: Why Git? Why GitHub?
+1. Install GitHub on your computers and set it up. Read and perform all steps in:
+    + ~~Chapter 4: Register a GitHub account~~ You've already done
+    + ~~Chapter 5: Install or upgrade R and RStudio~~ You've already done
+    + Chatper 6: Install Git
+    + Chapter 7: Introduce yourself to Git
+1. "Clone" the GitHub repository you created in Lec32 into RStudio on your computer. If you were not in class that day, get caught up with a peer.  Read and perform all steps in:
+    + Chapter 12: Connect RStudio to Git and GitHub.
+    + **Section 12.2**: Ignore what's in the book and do the following:
+        1. You will not "Make a repo on GitHub," but rather use the one you created in Lec32 [here](https://github.com/192-2019-09-Fall). 
+        It should be named something like `learning-github-YOUR_GITHUB_USER_NAME`. So for example, my repo would is called `learning-github-rudeboybert`.
+        1. Click big green button "Create repository."
+        1. Copy the HTTPS clone URL to your clipboard via the green “Clone or Download” button.
+1. You do not need to submit anything. Completing Chapter 12 will automatically update your submission on GitHub classroom.        
 
 
 ***
