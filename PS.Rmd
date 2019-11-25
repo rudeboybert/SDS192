@@ -49,8 +49,8 @@ For this PS you will be using the ["Happy Git and GitHub for the useR"](https://
 1. Get familiar with GitHub. Read:
     + Chapter 1: Why Git? Why GitHub?
 1. Install GitHub on your computers and set it up. Read and perform all steps in:
-    + ~~Chapter 4: Register a GitHub account~~ You've already done
-    + ~~Chapter 5: Install or upgrade R and RStudio~~ You've already done
+    + ~~Chapter 4: Register a GitHub account~~ You've already done this
+    + ~~Chapter 5: Install or upgrade R and RStudio~~ You've already done this
     + Chatper 6: Install Git
     + Chapter 7: Introduce yourself to Git
 1. "Clone" the GitHub repository you created in Lec32 into RStudio on your computer. If you were not in class that day, get caught up with a peer.  Read and perform all steps in:
