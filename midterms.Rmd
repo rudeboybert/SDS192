@@ -356,9 +356,15 @@ So yes, it seems "women and children first" did hold as seen by the 69.9% vs 20.
 
 ## Results
 
-Boxplot of scores (out of 19) with no whiskers below. Quartiles were X / X / X.
+Boxplot of scores with no whiskers below.
 
 ![](static/images/midterm_II_distribution.png){ width=750px }
 
 
-## Visualizations from midterm
+## Source for Questions
+
+* Q1: Code from [Lec10](index.html#Lec10){target="_blank"} on color theory and [ModernDive 2.8.3](https://moderndive.netlify.com/2-viz.html#two-categ-barplot){target="_blank"} on `fill` aesthetic for barplots
+* Q2: [ModernDive 4.2.1](https://moderndive.netlify.com/4-tidy.html#tidy-definition){target="_blank"} on "tidy" data
+* Q3: [PS05 - Q1.a)](static/PS/PS05_solutions.html){target="_blank"}
+* Q4: Code from [Lec19](index.html#Lec19){target="_blank"} on joins
+* Q5: Practice Midterm II with a few variations

@@ -338,6 +338,12 @@ $(document).ready(function () {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -633,18 +639,18 @@ h1{font-weight: 400;}
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="co"># drinks is not &quot;tidy&quot;</span></a>
 <a class="sourceLine" id="cb9-2" data-line-number="2">drinks</a></code></pre></div>
 <pre><code>## # A tibble: 193 x 5
-##    country   beer_servings spirit_servings wine_servings total_litres_of_p…
-##    &lt;chr&gt;             &lt;int&gt;           &lt;int&gt;         &lt;int&gt;              &lt;dbl&gt;
-##  1 Afghanis…             0               0             0                0  
-##  2 Albania              89             132            54                4.9
-##  3 Algeria              25               0            14                0.7
-##  4 Andorra             245             138           312               12.4
-##  5 Angola              217              57            45                5.9
-##  6 Antigua …           102             128            45                4.9
-##  7 Argentina           193              25           221                8.3
-##  8 Armenia              21             179            11                3.8
-##  9 Australia           261              72           212               10.4
-## 10 Austria             279              75           191                9.7
+##    country      beer_servings spirit_servings wine_servings total_litres_of_pur…
+##    &lt;chr&gt;                &lt;int&gt;           &lt;int&gt;         &lt;int&gt;                &lt;dbl&gt;
+##  1 Afghanistan              0               0             0                  0  
+##  2 Albania                 89             132            54                  4.9
+##  3 Algeria                 25               0            14                  0.7
+##  4 Andorra                245             138           312                 12.4
+##  5 Angola                 217              57            45                  5.9
+##  6 Antigua &amp; B…           102             128            45                  4.9
+##  7 Argentina              193              25           221                  8.3
+##  8 Armenia                 21             179            11                  3.8
+##  9 Australia              261              72           212                 10.4
+## 10 Austria                279              75           191                  9.7
 ## # … with 183 more rows</code></pre>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1">drinks_tidy &lt;-<span class="st"> </span>drinks <span class="op">%&gt;%</span></a>
 <a class="sourceLine" id="cb11-2" data-line-number="2"><span class="st">  </span><span class="co"># Convert to &quot;tidy&quot;</span></a>
@@ -825,9 +831,18 @@ h1{font-weight: 400;}
 </div>
 <div id="results-1" class="section level2">
 <h2>Results</h2>
+<p>Boxplot of scores with no whiskers below.</p>
+<p><img src="static/images/midterm_II_distribution.png" width="750" /></p>
 </div>
-<div id="visualizations-from-midterm-1" class="section level2">
-<h2>Visualizations from midterm</h2>
+<div id="source-for-questions" class="section level2">
+<h2>Source for Questions</h2>
+<ul>
+<li>Q1: Code from <a href="index.html#Lec10" target="_blank">Lec10</a> on color theory and <a href="https://moderndive.netlify.com/2-viz.html#two-categ-barplot" target="_blank">ModernDive 2.8.3</a> on <code>fill</code> aesthetic for barplots</li>
+<li>Q2: <a href="https://moderndive.netlify.com/4-tidy.html#tidy-definition" target="_blank">ModernDive 4.2.1</a> on “tidy” data</li>
+<li>Q3: <a href="static/PS/PS05_solutions.html" target="_blank">PS05 - Q1.a)</a></li>
+<li>Q4: Code from <a href="index.html#Lec19" target="_blank">Lec19</a> on joins</li>
+<li>Q5: Practice Midterm II with a few variations</li>
+</ul>
 </div>
 </div>
 
