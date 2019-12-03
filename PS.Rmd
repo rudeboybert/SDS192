@@ -58,11 +58,20 @@ For this PS you will be using the ["Happy Git and GitHub for the useR"](https://
     + Chapter 7: Introduce yourself to Git
 1. "Clone" the GitHub repository you created in Lec32 into RStudio on your computer. If you were not in class that day, get caught up with a peer.  Read and perform all steps in:
     + Chapter 12: Connect RStudio to Git and GitHub. **For Section 12.2** ignore what's in the book and do the following:
-        1. You will not "Make a repo on GitHub," but rather use the one you created in Lec32 [here](https://github.com/192-2019-09-Fall). 
+        1. You will not "Make a repo on GitHub," but rather use the one you created in Lec32 [here](https://github.com/192-2019-09-Fall){target="_blank"}. 
         It should be named something like `learning-github-YOUR_GITHUB_USER_NAME`. So for example, my repo would be called `learning-github-rudeboybert`.
         1. Click big green button "Create repository."
         1. Copy the HTTPS clone URL to your clipboard via the green “Clone or Download” button.
-1. You do not need to submit anything. Completing Chapter 12 will automatically update your submission on GitHub classroom.        
+1. You do not need to submit anything. Completing Chapter 12 will automatically update your submission on GitHub classroom.  
+
+
+## 2. Hint {#PS07hint}
+
+How do I know if I've successfully completed the assignment?
+
+1. Go to the [SDS192 Intro to Data Science](https://github.com/192-2019-09-Fall) GitHub organization and make sure you see your `learning-github-YOUR_GITHUB_USER_NAME` folder.
+1. Then go to your `learning-github-YOUR_GITHUB_USER_NAME` folder and then look at your README. There should be the line "This is a line from RStudio" on it. 
+
 
 
 ***
