@@ -77,28 +77,59 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
-<!--
-# Lec 33: Mon 11/25 {#Lec33}
+
+# Lec 34: Wed 12/4 {#Lec34}
 
 ## Announcements
 
-* PS07
-* MP2 scores to be posted by Monday after break.
-* MP3 Grading
+* PS07 due on Friday. See `#questions` on Slack
+
+<!--
 * Go over `janitor::clean_names()` and `skimr::skim()`
+-->
 
-## Today's topics/activities
 
-### 1. Chalk talk
+## Today's Topics/Activities
 
-*
+<center>
+![](static/images/SQL.jpg){ width=300px }
+</center>
+<br>
+
+* **If you remember only one important fact from today's lecture, remember this**:
+    + If you know the `dplyr` package for data wrangling, you can get started with the SQL relational database management language in a day.
+    + **Why?** Because they are both based on the same theoretical underpinning: [Database normalization](https://en.wikipedia.org/wiki/Database_normalization){target="_blank"} (1970).  
+    Thus you can [transfer](https://en.wikipedia.org/wiki/Transfer_of_learning){target="_blank"} your _previous_ learnings to learn these _new_ tools.
+* **Similarly**:
+    + If you know the `ggplot2` package for data visualization, you can get started with data visualization platforms like [Tableau](https://www.tableau.com/){target="_blank"} and [plotly](https://plot.ly/){target="_blank"} in a day. 
+    + **Why?** Because they are both based on the same theoretical underpinning: [The Grammar of Graphics](https://www.springer.com/us/book/9780387245447){target="_blank"} (2005).  
+    Thus you can [transfer](https://en.wikipedia.org/wiki/Transfer_of_learning){target="_blank"} your _previous_ learnings to learn these _new_ tools.
+
+### 1. Chalk Talk
+
+* What SQL is about.
+* 3 ways to access SQL.
+* Some key SQL language *syntax*: set of rules that defines the combinations of symbols that are considered to be a correctly structured document or fragment in that language.
 
 ### 2. In-class exercise
 
-*
+**Goal**: Perform 2-3 SQL queries to convince yourself that "if you know `dplyr`, you can get started with SQL in a day." You'll be using databases on the `scidb.smith.edu` database created by our very own Prof. Ben Baumer!
+
+* Install and open [MySQLWorkbench](https://dev.mysql.com/downloads/workbench/){target="_blank"}; this whole process takes about 10 minutes and necessitates creating an account with Oracle.
+* Close the "Welcome to MySQL Workbench" message
+* Click the plus sign next to "MySQL Connections" to add a connection to a SQL database.
+* Setup a new connection" as shown in Slide 13 of this [slide deck](https://beanumber.github.io/sds192/lectures/29-sql.html#connect-pw-rememberpi)
+* Click the resulting "scidb" box and input the password shown on Slide 13. Click "Continue Anyway"
+* Copy and paste the following code into the Query window
+* Run the 10 individual code segments delineated by `/*SQL comments*/` one at a time by highlighting them and clicking the `r emo::ji("lightning")` button.
+
+<script src="https://gist.github.com/rudeboybert/35098400f4f36c36fc5d0e96cb40786d.js"></script>
+
+If you want to learn more, check out SDS Prof. Ben Baumer's notes [here](https://beanumber.github.io/sds192/schedule.html#lam_2:_database_querying){target="_blank"}. In particular the SQL queries used inside the `RMySQL::dbGetQuery()`, which is an interface function to run SQL commands directly from R. 
+
+
 
 ***
--->
 
 
 

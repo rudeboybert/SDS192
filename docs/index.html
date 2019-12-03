@@ -460,7 +460,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS 192: Introduction to Data Science</h1>
 <h4 class="author">Albert Y. Kim</h4>
-<h4 class="date">Last updated on 2019-11-25</h4>
+<h4 class="date">Last updated on 2019-12-03</h4>
 
 </div>
 
@@ -488,32 +488,67 @@ h1{font-weight: 400;}
 {target="_blank"}
 -->
 <hr />
+</div>
+<div id="Lec34" class="section level1">
+<h1>Lec 34: Wed 12/4</h1>
+<div id="announcements" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>PS07 due on Friday. See <code>#questions</code> on Slack</li>
+</ul>
 <!--
-# Lec 33: Mon 11/25 {#Lec33}
-
-## Announcements
-
-* PS07
-* MP2 scores to be posted by Monday after break.
-* MP3 Grading
 * Go over `janitor::clean_names()` and `skimr::skim()`
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-*
-
-### 2. In-class exercise
-
-*
-
-***
 -->
+</div>
+<div id="todays-topicsactivities" class="section level2">
+<h2>Today’s Topics/Activities</h2>
+<center>
+<img src="static/images/SQL.jpg" width="300" />
+</center>
+<p><br></p>
+<ul>
+<li><strong>If you remember only one important fact from today’s lecture, remember this</strong>:
+<ul>
+<li>If you know the <code>dplyr</code> package for data wrangling, you can get started with the SQL relational database management language in a day.</li>
+<li><strong>Why?</strong> Because they are both based on the same theoretical underpinning: <a href="https://en.wikipedia.org/wiki/Database_normalization" target="_blank">Database normalization</a> (1970).<br />
+Thus you can <a href="https://en.wikipedia.org/wiki/Transfer_of_learning" target="_blank">transfer</a> your <em>previous</em> learnings to learn these <em>new</em> tools.</li>
+</ul></li>
+<li><strong>Similarly</strong>:
+<ul>
+<li>If you know the <code>ggplot2</code> package for data visualization, you can get started with data visualization platforms like <a href="https://www.tableau.com/" target="_blank">Tableau</a> and <a href="https://plot.ly/" target="_blank">plotly</a> in a day.</li>
+<li><strong>Why?</strong> Because they are both based on the same theoretical underpinning: <a href="https://www.springer.com/us/book/9780387245447" target="_blank">The Grammar of Graphics</a> (2005).<br />
+Thus you can <a href="https://en.wikipedia.org/wiki/Transfer_of_learning" target="_blank">transfer</a> your <em>previous</em> learnings to learn these <em>new</em> tools.</li>
+</ul></li>
+</ul>
+<div id="chalk-talk" class="section level3">
+<h3>1. Chalk Talk</h3>
+<ul>
+<li>What SQL is about.</li>
+<li>3 ways to access SQL.</li>
+<li>Some key SQL language <em>syntax</em>: set of rules that defines the combinations of symbols that are considered to be a correctly structured document or fragment in that language.</li>
+</ul>
+</div>
+<div id="in-class-exercise" class="section level3">
+<h3>2. In-class exercise</h3>
+<p><strong>Goal</strong>: Perform 2-3 SQL queries to convince yourself that “if you know <code>dplyr</code>, you can get started with SQL in a day.” You’ll be using databases on the <code>scidb.smith.edu</code> database created by our very own Prof. Ben Baumer!</p>
+<ul>
+<li>Install and open <a href="https://dev.mysql.com/downloads/workbench/" target="_blank">MySQLWorkbench</a>; this whole process takes about 10 minutes and necessitates creating an account with Oracle.</li>
+<li>Close the “Welcome to MySQL Workbench” message</li>
+<li>Click the plus sign next to “MySQL Connections” to add a connection to a SQL database.</li>
+<li>Setup a new connection&quot; as shown in Slide 13 of this <a href="https://beanumber.github.io/sds192/lectures/29-sql.html#connect-pw-rememberpi">slide deck</a></li>
+<li>Click the resulting “scidb” box and input the password shown on Slide 13. Click “Continue Anyway”</li>
+<li>Copy and paste the following code into the Query window</li>
+<li>Run the 10 individual code segments delineated by <code>/*SQL comments*/</code> one at a time by highlighting them and clicking the 🌩 button.</li>
+</ul>
+<script src="https://gist.github.com/rudeboybert/35098400f4f36c36fc5d0e96cb40786d.js"></script>
+<p>If you want to learn more, check out SDS Prof. Ben Baumer’s notes <a href="https://beanumber.github.io/sds192/schedule.html#lam_2:_database_querying" target="_blank">here</a>. In particular the SQL queries used inside the <code>RMySQL::dbGetQuery()</code>, which is an interface function to run SQL commands directly from R.</p>
+<hr />
+</div>
+</div>
 </div>
 <div id="Lec33" class="section level1">
 <h1>Lec 33: Mon 11/25</h1>
-<div id="announcements" class="section level2">
+<div id="announcements-1" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>I sent an email on Saturday inviting you to the <a href="https://github.com/192-2019-09-Fall" target="_blank">Fall 2019 SDS192 Intro to Data Science</a> GitHub Classroom Organization. Please accept this invitation.</li>
@@ -526,9 +561,9 @@ h1{font-weight: 400;}
 <li>Final project <a href="projects.html#Final">assigned</a></li>
 </ul>
 </div>
-<div id="todays-topicsactivities" class="section level2">
+<div id="todays-topicsactivities-1" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk" class="section level3">
+<div id="chalk-talk-1" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Go over Midterm II</li>
@@ -540,7 +575,7 @@ h1{font-weight: 400;}
 </div>
 <div id="Lec32" class="section level1">
 <h1>Lec 32: Fri 11/22</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Coding style
@@ -560,9 +595,9 @@ h1{font-weight: 400;}
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-1" class="section level3">
+<div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk talk</h3>
 <p>GitHub: Theory and terminology</p>
 <ul>
@@ -573,7 +608,7 @@ h1{font-weight: 400;}
 <li>Collaboration tools: Issues, pull requests</li>
 </ul>
 </div>
-<div id="in-class-exercise" class="section level3">
+<div id="in-class-exercise-1" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Accept the following <a href="https://classroom.github.com/a/sgKoAnsq" target="_blank">GitHub classroom assignment</a></p>
 <hr />
@@ -582,21 +617,21 @@ h1{font-weight: 400;}
 </div>
 <div id="Lec31" class="section level1">
 <h1>Lec 31: Wed 11/20</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>MP2 update</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-2" class="section level3">
+<div id="chalk-talk-3" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Yingke’s observation about “tidy” data using the example from the <a href="https://en.wikipedia.org/wiki/Wide_and_narrow_data" target="_blank">Wide and narrow data</a> Wikipedia page: the “narrow” data example is not a good example of “tidy” data because the Value variable does not have consistent units (years, lbs/kg, m/feet)</li>
 </ul>
 </div>
-<div id="in-class-exercise-1" class="section level3">
+<div id="in-class-exercise-2" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Sec01: Visit from Smith GIS Lab at 11:30am. Slides on how to find <a href="https://docs.google.com/presentation/d/18aJLmC1Quv-VCTVc8htQjcH6R3psyMKKOmSpxQea4Ew/edit?ts=5dd56f96#slide=id.g28549d7dc2_0_24" target="_blank">spatial data</a></li>
@@ -608,7 +643,7 @@ h1{font-weight: 400;}
 </div>
 <div id="Lec30" class="section level1">
 <h1>Lec 30: Mon 11/18</h1>
-<div id="announcements-3" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>MP3 due on Friday at <del>5pm</del> 9pm</li>
@@ -622,9 +657,9 @@ h1{font-weight: 400;}
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-3" class="section level2">
+<div id="todays-topicsactivities-4" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-3" class="section level3">
+<div id="chalk-talk-4" class="section level3">
 <h3>1. Chalk talk</h3>
 <p>You’ll be submitting your final project using <a href="https://rmarkdown.rstudio.com/lesson-13.html" target="_blank">R Markdown Websites</a> and if your project has no sensitive data, publishing it on the web as well. Background:</p>
 <ul>
@@ -633,7 +668,7 @@ h1{font-weight: 400;}
 <li>“Deploying” your webpage: Many ways</li>
 </ul>
 </div>
-<div id="in-class-exercise-2" class="section level3">
+<div id="in-class-exercise-3" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Today you’ll be building your own R Markdown Website, which is the technology I use for this 192 webpage. Then you’ll be deploying it to the web using <a href="https://app.netlify.com/drop" target="_blank">Netlify drop</a>.</p>
 <center>
@@ -677,7 +712,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec29" class="section level1">
 <h1>Lec 29: Fri 11/15</h1>
-<div id="announcements-4" class="section level2">
+<div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Sit next to your MP3 partner</li>
@@ -698,9 +733,9 @@ You can also use the keyboard shortcuts:
 <p>The application is <a href="https://dsc-wav.github.io/www/students.html" target="_blank">here</a>, please APPLY NOW!! Please contact Ben Baumer if you have more questions.</p>
 </div>
 </div>
-<div id="todays-topicsactivities-4" class="section level2">
+<div id="todays-topicsactivities-5" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="in-class-exercise-3" class="section level3">
+<div id="in-class-exercise-4" class="section level3">
 <h3>1. In-class exercise</h3>
 <ul>
 <li>Work on MP3</li>
@@ -711,7 +746,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec28" class="section level1">
 <h1>Lec 28: Wed 11/13</h1>
-<div id="announcements-5" class="section level2">
+<div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Office hours today <del>3-4:30pm</del> 3-4pm</li>
@@ -764,9 +799,9 @@ Title: <em>Dark Money and Political Parties After Citizens United</em></li>
 </ol>
 </div>
 </div>
-<div id="todays-topicsactivities-5" class="section level2">
+<div id="todays-topicsactivities-6" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-4" class="section level3">
+<div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Choropleth maps. In particular, how you set the <em>bins</em> corresponding to the color gradient can affect how your map looks. As indicated <a href="https://gisgeography.com/choropleth-maps-data-classification/" target="_blank">here</a>, there are two approaches:
@@ -777,7 +812,7 @@ Title: <em>Dark Money and Political Parties After Citizens United</em></li>
 <li><a href="https://en.wikipedia.org/wiki/Application_programming_interface" target="_blank">Application Programmer Interfaces</a></li>
 </ul>
 </div>
-<div id="in-class-exercise-4" class="section level3">
+<div id="in-class-exercise-5" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li><code>tidycensus</code> package</li>
@@ -788,7 +823,7 @@ Title: <em>Dark Money and Political Parties After Citizens United</em></li>
 </div>
 <div id="Lec27" class="section level1">
 <h1>Lec 27: Mon 11/11</h1>
-<div id="announcements-6" class="section level2">
+<div id="announcements-7" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>I filled out a rough schedule of topics for the rest of the semester in the spreadsheet above.</li>
@@ -801,9 +836,9 @@ Title: <em>Dark Money and Political Parties After Citizens United</em></li>
 <li>MP3 details posted.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-6" class="section level2">
+<div id="todays-topicsactivities-7" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-5" class="section level3">
+<div id="chalk-talk-6" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Absolute vs relative filepaths</li>
@@ -815,7 +850,7 @@ Title: <em>Dark Money and Political Parties After Citizens United</em></li>
 <li>Centroids: <a href="https://en.wikipedia.org/wiki/Geographic_center_of_the_contiguous_United_States" target="_blank">Geographic</a> and <a href="https://en.wikipedia.org/wiki/Mean_center_of_the_United_States_population" target="_blank">population</a> weighted. Not coincidentally, check out where FedEx and UPS main airport hubs are <a href="https://www.google.com/maps/dir/UPS+Worldport,+Grade+Lane,+Louisville,+KY/FedEx+World+Hub,+2903+Sprankel+Ave,+Memphis,+TN+38118/@36.6002171,-90.0693041,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x88690c2c6dc6fe95:0xae70a6ac610364fe!2m2!1d-85.7307215!2d38.1657255!1m5!1m1!1s0x887f87b59bc63573:0x37d7df503bee2e8f!2m2!1d-89.9608239!2d35.0674784!3e0" target="_blank">located</a>.</li>
 </ol>
 </div>
-<div id="in-class-exercise-5" class="section level3">
+<div id="in-class-exercise-6" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>While you are free to work in any order you like, I suggest you:</p>
 <ol style="list-style-type: decimal">
@@ -846,7 +881,7 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </div>
 <div id="Lec26" class="section level1">
 <h1>Lec 26: Fri 11/8</h1>
-<div id="announcements-7" class="section level2">
+<div id="announcements-8" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>MP3: Maps!
@@ -856,9 +891,9 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-7" class="section level2">
+<div id="todays-topicsactivities-8" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-6" class="section level3">
+<div id="chalk-talk-7" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Reading of “On Exactitude in Science” by Borges.</li>
@@ -870,7 +905,7 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-6" class="section level3">
+<div id="in-class-exercise-7" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Two chief tools we’ll be using.</p>
 <ul>
@@ -884,7 +919,7 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </div>
 <div id="Lec25" class="section level1">
 <h1>Lec 25: Wed 11/6</h1>
-<div id="announcements-8" class="section level2">
+<div id="announcements-9" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Office hours today are <del>3-4:30pm</del> 3-4pm</li>
@@ -916,9 +951,9 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-8" class="section level2">
+<div id="todays-topicsactivities-9" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-7" class="section level3">
+<div id="chalk-talk-8" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Go over Midterm II practice exam solutions. Practice exam is posted on Slack under <code>#general_announcements</code>.</li>
@@ -929,7 +964,7 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </div>
 <div id="Lec24" class="section level1">
 <h1>Lec 24: Mon 11/4</h1>
-<div id="announcements-9" class="section level2">
+<div id="announcements-10" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Midterm II this weekend.</li>
@@ -944,16 +979,16 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-9" class="section level2">
+<div id="todays-topicsactivities-10" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-8" class="section level3">
+<div id="chalk-talk-9" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Fact that will 🤯 about MP2 data.</li>
 <li>Midterm II discussion. See <a href="midterms.html#midtermII">midterms</a> page.</li>
 </ul>
 </div>
-<div id="in-class-exercise-7" class="section level3">
+<div id="in-class-exercise-8" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Practice midterm posted on Slack; we’ll go over solutions on Wednesday.</li>
@@ -964,12 +999,12 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </div>
 <div id="Lec23" class="section level1">
 <h1>Lec 23: Fri 11/1</h1>
-<div id="announcements-10" class="section level2">
+<div id="announcements-11" class="section level2">
 <h2>Announcements</h2>
 </div>
-<div id="todays-topicsactivities-10" class="section level2">
+<div id="todays-topicsactivities-11" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="in-class-exercise-8" class="section level3">
+<div id="in-class-exercise-9" class="section level3">
 <h3>1. In-class exercise</h3>
 <ul>
 <li>Work on MP2</li>
@@ -980,7 +1015,7 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </div>
 <div id="Lec22" class="section level1">
 <h1>Lec 22: Wed 10/30</h1>
-<div id="announcements-11" class="section level2">
+<div id="announcements-12" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>If you would like to give mid-semester feedback on how this course is going so far, you can leave feedback (either anonymously or not) via the Google Forms linke posted in the <code>#general_announcements</code> channel in Slack. The form will be open until Friday Nov 1st at 5pm.</li>
@@ -991,15 +1026,15 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-11" class="section level2">
+<div id="todays-topicsactivities-12" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-9" class="section level3">
+<div id="chalk-talk-10" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Strategies for writing reports.</li>
 </ul>
 </div>
-<div id="in-class-exercise-9" class="section level3">
+<div id="in-class-exercise-10" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Work on MP2!</p>
 <hr />
@@ -1008,7 +1043,7 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </div>
 <div id="Lec21" class="section level1">
 <h1>Lec 21: Mon 10/28</h1>
-<div id="announcements-12" class="section level2">
+<div id="announcements-13" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Sit next to your MP2 partner today</li>
@@ -1023,9 +1058,9 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-12" class="section level2">
+<div id="todays-topicsactivities-13" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-10" class="section level3">
+<div id="chalk-talk-11" class="section level3">
 <h3>1. Chalk talk</h3>
 <p>Solutions to PS05 Q1.c). What happened to the average age above 60? The hint given on Slack was to look at the <code>ggplot2</code> cheatsheet -&gt; 2nd page -&gt; Bottom right corner -&gt; “Zooming”</p>
 <ul>
@@ -1058,7 +1093,7 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 <a class="sourceLine" id="cb4-4" data-line-number="4"><span class="st">  </span><span class="kw">coord_cartesian</span>(<span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">3</span>))</a></code></pre></div>
 <p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="512" /></p>
 </div>
-<div id="in-class-exercise-10" class="section level3">
+<div id="in-class-exercise-11" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Work on MP2!</p>
 <hr />
@@ -1067,16 +1102,16 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </div>
 <div id="Lec20" class="section level1">
 <h1>Lec 20: Fri 10/25</h1>
-<div id="announcements-13" class="section level2">
+<div id="announcements-14" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Open floor to share thoughts/feeling about President McCartney’s email.</li>
 <li>MP1 grading update</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-13" class="section level2">
+<div id="todays-topicsactivities-14" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-11" class="section level3">
+<div id="chalk-talk-12" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec19: In-class exercise, computing available seat miles. Note solution is in ModernDive Appendix D -&gt; Learning Check 3.20.
@@ -1092,7 +1127,7 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </center>
 <p><br></p>
 </div>
-<div id="in-class-exercise-11" class="section level3">
+<div id="in-class-exercise-12" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 4.1 - 4.2</li>
@@ -1103,7 +1138,7 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </div>
 <div id="Lec19" class="section level1">
 <h1>Lec 19: Wed 10/23</h1>
-<div id="announcements-14" class="section level2">
+<div id="announcements-15" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Sit next to your MP2 partner for today’s in-class exercise</li>
@@ -1114,9 +1149,9 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-14" class="section level2">
+<div id="todays-topicsactivities-15" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-12" class="section level3">
+<div id="chalk-talk-13" class="section level3">
 <h3>1. Chalk talk</h3>
 <p>Recap of Lec18: Click on tweet below to see all 6 different types of joins:</p>
 <blockquote class="twitter-tweet">
@@ -1129,7 +1164,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <p>Copy this to your <code>classnotes.Rmd</code></p>
 <script src="https://gist.github.com/rudeboybert/968dbf26d5f9407703ae7b24d217af67.js"></script>
 </div>
-<div id="in-class-exercise-12" class="section level3">
+<div id="in-class-exercise-13" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Complete ModernDive Learning Check 3.20: Using data in <code>nycflights13</code> package, compute available seat miles:</p>
 <center>
@@ -1142,7 +1177,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </div>
 <div id="Lec18" class="section level1">
 <h1>Lec 18: Mon 10/21</h1>
-<div id="announcements-15" class="section level2">
+<div id="announcements-16" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>MP2 rubric posted</li>
@@ -1150,9 +1185,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>For Wednesday’s lecture sit next to your MP2 partner. We’ll be doing an in-class data-wrangling exercise</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-15" class="section level2">
+<div id="todays-topicsactivities-16" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-13" class="section level3">
+<div id="chalk-talk-14" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Go over <a href="PS.html#PS04_solutions">PS04 solutions</a></li>
@@ -1160,7 +1195,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>Last major set of verbs: <code>_join()</code> data frames, <code>select()</code>, and <code>rename()</code> variables</li>
 </ul>
 </div>
-<div id="in-class-exercise-13" class="section level3">
+<div id="in-class-exercise-14" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 3.7, 3.8.1 - 3.8.2.</li>
@@ -1171,7 +1206,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </div>
 <div id="Lec17" class="section level1">
 <h1>Lec 17: Fri 10/18</h1>
-<div id="announcements-16" class="section level2">
+<div id="announcements-17" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>PS05 posted: Due in one week.</li>
@@ -1183,9 +1218,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-16" class="section level2">
+<div id="todays-topicsactivities-17" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-14" class="section level3">
+<div id="chalk-talk-15" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec16:
@@ -1196,7 +1231,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li><code>mutate()</code> new columns/variables and <code>arrange()</code> i.e. sort rows</li>
 </ul>
 </div>
-<div id="in-class-exercise-14" class="section level3">
+<div id="in-class-exercise-15" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 3.5 - 3.6</li>
@@ -1207,22 +1242,22 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </div>
 <div id="Lec16" class="section level1">
 <h1>Lec 16: Wed 10/16</h1>
-<div id="announcements-17" class="section level2">
+<div id="announcements-18" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack: Post on <code>#random</code></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-17" class="section level2">
+<div id="todays-topicsactivities-18" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-15" class="section level3">
+<div id="chalk-talk-16" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec14</li>
 <li><code>summarize()</code> rows and <code>group_by() %&gt;% summarize()</code></li>
 </ul>
 </div>
-<div id="in-class-exercise-15" class="section level3">
+<div id="in-class-exercise-16" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Keyboard shortcut in RStudio</li>
@@ -1234,7 +1269,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </div>
 <div id="Lec15" class="section level1">
 <h1>Lec 15: Fri 10/11</h1>
-<div id="announcements-18" class="section level2">
+<div id="announcements-19" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>PS04 posted</li>
@@ -1246,9 +1281,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </ol></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-18" class="section level2">
+<div id="todays-topicsactivities-19" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="in-class-exercise-16" class="section level3">
+<div id="in-class-exercise-17" class="section level3">
 <h3>1. In-class exercise</h3>
 <ul>
 <li>Put finishing touches on MP1</li>
@@ -1261,15 +1296,15 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </div>
 <div id="Lec14" class="section level1">
 <h1>Lec 14: Wed 10/9</h1>
-<div id="announcements-19" class="section level2">
+<div id="announcements-20" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-19" class="section level2">
+<div id="todays-topicsactivities-20" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-16" class="section level3">
+<div id="chalk-talk-17" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Intro to data wrangling</li>
@@ -1279,7 +1314,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <p>Example:</p>
 <script src="https://gist.github.com/rudeboybert/ebf39a24a03216be55cb20d9c475f57d.js"></script>
 </div>
-<div id="in-class-exercise-17" class="section level3">
+<div id="in-class-exercise-18" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 3 - 3.2</li>
@@ -1290,7 +1325,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </div>
 <div id="Lec13" class="section level1">
 <h1>Lec 13: Mon 10/7</h1>
-<div id="announcements-20" class="section level2">
+<div id="announcements-21" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>No talking about midterm until Wednesday’s lecture please.</li>
@@ -1303,9 +1338,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-20" class="section level2">
+<div id="todays-topicsactivities-21" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-17" class="section level3">
+<div id="chalk-talk-18" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec09:
@@ -1316,7 +1351,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>What is a “minimally viable product”?</li>
 </ul>
 </div>
-<div id="in-class-exercise-18" class="section level3">
+<div id="in-class-exercise-19" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP1</li>
@@ -1327,16 +1362,16 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </div>
 <div id="Lec12" class="section level1">
 <h1>Lec 12: Fri 10/4</h1>
-<div id="announcements-21" class="section level2">
+<div id="announcements-22" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Part of class-time on Monday to work on MP1</li>
 <li>Go over updated <a href="midterms.html">Midterm I</a> instructions</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-21" class="section level2">
+<div id="todays-topicsactivities-22" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-18" class="section level3">
+<div id="chalk-talk-19" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Trend lines. Two types (among many):
@@ -1355,7 +1390,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </ol></li>
 </ul>
 </div>
-<div id="in-class-exercise-19" class="section level3">
+<div id="in-class-exercise-20" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>First, copy this to your <code>classnotes.Rmd</code> and go over code.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
@@ -1397,15 +1432,15 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </div>
 <div id="Lec11" class="section level1">
 <h1>Lec 11: Wed 10/2</h1>
-<div id="announcements-22" class="section level2">
+<div id="announcements-23" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>None</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-22" class="section level2">
+<div id="todays-topicsactivities-23" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-19" class="section level3">
+<div id="chalk-talk-20" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Go over Midterm I</li>
@@ -1416,16 +1451,16 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </div>
 <div id="Lec10" class="section level1">
 <h1>Lec 10: Mon 9/30</h1>
-<div id="announcements-23" class="section level2">
+<div id="announcements-24" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><a href="midterms.html#midtermI">Midterm I</a> info posted</li>
 <li><a href="projects.html#MP1">Mini-Project 1</a> info posted</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-23" class="section level2">
+<div id="todays-topicsactivities-24" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-20" class="section level3">
+<div id="chalk-talk-21" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec09: Color palettes from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a> <!--
@@ -1435,7 +1470,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>Recap of “five named graphs”: ModernDive Table 2.4</li>
 </ul>
 </div>
-<div id="in-class-exercise-20" class="section level3">
+<div id="in-class-exercise-21" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.9. In particular in Section 2.9.3, open the <code>ggplot2</code> cheatsheet in RStudio and read over the different <code>geom</code> types</li>
@@ -1478,7 +1513,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </div>
 <div id="Lec09" class="section level1">
 <h1>Lec 09: Fri 9/27</h1>
-<div id="announcements-24" class="section level2">
+<div id="announcements-25" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack:
@@ -1489,9 +1524,9 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <li>Go over <a href="PS.html#PS03_solutions">PS03 solutions</a></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-24" class="section level2">
+<div id="todays-topicsactivities-25" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-21" class="section level3">
+<div id="chalk-talk-22" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of barplots: Exercise on pie charts vs barplots below</li>
@@ -1521,7 +1556,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <p>Compare that to using barplots. Which do you prefer?</p>
 <p><img src="static/images/barplots.png" width="600" /></p>
 </div>
-<div id="in-class-exercise-21" class="section level3">
+<div id="in-class-exercise-22" class="section level3">
 <h3>3. In-class exercise</h3>
 <ul>
 <li>Quiz on podcast</li>
@@ -1533,7 +1568,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 </div>
 <div id="Lec08" class="section level1">
 <h1>Lec 08: Mon 9/23</h1>
-<div id="announcements-25" class="section level2">
+<div id="announcements-26" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>No office hours on Wednesday</li>
@@ -1551,9 +1586,9 @@ We are thrilled to be at <a href="https://twitter.com/Statfest?ref_src=twsrc%5Et
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-25" class="section level2">
+<div id="todays-topicsactivities-26" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-22" class="section level3">
+<div id="chalk-talk-23" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of boxplots</li>
@@ -1561,7 +1596,7 @@ We are thrilled to be at <a href="https://twitter.com/Statfest?ref_src=twsrc%5Et
 <li>Barplots</li>
 </ul>
 </div>
-<div id="in-class-exercise-22" class="section level3">
+<div id="in-class-exercise-23" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.8</li>
@@ -1572,7 +1607,7 @@ We are thrilled to be at <a href="https://twitter.com/Statfest?ref_src=twsrc%5Et
 </div>
 <div id="Lec07" class="section level1">
 <h1>Lec 07: Fri 9/20</h1>
-<div id="announcements-26" class="section level2">
+<div id="announcements-27" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack:
@@ -1600,9 +1635,9 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-26" class="section level2">
+<div id="todays-topicsactivities-27" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-23" class="section level3">
+<div id="chalk-talk-24" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of histograms</li>
@@ -1644,7 +1679,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <p>Let’s compare the points and the corresponding boxplot side-by-side with the values on the <span class="math inline">\(y\)</span>-axis matching:</p>
 <p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-23" class="section level3">
+<div id="in-class-exercise-24" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.6 - 2.7</li>
@@ -1657,15 +1692,15 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec06" class="section level1">
 <h1>Lec 06: Wed 9/18</h1>
-<div id="announcements-27" class="section level2">
+<div id="announcements-28" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Prof. Katie Kinnaird’s TRIPODS+X - Data Science Education Investigation</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-27" class="section level2">
+<div id="todays-topicsactivities-28" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-24" class="section level3">
+<div id="chalk-talk-25" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1673,7 +1708,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>Histograms for visualizing distribution of a numerical variable.</li>
 </ul>
 </div>
-<div id="in-class-exercise-24" class="section level3">
+<div id="in-class-exercise-25" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.5</li>
@@ -1684,16 +1719,16 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec05" class="section level1">
 <h1>Lec 05: Mon 9/16</h1>
-<div id="announcements-28" class="section level2">
+<div id="announcements-29" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack message: Abandoning RStudio Cloud in favor of RStudio Desktop.</li>
 <li>The art of managing Slack notifications</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-28" class="section level2">
+<div id="todays-topicsactivities-29" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-25" class="section level3">
+<div id="chalk-talk-26" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1701,7 +1736,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>Linegraphs</li>
 </ul>
 </div>
-<div id="in-class-exercise-25" class="section level3">
+<div id="in-class-exercise-26" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2.3.2 - 2.4</li>
@@ -1712,7 +1747,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec04" class="section level1">
 <h1>Lec 04: Fri 9/13</h1>
-<div id="announcements-29" class="section level2">
+<div id="announcements-30" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Screencast from last lecture posted</li>
@@ -1720,9 +1755,9 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>PS02 posted under <a href="PS.html">Problem Sets</a></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-29" class="section level2">
+<div id="todays-topicsactivities-30" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-26" class="section level3">
+<div id="chalk-talk-27" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1743,7 +1778,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </tbody>
 </table>
 </div>
-<div id="in-class-exercise-26" class="section level3">
+<div id="in-class-exercise-27" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>At a couple of steps in this process, you will be asked to install packages. Say yes to all of them!</li>
@@ -1792,15 +1827,15 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec03" class="section level1">
 <h1>Lec 03: Wed 9/11</h1>
-<div id="announcements-30" class="section level2">
+<div id="announcements-31" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack updates: custom emojis and vote in today’s poll!</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-30" class="section level2">
+<div id="todays-topicsactivities-31" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-27" class="section level3">
+<div id="chalk-talk-28" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1811,7 +1846,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </iframe>
 <p></br></p>
 </div>
-<div id="in-class-exercise-27" class="section level3">
+<div id="in-class-exercise-28" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive 2 - 2.3.1.</li>
@@ -1822,16 +1857,16 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec02" class="section level1">
 <h1>Lec 02: Mon 9/9</h1>
-<div id="announcements-31" class="section level2">
+<div id="announcements-32" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><a href="syllabus.html">Syllabus</a> finalized.</li>
 <li>Problem Set 01 due this Friday posted under <a href="PS.html">Problem Sets</a>.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-31" class="section level2">
+<div id="todays-topicsactivities-32" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-28" class="section level3">
+<div id="chalk-talk-29" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Intro to Slack <a href="static/intro_to_slack.pdf" target="_blank">slides</a></li>
@@ -1839,7 +1874,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 <li>What are R packages?</li>
 </ul>
 </div>
-<div id="in-class-exercise-28" class="section level3">
+<div id="in-class-exercise-29" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Set up RStudio Cloud:
@@ -1863,11 +1898,11 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </div>
 <div id="Lec01" class="section level1">
 <h1>Lec 01: Fri 9/6</h1>
-<div id="announcements-32" class="section level2">
+<div id="announcements-33" class="section level2">
 <h2>Announcements</h2>
 <p>Welcome!</p>
 </div>
-<div id="todays-topicsactivities-32" class="section level2">
+<div id="todays-topicsactivities-33" class="section level2">
 <h2>Today’s topics/activities</h2>
 <ul>
 <li>My story.</li>
