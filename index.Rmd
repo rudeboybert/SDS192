@@ -77,15 +77,60 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
+<!--
+# Lec 34: Wed 12/4 {#Lec34}
+
+## Announcements
+
+* Please fill out this feedback [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfHOQeDiWv41Ps1Yin7r1mZaCMou23_hixa9DljmTih9lDrow/viewform){target="_blank"} about PS07 GitHub.
+
+```{r, echo=FALSE}
+library(tidyverse)
+library(janitor)
+data_frame_with_ugly_names <- tibble(
+  `asdf ?!? qwerty%` = c(1, 2),
+  variable.name = c(2,1)
+)
+data_frame_with_ugly_names
+data_frame_with_clean_names <- data_frame_with_ugly_names %>% 
+  clean_names()
+data_frame_with_clean_names
+
+
+library(gapminder)
+gapminder2007 <- gapminder %>% 
+  filter(year == 2007, continent %in% c("Africa", "Asia"))
+
+
+
+
+
+library(skimr)
+gapminder2007 %>% skim()
+gapminder2007 %>% group_by(continent) %>% skim()
+```
+
+## Today's Topics/Activities
+
+
+
+***
+
+
+
+-->
+
+
+
 
 # Lec 34: Wed 12/4 {#Lec34}
 
 ## Announcements
 
 * If you haven't already, download and install [MySQL Workbench](https://dev.mysql.com/downloads/workbench/){target="_blank"}
-* If you still need a Final Project Group, Slack DM me with your Section number.
-* PS07 due on Friday. Start early! Also, I added a [hint](PS.html#PS07hint). 
-* No office hours on Friday: the SDS faculty have a curriculum meeting.
+* If you need a Final Project Group, Slack DM me with your Section number.
+* PS07 due on Friday. Start today! Also, I added a [hint](PS.html#PS07hint). 
+* No office hours on Friday morning: the SDS faculty have a curriculum meeting.
 
 <!--
 * Go over `janitor::clean_names()` and `skimr::skim()`
@@ -124,7 +169,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 * Setup a new connection" as shown in Slide 13/16 of this [slide deck](https://beanumber.github.io/sds192/lectures/29-sql.html#16).
 * Click the resulting "scidb" box and input the password shown on Slide 13. Click "Continue Anyway"
 * Copy and paste the code below into the Query window
-* Run the 10 individual code segments delineated by `/*SQL comments*/` one at a time by highlighting them and clicking the `r emo::ji("lightning")` button.
+* Run the 10 individual code segments delineated by `/*SQL comments*/` one at a time by highlighting them and clicking the "lightning" button.
 
 <script src="https://gist.github.com/rudeboybert/35098400f4f36c36fc5d0e96cb40786d.js"></script>
 

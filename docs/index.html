@@ -488,6 +488,108 @@ h1{font-weight: 400;}
 {target="_blank"}
 -->
 <hr />
+<!--
+# Lec 34: Wed 12/4 {#Lec34}
+
+## Announcements
+
+* Please fill out this feedback [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfHOQeDiWv41Ps1Yin7r1mZaCMou23_hixa9DljmTih9lDrow/viewform){target="_blank"} about PS07 GitHub.
+
+<div class="kable-table">
+
+ asdf ?!? qwerty%   variable.name
+-----------------  --------------
+                1               2
+                2               1
+
+</div><div class="kable-table">
+
+ asdf_qwerty_percent   variable_name
+--------------------  --------------
+                   1               2
+                   2               1
+
+</div>
+Table: Data summary
+
+                                      
+-------------------------  -----------
+Name                       Piped data 
+Number of rows             85         
+Number of columns          6          
+_______________________               
+Column type frequency:                
+factor                     2          
+numeric                    4          
+________________________              
+Group variables            None       
+-------------------------  -----------
+
+
+**Variable type: factor**
+
+skim_variable    n_missing   complete_rate  ordered    n_unique  top_counts                       
+--------------  ----------  --------------  --------  ---------  ---------------------------------
+country                  0               1  FALSE            85  Afg: 1, Alg: 1, Ang: 1, Bah: 1   
+continent                0               1  FALSE             2  Afr: 52, Asi: 33, Ame: 0, Eur: 0 
+
+
+**Variable type: numeric**
+
+skim_variable    n_missing   complete_rate          mean             sd          p0          p25           p50           p75           p100  hist  
+--------------  ----------  --------------  ------------  -------------  ----------  -----------  ------------  ------------  -------------  ------
+year                     0               1       2007.00           0.00     2007.00      2007.00       2007.00       2007.00   2.007000e+03  ▁▁▇▁▁ 
+lifeExp                  0               1         60.99          11.89       39.61        50.73         59.72         72.30   8.260000e+01  ▆▇▇▇▅ 
+pop                      0               1   55782276.69   186102418.89   199579.00   4018332.00   12420476.00   33333216.00   1.318683e+09  ▇▁▁▁▁ 
+gdpPercap                0               1       6732.23       10268.42      277.55      1044.77       2280.77       7092.92   4.730699e+04  ▇▁▁▁▁ 
+
+
+Table: Data summary
+
+                                      
+-------------------------  -----------
+Name                       Piped data 
+Number of rows             85         
+Number of columns          6          
+_______________________               
+Column type frequency:                
+factor                     1          
+numeric                    4          
+________________________              
+Group variables            continent  
+-------------------------  -----------
+
+
+**Variable type: factor**
+
+skim_variable   continent    n_missing   complete_rate  ordered    n_unique  top_counts                     
+--------------  ----------  ----------  --------------  --------  ---------  -------------------------------
+country         Africa               0               1  FALSE            52  Alg: 1, Ang: 1, Ben: 1, Bot: 1 
+country         Asia                 0               1  FALSE            33  Afg: 1, Bah: 1, Ban: 1, Cam: 1 
+
+
+**Variable type: numeric**
+
+skim_variable   continent    n_missing   complete_rate           mean             sd          p0          p25           p50           p75           p100  hist  
+--------------  ----------  ----------  --------------  -------------  -------------  ----------  -----------  ------------  ------------  -------------  ------
+year            Africa               0               1        2007.00           0.00     2007.00      2007.00       2007.00       2007.00   2.007000e+03  ▁▁▇▁▁ 
+year            Asia                 0               1        2007.00           0.00     2007.00      2007.00       2007.00       2007.00   2.007000e+03  ▁▁▇▁▁ 
+lifeExp         Africa               0               1          54.81           9.63       39.61        47.83         52.93         59.44   7.644000e+01  ▇▇▇▂▃ 
+lifeExp         Asia                 0               1          70.73           7.96       43.83        65.48         72.40         75.64   8.260000e+01  ▁▁▅▇▅ 
+pop             Africa               0               1    17875763.31    24917726.17   199579.00   2909226.50   10093310.50   19363654.50   1.350312e+08  ▇▂▁▁▁ 
+pop             Asia                 0               1   115513752.33   289673399.13   708573.00   6426679.00   24821286.00   69453570.00   1.318683e+09  ▇▁▁▁▁ 
+gdpPercap       Africa               0               1        3089.03        3618.16      277.55       862.95       1452.27       3993.50   1.320648e+04  ▇▁▁▁▁ 
+gdpPercap       Asia                 0               1       12473.03       14154.94      944.00      2452.21       4471.06      22316.19   4.730699e+04  ▇▁▂▁▁ 
+
+## Today's Topics/Activities
+
+
+
+***
+
+
+
+-->
 </div>
 <div id="Lec34" class="section level1">
 <h1>Lec 34: Wed 12/4</h1>
@@ -495,9 +597,9 @@ h1{font-weight: 400;}
 <h2>Announcements</h2>
 <ul>
 <li>If you haven’t already, download and install <a href="https://dev.mysql.com/downloads/workbench/" target="_blank">MySQL Workbench</a></li>
-<li>If you still need a Final Project Group, Slack DM me with your Section number.</li>
-<li>PS07 due on Friday. Start early! Also, I added a <a href="PS.html#PS07hint">hint</a>.</li>
-<li>No office hours on Friday: the SDS faculty have a curriculum meeting.</li>
+<li>If you need a Final Project Group, Slack DM me with your Section number.</li>
+<li>PS07 due on Friday. Start today! Also, I added a <a href="PS.html#PS07hint">hint</a>.</li>
+<li>No office hours on Friday morning: the SDS faculty have a curriculum meeting.</li>
 </ul>
 <!--
 * Go over `janitor::clean_names()` and `skimr::skim()`
@@ -541,7 +643,7 @@ Thus you can <a href="https://en.wikipedia.org/wiki/Transfer_of_learning" target
 <li>Setup a new connection&quot; as shown in Slide 13/16 of this <a href="https://beanumber.github.io/sds192/lectures/29-sql.html#16">slide deck</a>.</li>
 <li>Click the resulting “scidb” box and input the password shown on Slide 13. Click “Continue Anyway”</li>
 <li>Copy and paste the code below into the Query window</li>
-<li>Run the 10 individual code segments delineated by <code>/*SQL comments*/</code> one at a time by highlighting them and clicking the 🌩 button.</li>
+<li>Run the 10 individual code segments delineated by <code>/*SQL comments*/</code> one at a time by highlighting them and clicking the “lightning” button.</li>
 </ul>
 <script src="https://gist.github.com/rudeboybert/35098400f4f36c36fc5d0e96cb40786d.js"></script>
 <p>If you want to learn more, check out SDS Prof. Ben Baumer’s notes <a href="https://beanumber.github.io/sds192/schedule.html#lam_2:_database_querying" target="_blank">here</a>. In particular the SQL queries used inside the <code>RMySQL::dbGetQuery()</code>, which is an interface function to run SQL commands directly from R.</p>
@@ -1082,19 +1184,19 @@ Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;
 <a class="sourceLine" id="cb2-9" data-line-number="9"><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb2-10" data-line-number="10"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb2-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="512" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="512" /></p>
 <p>Let’s set the y-axis limit to be between 0 and 3. Using <code>ylim(0, 3)</code> clips out the point <code>(5, 5)</code> and thus the regression line is flat:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb3-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb3-4" data-line-number="4"><span class="st">  </span><span class="kw">ylim</span>(<span class="dv">0</span>, <span class="dv">3</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="512" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="512" /></p>
 <p>However, using <code>coord_cartesian(ylim = c(0, 3))</code> merely zooms in on this part of the y-axis without clipping the point <code>(5, 5)</code> and thus the regression line is the original one:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb4-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb4-4" data-line-number="4"><span class="st">  </span><span class="kw">coord_cartesian</span>(<span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">3</span>))</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="512" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="512" /></p>
 </div>
 <div id="in-class-exercise-11" class="section level3">
 <h3>2. In-class exercise</h3>
@@ -1544,7 +1646,7 @@ I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&a
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw">library</span>(scales)</a>
 <a class="sourceLine" id="cb8-2" data-line-number="2">number_of_colors &lt;-<span class="st"> </span><span class="dv">3</span></a>
 <a class="sourceLine" id="cb8-3" data-line-number="3"><span class="kw">show_col</span>(<span class="kw">hue_pal</span>()(number_of_colors))</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" /></p>
 </div>
 <div id="exercise-on-pie-charts-vs-barplots" class="section level3">
 <h3>2. Exercise on pie charts vs barplots</h3>
@@ -1680,7 +1782,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 </tbody>
 </table>
 <p>Let’s compare the points and the corresponding boxplot side-by-side with the values on the <span class="math inline">\(y\)</span>-axis matching:</p>
-<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" /></p>
 </div>
 <div id="in-class-exercise-24" class="section level3">
 <h3>2. In-class exercise</h3>
