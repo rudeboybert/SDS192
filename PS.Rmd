@@ -56,11 +56,13 @@ For this PS you will be using the ["Happy Git and GitHub for the useR"](https://
     + ~~Chapter 5: Install or upgrade R and RStudio~~ You've already done this
     + Chatper 6: Install Git
     + Chapter 7: Introduce yourself to Git
-1. "Clone" the GitHub repository you created in Lec32 into RStudio on your computer. If you were not in class that day, get caught up with a peer.  Read and perform all steps in:
+1. Locate the GitHub repository you created in Lec32. 
+    + You should be able to see it [here](https://github.com/192-2019-09-Fall){target="_blank"} and it should be named something like `learning-github-YOUR_GITHUB_USER_NAME`. So for example, my repo would be called `learning-github-rudeboybert`.
+    + If you don't see it, accept this [invitation](https://classroom.github.com/a/sgKoAnsq){target="_blank"} to receive one. 
+1. "Clone" the above repo into RStudio on your computer. Read and perform all steps in:
     + Chapter 12: Connect RStudio to Git and GitHub. **For Section 12.2** ignore what's in the book and do the following:
-        1. You will not "Make a repo on GitHub," but rather use the one you created in Lec32 [here](https://github.com/192-2019-09-Fall){target="_blank"}. 
-        It should be named something like `learning-github-YOUR_GITHUB_USER_NAME`. So for example, my repo would be called `learning-github-rudeboybert`.
-        1. Click big green button "Create repository."
+        1. You will not "Make a repo on GitHub," but rather use the `learning-github-YOUR_GITHUB_USER_NAME` repo from the previous step. 
+        1. Click the big green button "Create repository."
         1. Copy the HTTPS clone URL to your clipboard via the green “Clone or Download” button.
 1. You do not need to submit anything. Completing Chapter 12 will automatically update your submission on GitHub classroom.  
 
