@@ -82,6 +82,8 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
+* If you haven't already, download and install [MySQL Workbench](https://dev.mysql.com/downloads/workbench/){target="_blank"}
+* If you still need a Final Project Group, Slack DM me with your Section number.
 * PS07 due on Friday. Start early! Also, I added a [hint](PS.html#PS07hint). 
 * No office hours on Friday: the SDS faculty have a curriculum meeting.
 
