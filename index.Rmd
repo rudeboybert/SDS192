@@ -77,49 +77,44 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
-<!--
-# Lec 34: Wed 12/4 {#Lec34}
+
+# Lec 35: Fri 12/6 {#Lec35}
 
 ## Announcements
 
 * Please fill out this feedback [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfHOQeDiWv41Ps1Yin7r1mZaCMou23_hixa9DljmTih9lDrow/viewform){target="_blank"} about PS07 GitHub.
+* By Monday: I will post
+    + Precise grading rubric for final project
+    + Submission method for final project
+    + Exit survey Google form link
+    + MP3 feedback (hopefully)
 
-```{r, echo=FALSE}
+
+## Today's Topics/Activities
+
+**Tip for final project**:  Install the `janitor` package and then run the following code.
+
+```{r, eval=FALSE}
 library(tidyverse)
 library(janitor)
-data_frame_with_ugly_names <- tibble(
+
+# Say we have a data frame with really messy names:
+data_frame_ugly <- tibble(
   `asdf ?!? qwerty%` = c(1, 2),
   variable.name = c(2,1)
 )
-data_frame_with_ugly_names
-data_frame_with_clean_names <- data_frame_with_ugly_names %>% 
+data_frame_ugly
+
+# You can clean them very easily using the clean_names() function from the 
+# janitor package!
+data_frame_clean <- data_frame_ugly %>% 
   clean_names()
-data_frame_with_clean_names
-
-
-library(gapminder)
-gapminder2007 <- gapminder %>% 
-  filter(year == 2007, continent %in% c("Africa", "Asia"))
-
-
-
-
-
-library(skimr)
-gapminder2007 %>% skim()
-gapminder2007 %>% group_by(continent) %>% skim()
+data_frame_clean
 ```
-
-## Today's Topics/Activities
 
 
 
 ***
-
-
-
--->
-
 
 
 
