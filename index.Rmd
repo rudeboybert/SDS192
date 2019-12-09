@@ -76,6 +76,43 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ***
 
+<!--
+# Lec 37: Wed 12/11 {#Lec37}
+
+## Announcements
+
+* 
+
+## Today's Topics/Activities
+
+Work on Final Project
+
+
+
+***
+-->
+
+
+
+# Lec 36: Mon 12/9 {#Lec36}
+
+## Announcements
+
+* MP3 update
+* All details for final project posted. Due Friday 12/20 at noon.
+* Getting help during reading and exam week:
+    + Office hours: By appointment at [bit.ly/meet_with_albert](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"} on Fri 12/13, Tue 12/17, and Wed 12/18
+    + Spinelli center tutoring: TBD
+    + Slack: I'll only be checking it periodically. Also, I'm busy on from Thu 12/19 5pm to Friday 12/20 afternoon, so you might not get a response in time if you message me then.
+
+## Today's Topics/Activities
+
+Work on Final Project
+
+
+
+***
+
 
 
 # Lec 35: Fri 12/6 {#Lec35}
@@ -126,11 +163,6 @@ data_frame_clean
 * If you need a Final Project Group, Slack DM me with your Section number.
 * PS07 due on Friday. Start today! Also, I added a [hint](PS.html#PS07hint). 
 * No office hours on Friday morning: the SDS faculty have a curriculum meeting.
-
-<!--
-* Go over `janitor::clean_names()` and `skimr::skim()`
--->
-
 
 ## Today's Topics/Activities
 

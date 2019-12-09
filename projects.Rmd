@@ -289,7 +289,7 @@ Here are two arbitrarily chosen examples to give a qualitative sense of the outc
 
 # Final Project {#Final}
 
-*Assigned on Monday 11/24, due Friday 12/20 at 12pm*
+*Assigned on Monday 11/24, due Friday 12/20 at 12pm.*
 
 In groups of 2-3 students of your choosing you will answer any scientific question of your choosing using data. Your submission will be an RStudio Project of an RMarkdown Website. 
 
@@ -304,11 +304,6 @@ In groups of 2-3 students of your choosing you will answer any scientific questi
 * Publishing to the web: 
     + If your data/analysis is not sensitive or private in nature, publish your R Markdown Website on the web and post the URL in the Groups Google Sheet in the `#final_project` Slack team.
     + If your data/analysis is sensitive or private in nature, please DM me on Slack and we'll work something out.
-
-
-
-
-## Examples
 
 Here are some arbitrarily chosen examples:
 
@@ -338,71 +333,46 @@ Here are some arbitrarily chosen examples:
 
 
 
+## Submitting the project
+
+* **Group leader only**:
+    1. On Moodle: Submit a `.zip` archive file of the RStudio Project folder necessary to build your RMarkdown Website. There will be only one submission per group.
+    1. In the `#final_project` Slack team, go to the Groups Google Sheet, then post the URL to your RMarkdown Website published online (as long as data/work is not private or sensitive in nature).  
+    You have two options for publishing your website, both being equally acceptable. Either:
+        * *The beginner-friendly way:* Using Netlify drag-and-drop as we saw in Lec30
+        * *The more advanced, but more efficient way:* Committing and pushing your RStudio Project to Github and publishing the content of your `docs/` folder to GitHub pages: Go to your repo's Settings page and change the GitHub Pages source link like [this](https://github.blog/wp-content/uploads/2016/08/d516076e-640c-11e6-8086-ce1d246a87d2.png?w=1460){target="_blank"}. For example, this is how I publish this course webpage.
+* **Individually**:
+    1. Fill out the [peer evaluation](https://docs.google.com/forms/d/e/1FAIpQLSfRfVN58QWyv2LRB865eA-JdCIWm-AUUx959cdGBgFo0Wk5MA/viewform){target="_blank"} Google Form.
+    1. Fill out the [exit survey](https://docs.google.com/forms/d/e/1FAIpQLSdcVrUjjPEAM587UKIG_T7Nv7vsb351lcWL8SLZUw3qJ9UWAA/closedform){target="_blank"} Google Form.
+
+
+
 ## Grading rubric
 
-
-<!--
-
-**Note**: This rubric is likely not perfect. Please don't be shy to ask for clarifications.
+*Nte:* his rubric is likely not perfect. Please don't be shy to ask for clarifications.
 
 1. **Baseline:** Projects that do not satisfy all "baseline" criteria can expect to get a grade of less than 8/10.
-    + **This will be strictly evaluated**: The `final_project.Rmd` R Markdown file must "knit" correctly when *someone else* knits it. This is known as producing *reproducible research*.
-    + Your code is clean, commented, and well-indented (See MP2 feedback video for what I mean). This is being mindful of the work you create for your collaborators, including your most important collaborator: future you. 
-    + Wherever possible, all maps have appropriately labeled axes, legends, titles, etc. Such information gives the data's context.
-    + All visualizations and maps are mindful of the [ink/information ratio](https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842){target="_blank"}.
+    + The RMarkdown Website must "build" correctly when someone else builds it. *This is known as producing reproducible research.*
+    + Wherever possible, all visualizations have appropriately labeled axes, legends, titles, etc and are mindful of the [ink/information ratio](https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842){target="_blank"}.    
+    + Your code is clean, commented, and well-indented. See both your MP2 and MP3 video feedback for individualized feedback and the [tidyverse style guide](https://style.tidyverse.org/){target="_blank"}. *This is being mindful of the work you create for collaborators, including future you.*
+    + From the perspective of both the report reader and potential collaborators who might reproduce your work, no "superfluous" and non-informative inputs or outputs are included. *This is being mindful of the work you create for readers and collaborators, including future you.* Ex: Do not
+        1. Include my original instructions in the report.
+        1. Include "Data dumps" like showing all the contents of a 1000 row data frame.
+        1. Submit files in your RStudio Project folder that aren't relevant to your analysis. 
     + All accompanying write-ups are coherent and respect the word count limit.
-    + From the report reader's perspective, there should be no "superfluous" and non-informative output (examples include instructions text). You must be empathetic to your reader, or your reader will just throw your report in the trash. 
+    + You submit both your peer evaluations and your exit survey responses.
 1. **Minimally viable product:** Grade: 8/10.
     + Satisfy all "baseline" criteria.
-    + Include *either* an interactive map using `leaflet` (not `shiny`) or a static map using the `sf` package.
+    + Complete the intro `index.html` blog-post page.
 1. **Due diligence:** Grade: 9/10.
     + Satisfy all "baseline" and "minimally viable product" criteria.
-    + Include *both* an interactive map and a static map. These two maps may be "redundant" in that they provide the same information.
+    + Complete the second `more_info.html` page with 1 visualization.
 1. **Point of diminishing returns:** Grade: 9.5/10.
     + Satisfy all "baseline", "minimally viable product", and "due diligence" criteria.
-    + Your interactive map and static map must now not be "redundant."
+    + Complete the second `more_info.html` page with 2-3 visualizations.
 1. [**Polishing the cannonball**](https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball){target="_blank"}: Grade: 10/10
     + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
-    + **Changed on 11/13 at 2pm** Include a third map of your choice that it not redundant to the first two. Can be either interactive or static.
+    + Impress me. Yes, this criteria is deliberately vague. However, you've had the semester to get to know me and I've given you all individualized and personalized feedback for three mini-projects. Think of this is as an exercise in "knowing your audience," a skill that is part art and part science.
 
 
-
-
-There are 16 possible points for this mini-project.
-
-**Baseline**
-
-**Average**
-
-* +1 for using at least 4 unique `dplyr` verbs
-* +1 for having a blogpost style intro page of no more than 300 words and one visualization.
-* +1 for having a "More information" tab page of no more than 800 words with between 2-3 visualizations.
-* +1 for providing a clear, concise description of the data you used and its original source, which is not necessarily the site you obtained the data from.
-
-
-**Advanced**
-
-* +1 for using at least one `dplyr` `_join`
-* +0–4 Awarded at the grader's discretion for submissions that are exceptionally compelling:
-    + 0: assignment incomplete with little apparent effort
-    + 1: graphics are relatively simple, confusing, sloppily executed, or not well thought out; analysis is muddled or uninformed
-    + 2: a solid all-around effort, graphics are appropriate, labeled, and contextualized; analysis is reasonable, considered, and well-researched
-    + 3: graphics are special, showing creativity, an original design, and/or exceptional attention to detail; analysis is exceptionally thorough and well thought out
-    + 4: truly outstanding work; graphics are something I've never seen before, hadn't thought about, or can't immediately figure out how to do; analysis is of publishable quality
--->
     
-    
-## To submit
-
-1. **Group leader**: In the Groups Google Sheet in the `#final_project` Slack team, post the URL to your RMarkdown Website published online (as long as data/work is not private or sensitive in nature).
-1. **Group leader**: The RStudio Project folder necessary to build your RMarkdown Website. There will be only one submission per group. The submission method will either be Moodle or GitHub Classroom (TBD).
-1. **Individually**: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfRfVN58QWyv2LRB865eA-JdCIWm-AUUx959cdGBgFo0Wk5MA/viewform){target="_blank"}
-1. **Individually**: Fill out the "192 exit survey" Google Form where I'll ask you questions about your experience in 192. To be posted later.
-
-
-
-
-
-
-
-

@@ -661,7 +661,7 @@ Things to remember for next time:
 </div>
 <div id="Final" class="section level1">
 <h1>Final Project</h1>
-<p><em>Assigned on Monday 11/24, due Friday 12/20 at 12pm</em></p>
+<p><em>Assigned on Monday 11/24, due Friday 12/20 at 12pm.</em></p>
 <p>In groups of 2-3 students of your choosing you will answer any scientific question of your choosing using data. Your submission will be an RStudio Project of an RMarkdown Website.</p>
 <ul>
 <li>Use any data of your choosing that answers your scientific question.</li>
@@ -684,8 +684,6 @@ Things to remember for next time:
 <li>If your data/analysis is sensitive or private in nature, please DM me on Slack and we’ll work something out.</li>
 </ul></li>
 </ul>
-<div id="examples-2" class="section level2">
-<h2>Examples</h2>
 <p>Here are some arbitrarily chosen examples:</p>
 <ol style="list-style-type: decimal">
 <li><a href="https://ctimmons1.github.io/webpage/index.html" target="_blank">America’s Leaky Pipes: The Environmental Impact of Oil Pipeline Spills</a></li>
@@ -694,7 +692,6 @@ Things to remember for next time:
 <li><a href="https://lepidopterane-atsmith.github.io/sds192fp/index.html" target="_blank">Who Are The Noisemakers? | Analyzing the Loudest Parties in NYC</a></li>
 <li><a href="https://loblatt.github.io/final_project_webpage/index.html" target="_blank">Bigfoot: True or Real?</a></li>
 </ol>
-</div>
 <div id="doing-the-project-2" class="section level2">
 <h2>Doing the project</h2>
 <ol style="list-style-type: decimal">
@@ -722,65 +719,65 @@ Things to remember for next time:
 </ol></li>
 </ol>
 </div>
+<div id="submitting-the-project" class="section level2">
+<h2>Submitting the project</h2>
+<ul>
+<li><strong>Group leader only</strong>:
+<ol style="list-style-type: decimal">
+<li>On Moodle: Submit a <code>.zip</code> archive file of the RStudio Project folder necessary to build your RMarkdown Website. There will be only one submission per group.</li>
+<li>In the <code>#final_project</code> Slack team, go to the Groups Google Sheet, then post the URL to your RMarkdown Website published online (as long as data/work is not private or sensitive in nature).<br />
+You have two options for publishing your website, both being equally acceptable. Either:
+<ul>
+<li><em>The beginner-friendly way:</em> Using Netlify drag-and-drop as we saw in Lec30</li>
+<li><em>The more advanced, but more efficient way:</em> Committing and pushing your RStudio Project to Github and publishing the content of your <code>docs/</code> folder to GitHub pages: Go to your repo’s Settings page and change the GitHub Pages source link like <a href="https://github.blog/wp-content/uploads/2016/08/d516076e-640c-11e6-8086-ce1d246a87d2.png?w=1460" target="_blank">this</a>. For example, this is how I publish this course webpage.</li>
+</ul></li>
+</ol></li>
+<li><strong>Individually</strong>:
+<ol style="list-style-type: decimal">
+<li>Fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRfVN58QWyv2LRB865eA-JdCIWm-AUUx959cdGBgFo0Wk5MA/viewform" target="_blank">peer evaluation</a> Google Form.</li>
+<li>Fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcVrUjjPEAM587UKIG_T7Nv7vsb351lcWL8SLZUw3qJ9UWAA/closedform" target="_blank">exit survey</a> Google Form.</li>
+</ol></li>
+</ul>
+</div>
 <div id="grading-rubric-2" class="section level2">
 <h2>Grading rubric</h2>
-<!--
-
-**Note**: This rubric is likely not perfect. Please don't be shy to ask for clarifications.
-
-1. **Baseline:** Projects that do not satisfy all "baseline" criteria can expect to get a grade of less than 8/10.
-    + **This will be strictly evaluated**: The `final_project.Rmd` R Markdown file must "knit" correctly when *someone else* knits it. This is known as producing *reproducible research*.
-    + Your code is clean, commented, and well-indented (See MP2 feedback video for what I mean). This is being mindful of the work you create for your collaborators, including your most important collaborator: future you. 
-    + Wherever possible, all maps have appropriately labeled axes, legends, titles, etc. Such information gives the data's context.
-    + All visualizations and maps are mindful of the [ink/information ratio](https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842){target="_blank"}.
-    + All accompanying write-ups are coherent and respect the word count limit.
-    + From the report reader's perspective, there should be no "superfluous" and non-informative output (examples include instructions text). You must be empathetic to your reader, or your reader will just throw your report in the trash. 
-1. **Minimally viable product:** Grade: 8/10.
-    + Satisfy all "baseline" criteria.
-    + Include *either* an interactive map using `leaflet` (not `shiny`) or a static map using the `sf` package.
-1. **Due diligence:** Grade: 9/10.
-    + Satisfy all "baseline" and "minimally viable product" criteria.
-    + Include *both* an interactive map and a static map. These two maps may be "redundant" in that they provide the same information.
-1. **Point of diminishing returns:** Grade: 9.5/10.
-    + Satisfy all "baseline", "minimally viable product", and "due diligence" criteria.
-    + Your interactive map and static map must now not be "redundant."
-1. [**Polishing the cannonball**](https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball){target="_blank"}: Grade: 10/10
-    + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
-    + **Changed on 11/13 at 2pm** Include a third map of your choice that it not redundant to the first two. Can be either interactive or static.
-
-
-
-
-There are 16 possible points for this mini-project.
-
-**Baseline**
-
-**Average**
-
-* +1 for using at least 4 unique `dplyr` verbs
-* +1 for having a blogpost style intro page of no more than 300 words and one visualization.
-* +1 for having a "More information" tab page of no more than 800 words with between 2-3 visualizations.
-* +1 for providing a clear, concise description of the data you used and its original source, which is not necessarily the site you obtained the data from.
-
-
-**Advanced**
-
-* +1 for using at least one `dplyr` `_join`
-* +0–4 Awarded at the grader's discretion for submissions that are exceptionally compelling:
-    + 0: assignment incomplete with little apparent effort
-    + 1: graphics are relatively simple, confusing, sloppily executed, or not well thought out; analysis is muddled or uninformed
-    + 2: a solid all-around effort, graphics are appropriate, labeled, and contextualized; analysis is reasonable, considered, and well-researched
-    + 3: graphics are special, showing creativity, an original design, and/or exceptional attention to detail; analysis is exceptionally thorough and well thought out
-    + 4: truly outstanding work; graphics are something I've never seen before, hadn't thought about, or can't immediately figure out how to do; analysis is of publishable quality
--->
-</div>
-<div id="to-submit-2" class="section level2">
-<h2>To submit</h2>
+<p><em>Nte:</em> his rubric is likely not perfect. Please don’t be shy to ask for clarifications.</p>
 <ol style="list-style-type: decimal">
-<li><strong>Group leader</strong>: In the Groups Google Sheet in the <code>#final_project</code> Slack team, post the URL to your RMarkdown Website published online (as long as data/work is not private or sensitive in nature).</li>
-<li><strong>Group leader</strong>: The RStudio Project folder necessary to build your RMarkdown Website. There will be only one submission per group. The submission method will either be Moodle or GitHub Classroom (TBD).</li>
-<li><strong>Individually</strong>: Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRfVN58QWyv2LRB865eA-JdCIWm-AUUx959cdGBgFo0Wk5MA/viewform" target="_blank">Google Form</a></li>
-<li><strong>Individually</strong>: Fill out the “192 exit survey” Google Form where I’ll ask you questions about your experience in 192. To be posted later.</li>
+<li><strong>Baseline:</strong> Projects that do not satisfy all “baseline” criteria can expect to get a grade of less than 8/10.
+<ul>
+<li>The RMarkdown Website must “build” correctly when someone else builds it. <em>This is known as producing reproducible research.</em></li>
+<li>Wherever possible, all visualizations have appropriately labeled axes, legends, titles, etc and are mindful of the <a href="https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842" target="_blank">ink/information ratio</a>.<br />
+</li>
+<li>Your code is clean, commented, and well-indented. See both your MP2 and MP3 video feedback for individualized feedback and the <a href="https://style.tidyverse.org/" target="_blank">tidyverse style guide</a>. <em>This is being mindful of the work you create for collaborators, including future you.</em></li>
+<li>From the perspective of both the report reader and potential collaborators who might reproduce your work, no “superfluous” and non-informative inputs or outputs are included. <em>This is being mindful of the work you create for readers and collaborators, including future you.</em> Ex: Do not
+<ol style="list-style-type: decimal">
+<li>Include my original instructions in the report.</li>
+<li>Include “Data dumps” like showing all the contents of a 1000 row data frame.</li>
+<li>Submit files in your RStudio Project folder that aren’t relevant to your analysis.</li>
+</ol></li>
+<li>All accompanying write-ups are coherent and respect the word count limit.</li>
+<li>You submit both your peer evaluations and your exit survey responses.</li>
+</ul></li>
+<li><strong>Minimally viable product:</strong> Grade: 8/10.
+<ul>
+<li>Satisfy all “baseline” criteria.</li>
+<li>Complete the intro <code>index.html</code> blog-post page.</li>
+</ul></li>
+<li><strong>Due diligence:</strong> Grade: 9/10.
+<ul>
+<li>Satisfy all “baseline” and “minimally viable product” criteria.</li>
+<li>Complete the second <code>more_info.html</code> page with 1 visualization.</li>
+</ul></li>
+<li><strong>Point of diminishing returns:</strong> Grade: 9.5/10.
+<ul>
+<li>Satisfy all “baseline”, “minimally viable product”, and “due diligence” criteria.</li>
+<li>Complete the second <code>more_info.html</code> page with 2-3 visualizations.</li>
+</ul></li>
+<li><a href="https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball" target="_blank"><strong>Polishing the cannonball</strong></a>: Grade: 10/10
+<ul>
+<li>Satisfy all “baseline”, “minimally viable product”, “due diligence”, and “point of diminishing returns” criteria.</li>
+<li>Impress me. Yes, this criteria is deliberately vague. However, you’ve had the semester to get to know me and I’ve given you all individualized and personalized feedback for three mini-projects. Think of this is as an exercise in “knowing your audience,” a skill that is part art and part science.</li>
+</ul></li>
 </ol>
 </div>
 </div>
