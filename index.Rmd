@@ -83,10 +83,10 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ## Announcements
 
 * SDS Major Fatima Keita is interested in organizing a group for students of color within SDS. She has also put together a [survey](https://www.surveymonkey.com/r/2YZ785Y){target="_blank"} to gather students of color's experiences within SDS courses and the program more generally. The idea is that these experiences would then be anonymously shared with the SDS faculty in hope that we can work to improve inclusivity within the program and curriculum.  
-* Thank you to the Spinelli Center tutors Tina, Elaona, Jordan, and Maggie!
 * Comment about ModernDive:
     + Always free, always available at [ModernDive.com](https://moderndive.com/)
     + Thank you for your role in making it happen!
+* Thank you to the Spinelli Center tutors Tina, Elaona, Jordan, and Maggie!
 * Time to fill out teaching evaluations.
 
 ## Getting help during reading and exam week
