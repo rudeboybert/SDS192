@@ -17,6 +17,18 @@ knitr::opts_chunk$set(
 # Set seed value of random number generator to get "replicable" random numbers.
 # Why 76? Because of https://www.youtube.com/watch?v=xjJ7FheCkCU
 set.seed(76)
+
+# tidyverse R packages:
+library(ggplot2)
+library(dplyr)
+library(tibble)
+library(tidyr)
+library(readr)
+library(purrr)
+library(forcats)
+library(stringr)
+library(lubridate)
+library(forcats)
 ```
 
 <!--
@@ -196,7 +208,6 @@ ggplot(babynames_subset, aes(x=year, y=diff))  +
 ## Practice midterm notes
 
 ```{r}
-library(tidyverse)
 library(fivethirtyeight)
 library(nycflights13)
 library(babynames)
@@ -249,7 +260,6 @@ You are presented with data on the Titanic disaster of 1912 in a data frame `Tit
 Note: you don't need to calculate the output table, just write the pseudocode that would produce it where the more concise the pseudocode the better. Here is what the `Titanic` data looks like:\\
 
 ```{r}
-library(tidyverse)
 data(Titanic)
 # Convert to tibble i.e. data frame
 Titanic <- Titanic %>% 

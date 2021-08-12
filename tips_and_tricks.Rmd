@@ -14,16 +14,32 @@ knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE, eval = TRUE,
                       cache = TRUE,
                       fig.width = 16/2, fig.height = 9/2)
 
+# tidyverse R packages:
+library(ggplot2)
+library(dplyr)
+library(tibble)
+library(tidyr)
+library(readr)
+library(purrr)
+library(forcats)
+library(stringr)
+library(lubridate)
+library(forcats)
+
 # Why 76? https://www.youtube.com/watch?v=xjJ7FheCkCU
 set.seed(76)
 ```
 
-![](static/images/data_ninja1.png){width=30%}      
+![](static/images/data_ninja1.png){width=30%}
+First, we load the `tidyverse` package:
+
+```{r, eval = FALSE}
+library(tidyverse)
+```
 
 Let's load a movies dataset, pare down the rows and columns a bit, and then show the first 10 rows using `slice()`
 
 ```{r}
-library(tidyverse)
 movies <- read_csv("https://rudeboybert.github.io/SDS192/static/movies.csv") %>% 
   filter(type %in% c("action", "comedy", "drama", "animated", "fantasy", "rom comedy")) %>% 
   select(-over200)
