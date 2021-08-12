@@ -25,6 +25,8 @@ jobs:
           install.packages(c("remotes", "rcmdcheck"))
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
+      - name: Pandoc Document Converter
+        uses: maxheld83/pandoc-action@v2
       - name: Install GitHub development packages
         run: |
           remotes::install_github("hadley/emo")
