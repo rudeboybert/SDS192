@@ -1,0 +1,34 @@
+Package: SDS192
+Title: SDS192 Introduction to Data Science
+Description: R Markdown websites source code for course webpage
+License: MIT + file LICENSE
+Version: 0.1.0
+Authors@R: c(
+    person(given = c("Albert", "Y."), family = "Kim", role = c("cre", "aut"), email = "albert.ys.kim@gmail.com", comment = c(ORCID = "0000-0001-7824-306X"))
+    )
+Depends: R (>= 4.0.0)
+Imports:
+  ggplot2,
+  dplyr,
+  tibble,
+  tidyr,
+  readr,
+  purrr,
+  stringr,
+  lubridate,
+  forcats,
+  knitr,
+  fivethirtyeight,
+  nycflights13,
+  gapminder,
+  babynames,
+  scales,
+  moderndive,
+  leaflet,
+  maps,
+  mapproj,
+  patchwork,
+  rmarkdown
+URL: https://github.com/rudeboybert/SDS192
+BugReports: https://github.com/rudeboybert/SDS192/issues
+Config/testthat/edition: 3

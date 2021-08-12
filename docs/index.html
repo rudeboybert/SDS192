@@ -20,132 +20,36 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
-
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css" data-origin="pandoc">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  { background-color: #f8f8f8; }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ef2929; } /* Alert */
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
-code span.bn { color: #0000cf; } /* BaseN */
-code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
-code span.co { color: #8f5902; font-style: italic; } /* Comment */
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code span.dt { color: #204a87; } /* DataType */
-code span.dv { color: #0000cf; } /* DecVal */
-code span.er { color: #a40000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code span.ot { color: #8f5902; } /* Other */
-code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
-code span.ss { color: #4e9a06; } /* SpecialString */
-code span.st { color: #4e9a06; } /* String */
-code span.va { color: #000000; } /* Variable */
-code span.vs { color: #4e9a06; } /* VerbatimString */
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-
-</style>
-<script>
-// apply pandoc div.sourceCode style to pre.sourceCode instead
-(function() {
-  var sheets = document.styleSheets;
-  for (var i = 0; i < sheets.length; i++) {
-    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
-    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
-    for (var j = 0; j < rules.length; j++) {
-      var rule = rules[j];
-      // check if there is a div.sourceCode rule
-      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
-      var style = rule.style.cssText;
-      // check if color or background-color is set
-      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
-      // replace div.sourceCode by a pre.sourceCode rule
-      sheets[i].deleteRule(j);
-      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
-    }
-  }
-})();
-</script>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
+
 
 
 
@@ -155,10 +59,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -175,40 +75,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -236,7 +109,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -248,7 +121,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -259,10 +132,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -274,7 +160,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -400,7 +285,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -432,21 +317,9 @@ div.tocify {
 <li>
   <a href="https://moderndive.netlify.com/">ModernDive</a>
 </li>
-<li>
-  <a href="tips_and_tricks.html">Tips &amp; Tricks</a>
-</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="PS.html">Problem Sets</a>
-</li>
-<li>
-  <a href="projects.html">Projects</a>
-</li>
-<li>
-  <a href="midterms.html">Midterms</a>
-</li>
-<li>
   <a href="syllabus.html">Syllabus</a>
 </li>
       </ul>
@@ -454,13 +327,13 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
 <h1 class="title toc-ignore">SDS 192: Introduction to Data Science</h1>
 <h4 class="author">Albert Y. Kim</h4>
-<h4 class="date">Last updated on 2019-12-11</h4>
+<h4 class="date">Last updated on 2021-08-12</h4>
 
 </div>
 
@@ -482,1512 +355,1443 @@ h1{font-weight: 400;}
 <li>Learning how to learn new data science tools (yellow): SQL, TBD.</li>
 </ol>
 <p>Note that while topics and topics dates may change, all problem sets (PS), project, and midterm dates will not.</p>
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRvggFhESyu_EFxrcFQXsZtdaQqaqcQ6kgWg173WTkTeWV67RWiZ01G8jhJsQ2b5VUVCJqQ8xo6COWM/pubhtml?gid=864197397&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="850">
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRvggFhESyu_EFxrcFQXsZtdaQqaqcQ6kgWg173WTkTeWV67RWiZ01G8jhJsQ2b5VUVCJqQ8xo6COWM/pubhtml?gid=833934180&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="850">
 </iframe>
 <!--
 {target="_blank"}
 -->
 <hr />
-</div>
-<div id="Lec37" class="section level1">
-<h1>Lec 37: Wed 12/11</h1>
-<div id="announcements" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>SDS Major Fatima Keita is interested in organizing a group for students of color within SDS. She has also put together a <a href="https://www.surveymonkey.com/r/2YZ785Y" target="_blank">survey</a> to gather students of color’s experiences within SDS courses and the program more generally. The idea is that these experiences would then be anonymously shared with the SDS faculty in hope that we can work to improve inclusivity within the program and curriculum.<br />
-</li>
-<li>Comment about ModernDive:
-<ul>
-<li>Always free, always available at <a href="https://moderndive.com/">ModernDive.com</a></li>
-<li>Thank you for your role in making it happen!</li>
-</ul></li>
-<li>Thank you to the Spinelli Center tutors Tina, Elaona, Jordan, and Maggie!</li>
-<li>Please fill out teaching evaluations during the break!</li>
-</ul>
-</div>
-<div id="reading-and-exam-week" class="section level2">
-<h2>Reading and exam week</h2>
-<ul>
-<li>Office hours: By appointment at <a href="https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE" target="_blank">bit.ly/meet_with_albert</a> on Fri 12/13, Tue 12/17, and Wed 12/18</li>
-<li>Spinelli center tutoring: Alas, no tutoring during reading and finals week.</li>
-<li>Slack: I’ll be checking it periodically. Also, I’m busy on from Thu 12/19 5pm to Friday 12/20 afternoon, so you might not get a response in time if you message me then.</li>
-</ul>
-</div>
-<div id="todays-topicsactivities" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<ul>
-<li>Work on Final Project</li>
-</ul>
-<hr />
-</div>
-</div>
-<div id="Lec36" class="section level1">
-<h1>Lec 36: Mon 12/9</h1>
-<div id="announcements-1" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>MP3 update</li>
-<li>All details for final project posted. Due Friday 12/20 at noon.</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-1" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<ul>
-<li>Work on Final Project</li>
-</ul>
-<hr />
-</div>
-</div>
-<div id="Lec35" class="section level1">
-<h1>Lec 35: Fri 12/6</h1>
-<div id="announcements-2" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Please fill out this feedback <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHOQeDiWv41Ps1Yin7r1mZaCMou23_hixa9DljmTih9lDrow/viewform" target="_blank">Google Form</a> about PS07 GitHub.</li>
-<li>By Monday: I will post
-<ul>
-<li>Precise grading rubric for final project</li>
-<li>Submission method for final project</li>
-<li>Exit survey Google form link</li>
-<li>MP3 feedback (hopefully)</li>
-</ul></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-2" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<p><strong>Tip for final project</strong>: Install the <code>janitor</code> package and then run the following code.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(janitor)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="co"># Say we have a data frame with really messy names:</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">data_frame_ugly &lt;-<span class="st"> </span><span class="kw">tibble</span>(</a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">  <span class="st">`</span><span class="dt">asdf ?!? qwerty%</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>),</a>
-<a class="sourceLine" id="cb1-7" data-line-number="7">  <span class="dt">variable.name =</span> <span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb1-8" data-line-number="8">)</a>
-<a class="sourceLine" id="cb1-9" data-line-number="9">data_frame_ugly</a>
-<a class="sourceLine" id="cb1-10" data-line-number="10"></a>
-<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="co"># You can clean them very easily using the clean_names() function from the </span></a>
-<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="co"># janitor package!</span></a>
-<a class="sourceLine" id="cb1-13" data-line-number="13">data_frame_clean &lt;-<span class="st"> </span>data_frame_ugly <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb1-14" data-line-number="14"><span class="st">  </span><span class="kw">clean_names</span>()</a>
-<a class="sourceLine" id="cb1-15" data-line-number="15">data_frame_clean</a></code></pre></div>
-<hr />
-</div>
-</div>
-<div id="Lec34" class="section level1">
-<h1>Lec 34: Wed 12/4</h1>
-<div id="announcements-3" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>If you haven’t already, download and install <a href="https://dev.mysql.com/downloads/workbench/" target="_blank">MySQL Workbench</a></li>
-<li>If you need a Final Project Group, Slack DM me with your Section number.</li>
-<li>PS07 due on Friday. Start today! Also, I added a <a href="PS.html#PS07hint">hint</a>.</li>
-<li>No office hours on Friday morning: the SDS faculty have a curriculum meeting.</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-3" class="section level2">
-<h2>Today’s Topics/Activities</h2>
+<!--
+# Lec 37: Wed 12/11 {#Lec37}
+
+## Announcements
+
+* SDS Major Fatima Keita is interested in organizing a group for students of color within SDS. She has also put together a [survey](https://www.surveymonkey.com/r/2YZ785Y){target="_blank"} to gather students of color's experiences within SDS courses and the program more generally. The idea is that these experiences would then be anonymously shared with the SDS faculty in hope that we can work to improve inclusivity within the program and curriculum.  
+* Comment about ModernDive:
+    + Always free, always available at [ModernDive.com](https://moderndive.com/)
+    + Thank you for your role in making it happen!
+* Thank you to the Spinelli Center tutors Tina, Elaona, Jordan, and Maggie!
+* Please fill out teaching evaluations during the break!
+
+## Reading and exam week
+
+* Office hours: By appointment at [bit.ly/meet_with_albert](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"} on Fri 12/13, Tue 12/17, and Wed 12/18
+* Spinelli center tutoring: Alas, no tutoring during reading and finals week.
+* Slack: I'll be checking it periodically. Also, I'm busy on from Thu 12/19 5pm to Friday 12/20 afternoon, so you might not get a response in time if you message me then.
+
+
+## Today's Topics/Activities
+
+* Work on Final Project
+
+
+
+***
+
+
+
+# Lec 36: Mon 12/9 {#Lec36}
+
+## Announcements
+
+* MP3 update
+* All details for final project posted. Due Friday 12/20 at noon.
+
+## Today's Topics/Activities
+
+* Work on Final Project
+
+
+
+***
+
+
+
+# Lec 35: Fri 12/6 {#Lec35}
+
+## Announcements
+
+* Please fill out this feedback [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfHOQeDiWv41Ps1Yin7r1mZaCMou23_hixa9DljmTih9lDrow/viewform){target="_blank"} about PS07 GitHub.
+* By Monday: I will post
+    + Precise grading rubric for final project
+    + Submission method for final project
+    + Exit survey Google form link
+    + MP3 feedback (hopefully)
+
+
+## Today's Topics/Activities
+
+**Tip for final project**:  Install the `janitor` package and then run the following code.
+
+
+```r
+library(tidyverse)
+library(janitor)
+
+# Say we have a data frame with really messy names:
+data_frame_ugly <- tibble(
+  `asdf ?!? qwerty%` = c(1, 2),
+  variable.name = c(2,1)
+)
+data_frame_ugly
+
+# You can clean them very easily using the clean_names() function from the 
+# janitor package!
+data_frame_clean <- data_frame_ugly %>% 
+  clean_names()
+data_frame_clean
+```
+
+
+
+***
+
+
+
+# Lec 34: Wed 12/4 {#Lec34}
+
+## Announcements
+
+* If you haven't already, download and install [MySQL Workbench](https://dev.mysql.com/downloads/workbench/){target="_blank"}
+* If you need a Final Project Group, Slack DM me with your Section number.
+* PS07 due on Friday. Start today! Also, I added a [hint](PS.html#PS07hint). 
+* No office hours on Friday morning: the SDS faculty have a curriculum meeting.
+
+## Today's Topics/Activities
+
 <center>
-<img src="static/images/SQL.jpg" width="300" />
+![](static/images/SQL.jpg){ width=300px }
 </center>
-<p><br></p>
-<ul>
-<li><strong>If you remember only one important fact from today’s lecture, remember this</strong>:
-<ul>
-<li>If you know the <code>dplyr</code> package for data wrangling, you can get started with the SQL relational database management language in a day.</li>
-<li><strong>Why?</strong> Because they are both based on the same theoretical underpinning: <a href="https://en.wikipedia.org/wiki/Database_normalization" target="_blank">Database normalization</a> (1970).<br />
-Thus you can <a href="https://en.wikipedia.org/wiki/Transfer_of_learning" target="_blank">transfer</a> your <em>previous</em> learnings to learn these <em>new</em> tools.</li>
-</ul></li>
-<li><strong>Similarly</strong>:
-<ul>
-<li>If you know the <code>ggplot2</code> package for data visualization, you can get started with data visualization platforms like <a href="https://www.tableau.com/" target="_blank">Tableau</a> and <a href="https://plot.ly/" target="_blank">plotly</a> in a day.</li>
-<li><strong>Why?</strong> Because they are both based on the same theoretical underpinning: <a href="https://www.springer.com/us/book/9780387245447" target="_blank">The Grammar of Graphics</a> (2005).<br />
-Thus you can <a href="https://en.wikipedia.org/wiki/Transfer_of_learning" target="_blank">transfer</a> your <em>previous</em> learnings to learn these <em>new</em> tools.</li>
-</ul></li>
-</ul>
-<div id="chalk-talk" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>What SQL is about.</li>
-<li>3 ways to access SQL.</li>
-<li>Some key SQL language <em>syntax</em>: set of rules that defines the combinations of symbols that are considered to be a correctly structured document or fragment in that language.</li>
-</ul>
-</div>
-<div id="in-class-exercise" class="section level3">
-<h3>2. In-class exercise</h3>
-<p><strong>Goal</strong>: Perform 2-3 SQL queries to convince yourself that “if you know <code>dplyr</code>, you can get started with SQL in a day.” You’ll be using databases on the <code>scidb.smith.edu</code> database created by our very own Prof. Ben Baumer!</p>
-<ul>
-<li>Install and open <a href="https://dev.mysql.com/downloads/workbench/" target="_blank">MySQLWorkbench</a>; this whole process takes about 10 minutes and necessitates creating an account with Oracle.</li>
-<li>Close the “Welcome to MySQL Workbench” message</li>
-<li>Click the plus sign next to “MySQL Connections” to add a connection to a SQL database.</li>
-<li>Setup a new connection&quot; as shown in Slide 13/16 of this <a href="https://beanumber.github.io/sds192/lectures/29-sql.html#16">slide deck</a>.</li>
-<li>Click the resulting “scidb” box and input the password shown on Slide 13. Click “Continue Anyway”</li>
-<li>Copy and paste the code below into the Query window</li>
-<li>Run the 10 individual code segments delineated by <code>/*SQL comments*/</code> one at a time by highlighting them and clicking the “lightning” button.</li>
-</ul>
+<br>
+
+* **If you remember only one important fact from today's lecture, remember this**:
+    + If you know the `dplyr` package for data wrangling, you can get started with the SQL relational database management language in a day.
+    + **Why?** Because they are both based on the same theoretical underpinning: [Database normalization](https://en.wikipedia.org/wiki/Database_normalization){target="_blank"} (1970).  
+    Thus you can [transfer](https://en.wikipedia.org/wiki/Transfer_of_learning){target="_blank"} your _previous_ learnings to learn these _new_ tools.
+* **Similarly**:
+    + If you know the `ggplot2` package for data visualization, you can get started with data visualization platforms like [Tableau](https://www.tableau.com/){target="_blank"} and [plotly](https://plot.ly/){target="_blank"} in a day. 
+    + **Why?** Because they are both based on the same theoretical underpinning: [The Grammar of Graphics](https://www.springer.com/us/book/9780387245447){target="_blank"} (2005).  
+    Thus you can [transfer](https://en.wikipedia.org/wiki/Transfer_of_learning){target="_blank"} your _previous_ learnings to learn these _new_ tools.
+
+### 1. Chalk Talk
+
+* What SQL is about.
+* 3 ways to access SQL.
+* Some key SQL language *syntax*: set of rules that defines the combinations of symbols that are considered to be a correctly structured document or fragment in that language.
+
+### 2. In-class exercise
+
+**Goal**: Perform 2-3 SQL queries to convince yourself that "if you know `dplyr`, you can get started with SQL in a day." You'll be using databases on the `scidb.smith.edu` database created by our very own Prof. Ben Baumer!
+
+* Install and open [MySQLWorkbench](https://dev.mysql.com/downloads/workbench/){target="_blank"}; this whole process takes about 10 minutes and necessitates creating an account with Oracle.
+* Close the "Welcome to MySQL Workbench" message
+* Click the plus sign next to "MySQL Connections" to add a connection to a SQL database.
+* Setup a new connection" as shown in Slide 13/16 of this [slide deck](https://beanumber.github.io/sds192/lectures/29-sql.html#16).
+* Click the resulting "scidb" box and input the password shown on Slide 13. Click "Continue Anyway"
+* Copy and paste the code below into the Query window
+* Run the 10 individual code segments delineated by `/*SQL comments*/` one at a time by highlighting them and clicking the "lightning" button.
+
 <script src="https://gist.github.com/rudeboybert/35098400f4f36c36fc5d0e96cb40786d.js"></script>
-<p>If you want to learn more, check out SDS Prof. Ben Baumer’s notes <a href="https://beanumber.github.io/sds192/schedule.html#lam_2:_database_querying" target="_blank">here</a>. In particular the SQL queries used inside the <code>RMySQL::dbGetQuery()</code>, which is an interface function to run SQL commands directly from R.</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec33" class="section level1">
-<h1>Lec 33: Mon 11/25</h1>
-<div id="announcements-4" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>I sent an email on Saturday inviting you to the <a href="https://github.com/192-2019-09-Fall" target="_blank">Fall 2019 SDS192 Intro to Data Science</a> GitHub Classroom Organization. Please accept this invitation.</li>
-<li>MP2 scores to be posted by Monday after break.</li>
-<li>PS07 posted, due Friday 12/6 (after break). Notes:
-<ul>
-<li><strong>Start this problem set early!</strong></li>
-<li><strong>I will not answer your questions until you’ve been to the Spinelli Center Sun-Thurs 7-9pm tutoring hours first.</strong></li>
-</ul></li>
-<li>Final project <a href="projects.html#Final">assigned</a></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-4" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-1" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Go over Midterm II</li>
-<li>Enjoy the break!</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec32" class="section level1">
-<h1>Lec 32: Fri 11/22</h1>
-<div id="announcements-5" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Coding style
-<ul>
-<li>Check out the <a href="https://style.tidyverse.org/" target="_blank"><code>tidyverse</code> style guide</a>. First quote: <em>Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread.</em></li>
-<li>Why is it important to write clean code, that is well documented, and actually works? To be mindful of the work you create for your <a href="https://rmhogervorst.nl/cleancode/blog/2016/05/26/content/post/2016-05-26-your-most-valuable-collaborator-future-you/" target="_blank">most important collaborator</a>.</li>
-</ul></li>
-<li>Say you’re excited about a new battery-powered <a href="https://egopowerplus.com/blower-580cfm/" target="_blank">leaf blower</a> you just bought.
-<ul>
-<li>What is a <a href="https://en.wikipedia.org/wiki/Quickstart_guide" target="_blank">quickstart guide</a> vs</li>
-<li>The regular instruction manual?</li>
-</ul></li>
-<li>Do before chalk talk
-<ul>
-<li>Login to GitHub</li>
-<li>Open the GitHub repo for the <a href="https://github.com/rudeboybert/fivethirtyeight" target="_blank"><code>fivethirtyeight</code></a> R package</li>
-</ul></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-5" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-2" class="section level3">
-<h3>1. Chalk talk</h3>
-<p>GitHub: Theory and terminology</p>
-<ul>
-<li>What is git?</li>
-<li>What is GitHub?</li>
-<li>Terminology: Repo, clone, pull, commit/push, local vs remote</li>
-<li>Important files in any repo: <code>README.md</code>, <code>.gitigore</code>, and if an RStudio Project <code>.Rproj</code></li>
-<li>Collaboration tools: Issues, pull requests</li>
-</ul>
-</div>
-<div id="in-class-exercise-1" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Accept the following <a href="https://classroom.github.com/a/sgKoAnsq" target="_blank">GitHub classroom assignment</a></p>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec31" class="section level1">
-<h1>Lec 31: Wed 11/20</h1>
-<div id="announcements-6" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>MP2 update</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-6" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-3" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Yingke’s observation about “tidy” data using the example from the <a href="https://en.wikipedia.org/wiki/Wide_and_narrow_data" target="_blank">Wide and narrow data</a> Wikipedia page: the “narrow” data example is not a good example of “tidy” data because the Value variable does not have consistent units (years, lbs/kg, m/feet)</li>
-</ul>
-</div>
-<div id="in-class-exercise-2" class="section level3">
-<h3>2. In-class exercise</h3>
-<ol style="list-style-type: decimal">
-<li>Sec01: Visit from Smith GIS Lab at 11:30am. Slides on how to find <a href="https://docs.google.com/presentation/d/18aJLmC1Quv-VCTVc8htQjcH6R3psyMKKOmSpxQea4Ew/edit?ts=5dd56f96#slide=id.g28549d7dc2_0_24" target="_blank">spatial data</a></li>
-<li>Sec02: Get a version of your R Markdown Website deployed on Netlify</li>
-</ol>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec30" class="section level1">
-<h1>Lec 30: Mon 11/18</h1>
-<div id="announcements-7" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>MP3 due on Friday at <del>5pm</del> 9pm</li>
-<li>Updates: MP2 feedback and Midterm II</li>
-<li>DataCamp article:
-<ul>
-<li>Quiz</li>
-<li>Brief demo of DataCamp based on the course <a href="https://www.datacamp.com/courses/modeling-with-data-in-the-tidyverse" target="_blank">“Modeling with Data in the Tidyverse”</a>: Video lectures + coding</li>
-<li>List of <a href="https://www.datacamp.com/courses/" target="_blank">courses</a> available</li>
-<li>Ethics discussion, followed by sharing your (anonymous) opinions via <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnVDe8p2bHgAqROGP4zb304fZWP9kkwrif6Jn4SzsxCl5KGQ/viewform" target="_blank">Google Form</a></li>
-</ul></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-7" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-4" class="section level3">
-<h3>1. Chalk talk</h3>
-<p>You’ll be submitting your final project using <a href="https://rmarkdown.rstudio.com/lesson-13.html" target="_blank">R Markdown Websites</a> and if your project has no sensitive data, publishing it on the web as well. Background:</p>
-<ul>
-<li>Inputs: <code>.Rmd</code> and <code>_site.yml</code> files</li>
-<li>Output: webpage in <code>docs/</code> folder, in particular the <code>index.html</code> mainpage</li>
-<li>“Deploying” your webpage: Many ways</li>
-</ul>
-</div>
-<div id="in-class-exercise-3" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Today you’ll be building your own R Markdown Website, which is the technology I use for this 192 webpage. Then you’ll be deploying it to the web using <a href="https://app.netlify.com/drop" target="_blank">Netlify drop</a>.</p>
+
+If you want to learn more, check out SDS Prof. Ben Baumer's notes [here](https://beanumber.github.io/sds192/schedule.html#lam_2:_database_querying){target="_blank"}. In particular the SQL queries used inside the `RMySQL::dbGetQuery()`, which is an interface function to run SQL commands directly from R. 
+
+
+
+***
+
+
+
+# Lec 33: Mon 11/25 {#Lec33}
+
+## Announcements
+
+* I sent an email on Saturday inviting you to the [Fall 2019 SDS192 Intro to Data Science
+](https://github.com/192-2019-09-Fall){target="_blank"} GitHub Classroom Organization. Please accept this invitation.
+* MP2 scores to be posted by Monday after break.
+* PS07 posted, due Friday 12/6 (after break). Notes:
+    + **Start this problem set early!**
+    + **I will not answer your questions until you've been to the Spinelli Center Sun-Thurs 7-9pm tutoring hours first.**
+* Final project [assigned](projects.html#Final)
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Go over Midterm II
+* Enjoy the break!
+
+
+
+***
+
+
+
+# Lec 32: Fri 11/22 {#Lec32}
+
+## Announcements
+
+* Coding style
+    + Check out the [`tidyverse` style guide](https://style.tidyverse.org/){target="_blank"}. First quote: _Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread._
+    + Why is it important to write clean code, that is well documented, and actually works? To be mindful of the work you create for your [most important collaborator](https://rmhogervorst.nl/cleancode/blog/2016/05/26/content/post/2016-05-26-your-most-valuable-collaborator-future-you/){target="_blank"}.
+* Say you're excited about a new battery-powered [leaf blower](https://egopowerplus.com/blower-580cfm/){target="_blank"} you just bought. 
+    + What is a [quickstart guide](https://en.wikipedia.org/wiki/Quickstart_guide){target="_blank"} vs 
+    + The regular instruction manual?
+* Do before chalk talk
+    + Login to GitHub
+    + Open the GitHub repo for the [`fivethirtyeight`](https://github.com/rudeboybert/fivethirtyeight){target="_blank"} R package
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+GitHub: Theory and terminology
+
+* What is git?
+* What is GitHub?
+* Terminology: Repo, clone, pull, commit/push, local vs remote
+* Important files in any repo: `README.md`, `.gitigore`, and if an RStudio Project `.Rproj`
+* Collaboration tools: Issues, pull requests 
+
+### 2. In-class exercise
+
+Accept the following [GitHub classroom assignment](https://classroom.github.com/a/sgKoAnsq){target="_blank"}
+
+
+
+***
+
+
+
+# Lec 31: Wed 11/20 {#Lec31}
+
+## Announcements
+
+* MP2 update
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Yingke's observation about "tidy" data using the example from the [Wide and narrow data](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"} Wikipedia page: the "narrow" data example is not a good example of "tidy" data because the Value variable does not have consistent units (years, lbs/kg, m/feet)
+
+
+### 2. In-class exercise
+
+1. Sec01: Visit from Smith GIS Lab at 11:30am. Slides on how to find [spatial data](https://docs.google.com/presentation/d/18aJLmC1Quv-VCTVc8htQjcH6R3psyMKKOmSpxQea4Ew/edit?ts=5dd56f96#slide=id.g28549d7dc2_0_24){target="_blank"}
+1. Sec02: Get a version of your R Markdown Website deployed on Netlify
+
+
+
+***
+
+
+
+# Lec 30: Mon 11/18 {#Lec30}
+
+## Announcements
+
+* MP3 due on Friday at ~~5pm~~ 9pm
+* Updates: MP2 feedback and Midterm II
+* DataCamp article:
+    + Quiz
+    + Brief demo of DataCamp based on the course ["Modeling with Data in the Tidyverse"](https://www.datacamp.com/courses/modeling-with-data-in-the-tidyverse){target="_blank"}: Video lectures + coding
+    + List of [courses](https://www.datacamp.com/courses/){target="_blank"} available
+    + Ethics discussion, followed by sharing your (anonymous) opinions via [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfnVDe8p2bHgAqROGP4zb304fZWP9kkwrif6Jn4SzsxCl5KGQ/viewform){target="_blank"}
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+You'll be submitting your final project using [R Markdown Websites](https://rmarkdown.rstudio.com/lesson-13.html){target="_blank"} and if your project has no sensitive data, publishing it on the web as well. Background: 
+
+* Inputs: `.Rmd` and `_site.yml` files
+* Output: webpage in `docs/` folder, in particular the `index.html` mainpage
+* "Deploying" your webpage: Many ways
+
+
+### 2. In-class exercise
+
+Today you'll be building your own R Markdown Website, which is the technology I use for this 192 webpage. Then you'll be deploying it to the web using [Netlify drop](https://app.netlify.com/drop){target="_blank"}.
+
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-LRlQ_jaLAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-LRlQ_jaLAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
-<p></br></p>
-<ol style="list-style-type: decimal">
-<li>Setup the RStudio Project for an example R Markdown Website
-<ul>
-<li>Download the RStudio Project <a href="static/example_webpage.zip" download><code>example_webpage.zip</code></a></li>
-<li>Move <code>example_webpage.zip</code> to where you keep your 192 work, then unzip it to open the RStudio Project folder</li>
-<li>Click on the <code>example_webpage.Rproj</code> RStudio Project file to open RStudio in “Project Mode”. <strong>You must do this.</strong></li>
-</ul></li>
-<li>Create an account on netlify.com using your GitHub account
-<ul>
-<li>Log into <a href="https://github.com/" target="_blank">GitHub</a> first</li>
-<li>Sign into <a href="https://app.netlify.com/" target="_blank">Netlify</a> using your GitHub account</li>
-</ul></li>
-<li>Change and build your website locally (on your computer)
-<ul>
-<li>In <code>index.Rmd</code> change the <code>author</code> from <code>&quot;Albert Y. Kim&quot;</code> to you and change the <code>title</code></li>
-<li>Build your R Markdown Website by going to the “Build” panel of RStudio -&gt; Clicking “Build Website”.<br />
-You can also use the keyboard shortcuts:
-<ul>
-<li>macOS: Command+Shift+B</li>
-<li>windows: Control+Shift+B</li>
-</ul></li>
-<li>Inspect your webpage in your browser</li>
-</ul></li>
-<li>Deploy your R Markdown Website
-<ul>
-<li>Go to <a href="https://app.netlify.com/drop" target="_blank">Netlify Drop</a></li>
-<li>Drag-and-drop the <code>docs/</code> folder output in your <code>example_webpage</code> RStudio Project folder.</li>
-<li>If you want to rename your webpage’s URL rather than use the default one you’ve been assigned: Click on “Domain settings” -&gt; Click on the “…” next to your default site name -&gt; Click on “Edit site name” -&gt; Rename your site</li>
-</ul></li>
-</ol>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec29" class="section level1">
-<h1>Lec 29: Fri 11/15</h1>
-<div id="announcements-8" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Sit next to your MP3 partner</li>
-<li>Guest lecturer: Prof. Ben Baumer</li>
-</ul>
-<div id="mega-announcement" class="section level3">
-<h3>Mega Announcement</h3>
-<p>Recently, the Five Colleges (with Smith as the lead institution) received a three-year grant from the NSF (totaling $1.2 million) for workforce development in data science. Most of that money will go to students, who will work on real-world data science projects sponsored by local community-based organizations. The Jandon Center for Community Engagement will be integrated into the project to bind all parties together.</p>
-<p>We are looking for students to join the first cohort. Smith students can earn up to $2500 per semester, which is approximately 60% more than you would make in any other campus job. The minimum requirements for data science students are:</p>
-<ul>
-<li>Has taken at least one course in computer programming</li>
-<li>Has taken at least one course in statistics</li>
-<li>Has taken at least one additional course in data science, data analysis, etc.</li>
-<li>Is a sophomore or junior</li>
-<li>Ability to commit to 8-10 hours per week through the spring semester</li>
-</ul>
-<p>Unfortunately, only US citizens or permanent residents are eligible for funding from the NSF. It is possible that international students could be funded through a different mechanism, but there are no such alternative funding sources in place at present.</p>
-<p>The application is <a href="https://dsc-wav.github.io/www/students.html" target="_blank">here</a>, please APPLY NOW!! Please contact Ben Baumer if you have more questions.</p>
-</div>
-</div>
-<div id="todays-topicsactivities-8" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="in-class-exercise-4" class="section level3">
-<h3>1. In-class exercise</h3>
-<ul>
-<li>Work on MP3</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec28" class="section level1">
-<h1>Lec 28: Wed 11/13</h1>
-<div id="announcements-9" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Office hours today <del>3-4:30pm</del> 3-4pm</li>
-<li>This Friday the 15th: I’m out of town
-<ul>
-<li>No office hours on 9-10:30am</li>
-<li>Guest lecturer: Prof. Ben Baumer</li>
-<li>I will post PS06 solutions no later than Friday 5pm</li>
-</ul></li>
-<li>MP3 examples and rubric posted</li>
-<li>Members of the <a href="http://www.science.smith.edu/sal/" target="_blank">Smith College Spatial Analysis Lab</a> will be making a brief presentation next week:
-<ul>
-<li>Sec01 AM: Wed 11/20 at 11:30am</li>
-<li>Sec02 PM: Mon 11/18 at beginning of lecture</li>
-</ul></li>
-<li>Check out the Jill Ker Conway Innovation &amp; Entrepreneurship Center’s feature on <a href="https://conway-connect.com/innovation-news/2019/10/31/datascienceatvaliantlabs" target="_blank">SDS student Rachel Laflamme</a>. In particular the quotes from the final paragraph:</li>
-</ul>
-<blockquote>
-<p>Rachel indicated that being surrounded by “so many really intimidating Smithies” in classes, students who she believed were much smarter than she, caused her to question whether she should even pursue a career as a statistical and data scientist. Needless to say, those of us in attendance during her presentation - one delivered by a knowledgeable, talented and confident Smithie - were surprised by her revelation…</p>
-<p>Asked about her most important take-away from the summer, Rachel thoughtfully replied:<br />
-<strong>“I learned that you have to understand your value and that you have a right to be compensated for the value that you bring. It’s a bold thing to fight for what you know you’re worth.”</strong></p>
-</blockquote>
-<div id="mega-announcement-1" class="section level3">
-<h3>Mega Announcement</h3>
-<p>SDS and GOV are hiring for a new joint position! The search committee would like your feedback which they take <em>very</em> seriously.</p>
-<ol style="list-style-type: decimal">
-<li><strong>Tea Times</strong>: They are looking for students who would like to have tea with the candidates on 11/19, 11/21, and 11/22 at 3:30-4:30pm in Bass 418. Sign up <a href="https://docs.google.com/spreadsheets/d/15TLrH4DUtDU4M7-yJQ9uKG2oVvERnLBvShw8sABWDwY/edit#gid=0" target="_blank">here</a>.</li>
-<li><strong>Teaching demos</strong>: Please bring your laptop! We need students here since this is a teaching demonstration!
-<ul>
-<li>Ju Yeon (Julia) Park (University of Pittsburgh - Postdoc)<br />
-Tue 11/19, 5-6pm, Sabin-Reed 301.</li>
-<li>Scott LaCombe (University of Iowa - Doctoral Student)<br />
-Thu 11/21, 5-6pm, Sabin-Reed 301.</li>
-<li>Stan Oklobdzija (Claremont McKenna College - Postdoc)<br />
-Fri 11/22, 5-6pm, Sabin-Reed 301.<br />
-</li>
-</ul></li>
-<li><strong>Research Talks</strong>: A limited number of lunches will be available (first come, first served) at the lunchtime research talks. This is a chance for you to see how scholars present their work to other scholars. The talks will be aimed for the professors in the audience. Students are very welcome to attend, though we invite students to observe but not ask questions.
-<ul>
-<li>Ju Yeon (Julia) Park (University of Pittsburgh - Postdoc)<br />
-Tue 11/19, 12:15-1:15pm, Campus Center 103/104<br />
-Title: <em>When Do Politicians Grandstand? Measuring Message Politics in Committee Hearings</em></li>
-<li>Scott LaCombe (University of Iowa-Doctoral Student)<br />
-Thu 11/21, 12:15-1:15pm, Campus Center 103/104<br />
-Title: <em>Institutional Design and Policy Responsiveness in US States</em></li>
-<li>Stan Oklobdzija (Claremont McKenna College - Postdoc)<br />
-Fri 11/22, 12:15-1:15pm, McConnell B15<br />
-Title: <em>Dark Money and Political Parties After Citizens United</em></li>
-</ul></li>
-</ol>
-</div>
-</div>
-<div id="todays-topicsactivities-9" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-5" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Choropleth maps. In particular, how you set the <em>bins</em> corresponding to the color gradient can affect how your map looks. As indicated <a href="https://gisgeography.com/choropleth-maps-data-classification/" target="_blank">here</a>, there are two approaches:
-<ul>
-<li>Equally sized interval bins</li>
-<li>Quantile based bins</li>
-</ul></li>
-<li><a href="https://en.wikipedia.org/wiki/Application_programming_interface" target="_blank">Application Programmer Interfaces</a></li>
-</ul>
-</div>
-<div id="in-class-exercise-5" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li><code>tidycensus</code> package</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec27" class="section level1">
-<h1>Lec 27: Mon 11/11</h1>
-<div id="announcements-10" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>I filled out a rough schedule of topics for the rest of the semester in the spreadsheet above.</li>
-<li>Data Research and Statistics Counselor from Spinelli Center Osman Keshawarz. You can book office hours <a href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr" target="_blank">here</a>.</li>
-<li>PS06 posted: Two components
-<ul>
-<li>R component due on Friday 11/15 10:45am: Straightforward and serves as practice for MP3.</li>
-<li>Ethics reading quiz in-class on Monday 11/18. This is to ensure you are prepared for an in-class discussion. What do we do when “bad” people make “good” technology?</li>
-</ul></li>
-<li>MP3 details posted.</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-10" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-6" class="section level3">
-<h3>1. Chalk talk</h3>
-<ol style="list-style-type: decimal">
-<li>Absolute vs relative filepaths</li>
-<li>Converting data in R into <code>sf</code> objects. We can then do both
-<ul>
-<li>Data wrangling using <code>dplyr</code> on them</li>
-<li>Plot them in <code>ggplot2</code> using <code>geom_sf()</code> layers</li>
-</ul></li>
-<li>Centroids: <a href="https://en.wikipedia.org/wiki/Geographic_center_of_the_contiguous_United_States" target="_blank">Geographic</a> and <a href="https://en.wikipedia.org/wiki/Mean_center_of_the_United_States_population" target="_blank">population</a> weighted. Not coincidentally, check out where FedEx and UPS main airport hubs are <a href="https://www.google.com/maps/dir/UPS+Worldport,+Grade+Lane,+Louisville,+KY/FedEx+World+Hub,+2903+Sprankel+Ave,+Memphis,+TN+38118/@36.6002171,-90.0693041,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x88690c2c6dc6fe95:0xae70a6ac610364fe!2m2!1d-85.7307215!2d38.1657255!1m5!1m1!1s0x887f87b59bc63573:0x37d7df503bee2e8f!2m2!1d-89.9608239!2d35.0674784!3e0" target="_blank">located</a>.</li>
-</ol>
-</div>
-<div id="in-class-exercise-6" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>While you are free to work in any order you like, I suggest you:</p>
-<ol style="list-style-type: decimal">
-<li>Go thru the <code>examples.Rmd</code> file in the <code>MP3</code> RStudio Project (be sure to be working in RStudio Project mode):
-<ul>
-<li>Section 1: Interactive maps using leaflet</li>
-<li>Section 2: Convert data frames into <code>sf</code> objects</li>
-<li>Section 3: Loading shapefiles into R</li>
-<li>Section 4: (We’ll do this on Wednesday) Choropleth maps using census data.</li>
-</ul></li>
-<li>Work on PS06. This is direct practice for MP3.</li>
-<li>Then start on MP3.</li>
-</ol>
-</div>
-<div id="tweet-of-the-day" class="section level3">
-<h3>3. Tweet of the day</h3>
-<p>We’re at the cutting edge of map technology in R!</p>
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">
-Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;ref_src=twsrc%5Etfw">#rstatdc</a> can be found at <a href="https://t.co/GB58zIy3ND">https://t.co/GB58zIy3ND</a>! My talk was based off of questions I get all the time at the R Spatial Workshop at <a href="https://twitter.com/GeoDaCenter?ref_src=twsrc%5Etfw"><span class="citation">@GeoDaCenter</span></a>: <br><br>1) How to get started with spatial analysis?<br>2) What tools to use?<br>3) What can you do in <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>? <a href="https://t.co/qzEKO0T8Y4">pic.twitter.com/qzEKO0T8Y4</a>
-</p>
-— Angela Li (<span class="citation">@CivicAngela</span>) <a href="https://twitter.com/CivicAngela/status/1193218533783568385?ref_src=twsrc%5Etfw">November 9, 2019</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec26" class="section level1">
-<h1>Lec 26: Fri 11/8</h1>
-<div id="announcements-11" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>MP3: Maps!
-<ul>
-<li>Groups posted on Slack in <code>#MP3</code> channel.</li>
-<li>You will be making one interactive and one static map. More details on Monday.</li>
-</ul></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-11" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-7" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Reading of “On Exactitude in Science” by Borges.</li>
-<li>Slides on <a href="https://beanumber.github.io/sds192/lectures/24-shapefiles.html#17" target="_blank">GIS</a></li>
-<li>London underground maps. Compare them. As stated in this <a href="https://www.theverge.com/2015/11/11/9712376/london-walk-tube-underground-map" target="_blank">article</a>, the transit map sacrifices accuracy for clarity.
-<ul>
-<li>The map of stations as they truly exist: <img src="static/images/underground_real_map.png" width="700" /></li>
-<li>The transit map inside the stations and trains. All lines are either straight or at 45 degrees and futhermore the geographic space is distorted. <img src="static/images/underground_transit_map.gif" width="700" /></li>
-</ul></li>
-</ul>
-</div>
-<div id="in-class-exercise-7" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Two chief tools we’ll be using.</p>
-<ul>
-<li><a href="https://rstudio.github.io/leaflet/" target="_blank"><code>leaflet</code> package</a> for interactive maps</li>
-<li><code>sf</code> package for static maps in <code>ggplot2</code> and loading shapefiles. See <a href="https://keen-swartz-3146c4.netlify.com/" target="_blank">Spatial Data Science</a>.</li>
-</ul>
-<p><strong>Note</strong>: the code that was posted here has now been moved to the <code>example.Rmd</code> file in the <code>MP3</code> RStudio Project folder.</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec25" class="section level1">
-<h1>Lec 25: Wed 11/6</h1>
-<div id="announcements-12" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Office hours today are <del>3-4:30pm</del> 3-4pm</li>
-<li>Install and then load the <code>tidyverse</code> package: An <em>umbrella</em> package that installs/loads many useful packages for data science all at once!
-<ul>
-<li>See <a href="https://www.tidyverse.org/" target="_blank">tidyverse.org</a> for more info.</li>
-<li>In other words, from now on:</li>
-</ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># Don&#39;t do all this</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="kw">library</span>(readr)</a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="kw">library</span>(tidyr)</a>
-<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="kw">library</span>(stringr)</a>
-<a class="sourceLine" id="cb2-7" data-line-number="7"><span class="kw">library</span>(tibble)</a>
-<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="kw">library</span>(forcats)</a>
-<a class="sourceLine" id="cb2-9" data-line-number="9"><span class="kw">library</span>(purrr)</a>
-<a class="sourceLine" id="cb2-10" data-line-number="10"></a>
-<a class="sourceLine" id="cb2-11" data-line-number="11"><span class="co"># Do this</span></a>
-<a class="sourceLine" id="cb2-12" data-line-number="12"><span class="kw">library</span>(tidyverse)</a></code></pre></div></li>
-<li>Smithies in SDS “Data Science Day” this Saturday in the Campus Center featuring:
-<ul>
-<li>RStudio tidyverse developer advocate <a href="https://twitter.com/dataandme" target="_blank">Mara Averick</a></li>
-<li>BaseballCloud data scientist and UMass MBA/MS in Sports Management student <a href="https://twitter.com/cfl1ght" target="_blank">Christien Wright</a></li>
-</ul></li>
-</ul>
+</br>
+
+1. Setup the RStudio Project for an example R Markdown Website
+    + Download the RStudio Project <a href="static/example_webpage.zip" download>`example_webpage.zip`</a>
+    + Move `example_webpage.zip` to where you keep your 192 work, then unzip it to open the RStudio Project folder
+    + Click on the `example_webpage.Rproj` RStudio Project file to open RStudio in "Project Mode". **You must do this.**
+1. Create an account on netlify.com using your GitHub account
+    + Log into [GitHub](https://github.com/){target="_blank"} first
+    + Sign into [Netlify](https://app.netlify.com/){target="_blank"} using your GitHub account
+1. Change and build your website locally (on your computer)
+    + In `index.Rmd` change the `author` from `"Albert Y. Kim"` to you and change the `title`
+    + Build your R Markdown Website by going to the "Build" panel of RStudio -> Clicking "Build Website".  
+    You can also use the keyboard shortcuts:
+        * macOS: Command+Shift+B
+        * windows: Control+Shift+B
+    + Inspect your webpage in your browser
+1. Deploy your R Markdown Website
+    + Go to [Netlify Drop](https://app.netlify.com/drop){target="_blank"}
+    + Drag-and-drop the `docs/` folder output in your `example_webpage` RStudio Project folder.
+    + If you want to rename your webpage's URL rather than use the default one you've been assigned: Click on "Domain settings" -> Click on the "..." next to your default site name -> Click on "Edit site name" -> Rename your site
+
+
+
+
+***
+
+
+
+# Lec 29: Fri 11/15 {#Lec29}
+
+## Announcements
+
+* Sit next to your MP3 partner
+* Guest lecturer: Prof. Ben Baumer
+
+### Mega Announcement
+
+Recently, the Five Colleges (with Smith as the lead institution) received a three-year grant from the NSF (totaling $1.2 million) for workforce development in data science. Most of that money will go to students, who will work on real-world data science projects sponsored by local community-based organizations. The Jandon Center for Community Engagement will be integrated into the project to bind all parties together. 
+
+We are looking for students to join the first cohort. Smith students can earn up to $2500 per semester, which is approximately 60% more than you would make in any other campus job. The minimum requirements for data science students are:
+
+* Has taken at least one course in computer programming
+* Has taken at least one course in statistics
+* Has taken at least one additional course in data science, data analysis, etc.
+* Is a sophomore or junior
+* Ability to commit to 8-10 hours per week through the spring semester
+
+Unfortunately, only US citizens or permanent residents are eligible for funding from the NSF. It is possible that international students could be funded through a different mechanism, but there are no such alternative funding sources in place at present. 
+
+The application is [here](https://dsc-wav.github.io/www/students.html){target="_blank"}, please APPLY NOW!! Please contact Ben Baumer if you have more questions.
+
+
+## Today's topics/activities
+
+### 1. In-class exercise
+
+* Work on MP3
+
+
+
+***
+
+
+
+# Lec 28: Wed 11/13 {#Lec28}
+
+## Announcements
+
+* Office hours today ~~3-4:30pm~~ 3-4pm
+* This Friday the 15th: I'm out of town
+    + No office hours on 9-10:30am
+    + Guest lecturer: Prof. Ben Baumer
+    + I will post PS06 solutions no later than Friday 5pm
+* MP3 examples and rubric posted
+* Members of the [Smith College Spatial Analysis Lab](http://www.science.smith.edu/sal/){target="_blank"} will be making a brief presentation next week:
+    + Sec01 AM: Wed 11/20 at 11:30am
+    + Sec02 PM: Mon 11/18 at beginning of lecture
+* Check out the Jill Ker Conway Innovation & Entrepreneurship Center's feature on [SDS student Rachel Laflamme](https://conway-connect.com/innovation-news/2019/10/31/datascienceatvaliantlabs){target="_blank"}. In particular the quotes from the final paragraph:
+
+> Rachel indicated that being surrounded by "so many really intimidating Smithies" in classes, students who she believed were much smarter than she, caused her to question whether she should even pursue a career as a statistical and data scientist. Needless to say, those of us in attendance during her presentation - one delivered by a knowledgeable, talented and confident Smithie - were surprised by her revelation...
+> 
+> Asked about her most important take-away from the summer, Rachel thoughtfully replied:  
+> **"I learned that you have to understand your value and that you have a right to be compensated for the value that you bring. It’s a bold thing to fight for what you know you’re worth."**
+
+### Mega Announcement
+
+SDS and GOV are hiring for a new joint position! The search committee would like your feedback which they take *very* seriously.
+
+1. **Tea Times**: They are looking for students who would like to have tea with the candidates on 11/19, 11/21, and 11/22 at 3:30-4:30pm in Bass 418. Sign up [here](https://docs.google.com/spreadsheets/d/15TLrH4DUtDU4M7-yJQ9uKG2oVvERnLBvShw8sABWDwY/edit#gid=0){target="_blank"}. 
+1. **Teaching demos**: Please bring your laptop! We need students here since this is a teaching demonstration!
+    + Ju Yeon (Julia) Park (University of Pittsburgh - Postdoc)  
+    Tue 11/19, 5-6pm, Sabin-Reed 301.
+    + Scott LaCombe (University of Iowa - Doctoral Student)  
+    Thu 11/21, 5-6pm, Sabin-Reed 301.
+    + Stan Oklobdzija (Claremont McKenna College - Postdoc)  
+    Fri 11/22, 5-6pm, Sabin-Reed 301.     
+1. **Research Talks**: A limited number of lunches will be available (first come, first served) at the lunchtime research talks.  This is a chance for you to see how scholars present their work to other scholars.  The talks will be aimed for the professors in the audience. Students are very welcome to attend, though we invite students to observe but not ask questions.
+    + Ju Yeon (Julia) Park (University of Pittsburgh - Postdoc)  
+    Tue 11/19, 12:15-1:15pm, Campus Center 103/104  
+    Title:  *When Do Politicians Grandstand? Measuring Message Politics in Committee Hearings*
+    + Scott LaCombe (University of Iowa-Doctoral Student)  
+    Thu 11/21, 12:15-1:15pm, Campus Center 103/104  
+    Title: *Institutional Design and Policy Responsiveness in US States*
+    + Stan Oklobdzija (Claremont McKenna College - Postdoc)  
+    Fri 11/22, 12:15-1:15pm, McConnell B15  
+    Title: *Dark Money and Political Parties After Citizens United*
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Choropleth maps. In particular, how you set the *bins* corresponding to the color gradient can affect how your map looks. As indicated [here](https://gisgeography.com/choropleth-maps-data-classification/){target="_blank"}, there are two approaches:
+    + Equally sized interval bins
+    + Quantile based bins
+* [Application Programmer Interfaces](https://en.wikipedia.org/wiki/Application_programming_interface){target="_blank"}
+
+
+### 2. In-class exercise
+
+* `tidycensus` package
+
+
+
+***
+
+
+
+
+# Lec 27: Mon 11/11 {#Lec27}
+
+## Announcements
+
+* I filled out a rough schedule of topics for the rest of the semester in the spreadsheet above.
+* Data Research and Statistics Counselor from Spinelli Center Osman Keshawarz. You can book office hours [here](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
+* PS06 posted: Two components
+    + R component due on Friday 11/15 10:45am: Straightforward and serves as practice for MP3.
+    + Ethics reading quiz in-class on Monday 11/18. This is to ensure you are prepared for an in-class discussion. What do we do when "bad" people make "good" technology?
+* MP3 details posted.
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+1. Absolute vs relative filepaths
+1. Converting data in R into `sf` objects. We can then do both
+    + Data wrangling using `dplyr` on them
+    + Plot them in `ggplot2` using `geom_sf()` layers
+1. Centroids: [Geographic](https://en.wikipedia.org/wiki/Geographic_center_of_the_contiguous_United_States){target="_blank"} and [population](https://en.wikipedia.org/wiki/Mean_center_of_the_United_States_population){target="_blank"} weighted. Not coincidentally, check out where FedEx and UPS main airport hubs are [located](https://www.google.com/maps/dir/UPS+Worldport,+Grade+Lane,+Louisville,+KY/FedEx+World+Hub,+2903+Sprankel+Ave,+Memphis,+TN+38118/@36.6002171,-90.0693041,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x88690c2c6dc6fe95:0xae70a6ac610364fe!2m2!1d-85.7307215!2d38.1657255!1m5!1m1!1s0x887f87b59bc63573:0x37d7df503bee2e8f!2m2!1d-89.9608239!2d35.0674784!3e0){target="_blank"}.
+
+
+### 2. In-class exercise
+
+While you are free to work in any order you like, I suggest you:
+
+1. Go thru the `examples.Rmd` file in the `MP3` RStudio Project (be sure to be working in RStudio Project mode):
+    * Section 1: Interactive maps using leaflet
+    * Section 2: Convert data frames into `sf` objects
+    * Section 3: Loading shapefiles into R
+    * Section 4: (We'll do this on Wednesday) Choropleth maps using census data.
+1. Work on PS06. This is direct practice for MP3.
+1. Then start on MP3.
+
+
+### 3. Tweet of the day
+
+We're at the cutting edge of map technology in R!
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;ref_src=twsrc%5Etfw">#rstatdc</a> can be found at <a href="https://t.co/GB58zIy3ND">https://t.co/GB58zIy3ND</a>! My talk was based off of questions I get all the time at the R Spatial Workshop at <a href="https://twitter.com/GeoDaCenter?ref_src=twsrc%5Etfw">@GeoDaCenter</a>: <br><br>1) How to get started with spatial analysis?<br>2) What tools to use?<br>3) What can you do in <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>? <a href="https://t.co/qzEKO0T8Y4">pic.twitter.com/qzEKO0T8Y4</a></p>&mdash; Angela Li (@CivicAngela) <a href="https://twitter.com/CivicAngela/status/1193218533783568385?ref_src=twsrc%5Etfw">November 9, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+
+
+
+
+***
+
+
+
+# Lec 26: Fri 11/8 {#Lec26}
+
+## Announcements
+
+* MP3: Maps!
+    + Groups posted on Slack in `#MP3` channel. 
+    + You will be making one interactive and one static map. More details on Monday.
+
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Reading of "On Exactitude in Science" by Borges.
+* Slides on [GIS](https://beanumber.github.io/sds192/lectures/24-shapefiles.html#17){target="_blank"}
+* London underground maps. Compare them. As stated in this [article](https://www.theverge.com/2015/11/11/9712376/london-walk-tube-underground-map){target="_blank"}, the transit map sacrifices accuracy for clarity.
+    + The map of stations as they truly exist: 
+    ![](static/images/underground_real_map.png){ width=700px }
+    + The transit map inside the stations and trains. All lines are either straight or at 45 degrees and futhermore the geographic space is distorted. 
+    ![](static/images/underground_transit_map.gif){ width=700px }
+    
+
+### 2. In-class exercise
+
+Two chief tools we'll be using.
+
+* [`leaflet` package](https://rstudio.github.io/leaflet/){target="_blank"} for interactive maps
+* `sf` package for static maps in `ggplot2` and loading shapefiles. See [Spatial Data Science](https://keen-swartz-3146c4.netlify.com/){target="_blank"}.
+
+**Note**: the code that was posted here has now been moved to the `example.Rmd` file in the `MP3` RStudio Project folder. 
+
+
+
+***
+
+
+
+# Lec 25: Wed 11/6 {#Lec25}
+
+## Announcements
+
+* Office hours today are ~~3-4:30pm~~ 3-4pm
+* Install and then load the `tidyverse` package: An *umbrella* package that installs/loads many useful packages for data science all at once!
+    + See [tidyverse.org](https://www.tidyverse.org/){target="_blank"} for more info.
+    + In other words, from now on:  
+    
+    ```r
+    # Don't do all this
+    library(ggplot2)
+    library(dplyr)
+    library(readr)
+    library(tidyr)
+    library(stringr)
+    library(tibble)
+    library(forcats)
+    library(purrr)
+    
+    # Do this
+    library(tidyverse)
+    ```
+* Smithies in SDS "Data Science Day" this Saturday in the Campus Center featuring:
+    + RStudio tidyverse developer advocate [Mara Averick](https://twitter.com/dataandme){target="_blank"}
+    + BaseballCloud data scientist and UMass MBA/MS in Sports Management student [Christien Wright](https://twitter.com/cfl1ght){target="_blank"}
+
 <center>
-<img src="static/images/announcements/DSD.png" width="750" />
+![](static/images/announcements/DSD.png){ width=750px }
 </center>
-<p><br></p>
-</div>
-<div id="todays-topicsactivities-12" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-8" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Go over Midterm II practice exam solutions. Practice exam is posted on Slack under <code>#general_announcements</code>.</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec24" class="section level1">
-<h1>Lec 24: Mon 11/4</h1>
-<div id="announcements-13" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Midterm II this weekend.</li>
-<li>Coming on Wednesday. Organizers have:
-<ul>
-<li>Stated “This space is not for debate between speakers and audience. It is for speakers to be heard and listened to.”</li>
-<li>Asked that you wear black in solidarity.</li>
-</ul></li>
-</ul>
+<br>
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Go over Midterm II practice exam solutions. Practice exam is posted on Slack under `#general_announcements`.
+
+
+
+
+***
+
+
+
+# Lec 24: Mon 11/4 {#Lec24}
+
+## Announcements
+
+* Midterm II this weekend.
+* Coming on Wednesday. Organizers have:
+    + Stated "This space is not for debate between speakers and audience. It is for speakers to be heard and listened to."
+    + Asked that you wear black in solidarity.
+
 <center>
-<img src="static/images/announcements/exposing_the_truth.png" width="450" />
+![](static/images/announcements/exposing_the_truth.png){ width=450px }
 </center>
-<p><br></p>
-</div>
-<div id="todays-topicsactivities-13" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-9" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Fact that will 🤯 about MP2 data.</li>
-<li>Midterm II discussion. See <a href="midterms.html#midtermII">midterms</a> page.</li>
-</ul>
-</div>
-<div id="in-class-exercise-8" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Practice midterm posted on Slack; we’ll go over solutions on Wednesday.</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec23" class="section level1">
-<h1>Lec 23: Fri 11/1</h1>
-<div id="announcements-14" class="section level2">
-<h2>Announcements</h2>
-</div>
-<div id="todays-topicsactivities-14" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="in-class-exercise-9" class="section level3">
-<h3>1. In-class exercise</h3>
-<ul>
-<li>Work on MP2</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec22" class="section level1">
-<h1>Lec 22: Wed 10/30</h1>
-<div id="announcements-15" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>If you would like to give mid-semester feedback on how this course is going so far, you can leave feedback (either anonymously or not) via the Google Forms linke posted in the <code>#general_announcements</code> channel in Slack. The form will be open until Friday Nov 1st at 5pm.</li>
-<li>Smithies in SDS FaculTEA on Friday 4pm in CC 103/104 with Albert Y. Kim, Ben Baumer, David Rockoff, Katherine Halvorsen, Miles Ott, and Randi Garcia.</li>
-</ul>
+<br>
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Fact that will 🤯 about MP2 data.
+* Midterm II discussion. See [midterms](midterms.html#midtermII) page.
+
+### 2. In-class exercise
+
+* Practice midterm posted on Slack; we'll go over solutions on Wednesday.
+
+
+
+***
+
+
+
+# Lec 23: Fri 11/1 {#Lec23}
+
+## Announcements
+
+## Today's topics/activities
+
+### 1. In-class exercise
+
+* Work on MP2
+
+
+
+***
+
+
+
+# Lec 22: Wed 10/30 {#Lec22}
+
+## Announcements
+
+* If you would like to give mid-semester feedback on how this course is going so far, you can leave feedback (either anonymously or not) via the Google Forms linke posted in the `#general_announcements` channel in Slack. The form will be open until Friday Nov 1st at 5pm.
+* Smithies in SDS FaculTEA on Friday 4pm in CC 103/104 with Albert Y. Kim, Ben Baumer, David Rockoff, Katherine Halvorsen, Miles Ott, and Randi Garcia.
+
 <center>
-<img src="static/images/announcements/SSDS_faculTEA.png" width="750" />
+![](static/images/announcements/SSDS_faculTEA.png){ width=750px }
 </center>
-<p><br></p>
-</div>
-<div id="todays-topicsactivities-15" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-10" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Strategies for writing reports.</li>
-</ul>
-</div>
-<div id="in-class-exercise-10" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Work on MP2!</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec21" class="section level1">
-<h1>Lec 21: Mon 10/28</h1>
-<div id="announcements-16" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Sit next to your MP2 partner today</li>
-<li>Look at some posts in <code>#random</code> channel</li>
-<li>Lecture policy reminder</li>
-<li>Added “Tips &amp; Tricks” tab to menu bar of course webpage</li>
-<li>Reminder: joint SDS/PSY faculty member Randi Garci will be Honored with <a href="https://www.smith.edu/news/sherrerd-2019-oct" target="_blank">Sherrerd Prize teaching award</a> today 4:30pm in Campus Center Carroll Room. Please attend!</li>
-<li>Biennial (every two years) graduate school panel and discussion on MVP’s.</li>
-</ul>
+<br>
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Strategies for writing reports.
+
+### 2. In-class exercise
+
+Work on MP2!
+
+
+
+***
+
+
+
+
+
+# Lec 21: Mon 10/28 {#Lec21}
+
+## Announcements
+
+* Sit next to your MP2 partner today
+* Look at some posts in `#random` channel
+* Lecture policy reminder
+* Added "Tips & Tricks" tab to menu bar of course webpage
+* Reminder: joint SDS/PSY faculty member Randi Garci will be Honored with [Sherrerd Prize teaching award](https://www.smith.edu/news/sherrerd-2019-oct){target="_blank"} today 4:30pm in Campus Center Carroll Room. Please attend!
+* Biennial (every two years) graduate school panel and discussion on MVP's.
+
 <center>
-<img src="static/images/announcements/2019_grad_school_panel.png" width="750" />
+![](static/images/announcements/2019_grad_school_panel.png){ width=750px }
 </center>
-<p><br></p>
-</div>
-<div id="todays-topicsactivities-16" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-11" class="section level3">
-<h3>1. Chalk talk</h3>
-<p>Solutions to PS05 Q1.c). What happened to the average age above 60? The hint given on Slack was to look at the <code>ggplot2</code> cheatsheet -&gt; 2nd page -&gt; Bottom right corner -&gt; “Zooming”</p>
-<ul>
-<li><code>ylim(a, b)</code> sets the limit on the y-axis to be between <code>a</code> to <code>b</code> and “clips” (throws out) any points outside this interval</li>
-<li><code>coord_cartesian(ylim=c(a, b))</code> zooms in on the the y-axis to be between <code>a</code> to <code>b</code> but does not “clip” (throw out) the points outside this interval</li>
-</ul>
-<p>For example, consider the following regression line:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4">example &lt;-<span class="st"> </span><span class="kw">tibble</span>(</a>
-<a class="sourceLine" id="cb3-5" data-line-number="5">  <span class="dt">x =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>),</a>
-<a class="sourceLine" id="cb3-6" data-line-number="6">  <span class="dt">y =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">5</span>)</a>
-<a class="sourceLine" id="cb3-7" data-line-number="7">)</a>
-<a class="sourceLine" id="cb3-8" data-line-number="8"></a>
-<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="512" /></p>
-<p>Let’s set the y-axis limit to be between 0 and 3. Using <code>ylim(0, 3)</code> clips out the point <code>(5, 5)</code> and thus the regression line is flat:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="st">  </span><span class="kw">ylim</span>(<span class="dv">0</span>, <span class="dv">3</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="512" /></p>
-<p>However, using <code>coord_cartesian(ylim = c(0, 3))</code> merely zooms in on this part of the y-axis without clipping the point <code>(5, 5)</code> and thus the regression line is the original one:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="st">  </span><span class="kw">coord_cartesian</span>(<span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">3</span>))</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="512" /></p>
-</div>
-<div id="in-class-exercise-11" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Work on MP2!</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec20" class="section level1">
-<h1>Lec 20: Fri 10/25</h1>
-<div id="announcements-17" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Open floor to share thoughts/feeling about President McCartney’s email.</li>
-<li>MP1 grading update</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-17" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-12" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Recap of Lec19: In-class exercise, computing available seat miles. Note solution is in ModernDive Appendix D -&gt; Learning Check 3.20.
-<ol style="list-style-type: decimal">
-<li>Order of arithmetic matters!</li>
-<li>Difference between <code>inner_join()</code> and <code>left_join()</code></li>
-</ol></li>
-<li>Importing spreadsheet data into R. Either Excel files or <code>.csv</code> Comma-Separated Values files. See image of example <code>.csv</code> file below.</li>
-<li>“Tidy” data format, in other words, <a href="https://en.wikipedia.org/wiki/Wide_and_narrow_data" target="_blank">long/tall/narrow format</a>. This is as opposed to wide format.</li>
-</ul>
+<br>
+
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+Solutions to PS05 Q1.c). What happened to the average age above 60? The hint given on Slack was to look at the `ggplot2` cheatsheet -> 2nd page -> Bottom right corner -> "Zooming"
+
+* `ylim(a, b)` sets the limit on the y-axis to be between `a` to `b` and "clips" (throws out) any points outside this interval
+* `coord_cartesian(ylim=c(a, b))` zooms in on the the y-axis to be between `a` to `b` but does not "clip" (throw out) the points outside this interval
+
+For example, consider the following regression line: 
+
+
+```r
+library(ggplot2)
+library(dplyr)
+
+example <- tibble(
+  x = c(1, 2, 3, 4, 5),
+  y = c(1, 1, 1, 1, 5)
+)
+
+ggplot(example, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+<img src="index_files/figure-html/unnamed-chunk-3-1.png" width="512" />
+
+Let's set the y-axis limit to be between 0 and 3. Using `ylim(0, 3)` clips out the point `(5, 5)` and thus the regression line is flat:
+
+
+```r
+ggplot(example, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  ylim(0, 3)
+```
+
+<img src="index_files/figure-html/unnamed-chunk-4-1.png" width="512" />
+
+However, using `coord_cartesian(ylim = c(0, 3))` merely zooms in on this part of the y-axis without clipping the point `(5, 5)` and thus the regression line is the original one: 
+
+
+```r
+ggplot(example, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  coord_cartesian(ylim = c(0, 3))
+```
+
+<img src="index_files/figure-html/unnamed-chunk-5-1.png" width="512" />
+
+### 2. In-class exercise
+
+Work on MP2!
+
+
+
+***
+
+
+
+
+# Lec 20: Fri 10/25 {#Lec20}
+
+## Announcements
+
+* Open floor to share thoughts/feeling about President McCartney's email.
+* MP1 grading update
+
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of Lec19: In-class exercise, computing available seat miles. Note solution is in ModernDive Appendix D -> Learning Check 3.20.
+    1. Order of arithmetic matters!
+    1. Difference between `inner_join()` and `left_join()`
+* Importing spreadsheet data into R. Either Excel files or `.csv` Comma-Separated Values files. See image of example `.csv` file below.
+* "Tidy" data format, in other words, [long/tall/narrow format](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"}. This is as opposed to wide format. 
+
 <center>
-<img src="static/images/CSV.png" width="500" />
+![](static/images/CSV.png){ width=500px }
 </center>
-<p><br></p>
-</div>
-<div id="in-class-exercise-12" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Go over ModernDive 4.1 - 4.2</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec19" class="section level1">
-<h1>Lec 19: Wed 10/23</h1>
-<div id="announcements-18" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Sit next to your MP2 partner for today’s in-class exercise</li>
-<li>Are you interested in Majoring in SDS? Check out our presentation of the major tomorrow!</li>
-</ul>
+<br>
+
+
+
+### 2. In-class exercise
+
+* Go over ModernDive 4.1 - 4.2
+
+
+
+***
+
+
+
+# Lec 19: Wed 10/23 {#Lec19}
+
+## Announcements
+
+* Sit next to your MP2 partner for today's in-class exercise
+* Are you interested in Majoring in SDS? Check out our presentation of the major tomorrow!
+
 <center>
-<img src="static/images/announcements/SDS_major.png" width="750" />
+![](static/images/announcements/SDS_major.png){ width=750px }
 </center>
-<p><br></p>
-</div>
-<div id="todays-topicsactivities-18" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-13" class="section level3">
-<h3>1. Chalk talk</h3>
-<p>Recap of Lec18: Click on tweet below to see all 6 different types of joins:</p>
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">
-I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&amp;ref_src=twsrc%5Etfw">#dplyr</a>'s join functions, inspired by this: <a href="http://t.co/40wMQDP0J4">http://t.co/40wMQDP0J4</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="http://t.co/P4XOLs5ov3">pic.twitter.com/P4XOLs5ov3</a>
-</p>
-— Hiroaki Yutani (<span class="citation">@yutannihilation</span>) <a href="https://twitter.com/yutannihilation/status/551572539697143808?ref_src=twsrc%5Etfw">January 4, 2015</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>Copy this to your <code>classnotes.Rmd</code></p>
+<br>
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+Recap of Lec18: Click on tweet below to see all 6 different types of joins:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&amp;ref_src=twsrc%5Etfw">#dplyr</a>&#39;s join functions, inspired by this: <a href="http://t.co/40wMQDP0J4">http://t.co/40wMQDP0J4</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="http://t.co/P4XOLs5ov3">pic.twitter.com/P4XOLs5ov3</a></p>&mdash; Hiroaki Yutani (@yutannihilation) <a href="https://twitter.com/yutannihilation/status/551572539697143808?ref_src=twsrc%5Etfw">January 4, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Copy this to your `classnotes.Rmd`
+
 <script src="https://gist.github.com/rudeboybert/968dbf26d5f9407703ae7b24d217af67.js"></script>
-</div>
-<div id="in-class-exercise-13" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Complete ModernDive Learning Check 3.20: Using data in <code>nycflights13</code> package, compute available seat miles:</p>
+
+
+### 2. In-class exercise
+
+Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, compute available seat miles:
+
 <center>
-<img src="static/images/ASM.png" width="750" />
+![](static/images/ASM.png){ width=750px }
 </center>
-<p><br></p>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec18" class="section level1">
-<h1>Lec 18: Mon 10/21</h1>
-<div id="announcements-19" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>MP2 rubric posted</li>
-<li>Posting in <code>#maps</code> channel on Slack</li>
-<li>For Wednesday’s lecture sit next to your MP2 partner. We’ll be doing an in-class data-wrangling exercise</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-19" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-14" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Go over <a href="PS.html#PS04_solutions">PS04 solutions</a></li>
-<li>Recap of Lec17: How to <code>arrange()</code> by more than one variable</li>
-<li>Last major set of verbs: <code>_join()</code> data frames, <code>select()</code>, and <code>rename()</code> variables</li>
-</ul>
-</div>
-<div id="in-class-exercise-14" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Go over ModernDive 3.7, 3.8.1 - 3.8.2.</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec17" class="section level1">
-<h1>Lec 17: Fri 10/18</h1>
-<div id="announcements-20" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>PS05 posted: Due in one week.</li>
-<li><a href="projects.html#MP2">Mini-Project 2</a> posted: Due in two weeks.</li>
-<li>SDS talk on Monday at 5pm by Yeshimabeith Milner, founder of <a href="http://d4bl.org/" target="_blank">Data for Black Lives</a>. Shout out to Smithie <a href="https://twitter.com/laneejung" target="_blank">Laneé Jung</a> for her important role in making this happen.</li>
-</ul>
+<br>
+
+
+
+***
+
+
+
+# Lec 18: Mon 10/21 {#Lec18}
+
+## Announcements
+
+* MP2 rubric posted
+* Posting in `#maps` channel on Slack
+* For Wednesday's lecture sit next to your MP2 partner. We'll be doing an in-class data-wrangling exercise
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Go over [PS04 solutions](PS.html#PS04_solutions)
+* Recap of Lec17: How to `arrange()` by more than one variable
+* Last major set of verbs: `_join()` data frames, `select()`, and `rename()` variables
+
+### 2. In-class exercise
+
+* Go over ModernDive 3.7, 3.8.1 - 3.8.2.
+
+
+
+***
+
+
+
+# Lec 17: Fri 10/18 {#Lec17}
+
+## Announcements
+
+* PS05 posted: Due in one week.
+* [Mini-Project 2](projects.html#MP2) posted: Due in two weeks.
+* SDS talk on Monday at 5pm by Yeshimabeith Milner, founder of [Data for Black Lives](http://d4bl.org/){target="_blank"}. Shout out to Smithie [Laneé Jung](https://twitter.com/laneejung){target="_blank"} for her important role in making this happen.
+
 <center>
-<img src="static/images/announcements/Milner_Wide.png" width="750" />
+![](static/images/announcements/Milner_wide.png){ width=750px }
 </center>
-<p><br></p>
-</div>
-<div id="todays-topicsactivities-20" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-15" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Recap of Lec16:
-<ul>
-<li>Go over diagram of <code>group_by() %&gt;% summarize()</code></li>
-<li>Difference between <code>sum()</code> and <code>n()</code> summary functions.</li>
-</ul></li>
-<li><code>mutate()</code> new columns/variables and <code>arrange()</code> i.e. sort rows</li>
-</ul>
-</div>
-<div id="in-class-exercise-15" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Go over ModernDive 3.5 - 3.6</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec16" class="section level1">
-<h1>Lec 16: Wed 10/16</h1>
-<div id="announcements-21" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Slack: Post on <code>#random</code></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-21" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-16" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Recap of Lec14</li>
-<li><code>summarize()</code> rows and <code>group_by() %&gt;% summarize()</code></li>
-</ul>
-</div>
-<div id="in-class-exercise-16" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Keyboard shortcut in RStudio</li>
-<li>Go over ModernDive 3.3 - 3.4</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec15" class="section level1">
-<h1>Lec 15: Fri 10/11</h1>
-<div id="announcements-22" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>PS04 posted</li>
-<li>MP1: Due at 5pm on Friday.
-<ol style="list-style-type: decimal">
-<li>Files on Moodle</li>
-<li>Peer evaluation Google Form</li>
-<li>Group leader only: PDF of reflection piece on Moodle</li>
-</ol></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-22" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="in-class-exercise-17" class="section level3">
-<h3>1. In-class exercise</h3>
-<ul>
-<li>Put finishing touches on MP1</li>
-<li>Do readings from Lec14 on Wed 10/9: ModernDive 3 - 3.2</li>
-<li>Start PS04 after you’ve done ModernDive readings</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec14" class="section level1">
-<h1>Lec 14: Wed 10/9</h1>
-<div id="announcements-23" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-23" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-17" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Intro to data wrangling</li>
-<li>Pipe operator <code>%&gt;%</code></li>
-<li><code>filter()</code> rows that meet a certain criteria</li>
-</ul>
-<p>Example:</p>
+<br>
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of Lec16:
+    + Go over diagram of `group_by() %>% summarize()`
+    + Difference between `sum()` and `n()` summary functions.
+* `mutate()` new columns/variables and `arrange()` i.e. sort rows
+
+### 2. In-class exercise
+
+* Go over ModernDive 3.5 - 3.6
+
+
+
+***
+
+
+
+# Lec 16: Wed 10/16 {#Lec16}
+
+## Announcements
+
+* Slack: Post on `#random` 
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of Lec14
+* `summarize()` rows and `group_by() %>% summarize()`
+
+### 2. In-class exercise
+
+* Keyboard shortcut in RStudio
+* Go over ModernDive 3.3 - 3.4
+
+
+
+***
+
+
+
+# Lec 15: Fri 10/11 {#Lec15}
+
+## Announcements
+
+* PS04 posted
+* MP1: Due at 5pm on Friday.
+    1. Files on Moodle
+    1. Peer evaluation Google Form
+    1. Group leader only: PDF of reflection piece on Moodle
+
+
+## Today's topics/activities
+
+### 1. In-class exercise
+
+* Put finishing touches on MP1
+* Do readings from Lec14 on Wed 10/9: ModernDive 3 - 3.2
+* Start PS04 after you've done ModernDive readings
+
+
+***
+
+
+
+# Lec 14: Wed 10/9 {#Lec14}
+
+## Announcements
+
+*
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Intro to data wrangling
+* Pipe operator `%>%`
+* `filter()` rows that meet a certain criteria
+
+Example:
+
 <script src="https://gist.github.com/rudeboybert/ebf39a24a03216be55cb20d9c475f57d.js"></script>
-</div>
-<div id="in-class-exercise-18" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Go over ModernDive 3 - 3.2</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec13" class="section level1">
-<h1>Lec 13: Mon 10/7</h1>
-<div id="announcements-24" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>No talking about midterm until Wednesday’s lecture please.</li>
-<li>Sit next to your MP1 partner for today’s lecture.</li>
-<li>If you’re curious about my experiences in grad school, working at Google, switching to academia, and advice for aspiring data scientists, check out my appearance on episode #43 of the DataBytes podcast “To Google and Back.” Also available on <a href="https://podcasts.apple.com/us/podcast/43-to-google-and-back/id1445241846?i=1000452290536" target="_blank">Apple Podcasts</a> and <a href="https://play.google.com/music/listen?u=0#/ps/Itfclix7dvr5c2kbtovrtufki2a" target="_blank">Google Play</a>.</li>
-</ul>
+
+
+
+### 2. In-class exercise
+
+* Go over ModernDive 3 - 3.2
+
+
+
+***
+
+
+
+# Lec 13: Mon 10/7 {#Lec13}
+
+## Announcements
+
+* No talking about midterm until Wednesday's lecture please.
+* Sit next to your MP1 partner for today's lecture.
+* If you're curious about my experiences in grad school, working at Google, switching to academia, and advice for aspiring data scientists, check out my appearance on episode #43 of the DataBytes podcast "To Google and Back." Also available on [Apple Podcasts](https://podcasts.apple.com/us/podcast/43-to-google-and-back/id1445241846?i=1000452290536){target="_blank"} and [Google Play](https://play.google.com/music/listen?u=0#/ps/Itfclix7dvr5c2kbtovrtufki2a){target="_blank"}.
+
 <center>
-<iframe src="https://open.spotify.com/embed-podcast/episode/4SEcmLwHdJfmXaQEY7NZlV" width="70%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">
-</iframe>
+<iframe src="https://open.spotify.com/embed-podcast/episode/4SEcmLwHdJfmXaQEY7NZlV" width="70%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </center>
-<p><br></p>
-</div>
-<div id="todays-topicsactivities-24" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-18" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Recap of Lec09:
-<ul>
-<li><code>span</code> argument from <code>geom_smooth()</code></li>
-<li>What is <code>se = FALSE</code> mean</li>
-</ul></li>
-<li>What is a “minimally viable product”?</li>
-</ul>
-</div>
-<div id="in-class-exercise-19" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Work on MP1</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec12" class="section level1">
-<h1>Lec 12: Fri 10/4</h1>
-<div id="announcements-25" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Part of class-time on Monday to work on MP1</li>
-<li>Go over updated <a href="midterms.html">Midterm I</a> instructions</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-25" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-19" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Trend lines. Two types (among many):
-<ul>
-<li>Linear regression</li>
-<li>LOESS smoother:<br />
-<img src="static/images/loess.gif" /></li>
-</ul></li>
-<li>Let’s make a Shiny interactive visualization! If this is your first shiny app, you will need to install some packages: say “yes” to any prompts.
-<ol style="list-style-type: decimal">
-<li>Go to RStudio menu bar -&gt; File -&gt; New File… -&gt; Shiny -&gt; Give it title “LOESS smoother”</li>
-<li>Let’s keep things simple and delete everything after line 38</li>
-<li>Save it as <code>loess.Rmd</code></li>
-<li>Click “Run Document”</li>
-<li>See all possible input methods by looking at cheatsheet. Go to RStudio menu bar -&gt; Help -&gt; Cheatsheets -&gt; Web Applications with Shiny -&gt; Look at right-side of first page.</li>
-</ol></li>
-</ul>
-</div>
-<div id="in-class-exercise-20" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>First, copy this to your <code>classnotes.Rmd</code> and go over code.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="kw">library</span>(gapminder)</a>
-<a class="sourceLine" id="cb6-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="co"># 1. Recreate plot from PS02 but with no color:</span></a>
-<a class="sourceLine" id="cb6-6" data-line-number="6">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb6-7" data-line-number="7"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
-<a class="sourceLine" id="cb6-8" data-line-number="8"></a>
-<a class="sourceLine" id="cb6-9" data-line-number="9"><span class="co"># 1.a) Add LOESS smoother layer with geom_smooth()</span></a>
-<a class="sourceLine" id="cb6-10" data-line-number="10"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb6-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb6-12" data-line-number="12"><span class="st">  </span><span class="kw">geom_smooth</span>()</a>
-<a class="sourceLine" id="cb6-13" data-line-number="13"></a>
-<a class="sourceLine" id="cb6-14" data-line-number="14"><span class="co"># 1.b) Remove standard error bars</span></a>
-<a class="sourceLine" id="cb6-15" data-line-number="15"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb6-16" data-line-number="16"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb6-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb6-18" data-line-number="18"></a>
-<a class="sourceLine" id="cb6-19" data-line-number="19"><span class="co"># 1.c) Change span of &quot;smoothing&quot; window by changing span = value. Try different values.</span></a>
-<a class="sourceLine" id="cb6-20" data-line-number="20"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb6-21" data-line-number="21"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb6-22" data-line-number="22"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>, <span class="dt">span =</span> <span class="fl">0.25</span>)</a>
-<a class="sourceLine" id="cb6-23" data-line-number="23"></a>
-<a class="sourceLine" id="cb6-24" data-line-number="24"><span class="co"># 1.d) Force line to be straight. i.e. linear regression</span></a>
-<a class="sourceLine" id="cb6-25" data-line-number="25"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb6-26" data-line-number="26"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb6-27" data-line-number="27"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
-<p>Second, in <code>loess.Rmd</code> you’re change only the code within the code</p>
-<pre><code>renderPlot({ 
+<br>
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of Lec09:
+    + `span` argument from `geom_smooth()`
+    + What is `se = FALSE` mean
+* What is a "minimally viable product"?
+
+
+### 2. In-class exercise
+
+* Work on MP1
+
+
+
+***
+
+
+
+# Lec 12: Fri 10/4 {#Lec12}
+
+## Announcements
+
+* Part of class-time on Monday to work on MP1
+* Go over updated [Midterm I](midterms.html) instructions
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Trend lines. Two types (among many):
+    + Linear regression
+    + LOESS smoother:  
+    ![](static/images/loess.gif)
+* Let's make a Shiny interactive visualization! If this is your first shiny app, you will need to install some packages: say "yes" to any prompts.
+    1. Go to RStudio menu bar -> File -> New File... -> Shiny -> Give it title "LOESS smoother"
+    1. Let's keep things simple and delete everything after line 38
+    1. Save it as `loess.Rmd`
+    1. Click "Run Document"
+    1. See all possible input methods by looking at cheatsheet. Go to RStudio menu bar -> Help -> Cheatsheets -> Web Applications with Shiny -> Look at right-side of first page.
+
+
+### 2. In-class exercise
+
+First, copy this to your `classnotes.Rmd` and go over code.
+
+
+```r
+library(ggplot2)
+library(dplyr)
+library(gapminder)
+
+# 1. Recreate plot from PS02 but with no color:
+gapminder_2007 <- gapminder %>% 
+  filter(year == 2007)
+
+# 1.a) Add LOESS smoother layer with geom_smooth()
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth()
+
+# 1.b) Remove standard error bars
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth(se = FALSE)
+
+# 1.c) Change span of "smoothing" window by changing span = value. Try different values.
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth(se = FALSE, span = 0.25)
+
+# 1.d) Force line to be straight. i.e. linear regression
+ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+Second, in `loess.Rmd` you're change only the code within the code
+
+```
+renderPlot({ 
     
     
-})</code></pre>
-<p>to make an interactive version of plot 1.c) above.</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec11" class="section level1">
-<h1>Lec 11: Wed 10/2</h1>
-<div id="announcements-26" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>None</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-26" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-20" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Go over Midterm I</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec10" class="section level1">
-<h1>Lec 10: Mon 9/30</h1>
-<div id="announcements-27" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li><a href="midterms.html#midtermI">Midterm I</a> info posted</li>
-<li><a href="projects.html#MP1">Mini-Project 1</a> info posted</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-27" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-21" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Recap of Lec09: Color palettes from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a> <!--
+})
+```
+
+to make an interactive version of plot 1.c) above.
+
+
+
+***
+
+
+
+# Lec 11: Wed 10/2 {#Lec11}
+
+## Announcements
+
+* None
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Go over Midterm I
+
+
+
+
+***
+
+
+
+# Lec 10: Mon 9/30 {#Lec10}
+
+## Announcements
+
+* [Midterm I](midterms.html#midtermI) info posted
+* [Mini-Project 1](projects.html#MP1) info posted
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of Lec09: Color palettes from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}
 + You can also download color palettes in R packages, like the [`viridis` package](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html){target="_blank"}
---></li>
-<li>Student question: What is a <code>tibble</code>?</li>
-<li>Recap of “five named graphs”: ModernDive Table 2.4</li>
-</ul>
-</div>
-<div id="in-class-exercise-21" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Go over ModernDive 2.9. In particular in Section 2.9.3, open the <code>ggplot2</code> cheatsheet in RStudio and read over the different <code>geom</code> types</li>
-<li>Changing default <code>color</code> and <code>fill</code> color aesthetics:
-<ol style="list-style-type: decimal">
-<li>Copy and paste the code below into your <code>classnotes.Rmd</code> file</li>
-<li>Change both the color of the scatterplot points and the fill of the bars. You can do this by selecting a palette from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a> or by setting them manually</li>
-</ol></li>
-</ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb8-3" data-line-number="3"><span class="kw">library</span>(nycflights13)</a>
-<a class="sourceLine" id="cb8-4" data-line-number="4"><span class="kw">library</span>(gapminder)</a>
-<a class="sourceLine" id="cb8-5" data-line-number="5"></a>
-<a class="sourceLine" id="cb8-6" data-line-number="6"><span class="co"># 1. Recreate plot from PS02, but change default &quot;color&quot; palette of points:</span></a>
-<a class="sourceLine" id="cb8-7" data-line-number="7">gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb8-8" data-line-number="8"><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
-<a class="sourceLine" id="cb8-9" data-line-number="9"><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, </a>
-<a class="sourceLine" id="cb8-10" data-line-number="10">       <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop, <span class="dt">color =</span> continent)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb8-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb8-12" data-line-number="12"><span class="st">  </span><span class="kw">scale_color_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
-<a class="sourceLine" id="cb8-13" data-line-number="13"></a>
-<a class="sourceLine" id="cb8-14" data-line-number="14"><span class="co"># 2.a) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by adding a </span></a>
-<a class="sourceLine" id="cb8-15" data-line-number="15"><span class="co"># palette layer:</span></a>
-<a class="sourceLine" id="cb8-16" data-line-number="16"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb8-17" data-line-number="17"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb8-18" data-line-number="18"><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</a>
-<a class="sourceLine" id="cb8-19" data-line-number="19"></a>
-<a class="sourceLine" id="cb8-20" data-line-number="20"><span class="co"># 2.b) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></a>
-<a class="sourceLine" id="cb8-21" data-line-number="21"><span class="co"># changing colors in a layer:</span></a>
-<a class="sourceLine" id="cb8-22" data-line-number="22"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb8-23" data-line-number="23"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb8-24" data-line-number="24"><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;darkorange&quot;</span>, <span class="st">&quot;forestgreen&quot;</span>, <span class="st">&quot;navyblue&quot;</span>))</a>
-<a class="sourceLine" id="cb8-25" data-line-number="25"></a>
-<a class="sourceLine" id="cb8-26" data-line-number="26"><span class="co"># 2.c) Soooooo many choices...</span></a>
-<a class="sourceLine" id="cb8-27" data-line-number="27"><span class="kw">colors</span>()</a></code></pre></div>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec09" class="section level1">
-<h1>Lec 09: Fri 9/27</h1>
-<div id="announcements-28" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Slack:
-<ul>
-<li>How to subscribe to a <code>#channel</code></li>
-<li>Using threads to keep conversations organized</li>
-</ul></li>
-<li>Go over <a href="PS.html#PS03_solutions">PS03 solutions</a></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-28" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-22" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Recap of barplots: Exercise on pie charts vs barplots below</li>
-<li>Color theory
-<ol style="list-style-type: decimal">
-<li><code>color</code> vs <code>fill</code> aesthetics in <code>ggplot2</code></li>
-<li>Selecting a color palette from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a></li>
-<li>How does <code>ggplot2</code> pick default colors? Using a <a href="https://stackoverflow.com/questions/21490210/how-to-plot-a-colour-wheel-by-using-ggplot" target="_blank">color wheel</a></li>
-<li>Get the <a href="https://www.color-hex.com/color/f8766d" target="_blank">color hex codes</a> of <code>ggplot2</code> default color palette:</li>
-</ol></li>
-</ul>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw">library</span>(scales)</a>
-<a class="sourceLine" id="cb9-2" data-line-number="2">number_of_colors &lt;-<span class="st"> </span><span class="dv">3</span></a>
-<a class="sourceLine" id="cb9-3" data-line-number="3"><span class="kw">show_col</span>(<span class="kw">hue_pal</span>()(number_of_colors))</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" /></p>
-</div>
-<div id="exercise-on-pie-charts-vs-barplots" class="section level3">
-<h3>2. Exercise on pie charts vs barplots</h3>
-<p>Say the following piecharts represent results of an election poll at time points: A = September, B = October, and C = November. At each time point we present the proportion of the poll respondents who say they will support one of 5 candidates: 1 through 5.</p>
-<p><img src="static/images/piecharts.png" width="600" /></p>
-<p>Based on these 3 piecharts, answer the following questions:</p>
-<ol style="list-style-type: decimal">
-<li>At time point A, is candidate 5 doing better than candidate 4?</li>
-<li>Did candidate 3 do better at time point B or time point C?</li>
-<li>Who gained more support between time point A and time point B, candidate 2 or candidate 4?</li>
-</ol>
-<p>Compare that to using barplots. Which do you prefer?</p>
-<p><img src="static/images/barplots.png" width="600" /></p>
-</div>
-<div id="in-class-exercise-22" class="section level3">
-<h3>3. In-class exercise</h3>
-<ul>
-<li>Quiz on podcast</li>
-<li>First phase of Mini-Project 1 roll-out</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec08" class="section level1">
-<h1>Lec 08: Mon 9/23</h1>
-<div id="announcements-29" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>No office hours on Wednesday</li>
-<li>In Lec07 below, added image of chalk talk data and boxplot.</li>
-<li>Problem sets: PS01 handed back</li>
-</ul>
-</div>
-<div id="tweet-of-the-day-1" class="section level2">
-<h2>Tweet of the Day</h2>
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">
-We are thrilled to be at <a href="https://twitter.com/Statfest?ref_src=twsrc%5Etfw"><span class="citation">@Statfest</span></a> &amp; engaging with a dedicated community of statisticians! <br><br>We even managed to snag a photo with <a href="https://twitter.com/smithcollege?ref_src=twsrc%5Etfw"><span class="citation">@smithcollege</span></a> alum Portia Exum of <a href="https://twitter.com/SASanalytics?ref_src=twsrc%5Etfw"><span class="citation">@SASanalytics</span></a> before her panel. <a href="https://twitter.com/hashtag/smithieslead?src=hash&amp;ref_src=twsrc%5Etfw">#smithieslead</a> <a href="https://t.co/wloPa7Ybyd">pic.twitter.com/wloPa7Ybyd</a>
-</p>
-— Smith College SDS (<span class="citation">@SmithCollegeSDS</span>) <a href="https://twitter.com/SmithCollegeSDS/status/1175474705605771269?ref_src=twsrc%5Etfw">September 21, 2019</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-<div id="todays-topicsactivities-29" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-23" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Recap of boxplots</li>
-<li>Summary statistics that are robust to outliers: median and IQR</li>
-<li>Barplots</li>
-</ul>
-</div>
-<div id="in-class-exercise-23" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Go over ModernDive 2.8</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec07" class="section level1">
-<h1>Lec 07: Fri 9/20</h1>
-<div id="announcements-30" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Slack:
-<ul>
-<li>Prof. Katie Kinnaird’s TRIPODS+X - Data Science Education Investigation</li>
-<li>Post on <code>#random</code> by Ray</li>
-</ul></li>
-<li>Problem sets:
-<ul>
-<li>PS01 handed back on Monday</li>
-<li>Go over <a href="PS.html#PS02_solutions">PS02 solutions</a></li>
-<li>PS03 posted</li>
-</ul></li>
-<li>Announcement from Smithies in SDS:</li>
-</ul>
-<p><img src="static/images/announcements/SSDS.png" width="450" /> <br></p>
-</div>
-<div id="tweet-of-the-day-2" class="section level2">
-<h2>Tweet of the Day</h2>
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">
-I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://twitter.com/HBO?ref_src=twsrc%5Etfw"><span class="citation">@HBO</span></a> The Wire<br><br>Context: A Johns Hopkins academic presents his research on at-risk youth at a Baltimore middle school <a href="https://twitter.com/hashtag/TheWire?src=hash&amp;ref_src=twsrc%5Etfw">#TheWire</a> <a href="https://t.co/ETC2jYew9v">pic.twitter.com/ETC2jYew9v</a>
-</p>
-— Albert Y. Kim (<span class="citation">@rudeboybert</span>) <a href="https://twitter.com/rudeboybert/status/1174729578373423105?ref_src=twsrc%5Etfw">September 19, 2019</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-<div id="todays-topicsactivities-30" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-24" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Recap of histograms</li>
-<li>Facets to split a visualization by the values of another variable</li>
-<li>Boxplots! Powerful, but tricky!</li>
-</ul>
-<p>Say we want to study the distribution of the following 12 values which are pre-sorted:</p>
-<blockquote>
-<p>1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30</p>
-</blockquote>
-<p>They have the following <em>summary statistics</em>. A summary statistic is a single numerical value <em>summarizing</em> many values. Examples include the immediately obvious mean AKA average and median. Other less immediately obvious examples include:</p>
-<ul>
-<li>Quartiles (1st, 2nd, and 3rd) that cut up the data into 4 parts, each containing roughly one quarter = 25% of the data</li>
-<li>Minimum &amp; maximum</li>
-<li>Interquartile-range (IQR): the distance between the 3rd and 1st quartiles</li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th>Min.</th>
-<th>1st Quartile</th>
-<th>Median = 2nd Quartile</th>
-<th>3rd Quartile</th>
-<th>Max.</th>
-<th>IQR</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>5.5</td>
-<td>8.5</td>
-<td>13.5</td>
-<td>30</td>
-<td>8 = 13.5 - 5.5</td>
-</tr>
-</tbody>
-</table>
-<p>Let’s compare the points and the corresponding boxplot side-by-side with the values on the <span class="math inline">\(y\)</span>-axis matching:</p>
-<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" /></p>
-</div>
-<div id="in-class-exercise-24" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Go over ModernDive 2.6 - 2.7</li>
-<li>Start PS03</li>
-</ul>
-<p>I don’t mind what you do with your class time, but it is very important that you complete the reading before next lecture. Boxplots take practice.</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec06" class="section level1">
-<h1>Lec 06: Wed 9/18</h1>
-<div id="announcements-31" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Prof. Katie Kinnaird’s TRIPODS+X - Data Science Education Investigation</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-31" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-25" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Recap of previous lecture</li>
-<li>Live-demo of creating <code>classnotes.Rmd</code>, an R Markdown file of all in-class exercise code: Write and copy/paste/tweak code in <code>classnotes.Rmd</code> and not in console. That way you can save it!</li>
-<li>Histograms for visualizing distribution of a numerical variable.</li>
-</ul>
-</div>
-<div id="in-class-exercise-25" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Go over ModernDive 2.5</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec05" class="section level1">
-<h1>Lec 05: Mon 9/16</h1>
-<div id="announcements-32" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Slack message: Abandoning RStudio Cloud in favor of RStudio Desktop.</li>
-<li>The art of managing Slack notifications</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-32" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-26" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Recap of previous lecture</li>
-<li>Overplotting and two approaches for addressing it</li>
-<li>Linegraphs</li>
-</ul>
-</div>
-<div id="in-class-exercise-26" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Go over ModernDive 2.3.2 - 2.4</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec04" class="section level1">
-<h1>Lec 04: Fri 9/13</h1>
-<div id="announcements-33" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Screencast from last lecture posted</li>
-<li>I’m currently investigating issue with RStudio Cloud being slow</li>
-<li>PS02 posted under <a href="PS.html">Problem Sets</a></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-33" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-27" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Recap of previous lecture</li>
-<li>R Markdown for <em>reproducible research</em></li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th><strong>Input</strong>: An <code>.Rmd</code> file</th>
-<th><strong>Output</strong>: An <code>.html</code> webpage</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><img src="static/images/rmd_input.png" width="800" /></td>
-<td><img src="static/images/rmd_output.png" width="800" /></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="in-class-exercise-27" class="section level3">
-<h3>2. In-class exercise</h3>
-<ol style="list-style-type: decimal">
-<li>At a couple of steps in this process, you will be asked to install packages. Say yes to all of them!</li>
-<li><strong>Fiddle with RStudio settings</strong>:
-<ul>
-<li>Go to RStudio menu bar -&gt; Tools -&gt; Global Options… -&gt; R Markdown</li>
-<li>Uncheck box next to “Show output inline for all R Markdown Documents”</li>
-</ul></li>
-<li><strong>Create new R Markdown <code>.Rmd</code> file</strong>:
-<ul>
-<li>Go to RStudio menu bar -&gt; File -&gt; New File -&gt; R Markdown</li>
-<li>Set “Title” to “My first R Markdown report” and “Author” as your name.</li>
-</ul></li>
-<li><strong>“Knit” a report</strong>:
-<ul>
-<li>Click on the disk icon and save this file as <code>testing</code> somewhere on your computer. This will create a file called <code>testing.Rmd</code></li>
-<li>Click the arrow next to “Knit” -&gt; “Knit to HTML”.</li>
-<li>An HTML webpage should pop up. However, it may be blocked by your browser. If so, in your browser’s URL bar on the right, click on “Always allow pop-ups”.</li>
-</ul></li>
-<li><strong>Publish this report on web</strong>:
-<ul>
-<li>Click on blue “Publish” button on top right of the resulting <strong>pop-up html</strong>.</li>
-<li>Select RPubs.</li>
-<li>If you haven’t previously, create an account on Rpubs.com. If you have previously, login.</li>
-<li>Set “Title” to “My first R Markdown report” and “Slug” to “testing”</li>
-<li>You should end up with a webpage that looks like this <a href="http://rpubs.com/rudeboybert/testing" target="_blank">one</a>. This is live on the web!</li>
-</ul></li>
-<li><strong>Update your report on web</strong>:
-<ul>
-<li>Make some trivial change to your <code>testing.Rmd</code> file.</li>
-<li>“Re-knit” your report and make sure your trivial change is reflected.</li>
-<li>The blue “Publish” button should now read “Republish”</li>
-<li>Click “Update existing”</li>
-<li>Your updates are now live on the web!</li>
-</ul></li>
-<li><strong>Bonus</strong>: Play around with different formatting tools in R Markdown to customize your report! Go to RStudio menu bar -&gt; Help -&gt; Markdown quick reference.</li>
-</ol>
-<p><strong>Tips on R Markdown</strong>:</p>
-<ol style="list-style-type: decimal">
-<li>Knit early, knit often! If you wait until only after you’ve added a ton of code to knit and something doesn’t work, you’ll have a hard time figuring out where the error is. If you make incremental changes and knit after every step, you’ll better able to isolate where errors are.</li>
-<li>If you get stuck, <strong>go through these <a href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/" target="_blank">6 R Markdown Fixes</a> first</strong>, then seek assistance. These 6 fixes resolve 85% of issues in my experience.</li>
-</ol>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec03" class="section level1">
-<h1>Lec 03: Wed 9/11</h1>
-<div id="announcements-34" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Slack updates: custom emojis and vote in today’s poll!</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-34" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-28" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Recap of previous lecture</li>
-<li>Grammar of Graphics</li>
-<li>Screencast of “Doing ModernDive readings”. In particular the idea of “Running R code in RStudio”:</li>
-</ul>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/79aPogjtGm4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p></br></p>
-</div>
-<div id="in-class-exercise-28" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Go over ModernDive 2 - 2.3.1.</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec02" class="section level1">
-<h1>Lec 02: Mon 9/9</h1>
-<div id="announcements-35" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li><a href="syllabus.html">Syllabus</a> finalized.</li>
-<li>Problem Set 01 due this Friday posted under <a href="PS.html">Problem Sets</a>.</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-35" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-29" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Intro to Slack <a href="static/intro_to_slack.pdf" target="_blank">slides</a></li>
-<li>What is difference between R and RStudio?</li>
-<li>What are R packages?</li>
-</ul>
-</div>
-<div id="in-class-exercise-29" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Set up RStudio Cloud:
-<ul>
-<li>Click <a href="https://rstudio.cloud/spaces/28268/join?access_code=qLpXUY0xlUFnViI1SB0Q%2FWd%2BEBw9zzL%2BC%2B8xe65F" target="_blank">here</a> to join the “SDS192” Workspace.</li>
-<li>Click on “New Project”</li>
-<li>Name it “Class Notes”</li>
-</ul></li>
-<li>Go over ModernDive reading in schedule above.</li>
-</ul>
-<p><em>About readings in this course</em>:</p>
-<ul>
-<li>You are responsible for completing a lecture’s readings before the next lecture. Ex: you are responsible to read all of ModernDive Chapter 1 before Wednesday.</li>
-<li>I teach lectures assuming you have not done the readings beforehand. However, if it suits your learning style better, please do read beforehand.</li>
-<li>While you don’t need to turn in your learning check answers, I <em>highly</em> recommend you still do them. The solutions are in Appendix D of the book.</li>
-<li>If you have your headphones, you may listen to music during in-class reading time.</li>
-</ul>
-<hr />
-</div>
-</div>
+* Student question: What is a `tibble`?
+* Recap of "five named graphs": ModernDive Table 2.4
+ 
+
+### 2. In-class exercise
+
+* Go over ModernDive 2.9. In particular in Section 2.9.3, open the `ggplot2` cheatsheet in RStudio and read over the different `geom` types
+* Changing default `color` and `fill` color aesthetics: 
+    1. Copy and paste the code below into your `classnotes.Rmd` file
+    1. Change both the color of the scatterplot points and the fill of the bars. You can do this by selecting a palette from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"} or by setting them manually
+
+
+```r
+library(ggplot2)
+library(dplyr)
+library(nycflights13)
+library(gapminder)
+
+# 1. Recreate plot from PS02, but change default "color" palette of points:
+gapminder_2007 <- gapminder %>% 
+  filter(year == 2007)
+ggplot(data = gapminder_2007, 
+       mapping = aes(x = gdpPercap, y = lifeExp, size = pop, color = continent)) +
+  geom_point() +
+  scale_color_brewer(palette = "Set1")
+
+# 2.a) Recreate Figure 2.26 but change default "fill" color of bars by adding a 
+# palette layer:
+ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
+  geom_bar(position = position_dodge(preserve = "single")) +
+  scale_fill_brewer(palette = "Set1")
+
+# 2.b) Recreate Figure 2.26 but change default "fill" color of bars by manually 
+# changing colors in a layer:
+ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
+  geom_bar(position = position_dodge(preserve = "single")) +
+  scale_fill_manual(values = c("darkorange", "forestgreen", "navyblue"))
+
+# 2.c) Soooooo many choices...
+colors()
+```
+
+
+
+***
+
+
+
+# Lec 09: Fri 9/27 {#Lec09}
+
+## Announcements
+
+* Slack:
+    + How to subscribe to a `#channel`
+    + Using threads to keep conversations organized
+* Go over [PS03 solutions](PS.html#PS03_solutions)
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of barplots: Exercise on pie charts vs barplots below
+* Color theory
+    1. `color` vs `fill` aesthetics in `ggplot2`
+    1. Selecting a color palette from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}
+    1. How does `ggplot2` pick default colors? Using a [color wheel](https://stackoverflow.com/questions/21490210/how-to-plot-a-colour-wheel-by-using-ggplot){target="_blank"}
+    1. Get the [color hex codes](https://www.color-hex.com/color/f8766d){target="_blank"} of `ggplot2` default color palette:
+    
+
+```r
+library(scales)
+number_of_colors <- 3
+show_col(hue_pal()(number_of_colors))
+```
+
+<img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" />
+
+    
+### 2. Exercise on pie charts vs barplots
+
+Say the following piecharts represent results of an election poll at time points: A = September, B = October, and C = November. At each time point we present the proportion of the poll respondents who say they will support one of 5 candidates: 1 through 5. 
+
+![](static/images/piecharts.png){ width=600px }
+
+Based on these 3 piecharts, answer the following questions:
+
+1. At time point A, is candidate 5 doing better than candidate 4?
+1. Did candidate 3 do better at time point B or time point C?
+1. Who gained more support between time point A and time point B, candidate 2 or candidate 4?
+
+
+Compare that to using barplots. Which do you prefer?
+
+![](static/images/barplots.png){ width=600px }
+
+
+
+
+### 3. In-class exercise
+
+* Quiz on podcast
+* First phase of Mini-Project 1 roll-out
+
+
+
+***
+
+
+
+# Lec 08: Mon 9/23 {#Lec08}
+
+## Announcements
+
+* No office hours on Wednesday
+* In Lec07 below, added image of chalk talk data and boxplot.
+* Problem sets: PS01 handed back
+
+## Tweet of the Day
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We are thrilled to be at <a href="https://twitter.com/Statfest?ref_src=twsrc%5Etfw">@Statfest</a> &amp; engaging with a dedicated community of statisticians! <br><br>We even managed to snag a photo with <a href="https://twitter.com/smithcollege?ref_src=twsrc%5Etfw">@smithcollege</a> alum Portia Exum of <a href="https://twitter.com/SASanalytics?ref_src=twsrc%5Etfw">@SASanalytics</a> before her panel. <a href="https://twitter.com/hashtag/smithieslead?src=hash&amp;ref_src=twsrc%5Etfw">#smithieslead</a> <a href="https://t.co/wloPa7Ybyd">pic.twitter.com/wloPa7Ybyd</a></p>&mdash; Smith College SDS (@SmithCollegeSDS) <a href="https://twitter.com/SmithCollegeSDS/status/1175474705605771269?ref_src=twsrc%5Etfw">September 21, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of boxplots
+* Summary statistics that are robust to outliers: median and IQR
+* Barplots
+
+
+### 2. In-class exercise
+
+* Go over ModernDive 2.8
+
+
+
+***
+
+
+
+# Lec 07: Fri 9/20 {#Lec07}
+
+## Announcements
+
+* Slack:
+    + Prof. Katie Kinnaird's TRIPODS+X - Data Science Education Investigation
+    + Post on `#random` by Ray
+* Problem sets:
+    + PS01 handed back on Monday
+    + Go over [PS02 solutions](PS.html#PS02_solutions)
+    + PS03 posted
+* Announcement from Smithies in SDS:
+
+![](static/images/announcements/SSDS.png){ width=450px }
+<br>   
+
+
+
+
+
+## Tweet of the Day
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://twitter.com/HBO?ref_src=twsrc%5Etfw">@HBO</a> The Wire<br><br>Context: A Johns Hopkins academic presents his research on at-risk youth at a Baltimore middle school <a href="https://twitter.com/hashtag/TheWire?src=hash&amp;ref_src=twsrc%5Etfw">#TheWire</a> <a href="https://t.co/ETC2jYew9v">pic.twitter.com/ETC2jYew9v</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1174729578373423105?ref_src=twsrc%5Etfw">September 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of histograms
+* Facets to split a visualization by the values of another variable
+* Boxplots! Powerful, but tricky!
+
+
+
+
+Say we want to study the distribution of the following 12 values which are pre-sorted: 
+
+> 1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30
+
+They have the following *summary statistics*. A summary statistic is a single numerical value *summarizing* many values. Examples include the immediately obvious mean AKA average and median. Other less immediately obvious examples include:
+
+* Quartiles (1st, 2nd, and 3rd) that cut up the data into 4 parts, each containing roughly one quarter = 25% of the data
+* Minimum & maximum
+* Interquartile-range (IQR): the distance between the 3rd and 1st quartiles
+
+Min. | 1st Quartile | Median = 2nd Quartile  | 3rd Quartile  |  Max. | IQR
+---- | ------- | ------  |  ------- | --- | ---
+1  |  5.5 |  8.5  |  13.5  | 30 | 8 = 13.5 - 5.5
+
+
+Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
+
+<img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" />
+
+
+### 2. In-class exercise
+
+* Go over ModernDive 2.6 - 2.7
+* Start PS03
+
+I don't mind what you do with your class time, but it is very important that you complete the reading before next lecture. Boxplots take practice.
+
+
+***
+
+
+
+
+# Lec 06: Wed 9/18 {#Lec06}
+
+## Announcements
+
+* Prof. Katie Kinnaird's TRIPODS+X - Data Science Education Investigation
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of previous lecture
+* Live-demo of creating `classnotes.Rmd`, an R Markdown file of all in-class exercise code: Write and copy/paste/tweak code in `classnotes.Rmd` and not in console. That way you can save it!
+* Histograms for visualizing distribution of a numerical variable.
+
+
+### 2. In-class exercise
+
+* Go over ModernDive 2.5
+
+
+
+***
+
+
+
+# Lec 05: Mon 9/16 {#Lec05}
+
+## Announcements
+
+* Slack message: Abandoning RStudio Cloud in favor of RStudio Desktop.
+* The art of managing Slack notifications
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of previous lecture
+* Overplotting and two approaches for addressing it
+* Linegraphs
+
+### 2. In-class exercise
+
+* Go over ModernDive 2.3.2 - 2.4
+
+
+
+***
+
+
+
+# Lec 04: Fri 9/13 {#Lec04}
+
+## Announcements
+
+* Screencast from last lecture posted
+* I'm currently investigating issue with RStudio Cloud being slow
+* PS02 posted under [Problem Sets](PS.html)
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of previous lecture
+* R Markdown for *reproducible research*
+
+**Input**: An `.Rmd` file  | **Output**: An `.html` webpage
+------------- | -------------
+![](static/images/rmd_input.png){ width=800px } | ![](static/images/rmd_output.png){ width=800px }
+
+
+### 2. In-class exercise
+
+1. At a couple of steps in this process, you will be asked to install packages. Say yes to all of them!
+1. **Fiddle with RStudio settings**:
+    + Go to RStudio menu bar -> Tools -> Global Options... -> R Markdown
+    + Uncheck box next to "Show output inline for all R Markdown Documents"
+1. **Create new R Markdown `.Rmd` file**:
+    + Go to RStudio menu bar -> File -> New File -> R Markdown 
+    + Set "Title" to "My first R Markdown report" and "Author" as your name.
+1. **"Knit" a report**:
+    + Click on the disk icon and save this file as `testing` somewhere on your computer. This will create a file called `testing.Rmd`
+    + Click the arrow next to "Knit" -> "Knit to HTML".
+    + An HTML webpage should pop up. However, it may be blocked by your browser. If so, in your browser's URL bar on the right, click on "Always allow pop-ups".
+1. **Publish this report on web**:
+    + Click on blue "Publish" button on top right of the resulting **pop-up html**.
+    + Select RPubs.
+    + If you haven't previously, create an account on Rpubs.com. If you have previously, login.
+    + Set "Title" to "My first R Markdown report" and "Slug" to "testing"
+    + You should end up with a webpage that looks like this [one](http://rpubs.com/rudeboybert/testing){target="_blank"}. This is live on the web!
+1. **Update your report on web**:
+    + Make some trivial change to your `testing.Rmd` file.
+    + "Re-knit" your report and make sure your trivial change is reflected.
+    + The blue "Publish" button should now read "Republish"
+    + Click "Update existing"
+    + Your updates are now live on the web!
+1. **Bonus**: Play around with different formatting tools in R Markdown to customize your report! Go to RStudio menu bar -> Help -> Markdown quick reference.
+
+
+**Tips on R Markdown**:
+
+1. Knit early, knit often! If you wait until only after you've added a ton of code to knit and something doesn't work, you'll have a hard time figuring out where the error is. If you make incremental changes and knit after every step, you'll better able to isolate where errors are.
+1. If you get stuck, **go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first**, then seek assistance. These 6 fixes resolve 85% of issues in my experience.
+
+
+
+***
+
+
+
+# Lec 03: Wed 9/11 {#Lec03}
+
+## Announcements
+
+* Slack updates: custom emojis and vote in today's poll!
+
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Recap of previous lecture
+* Grammar of Graphics
+* Screencast of "Doing ModernDive readings". In particular the idea of "Running R code in RStudio":
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/79aPogjtGm4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</br>
+
+### 2. In-class exercise
+
+* Go over ModernDive 2 - 2.3.1.
+
+
+
+***
+
+
+
+# Lec 02: Mon 9/9 {#Lec02}
+
+## Announcements
+
+* [Syllabus](syllabus.html) finalized.
+* Problem Set 01 due this Friday posted under [Problem Sets](PS.html).
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Intro to Slack [slides](static/intro_to_slack.pdf){target="_blank"}
+* What is difference between R and RStudio?
+* What are R packages?
+
+
+### 2. In-class exercise
+
+* Set up RStudio Cloud:
+    + Click [here](https://rstudio.cloud/spaces/28268/join?access_code=qLpXUY0xlUFnViI1SB0Q%2FWd%2BEBw9zzL%2BC%2B8xe65F){target="_blank"} to join the "SDS192" Workspace.
+    + Click on "New Project"
+    + Name it "Class Notes"
+* Go over ModernDive reading in schedule above. 
+
+*About readings in this course*:
+
+* You are responsible for completing a lecture's readings before the next lecture. Ex: you are responsible to read all of ModernDive Chapter 1 before Wednesday.
+* I teach lectures assuming you have not done the readings beforehand. However, if it suits your learning style better, please do read beforehand.
+* While you don't need to turn in your learning check answers, I *highly* recommend you still do them. The solutions are in Appendix D of the book.
+* If you have your headphones, you may listen to music during in-class reading time.
+
+
+
+***
+-->
 </div>
 <div id="Lec01" class="section level1">
-<h1>Lec 01: Fri 9/6</h1>
-<div id="announcements-36" class="section level2">
+<h1>Lec 01: Fri 9/3</h1>
+<div id="announcements" class="section level2">
 <h2>Announcements</h2>
 <p>Welcome!</p>
 </div>
-<div id="todays-topicsactivities-36" class="section level2">
+<div id="todays-topicsactivities" class="section level2">
 <h2>Today’s topics/activities</h2>
 <ul>
 <li>My story.</li>
@@ -2009,7 +1813,7 @@ I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://t
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -2027,7 +1831,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -2036,6 +1840,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
@@ -2048,7 +1855,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

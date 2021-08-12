@@ -19,19 +19,45 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
-<style type="text/css">code{white-space: pre;}</style>
+
+<style type="text/css">
+  code {
+    white-space: pre;
+  }
+  .sourceCode {
+    overflow: visible;
+  }
+</style>
 <style type="text/css" data-origin="pandoc">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -41,14 +67,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -57,9 +85,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  { background-color: #f8f8f8; }
+  {  background-color: #f8f8f8; }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
@@ -112,39 +140,9 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
   }
 })();
 </script>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 
@@ -154,10 +152,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -174,40 +168,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -235,7 +202,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -247,7 +214,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -258,10 +225,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -273,7 +253,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -399,7 +378,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -431,21 +410,9 @@ div.tocify {
 <li>
   <a href="https://moderndive.netlify.com/">ModernDive</a>
 </li>
-<li>
-  <a href="tips_and_tricks.html">Tips &amp; Tricks</a>
-</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="PS.html">Problem Sets</a>
-</li>
-<li>
-  <a href="projects.html">Projects</a>
-</li>
-<li>
-  <a href="midterms.html">Midterms</a>
-</li>
-<li>
   <a href="syllabus.html">Syllabus</a>
 </li>
       </ul>
@@ -453,7 +420,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -474,23 +441,23 @@ h1{font-weight: 400;}
 <div id="administrative-notes" class="section level2">
 <h2>Administrative notes</h2>
 <ul>
-<li><strong>Friday 10/4 5pm through Sunday 10/6 11:55pm</strong>. You must submit your midterm no later than Sunday at 11:55pm.</li>
+<li><p><strong>Friday 10/4 5pm through Sunday 10/6 11:55pm</strong>. You must submit your midterm no later than Sunday at 11:55pm.</p></li>
 <li><p>Instructions on taking exams for <a href="https://sophia.smith.edu/edtech/documentation/print-an-exam-from-the-direct-to-queue-application/" target="_blank">Smithies</a> and <a href="https://sophia.smith.edu/edtech/documentation/special-instructions-for-five-college-and-high-school-students-using-direct-to-queue-exam-printing/" target="_blank">Five College Students</a>. <strong>Print the exam in color.</strong></p></li>
-<li>Notes for before exam:
+<li><p>Notes for before exam:</p>
 <ul>
 <li>Link to print exam in the Seelye basement lab is posted on Moodle.</li>
 <li>Bring colored pencils/pens.</li>
 <li>You do not need a calculator.</li>
 <li>Print exam in color.</li>
 </ul></li>
-<li>Notes for during exam:
+<li><p>Notes for during exam:</p>
 <ul>
 <li>Closed-book, no internet, and individually completed.</li>
 <li>You will be given 140 mins to complete it (including transit time to writing area), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.</li>
 <li><strong>Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to a 50% penalty and an honor board case.</strong></li>
 <li>In case of potential errors or ambiguity on the exam, please note them, state your assumptions, and use your best judgement.</li>
 </ul></li>
-<li>Notes for after exam:
+<li><p>Notes for after exam:</p>
 <ul>
 <li>Be sure to timestamp your exam before returning.</li>
 <li>Insert exam in appropriately labeled box in hallway.</li>
@@ -518,28 +485,28 @@ h1{font-weight: 400;}
 <div id="visualizations-from-midterm" class="section level2">
 <h2>Visualizations from midterm</h2>
 <p>Question 2.b):</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">example &lt;-<span class="st"> </span><span class="kw">tibble</span>(</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">  <span class="dt">type =</span> <span class="kw">c</span>(<span class="st">&quot;D&quot;</span>, <span class="st">&quot;B&quot;</span>, <span class="st">&quot;A&quot;</span>, <span class="st">&quot;C&quot;</span>), </a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">  <span class="dt">fruit =</span> <span class="kw">c</span>(<span class="st">&quot;apple&quot;</span>, <span class="st">&quot;apple&quot;</span>, <span class="st">&quot;orange&quot;</span>, <span class="st">&quot;orange&quot;</span>),</a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">  <span class="dt">city =</span> <span class="kw">c</span>(<span class="st">&quot;Toronto&quot;</span>, <span class="st">&quot;Montreal&quot;</span>, <span class="st">&quot;Toronto&quot;</span>, <span class="st">&quot;Montreal&quot;</span>),</a>
-<a class="sourceLine" id="cb1-7" data-line-number="7">  <span class="dt">number =</span> <span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">2</span>, <span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb1-8" data-line-number="8">)</a>
-<a class="sourceLine" id="cb1-9" data-line-number="9"></a>
-<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="kw">ggplot</span>(<span class="dt">data =</span> example, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> type, <span class="dt">y =</span> number)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_col</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Type&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Number&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3"></a>example &lt;-<span class="st"> </span><span class="kw">tibble</span>(</span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="dt">type =</span> <span class="kw">c</span>(<span class="st">&quot;D&quot;</span>, <span class="st">&quot;B&quot;</span>, <span class="st">&quot;A&quot;</span>, <span class="st">&quot;C&quot;</span>), </span>
+<span id="cb1-5"><a href="#cb1-5"></a>  <span class="dt">fruit =</span> <span class="kw">c</span>(<span class="st">&quot;apple&quot;</span>, <span class="st">&quot;apple&quot;</span>, <span class="st">&quot;orange&quot;</span>, <span class="st">&quot;orange&quot;</span>),</span>
+<span id="cb1-6"><a href="#cb1-6"></a>  <span class="dt">city =</span> <span class="kw">c</span>(<span class="st">&quot;Toronto&quot;</span>, <span class="st">&quot;Montreal&quot;</span>, <span class="st">&quot;Toronto&quot;</span>, <span class="st">&quot;Montreal&quot;</span>),</span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="dt">number =</span> <span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">2</span>, <span class="dv">1</span>)</span>
+<span id="cb1-8"><a href="#cb1-8"></a>)</span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> example, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> type, <span class="dt">y =</span> number)) <span class="op">+</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="st">  </span><span class="kw">geom_col</span>() <span class="op">+</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Type&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Number&quot;</span>)</span></code></pre></div>
 <p><img src="midterms_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
 <p>Question 2.c):</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">ggplot</span>(<span class="dt">data =</span> example, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> fruit)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_bar</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Fruit&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Number&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> example, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> fruit)) <span class="op">+</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="st">  </span><span class="kw">geom_bar</span>() <span class="op">+</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Fruit&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Number&quot;</span>)</span></code></pre></div>
 <p><img src="midterms_files/figure-html/unnamed-chunk-3-1.png" width="768" /></p>
 <p>Question 2.d):</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">ggplot</span>(<span class="dt">data =</span> example, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> fruit, <span class="dt">y =</span> number, <span class="dt">fill =</span> city)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_col</span>(<span class="dt">position =</span> <span class="st">&quot;dodge&quot;</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Fruit&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Number&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;City&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> example, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> fruit, <span class="dt">y =</span> number, <span class="dt">fill =</span> city)) <span class="op">+</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="st">  </span><span class="kw">geom_col</span>(<span class="dt">position =</span> <span class="st">&quot;dodge&quot;</span>) <span class="op">+</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Fruit&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Number&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;City&quot;</span>)</span></code></pre></div>
 <p><img src="midterms_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
 <p>Question 3:</p>
 <p><img src="midterms_files/figure-html/unnamed-chunk-5-1.png" width="768" /></p>
@@ -553,23 +520,23 @@ h1{font-weight: 400;}
 <div id="administrative-notes-1" class="section level2">
 <h2>Administrative notes</h2>
 <ul>
-<li><strong>Friday 11/8 5pm through Sunday 11/10 11:55pm</strong>. You must submit your midterm no later than Sunday at 11:55pm.</li>
+<li><p><strong>Friday 11/8 5pm through Sunday 11/10 11:55pm</strong>. You must submit your midterm no later than Sunday at 11:55pm.</p></li>
 <li><p>Instructions on taking exams for <a href="https://sophia.smith.edu/edtech/documentation/print-an-exam-from-the-direct-to-queue-application/" target="_blank">Smithies</a> and <a href="https://sophia.smith.edu/edtech/documentation/special-instructions-for-five-college-and-high-school-students-using-direct-to-queue-exam-printing/" target="_blank">Five College Students</a>. <strong>Print the exam in color.</strong></p></li>
-<li>Notes for before exam:
+<li><p>Notes for before exam:</p>
 <ul>
 <li>Link to print exam in the Seelye basement lab is posted on Moodle.</li>
 <li>Bring colored pencils/pens.</li>
 <li>You do not need a calculator.</li>
 <li>Print exam in color.</li>
 </ul></li>
-<li>Notes for during exam:
+<li><p>Notes for during exam:</p>
 <ul>
 <li>Closed-book, no internet, and individually completed.</li>
 <li>You will be given 140 mins to complete it (including transit time to writing area), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.</li>
 <li><strong>Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case and depending on decision a 50% penalty.</strong></li>
 <li>In case of potential errors or ambiguity on the exam, please note them, state your assumptions, and use your best judgement.</li>
 </ul></li>
-<li>Notes for after exam:
+<li><p>Notes for after exam:</p>
 <ul>
 <li>Be sure to timestamp your exam before returning.</li>
 <li>Insert exam in appropriately labeled box in hallway.</li>
@@ -606,14 +573,13 @@ h1{font-weight: 400;}
 </div>
 <div id="practice-midterm-notes" class="section level2">
 <h2>Practice midterm notes</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="kw">library</span>(fivethirtyeight)</a>
-<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="kw">library</span>(nycflights13)</a>
-<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="kw">library</span>(babynames)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">library</span>(fivethirtyeight)</span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="kw">library</span>(nycflights13)</span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="kw">library</span>(babynames)</span></code></pre></div>
 <div id="question-1" class="section level3">
 <h3>Question 1</h3>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">babynames</a></code></pre></div>
-<pre><code>## # A tibble: 1,924,665 x 5
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>babynames</span></code></pre></div>
+<pre><code>## # A tibble: 1,924,665 × 5
 ##     year sex   name          n   prop
 ##    &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;     &lt;int&gt;  &lt;dbl&gt;
 ##  1  1880 F     Mary       7065 0.0724
@@ -630,36 +596,36 @@ h1{font-weight: 400;}
 </div>
 <div id="question-2" class="section level3">
 <h3>Question 2</h3>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw">nrow</span>(weather)</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">nrow</span>(weather)</span></code></pre></div>
 <pre><code>## [1] 26115</code></pre>
 </div>
 <div id="question-4" class="section level3">
 <h3>Question 4</h3>
 <p>Based on <a href="https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/" target="_blank">Dear Mona Followup: Where Do People Drink The Most Beer, Wine And Spirits?</a>.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="co"># drinks is not &quot;tidy&quot;</span></a>
-<a class="sourceLine" id="cb9-2" data-line-number="2">drinks</a></code></pre></div>
-<pre><code>## # A tibble: 193 x 5
-##    country      beer_servings spirit_servings wine_servings total_litres_of_pur…
-##    &lt;chr&gt;                &lt;int&gt;           &lt;int&gt;         &lt;int&gt;                &lt;dbl&gt;
-##  1 Afghanistan              0               0             0                  0  
-##  2 Albania                 89             132            54                  4.9
-##  3 Algeria                 25               0            14                  0.7
-##  4 Andorra                245             138           312                 12.4
-##  5 Angola                 217              57            45                  5.9
-##  6 Antigua &amp; B…           102             128            45                  4.9
-##  7 Argentina              193              25           221                  8.3
-##  8 Armenia                 21             179            11                  3.8
-##  9 Australia              261              72           212                 10.4
-## 10 Austria                279              75           191                  9.7
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># drinks is not &quot;tidy&quot;</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a>drinks</span></code></pre></div>
+<pre><code>## # A tibble: 193 × 5
+##    country           beer_servings spirit_servings wine_servings total_litres_of…
+##    &lt;chr&gt;                     &lt;int&gt;           &lt;int&gt;         &lt;int&gt;            &lt;dbl&gt;
+##  1 Afghanistan                   0               0             0              0  
+##  2 Albania                      89             132            54              4.9
+##  3 Algeria                      25               0            14              0.7
+##  4 Andorra                     245             138           312             12.4
+##  5 Angola                      217              57            45              5.9
+##  6 Antigua &amp; Barbuda           102             128            45              4.9
+##  7 Argentina                   193              25           221              8.3
+##  8 Armenia                      21             179            11              3.8
+##  9 Australia                   261              72           212             10.4
+## 10 Austria                     279              75           191              9.7
 ## # … with 183 more rows</code></pre>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1">drinks_tidy &lt;-<span class="st"> </span>drinks <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb11-2" data-line-number="2"><span class="st">  </span><span class="co"># Convert to &quot;tidy&quot;</span></a>
-<a class="sourceLine" id="cb11-3" data-line-number="3"><span class="st">  </span><span class="kw">pivot_longer</span>(<span class="dt">cols =</span> <span class="kw">ends_with</span>(<span class="st">&quot;servings&quot;</span>), <span class="dt">names_to =</span> <span class="st">&quot;type&quot;</span>, <span class="dt">values_to =</span> <span class="st">&quot;servings&quot;</span>) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb11-4" data-line-number="4"><span class="st">  </span><span class="co"># Do text manipulation: only characters 1 thru 10. this trims off &quot;_servings&quot;</span></a>
-<a class="sourceLine" id="cb11-5" data-line-number="5"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">type =</span> <span class="kw">str_sub</span>(type, <span class="dt">start=</span><span class="dv">1</span>, <span class="dt">end=</span><span class="op">-</span><span class="dv">10</span>)) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb11-6" data-line-number="6"><span class="st">  </span><span class="kw">arrange</span>(country, type)</a>
-<a class="sourceLine" id="cb11-7" data-line-number="7">drinks_tidy</a></code></pre></div>
-<pre><code>## # A tibble: 579 x 4
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>drinks_tidy &lt;-<span class="st"> </span>drinks <span class="op">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="st">  </span><span class="co"># Convert to &quot;tidy&quot;</span></span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="st">  </span><span class="kw">pivot_longer</span>(<span class="dt">cols =</span> <span class="kw">ends_with</span>(<span class="st">&quot;servings&quot;</span>), <span class="dt">names_to =</span> <span class="st">&quot;type&quot;</span>, <span class="dt">values_to =</span> <span class="st">&quot;servings&quot;</span>) <span class="op">%&gt;%</span></span>
+<span id="cb11-4"><a href="#cb11-4"></a><span class="st">  </span><span class="co"># Do text manipulation: only characters 1 thru 10. this trims off &quot;_servings&quot;</span></span>
+<span id="cb11-5"><a href="#cb11-5"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">type =</span> <span class="kw">str_sub</span>(type, <span class="dt">start=</span><span class="dv">1</span>, <span class="dt">end=</span><span class="op">-</span><span class="dv">10</span>)) <span class="op">%&gt;%</span></span>
+<span id="cb11-6"><a href="#cb11-6"></a><span class="st">  </span><span class="kw">arrange</span>(country, type)</span>
+<span id="cb11-7"><a href="#cb11-7"></a>drinks_tidy</span></code></pre></div>
+<pre><code>## # A tibble: 579 × 4
 ##    country     total_litres_of_pure_alcohol type   servings
 ##    &lt;chr&gt;                              &lt;dbl&gt; &lt;chr&gt;     &lt;int&gt;
 ##  1 Afghanistan                          0   beer          0
@@ -673,9 +639,9 @@ h1{font-weight: 400;}
 ##  9 Algeria                              0.7 wine         14
 ## 10 Andorra                             12.4 beer        245
 ## # … with 569 more rows</code></pre>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="kw">ggplot</span>(drinks_tidy, <span class="kw">aes</span>(<span class="dt">x =</span> type, <span class="dt">y =</span> servings)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb13-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_boxplot</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb13-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Alcohol type&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Number of servings&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="kw">ggplot</span>(drinks_tidy, <span class="kw">aes</span>(<span class="dt">x =</span> type, <span class="dt">y =</span> servings)) <span class="op">+</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a><span class="st">  </span><span class="kw">geom_boxplot</span>() <span class="op">+</span></span>
+<span id="cb13-3"><a href="#cb13-3"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Alcohol type&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Number of servings&quot;</span>)</span></code></pre></div>
 <p><img src="midterms_files/figure-html/unnamed-chunk-10-1.png" width="768" /></p>
 </div>
 <div id="question-6" class="section level3">
@@ -687,14 +653,13 @@ h1{font-weight: 400;}
 <li>to answer the question if the “women and children”-first policy of the White Star Line Company (the company that ran the Titanic) held true or not.</li>
 </ul>
 <p>Note: you don’t need to calculate the output table, just write the pseudocode that would produce it where the more concise the pseudocode the better. Here is what the <code>Titanic</code> data looks like:\</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
-<a class="sourceLine" id="cb14-2" data-line-number="2"><span class="kw">data</span>(Titanic)</a>
-<a class="sourceLine" id="cb14-3" data-line-number="3"><span class="co"># Convert to tibble i.e. data frame</span></a>
-<a class="sourceLine" id="cb14-4" data-line-number="4">Titanic &lt;-<span class="st"> </span>Titanic <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb14-5" data-line-number="5"><span class="st">  </span><span class="kw">as_tibble</span>()</a>
-<a class="sourceLine" id="cb14-6" data-line-number="6"></a>
-<a class="sourceLine" id="cb14-7" data-line-number="7">Titanic</a></code></pre></div>
-<pre><code>## # A tibble: 32 x 5
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="kw">data</span>(Titanic)</span>
+<span id="cb14-2"><a href="#cb14-2"></a><span class="co"># Convert to tibble i.e. data frame</span></span>
+<span id="cb14-3"><a href="#cb14-3"></a>Titanic &lt;-<span class="st"> </span>Titanic <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb14-4"><a href="#cb14-4"></a><span class="st">  </span><span class="kw">as_tibble</span>()</span>
+<span id="cb14-5"><a href="#cb14-5"></a></span>
+<span id="cb14-6"><a href="#cb14-6"></a>Titanic</span></code></pre></div>
+<pre><code>## # A tibble: 32 × 5
 ##    Class Sex    Age   Survived     n
 ##    &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;    &lt;dbl&gt;
 ##  1 1st   Male   Child No           0
@@ -713,10 +678,10 @@ h1{font-weight: 400;}
 <p>The key thing to note here is that the different combinations of <code>Class</code>, <code>Sex</code>, <code>Age</code>, and <code>Survived</code> are <em>pre-counted</em> in the <code>n</code> variable. Thus the <code>Titanic</code> data frame has only 32 rows. This is different than the <code>titanic</code> data frame from <a href="static/PS/PS05_solutions.html" target="_blank">PS05 Question 2</a> that has 2201 rows: one for each passenger.</p>
 <p>So the data wrangling is a little different! Here we must <code>sum(n)</code> whereas in PS05 we used the <code>n()</code> summary function to count rows.</p>
 <p><strong>Part a)</strong>: by sex</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1">Titanic <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb16-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(Sex, Survived) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb16-3" data-line-number="3"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n))</a></code></pre></div>
-<pre><code>## # A tibble: 4 x 3
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>Titanic <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb16-2"><a href="#cb16-2"></a><span class="st">  </span><span class="kw">group_by</span>(Sex, Survived) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb16-3"><a href="#cb16-3"></a><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n))</span></code></pre></div>
+<pre><code>## # A tibble: 4 × 3
 ## # Groups:   Sex [2]
 ##   Sex    Survived     n
 ##   &lt;chr&gt;  &lt;chr&gt;    &lt;dbl&gt;
@@ -725,13 +690,13 @@ h1{font-weight: 400;}
 ## 3 Male   No        1364
 ## 4 Male   Yes        367</code></pre>
 <p><strong>Part b)</strong>: by sex, age, and class</p>
-<p>Nothing to do! We already have <code>Survived</code> (<code>&quot;No&quot;</code> vs <code>&quot;Yes&quot;</code>) counts split by these categories!</p>
+<p>Nothing to do! We already have <code>Survived</code> (<code>"No"</code> vs <code>"Yes"</code>) counts split by these categories!</p>
 <p><strong>Part c)</strong>: In retrospect this question is much harder than you can expect on the midterm. However if you’re curious:</p>
-<p>First we need to have <code>Survived</code> (<code>&quot;No&quot;</code> vs <code>&quot;Yes&quot;</code>) counts for each <code>Sex</code> and <code>Age</code> combinations:</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1">Titanic <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb18-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(Sex, Age, Survived) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb18-3" data-line-number="3"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n))</a></code></pre></div>
-<pre><code>## # A tibble: 8 x 4
+<p>First we need to have <code>Survived</code> (<code>"No"</code> vs <code>"Yes"</code>) counts for each <code>Sex</code> and <code>Age</code> combinations:</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>Titanic <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb18-2"><a href="#cb18-2"></a><span class="st">  </span><span class="kw">group_by</span>(Sex, Age, Survived) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb18-3"><a href="#cb18-3"></a><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n))</span></code></pre></div>
+<pre><code>## # A tibble: 8 × 4
 ## # Groups:   Sex, Age [4]
 ##   Sex    Age   Survived     n
 ##   &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;    &lt;dbl&gt;
@@ -744,12 +709,12 @@ h1{font-weight: 400;}
 ## 7 Male   Child No          35
 ## 8 Male   Child Yes         29</code></pre>
 <p>Next we need to identify the “women and children”</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" data-line-number="1">Titanic <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb20-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(Sex, Age, Survived) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb20-3" data-line-number="3"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb20-4" data-line-number="4"><span class="st">  </span><span class="co"># Identify &quot;women and children&quot;. Shout out to Adriana B. for suggesting this step to me!</span></a>
-<a class="sourceLine" id="cb20-5" data-line-number="5"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">w_or_c =</span> Sex <span class="op">==</span><span class="st"> &quot;Female&quot;</span> <span class="op">|</span><span class="st"> </span>Age <span class="op">==</span><span class="st"> &quot;Child&quot;</span>)</a></code></pre></div>
-<pre><code>## # A tibble: 8 x 5
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>Titanic <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb20-2"><a href="#cb20-2"></a><span class="st">  </span><span class="kw">group_by</span>(Sex, Age, Survived) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb20-3"><a href="#cb20-3"></a><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb20-4"><a href="#cb20-4"></a><span class="st">  </span><span class="co"># Identify &quot;women and children&quot;. Shout out to Adriana B. for suggesting this step to me!</span></span>
+<span id="cb20-5"><a href="#cb20-5"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">w_or_c =</span> Sex <span class="op">==</span><span class="st"> &quot;Female&quot;</span> <span class="op">|</span><span class="st"> </span>Age <span class="op">==</span><span class="st"> &quot;Child&quot;</span>)</span></code></pre></div>
+<pre><code>## # A tibble: 8 × 5
 ## # Groups:   Sex, Age [4]
 ##   Sex    Age   Survived     n w_or_c
 ##   &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;lgl&gt; 
@@ -762,15 +727,15 @@ h1{font-weight: 400;}
 ## 7 Male   Child No          35 TRUE  
 ## 8 Male   Child Yes         29 TRUE</code></pre>
 <p>Next <code>group_by()</code> this new variable and get the sum of <code>n</code></p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb22-1" data-line-number="1">Titanic <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb22-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(Sex, Age, Survived) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb22-3" data-line-number="3"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb22-4" data-line-number="4"><span class="st">  </span><span class="co"># Identify &quot;women and children&quot;. Shout out to Adriana B. for suggesting this step to me!</span></a>
-<a class="sourceLine" id="cb22-5" data-line-number="5"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">w_or_c =</span> Sex <span class="op">==</span><span class="st"> &quot;Female&quot;</span> <span class="op">|</span><span class="st"> </span>Age <span class="op">==</span><span class="st"> &quot;Child&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb22-6" data-line-number="6"><span class="st">  </span><span class="co"># Get counts for &quot;women and children&quot;:</span></a>
-<a class="sourceLine" id="cb22-7" data-line-number="7"><span class="st">  </span><span class="kw">group_by</span>(w_or_c, Survived) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb22-8" data-line-number="8"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n))</a></code></pre></div>
-<pre><code>## # A tibble: 4 x 3
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>Titanic <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb22-2"><a href="#cb22-2"></a><span class="st">  </span><span class="kw">group_by</span>(Sex, Age, Survived) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb22-3"><a href="#cb22-3"></a><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb22-4"><a href="#cb22-4"></a><span class="st">  </span><span class="co"># Identify &quot;women and children&quot;. Shout out to Adriana B. for suggesting this step to me!</span></span>
+<span id="cb22-5"><a href="#cb22-5"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">w_or_c =</span> Sex <span class="op">==</span><span class="st"> &quot;Female&quot;</span> <span class="op">|</span><span class="st"> </span>Age <span class="op">==</span><span class="st"> &quot;Child&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb22-6"><a href="#cb22-6"></a><span class="st">  </span><span class="co"># Get counts for &quot;women and children&quot;:</span></span>
+<span id="cb22-7"><a href="#cb22-7"></a><span class="st">  </span><span class="kw">group_by</span>(w_or_c, Survived) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb22-8"><a href="#cb22-8"></a><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n))</span></code></pre></div>
+<pre><code>## # A tibble: 4 × 3
 ## # Groups:   w_or_c [2]
 ##   w_or_c Survived     n
 ##   &lt;lgl&gt;  &lt;chr&gt;    &lt;dbl&gt;
@@ -779,21 +744,21 @@ h1{font-weight: 400;}
 ## 3 TRUE   No         161
 ## 4 TRUE   Yes        373</code></pre>
 <p>Next compute the proportions. We haven’t done this much in class, but if you look in <a href="tips_and_tricks.html#prop">tips and tricks</a>, you’ll see this is one of the rare cases we use <code>group_by()</code>, but not followed by a <code>summarize()</code> but a <code>mutate()</code> instead:</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" data-line-number="1">Titanic <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb24-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(Sex, Age, Survived) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb24-3" data-line-number="3"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb24-4" data-line-number="4"><span class="st">  </span><span class="co"># Identify &quot;women and children&quot;. Shout out to Adriana B. for suggesting this step to me!</span></a>
-<a class="sourceLine" id="cb24-5" data-line-number="5"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">w_or_c =</span> Sex <span class="op">==</span><span class="st"> &quot;Female&quot;</span> <span class="op">|</span><span class="st"> </span>Age <span class="op">==</span><span class="st"> &quot;Child&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb24-6" data-line-number="6"><span class="st">  </span><span class="co"># Get counts for &quot;women and children&quot;:</span></a>
-<a class="sourceLine" id="cb24-7" data-line-number="7"><span class="st">  </span><span class="kw">group_by</span>(w_or_c, Survived) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb24-8" data-line-number="8"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb24-9" data-line-number="9"><span class="st">  </span><span class="co"># Compute proportions:</span></a>
-<a class="sourceLine" id="cb24-10" data-line-number="10"><span class="st">  </span><span class="kw">group_by</span>(w_or_c) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb24-11" data-line-number="11"><span class="st">  </span><span class="kw">mutate</span>(</a>
-<a class="sourceLine" id="cb24-12" data-line-number="12">    <span class="dt">total =</span> <span class="kw">sum</span>(n),</a>
-<a class="sourceLine" id="cb24-13" data-line-number="13">    <span class="dt">prop =</span> n<span class="op">/</span>total</a>
-<a class="sourceLine" id="cb24-14" data-line-number="14">  )</a></code></pre></div>
-<pre><code>## # A tibble: 4 x 5
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>Titanic <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb24-2"><a href="#cb24-2"></a><span class="st">  </span><span class="kw">group_by</span>(Sex, Age, Survived) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb24-3"><a href="#cb24-3"></a><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb24-4"><a href="#cb24-4"></a><span class="st">  </span><span class="co"># Identify &quot;women and children&quot;. Shout out to Adriana B. for suggesting this step to me!</span></span>
+<span id="cb24-5"><a href="#cb24-5"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">w_or_c =</span> Sex <span class="op">==</span><span class="st"> &quot;Female&quot;</span> <span class="op">|</span><span class="st"> </span>Age <span class="op">==</span><span class="st"> &quot;Child&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb24-6"><a href="#cb24-6"></a><span class="st">  </span><span class="co"># Get counts for &quot;women and children&quot;:</span></span>
+<span id="cb24-7"><a href="#cb24-7"></a><span class="st">  </span><span class="kw">group_by</span>(w_or_c, Survived) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb24-8"><a href="#cb24-8"></a><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb24-9"><a href="#cb24-9"></a><span class="st">  </span><span class="co"># Compute proportions:</span></span>
+<span id="cb24-10"><a href="#cb24-10"></a><span class="st">  </span><span class="kw">group_by</span>(w_or_c) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb24-11"><a href="#cb24-11"></a><span class="st">  </span><span class="kw">mutate</span>(</span>
+<span id="cb24-12"><a href="#cb24-12"></a>    <span class="dt">total =</span> <span class="kw">sum</span>(n),</span>
+<span id="cb24-13"><a href="#cb24-13"></a>    <span class="dt">prop =</span> n<span class="op">/</span>total</span>
+<span id="cb24-14"><a href="#cb24-14"></a>  )</span></code></pre></div>
+<pre><code>## # A tibble: 4 × 5
 ## # Groups:   w_or_c [2]
 ##   w_or_c Survived     n total  prop
 ##   &lt;lgl&gt;  &lt;chr&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
@@ -801,25 +766,25 @@ h1{font-weight: 400;}
 ## 2 FALSE  Yes        338  1667 0.203
 ## 3 TRUE   No         161   534 0.301
 ## 4 TRUE   Yes        373   534 0.699</code></pre>
-<p>Lastly, to make things easier to look at, let’s only look at <code>Survived</code> equals <code>&quot;Yes&quot;</code></p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb26-1" data-line-number="1">Titanic <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb26-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(Sex, Age, Survived) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb26-3" data-line-number="3"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb26-4" data-line-number="4"><span class="st">  </span><span class="co"># Identify &quot;women and children&quot;. Shout out to Adriana B. for suggesting this step to me!</span></a>
-<a class="sourceLine" id="cb26-5" data-line-number="5"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">w_or_c =</span> Sex <span class="op">==</span><span class="st"> &quot;Female&quot;</span> <span class="op">|</span><span class="st"> </span>Age <span class="op">==</span><span class="st"> &quot;Child&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb26-6" data-line-number="6"><span class="st">  </span><span class="co"># Get counts for &quot;women and children&quot;:</span></a>
-<a class="sourceLine" id="cb26-7" data-line-number="7"><span class="st">  </span><span class="kw">group_by</span>(w_or_c, Survived) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb26-8" data-line-number="8"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb26-9" data-line-number="9"><span class="st">  </span></a>
-<a class="sourceLine" id="cb26-10" data-line-number="10"><span class="st">  </span><span class="co"># Compute proportions:</span></a>
-<a class="sourceLine" id="cb26-11" data-line-number="11"><span class="st">  </span><span class="kw">group_by</span>(w_or_c) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb26-12" data-line-number="12"><span class="st">  </span><span class="kw">mutate</span>(</a>
-<a class="sourceLine" id="cb26-13" data-line-number="13">    <span class="dt">total =</span> <span class="kw">sum</span>(n),</a>
-<a class="sourceLine" id="cb26-14" data-line-number="14">    <span class="dt">prop =</span> n<span class="op">/</span>total</a>
-<a class="sourceLine" id="cb26-15" data-line-number="15">  ) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb26-16" data-line-number="16"><span class="st">  </span><span class="co"># Only survived:</span></a>
-<a class="sourceLine" id="cb26-17" data-line-number="17"><span class="st">  </span><span class="kw">filter</span>(Survived <span class="op">==</span><span class="st"> &quot;Yes&quot;</span>)</a></code></pre></div>
-<pre><code>## # A tibble: 2 x 5
+<p>Lastly, to make things easier to look at, let’s only look at <code>Survived</code> equals <code>"Yes"</code></p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a>Titanic <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb26-2"><a href="#cb26-2"></a><span class="st">  </span><span class="kw">group_by</span>(Sex, Age, Survived) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb26-3"><a href="#cb26-3"></a><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb26-4"><a href="#cb26-4"></a><span class="st">  </span><span class="co"># Identify &quot;women and children&quot;. Shout out to Adriana B. for suggesting this step to me!</span></span>
+<span id="cb26-5"><a href="#cb26-5"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">w_or_c =</span> Sex <span class="op">==</span><span class="st"> &quot;Female&quot;</span> <span class="op">|</span><span class="st"> </span>Age <span class="op">==</span><span class="st"> &quot;Child&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb26-6"><a href="#cb26-6"></a><span class="st">  </span><span class="co"># Get counts for &quot;women and children&quot;:</span></span>
+<span id="cb26-7"><a href="#cb26-7"></a><span class="st">  </span><span class="kw">group_by</span>(w_or_c, Survived) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb26-8"><a href="#cb26-8"></a><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb26-9"><a href="#cb26-9"></a><span class="st">  </span></span>
+<span id="cb26-10"><a href="#cb26-10"></a><span class="st">  </span><span class="co"># Compute proportions:</span></span>
+<span id="cb26-11"><a href="#cb26-11"></a><span class="st">  </span><span class="kw">group_by</span>(w_or_c) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb26-12"><a href="#cb26-12"></a><span class="st">  </span><span class="kw">mutate</span>(</span>
+<span id="cb26-13"><a href="#cb26-13"></a>    <span class="dt">total =</span> <span class="kw">sum</span>(n),</span>
+<span id="cb26-14"><a href="#cb26-14"></a>    <span class="dt">prop =</span> n<span class="op">/</span>total</span>
+<span id="cb26-15"><a href="#cb26-15"></a>  ) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb26-16"><a href="#cb26-16"></a><span class="st">  </span><span class="co"># Only survived:</span></span>
+<span id="cb26-17"><a href="#cb26-17"></a><span class="st">  </span><span class="kw">filter</span>(Survived <span class="op">==</span><span class="st"> &quot;Yes&quot;</span>)</span></code></pre></div>
+<pre><code>## # A tibble: 2 × 5
 ## # Groups:   w_or_c [2]
 ##   w_or_c Survived     n total  prop
 ##   &lt;lgl&gt;  &lt;chr&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
@@ -857,7 +822,7 @@ h1{font-weight: 400;}
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -875,7 +840,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -884,6 +849,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
@@ -896,7 +864,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

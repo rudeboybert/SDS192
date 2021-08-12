@@ -19,44 +19,38 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
-
-
-
 <style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
 
 
 
@@ -66,10 +60,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -86,40 +76,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -147,7 +110,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -159,7 +122,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -170,10 +133,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -185,7 +161,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -317,7 +292,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -349,21 +324,9 @@ div.tocify {
 <li>
   <a href="https://moderndive.netlify.com/">ModernDive</a>
 </li>
-<li>
-  <a href="tips_and_tricks.html">Tips &amp; Tricks</a>
-</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="PS.html">Problem Sets</a>
-</li>
-<li>
-  <a href="projects.html">Projects</a>
-</li>
-<li>
-  <a href="midterms.html">Midterms</a>
-</li>
-<li>
   <a href="syllabus.html">Syllabus</a>
 </li>
       </ul>
@@ -371,7 +334,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -395,32 +358,29 @@ h1{font-weight: 400;}
 <li><strong><del>Email:</del> Slack team</strong>: Click hashtag icon in navbar for the browser interface or use the <a href="https://slack.com/downloads/" target="_blank">desktop/mobile app</a>.</li>
 <li><strong>Meeting locations/times:</strong>
 <ul>
-<li>Section 01: MWF 10:50 AM-12:05 PM / Sabin-Reed 220</li>
-<li>Section 02: MWF 1:20 PM-2:35 PM / Sabin-Reed 220</li>
+<li>Section 01: MWF 10:50 AM-12:05 PM / McConnell 103</li>
+<li>Section 02: MWF 9:25 AM-10:40 AM / Sabin-Reed 220</li>
 </ul></li>
 <li><strong>Outside help</strong>:
 <ul>
 <li><a href="https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats" target="_blank">Spinelli Center for Quantitative Learning Tutoring</a>: Sunday thru Thursday 7-9pm in Sabin-Reed 301.</li>
+<li>The <code>#questions</code> channel on Slack. If you have a question of a more private nature, please Slack direct message Albert.</li>
 <li>Albert’s office hours. If you have R questions, please be mindful of my time and have your computer &amp; RStudio ready to go:
 <ol style="list-style-type: decimal">
-<li>Wednesdays 3:00pm-4:30pm</li>
-<li>Fridays 9:00am-10:30am</li>
-<li>Or by apppointment: <a href="https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE" target="_blank">bit.ly/meet_with_albert</a>. If none of the listed times work for you, please Slack me.</li>
+<li>TBD</li>
+<li>For personal matters by appointment: <a href="https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE" target="_blank">bit.ly/meet_with_albert</a>. If none of the listed times work for you, please Slack me.</li>
 </ol></li>
-<li>The <code>#questions</code> channel on Slack. If you have a question of a more private nature, please Slack direct message Albert.</li>
 <li><a href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr" target="_blank">Data Research and Statistics Counselor</a> Osman Keshawarz</li>
 </ul></li>
 </ul>
-<!--    
-    + Spinelli Center Data Counselor Vahab Khademi in Seelye 207: By [appointment](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
--->
 <div id="work-life-balance" class="section level2">
 <h2>Instructor work-life balance</h2>
 <ul>
 <li>I will respond to Slack messages sent during the week within 24h. I will respond to Slack messages sent during the weekend at my own discretion.</li>
 <li>If possible, please only Slack me with briefer and administrative questions; I prefer having more substantive conversations in person as it takes me less energy to understand where you are at.</li>
-<li>I will do my best to return all grading as promptly as possible.</li>
-<li>I will rarely be on campus on Thursdays as this is my self-care day.</li>
+<li>I will do my best to return all grading as promptly as possible. <!--
+* I will rarely be on campus on Thursdays as this is my self-care day.
+--></li>
 </ul>
 <hr />
 </div>
@@ -470,9 +430,9 @@ h1{font-weight: 400;}
 <ul>
 <li>Bring your laptop, a set of headphones, colored pens/pencils, and your paper notebook to every lecture.</li>
 <li>You are expected to stay until the end of lecture. If you need to leave early, please confirm with me at the beginning of lecture and sit somewhere where your departure will be minimally disruptive.</li>
-<li>Attendance will not be explicitly taken and occasional absenses are excused. However, extended absenses should be mentioned to me.</li>
+<li>Attendance will not be explicitly taken and occasional absenses are excused. However, extended absences should be mentioned to me.</li>
 <li>However, you are responsible for asking your peers for what you missed. For example, makeup lectures will not be held during office hours.</li>
-<li>Lecture will be held as usual on Monday 11/25 (before Thanksgiving).</li>
+<li>Lecture will be held as usual on Monday 11/22 (before Thanksgiving).</li>
 </ul>
 <hr />
 </div>
@@ -482,12 +442,15 @@ h1{font-weight: 400;}
 <p>All due dates can be found on the <a href="index.html" target="_blank">main page</a> of this course webpage.</p>
 <div id="midterms-35" class="section level2">
 <h2>Midterms 35%</h2>
-<p>There will be two midterms during the semester. You’ll take these midterms in Seelye Self-Scheduled Exam center between Friday at 5pm and Sunday at 11:55pm. Instructions on taking exams for <a href="https://sophia.smith.edu/edtech/documentation/print-an-exam-from-the-direct-to-queue-application/" target="_blank">Smithies</a> and <a href="https://sophia.smith.edu/edtech/documentation/special-instructions-for-five-college-and-high-school-students-using-direct-to-queue-exam-printing/" target="_blank">Five College Students</a>.</p>
-<ul>
-<li>Midterm I: Data visualization</li>
-<li>Midterm II: Data wrangling</li>
-</ul>
-<p>The higher score of the two midterm scores will be weighted 20% and the lower will be weighted 15%.</p>
+<p>There will be two midterms during the semester.</p>
+<!--
+You'll take these midterms in Seelye Self-Scheduled Exam center between Friday at 5pm and Sunday at 11:55pm. Instructions on taking exams for [Smithies](https://sophia.smith.edu/edtech/documentation/print-an-exam-from-the-direct-to-queue-application/){target="_blank"} and [Five College Students](https://sophia.smith.edu/edtech/documentation/special-instructions-for-five-college-and-high-school-students-using-direct-to-queue-exam-printing/){target="_blank"}.
+
+* Midterm I: Data visualization
+* Midterm II: Data wrangling
+
+The higher score of the two midterm scores will be weighted 20% and the lower will be weighted 15%. 
+-->
 </div>
 <div id="three-mini-projects-30" class="section level2">
 <h2>Three mini-projects 30%</h2>
@@ -560,7 +523,7 @@ h1{font-weight: 400;}
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -578,7 +541,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -587,6 +550,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
@@ -599,7 +565,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
