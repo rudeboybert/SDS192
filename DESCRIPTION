@@ -27,7 +27,8 @@ Imports:
   leaflet,
   maps,
   mapproj,
-  patchwork
+  patchwork,
+  rmarkdown
 URL: https://github.com/rudeboybert/SDS192
 BugReports: https://github.com/rudeboybert/SDS192/issues
 Config/testthat/edition: 3
