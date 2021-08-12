@@ -35,14 +35,11 @@ library(moderndive)
 library(leaflet)
 library(maps)
 library(mapproj)
+library(patchwork)
 
 # Install emo package from GitHub for emoji functionality:
 # devtools::install_github("hadley/emo")
 library(emo)
-
-# Install patchwork package from GitHub for composing ggplots:
-# devtools::install_github("thomasp85/patchwork")
-library(patchwork)
 
 # Set seed value of random number generator to get "replicable" random numbers.
 # Why 76? Because of https://www.youtube.com/watch?v=xjJ7FheCkCU
