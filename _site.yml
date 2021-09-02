@@ -35,8 +35,8 @@ navbar:
 #    href: projects.html
 #  - text: Midterms
 #    href: midterms.html
-  - text: Syllabus
-    href: syllabus.html
+#  - text: Syllabus
+#    href: syllabus.html
 #  - icon: fa-github fa-lg
 #    href: https://github.com/rudeboybert/SDS192
 
