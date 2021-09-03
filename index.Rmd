@@ -1534,11 +1534,13 @@ Welcome!
 * This weekend: Complete [intro survey](https://docs.google.com/forms/d/e/1FAIpQLSdA6uWnig5oR3ITCsVBFDxC6IC5Nq1tYzo-atdChe8CVTTqag/viewform){target="_blank"}
 
 
+## Code examples from class
 
-```{r, echo=FALSE, eval =FALSE}
-# Using fivethirtyeight package data:
+```{r, eval = FALSE}
+# Data visualization
 library(fivethirtyeight)
 library(ggplot2)
+library(dplyr)
 year_bins <- c("'70-'74", "'75-'79", "'80-'84", "'85-'89", "'90-'94",
                "'95-'99", "'00-'04", "'05-'09", "'10-'13")
 
@@ -1550,12 +1552,12 @@ ggplot(bechdel, aes(x = five_year, fill = clean_test)) +
   labs(x = "Year", y = "Proportion", fill = "Bechdel Test") +
   scale_fill_brewer(palette = "YlGnBu")
 
-
+# Data Wranling
 library(fec16)
 all_transactions <- read_all_transactions()
 View(all_transactions)
 
-
+# Maps
 library(leaflet)
 leaflet() %>%
   addTiles() %>% 
