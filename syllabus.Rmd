@@ -122,7 +122,7 @@ All due dates can be found on the [main page](index.html){target="_blank"} of th
 
 ## Midterms 35%
 
-There will be two midterms during the semester. 
+There will be two midterms during the semester. The higher score of the two midterm scores will be weighted 20% and the lower will be weighted 15%. More details to follow.
 
 <!--
 You'll take these midterms in Seelye Self-Scheduled Exam center between Friday at 5pm and Sunday at 11:55pm. Instructions on taking exams for [Smithies](https://sophia.smith.edu/edtech/documentation/print-an-exam-from-the-direct-to-queue-application/){target="_blank"} and [Five College Students](https://sophia.smith.edu/edtech/documentation/special-instructions-for-five-college-and-high-school-students-using-direct-to-queue-exam-printing/){target="_blank"}.
@@ -131,7 +131,6 @@ You'll take these midterms in Seelye Self-Scheduled Exam center between Friday a
 * Midterm II: Data wrangling
 -->
 
-The higher score of the two midterm scores will be weighted 20% and the lower will be weighted 15%. 
 
 
 
