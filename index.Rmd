@@ -1560,9 +1560,5 @@ library(leaflet)
 leaflet() %>%
   addTiles() %>% 
   addMarkers(lng=-72.64022, lat=42.31706, popup="Smith College")
-
-
-
-
 ```
 

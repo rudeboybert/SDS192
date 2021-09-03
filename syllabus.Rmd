@@ -67,7 +67,7 @@ Ask yourself:
     + *"Am I asking questions on Slack in the `#questions` channel?"* Even better: *"Am I answering my peers' questions on Slack?"*
     + *"Having I been going to the Spinelli tutoring center for help on R and the tidyverse?"*
     + *"Have I been coming to office hours?"*
-* **Lectures, labs, and readings:**
+* **Lectures and readings:**
     + *"Am I staying on top Slack notifications sent between lectures?"* If you need help developing a notification strategy that best suits your lifestyle, please speak to me. 
     + *"Am I attending lectures consistently?"*
     + *"During in-class activities, am I actually running code line-by-line and studying the outputs, or am I just going through the motions?"*
@@ -129,9 +129,10 @@ You'll take these midterms in Seelye Self-Scheduled Exam center between Friday a
 
 * Midterm I: Data visualization
 * Midterm II: Data wrangling
+-->
 
 The higher score of the two midterm scores will be weighted 20% and the lower will be weighted 15%. 
--->
+
 
 
 ## Three mini-projects 30%
@@ -176,7 +177,7 @@ pathways for you to stay engaged in this class:
 ## Policies
 
 1. **Collaboration**: While I encourage you to work with your peers for problem
-sets and labs, you must submit your own answers and not simple rewordings of
+sets, you must submit your own answers and not simple rewordings of
 another's work. Furthermore, all collaborations must be explicitly acknowledged
 in your submissions.
 1. **Honor Code**: All your work must follow the [Smith College Academic Honor
@@ -229,7 +230,7 @@ reported by contacting the instructor.
 
 **All students, the instructor, the lab instructor, and all data assistants are
 expected to adhere to this Code of Conduct in all settings for this course:
-lectures, labs, office hours, tutoring hours, and over Slack.**
+lectures, office hours, tutoring hours, and over Slack.**
 
 This Code of Conduct is adapted from the [Contributor
 Covenant](http://contributor-covenant.org){target="_blank"}, version 1.0.0,
