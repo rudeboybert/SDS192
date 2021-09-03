@@ -31,7 +31,7 @@ h1{font-weight: 400;}
 # Basic information {#basicinfo}
 
 * **Course title:** SDS 192 Introduction to Data Science
-* **Instructor:** [Albert Y. Kim](https://rudeboybert.rbind.io/){target="_blank"} - Assistant Professor of Statistical & Data Sciences. Please call me "Professor Kim"
+* **Instructor:** [Albert Y. Kim (he/him)](https://rudeboybert.rbind.io/){target="_blank"} - Assistant Professor of Statistical & Data Sciences. Please call me "Professor Kim"
 * **Office location:** McConnell Hall 215 (accessible from stairwell closest to Bass Hall)
 * **~~Email:~~ Slack team**: Click hashtag icon in navbar for the browser interface or use the [desktop/mobile app](https://slack.com/downloads/){target="_blank"}.
 * **Meeting locations/times:** 

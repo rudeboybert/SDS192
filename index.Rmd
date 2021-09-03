@@ -1529,7 +1529,7 @@ Welcome!
     1. Data wrangling
     1. Maps
     1. Websites
-* Break
+* Break!
 * Executive summary of syllabus
 * This weekend: Complete [intro survey](https://docs.google.com/forms/d/e/1FAIpQLSdA6uWnig5oR3ITCsVBFDxC6IC5Nq1tYzo-atdChe8CVTTqag/viewform){target="_blank"}
 
