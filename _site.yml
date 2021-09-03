@@ -23,7 +23,7 @@ navbar:
 #  - icon: fa-registered
 #    href: https://rstudio.smith.edu/auth-sign-in
   - text: ModernDive
-    href: https://moderndive.netlify.com/
+    href: https://moderndive.com/
 #  - text: Tips & Tricks
 #    href: tips_and_tricks.html
   right:
@@ -35,8 +35,8 @@ navbar:
 #    href: projects.html
 #  - text: Midterms
 #    href: midterms.html
-#  - text: Syllabus
-#    href: syllabus.html
+  - text: Syllabus
+    href: syllabus.html
 #  - icon: fa-github fa-lg
 #    href: https://github.com/rudeboybert/SDS192
 

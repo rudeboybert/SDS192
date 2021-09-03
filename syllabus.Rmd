@@ -31,7 +31,7 @@ h1{font-weight: 400;}
 # Basic information {#basicinfo}
 
 * **Course title:** SDS 192 Introduction to Data Science
-* **Instructor:** [Albert Y. Kim](https://rudeboybert.rbind.io/){target="_blank"} - Assistant Professor of Statistical & Data Sciences.
+* **Instructor:** [Albert Y. Kim](https://rudeboybert.rbind.io/){target="_blank"} - Assistant Professor of Statistical & Data Sciences. Please call me "Professor Kim"
 * **Office location:** McConnell Hall 215 (accessible from stairwell closest to Bass Hall)
 * **~~Email:~~ Slack team**: Click hashtag icon in navbar for the browser interface or use the [desktop/mobile app](https://slack.com/downloads/){target="_blank"}.
 * **Meeting locations/times:** 
@@ -51,9 +51,7 @@ h1{font-weight: 400;}
 * I will respond to Slack messages sent during the week within 24h. I will respond to Slack messages sent during the weekend at my own discretion.
 * If possible, please only Slack me with briefer and administrative questions; I prefer having more substantive conversations in person as it takes me less energy to understand where you are at.
 * I will do my best to return all grading as promptly as possible.
-<!--
-* I will rarely be on campus on Thursdays as this is my self-care day.
--->
+
 
 
 ***
@@ -90,9 +88,9 @@ On top of the goals of the above description, this semester you will:
 
 1. Equip yourselves with the data science tools necessarily to perform effective *exploratory data analysis*.
 1. Learn about project workflows such as
-    + Getting a ["minimally viable product"](https://en.wikipedia.org/wiki/Minimum_viable_product){target="_blank"} done *quickly*.
-    + Not ["gilding the lily"](https://en.wiktionary.org/wiki/gild_the_lily){target="_blank"} in other words not ["letting the perfect be the enemy of the good"](https://www.entrepreneur.com/article/249676){target="_blank"}.
-1. Learn how to use web search engines like Google effectively in a data science setting.
+    + Getting a ["minimally viable product"](https://www.interaction-design.org/literature/article/minimum-viable-product-mvp-and-design-balancing-risk-to-gain-reward){target="_blank"} done *quickly*.
+    + Not ["letting the perfect be the enemy of the good"](https://www.entrepreneur.com/article/249676){target="_blank"}.
+1. Learn how to use internet search engines effectively in a data science setting.
 
 
 
@@ -104,11 +102,11 @@ On top of the goals of the above description, this semester you will:
 
 The lecture schedule and associated readings can be found on the [main page](index.html){target="_blank"} of this course webpage.
 
-## Policies {#policies}
+## Class norms {#policies}
 
 * Bring your laptop, a set of headphones, colored pens/pencils, and your paper notebook to every lecture.
 * You are expected to stay until the end of lecture. If you need to leave early, please confirm with me at the beginning of lecture and sit somewhere where your departure will be minimally disruptive. 
-* Attendance will not be explicitly taken and occasional absenses are excused. However, extended absences should be mentioned to me.
+* Attendance will not be explicitly taken and occasional absences are excused. However, extended absences should be mentioned to me.
 * However, you are responsible for asking your peers for what you missed. For example, makeup lectures will not be held during office hours.
 * Lecture will be held as usual on Monday 11/22 (before Thanksgiving). 
 

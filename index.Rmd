@@ -45,10 +45,6 @@ library(maps)
 library(mapproj)
 library(patchwork)
 
-# Install emo package from GitHub for emoji functionality:
-# devtools::install_github("hadley/emo")
-library(emo)
-
 # Set seed value of random number generator to get "replicable" random numbers.
 # Why 76? Because of https://www.youtube.com/watch?v=xjJ7FheCkCU
 set.seed(76)
@@ -71,9 +67,8 @@ h1{font-weight: 400;}
 
 Note that while topics and topics dates may change, all problem sets (PS), project, and midterm dates will not. 
 
-<!--
+
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRvggFhESyu_EFxrcFQXsZtdaQqaqcQ6kgWg173WTkTeWV67RWiZ01G8jhJsQ2b5VUVCJqQ8xo6COWM/pubhtml?gid=833934180&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="850"></iframe>
--->
 
 <!--
 {target="_blank"}
@@ -623,7 +618,7 @@ Two chief tools we'll be using.
 
 ### 1. Chalk talk
 
-* Fact that will `r emo::ji("exploding head")` about MP2 data.
+* Fact that will  about MP2 data.
 * Midterm II discussion. See [midterms](midterms.html#midtermII) page.
 
 ### 2. In-class exercise
@@ -1526,9 +1521,48 @@ Welcome!
 
 ## Today's topics/activities
 
-* My story.
-* What this class is about: Answering questions with data.
-* Executive summary of syllabus.
-* Coding: it's normal to be `r emo::ji("scream")`
+* Course webpage: bit.ly/sds192kim
+* My story
+* "Knock on wood if you're with me"
+* What this class is about: Answering questions with data
+    1. Data viz
+    1. Data wrangling
+    1. Maps
+    1. Websites
+* Break
+* Executive summary of syllabus
+* This weekend: Complete [intro survey](https://docs.google.com/forms/d/e/1FAIpQLSdA6uWnig5oR3ITCsVBFDxC6IC5Nq1tYzo-atdChe8CVTTqag/viewform){target="_blank"}
 
+
+
+```{r, echo=FALSE, eval =FALSE}
+# Using fivethirtyeight package data:
+library(fivethirtyeight)
+library(ggplot2)
+year_bins <- c("'70-'74", "'75-'79", "'80-'84", "'85-'89", "'90-'94",
+               "'95-'99", "'00-'04", "'05-'09", "'10-'13")
+
+bechdel <- bechdel %>%
+  mutate(five_year = cut(year, breaks = seq(1969, 2014, 5), labels = year_bins))
+
+ggplot(bechdel, aes(x = five_year, fill = clean_test)) +
+  geom_bar(position = "fill", color = "black") +
+  labs(x = "Year", y = "Proportion", fill = "Bechdel Test") +
+  scale_fill_brewer(palette = "YlGnBu")
+
+
+library(fec16)
+all_transactions <- read_all_transactions()
+View(all_transactions)
+
+
+library(leaflet)
+leaflet() %>%
+  addTiles() %>% 
+  addMarkers(lng=-72.64022, lat=42.31706, popup="Smith College")
+
+
+
+
+```
 
