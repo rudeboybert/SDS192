@@ -35,7 +35,7 @@ h1{font-weight: 400;}
 * **Office location:** McConnell Hall 215 (accessible from stairwell closest to Bass Hall)
 * **~~Email:~~ Slack team**: Click hashtag icon in navbar for the browser interface or use the [desktop/mobile app](https://slack.com/downloads/){target="_blank"}.
 * **Meeting locations/times:** 
-    + Section 01: MWF 10:50 AM-12:05 PM / McConnell 103
+    + Section 01: MWF 10:50 AM-12:05 PM / ~~McConnell 103~~ Stoddard G2
     + Section 02: MWF 9:25 AM-10:40 AM / Sabin-Reed 220
 * **Outside help**:
     + [Spinelli Center for Quantitative Learning Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm in Sabin-Reed 301. 
@@ -104,7 +104,7 @@ The lecture schedule and associated readings can be found on the [main page](ind
 
 ## Class norms {#policies}
 
-* Bring your laptop, a set of headphones, colored pens/pencils, and your paper notebook to every lecture.
+* Bring your laptop, a set of headphones, colored pens/pencils with paper notebook (or tablet with stylus) to every lecture.
 * You are expected to stay until the end of lecture. If you need to leave early, please confirm with me at the beginning of lecture and sit somewhere where your departure will be minimally disruptive. 
 * Attendance will not be explicitly taken and occasional absences are excused. However, extended absences should be mentioned to me.
 * However, you are responsible for asking your peers for what you missed. For example, makeup lectures will not be held during office hours.
