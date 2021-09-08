@@ -1459,6 +1459,7 @@ I don't mind what you do with your class time, but it is very important that you
 ### 1. Chalk talk
 
 * Recap of previous lecture
+* RMarkdown
 * Grammar of Graphics
 * Screencast of "Doing ModernDive readings". In particular the idea of "Running R code in RStudio":
 
@@ -1476,7 +1477,7 @@ I don't mind what you do with your class time, but it is very important that you
 
 
 
-# Lec 02: Monday 9/8 {#Lec02}
+# Lec 02: Wed 9/8 {#Lec02}
 
 ## Announcements
 
@@ -1509,7 +1510,7 @@ I don't mind what you do with your class time, but it is very important that you
 
 
 
-# Lec 01: Friday 9/3 {#Lec01}
+# Lec 01: Fri 9/3 {#Lec01}
 
 ## Announcements
 
