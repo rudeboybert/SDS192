@@ -35,8 +35,8 @@ h1{font-weight: 400;}
 * **Office location:** McConnell Hall 215 (accessible from stairwell closest to Bass Hall)
 * **~~Email:~~ Slack team**: Click hashtag icon in navbar for the browser interface or use the [desktop/mobile app](https://slack.com/downloads/){target="_blank"}.
 * **Meeting locations/times:** 
-    + Section 01: MWF 10:50 AM-12:05 PM / ~~McConnell 103~~ Stoddard G2
-    + Section 02: MWF 9:25 AM-10:40 AM / Sabin-Reed 220
+    + Section 01: MWF ~~10:50 AM~~ 10:55 AM - 12:05 PM / ~~McConnell 103~~ Stoddard G2
+    + Section 02: MWF 9:25 AM - 10:35 AM ~~10:40 AM~~ / Sabin-Reed 220
 * **Getting help**:
     + For non personal/sensitive questions, ask on the `#questions` channel on Slack. For personal/sensitive matters, Slack DM Professor Kim.
     + [Spinelli Center for Quantitative Learning Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm in Sabin-Reed 301. More info coming soon.
