@@ -37,14 +37,18 @@ h1{font-weight: 400;}
 * **Meeting locations/times:** 
     + Section 01: MWF 10:50 AM-12:05 PM / ~~McConnell 103~~ Stoddard G2
     + Section 02: MWF 9:25 AM-10:40 AM / Sabin-Reed 220
-* **Outside help**:
-    + [Spinelli Center for Quantitative Learning Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm in Sabin-Reed 301. 
-    + The `#questions` channel on Slack. If you have a question of a more private nature, please Slack direct message Albert. 
-    + Albert's office hours. If you have R questions, please be mindful of my time and have your computer & RStudio ready to go:
-        1. TBD
-        1. For personal matters by appointment: [bit.ly/meet_with_albert](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"}. If none of the listed times work for you, please Slack me.
+* **Getting help**:
+    + For non personal/sensitive questions, ask on the `#questions` channel on Slack. For personal/sensitive matters, Slack DM Professor Kim.
+    + [Spinelli Center for Quantitative Learning Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm in Sabin-Reed 301. More info coming soon.
+    + Office hours:
+        + The most up-to-date location and time info will be posted in this [calendar](https://calendar.google.com/calendar/embed?src=c_hoe7p7ku3rhppoot8e38mponpo%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}. Before coming to office hours, please have your question ready on your computer. 
+        + For personal/sensitive matters by appointment: [bit.ly/meet_with_albert](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"}. If none of the listed times work for you, please Slack me.
+
+<!--
     + [Data Research and Statistics Counselor](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"} Osman Keshawarz
-    
+-->
+
+
 
 ## Instructor work-life balance {#work-life-balance}
 
@@ -100,7 +104,7 @@ On top of the goals of the above description, this semester you will:
 
 # Lecture schedule {#topicschedule}
 
-The lecture schedule and associated readings can be found on the [main page](index.html){target="_blank"} of this course webpage.
+The lecture schedule and associated readings can be found on the [main page](index.html){target="_blank"} of this course webpage. The ModernDive textbook is accessible on the navigational bar of this webpage. 
 
 ## Class norms {#policies}
 

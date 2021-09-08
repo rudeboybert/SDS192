@@ -1472,32 +1472,28 @@ I don't mind what you do with your class time, but it is very important that you
 
 
 ***
+-->
 
 
 
-# Lec 02: Mon 9/9 {#Lec02}
+# Lec 02: Monday 9/8 {#Lec02}
 
 ## Announcements
 
-* [Syllabus](syllabus.html) finalized.
-* Problem Set 01 due this Friday posted under [Problem Sets](PS.html).
+* Problem Set 01 due this Monday 5pm, posted under [Problem Sets](PS.html).
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Intro to Slack [slides](static/intro_to_slack.pdf){target="_blank"}
+* Intro to Slack
 * What is difference between R and RStudio?
 * What are R packages?
 
 
 ### 2. In-class exercise
 
-* Set up RStudio Cloud:
-    + Click [here](https://rstudio.cloud/spaces/28268/join?access_code=qLpXUY0xlUFnViI1SB0Q%2FWd%2BEBw9zzL%2BC%2B8xe65F){target="_blank"} to join the "SDS192" Workspace.
-    + Click on "New Project"
-    + Name it "Class Notes"
 * Go over ModernDive reading in schedule above. 
 
 *About readings in this course*:
@@ -1510,10 +1506,10 @@ I don't mind what you do with your class time, but it is very important that you
 
 
 ***
--->
 
 
-# Lec 01: Fri 9/3 {#Lec01}
+
+# Lec 01: Friday 9/3 {#Lec01}
 
 ## Announcements
 

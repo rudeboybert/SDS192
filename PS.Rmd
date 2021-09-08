@@ -30,8 +30,7 @@ h1{font-weight: 400;}
 
 ***
 
-
-
+<!--
 # Problem set 07 {#PS07}
 
 *Assigned Friday 11/25, due Friday 12/6 at 10:45am on GitHub Classroom.*
@@ -295,17 +294,21 @@ Notes:
 
 
 ***
-
+-->
 
 
 # Problem set 01 {#PS01}
 
-*Assigned Monday 9/9, due Friday 9/13.*
+*Due Monday 9/13 5pm*
 
-1. Complete the following confidential [Pre-Course Questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSfd47VMRlRbBErxEWCtvUYoOhKIbN6kx8jpzn5mqOThk7EDMw/viewform){target="_blank"} online for Prof. Baumer, Prof. Crouser, and my [Smith College IRB-approved](https://www.smith.edu/academics/institutional-review-board){target="_blank"} study. 
-1. If you don't already have one, create an account on [GitHub](https://github.com/){target="_blank"} *using your smith.edu (or Five College) email address*.
-1. Complete the following [intro survey](https://docs.google.com/forms/d/e/1FAIpQLSe2r9v-i4u2Zlq4By3Y9AzUSR41x8T3fjRORaqbtBloBJDnfg/viewform){target="_blank"} online with info about you. This survey is not part of the above study and is used by me to get to know you better.
+1. If you haven't already, complete the [intro survey](https://docs.google.com/forms/d/e/1FAIpQLSdA6uWnig5oR3ITCsVBFDxC6IC5Nq1tYzo-atdChe8CVTTqag/viewform){target="_blank"} distributed on Friday.
 1. Complete a syllabus quiz.
-    + Print out the following [Google Doc](https://docs.google.com/document/d/1WknUhbtDeTGw8vvO8ytTURkF1_72ve4UXF5-SPk5NO8/){target="_blank"}.
+    + Open the following [Google Doc](https://docs.google.com/document/d/1WknUhbtDeTGw8vvO8ytTURkF1_72ve4UXF5-SPk5NO8/){target="_blank"}.
     + Answer the questions based on information in the [syllabus](syllabus.html).
-    + Submit your print out in class on Friday. If you can't make it, have one of your peers submit it for you. 
+1. Submit a PDF of your syllabus quiz responses on gradescope:
+    + Your gradescope account is based on your Smith, 5 College, or other official email.
+    + Create your account on gradescope via the email sent to you this morning. If you did not receive such an email, add yourself to the course using Entry Code: 6PNXZ5.
+    + Log into [gradescope](https://www.gradescope.com/courses/308310){target="_blank"} 
+
+
+
