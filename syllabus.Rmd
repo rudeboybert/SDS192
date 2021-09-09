@@ -39,7 +39,9 @@ h1{font-weight: 400;}
     + Section 02: MWF 9:25 AM - 10:35 AM ~~10:40 AM~~ / Sabin-Reed 220
 * **Getting help**:
     + For non personal/sensitive questions, ask on the `#questions` channel on Slack. For personal/sensitive matters, Slack DM Professor Kim.
-    + [Spinelli Center for Quantitative Learning Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm in Sabin-Reed 301. More info coming soon.
+    + Spinelli Center [SDS drop-in tutoring hours](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats.){target="_blank"}. In Sabin-Reed 301
+        + Sunday through Thursday 7-9pm
+        + Friday 2:35-3:30pm
     + Office hours:
         + The most up-to-date location and time info will be posted in this [calendar](https://calendar.google.com/calendar/embed?src=c_hoe7p7ku3rhppoot8e38mponpo%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}. Before coming to office hours, please have your question ready on your computer. 
         + For personal/sensitive matters by appointment: [bit.ly/meet_with_albert](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"}. If none of the listed times work for you, please Slack me.
