@@ -1440,35 +1440,11 @@ I don't mind what you do with your class time, but it is very important that you
 1. Knit early, knit often! If you wait until only after you've added a ton of code to knit and something doesn't work, you'll have a hard time figuring out where the error is. If you make incremental changes and knit after every step, you'll better able to isolate where errors are.
 1. If you get stuck, **go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first**, then seek assistance. These 6 fixes resolve 85% of issues in my experience.
 
-
-
-***
-
-
-
-# Lec 03: Wed 9/11 {#Lec03}
-
-## Announcements
-
-* ASA StatFest
-
-
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-* Recap of previous lecture
-* RMarkdown
-* Grammar of Graphics
-* Screencast of "Doing ModernDive readings". In particular the idea of "Running R code in RStudio":
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/79aPogjtGm4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</br>
-
-
-***
 -->
+
+
+***
+
 
 # Lec 03: Fri 9/10 {#Lec03}
 
@@ -1481,7 +1457,10 @@ I don't mind what you do with your class time, but it is very important that you
     + Sec 01 in Stoddard G2 will now start 5 minutes later: 10:55 AM instead of 10:50AM
     + Sec 02 in Sabin-Reed 220 will now end 5 minutes earlier: 10:35 AM instead of 10:40 AM
 * I added extra instructions for Problem Set 01 after lecture, posted under [Problem Sets](PS.html)
+    + Show don't tell how to tag questions on gradescope
 * ASA StatFest 2021 Sat 9/18 thru Sun 9/19 [flyer](static/images/announcements/statfest2021.pdf){target="_blank"} and [event webpage](https://community.amstat.org/cmis/events/statfest/statfest-2021){target="_blank"}
+    + Sunday 9/19 at 11:50AM: Opportunities in Statistics & Data Science in Academia, Government, & Non-Profit featuring SDS's **Prof. Randi Garcia**!
+    + Keynote address by **Robert Santos**, 116th President of the ASA, and President Biden's nominee to serve as Director of the United States Census Bureau! If approved by the Senate, he would be the first Latinx Director of the Bureau!
 
 
 
@@ -1490,7 +1469,11 @@ I don't mind what you do with your class time, but it is very important that you
 ### 1. Chalk talk
 
 * Recap of previous lecture
-* 
+* Grammar of Graphics
+* 5NG1: Scatterplots
+* Next time:
+    + Question: Do I need to re-type my code in the Console every single time?
+    + Answer: No! Save your work in an [RMarkdown document](https://rmarkdown.rstudio.com/){target="_blank"}
 
 ### 2. In-class exercise
 
@@ -1499,8 +1482,6 @@ I don't mind what you do with your class time, but it is very important that you
 
 
 ***
-
-
 
 
 
