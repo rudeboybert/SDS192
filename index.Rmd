@@ -1434,7 +1434,7 @@ I don't mind what you do with your class time, but it is very important that you
 1. **Method 2: "Knit" a report to Word**
     + Click the arrow next to "Knit" -> "Knit to Word".
     + Save the resulting Word document as a pdf file.
-1. **Method 3: Only if you are a macOS user**:
+1. **Only if you are a macOS user**:
     + Next to "Console" go to "Terminal"
     + Run this line of code:   
     ```{r, eval = FALSE}
