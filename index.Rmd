@@ -1438,7 +1438,7 @@ I don't mind what you do with your class time, but it is very important that you
     + Next to "Console" go to "Terminal"
     + Run this line of code:   
     ```{r, eval = FALSE}
-    sudo chown -R `whoami`:admin /usr/local/bin`
+    sudo chown -R `whoami`:admin /usr/local/bin
     ```
     + Enter your password. Note: Terminal has weird behavior whereby as you enter your password, the cursor will not move. Don't worry your password is registering. 
 1. **Method 3: "Knit" a report to PDF**
