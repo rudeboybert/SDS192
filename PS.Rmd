@@ -303,7 +303,7 @@ Notes:
 
 1. If you haven't already, complete the [intro survey](https://docs.google.com/forms/d/e/1FAIpQLSdA6uWnig5oR3ITCsVBFDxC6IC5Nq1tYzo-atdChe8CVTTqag/viewform){target="_blank"} distributed on Friday.
 1. Complete a syllabus quiz.
-    + Open the following [Google Doc](https://docs.google.com/document/d/1WknUhbtDeTGw8vvO8ytTURkF1_72ve4UXF5-SPk5NO8/){target="_blank"}.
+    + Open the following [Google Doc](https://docs.google.com/document/d/1WknUhbtDeTGw8vvO8ytTURkF1_72ve4UXF5-SPk5NO8/){target="_blank"} and click "File -> Make a copy"
     + Answer the questions based on information in the [syllabus](syllabus.html).
 1. Submit a PDF of your syllabus quiz responses on gradescope:
     + Your gradescope account is based on your Smith, 5 College, or other official email.
