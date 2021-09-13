@@ -1365,6 +1365,7 @@ I don't mind what you do with your class time, but it is very important that you
 
 ## Announcements
 
+* Section 1
 * The art of managing Slack notifications
 * RMarkdown: 1. **Bonus**: Play around with different formatting tools in R Markdown to customize your report! Go to RStudio menu bar -> Help -> Markdown quick reference.
 
