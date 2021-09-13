@@ -1762,7 +1762,7 @@ I don't mind what you do with your class time, but it is very important that you
 <div id="announcements" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>Problem Set 02 due this Monday 5pm, will be posted under <a href="PS.html">Problem Sets</a> after class</li>
+<li>Problem Set 02 due next Monday 5pm, will be posted under <a href="PS.html">Problem Sets</a> after class</li>
 </ul>
 </div>
 <div id="todays-topicsactivities" class="section level2">
@@ -1792,11 +1792,7 @@ I don't mind what you do with your class time, but it is very important that you
 <h3>2. In-class exercise</h3>
 <p><strong>In-class battle-testing and practicing for PS02:</strong></p>
 <ol style="list-style-type: decimal">
-<li>At a couple of steps in this process, you will be asked to install packages. Say yes to all of them. <!--
-1. **Fiddle with RStudio settings**:
-    + Go to RStudio menu bar -> Tools -> Global Options... -> R Markdown
-    + Uncheck box next to "Show output inline for all R Markdown Documents"
---></li>
+<li>At a couple of steps in this process, you will be asked to install packages. Say yes to all of them.</li>
 <li>If at any point your code won’t knit, go through these <a href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/" target="_blank">6 R Markdown Fixes</a> first, then seek assistance. <strong>These 6 fixes will resolve 85% of issues.</strong></li>
 <li><strong>Create new R Markdown <code>.Rmd</code> file</strong>:
 <ul>
@@ -1830,16 +1826,30 @@ I don't mind what you do with your class time, but it is very important that you
 <li>Click the arrow next to “Knit” -&gt; “Knit to Word”.</li>
 <li>Save the resulting Word document as a pdf file.</li>
 </ul></li>
+<li><strong>Method 3: Only if you are a macOS user</strong>:
+<ul>
+<li>Next to “Console” go to “Terminal”</li>
+<li>Run this line of code:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>sudo chown <span class="op">-</span>R <span class="st">`</span><span class="dt">whoami</span><span class="st">`</span><span class="op">:</span>admin <span class="op">/</span>usr<span class="op">/</span>local<span class="op">/</span>bin<span class="st">`</span></span></code></pre></div>
+<ul>
+<li>Enter your password. Note: Terminal has weird behavior whereby as you enter your password, the cursor will not move. Don’t worry your password is registering.</li>
+</ul></li>
 <li><strong>Method 3: “Knit” a report to PDF</strong>
 <ul>
 <li>Run the following code in your console just once:</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;tinytex&#39;</span>)</span>
-<span id="cb1-2"><a href="#cb1-2"></a>tinytex<span class="op">::</span><span class="kw">install_tinytex</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;tinytex&#39;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2"></a>tinytex<span class="op">::</span><span class="kw">install_tinytex</span>()</span></code></pre></div>
 <ul>
 <li>Click the arrow next to “Knit” -&gt; “Knit to PDF”.</li>
 </ul></li>
 </ol>
+<!--
+1. **Fiddle with RStudio settings**:
+    + Go to RStudio menu bar -> Tools -> Global Options... -> R Markdown
+    + Uncheck box next to "Show output inline for all R Markdown Documents"
+-->
 <hr />
 </div>
 </div>
@@ -1954,31 +1964,31 @@ I don't mind what you do with your class time, but it is very important that you
 </div>
 <div id="code-examples-from-class" class="section level2">
 <h2>Code examples from class</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Data visualization</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="kw">library</span>(fivethirtyeight)</span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb2-5"><a href="#cb2-5"></a>year_bins &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;&#39;70-&#39;74&quot;</span>, <span class="st">&quot;&#39;75-&#39;79&quot;</span>, <span class="st">&quot;&#39;80-&#39;84&quot;</span>, <span class="st">&quot;&#39;85-&#39;89&quot;</span>, <span class="st">&quot;&#39;90-&#39;94&quot;</span>,</span>
-<span id="cb2-6"><a href="#cb2-6"></a>               <span class="st">&quot;&#39;95-&#39;99&quot;</span>, <span class="st">&quot;&#39;00-&#39;04&quot;</span>, <span class="st">&quot;&#39;05-&#39;09&quot;</span>, <span class="st">&quot;&#39;10-&#39;13&quot;</span>)</span>
-<span id="cb2-7"><a href="#cb2-7"></a></span>
-<span id="cb2-8"><a href="#cb2-8"></a>bechdel &lt;-<span class="st"> </span>bechdel <span class="op">%&gt;%</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">five_year =</span> <span class="kw">cut</span>(year, <span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="dv">1969</span>, <span class="dv">2014</span>, <span class="dv">5</span>), <span class="dt">labels =</span> year_bins))</span>
-<span id="cb2-10"><a href="#cb2-10"></a></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="kw">ggplot</span>(bechdel, <span class="kw">aes</span>(<span class="dt">x =</span> five_year, <span class="dt">fill =</span> clean_test)) <span class="op">+</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="st">&quot;fill&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span></span>
-<span id="cb2-13"><a href="#cb2-13"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Year&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Proportion&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;Bechdel Test&quot;</span>) <span class="op">+</span></span>
-<span id="cb2-14"><a href="#cb2-14"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;YlGnBu&quot;</span>)</span>
-<span id="cb2-15"><a href="#cb2-15"></a></span>
-<span id="cb2-16"><a href="#cb2-16"></a><span class="co"># Data Wranling</span></span>
-<span id="cb2-17"><a href="#cb2-17"></a><span class="kw">library</span>(fec16)</span>
-<span id="cb2-18"><a href="#cb2-18"></a>all_transactions &lt;-<span class="st"> </span><span class="kw">read_all_transactions</span>()</span>
-<span id="cb2-19"><a href="#cb2-19"></a><span class="kw">View</span>(all_transactions)</span>
-<span id="cb2-20"><a href="#cb2-20"></a></span>
-<span id="cb2-21"><a href="#cb2-21"></a><span class="co"># Maps</span></span>
-<span id="cb2-22"><a href="#cb2-22"></a><span class="kw">library</span>(leaflet)</span>
-<span id="cb2-23"><a href="#cb2-23"></a><span class="kw">leaflet</span>() <span class="op">%&gt;%</span></span>
-<span id="cb2-24"><a href="#cb2-24"></a><span class="st">  </span><span class="kw">addTiles</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb2-25"><a href="#cb2-25"></a><span class="st">  </span><span class="kw">addMarkers</span>(<span class="dt">lng=</span><span class="op">-</span><span class="fl">72.64022</span>, <span class="dt">lat=</span><span class="fl">42.31706</span>, <span class="dt">popup=</span><span class="st">&quot;Smith College&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Data visualization</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">library</span>(fivethirtyeight)</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">library</span>(ggplot2)</span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="kw">library</span>(dplyr)</span>
+<span id="cb3-5"><a href="#cb3-5"></a>year_bins &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;&#39;70-&#39;74&quot;</span>, <span class="st">&quot;&#39;75-&#39;79&quot;</span>, <span class="st">&quot;&#39;80-&#39;84&quot;</span>, <span class="st">&quot;&#39;85-&#39;89&quot;</span>, <span class="st">&quot;&#39;90-&#39;94&quot;</span>,</span>
+<span id="cb3-6"><a href="#cb3-6"></a>               <span class="st">&quot;&#39;95-&#39;99&quot;</span>, <span class="st">&quot;&#39;00-&#39;04&quot;</span>, <span class="st">&quot;&#39;05-&#39;09&quot;</span>, <span class="st">&quot;&#39;10-&#39;13&quot;</span>)</span>
+<span id="cb3-7"><a href="#cb3-7"></a></span>
+<span id="cb3-8"><a href="#cb3-8"></a>bechdel &lt;-<span class="st"> </span>bechdel <span class="op">%&gt;%</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">five_year =</span> <span class="kw">cut</span>(year, <span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="dv">1969</span>, <span class="dv">2014</span>, <span class="dv">5</span>), <span class="dt">labels =</span> year_bins))</span>
+<span id="cb3-10"><a href="#cb3-10"></a></span>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="kw">ggplot</span>(bechdel, <span class="kw">aes</span>(<span class="dt">x =</span> five_year, <span class="dt">fill =</span> clean_test)) <span class="op">+</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="st">&quot;fill&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Year&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Proportion&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;Bechdel Test&quot;</span>) <span class="op">+</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;YlGnBu&quot;</span>)</span>
+<span id="cb3-15"><a href="#cb3-15"></a></span>
+<span id="cb3-16"><a href="#cb3-16"></a><span class="co"># Data Wranling</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a><span class="kw">library</span>(fec16)</span>
+<span id="cb3-18"><a href="#cb3-18"></a>all_transactions &lt;-<span class="st"> </span><span class="kw">read_all_transactions</span>()</span>
+<span id="cb3-19"><a href="#cb3-19"></a><span class="kw">View</span>(all_transactions)</span>
+<span id="cb3-20"><a href="#cb3-20"></a></span>
+<span id="cb3-21"><a href="#cb3-21"></a><span class="co"># Maps</span></span>
+<span id="cb3-22"><a href="#cb3-22"></a><span class="kw">library</span>(leaflet)</span>
+<span id="cb3-23"><a href="#cb3-23"></a><span class="kw">leaflet</span>() <span class="op">%&gt;%</span></span>
+<span id="cb3-24"><a href="#cb3-24"></a><span class="st">  </span><span class="kw">addTiles</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-25"><a href="#cb3-25"></a><span class="st">  </span><span class="kw">addMarkers</span>(<span class="dt">lng=</span><span class="op">-</span><span class="fl">72.64022</span>, <span class="dt">lat=</span><span class="fl">42.31706</span>, <span class="dt">popup=</span><span class="st">&quot;Smith College&quot;</span>)</span></code></pre></div>
 </div>
 </div>
 
