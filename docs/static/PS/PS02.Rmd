@@ -2,19 +2,8 @@
 ---
 title: "Problem Set 02"
 author: "WRITE YOUR NAME HERE"
-date: '2019-09-20'
+date: "2021-09-20"
 output:
-  word_document:
-    toc: yes
-    toc_depth: '2'
-  html_document:
-    highlight: tango
-    theme: cosmo
-    toc: yes
-    toc_depth: 2
-    toc_float:
-      collapsed: no
-    df_print: kable
   pdf_document:
     toc: yes
     toc_depth: '2'
@@ -27,12 +16,20 @@ knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE, fig.width = 1
 
 # Learning goals
 
-* Getting used to "knitting" R Markdown documents 
-* Baby's first data visualization: Recreating Figure 2.1 in moderndive.
+* Learn to "knit" R Markdown documents and create a PDF
+* Recreate Figure 2.1 in ModernDive.
+* Get familiar with the [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/)
 
 # Honor code
 
 For this problem set I worked with: 
+
+
+# Getting started
+
+* At the top of this document replace `"WRITE YOUR NAME HERE"` with your name, including the quotation marks. Ex: `"Albert Y. Kim"`
+* In the Honor code section above, indicate who (if anyone) you worked with. 
+
 
 # Setup
 
@@ -73,5 +70,6 @@ Write the `ggplot2` that recreates Figure 2.1 of ModernDive. Do not worry about 
 
 # Question 2
 
-What is the country that had highest GDP per capita in 2007? Hint: Use the sorting functions in RStudio's Viewer.
+Q: What country had the highest GDP per capita in 2007? Use the sorting arrows next to variable names in RStudio's `View()` function.
 
+A: 

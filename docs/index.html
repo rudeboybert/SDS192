@@ -1732,12 +1732,12 @@ I don't mind what you do with your class time, but it is very important that you
 
 
 
-# Lec 05: Mon 9/16 {#Lec05}
+# Lec 05: Wed 9/16 {#Lec05}
 
 ## Announcements
 
-* Slack message: Abandoning RStudio Cloud in favor of RStudio Desktop.
 * The art of managing Slack notifications
+* RMarkdown: 1. **Bonus**: Play around with different formatting tools in R Markdown to customize your report! Go to RStudio menu bar -> Help -> Markdown quick reference.
 
 ## Today's topics/activities
 
@@ -1755,68 +1755,98 @@ I don't mind what you do with your class time, but it is very important that you
 
 ***
 
-
-
-# Lec 04: Fri 9/13 {#Lec04}
-
-## Announcements
-
-* Screencast from last lecture posted
-* I'm currently investigating issue with RStudio Cloud being slow
-* PS02 posted under [Problem Sets](PS.html)
-
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-* Recap of previous lecture
-* R Markdown for *reproducible research*
-
-**Input**: An `.Rmd` file  | **Output**: An `.html` webpage
-------------- | -------------
-![](static/images/rmd_input.png){ width=800px } | ![](static/images/rmd_output.png){ width=800px }
-
-
-### 2. In-class exercise
-
-1. At a couple of steps in this process, you will be asked to install packages. Say yes to all of them!
+-->
+</div>
+<div id="Lec04" class="section level1">
+<h1>Lec 04: Mon 9/13</h1>
+<div id="announcements" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>Problem Set 02 due this Monday 5pm, will be posted under <a href="PS.html">Problem Sets</a> after class</li>
+</ul>
+</div>
+<div id="todays-topicsactivities" class="section level2">
+<h2>Today’s topics/activities</h2>
+<div id="chalk-talk" class="section level3">
+<h3>1. Chalk talk</h3>
+<ul>
+<li>Recap of previous lecture</li>
+<li>“Where can I save all the code I run in class?” In an R Markdown <code>.Rmd</code> file; R Markdown is a tool for <em>reproducible research</em></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Input</strong>: An <code>.Rmd</code> file</th>
+<th><strong>Output</strong>: An <code>.html</code>, <code>.docx</code>, or <code>.pdf</code> file.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="static/images/rmd_input.png" width="800" /></td>
+<td><img src="static/images/rmd_output.png" width="800" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="in-class-exercise" class="section level3">
+<h3>2. In-class exercise</h3>
+<p><strong>In-class battle-testing and practicing for PS02:</strong></p>
+<ol style="list-style-type: decimal">
+<li>At a couple of steps in this process, you will be asked to install packages. Say yes to all of them. <!--
 1. **Fiddle with RStudio settings**:
     + Go to RStudio menu bar -> Tools -> Global Options... -> R Markdown
     + Uncheck box next to "Show output inline for all R Markdown Documents"
-1. **Create new R Markdown `.Rmd` file**:
-    + Go to RStudio menu bar -> File -> New File -> R Markdown 
-    + Set "Title" to "My first R Markdown report" and "Author" as your name.
-1. **"Knit" a report**:
-    + Click on the disk icon and save this file as `testing` somewhere on your computer. This will create a file called `testing.Rmd`
-    + Click the arrow next to "Knit" -> "Knit to HTML".
-    + An HTML webpage should pop up. However, it may be blocked by your browser. If so, in your browser's URL bar on the right, click on "Always allow pop-ups".
-1. **Publish this report on web**:
-    + Click on blue "Publish" button on top right of the resulting **pop-up html**.
-    + Select RPubs.
-    + If you haven't previously, create an account on Rpubs.com. If you have previously, login.
-    + Set "Title" to "My first R Markdown report" and "Slug" to "testing"
-    + You should end up with a webpage that looks like this [one](http://rpubs.com/rudeboybert/testing){target="_blank"}. This is live on the web!
-1. **Update your report on web**:
-    + Make some trivial change to your `testing.Rmd` file.
-    + "Re-knit" your report and make sure your trivial change is reflected.
-    + The blue "Publish" button should now read "Republish"
-    + Click "Update existing"
-    + Your updates are now live on the web!
-1. **Bonus**: Play around with different formatting tools in R Markdown to customize your report! Go to RStudio menu bar -> Help -> Markdown quick reference.
-
-
-**Tips on R Markdown**:
-
-1. Knit early, knit often! If you wait until only after you've added a ton of code to knit and something doesn't work, you'll have a hard time figuring out where the error is. If you make incremental changes and knit after every step, you'll better able to isolate where errors are.
-1. If you get stuck, **go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first**, then seek assistance. These 6 fixes resolve 85% of issues in my experience.
-
--->
+--></li>
+<li>If at any point your code won’t knit, go through these <a href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/" target="_blank">6 R Markdown Fixes</a> first, then seek assistance. <strong>These 6 fixes will resolve 85% of issues.</strong></li>
+<li><strong>Create new R Markdown <code>.Rmd</code> file</strong>:
+<ul>
+<li>Go to RStudio menu bar -&gt; File -&gt; New File -&gt; R Markdown</li>
+<li>Set “Title” to “My first R Markdown report” and “Author” as your name.</li>
+<li>Save this file as <code>testing</code> somewhere on your computer. This will create a file called <code>testing.Rmd</code></li>
+</ul></li>
+<li><strong>Method 1: “Knit” a report to HTML</strong>:
+<ul>
+<li>Click the arrow next to “Knit” -&gt; “Knit to HTML”.</li>
+<li>An HTML webpage should pop up. However, it may be blocked by your browser. If so, in your browser’s URL bar, click on “Always allow pop-ups”.</li>
+</ul></li>
+<li><strong>Method 1: Publish HTML report on web</strong>:
+<ul>
+<li>Click on blue “Publish” button on top right of the resulting <strong>pop-up html</strong>.</li>
+<li>Select RPubs.</li>
+<li>If you haven’t previously, create an account on Rpubs.com. If you have previously, login.</li>
+<li>Set “Title” to “My first R Markdown report” and “Slug” to “testing”</li>
+<li>You should end up with a webpage that looks like this <a href="http://rpubs.com/rudeboybert/testing" target="_blank">one</a>. This is live on the web!</li>
+</ul></li>
+<li><strong>Method 1: Update HTML report on web</strong>:
+<ul>
+<li>Make some trivial change to your <code>testing.Rmd</code> file.</li>
+<li>“Re-knit” your report and make sure your trivial change is reflected.</li>
+<li>The blue “Publish” button should now read “Republish”</li>
+<li>Click “Update existing”</li>
+<li>Your updates are now live on the web!</li>
+</ul></li>
+<li><strong>Method 2: “Knit” a report to Word</strong>
+<ul>
+<li>Click the arrow next to “Knit” -&gt; “Knit to Word”.</li>
+<li>Save the resulting Word document as a pdf file.</li>
+</ul></li>
+<li><strong>Method 3: “Knit” a report to PDF</strong>
+<ul>
+<li>Run the following code in your console just once:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;tinytex&#39;</span>)</span>
+<span id="cb1-2"><a href="#cb1-2"></a>tinytex<span class="op">::</span><span class="kw">install_tinytex</span>()</span></code></pre></div>
+<ul>
+<li>Click the arrow next to “Knit” -&gt; “Knit to PDF”.</li>
+</ul></li>
+</ol>
 <hr />
+</div>
+</div>
 </div>
 <div id="Lec03" class="section level1">
 <h1>Lec 03: Fri 9/10</h1>
-<div id="announcements" class="section level2">
+<div id="announcements-1" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Spinelli Center <a href="https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats." target="_blank">SDS drop-in tutoring hours</a> now open! Get individual attention from SDS majors! In Sabin-Reed 301
@@ -1840,9 +1870,9 @@ I don't mind what you do with your class time, but it is very important that you
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities" class="section level2">
+<div id="todays-topicsactivities-1" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk" class="section level3">
+<div id="chalk-talk-1" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1855,7 +1885,7 @@ I don't mind what you do with your class time, but it is very important that you
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise" class="section level3">
+<div id="in-class-exercise-1" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1866,15 +1896,15 @@ I don't mind what you do with your class time, but it is very important that you
 </div>
 <div id="Lec02" class="section level1">
 <h1>Lec 02: Wed 9/8</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Problem Set 01 due this Monday 5pm, posted under <a href="PS.html">Problem Sets</a>.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-1" class="section level3">
+<div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Intro to Slack</li>
@@ -1882,7 +1912,7 @@ I don't mind what you do with your class time, but it is very important that you
 <li>What are R packages?</li>
 </ul>
 </div>
-<div id="in-class-exercise-1" class="section level3">
+<div id="in-class-exercise-2" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1900,11 +1930,11 @@ I don't mind what you do with your class time, but it is very important that you
 </div>
 <div id="Lec01" class="section level1">
 <h1>Lec 01: Fri 9/3</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <p>Welcome!</p>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s topics/activities</h2>
 <ul>
 <li>Course webpage: bit.ly/sds192kim</li>
@@ -1924,31 +1954,31 @@ I don't mind what you do with your class time, but it is very important that you
 </div>
 <div id="code-examples-from-class" class="section level2">
 <h2>Code examples from class</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Data visualization</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">library</span>(fivethirtyeight)</span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb1-5"><a href="#cb1-5"></a>year_bins &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;&#39;70-&#39;74&quot;</span>, <span class="st">&quot;&#39;75-&#39;79&quot;</span>, <span class="st">&quot;&#39;80-&#39;84&quot;</span>, <span class="st">&quot;&#39;85-&#39;89&quot;</span>, <span class="st">&quot;&#39;90-&#39;94&quot;</span>,</span>
-<span id="cb1-6"><a href="#cb1-6"></a>               <span class="st">&quot;&#39;95-&#39;99&quot;</span>, <span class="st">&quot;&#39;00-&#39;04&quot;</span>, <span class="st">&quot;&#39;05-&#39;09&quot;</span>, <span class="st">&quot;&#39;10-&#39;13&quot;</span>)</span>
-<span id="cb1-7"><a href="#cb1-7"></a></span>
-<span id="cb1-8"><a href="#cb1-8"></a>bechdel &lt;-<span class="st"> </span>bechdel <span class="op">%&gt;%</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">five_year =</span> <span class="kw">cut</span>(year, <span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="dv">1969</span>, <span class="dv">2014</span>, <span class="dv">5</span>), <span class="dt">labels =</span> year_bins))</span>
-<span id="cb1-10"><a href="#cb1-10"></a></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="kw">ggplot</span>(bechdel, <span class="kw">aes</span>(<span class="dt">x =</span> five_year, <span class="dt">fill =</span> clean_test)) <span class="op">+</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="st">&quot;fill&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Year&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Proportion&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;Bechdel Test&quot;</span>) <span class="op">+</span></span>
-<span id="cb1-14"><a href="#cb1-14"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;YlGnBu&quot;</span>)</span>
-<span id="cb1-15"><a href="#cb1-15"></a></span>
-<span id="cb1-16"><a href="#cb1-16"></a><span class="co"># Data Wranling</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a><span class="kw">library</span>(fec16)</span>
-<span id="cb1-18"><a href="#cb1-18"></a>all_transactions &lt;-<span class="st"> </span><span class="kw">read_all_transactions</span>()</span>
-<span id="cb1-19"><a href="#cb1-19"></a><span class="kw">View</span>(all_transactions)</span>
-<span id="cb1-20"><a href="#cb1-20"></a></span>
-<span id="cb1-21"><a href="#cb1-21"></a><span class="co"># Maps</span></span>
-<span id="cb1-22"><a href="#cb1-22"></a><span class="kw">library</span>(leaflet)</span>
-<span id="cb1-23"><a href="#cb1-23"></a><span class="kw">leaflet</span>() <span class="op">%&gt;%</span></span>
-<span id="cb1-24"><a href="#cb1-24"></a><span class="st">  </span><span class="kw">addTiles</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb1-25"><a href="#cb1-25"></a><span class="st">  </span><span class="kw">addMarkers</span>(<span class="dt">lng=</span><span class="op">-</span><span class="fl">72.64022</span>, <span class="dt">lat=</span><span class="fl">42.31706</span>, <span class="dt">popup=</span><span class="st">&quot;Smith College&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Data visualization</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="kw">library</span>(fivethirtyeight)</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="kw">library</span>(ggplot2)</span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="kw">library</span>(dplyr)</span>
+<span id="cb2-5"><a href="#cb2-5"></a>year_bins &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;&#39;70-&#39;74&quot;</span>, <span class="st">&quot;&#39;75-&#39;79&quot;</span>, <span class="st">&quot;&#39;80-&#39;84&quot;</span>, <span class="st">&quot;&#39;85-&#39;89&quot;</span>, <span class="st">&quot;&#39;90-&#39;94&quot;</span>,</span>
+<span id="cb2-6"><a href="#cb2-6"></a>               <span class="st">&quot;&#39;95-&#39;99&quot;</span>, <span class="st">&quot;&#39;00-&#39;04&quot;</span>, <span class="st">&quot;&#39;05-&#39;09&quot;</span>, <span class="st">&quot;&#39;10-&#39;13&quot;</span>)</span>
+<span id="cb2-7"><a href="#cb2-7"></a></span>
+<span id="cb2-8"><a href="#cb2-8"></a>bechdel &lt;-<span class="st"> </span>bechdel <span class="op">%&gt;%</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">five_year =</span> <span class="kw">cut</span>(year, <span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="dv">1969</span>, <span class="dv">2014</span>, <span class="dv">5</span>), <span class="dt">labels =</span> year_bins))</span>
+<span id="cb2-10"><a href="#cb2-10"></a></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="kw">ggplot</span>(bechdel, <span class="kw">aes</span>(<span class="dt">x =</span> five_year, <span class="dt">fill =</span> clean_test)) <span class="op">+</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="st">&quot;fill&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Year&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Proportion&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;Bechdel Test&quot;</span>) <span class="op">+</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;YlGnBu&quot;</span>)</span>
+<span id="cb2-15"><a href="#cb2-15"></a></span>
+<span id="cb2-16"><a href="#cb2-16"></a><span class="co"># Data Wranling</span></span>
+<span id="cb2-17"><a href="#cb2-17"></a><span class="kw">library</span>(fec16)</span>
+<span id="cb2-18"><a href="#cb2-18"></a>all_transactions &lt;-<span class="st"> </span><span class="kw">read_all_transactions</span>()</span>
+<span id="cb2-19"><a href="#cb2-19"></a><span class="kw">View</span>(all_transactions)</span>
+<span id="cb2-20"><a href="#cb2-20"></a></span>
+<span id="cb2-21"><a href="#cb2-21"></a><span class="co"># Maps</span></span>
+<span id="cb2-22"><a href="#cb2-22"></a><span class="kw">library</span>(leaflet)</span>
+<span id="cb2-23"><a href="#cb2-23"></a><span class="kw">leaflet</span>() <span class="op">%&gt;%</span></span>
+<span id="cb2-24"><a href="#cb2-24"></a><span class="st">  </span><span class="kw">addTiles</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb2-25"><a href="#cb2-25"></a><span class="st">  </span><span class="kw">addMarkers</span>(<span class="dt">lng=</span><span class="op">-</span><span class="fl">72.64022</span>, <span class="dt">lat=</span><span class="fl">42.31706</span>, <span class="dt">popup=</span><span class="st">&quot;Smith College&quot;</span>)</span></code></pre></div>
 </div>
 </div>
 
