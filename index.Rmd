@@ -1391,7 +1391,7 @@ I don't mind what you do with your class time, but it is very important that you
 
 ## Announcements
 
-* Problem Set 02 due this Monday 5pm, will be posted under [Problem Sets](PS.html) after class
+* Problem Set 02 due next Monday 5pm, will be posted under [Problem Sets](PS.html) after class
 
 
 ## Today's topics/activities
@@ -1411,11 +1411,6 @@ I don't mind what you do with your class time, but it is very important that you
 **In-class battle-testing and practicing for PS02:**
 
 1. At a couple of steps in this process, you will be asked to install packages. Say yes to all of them.
-<!--
-1. **Fiddle with RStudio settings**:
-    + Go to RStudio menu bar -> Tools -> Global Options... -> R Markdown
-    + Uncheck box next to "Show output inline for all R Markdown Documents"
--->
 1. If at any point your code won't knit, go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first, then seek assistance. **These 6 fixes will resolve 85% of issues.**
 1. **Create new R Markdown `.Rmd` file**:
     + Go to RStudio menu bar -> File -> New File -> R Markdown 
@@ -1439,6 +1434,13 @@ I don't mind what you do with your class time, but it is very important that you
 1. **Method 2: "Knit" a report to Word**
     + Click the arrow next to "Knit" -> "Knit to Word".
     + Save the resulting Word document as a pdf file.
+1. **Method 3: Only if you are a macOS user**:
+    + Next to "Console" go to "Terminal"
+    + Run this line of code:   
+    ```{r, eval = FALSE}
+    sudo chown -R `whoami`:admin /usr/local/bin`
+    ```
+    + Enter your password. Note: Terminal has weird behavior whereby as you enter your password, the cursor will not move. Don't worry your password is registering. 
 1. **Method 3: "Knit" a report to PDF**
     + Run the following code in your console just once:  
     ```{r, eval=FALSE}
@@ -1448,6 +1450,12 @@ I don't mind what you do with your class time, but it is very important that you
     + Click the arrow next to "Knit" -> "Knit to PDF".
 
 
+
+<!--
+1. **Fiddle with RStudio settings**:
+    + Go to RStudio menu bar -> Tools -> Global Options... -> R Markdown
+    + Uncheck box next to "Show output inline for all R Markdown Documents"
+-->
 
 ***
 
