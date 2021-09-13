@@ -2,16 +2,22 @@
 ---
 title: "Problem Set 02"
 author: "WRITE YOUR NAME HERE"
-date: "2019-09-20"
+date: '2019-09-20'
 output:
+  word_document:
+    toc: yes
+    toc_depth: '2'
   html_document:
     highlight: tango
     theme: cosmo
     toc: yes
     toc_depth: 2
     toc_float:
-      collapsed: false
+      collapsed: no
     df_print: kable
+  pdf_document:
+    toc: yes
+    toc_depth: '2'
 ---
 
 ```{r, include=FALSE}
