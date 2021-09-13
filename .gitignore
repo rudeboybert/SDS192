@@ -8,3 +8,4 @@ _site/*
 *.DS_Store
 *_files/*
 .httr-oauth
+docs/site_libs/header-attrs-2.9/*
