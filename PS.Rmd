@@ -253,29 +253,30 @@ Notes:
 
 ***
 
+-->
 
 
 # Problem set 02 {#PS02}
 
-*Assigned Friday 9/13, due Friday 9/20 at 10:45am on Moodle.*
-
+*Due Monday 9/20 5pm*
 
 ## 1. R Markdown component {#PS02_R}
 
 * Download the following Rmd template file: <a href="static/PS/PS02.Rmd" download>`PS02.Rmd`</a>.
-* Upload the `PS02.Rmd` file to RStudio Cloud. 
-* Complete the problem set.
-* Submit the resulting `PS02.html` file on [Moodle](https://moodle.smith.edu/course/view.php?id=35357){target="_blank"}. Note: you are only submitting the output HTML report file `PS02.html` and not the original `PS02.Rmd` R Markdown file.
+* You will be submitting the resulting `PS02.pdf` file on gradescope. There are two methods to create a PDF:
+    1. "Knit to PDF". If possible do this. 
+    1. If this doesn't work for you, then "Knit to Word" and then export/save as PDF
+* Complete the individual questions. Knit early, knit often.
+* If you encounter issues knitting your document, consult the [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"}.
+* Submit on gradescope:
+    1. Anytime between Mon 9/13 5pm and Mon 9/20 5pm
+    1. For each questions, tag **all** pages of your PDF that relate to that question
 
 
+<!--
 **Hints**:
 
 1. The resulting graph should be similar to the one [here](static/PS/PS02_hint.html){target="_blank"}.
-1. For this problem set, I suggest you not try to write code from scratch, but rather take the copy/paste/tweak approach: find code that does something similar to what you want, copy it, paste it, and change it just enough so that it does what you want. As you get more comfortable, I suggest slowly trying to write code from scratch. 
-1. Here is the screencast demo I recorded in class on the problem set workflow:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1BD0pLcGnvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</br>
 
 
 ## 2. Solutions & (imperfect) rubric {#PS02_solutions}
@@ -290,11 +291,10 @@ Notes:
 
 1. Q1: 4pts (one for each of the four aesthetics)
 1. Q2: 1pt
-
+-->
 
 
 ***
--->
 
 
 # Problem set 01 {#PS01}
@@ -303,14 +303,14 @@ Notes:
 
 1. If you haven't already, complete the [intro survey](https://docs.google.com/forms/d/e/1FAIpQLSdA6uWnig5oR3ITCsVBFDxC6IC5Nq1tYzo-atdChe8CVTTqag/viewform){target="_blank"} distributed on Friday.
 1. Complete a syllabus quiz.
-    + Open the following [Google Doc](https://docs.google.com/document/d/1WknUhbtDeTGw8vvO8ytTURkF1_72ve4UXF5-SPk5NO8/){target="_blank"} and click "File -> Make a copy"
+    + Open the following [Google Doc](https://docs.google.com/document/d/1WknUhbtDeTGw8vvO8ytTURkF1_72ve4UXF5-SPk5NO8/){target="_blank"} and in the menu bar click "File -> Make a copy..."
     + Answer the questions based on information in the [syllabus](syllabus.html).
 1. Submit a PDF of your syllabus quiz responses on gradescope:
     + Your gradescope account is based on your Smith, 5 College, or other official email.
     + Create your account on gradescope via the email sent to you this morning. If you did not receive such an email, add yourself to the course using Entry Code: 6PNXZ5.
     + Log into [gradescope](https://www.gradescope.com/courses/308310){target="_blank"} 
     + **Added after lecture**: You can edit gradescope submissions as many times as you like before the due date/time.
-    + **Added after lecture**: You need to "tag" the 11 individual questions on whatever page they are on (demo on Fri 9/10)
+    + **Added after lecture**: You need to "tag" the 11 individual questions on whatever page(s) they are on (demo on Fri 9/10)
     
 
 
