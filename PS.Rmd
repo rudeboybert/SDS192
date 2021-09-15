@@ -264,7 +264,7 @@ Notes:
 
 * Download the following Rmd template file: <a href="static/PS/PS02.Rmd" download>`PS02.Rmd`</a>.
 * You will be submitting the resulting `PS02.pdf` file on gradescope. There are two methods to create a PDF:
-    1. "Knit to PDF". If possible do this. 
+    1. "Knit to PDF". This is the preferred format (for consistency for the graders). 
     1. If this doesn't work for you, then "Knit to Word" and then export/save as PDF
 * Complete the individual questions. Knit early, knit often.
 * If you encounter issues knitting your document, consult the [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"}.
@@ -276,8 +276,6 @@ Notes:
 <!--
 **Hints**:
 
-1. The resulting graph should be similar to the one [here](static/PS/PS02_hint.html){target="_blank"}.
-
 
 ## 2. Solutions & (imperfect) rubric {#PS02_solutions}
 
@@ -286,11 +284,6 @@ Notes:
 * <a href="static/PS/PS02_solutions.Rmd" download>`PS02_solutions.Rmd`</a> R Markdown "source code" to create html report output. 
 * [`PS02_solutions.html`](static/PS/PS02_solutions.html){target="_blank"} html report.
 
-
-**Rubric**:
-
-1. Q1: 4pts (one for each of the four aesthetics)
-1. Q2: 1pt
 -->
 
 
