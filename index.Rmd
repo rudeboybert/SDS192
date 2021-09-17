@@ -1347,8 +1347,18 @@ I don't mind what you do with your class time, but it is very important that you
 ### 1. Chalk talk
 
 * In-class demo of using RMarkdown features in a `classnotes.Rmd` file to save lecture code
-* Recap of previous lecture
+* Take screenshots of your screen!
+    + macOS: Command+Shift+3 to take shot of whole screen, Command+Shift+4 to take subportion
+    + Windows: [Shift-Windows Key-S and Snip & Sketch](https://www.pcmag.com/how-to/how-to-take-screenshots-in-windows-10){target="_blank"}
 * Histograms for visualizing the *distribution* of a numerical variable
+
+
+#### Section 1 (Stoddard G6) Demo
+
+
+#### Section 2 (Sabin-Reed 220) Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xrf6ymv6o7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### 2. In-class exercise
