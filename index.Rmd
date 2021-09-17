@@ -1355,6 +1355,7 @@ I don't mind what you do with your class time, but it is very important that you
 
 #### Section 1 (Stoddard G6) Demo
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AhRxFl3k_5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Section 2 (Sabin-Reed 220) Demo
 
