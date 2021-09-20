@@ -1247,6 +1247,7 @@ Compare that to using barplots. Which do you prefer?
 
 ## Announcements
 
+* Office of Disability Services is looking to hire a note taker for the class. If interested, see note in Slack #general. 
 * Problem sets:
     + PS02 due today at 5pm
     + PS03 to be posted by 6pm today
