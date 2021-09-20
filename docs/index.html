@@ -431,7 +431,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS 192: Introduction to Data Science</h1>
 <h4 class="author">Albert Y. Kim</h4>
-<h4 class="date">Last updated on 2021-09-17</h4>
+<h4 class="date">Last updated on 2021-09-20</h4>
 
 </div>
 
@@ -1545,7 +1545,7 @@ colors()
 
 
 
-# Lec 09: Fri 9/27 {#Lec09}
+# Lec 09: Fri 9/24 {#Lec09}
 
 ## Announcements
 
@@ -1606,7 +1606,7 @@ Compare that to using barplots. Which do you prefer?
 
 
 
-# Lec 08: Mon 9/23 {#Lec08}
+# Lec 08: Wed 9/22 {#Lec08}
 
 ## Announcements
 
@@ -1629,87 +1629,85 @@ Compare that to using barplots. Which do you prefer?
 
 ### 2. In-class exercise
 
-* Go over ModernDive 2.8
+* Go over ModernDive reading in schedule above.
 
 
 
 ***
 
-
-
-# Lec 07: Fri 9/20 {#Lec07}
-
-## Announcements
-
-* Slack:
-    + Prof. Katie Kinnaird's TRIPODS+X - Data Science Education Investigation
-    + Post on `#random` by Ray
-* Problem sets:
-    + PS01 handed back on Monday
-    + Go over [PS02 solutions](PS.html#PS02_solutions)
-    + PS03 posted
-* Announcement from Smithies in SDS:
-
-![](static/images/announcements/SSDS.png){ width=450px }
-<br>   
-
-
-
-
-
-## Tweet of the Day
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://twitter.com/HBO?ref_src=twsrc%5Etfw">@HBO</a> The Wire<br><br>Context: A Johns Hopkins academic presents his research on at-risk youth at a Baltimore middle school <a href="https://twitter.com/hashtag/TheWire?src=hash&amp;ref_src=twsrc%5Etfw">#TheWire</a> <a href="https://t.co/ETC2jYew9v">pic.twitter.com/ETC2jYew9v</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1174729578373423105?ref_src=twsrc%5Etfw">September 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-* Recap of histograms
-* Facets to split a visualization by the values of another variable
-* Boxplots! Powerful, but tricky!
-
-
-
-
-Say we want to study the distribution of the following 12 values which are pre-sorted: 
-
-> 1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30
-
-They have the following *summary statistics*. A summary statistic is a single numerical value *summarizing* many values. Examples include the immediately obvious mean AKA average and median. Other less immediately obvious examples include:
-
-* Quartiles (1st, 2nd, and 3rd) that cut up the data into 4 parts, each containing roughly one quarter = 25% of the data
-* Minimum & maximum
-* Interquartile-range (IQR): the distance between the 3rd and 1st quartiles
-
-Min. | 1st Quartile | Median = 2nd Quartile  | 3rd Quartile  |  Max. | IQR
----- | ------- | ------  |  ------- | --- | ---
-1  |  5.5 |  8.5  |  13.5  | 30 | 8 = 13.5 - 5.5
-
-
+-->
+</div>
+<div id="Lec07" class="section level1">
+<h1>Lec 07: Mon 9/20</h1>
+<div id="announcements" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>Problem sets:
+<ul>
+<li>PS02 due today at 5pm</li>
+<li>PS03 to be posted by 6pm today</li>
+</ul></li>
+</ul>
+</div>
+<div id="todays-topicsactivities" class="section level2">
+<h2>Today’s topics/activities</h2>
+<div id="chalk-talk" class="section level3">
+<h3>1. Chalk talk</h3>
+<ul>
+<li>Recap of histograms</li>
+<li>Facets to split a visualization by the values of another variable</li>
+<li>Boxplots! Powerful, but tricky!</li>
+</ul>
+<p>Say we want to study the distribution of the following 12 values which are pre-sorted:</p>
+<blockquote>
+<p>1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30</p>
+</blockquote>
+<p>They have the following <em>summary statistics</em>. A summary statistic is a single numerical value <em>summarizing</em> many values. Examples include the immediately obvious mean AKA average and median. Other less immediately obvious examples include:</p>
+<ul>
+<li>Quartiles (1st, 2nd, and 3rd) that cut up the data into 4 parts, each containing roughly one quarter = 25% of the data</li>
+<li>Minimum &amp; maximum</li>
+<li>Interquartile-range (IQR): the distance between the 3rd and 1st quartiles</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Min.</th>
+<th>1st Quartile</th>
+<th>Median = 2nd Quartile</th>
+<th>3rd Quartile</th>
+<th>Max.</th>
+<th>IQR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>5.5</td>
+<td>8.5</td>
+<td>13.5</td>
+<td>30</td>
+<td>8 = 13.5 - 5.5</td>
+</tr>
+</tbody>
+</table>
+<!--
 Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
-
-<img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" />
-
-
-### 2. In-class exercise
-
-* Go over ModernDive 2.6 - 2.7
-* Start PS03
-
-I don't mind what you do with your class time, but it is very important that you complete the reading before next lecture. Boxplots take practice.
-
-
-***
 
 
 -->
 </div>
+<div id="in-class-exercise" class="section level3">
+<h3>2. In-class exercise</h3>
+<ul>
+<li>Go over ModernDive reading in schedule above.</li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
 <div id="Lec06" class="section level1">
 <h1>Lec 06: Fri 9/17</h1>
-<div id="announcements" class="section level2">
+<div id="announcements-1" class="section level2">
 <h2>Announcements</h2>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
@@ -1719,9 +1717,9 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities" class="section level2">
+<div id="todays-topicsactivities-1" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk" class="section level3">
+<div id="chalk-talk-1" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>In-class demo of using RMarkdown features in a <code>classnotes.Rmd</code> file to save lecture code</li>
@@ -1743,7 +1741,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </iframe>
 </div>
 </div>
-<div id="in-class-exercise" class="section level3">
+<div id="in-class-exercise-1" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>If you still haven’t been able to “Knit to PDF”, please ask for help</li>
@@ -1755,22 +1753,22 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec05" class="section level1">
 <h1>Lec 05: Wed 9/15</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>PS02 was posted after Monday’s lecture.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-1" class="section level3">
+<div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Overplotting and two approaches for addressing it</li>
 <li>Linegraphs</li>
 </ul>
 </div>
-<div id="in-class-exercise-1" class="section level3">
+<div id="in-class-exercise-2" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Explore the different formatting tools in R Markdown: go to RStudio top menu bar -&gt; Help -&gt; Markdown quick reference.</li>
@@ -1783,15 +1781,15 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec04" class="section level1">
 <h1>Lec 04: Mon 9/13</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Problem Set 02 due next Monday 5pm, now posted under <a href="PS.html">Problem Sets</a></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-2" class="section level3">
+<div id="chalk-talk-3" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1812,7 +1810,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </tbody>
 </table>
 </div>
-<div id="in-class-exercise-2" class="section level3">
+<div id="in-class-exercise-3" class="section level3">
 <h3>2. In-class exercise</h3>
 <p><strong>In-class battle-testing and practicing for PS02:</strong></p>
 <ol style="list-style-type: decimal">
@@ -1880,7 +1878,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec03" class="section level1">
 <h1>Lec 03: Fri 9/10</h1>
-<div id="announcements-3" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Spinelli Center <a href="https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats." target="_blank">SDS drop-in tutoring hours</a> now open! Get individual attention from SDS majors! In Sabin-Reed 301
@@ -1904,9 +1902,9 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-3" class="section level2">
+<div id="todays-topicsactivities-4" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-3" class="section level3">
+<div id="chalk-talk-4" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1919,7 +1917,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-3" class="section level3">
+<div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1930,15 +1928,15 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec02" class="section level1">
 <h1>Lec 02: Wed 9/8</h1>
-<div id="announcements-4" class="section level2">
+<div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Problem Set 01 due this Monday 5pm, posted under <a href="PS.html">Problem Sets</a>.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-4" class="section level2">
+<div id="todays-topicsactivities-5" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-4" class="section level3">
+<div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Intro to Slack</li>
@@ -1946,7 +1944,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <li>What are R packages?</li>
 </ul>
 </div>
-<div id="in-class-exercise-4" class="section level3">
+<div id="in-class-exercise-5" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1964,11 +1962,11 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec01" class="section level1">
 <h1>Lec 01: Fri 9/3</h1>
-<div id="announcements-5" class="section level2">
+<div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <p>Welcome!</p>
 </div>
-<div id="todays-topicsactivities-5" class="section level2">
+<div id="todays-topicsactivities-6" class="section level2">
 <h2>Today’s topics/activities</h2>
 <ul>
 <li>Course webpage: bit.ly/sds192kim</li>
