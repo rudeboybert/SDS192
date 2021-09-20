@@ -1260,6 +1260,7 @@ Compare that to using barplots. Which do you prefer?
 
 * Recap of histograms
 * Facets to split a visualization by the values of another variable
+* Default ordering of functions such as `ggplot()` where `data = ` is assumed first and `mapping = ` is assumed second
 * Boxplots! Powerful, but tricky!
 
 
