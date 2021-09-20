@@ -210,31 +210,20 @@ Total: 9pts
 
 # Problem set 03 {#PS03}
 
-*To be posted by Mon 9/20 6pm*
-
-<!--
-
-
-
-Tag honor code section
-
-
-
-
-
-
+*Due Monday 9/27 5pm*
 
 ## 1. R Markdown component {#PS03_R}
 
 * Download the following Rmd template file: <a href="static/PS/PS03.Rmd" download>`PS03.Rmd`</a>.
-* Complete the problem set.
-* Submit the resulting `PS03.html` file on [Moodle](https://moodle.smith.edu/course/view.php?id=35357){target="_blank"}. Note: you are only submitting the output HTML report file and not the original R Markdown file.
+* You will be submitting the resulting `PS03.pdf` file on gradescope. Please use the "Knit to PDF" method directly, instead of "Knit to Word" and then save to PDF method.
+* Complete the individual questions. Knit early, knit often.
+* If you encounter issues knitting your document, consult the [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"}.
+* Submit on [gradescope](https://www.gradescope.com/courses/308310){target="_blank"} :
+    1. Anytime between Mon 9/20 5pm and Mon 9/27 5pm
+    1. For each questions, tag **all** pages of your PDF that relate to that question (not just the first)
+    1. You will be asked to tag the honor code question as well.
 
-
-**Hints**:
-
-1. If your R Markdown file won't "knit", go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first, then seek assistance. In my experience, these 6 fixes resolve 85% of issues.
-
+<!--
 
 ## 2. Podcast quiz component
 
@@ -260,8 +249,8 @@ Notes:
 1. Q1: 1 + 4 + 1 = 6pts
 1. Q2: 1 + 2 + 1 + 3 + 1 = 8pts
 1. Podcast quiz: 1pt
-
 -->
+
 
 
 ***
