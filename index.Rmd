@@ -1152,7 +1152,7 @@ colors()
 
 
 
-# Lec 09: Fri 9/27 {#Lec09}
+# Lec 09: Fri 9/24 {#Lec09}
 
 ## Announcements
 
@@ -1210,7 +1210,7 @@ Compare that to using barplots. Which do you prefer?
 
 
 
-# Lec 08: Mon 9/23 {#Lec08}
+# Lec 08: Wed 9/22 {#Lec08}
 
 ## Announcements
 
@@ -1233,37 +1233,23 @@ Compare that to using barplots. Which do you prefer?
 
 ### 2. In-class exercise
 
-* Go over ModernDive 2.8
+* Go over ModernDive reading in schedule above.
 
 
 
 ***
 
+-->
 
 
-# Lec 07: Fri 9/20 {#Lec07}
+
+# Lec 07: Mon 9/20 {#Lec07}
 
 ## Announcements
 
-* Slack:
-    + Prof. Katie Kinnaird's TRIPODS+X - Data Science Education Investigation
-    + Post on `#random` by Ray
 * Problem sets:
-    + PS01 handed back on Monday
-    + Go over [PS02 solutions](PS.html#PS02_solutions)
-    + PS03 posted
-* Announcement from Smithies in SDS:
-
-![](static/images/announcements/SSDS.png){ width=450px }
-<br>   
-
-
-
-
-
-## Tweet of the Day
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I 😍😍😍 how boxplots make an appearance in Season 4 of <a href="https://twitter.com/HBO?ref_src=twsrc%5Etfw">@HBO</a> The Wire<br><br>Context: A Johns Hopkins academic presents his research on at-risk youth at a Baltimore middle school <a href="https://twitter.com/hashtag/TheWire?src=hash&amp;ref_src=twsrc%5Etfw">#TheWire</a> <a href="https://t.co/ETC2jYew9v">pic.twitter.com/ETC2jYew9v</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1174729578373423105?ref_src=twsrc%5Etfw">September 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    + PS02 due today at 5pm
+    + PS03 to be posted by 6pm today
 
 
 
@@ -1298,10 +1284,10 @@ Min. | 1st Quartile | Median = 2nd Quartile  | 3rd Quartile  |  Max. | IQR
 ---- | ------- | ------  |  ------- | --- | ---
 `r min(example$values)`  |  `r quantile(example$values, probs=0.25, type = 2)` |  `r median(example$values)`  |  `r quantile(example$values, probs=0.75, type=2)`  | `r max(example$values)` | 8 = 13.5 - 5.5
 
-
+<!--
 Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
 
-```{r, echo=FALSE, eval=TRUE}
+```{r, echo=FALSE, eval=FALSE}
 plot1 <- ggplot(example, aes(x=factor(1), y=values)) +
   geom_point() +
   labs(title = "Points") +
@@ -1321,20 +1307,19 @@ plot2 <- ggplot(example, aes(x=factor(1), y=values)) +
   )
 plot1 + plot2
 ```
+-->
 
 
 ### 2. In-class exercise
 
-* Go over ModernDive 2.6 - 2.7
-* Start PS03
+* Go over ModernDive reading in schedule above.
 
-I don't mind what you do with your class time, but it is very important that you complete the reading before next lecture. Boxplots take practice.
 
 
 ***
 
 
--->
+
 
 # Lec 06: Fri 9/17 {#Lec06}
 
