@@ -1214,6 +1214,8 @@ Compare that to using barplots. Which do you prefer?
 
 ## Announcements
 
+* Side-by-side boxplots x variables has to be categorical
+* Why 1.5 x IQR?
 * What kind of questions are appropriate for #questions
 * In Lec07 below, added image of chalk talk data and boxplot.
 * Problem sets: PS01 handed back
