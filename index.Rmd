@@ -1208,29 +1208,32 @@ Compare that to using barplots. Which do you prefer?
 
 ***
 
+-->
+
 
 
 # Lec 08: Wed 9/22 {#Lec08}
 
 ## Announcements
 
-* Side-by-side boxplots x variables has to be categorical
-* Why 1.5 x IQR?
-* What kind of questions are appropriate for #questions
-* In Lec07 below, added image of chalk talk data and boxplot.
-* Problem sets: PS01 handed back
+* Problem sets:
+    + PS01 graded
+    + PS03 posted
+* What kind of questions are appropriate for `#questions` Slack channel
 
-## Tweet of the Day
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We are thrilled to be at <a href="https://twitter.com/Statfest?ref_src=twsrc%5Etfw">@Statfest</a> &amp; engaging with a dedicated community of statisticians! <br><br>We even managed to snag a photo with <a href="https://twitter.com/smithcollege?ref_src=twsrc%5Etfw">@smithcollege</a> alum Portia Exum of <a href="https://twitter.com/SASanalytics?ref_src=twsrc%5Etfw">@SASanalytics</a> before her panel. <a href="https://twitter.com/hashtag/smithieslead?src=hash&amp;ref_src=twsrc%5Etfw">#smithieslead</a> <a href="https://t.co/wloPa7Ybyd">pic.twitter.com/wloPa7Ybyd</a></p>&mdash; Smith College SDS (@SmithCollegeSDS) <a href="https://twitter.com/SmithCollegeSDS/status/1175474705605771269?ref_src=twsrc%5Etfw">September 21, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Recap of boxplots
-* Summary statistics that are robust to outliers: median and IQR
+* Wrapping-up boxplots:
+    + For a side-by-side boxplot, the x variable has to be categorical
+    + Summary statistics that are robust to outliers: median and IQR
+    + Why 1.5 x IQR?
 * Barplots
+    + `geom_bar()` when counts are not pre-computed
+    + `geom_col()` when counts are pre-computed and saved in a variable
 
 
 ### 2. In-class exercise
@@ -1241,7 +1244,6 @@ Compare that to using barplots. Which do you prefer?
 
 ***
 
--->
 
 
 
@@ -1249,7 +1251,7 @@ Compare that to using barplots. Which do you prefer?
 
 ## Announcements
 
-* Office of Disability Services is looking to hire a note taker for the class. If interested, see note in Slack #general. 
+* Office of Disability Services is looking to hire a note taker for the class. If interested, see note in Slack `#general`. 
 * Problem sets:
     + PS02 due today at 5pm
     + PS03 to be posted by 6pm today
@@ -1288,10 +1290,10 @@ Min. | 1st Quartile | Median = 2nd Quartile  | 3rd Quartile  |  Max. | IQR
 ---- | ------- | ------  |  ------- | --- | ---
 `r min(example$values)`  |  `r quantile(example$values, probs=0.25, type = 2)` |  `r median(example$values)`  |  `r quantile(example$values, probs=0.75, type=2)`  | `r max(example$values)` | 8 = 13.5 - 5.5
 
-<!--
+
 Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
 
-```{r, echo=FALSE, eval=FALSE}
+```{r, echo=FALSE, eval=TRUE}
 plot1 <- ggplot(example, aes(x=factor(1), y=values)) +
   geom_point() +
   labs(title = "Points") +
@@ -1311,7 +1313,7 @@ plot2 <- ggplot(example, aes(x=factor(1), y=values)) +
   )
 plot1 + plot2
 ```
--->
+
 
 
 ### 2. In-class exercise
