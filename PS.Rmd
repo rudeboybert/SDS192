@@ -218,7 +218,7 @@ Total: 9pts
 * You will be submitting the resulting `PS03.pdf` file on gradescope. Please use the "Knit to PDF" method directly, instead of "Knit to Word" and then save to PDF method.
 * Complete the individual questions. Knit early, knit often.
 * If you encounter issues knitting your document, consult the [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"}.
-* Submit on [gradescope](https://www.gradescope.com/courses/308310){target="_blank"} :
+* Submit on [gradescope](https://www.gradescope.com/courses/308310){target="_blank"}:
     1. Anytime between Mon 9/20 5pm and Mon 9/27 5pm
     1. For each questions, tag **all** pages of your PDF that relate to that question (not just the first)
     1. You will be asked to tag the honor code question as well.
@@ -270,7 +270,7 @@ Notes:
     1. If this doesn't work for you, then "Knit to Word" and then export/save as PDF
 * Complete the individual questions. Knit early, knit often.
 * If you encounter issues knitting your document, consult the [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"}.
-* Submit on [gradescope](https://www.gradescope.com/courses/308310){target="_blank"} :
+* Submit on [gradescope](https://www.gradescope.com/courses/308310){target="_blank"}:
     1. Anytime between Mon 9/13 5pm and Mon 9/20 5pm
     1. For each questions, tag **all** pages of your PDF that relate to that question (not just the first)
 
