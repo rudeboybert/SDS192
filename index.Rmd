@@ -1219,8 +1219,10 @@ Compare that to using barplots. Which do you prefer?
 * Problem sets:
     + PS01 graded
     + PS03 posted
-* What kind of questions are appropriate for `#questions` Slack channel
 
+<!--
+* What kind of questions are appropriate for `#questions` Slack channel
+-->
 
 
 ## Today's topics/activities
