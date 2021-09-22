@@ -1235,7 +1235,7 @@ Compare that to using barplots. Which do you prefer?
     + Summary statistics that are robust to outliers: median and IQR
     + Why 1.5 x IQR?
 * Barplots
-    + `geom_bar()` when counts are not pre-computed
+    + `geom_bar()` when counts are not pre-computed i.e. listed individually
     + `geom_col()` when counts are pre-computed and saved in a variable
 
 
