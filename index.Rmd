@@ -1229,6 +1229,7 @@ Compare that to using barplots. Which do you prefer?
 
 ### 1. Chalk talk
 
+* Searching the internet effectively: a critical data science tool
 * Wrapping-up boxplots:
     + For a side-by-side boxplot, the x variable has to be categorical
     + Summary statistics that are robust to outliers: median and IQR
