@@ -149,6 +149,6 @@ Now show the same histogram as above, but minority and non-minority instructors 
 
 ## Part e)
 
-**Question**: Using only your eyes, what would you that on average minority or non-minority instructors got higher teaching scores? You do not compute these values exactly, just visually approximate them. There are no "right" answers to this question, just write down what you think. 
+**Question**: Using only your eyes, would you say that on average minority or non-minority instructors got higher teaching scores? You do not compute these values exactly, just visually approximate them. There are no "right" answers to this question, just write down what you think. 
 
 **Answer**: 
