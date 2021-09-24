@@ -431,7 +431,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS 192: Introduction to Data Science</h1>
 <h4 class="author">Albert Y. Kim</h4>
-<h4 class="date">Last updated on 2021-09-23</h4>
+<h4 class="date">Last updated on 2021-09-24</h4>
 
 </div>
 
@@ -1504,114 +1504,110 @@ to make an interactive version of plot 1.c) above.
 ### 2. In-class exercise
 
 * Go over ModernDive 2.9. In particular in Section 2.9.3, open the `ggplot2` cheatsheet in RStudio and read over the different `geom` types
-* Changing default `color` and `fill` color aesthetics: 
-    1. Copy and paste the code below into your `classnotes.Rmd` file
-    1. Change both the color of the scatterplot points and the fill of the bars. You can do this by selecting a palette from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"} or by setting them manually
 
-
-```r
-library(ggplot2)
-library(dplyr)
-library(nycflights13)
-library(gapminder)
-
-# 1. Recreate plot from PS02, but change default "color" palette of points:
-gapminder_2007 <- gapminder %>% 
-  filter(year == 2007)
-ggplot(data = gapminder_2007, 
-       mapping = aes(x = gdpPercap, y = lifeExp, size = pop, color = continent)) +
-  geom_point() +
-  scale_color_brewer(palette = "Set1")
-
-# 2.a) Recreate Figure 2.26 but change default "fill" color of bars by adding a 
-# palette layer:
-ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
-  geom_bar(position = position_dodge(preserve = "single")) +
-  scale_fill_brewer(palette = "Set1")
-
-# 2.b) Recreate Figure 2.26 but change default "fill" color of bars by manually 
-# changing colors in a layer:
-ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
-  geom_bar(position = position_dodge(preserve = "single")) +
-  scale_fill_manual(values = c("darkorange", "forestgreen", "navyblue"))
-
-# 2.c) Soooooo many choices...
-colors()
-```
 
 
 
 ***
 
-
-
-# Lec 09: Fri 9/24 {#Lec09}
-
-## Announcements
-
-* https://mdsr-book.github.io/mdsr2e/
-* On Slack #general, new SDS student lounge in McConnell 209
-* Slack:
-    + How to subscribe to a `#channel`
-    + Using threads to keep conversations organized
-* Go over [PS03 solutions](PS.html#PS03_solutions)
-
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-* Recap of barplots: Exercise on pie charts vs barplots below
-* Color theory
-    1. `color` vs `fill` aesthetics in `ggplot2`
-    1. Selecting a color palette from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}
-    1. How does `ggplot2` pick default colors? Using a [color wheel](https://stackoverflow.com/questions/21490210/how-to-plot-a-colour-wheel-by-using-ggplot){target="_blank"}
-    1. Get the [color hex codes](https://www.color-hex.com/color/f8766d){target="_blank"} of `ggplot2` default color palette:
-    
-
-```r
-library(scales)
-number_of_colors <- 3
-show_col(hue_pal()(number_of_colors))
-```
-
-<img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" />
-
-    
-### 2. Exercise on pie charts vs barplots
-
-Say the following piecharts represent results of an election poll at time points: A = September, B = October, and C = November. At each time point we present the proportion of the poll respondents who say they will support one of 5 candidates: 1 through 5. 
-
-![](static/images/piecharts.png){ width=600px }
-
-Based on these 3 piecharts, answer the following questions:
-
-1. At time point A, is candidate 5 doing better than candidate 4?
-1. Did candidate 3 do better at time point B or time point C?
-1. Who gained more support between time point A and time point B, candidate 2 or candidate 4?
-
-
-Compare that to using barplots. Which do you prefer?
-
-![](static/images/barplots.png){ width=600px }
-
-
-
-
-### 3. In-class exercise
-
-* Quiz on podcast
-* First phase of Mini-Project 1 roll-out
-
-
-
-***
 
 -->
 </div>
+<div id="Lec09" class="section level1">
+<h1>Lec 09: Fri 9/24</h1>
+<div id="announcements" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>On Slack <code>#general</code>: new SDS student lounge in McConnell 209</li>
+<li>Additional resource: Prof. Ben Baumer’s book <a href="https://mdsr-book.github.io/mdsr2e/" target="_blank">Modern Data Science with R</a> used in his version of SDS 192.</li>
+<li>Mini-project 1 (MP1) assigned on Monday
+<ul>
+<li>Slack demo of how to subscribe to a <code>#channel</code>: Adding yourselves to the <code>#mp1</code> channel. Please ask all questions about MP1 there</li>
+<li>You will be assigned groups for MP1, MP2, and MP3. You can choose your groups for the final project.</li>
+<li>By Sunday 5pm I will post the groups (of two) in the <code>#mp1</code> channel. Until <code>#mp1</code> is due, <strong>you will sit next to your partner in class</strong>.</li>
+<li>Please reach out to your partner with a Slack DM before Monday’s lecture to coordinate meeting before lecture so you can sit next to each other.</li>
+</ul></li>
+</ul>
+</div>
+<div id="todays-topicsactivities" class="section level2">
+<h2>Today’s topics/activities</h2>
+<div id="chalk-talk" class="section level3">
+<h3>1. Chalk talk</h3>
+<ul>
+<li>Recap of barplots: Exercise on pie charts vs barplots below</li>
+<li>Color theory
+<ol style="list-style-type: decimal">
+<li><code>color</code> vs <code>fill</code> aesthetics in <code>ggplot2</code></li>
+<li>Selecting an appropriate color palette from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a> <img src="static/images/colorbrewer.png" width="600" /></li>
+<li>How does <code>ggplot2</code> pick default colors? Using a <a href="https://stackoverflow.com/questions/21490210/how-to-plot-a-colour-wheel-by-using-ggplot" target="_blank">color wheel</a></li>
+<li>Also define colors in terms of <a href="https://www.color-hex.com/color/f8766d" target="_blank">hex codes</a></li>
+</ol></li>
+</ul>
+</div>
+<div id="exercise-on-pie-charts-vs-barplots" class="section level3">
+<h3>2. Exercise on pie charts vs barplots</h3>
+<p>Say the following piecharts represent results of an election poll at time points: A = September, B = October, and C = November. At each time point we present the proportion of the poll respondents who say they will support one of 5 candidates: 1 through 5.</p>
+<p><img src="static/images/piecharts.png" width="600" /></p>
+<p>Based on these 3 piecharts, answer the following questions:</p>
+<ol style="list-style-type: decimal">
+<li>At time point A, is candidate 5 doing better than candidate 4?</li>
+<li>Did candidate 3 do better at time point B or time point C?</li>
+<li>Who gained more support between time point A and time point B, candidate 2 or candidate 4?</li>
+</ol>
+<!--
+Compare that to using barplots. Which do you prefer?
+
+![](static/images/barplots.png){ width=600px }
+-->
+</div>
+<div id="in-class-exercise" class="section level3">
+<h3>3. In-class exercise</h3>
+<ul>
+<li>Go over ModernDive reading in schedule above.</li>
+<li>Changing default <code>color</code> and <code>fill</code> color aesthetics:
+<ol style="list-style-type: decimal">
+<li>Copy and paste the code below into your <code>classnotes.Rmd</code> file</li>
+<li>Change both the color of the scatterplot points and the fill of the bars. You can do this by selecting a palette from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a> or by setting them manually</li>
+<li>Run <code>demo("colors")</code> in your console, press enter where prompted, and look at the resulting plots</li>
+</ol></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="kw">library</span>(nycflights13)</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="kw">library</span>(gapminder)</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="co"># 1. Recreate plot from PS02, but change default &quot;color&quot; palette of points:</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="kw">ggplot</span>(gapminder_<span class="dv">2007</span>, <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop, <span class="dt">color =</span> continent)) <span class="op">+</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="st">  </span><span class="kw">scale_color_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="co"># 2.a) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by adding a </span></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="co"># palette layer:</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="kw">ggplot</span>(flights, <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</span>
+<span id="cb1-18"><a href="#cb1-18"></a></span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="co"># 2.b) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="co"># changing colors in a layer:</span></span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="kw">ggplot</span>(flights, <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;darkorange&quot;</span>, <span class="st">&quot;forestgreen&quot;</span>, <span class="st">&quot;navyblue&quot;</span>))</span>
+<span id="cb1-24"><a href="#cb1-24"></a></span>
+<span id="cb1-25"><a href="#cb1-25"></a><span class="co"># 2.c) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></span>
+<span id="cb1-26"><a href="#cb1-26"></a><span class="co"># changing colors in a layer using hex codes from: </span></span>
+<span id="cb1-27"><a href="#cb1-27"></a><span class="co"># https://www.color-hex.com/color-palette/114219</span></span>
+<span id="cb1-28"><a href="#cb1-28"></a><span class="kw">ggplot</span>(flights, <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></span>
+<span id="cb1-30"><a href="#cb1-30"></a><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;#dc323a&quot;</span>, <span class="st">&quot;#003f77&quot;</span>, <span class="st">&quot;#c4c1c1&quot;</span>))</span></code></pre></div>
+<hr />
+</div>
+</div>
+</div>
 <div id="Lec08" class="section level1">
 <h1>Lec 08: Wed 9/22</h1>
-<div id="announcements" class="section level2">
+<div id="announcements-1" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Problem sets:
@@ -1624,9 +1620,9 @@ Compare that to using barplots. Which do you prefer?
 * What kind of questions are appropriate for `#questions` Slack channel
 -->
 </div>
-<div id="todays-topicsactivities" class="section level2">
+<div id="todays-topicsactivities-1" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk" class="section level3">
+<div id="chalk-talk-1" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Searching the internet effectively: a critical data science tool</li>
@@ -1643,7 +1639,7 @@ Compare that to using barplots. Which do you prefer?
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise" class="section level3">
+<div id="in-class-exercise-1" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1654,7 +1650,7 @@ Compare that to using barplots. Which do you prefer?
 </div>
 <div id="Lec07" class="section level1">
 <h1>Lec 07: Mon 9/20</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Office of Disability Services is looking to hire a note taker for the class. If interested, see note in Slack <code>#general</code>.</li>
@@ -1665,9 +1661,9 @@ Compare that to using barplots. Which do you prefer?
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-1" class="section level3">
+<div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of histograms</li>
@@ -1708,9 +1704,9 @@ Compare that to using barplots. Which do you prefer?
 </tbody>
 </table>
 <p>Let’s compare the points and the corresponding boxplot side-by-side with the values on the <span class="math inline">\(y\)</span>-axis matching:</p>
-<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-1" class="section level3">
+<div id="in-class-exercise-2" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1721,7 +1717,7 @@ Compare that to using barplots. Which do you prefer?
 </div>
 <div id="Lec06" class="section level1">
 <h1>Lec 06: Fri 9/17</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
@@ -1731,9 +1727,9 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-2" class="section level3">
+<div id="chalk-talk-3" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>In-class demo of using RMarkdown features in a <code>classnotes.Rmd</code> file to save lecture code</li>
@@ -1755,7 +1751,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </iframe>
 </div>
 </div>
-<div id="in-class-exercise-2" class="section level3">
+<div id="in-class-exercise-3" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>If you still haven’t been able to “Knit to PDF”, please ask for help</li>
@@ -1767,22 +1763,22 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec05" class="section level1">
 <h1>Lec 05: Wed 9/15</h1>
-<div id="announcements-3" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>PS02 was posted after Monday’s lecture.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-3" class="section level2">
+<div id="todays-topicsactivities-4" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-3" class="section level3">
+<div id="chalk-talk-4" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Overplotting and two approaches for addressing it</li>
 <li>Linegraphs</li>
 </ul>
 </div>
-<div id="in-class-exercise-3" class="section level3">
+<div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Explore the different formatting tools in R Markdown: go to RStudio top menu bar -&gt; Help -&gt; Markdown quick reference.</li>
@@ -1795,15 +1791,15 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec04" class="section level1">
 <h1>Lec 04: Mon 9/13</h1>
-<div id="announcements-4" class="section level2">
+<div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Problem Set 02 due next Monday 5pm, now posted under <a href="PS.html">Problem Sets</a></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-4" class="section level2">
+<div id="todays-topicsactivities-5" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-4" class="section level3">
+<div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1824,7 +1820,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </tbody>
 </table>
 </div>
-<div id="in-class-exercise-4" class="section level3">
+<div id="in-class-exercise-5" class="section level3">
 <h3>2. In-class exercise</h3>
 <p><strong>In-class battle-testing and practicing for PS02:</strong></p>
 <ol style="list-style-type: decimal">
@@ -1867,7 +1863,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <li>Next to “Console” go to “Terminal”</li>
 <li>Run this line of code:</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>sudo chown <span class="op">-</span>R <span class="st">`</span><span class="dt">whoami</span><span class="st">`</span><span class="op">:</span>admin <span class="op">/</span>usr<span class="op">/</span>local<span class="op">/</span>bin</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>sudo chown <span class="op">-</span>R <span class="st">`</span><span class="dt">whoami</span><span class="st">`</span><span class="op">:</span>admin <span class="op">/</span>usr<span class="op">/</span>local<span class="op">/</span>bin</span></code></pre></div>
 <ul>
 <li>Enter your password. Note: Terminal has weird behavior whereby as you enter your password, the cursor will not move. Don’t worry your password is registering.</li>
 </ul></li>
@@ -1875,8 +1871,8 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <ul>
 <li>Run the following code in your console just once:</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;tinytex&#39;</span>)</span>
-<span id="cb2-2"><a href="#cb2-2"></a>tinytex<span class="op">::</span><span class="kw">install_tinytex</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;tinytex&#39;</span>)</span>
+<span id="cb3-2"><a href="#cb3-2"></a>tinytex<span class="op">::</span><span class="kw">install_tinytex</span>()</span></code></pre></div>
 <ul>
 <li>Click the arrow next to “Knit” -&gt; “Knit to PDF”.</li>
 </ul></li>
@@ -1892,7 +1888,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec03" class="section level1">
 <h1>Lec 03: Fri 9/10</h1>
-<div id="announcements-5" class="section level2">
+<div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Spinelli Center <a href="https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats." target="_blank">SDS drop-in tutoring hours</a> now open! Get individual attention from SDS majors! In Sabin-Reed 301
@@ -1916,9 +1912,9 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-5" class="section level2">
+<div id="todays-topicsactivities-6" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-5" class="section level3">
+<div id="chalk-talk-6" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1931,7 +1927,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-5" class="section level3">
+<div id="in-class-exercise-6" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1942,15 +1938,15 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec02" class="section level1">
 <h1>Lec 02: Wed 9/8</h1>
-<div id="announcements-6" class="section level2">
+<div id="announcements-7" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Problem Set 01 due this Monday 5pm, posted under <a href="PS.html">Problem Sets</a>.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-6" class="section level2">
+<div id="todays-topicsactivities-7" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-6" class="section level3">
+<div id="chalk-talk-7" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Intro to Slack</li>
@@ -1958,7 +1954,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <li>What are R packages?</li>
 </ul>
 </div>
-<div id="in-class-exercise-6" class="section level3">
+<div id="in-class-exercise-7" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1976,11 +1972,11 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec01" class="section level1">
 <h1>Lec 01: Fri 9/3</h1>
-<div id="announcements-7" class="section level2">
+<div id="announcements-8" class="section level2">
 <h2>Announcements</h2>
 <p>Welcome!</p>
 </div>
-<div id="todays-topicsactivities-7" class="section level2">
+<div id="todays-topicsactivities-8" class="section level2">
 <h2>Today’s topics/activities</h2>
 <ul>
 <li>Course webpage: bit.ly/sds192kim</li>
@@ -2000,31 +1996,31 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="code-examples-from-class" class="section level2">
 <h2>Code examples from class</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Data visualization</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">library</span>(fivethirtyeight)</span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb3-5"><a href="#cb3-5"></a>year_bins &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;&#39;70-&#39;74&quot;</span>, <span class="st">&quot;&#39;75-&#39;79&quot;</span>, <span class="st">&quot;&#39;80-&#39;84&quot;</span>, <span class="st">&quot;&#39;85-&#39;89&quot;</span>, <span class="st">&quot;&#39;90-&#39;94&quot;</span>,</span>
-<span id="cb3-6"><a href="#cb3-6"></a>               <span class="st">&quot;&#39;95-&#39;99&quot;</span>, <span class="st">&quot;&#39;00-&#39;04&quot;</span>, <span class="st">&quot;&#39;05-&#39;09&quot;</span>, <span class="st">&quot;&#39;10-&#39;13&quot;</span>)</span>
-<span id="cb3-7"><a href="#cb3-7"></a></span>
-<span id="cb3-8"><a href="#cb3-8"></a>bechdel &lt;-<span class="st"> </span>bechdel <span class="op">%&gt;%</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">five_year =</span> <span class="kw">cut</span>(year, <span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="dv">1969</span>, <span class="dv">2014</span>, <span class="dv">5</span>), <span class="dt">labels =</span> year_bins))</span>
-<span id="cb3-10"><a href="#cb3-10"></a></span>
-<span id="cb3-11"><a href="#cb3-11"></a><span class="kw">ggplot</span>(bechdel, <span class="kw">aes</span>(<span class="dt">x =</span> five_year, <span class="dt">fill =</span> clean_test)) <span class="op">+</span></span>
-<span id="cb3-12"><a href="#cb3-12"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="st">&quot;fill&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span></span>
-<span id="cb3-13"><a href="#cb3-13"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Year&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Proportion&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;Bechdel Test&quot;</span>) <span class="op">+</span></span>
-<span id="cb3-14"><a href="#cb3-14"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;YlGnBu&quot;</span>)</span>
-<span id="cb3-15"><a href="#cb3-15"></a></span>
-<span id="cb3-16"><a href="#cb3-16"></a><span class="co"># Data Wranling</span></span>
-<span id="cb3-17"><a href="#cb3-17"></a><span class="kw">library</span>(fec16)</span>
-<span id="cb3-18"><a href="#cb3-18"></a>all_transactions &lt;-<span class="st"> </span><span class="kw">read_all_transactions</span>()</span>
-<span id="cb3-19"><a href="#cb3-19"></a><span class="kw">View</span>(all_transactions)</span>
-<span id="cb3-20"><a href="#cb3-20"></a></span>
-<span id="cb3-21"><a href="#cb3-21"></a><span class="co"># Maps</span></span>
-<span id="cb3-22"><a href="#cb3-22"></a><span class="kw">library</span>(leaflet)</span>
-<span id="cb3-23"><a href="#cb3-23"></a><span class="kw">leaflet</span>() <span class="op">%&gt;%</span></span>
-<span id="cb3-24"><a href="#cb3-24"></a><span class="st">  </span><span class="kw">addTiles</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb3-25"><a href="#cb3-25"></a><span class="st">  </span><span class="kw">addMarkers</span>(<span class="dt">lng=</span><span class="op">-</span><span class="fl">72.64022</span>, <span class="dt">lat=</span><span class="fl">42.31706</span>, <span class="dt">popup=</span><span class="st">&quot;Smith College&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Data visualization</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="kw">library</span>(fivethirtyeight)</span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="kw">library</span>(ggplot2)</span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="kw">library</span>(dplyr)</span>
+<span id="cb4-5"><a href="#cb4-5"></a>year_bins &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;&#39;70-&#39;74&quot;</span>, <span class="st">&quot;&#39;75-&#39;79&quot;</span>, <span class="st">&quot;&#39;80-&#39;84&quot;</span>, <span class="st">&quot;&#39;85-&#39;89&quot;</span>, <span class="st">&quot;&#39;90-&#39;94&quot;</span>,</span>
+<span id="cb4-6"><a href="#cb4-6"></a>               <span class="st">&quot;&#39;95-&#39;99&quot;</span>, <span class="st">&quot;&#39;00-&#39;04&quot;</span>, <span class="st">&quot;&#39;05-&#39;09&quot;</span>, <span class="st">&quot;&#39;10-&#39;13&quot;</span>)</span>
+<span id="cb4-7"><a href="#cb4-7"></a></span>
+<span id="cb4-8"><a href="#cb4-8"></a>bechdel &lt;-<span class="st"> </span>bechdel <span class="op">%&gt;%</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">five_year =</span> <span class="kw">cut</span>(year, <span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="dv">1969</span>, <span class="dv">2014</span>, <span class="dv">5</span>), <span class="dt">labels =</span> year_bins))</span>
+<span id="cb4-10"><a href="#cb4-10"></a></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="kw">ggplot</span>(bechdel, <span class="kw">aes</span>(<span class="dt">x =</span> five_year, <span class="dt">fill =</span> clean_test)) <span class="op">+</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="st">&quot;fill&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Year&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Proportion&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;Bechdel Test&quot;</span>) <span class="op">+</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;YlGnBu&quot;</span>)</span>
+<span id="cb4-15"><a href="#cb4-15"></a></span>
+<span id="cb4-16"><a href="#cb4-16"></a><span class="co"># Data Wranling</span></span>
+<span id="cb4-17"><a href="#cb4-17"></a><span class="kw">library</span>(fec16)</span>
+<span id="cb4-18"><a href="#cb4-18"></a>all_transactions &lt;-<span class="st"> </span><span class="kw">read_all_transactions</span>()</span>
+<span id="cb4-19"><a href="#cb4-19"></a><span class="kw">View</span>(all_transactions)</span>
+<span id="cb4-20"><a href="#cb4-20"></a></span>
+<span id="cb4-21"><a href="#cb4-21"></a><span class="co"># Maps</span></span>
+<span id="cb4-22"><a href="#cb4-22"></a><span class="kw">library</span>(leaflet)</span>
+<span id="cb4-23"><a href="#cb4-23"></a><span class="kw">leaflet</span>() <span class="op">%&gt;%</span></span>
+<span id="cb4-24"><a href="#cb4-24"></a><span class="st">  </span><span class="kw">addTiles</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb4-25"><a href="#cb4-25"></a><span class="st">  </span><span class="kw">addMarkers</span>(<span class="dt">lng=</span><span class="op">-</span><span class="fl">72.64022</span>, <span class="dt">lat=</span><span class="fl">42.31706</span>, <span class="dt">popup=</span><span class="st">&quot;Smith College&quot;</span>)</span></code></pre></div>
 </div>
 </div>
 
