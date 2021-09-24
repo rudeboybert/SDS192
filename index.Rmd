@@ -1175,7 +1175,7 @@ Compare that to using barplots. Which do you prefer?
 * Changing default `color` and `fill` color aesthetics: 
     1. Copy and paste the code below into your `classnotes.Rmd` file
     1. Change both the color of the scatterplot points and the fill of the bars. You can do this by selecting a palette from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"} or by setting them manually
-    1. Run `demo("colors")` in your console, press enter where prompted, and look at the resulting plots
+    1. Run `colors()` in your console to get English names of all colors in R
 
 ```{r, eval=FALSE}
 library(ggplot2)
