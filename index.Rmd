@@ -1112,43 +1112,14 @@ to make an interactive version of plot 1.c) above.
 ### 2. In-class exercise
 
 * Go over ModernDive 2.9. In particular in Section 2.9.3, open the `ggplot2` cheatsheet in RStudio and read over the different `geom` types
-* Changing default `color` and `fill` color aesthetics: 
-    1. Copy and paste the code below into your `classnotes.Rmd` file
-    1. Change both the color of the scatterplot points and the fill of the bars. You can do this by selecting a palette from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"} or by setting them manually
 
-```{r, eval=FALSE}
-library(ggplot2)
-library(dplyr)
-library(nycflights13)
-library(gapminder)
-
-# 1. Recreate plot from PS02, but change default "color" palette of points:
-gapminder_2007 <- gapminder %>% 
-  filter(year == 2007)
-ggplot(data = gapminder_2007, 
-       mapping = aes(x = gdpPercap, y = lifeExp, size = pop, color = continent)) +
-  geom_point() +
-  scale_color_brewer(palette = "Set1")
-
-# 2.a) Recreate Figure 2.26 but change default "fill" color of bars by adding a 
-# palette layer:
-ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
-  geom_bar(position = position_dodge(preserve = "single")) +
-  scale_fill_brewer(palette = "Set1")
-
-# 2.b) Recreate Figure 2.26 but change default "fill" color of bars by manually 
-# changing colors in a layer:
-ggplot(data = flights, mapping = aes(x = carrier, fill = origin)) +
-  geom_bar(position = position_dodge(preserve = "single")) +
-  scale_fill_manual(values = c("darkorange", "forestgreen", "navyblue"))
-
-# 2.c) Soooooo many choices...
-colors()
-```
 
 
 
 ***
+
+
+-->
 
 
 
@@ -1156,12 +1127,13 @@ colors()
 
 ## Announcements
 
-* https://mdsr-book.github.io/mdsr2e/
-* On Slack #general, new SDS student lounge in McConnell 209
-* Slack:
-    + How to subscribe to a `#channel`
-    + Using threads to keep conversations organized
-* Go over [PS03 solutions](PS.html#PS03_solutions)
+* On Slack `#general`: new SDS student lounge in McConnell 209
+* Additional resource: Prof. Ben Baumer's book [Modern Data Science with R](https://mdsr-book.github.io/mdsr2e/){target="_blank"} used in his version of SDS 192.
+* Mini-project 1 (MP1) assigned on Monday
+    + Slack demo of how to subscribe to a `#channel`: Adding yourselves to the `#mp1` channel. Please ask all questions about MP1 there
+    + You will be assigned groups for MP1, MP2, and MP3. You can choose your groups for the final project.
+    + By Sunday 5pm I will post the groups (of two) in the `#mp1` channel. Until `#mp1` is due, **you will sit next to your partner in class**.
+    + Please reach out to your partner with a Slack DM before Monday's lecture to coordinate meeting before lecture so you can sit next to each other.
 
 
 ## Today's topics/activities
@@ -1171,15 +1143,11 @@ colors()
 * Recap of barplots: Exercise on pie charts vs barplots below
 * Color theory
     1. `color` vs `fill` aesthetics in `ggplot2`
-    1. Selecting a color palette from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}
+    1. Selecting an appropriate color palette from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}
+    ![](static/images/colorbrewer.png){ width=600px }
     1. How does `ggplot2` pick default colors? Using a [color wheel](https://stackoverflow.com/questions/21490210/how-to-plot-a-colour-wheel-by-using-ggplot){target="_blank"}
-    1. Get the [color hex codes](https://www.color-hex.com/color/f8766d){target="_blank"} of `ggplot2` default color palette:
-    
-```{r}
-library(scales)
-number_of_colors <- 3
-show_col(hue_pal()(number_of_colors))
-```
+    1. Also define colors in terms of [hex codes](https://www.color-hex.com/color/f8766d){target="_blank"}
+
 
     
 ### 2. Exercise on pie charts vs barplots
@@ -1194,24 +1162,58 @@ Based on these 3 piecharts, answer the following questions:
 1. Did candidate 3 do better at time point B or time point C?
 1. Who gained more support between time point A and time point B, candidate 2 or candidate 4?
 
-
+<!--
 Compare that to using barplots. Which do you prefer?
 
 ![](static/images/barplots.png){ width=600px }
-
-
+-->
 
 
 ### 3. In-class exercise
 
-* Quiz on podcast
-* First phase of Mini-Project 1 roll-out
+* Go over ModernDive reading in schedule above.
+* Changing default `color` and `fill` color aesthetics: 
+    1. Copy and paste the code below into your `classnotes.Rmd` file
+    1. Change both the color of the scatterplot points and the fill of the bars. You can do this by selecting a palette from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"} or by setting them manually
+    1. Run `demo("colors")` in your console, press enter where prompted, and look at the resulting plots
+
+```{r, eval=FALSE}
+library(ggplot2)
+library(dplyr)
+library(nycflights13)
+library(gapminder)
+
+# 1. Recreate plot from PS02, but change default "color" palette of points:
+gapminder_2007 <- gapminder %>% 
+  filter(year == 2007)
+ggplot(gapminder_2007, aes(x = gdpPercap, y = lifeExp, size = pop, color = continent)) +
+  geom_point() +
+  scale_color_brewer(palette = "Set1")
+
+# 2.a) Recreate Figure 2.26 but change default "fill" color of bars by adding a 
+# palette layer:
+ggplot(flights, aes(x = carrier, fill = origin)) +
+  geom_bar(position = position_dodge(preserve = "single")) +
+  scale_fill_brewer(palette = "Set1")
+
+# 2.b) Recreate Figure 2.26 but change default "fill" color of bars by manually 
+# changing colors in a layer:
+ggplot(flights, aes(x = carrier, fill = origin)) +
+  geom_bar(position = position_dodge(preserve = "single")) +
+  scale_fill_manual(values = c("darkorange", "forestgreen", "navyblue"))
+
+# 2.c) Recreate Figure 2.26 but change default "fill" color of bars by manually 
+# changing colors in a layer using hex codes from: 
+# https://www.color-hex.com/color-palette/114219
+ggplot(flights, aes(x = carrier, fill = origin)) +
+  geom_bar(position = position_dodge(preserve = "single")) +
+  scale_fill_manual(values = c("#dc323a", "#003f77", "#c4c1c1"))
+```
 
 
 
 ***
 
--->
 
 
 
