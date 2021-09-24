@@ -1095,6 +1095,7 @@ to make an interactive version of plot 1.c) above.
 
 ## Announcements
 
+* Recap fill vs color, brewer vs manual
 * [Midterm I](midterms.html#midtermI) info posted
 * [Mini-Project 1](projects.html#MP1) info posted
 
