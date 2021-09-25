@@ -997,7 +997,7 @@ Example:
 
 
 
-# Lec 12: Fri 10/4 {#Lec12}
+# Lec 12: Fri 10/1 {#Lec12}
 
 ## Announcements
 
@@ -1071,7 +1071,7 @@ to make an interactive version of plot 1.c) above.
 
 
 
-# Lec 11: Wed 10/2 {#Lec11}
+# Lec 11: Wed 9/29 {#Lec11}
 
 ## Announcements
 
@@ -1089,38 +1089,48 @@ to make an interactive version of plot 1.c) above.
 
 ***
 
+-->
 
 
-# Lec 10: Mon 9/30 {#Lec10}
+# Lec 10: Mon 9/27 {#Lec10}
 
 ## Announcements
 
-* Recap fill vs color, brewer vs manual
+<!--
 * [Midterm I](midterms.html#midtermI) info posted
 * [Mini-Project 1](projects.html#MP1) info posted
+--> 
+
+* Sit next to your MP1 partner; your partner was posted in the `#mp1` channel on Sunday 5pm.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Our department is offering a pre-application review service (PARS) initiative to provide support and mentorship to PhD applicants from from historically marginalized groups. See details here: <a href="https://t.co/1g8lol4dRf">https://t.co/1g8lol4dRf</a> <a href="https://t.co/rHaMFHr5GF">pic.twitter.com/rHaMFHr5GF</a></p>&mdash; UW Statistics (@UWStat) <a href="https://twitter.com/UWStat/status/1441591608709812227?ref_src=twsrc%5Etfw">September 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Recap of Lec09: Color palettes from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}
-+ You can also download color palettes in R packages, like the [`viridis` package](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html){target="_blank"}
-* Student question: What is a `tibble`?
-* Recap of "five named graphs": ModernDive Table 2.4
- 
+* Recap of color palettes from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}
+    + `fill` vs `color` aesthetics and `brewer` vs `manual`
+    + You can also download color palettes in R packages, like [`viridis`](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html){target="_blank"}
+
 
 ### 2. In-class exercise
 
+<!--
+
 * Go over ModernDive 2.9. In particular in Section 2.9.3, open the `ggplot2` cheatsheet in RStudio and read over the different `geom` types
 
-
+-->
 
 
 ***
 
 
--->
+
 
 
 
@@ -1163,11 +1173,9 @@ Based on these 3 piecharts, answer the following questions:
 1. Did candidate 3 do better at time point B or time point C?
 1. Who gained more support between time point A and time point B, candidate 2 or candidate 4?
 
-<!--
 Compare that to using barplots. Which do you prefer?
 
 ![](static/images/barplots.png){ width=600px }
--->
 
 
 ### 3. In-class exercise
