@@ -325,6 +325,9 @@ div.tocify {
   <a href="PS.html">Problem Sets</a>
 </li>
 <li>
+  <a href="midterms.html">Midterms</a>
+</li>
+<li>
   <a href="syllabus.html">Syllabus</a>
 </li>
       </ul>
@@ -347,13 +350,9 @@ div.tocify {
 <style>
 h1{font-weight: 400;}
 </style>
-<p>Everything in this course builds up to the final group project, where there is only one learning goal: <em>Engage in the data/science research pipeline in as faithful a manner as possible while maintaining a level suitable for novices.</em> To get practice however there will be 3 mini-projects first.</p>
-<center>
-<img src="static/images/pipeline.png" alt="Drawing" style="width: 600px;" border="10"/>
-</center>
-<hr />
 <div id="MP1" class="section level1">
 <h1>Mini-Project 1</h1>
+<p><em>Due Wednesday 10/13 at 9pm.</em></p>
 <!--
 Things to remember for next time:
 
@@ -368,385 +367,324 @@ with two levels.
 - In reflection piece: tie in with podcast. difficulty of collecting data. 
 - Issue with time intervals being imported in seconds, minutes, hours, 
 -->
-<p><em>Partially assigned on Friday 9/27, completely assigned on Monday 9/30, due Friday 10/11 at 5pm.</em></p>
-<p>Basic outline:</p>
+<p><img src="static/images/google_calendar.png" width="960" style="display: block; margin: auto;" /></p>
+<div id="basic-outline" class="section level2">
+<h2>Basic outline</h2>
 <ol style="list-style-type: decimal">
 <li>Identify a question about how you use your time <em>that you feel comfortable sharing with your partner and me</em>.</li>
-<li>Start the data collection process: start logging time in Google Calendar, macOS Calendar, and Outlook.</li>
-<li>Import the calendar data into R. Do this early, do this often!</li>
-<li>Exchange data! You will pass your question and data to your partner, and they will do an analysis by creating two data visualizations.</li>
-<li>Write a joint reflection piece on this experience, keeping the podcast in mind. In particular
+<li>Start the data collection process: start logging time in Google Calendar, macOS Calendar, or Outlook.</li>
+<li>Export the calendar to <code>.ics</code> file format and then import into R.
+<ul>
+<li>The screencast demonstrates how to do this with Google Calendar.</li>
+<li>Test this early and test this often!</li>
+</ul></li>
+<li>Exchange data! You will pass your question and data to your partner, and they will do an analysis with two non-redundant data visualizations.</li>
+<li>Write a joint reflection piece on this experience. In particular
 <ul>
 <li>As someone who provides data: What expectations do you have when you give your data?</li>
-<li>As someone who analyzes other’s data: What legal and ethical responsibilites do you have?</li>
+<li>As someone who analyzes other people’s data: What legal and ethical responsibilities do you have?</li>
 <li>The joint reflection piece should be of no more than 500 words. I suggest you write it in Google Docs and then export to PDF.</li>
 </ul></li>
 </ol>
-<p>The following screencast illustrates Steps 2 and 3 above:</p>
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vLlR4lBWAoc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
-<div id="step-0-identify-groups" class="section level2">
-<h2>Step 0: Identify groups</h2>
-<ul>
-<li>Look in Slack in <code>#mp1</code> channel to see your group, your group number, and who your group leader is.</li>
-</ul>
-</div>
-<div id="step-1-download-starter-code" class="section level2">
-<h2>Step 1: Download starter code</h2>
-<ul>
-<li>Download <a href="static/projects/MP1.zip" download><code>MP1.zip</code></a> and double-click it to “unzip” it</li>
-<li>Rename the <code>MP1_lastname_firstname.Rmd</code> file to have your last and first name</li>
-<li>Knit the <code>.Rmd</code> file once and read it over</li>
-<li>Create two data visualizations and provide an analysis to answer your partner’s question</li>
-</ul>
-</div>
-<div id="step-2-submit" class="section level2">
-<h2>Step 2: Submit</h2>
-<ol style="list-style-type: decimal">
-<li>Everyone: Submit the following three files on Moodle:
-<ol style="list-style-type: lower-alpha">
-<li>The <code>.ics</code> calendar file with your partner’s calendar data. <strong>Added 9/30:</strong> You should both be logging calendar data until Wed 10/9.</li>
-<li>The <code>.Rmd</code> R Markdown file analyzing your partner’s calendar data.</li>
-<li>The <code>.html</code> output file</li>
-</ol></li>
-<li>Everyone: Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSdINjxeoi0bCsicx8SfcLkjV2V0j4XgMB959oQ5q2GVIhthjg/viewform" target="_blank">Google Form</a></li>
-<li>Group leader only: PDF of 500 word joint reflection piece.</li>
-</ol>
-</div>
-<div id="tip-minimally-viable-product" class="section level2">
-<h2>Tip: Minimally viable product</h2>
-<p>When building a product, IMO:</p>
-<p><strong>Don’t</strong>: Try to do everything completely and perfectly from the beginning. This leads to perfectionist thinking, which leads to procrastination and “analysis paralysis”.</p>
-<p><strong>Do</strong>: Start by finishing a <a href="https://www.forbes.com/sites/quora/2018/02/27/what-is-a-minimum-viable-product-and-why-do-companies-need-them/#178bd8a2382c" target="_blank">minimially viable product</a> FAST:</p>
-<center>
-<img src="static/images/MVP.png" width="525" />
 </center>
-<p>Only you’re done your MVP, iterate and improve by adding complexity.</p>
-<p><strong>In other words</strong>:</p>
+</div>
+<div id="steps" class="section level2">
+<h2>Steps</h2>
+<div id="getting-started" class="section level3">
+<h3>1. Getting started</h3>
+<ul>
+<li>Find your group in the <code>#mp1</code> channel. Please identify:
+<ul>
+<li>Your group number</li>
+<li>Who your group leader is: whoever in your group is listed as <code>member_1</code></li>
+</ul></li>
+<li>Download <a href="static/projects/MP1.zip" download><code>MP1.zip</code></a> and double-click it to “unzip” it</li>
+<li>Knit the <code>MP1.Rmd</code> file once and read it over</li>
+</ul>
+</div>
+<div id="suggestion-complete-your-minimally-viable-product" class="section level3">
+<h3>2. Suggestion: Complete your Minimally Viable Product</h3>
+<p><img src="static/images/MVP_2.png" width="443" style="display: block; margin: auto;" /></p>
+<p>IMO when working on any project</p>
+<ul>
+<li>Don’t try to do everything completely and perfectly from the beginning. This leads to perfectionist thinking, which leads to procrastination and “analysis paralysis.”</li>
+<li>Do start by finishing a <a href="https://www.forbes.com/sites/quora/2018/02/27/what-is-a-minimum-viable-product-and-why-do-companies-need-them/#178bd8a2382c" target="_blank">minimially viable product</a> (image 1 in the bottom row of the image above). In other words:
 <ul>
 <li><a href="https://lifehacker.com/done-is-better-than-perfect-5870379" target="_blank">Done is better than perfect</a></li>
-<li><a href="https://www.huffpost.com/entry/dont-let-the-perfect-be-t_b_158673" target="_blank">Don’t let the perfect be the enemy of the good</a></li>
-<li><a href="https://www.forbes.com/sites/chunkamui/2016/01/03/6-words/#15457a371a3b" target="_blank">Think big, start small</a></li>
+<li><a href="https://www.huffpost.com/entry/dont-let-the-perfect-be-t_b_158673" target="_blank">Don’t let perfect be the enemy of good</a></li>
+</ul></li>
+<li>Once you’re done your MVP, gather feedback on how your project works. Based on this feedback, then iterate and improve.</li>
 </ul>
+</div>
+<div id="submit-three-things" class="section level3">
+<h3>3. Submit three things</h3>
+<ol style="list-style-type: decimal">
+<li>Both group members:
+<ol style="list-style-type: lower-alpha">
+<li>The <code>.ics</code> calendar file with your partner’s calendar data. You should both be logging at least 10 days worth of calendar data.</li>
+<li>The <code>.Rmd</code> R Markdown file analyzing your partner’s calendar data.</li>
+<li>The <code>.pdf</code> output file</li>
+</ol></li>
+<li>Both group members: Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6w4CC9-PrWrpupNfosQUBVoCWBihRwdezYb2jJEj7-kNdfg/viewform" target="_blank">Google Form</a></li>
+<li>Group leader only: PDF of 500 word joint reflection piece</li>
+</ol>
 <hr />
+</div>
 </div>
 </div>
 <div id="MP2" class="section level1">
 <h1>Mini-Project 2</h1>
 <!--
+
 Things to remember for next time:
 
 - 24A vs 24E transaction_typ varible
 - Write this as an R package?
 - Make sure .Rproj file has save .Rdata and .Rhistory set to FALSE
 - Use version of project here: https://drive.google.com/drive/u/1/folders/1Pzzyj1PJd0hNC11DlBC9oKcbYGV8Nc-F
+
+
+*Assigned on Friday 10/18, due Friday 11/1 at 5pm.*
+
+## Data
+
+You will work with a partner to analyze Federal Election Commission data based on the 2011--2012 federal election cycle, as provided by the [Federal Election Commission](http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link). Be sure to read the [supporting documentation for these data](http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link){target="_blank"}.
+
+The theme of your analysis will be **follow the money** as quoted by Lester Freamon from the HBO show The Wire. Only for your project the context will not be the drug war in Baltimore MD, but rather political contributions in elections.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7M71wmwWRo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+
+
+## Examples
+
+Here are two randomly chosen examples to give a qualitative sense of the outcome. Note they both can be improved on.
+
+* [Example 1](static/projects/MP2/MP2_example_1.html){target="_blank"}
+* [Example 2](static/projects/MP2/MP2_example_2.html){target="_blank"}
+
+
+## Doing the project
+
+* **Step 0**: Look in Slack in `#mp2` channel to see your group, your group number, and who your group leader is.
+* **Step 1**: Setup the MP2 RStudio project
+    1. Download <a href="https://drive.google.com/open?id=1pU9BpVUTBw1AFU8VUknnD6BdwTSPwfCH" download>`MP2.zip`</a>.
+    1. Move `MP2.zip` to wherever you keep your 192 files.
+        + macOS users: Double-click `MP2.zip` to extract the `MP2` folder.
+        + Windows users: Extract the contents of `MP2.zip` to a folder.
+    1. Double click the `MP2.Rproj` file to open RStudio in "Project mode":  
+    ![](static/images/MP2.png){ width=100px }
+    1. Verify that you are in RStudio Project mode by looking at the top right corner of RStudio. You should see this:  
+    ![](static/images/MP2_2.png){ width=100px }
+    1. Knit `MP2.Rmd` and go over the example R Markdown presentation tricks.
+    1. `View()` all four data frames that are loaded into R: `candidates`, `committees`, `contributions`, `house_elections`.
+* **Tips**:
+    1. Always work in RStudio Project mode. This will help R locate your `.csv` files easily.
+    1. Knit early and knit often. For example:
+        + If you add 5 lines of code and the R Markdown doesn't knit, you can easily locate the error.
+        + If you add 500 lines of code and the R Markdown doesn't knit, you'll have a harder time locating the error.
+    1. If you're confused about the meaning of variables in the four datasets, be sure to read the [supporting documentation for these data](http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link){target="_blank"}.
+    1. Ask questions in the `#mp2` slack channel.
+
+## Grading rubric
+
+**Note**: This rubric is likely not perfect. Please don't be shy to ask for clarifications.
+
+1. **Baseline:** Projects that do not satisfy all "baseline" criteria can expect to get a grade of less than 8/10.
+    + The `MP2.Rmd` R Markdown file must "knit" correctly when *someone else* knits it. This is known as producing reproducible research.
+    + All visualizations have appropriately labeled axes, legends, titles, etc. Such information gives the data's context.
+    + All visualizations are mindful of the [ink/information ratio](https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842){target="_blank"}.
+    + From the report reader's perspective, there should be no "superfluous" and non-informative output (examples include instructions text). You must be empathetic to your reader, or your reader will just throw your report in the trash. 
+    + You submit your peer evaluation.
+1. **Minimally viable product:** Grade: 8/10.
+    + Satisfy all "baseline" criteria.
+    + Create one data visualization that "follows the money" i.e. involves campaign contributions and include a written analysis.
+1. **Due diligence:** Grade: 9/10.
+    + Satisfy all "baseline" and "minimally viable product" criteria.
+    + The data visualization from the "minimally viable product" should be based on at least two joined data frames. 
+1. **Point of diminishing returns:** Grade: 9.5/10.
+    + Satisfy all "baseline", "minimally viable product", and "due diligence" criteria.
+    + Create a second data visualization that builds on the first data visualization, but is also non-redundant to the first. Include a written analysis.
+1. [**Polishing the cannonball**](https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball){target="_blank"}: Grade: 10/10
+    + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
+    + Written text does an exceptional job of not only addressing "What is happening?" questions, but also "Why is this happening?" questions (this criteria is subjective).
+
+
+## To submit
+
+1. Each group will make only one submission: the group leader will submit a `.zip` file of all the contents of the `MP2` folder on Moodle.
+1. **Individually**: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdPAojeiucovzcoKb-6-zrplAvhKGGqt1YXz5dv1JYlQqzbXg/viewform){target="_blank"}
+
+
 -->
-<p><em>Assigned on Friday 10/18, due Friday 11/1 at 5pm.</em></p>
-<div id="data" class="section level2">
-<h2>Data</h2>
-<p>You will work with a partner to analyze Federal Election Commission data based on the 2011–2012 federal election cycle, as provided by the <a href="http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link">Federal Election Commission</a>. Be sure to read the <a href="http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link" target="_blank">supporting documentation for these data</a>.</p>
-<p>The theme of your analysis will be <strong>follow the money</strong> as quoted by Lester Freamon from the HBO show The Wire. Only for your project the context will not be the drug war in Baltimore MD, but rather political contributions in elections.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7M71wmwWRo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p><br></p>
-</div>
-<div id="examples" class="section level2">
-<h2>Examples</h2>
-<p>Here are two randomly chosen examples to give a qualitative sense of the outcome. Note they both can be improved on.</p>
-<ul>
-<li><a href="static/projects/MP2/MP2_example_1.html" target="_blank">Example 1</a></li>
-<li><a href="static/projects/MP2/MP2_example_2.html" target="_blank">Example 2</a></li>
-</ul>
-</div>
-<div id="doing-the-project" class="section level2">
-<h2>Doing the project</h2>
-<ul>
-<li><strong>Step 0</strong>: Look in Slack in <code>#mp2</code> channel to see your group, your group number, and who your group leader is.</li>
-<li><strong>Step 1</strong>: Setup the MP2 RStudio project
-<ol style="list-style-type: decimal">
-<li>Download <a href="https://drive.google.com/open?id=1pU9BpVUTBw1AFU8VUknnD6BdwTSPwfCH" download><code>MP2.zip</code></a>.</li>
-<li>Move <code>MP2.zip</code> to wherever you keep your 192 files.
-<ul>
-<li>macOS users: Double-click <code>MP2.zip</code> to extract the <code>MP2</code> folder.</li>
-<li>Windows users: Extract the contents of <code>MP2.zip</code> to a folder.</li>
-</ul></li>
-<li>Double click the <code>MP2.Rproj</code> file to open RStudio in “Project mode”:<br />
-<img src="static/images/MP2.png" width="100" /></li>
-<li>Verify that you are in RStudio Project mode by looking at the top right corner of RStudio. You should see this:<br />
-<img src="static/images/MP2_2.png" width="100" /></li>
-<li>Knit <code>MP2.Rmd</code> and go over the example R Markdown presentation tricks.</li>
-<li><code>View()</code> all four data frames that are loaded into R: <code>candidates</code>, <code>committees</code>, <code>contributions</code>, <code>house_elections</code>.</li>
-</ol></li>
-<li><strong>Tips</strong>:
-<ol style="list-style-type: decimal">
-<li>Always work in RStudio Project mode. This will help R locate your <code>.csv</code> files easily.</li>
-<li>Knit early and knit often. For example:
-<ul>
-<li>If you add 5 lines of code and the R Markdown doesn’t knit, you can easily locate the error.</li>
-<li>If you add 500 lines of code and the R Markdown doesn’t knit, you’ll have a harder time locating the error.</li>
-</ul></li>
-<li>If you’re confused about the meaning of variables in the four datasets, be sure to read the <a href="http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link" target="_blank">supporting documentation for these data</a>.</li>
-<li>Ask questions in the <code>#mp2</code> slack channel.</li>
-</ol></li>
-</ul>
-</div>
-<div id="grading-rubric" class="section level2">
-<h2>Grading rubric</h2>
-<p><strong>Note</strong>: This rubric is likely not perfect. Please don’t be shy to ask for clarifications.</p>
-<ol style="list-style-type: decimal">
-<li><strong>Baseline:</strong> Projects that do not satisfy all “baseline” criteria can expect to get a grade of less than 8/10.
-<ul>
-<li>The <code>MP2.Rmd</code> R Markdown file must “knit” correctly when <em>someone else</em> knits it. This is known as producing reproducible research.</li>
-<li>All visualizations have appropriately labeled axes, legends, titles, etc. Such information gives the data’s context.</li>
-<li>All visualizations are mindful of the <a href="https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842" target="_blank">ink/information ratio</a>.</li>
-<li>From the report reader’s perspective, there should be no “superfluous” and non-informative output (examples include instructions text). You must be empathetic to your reader, or your reader will just throw your report in the trash.</li>
-<li>You submit your peer evaluation.</li>
-</ul></li>
-<li><strong>Minimally viable product:</strong> Grade: 8/10.
-<ul>
-<li>Satisfy all “baseline” criteria.</li>
-<li>Create one data visualization that “follows the money” i.e. involves campaign contributions and include a written analysis.</li>
-</ul></li>
-<li><strong>Due diligence:</strong> Grade: 9/10.
-<ul>
-<li>Satisfy all “baseline” and “minimally viable product” criteria.</li>
-<li>The data visualization from the “minimally viable product” should be based on at least two joined data frames.</li>
-</ul></li>
-<li><strong>Point of diminishing returns:</strong> Grade: 9.5/10.
-<ul>
-<li>Satisfy all “baseline”, “minimally viable product”, and “due diligence” criteria.</li>
-<li>Create a second data visualization that builds on the first data visualization, but is also non-redundant to the first. Include a written analysis.</li>
-</ul></li>
-<li><a href="https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball" target="_blank"><strong>Polishing the cannonball</strong></a>: Grade: 10/10
-<ul>
-<li>Satisfy all “baseline”, “minimally viable product”, “due diligence”, and “point of diminishing returns” criteria.</li>
-<li>Written text does an exceptional job of not only addressing “What is happening?” questions, but also “Why is this happening?” questions (this criteria is subjective).</li>
-</ul></li>
-</ol>
-</div>
-<div id="to-submit" class="section level2">
-<h2>To submit</h2>
-<ol style="list-style-type: decimal">
-<li>Each group will make only one submission: the group leader will submit a <code>.zip</code> file of all the contents of the <code>MP2</code> folder on Moodle.</li>
-<li><strong>Individually</strong>: Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPAojeiucovzcoKb-6-zrplAvhKGGqt1YXz5dv1JYlQqzbXg/viewform" target="_blank">Google Form</a></li>
-</ol>
 <hr />
-</div>
 </div>
 <div id="MP3" class="section level1">
 <h1>Mini-Project 3</h1>
 <!--
+
 Things to remember for next time:
 - Contact Smith Spatial Lab MUCH EARLIER
 - Contact Data Counselor MUCH EARLIER
 - Give example of joining sf object with data frame in examples.Rmd to create choropleth map of external variable
+
+
+*Assigned on Monday 11/11, due Friday 11/22 at ~~5pm~~ 9pm.*
+
+## Data
+
+* Any data of your choosing, as long as you can make one interactive map using `leaflet` (not `shiny`) and one static map using the `sf` package. 
+
+## Examples
+
+Here are two arbitrarily chosen examples to give a qualitative sense of the outcome. Note they both can be improved and the criteria of the MP has shifted slightly.
+
+* [Example 1](static/projects/MP3/MP3_example_1.html){target="_blank"}
+* [Example 2](static/projects/MP3/MP3_example_2.html){target="_blank"}
+
+
+## Doing the project
+
+* **Step 0**: Determine a group leader
+* **Step 1**: Setup the MP3 RStudio project
+    1. Download <a href="static/projects/MP3.zip" download>`MP3.zip`</a>.
+    1. Move `MP3.zip` to wherever you keep your 192 files.
+        + macOS users: Double-click `MP3.zip` to extract the `MP3` folder.
+        + Windows users: Extract the contents of `MP3.zip` to a folder.
+    1. Double click the `MP3.Rproj` file to open RStudio in "Project mode"
+* **Tips**:
+    1. Always work in RStudio Project mode. This will help R locate your data files easily.
+    1. Knit early and knit often. For example:
+        + If you add 5 lines of code and the R Markdown doesn't knit, you can easily locate the error.
+        + If you add 500 lines of code and the R Markdown doesn't knit, you'll have a harder time locating the error.
+    1. Ask questions in the `#mp3` slack channel.
+
+
+## Grading rubric
+
+**Note**: This rubric is likely not perfect. Please don't be shy to ask for clarifications.
+
+1. **Baseline:** Projects that do not satisfy all "baseline" criteria can expect to get a grade of less than 8/10.
+    + **This will be strictly evaluated**: The `MP3.Rmd` R Markdown file must "knit" correctly when *someone else* knits it. This is known as producing *reproducible research*.
+    + Wherever possible, all maps have appropriately labeled axes, legends, titles, etc. Such information gives the data's context.
+    + All maps are mindful of the [ink/information ratio](https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842){target="_blank"}.
+    + All accompanying write-ups are coherent and respect the word count limit.
+    + From the report reader's perspective, there should be no "superfluous" and non-informative output (examples include instructions text). You must be empathetic to your reader, or your reader will just throw your report in the trash. 
+    + You submit your peer evaluation.
+1. **Minimally viable product:** Grade: 8/10.
+    + Satisfy all "baseline" criteria.
+    + Include *either* an interactive map using `leaflet` (not `shiny`) or a static map using the `sf` package.
+1. **Due diligence:** Grade: 9/10.
+    + Satisfy all "baseline" and "minimally viable product" criteria.
+    + Include *both* an interactive map and a static map. These two maps may be "redundant" in that they provide the same information.
+1. **Point of diminishing returns:** Grade: 9.5/10.
+    + Satisfy all "baseline", "minimally viable product", and "due diligence" criteria.
+    + Your interactive map and static map must now not be "redundant."
+1. [**Polishing the cannonball**](https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball){target="_blank"}: Grade: 10/10
+    + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
+    + **Changed on 11/13 at 2pm** Include a third map of your choice that it not redundant to the first two. Can be either interactive or static.
+
+
+## To submit
+
+1. Each group will make only one submission: the group leader will submit a `.zip` file of all the contents of the `MP3` folder on Moodle.
+1. **Individually**: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfUfxg2j9MYf60O70JerAQBeX0rxEFX6k5749P6gYEIHgr-9g/viewform){target="_blank"}
+
 -->
-<p><em>Assigned on Monday 11/11, due Friday 11/22 at <del>5pm</del> 9pm.</em></p>
-<div id="data-1" class="section level2">
-<h2>Data</h2>
-<ul>
-<li>Any data of your choosing, as long as you can make one interactive map using <code>leaflet</code> (not <code>shiny</code>) and one static map using the <code>sf</code> package.</li>
-</ul>
-</div>
-<div id="examples-1" class="section level2">
-<h2>Examples</h2>
-<p>Here are two arbitrarily chosen examples to give a qualitative sense of the outcome. Note they both can be improved and the criteria of the MP has shifted slightly.</p>
-<ul>
-<li><a href="static/projects/MP3/MP3_example_1.html" target="_blank">Example 1</a></li>
-<li><a href="static/projects/MP3/MP3_example_2.html" target="_blank">Example 2</a></li>
-</ul>
-</div>
-<div id="doing-the-project-1" class="section level2">
-<h2>Doing the project</h2>
-<ul>
-<li><strong>Step 0</strong>: Determine a group leader</li>
-<li><strong>Step 1</strong>: Setup the MP3 RStudio project
-<ol style="list-style-type: decimal">
-<li>Download <a href="static/projects/MP3.zip" download><code>MP3.zip</code></a>.</li>
-<li>Move <code>MP3.zip</code> to wherever you keep your 192 files.
-<ul>
-<li>macOS users: Double-click <code>MP3.zip</code> to extract the <code>MP3</code> folder.</li>
-<li>Windows users: Extract the contents of <code>MP3.zip</code> to a folder.</li>
-</ul></li>
-<li>Double click the <code>MP3.Rproj</code> file to open RStudio in “Project mode”</li>
-</ol></li>
-<li><strong>Tips</strong>:
-<ol style="list-style-type: decimal">
-<li>Always work in RStudio Project mode. This will help R locate your data files easily.</li>
-<li>Knit early and knit often. For example:
-<ul>
-<li>If you add 5 lines of code and the R Markdown doesn’t knit, you can easily locate the error.</li>
-<li>If you add 500 lines of code and the R Markdown doesn’t knit, you’ll have a harder time locating the error.</li>
-</ul></li>
-<li>Ask questions in the <code>#mp3</code> slack channel.</li>
-</ol></li>
-</ul>
-</div>
-<div id="grading-rubric-1" class="section level2">
-<h2>Grading rubric</h2>
-<p><strong>Note</strong>: This rubric is likely not perfect. Please don’t be shy to ask for clarifications.</p>
-<ol style="list-style-type: decimal">
-<li><strong>Baseline:</strong> Projects that do not satisfy all “baseline” criteria can expect to get a grade of less than 8/10.
-<ul>
-<li><strong>This will be strictly evaluated</strong>: The <code>MP3.Rmd</code> R Markdown file must “knit” correctly when <em>someone else</em> knits it. This is known as producing <em>reproducible research</em>.</li>
-<li>Wherever possible, all maps have appropriately labeled axes, legends, titles, etc. Such information gives the data’s context.</li>
-<li>All maps are mindful of the <a href="https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842" target="_blank">ink/information ratio</a>.</li>
-<li>All accompanying write-ups are coherent and respect the word count limit.</li>
-<li>From the report reader’s perspective, there should be no “superfluous” and non-informative output (examples include instructions text). You must be empathetic to your reader, or your reader will just throw your report in the trash.</li>
-<li>You submit your peer evaluation.</li>
-</ul></li>
-<li><strong>Minimally viable product:</strong> Grade: 8/10.
-<ul>
-<li>Satisfy all “baseline” criteria.</li>
-<li>Include <em>either</em> an interactive map using <code>leaflet</code> (not <code>shiny</code>) or a static map using the <code>sf</code> package.</li>
-</ul></li>
-<li><strong>Due diligence:</strong> Grade: 9/10.
-<ul>
-<li>Satisfy all “baseline” and “minimally viable product” criteria.</li>
-<li>Include <em>both</em> an interactive map and a static map. These two maps may be “redundant” in that they provide the same information.</li>
-</ul></li>
-<li><strong>Point of diminishing returns:</strong> Grade: 9.5/10.
-<ul>
-<li>Satisfy all “baseline”, “minimally viable product”, and “due diligence” criteria.</li>
-<li>Your interactive map and static map must now not be “redundant.”</li>
-</ul></li>
-<li><a href="https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball" target="_blank"><strong>Polishing the cannonball</strong></a>: Grade: 10/10
-<ul>
-<li>Satisfy all “baseline”, “minimally viable product”, “due diligence”, and “point of diminishing returns” criteria.</li>
-<li><strong>Changed on 11/13 at 2pm</strong> Include a third map of your choice that it not redundant to the first two. Can be either interactive or static.</li>
-</ul></li>
-</ol>
-</div>
-<div id="to-submit-1" class="section level2">
-<h2>To submit</h2>
-<ol style="list-style-type: decimal">
-<li>Each group will make only one submission: the group leader will submit a <code>.zip</code> file of all the contents of the <code>MP3</code> folder on Moodle.</li>
-<li><strong>Individually</strong>: Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUfxg2j9MYf60O70JerAQBeX0rxEFX6k5749P6gYEIHgr-9g/viewform" target="_blank">Google Form</a></li>
-</ol>
 <hr />
-</div>
 </div>
 <div id="Final" class="section level1">
 <h1>Final Project</h1>
-<p><em>Assigned on Monday 11/24, due Friday 12/20 at 12pm.</em></p>
-<p>In groups of 2-3 students of your choosing you will answer any scientific question of your choosing using data. Your submission will be an RStudio Project of an RMarkdown Website.</p>
-<ul>
-<li>Use any data of your choosing that answers your scientific question.</li>
-<li>Your website must at least have the following two pages:
-<ul>
-<li>An intro <code>index.html</code> page in blog-post style that summarizes your work. It should have
-<ol style="list-style-type: decimal">
-<li>One visualization that best summarizes your work.</li>
-<li>No more than 200 words of text</li>
-</ol></li>
-<li>A second <code>more_info.html</code> page going more in-depth for people who want more details. In should have
-<ol style="list-style-type: decimal">
-<li>Between 2-3 more visualizations.</li>
-<li>No more than 500 words of text</li>
-</ol></li>
-</ul></li>
-<li>Publishing to the web:
-<ul>
-<li>If your data/analysis is not sensitive or private in nature, publish your R Markdown Website on the web and post the URL in the Groups Google Sheet in the <code>#final_project</code> Slack team.</li>
-<li>If your data/analysis is sensitive or private in nature, please DM me on Slack and we’ll work something out.</li>
-</ul></li>
-</ul>
-<p>Here are some arbitrarily chosen examples:</p>
-<ol style="list-style-type: decimal">
-<li><a href="https://ctimmons1.github.io/webpage/index.html" target="_blank">America’s Leaky Pipes: The Environmental Impact of Oil Pipeline Spills</a></li>
-<li><a href="https://estherrose21.github.io/webpage/index.html" target="_blank">💵The Gigantic Gender Pay Gap💵</a></li>
-<li><a href="https://jcflohr.github.io/final-project/index.html" target="_blank">Putting Food on the Table in 50 States</a></li>
-<li><a href="https://lepidopterane-atsmith.github.io/sds192fp/index.html" target="_blank">Who Are The Noisemakers? | Analyzing the Loudest Parties in NYC</a></li>
-<li><a href="https://loblatt.github.io/final_project_webpage/index.html" target="_blank">Bigfoot: True or Real?</a></li>
-</ol>
-<div id="doing-the-project-2" class="section level2">
-<h2>Doing the project</h2>
-<ol style="list-style-type: decimal">
-<li>Choose groups of 2-3 members then fill in your group information in the Google Sheet in the <code>#final_project</code> Slack channel. If you need a group, DM me on Slack with your Section number.</li>
-<li><strong>Do this as soon as possible</strong>: Finding data is often the hardest part of such projects
-<ul>
-<li>Ideally, determine a research question you are interested in. Then find this data.</li>
-<li>Often however you can’t find data that answers your desired question, but rather only some modified form of your question. This is fine, done is better than perfect.</li>
-<li>If you are still stuck, find data first and then reverse-engineer a question. Not ideal, but again, done is better than perfect.</li>
-<li>Use Smith College data resources. In particular:
-<ul>
-<li>The Spinelli Center <a href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr" target="_blank">Data Research and Statistics Counselor</a> Osman Keshawarz</li>
-<li>The <a href="http://www.science.smith.edu/sal/" target="_blank">Spatial Analysis Lab</a></li>
-</ul></li>
-</ul></li>
-<li>Setup the Final Project RStudio Project
-<ol style="list-style-type: decimal">
-<li>Download <a href="static/projects/final_project.zip" download><code>final_project.zip</code></a>.</li>
-<li>Move <code>final_project.zip</code> to wherever you keep your 192 files.
-<ul>
-<li>macOS users: Double-click <code>final_project.zip</code> to extract the <code>final_project</code> folder.</li>
-<li>Windows users: Extract the contents of <code>final_project.zip</code> to a folder.</li>
-</ul></li>
-<li>Double click the <code>final_project.Rproj</code> file to open RStudio in “Project mode”</li>
-</ol></li>
-</ol>
-</div>
-<div id="submitting-the-project" class="section level2">
-<h2>Submitting the project</h2>
-<ul>
-<li><strong>Group leader only</strong>:
-<ol style="list-style-type: decimal">
-<li>On Moodle: Submit a <code>.zip</code> archive file of the RStudio Project folder necessary to build your RMarkdown Website. There will be only one submission per group.</li>
-<li>In the <code>#final_project</code> Slack team, go to the Groups Google Sheet, then post the URL to your RMarkdown Website published online (as long as data/work is not private or sensitive in nature).<br />
-You have two options for publishing your website, both being equally acceptable. Either:
-<ul>
-<li><em>The beginner-friendly way:</em> Using Netlify drag-and-drop as we saw in Lec30</li>
-<li><em>The more advanced, but more efficient way:</em> Committing and pushing your RStudio Project to Github and publishing the content of your <code>docs/</code> folder to GitHub pages: Go to your repo’s Settings page and change the GitHub Pages source link like <a href="https://github.blog/wp-content/uploads/2016/08/d516076e-640c-11e6-8086-ce1d246a87d2.png?w=1460" target="_blank">this</a>. For example, this is how I publish this course webpage.</li>
-</ul></li>
-</ol></li>
-<li><strong>Individually</strong>:
-<ol style="list-style-type: decimal">
-<li>Fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRfVN58QWyv2LRB865eA-JdCIWm-AUUx959cdGBgFo0Wk5MA/viewform" target="_blank">peer evaluation</a> Google Form.</li>
-<li>Fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcVrUjjPEAM587UKIG_T7Nv7vsb351lcWL8SLZUw3qJ9UWAA/closedform" target="_blank">exit survey</a> Google Form.</li>
-</ol></li>
-</ul>
-</div>
-<div id="grading-rubric-2" class="section level2">
-<h2>Grading rubric</h2>
-<p><em>Nte:</em> his rubric is likely not perfect. Please don’t be shy to ask for clarifications.</p>
-<ol style="list-style-type: decimal">
-<li><strong>Baseline:</strong> Projects that do not satisfy all “baseline” criteria can expect to get a grade of less than 8/10.
-<ul>
-<li>The RMarkdown Website must “build” correctly when someone else builds it. <em>This is known as producing reproducible research.</em></li>
-<li>Wherever possible, all visualizations have appropriately labeled axes, legends, titles, etc and are mindful of the <a href="https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842" target="_blank">ink/information ratio</a>.<br />
-</li>
-<li>Your code is clean, commented, and well-indented. See both your MP2 and MP3 video feedback for individualized feedback and the <a href="https://style.tidyverse.org/" target="_blank">tidyverse style guide</a>. <em>This is being mindful of the work you create for collaborators, including future you.</em></li>
-<li>From the perspective of both the report reader and potential collaborators who might reproduce your work, no “superfluous” and non-informative inputs or outputs are included. <em>This is being mindful of the work you create for readers and collaborators, including future you.</em> Ex: Do not
-<ol style="list-style-type: decimal">
-<li>Include my original instructions in the report.</li>
-<li>Include “Data dumps” like showing all the contents of a 1000 row data frame.</li>
-<li>Submit files in your RStudio Project folder that aren’t relevant to your analysis.</li>
-</ol></li>
-<li>All accompanying write-ups are coherent and respect the word count limit.</li>
-<li>You submit both your peer evaluations and your exit survey responses.</li>
-</ul></li>
-<li><strong>Minimally viable product:</strong> Grade: 8/10.
-<ul>
-<li>Satisfy all “baseline” criteria.</li>
-<li>Complete the intro <code>index.html</code> blog-post page.</li>
-</ul></li>
-<li><strong>Due diligence:</strong> Grade: 9/10.
-<ul>
-<li>Satisfy all “baseline” and “minimally viable product” criteria.</li>
-<li>Complete the second <code>more_info.html</code> page with 1 visualization.</li>
-</ul></li>
-<li><strong>Point of diminishing returns:</strong> Grade: 9.5/10.
-<ul>
-<li>Satisfy all “baseline”, “minimally viable product”, and “due diligence” criteria.</li>
-<li>Complete the second <code>more_info.html</code> page with 2-3 visualizations.</li>
-</ul></li>
-<li><a href="https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball" target="_blank"><strong>Polishing the cannonball</strong></a>: Grade: 10/10
-<ul>
-<li>Satisfy all “baseline”, “minimally viable product”, “due diligence”, and “point of diminishing returns” criteria.</li>
-<li>Impress me. Yes, this criteria is deliberately vague. However, you’ve had the semester to get to know me and I’ve given you all individualized and personalized feedback for three mini-projects. Think of this is as an exercise in “knowing your audience,” a skill that is part art and part science.</li>
-</ul></li>
-</ol>
-</div>
+<!--
+
+*Assigned on Monday 11/24, due Friday 12/20 at 12pm.*
+
+In groups of 2-3 students of your choosing you will answer any scientific question of your choosing using data. Your submission will be an RStudio Project of an RMarkdown Website. 
+
+* Use any data of your choosing that answers your scientific question. 
+* Your website must at least have the following two pages:
+    + An intro `index.html` page in blog-post style that summarizes your work. It should have
+        1. One visualization that best summarizes your work.
+        1. No more than 200 words of text
+    + A second `more_info.html` page going more in-depth for people who want more details. In should have
+        1. Between 2-3 more visualizations.
+        1. No more than 500 words of text
+* Publishing to the web: 
+    + If your data/analysis is not sensitive or private in nature, publish your R Markdown Website on the web and post the URL in the Groups Google Sheet in the `#final_project` Slack team.
+    + If your data/analysis is sensitive or private in nature, please DM me on Slack and we'll work something out.
+
+Here are some arbitrarily chosen examples:
+
+1. [America’s Leaky Pipes: The Environmental Impact of Oil Pipeline Spills](https://ctimmons1.github.io/webpage/index.html){target="_blank"}
+1. [💵The Gigantic Gender Pay Gap💵](https://estherrose21.github.io/webpage/index.html){target="_blank"}
+1. [Putting Food on the Table in 50 States](https://jcflohr.github.io/final-project/index.html){target="_blank"}
+1. [Who Are The Noisemakers? | Analyzing the Loudest Parties in NYC](https://lepidopterane-atsmith.github.io/sds192fp/index.html){target="_blank"}
+1. [Bigfoot: True or Real?](https://loblatt.github.io/final_project_webpage/index.html){target="_blank"}
+
+
+## Doing the project
+
+1. Choose groups of 2-3 members then fill in your group information in the Google Sheet in the `#final_project` Slack channel. If you need a group, DM me on Slack with your Section number.
+1. **Do this as soon as possible**: Finding data is often the hardest part of such projects
+    + Ideally, determine a research question you are interested in. Then find this data.
+    + Often however you can't find data that answers your desired question, but rather only some modified form of your question. This is fine, done is better than perfect.
+    + If you are still stuck, find data first and then reverse-engineer a question. Not ideal, but again, done is better than perfect.
+    + Use Smith College data resources. In particular:
+        + The Spinelli Center [Data Research and Statistics Counselor](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"} Osman Keshawarz
+        + The [Spatial Analysis Lab](http://www.science.smith.edu/sal/){target="_blank"}
+1. Setup the Final Project RStudio Project
+    1. Download <a href="static/projects/final_project.zip" download>`final_project.zip`</a>.
+    1. Move `final_project.zip` to wherever you keep your 192 files.
+        + macOS users: Double-click `final_project.zip` to extract the `final_project` folder.
+        + Windows users: Extract the contents of `final_project.zip` to a folder.
+    1. Double click the `final_project.Rproj` file to open RStudio in "Project mode"
+
+
+
+## Submitting the project
+
+* **Group leader only**:
+    1. On Moodle: Submit a `.zip` archive file of the RStudio Project folder necessary to build your RMarkdown Website. There will be only one submission per group.
+    1. In the `#final_project` Slack team, go to the Groups Google Sheet, then post the URL to your RMarkdown Website published online (as long as data/work is not private or sensitive in nature).  
+    You have two options for publishing your website, both being equally acceptable. Either:
+        * *The beginner-friendly way:* Using Netlify drag-and-drop as we saw in Lec30
+        * *The more advanced, but more efficient way:* Committing and pushing your RStudio Project to Github and publishing the content of your `docs/` folder to GitHub pages: Go to your repo's Settings page and change the GitHub Pages source link like [this](https://github.blog/wp-content/uploads/2016/08/d516076e-640c-11e6-8086-ce1d246a87d2.png?w=1460){target="_blank"}. For example, this is how I publish this course webpage.
+* **Individually**:
+    1. Fill out the [peer evaluation](https://docs.google.com/forms/d/e/1FAIpQLSfRfVN58QWyv2LRB865eA-JdCIWm-AUUx959cdGBgFo0Wk5MA/viewform){target="_blank"} Google Form.
+    1. Fill out the [exit survey](https://docs.google.com/forms/d/e/1FAIpQLSdcVrUjjPEAM587UKIG_T7Nv7vsb351lcWL8SLZUw3qJ9UWAA/closedform){target="_blank"} Google Form.
+
+
+
+## Grading rubric
+
+*Nte:* his rubric is likely not perfect. Please don't be shy to ask for clarifications.
+
+1. **Baseline:** Projects that do not satisfy all "baseline" criteria can expect to get a grade of less than 8/10.
+    + The RMarkdown Website must "build" correctly when someone else builds it. *This is known as producing reproducible research.*
+    + Wherever possible, all visualizations have appropriately labeled axes, legends, titles, etc and are mindful of the [ink/information ratio](https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842){target="_blank"}.    
+    + Your code is clean, commented, and well-indented. See both your MP2 and MP3 video feedback for individualized feedback and the [tidyverse style guide](https://style.tidyverse.org/){target="_blank"}. *This is being mindful of the work you create for collaborators, including future you.*
+    + From the perspective of both the report reader and potential collaborators who might reproduce your work, no "superfluous" and non-informative inputs or outputs are included. *This is being mindful of the work you create for readers and collaborators, including future you.* Ex: Do not
+        1. Include my original instructions in the report.
+        1. Include "Data dumps" like showing all the contents of a 1000 row data frame.
+        1. Submit files in your RStudio Project folder that aren't relevant to your analysis. 
+    + All accompanying write-ups are coherent and respect the word count limit.
+    + You submit both your peer evaluations and your exit survey responses.
+1. **Minimally viable product:** Grade: 8/10.
+    + Satisfy all "baseline" criteria.
+    + Complete the intro `index.html` blog-post page.
+1. **Due diligence:** Grade: 9/10.
+    + Satisfy all "baseline" and "minimally viable product" criteria.
+    + Complete the second `more_info.html` page with 1 visualization.
+1. **Point of diminishing returns:** Grade: 9.5/10.
+    + Satisfy all "baseline", "minimally viable product", and "due diligence" criteria.
+    + Complete the second `more_info.html` page with 2-3 visualizations.
+1. [**Polishing the cannonball**](https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball){target="_blank"}: Grade: 10/10
+    + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
+    + Impress me. Yes, this criteria is deliberately vague. However, you've had the semester to get to know me and I've given you all individualized and personalized feedback for three mini-projects. Think of this is as an exercise in "knowing your audience," a skill that is part art and part science.
+-->
 </div>
 
 

@@ -1,14 +1,10 @@
 ---
-title: "MP1"
+title: "Mini-Project 1: Calendar"
 author: "WRITE YOUR NAME HERE"
-date: "Friday, October 11th, 2019"
+date: "Wednesday October 13, 2021"
 output:
-  html_document:
-    toc: yes
-    toc_float: yes
-    toc_depth: 2
-    theme: cosmo
-    highlight: tango
+  pdf_document:
+    toc: no
     df_print: paged
 ---
 
@@ -32,19 +28,22 @@ library(ical)
 
 ## Administrative info:
 
-* Section number:
-* Group number:
-* My partner:
+* Section number: 
+* Group number: 
+* My name: 
+* My academic email: 
+* My partner's name: 
+* My partner's academic email: 
 * My partner's question about how they use their time: 
 
 
 ## Importing the calendar
 
-You shouldn't need to modify the following data wrangling code:
+The following pre-written code will load `.ics` calendar files that are in the same directory as this `.Rmd` file: 
 
 ```{r, echo=FALSE}
 # Replace "192.ics" with the name of your calendar file:
-calendar_data <- "~/Documents/2. Data Science/SDS192/static/MP1/192.ics" %>% 
+calendar_data <- "192.ics" %>% 
   # Use ical package to import into R and then convert to "tibble" data frame format:
   ical_parse_df() %>% 
   as_tibble() %>% 
@@ -63,7 +62,7 @@ calendar_data <- "~/Documents/2. Data Science/SDS192/static/MP1/192.ics" %>%
   mutate(hours = minutes/60)
 ```
 
-Make sure you data looks good by looking at raw values
+Make sure you data looks good by looking at the data:
 
 ```{r}
 glimpse(calendar_data)
@@ -78,19 +77,18 @@ View(calendar_data)
 
 # Analysis
 
-Hello world.
-
 ```{r}
-# Write your code to create data visualization #1:
+# Write your code to create data visualization #1 here:
 
 ```
 
-Hello world.
+Replace this text with your written analysis of data visualization #1.
 
 ```{r}
-# Write your code to create data visualization #2:
+# Write your code to create data visualization #2 here:
 
 ```
 
-Hello world.
+Replace this text with your written analysis of data visualization #2.
+
 
