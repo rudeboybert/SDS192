@@ -8,9 +8,10 @@ output:
 ---
 
 ```{r, include=FALSE}
-knitr::opts_chunk$set(
-  echo = TRUE, message=FALSE, warning = FALSE, eval = TRUE, 
-  fig.width = 16/2, fig.height = 9/2
+library(knitr)
+opts_chunk$set(
+  echo = TRUE, message=FALSE, warning = FALSE, eval = FALSE, 
+  fig.width = 16/2, fig.height = 9/2, fig.align="center"
 )
 
 # Set seed value of random number generator to get "replicable" random numbers.
@@ -27,21 +28,11 @@ h1{font-weight: 400;}
 </style>
 
 
-Everything in this course builds up to the final group project, where there is
-only one learning goal: *Engage in the data/science research pipeline in as
-faithful a manner as possible while maintaining a level suitable for novices.* To get practice however there will be 3 mini-projects first.
-
-<center>
-<img src="static/images/pipeline.png" alt="Drawing" style="width: 600px;" border="10"/>
-</center>
-
-
-
-***
-
 
 
 # Mini-Project 1 {#MP1}
+
+*Due Wednesday 10/13 at 9pm.*
 
 <!--
 Things to remember for next time:
@@ -58,64 +49,71 @@ with two levels.
 - Issue with time intervals being imported in seconds, minutes, hours, 
 -->
 
-*Partially assigned on Friday 9/27, completely assigned on Monday 9/30, due Friday 10/11 at 5pm.*
+```{r, echo = FALSE, eval = TRUE}
+include_graphics("static/images/google_calendar.png")
+```
 
-Basic outline:
+
+## Basic outline
 
 1. Identify a question about how you use your time *that you feel comfortable sharing with your partner and me*.
-1. Start the data collection process: start logging time in Google Calendar, macOS Calendar, and Outlook.
-1. Import the calendar data into R. Do this early, do this often!
-1. Exchange data! You will pass your question and data to your partner, and they will do an analysis by creating two data visualizations.
-1. Write a joint reflection piece on this experience, keeping the podcast in mind. In particular
+1. Start the data collection process: start logging time in Google Calendar, macOS Calendar, or Outlook.
+1. Export the calendar to `.ics` file format and then import into R.
+    + The screencast demonstrates how to do this with Google Calendar. 
+    + Test this early and test this often!
+1. Exchange data! You will pass your question and data to your partner, and they will do an analysis with two non-redundant data visualizations.
+1. Write a joint reflection piece on this experience. In particular
     + As someone who provides data: What expectations do you have when you give your data?
-    + As someone who analyzes other's data: What legal and ethical responsibilites do you have?
+    + As someone who analyzes other people's data: What legal and ethical responsibilities do you have?
     + The joint reflection piece should be of no more than 500 words. I suggest you write it in Google Docs and then export to PDF.
-    
-The following screencast illustrates Steps 2 and 3 above:
 
+<center>    
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vLlR4lBWAoc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center> 
 
+## Steps
 
-## Step 0: Identify groups
+### 1. Getting started
 
-* Look in Slack in `#mp1` channel to see your group, your group number, and who your group leader is.
-
-## Step 1: Download starter code
-
+* Find your group in the `#mp1` channel. Please identify:
+    + Your group number
+    + Who your group leader is: whoever in your group is listed as `member_1`
 * Download <a href="static/projects/MP1.zip" download>`MP1.zip`</a> and double-click it to "unzip" it
-* Rename the `MP1_lastname_firstname.Rmd` file to have your last and first name
-* Knit the `.Rmd` file once and read it over
-* Create two data visualizations and provide an analysis to answer your partner's question
+* Knit the `MP1.Rmd` file once and read it over
 
-## Step 2: Submit
+### 2. Suggestion: Complete your Minimally Viable Product
 
-1. Everyone: Submit the following three files on Moodle:
-    a) The `.ics` calendar file with your partner's calendar data. **Added 9/30:** You should both be logging calendar data until Wed 10/9.
+```{r, echo = FALSE, eval = TRUE}
+include_graphics("static/images/MVP_2.png")
+```
+
+IMO when working on any project
+
+* Don't try to do everything completely and perfectly from the beginning. This leads to perfectionist thinking, which leads to procrastination and "analysis paralysis."
+* Do start by finishing a [minimially viable product](https://www.forbes.com/sites/quora/2018/02/27/what-is-a-minimum-viable-product-and-why-do-companies-need-them/#178bd8a2382c){target="_blank"} (image 1 in the bottom row of the image above). In other words:
+    + [Done is better than perfect](https://lifehacker.com/done-is-better-than-perfect-5870379){target="_blank"}
+    + [Don't let perfect be the enemy of good](https://www.huffpost.com/entry/dont-let-the-perfect-be-t_b_158673){target="_blank"}
+* Once you're done your MVP, gather feedback on how your project works. Based on this feedback, then iterate and improve.
+
+
+### 3. Submit three things
+
+1. Both group members: 
+    a) The `.ics` calendar file with your partner's calendar data. You should both be logging at least 10 days worth of calendar data.
     a) The `.Rmd` R Markdown file analyzing your partner's calendar data.
-    a) The `.html` output file
-1. Everyone: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdINjxeoi0bCsicx8SfcLkjV2V0j4XgMB959oQ5q2GVIhthjg/viewform){target="_blank"}
-1. Group leader only: PDF of 500 word joint reflection piece.
+    a) The `.pdf` output file
+1. Both group members: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSd6w4CC9-PrWrpupNfosQUBVoCWBihRwdezYb2jJEj7-kNdfg/viewform){target="_blank"}
+1. Group leader only: PDF of 500 word joint reflection piece
 
 
-## Tip: Minimally viable product
 
-When building a product, IMO:
 
-**Don't**: Try to do everything completely and perfectly from the beginning. This leads to perfectionist thinking, which leads to procrastination and "analysis paralysis".
 
-**Do**: Start by finishing a [minimially viable product](https://www.forbes.com/sites/quora/2018/02/27/what-is-a-minimum-viable-product-and-why-do-companies-need-them/#178bd8a2382c){target="_blank"} FAST:
 
-<center>
-![](static/images/MVP.png){ width=525px }
-</center>
 
-Only you're done your MVP, iterate and improve by adding complexity.
 
-**In other words**:
 
-* [Done is better than perfect](https://lifehacker.com/done-is-better-than-perfect-5870379){target="_blank"}
-* [Don't let the perfect be the enemy of the good](https://www.huffpost.com/entry/dont-let-the-perfect-be-t_b_158673){target="_blank"}
-* [Think big, start small](https://www.forbes.com/sites/chunkamui/2016/01/03/6-words/#15457a371a3b){target="_blank"}
+
 
 
 
@@ -123,16 +121,20 @@ Only you're done your MVP, iterate and improve by adding complexity.
 
 
 
+
+
 # Mini-Project 2 {#MP2}
 
+
 <!--
+
 Things to remember for next time:
 
 - 24A vs 24E transaction_typ varible
 - Write this as an R package?
 - Make sure .Rproj file has save .Rdata and .Rhistory set to FALSE
 - Use version of project here: https://drive.google.com/drive/u/1/folders/1Pzzyj1PJd0hNC11DlBC9oKcbYGV8Nc-F
--->
+
 
 *Assigned on Friday 10/18, due Friday 11/1 at 5pm.*
 
@@ -206,6 +208,7 @@ Here are two randomly chosen examples to give a qualitative sense of the outcome
 1. **Individually**: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdPAojeiucovzcoKb-6-zrplAvhKGGqt1YXz5dv1JYlQqzbXg/viewform){target="_blank"}
 
 
+-->
 
 ***
 
@@ -213,12 +216,14 @@ Here are two randomly chosen examples to give a qualitative sense of the outcome
 
 # Mini-Project 3 {#MP3}
 
+
 <!--
+
 Things to remember for next time:
 - Contact Smith Spatial Lab MUCH EARLIER
 - Contact Data Counselor MUCH EARLIER
 - Give example of joining sf object with data frame in examples.Rmd to create choropleth map of external variable
--->
+
 
 *Assigned on Monday 11/11, due Friday 11/22 at ~~5pm~~ 9pm.*
 
@@ -281,13 +286,17 @@ Here are two arbitrarily chosen examples to give a qualitative sense of the outc
 1. Each group will make only one submission: the group leader will submit a `.zip` file of all the contents of the `MP3` folder on Moodle.
 1. **Individually**: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfUfxg2j9MYf60O70JerAQBeX0rxEFX6k5749P6gYEIHgr-9g/viewform){target="_blank"}
 
-
+-->
 
 ***
 
 
 
+
+
 # Final Project {#Final}
+
+<!--
 
 *Assigned on Monday 11/24, due Friday 12/20 at 12pm.*
 
@@ -373,6 +382,6 @@ Here are some arbitrarily chosen examples:
 1. [**Polishing the cannonball**](https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball){target="_blank"}: Grade: 10/10
     + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
     + Impress me. Yes, this criteria is deliberately vague. However, you've had the semester to get to know me and I've given you all individualized and personalized feedback for three mini-projects. Think of this is as an exercise in "knowing your audience," a skill that is part art and part science.
-
+-->
 
     

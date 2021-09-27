@@ -1,0 +1,83 @@
+
+---
+title: "Problem Set 02"
+author: "WRITE YOUR NAME HERE"
+date: "2021-09-20"
+output:
+  pdf_document:
+    toc: no
+---
+
+```{r, include=FALSE}
+# Do not edit this code block/chunk
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE, fig.width = 16/2, fig.height = 9/2)
+```
+
+# Learning goals
+
+* Learn to "knit" R Markdown documents and create a PDF
+* Recreate Figure 2.1 in ModernDive.
+* Get familiar with the [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/)
+
+# Honor code
+
+For this problem set I worked with: 
+
+
+# Getting started
+
+* At the top of this document replace `"WRITE YOUR NAME HERE"` with your name, including the quotation marks. Ex: `"Albert Y. Kim"`
+* In the Honor code section above, indicate who (if anyone) you worked with. 
+
+
+# Setup
+
+Load necessary packages:
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(gapminder)
+```
+
+The `gapminder` package includes a data frame called `gapminder`, containing information about different countries from 1952 to 2007. Run `View(gapminder)` in your console to explore this data.
+
+We're only going to only focus on data for 2007 and save this in a new data frame `gapminder_2007`. We use data wrangling using code from the `dplyr` package. Don't worry if this doesn't make sense for now, we'll cover data wrangling in Chapter 3 of ModernDive. For now, run the following code:
+
+```{r}
+gapminder_2007 <- gapminder %>% 
+  filter(year == 2007)
+```
+
+Run `View(gapminder_2007)` in your console to explore this data. An alternative method for exploring a data frame is by using the `glipmse()` function:
+
+```{r}
+glimpse(gapminder_2007)
+```
+
+This data is in fact the same data as in Table 2.1 of ModernDive.
+
+# Question 1
+
+Write the `ggplot2` that recreates Figure 2.1 of ModernDive. Do not worry about labeling the axes and legends for now. 
+
+```{r}
+# Write your code below:
+ggplot(data = gapminder_2007, 
+       mapping = aes(x = gdpPercap, y = lifeExp, size = pop, color = continent)) +
+  geom_point() +
+  # Note: this was not required for this problem set:
+  labs(x = "GDP per capita (in USD)", 
+       y = "Life expectancy", 
+       size = "Population", 
+       color = "Continent", 
+       title = "Gapminder data",
+       subtitle = "2007 values")
+```
+
+
+# Question 2
+
+Q: What country had the highest GDP per capita in 2007? Use the sorting arrows next to variable names in RStudio's `View()` function.
+
+A: Norway
