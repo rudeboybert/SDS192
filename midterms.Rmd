@@ -67,7 +67,7 @@ h1{font-weight: 400;}
 
 ## Topics
     
-* Topics: Lectures 1-9 inclusive (up to and including color theory in-class exercises).
+* Topics: Lectures 1-10 inclusive (up to and including color theory in-class exercises).
 * Join the `#midterms` channel on Slack and post all questions there
 * What to study:
     + Lecture notes: both "chalk talk" and what's on webpage. 
