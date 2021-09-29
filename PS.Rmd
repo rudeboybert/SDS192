@@ -223,6 +223,16 @@ Total: 9pts
     1. For each questions, tag **all** pages of your PDF that relate to that question (not just the first)
     1. You will be asked to tag the honor code question as well.
 
+
+
+## 2. Solutions {#PS03_solutions}
+
+* <a href="static/PS/PS03_solutions.Rmd" download>`PS03_solutions.Rmd`</a> R Markdown "source code" 
+* [`PS03_solutions.pdf`](static/PS/PS03_solutions.pdf){target="_blank"} PDF
+
+
+
+
 <!--
 
 ## 2. Podcast quiz component
@@ -276,7 +286,7 @@ Notes:
 
 
 
-## 2. Solutions & (imperfect) rubric {#PS02_solutions}
+## 2. Solutions {#PS02_solutions}
 
 * <a href="static/PS/PS02_solutions.Rmd" download>`PS02_solutions.Rmd`</a> R Markdown "source code" 
 * [`PS02_solutions.pdf`](static/PS/PS02_solutions.pdf){target="_blank"} PDF
