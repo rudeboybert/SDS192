@@ -37,21 +37,16 @@ h1{font-weight: 400;}
 <!--
 Things to remember for next time:
 
-- Has to involve intervals of time: a start time and end time. For example, not "I went to sleep at." but "I slept during these times."
 - Add grading rubric
 - Output the data frame in a kable table
-- How long does the analysis need to be? No firm rule, but think: if there are two equally insightful reports, one is 20 pages and the other is 2 pages. which will you read? Or think when you visit a webpage. How long does it take you to decide if you're going to read it.
-- Graphs can't be redundant: Think in terms of ink/information ratio. 5 sentences or less for analysis of each graph.
 - When calendar entries are set to "repeat" only the first entry shows up
-- Enter in at least two types of activities in calendar. this becomes the summary categorical variable
-with two levels.
-- In reflection piece: tie in with podcast. difficulty of collecting data. 
 - Issue with time intervals being imported in seconds, minutes, hours, 
 -->
 
 ```{r, echo = FALSE, eval = TRUE}
 include_graphics("static/images/google_calendar.png")
 ```
+
 
 
 ## Basic outline
@@ -65,11 +60,13 @@ include_graphics("static/images/google_calendar.png")
 1. Write a joint reflection piece on this experience. In particular
     + As someone who provides data: What expectations do you have when you give your data?
     + As someone who analyzes other people's data: What legal and ethical responsibilities do you have?
-    + The joint reflection piece should be of no more than 500 words. I suggest you write it in Google Docs and then export to PDF.
+    + The joint reflection piece should be of no more than 500 words.
 
 <center>    
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vLlR4lBWAoc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center> 
+
+
 
 ## Steps
 
@@ -78,8 +75,13 @@ include_graphics("static/images/google_calendar.png")
 * Find your group in the `#mp1` channel. Please identify:
     + Your group number
     + Who your group leader is: whoever in your group is listed as `member_1`
-* Download <a href="static/projects/MP1.zip" download>`MP1.zip`</a> and double-click it to "unzip" it
+* Download <a href="static/projects/MP1/MP1.zip" download>`MP1.zip`</a> and double-click it to "unzip" it
 * Knit the `MP1.Rmd` file once and read it over
+* Group leader only:
+    + Open the template joint reflection piece [Google Doc](https://docs.google.com/document/d/1brhEHGmRRam5SA23O6cH3ZZN7CrShDv5bt6nbZ5zPT0/edit?usp=sharing){target="_blank"}
+    + Go to File (next to blue Google Doc icon) -> Make a copy
+    + Share it with your partner so that you can both edit it
+
 
 ### 2. Suggestion: Complete your Minimally Viable Product
 
@@ -98,12 +100,22 @@ IMO when working on any project
 
 ### 3. Submit three things
 
-1. Both group members: 
-    a) The `.ics` calendar file with your partner's calendar data. You should both be logging at least 10 days worth of calendar data.
-    a) The `.Rmd` R Markdown file analyzing your partner's calendar data.
-    a) The `.pdf` output file
+There are three components to your grade:
+
+1. Both group members: Submit the `MP1.pdf` of your analysis of your partner's question on gradescope
 1. Both group members: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSd6w4CC9-PrWrpupNfosQUBVoCWBihRwdezYb2jJEj7-kNdfg/viewform){target="_blank"}
-1. Group leader only: PDF of 500 word joint reflection piece
+1. Group leader only: Submit a PDF of your joint reflection piece on gradescope
+
+
+
+## Specifics
+
+- Has to involve intervals of time: a start time and end time. For example, not "I went to sleep at." but "I slept during these times."
+- Enter in at least two types of activities in calendar. This activity type becomes the summary categorical variable
+with two levels.
+- How long does the analysis need to be? No firm rule, but think: if there are two equally insightful reports, one is 20 pages and the other is 2 pages. which will you read? Or think when you visit a webpage. How long does it take you to decide if you're going to read it.
+- Graphs can't be redundant: Think in terms of ink/information ratio: if the graphs are very redundant, then why not show just one?
+- How many much analysis? 5 sentences or less for analysis of each graph.
 
 
 

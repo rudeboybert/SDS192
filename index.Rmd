@@ -1069,13 +1069,16 @@ to make an interactive version of plot 1.c) above.
 
 ***
 
+-->
+
 
 
 # Lec 11: Fri 10/1 {#Lec11}
 
 ## Announcements
 
-* None
+* Discussion on managing group dynamics for MP1
+* 
 
 
 ## Today's topics/activities
@@ -1086,27 +1089,21 @@ to make an interactive version of plot 1.c) above.
 
 
 
-
 ***
 
--->
 
 
 # Lec 10: Wed 9/29 {#Lec10}
 
 ## Announcements
 
-<!--
-* [Mini-Project 1](projects.html#MP1) info posted
---> 
-
-* [Midterm I](midterms.html#midtermI) info posted
 * Sit next to your MP1 partner; your partner was posted in the `#mp1` channel on Sunday 5pm.
+* If have an Office of Disability Services accommodations letter and you haven't already, please Slack DM it to me. 
+* [Midterm I](midterms.html#midtermI) info posted
+* [Mini-Project 1](projects.html#MP1) info posted
+
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Our department is offering a pre-application review service (PARS) initiative to provide support and mentorship to PhD applicants from from historically marginalized groups. See details here: <a href="https://t.co/1g8lol4dRf">https://t.co/1g8lol4dRf</a> <a href="https://t.co/rHaMFHr5GF">pic.twitter.com/rHaMFHr5GF</a></p>&mdash; UW Statistics (@UWStat) <a href="https://twitter.com/UWStat/status/1441591608709812227?ref_src=twsrc%5Etfw">September 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
 
 
 ## Today's topics/activities
@@ -1116,9 +1113,12 @@ to make an interactive version of plot 1.c) above.
 * Recap of color palettes from [colorbrewer2.org](http://colorbrewer2.org/){target="_blank"}
     + `fill` vs `color` aesthetics and `brewer` vs `manual`
     + You can also download color palettes in R packages, like [`viridis`](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html){target="_blank"}
-
+* Discuss [Midterm I](midterms.html#midtermI)
+* Discuss [Mini-Project 1](projects.html#MP1)
 
 ### 2. In-class exercise
+
+* With your partner, build a minimally viable product of your MP1
 
 <!--
 

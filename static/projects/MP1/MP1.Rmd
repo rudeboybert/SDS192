@@ -39,7 +39,7 @@ library(ical)
 
 ## Importing the calendar
 
-The following pre-written code will load `.ics` calendar files that are in the same directory as this `.Rmd` file: 
+The following pre-written code will load `.ics` calendar files that are in the same directory as this `.Rmd` file.
 
 ```{r, echo=FALSE}
 # Replace "192.ics" with the name of your calendar file:
@@ -77,12 +77,16 @@ View(calendar_data)
 
 # Analysis
 
+## Data visualization 1
+
 ```{r}
 # Write your code to create data visualization #1 here:
 
 ```
 
 Replace this text with your written analysis of data visualization #1.
+
+## Data visualization 2
 
 ```{r}
 # Write your code to create data visualization #2 here:
