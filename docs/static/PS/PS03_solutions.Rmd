@@ -96,7 +96,8 @@ ggplot(data = weekly_campaign_stops,
     y = "Number of campaing stops per week", 
     color = "Candidate",
     title = "Weekly campaign stops by Clinton & Trump in 2016"
-  )
+  ) + 
+  scale_color_manual(values = c("blue", "red"))
 ```
 
 
