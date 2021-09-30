@@ -116,7 +116,7 @@ with two levels.
 - How long does the analysis need to be? No firm rule, but think: if there are two equally insightful reports, one is 20 pages and the other is 2 pages. which will you read? Or think when you visit a webpage. How long does it take you to decide if you're going to read it.
 - Graphs can't be redundant: Think in terms of ink/information ratio: if the graphs are very redundant, then why not show just one?
 - How many much analysis? 5 sentences or less for analysis of each graph.
-
+- You need to collect at least 10 days worth of data
 
 
 

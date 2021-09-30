@@ -1080,13 +1080,20 @@ to make an interactive version of plot 1.c) above.
 * Discussion on managing group dynamics for MP1
 * 
 
+<!--
+- Everyone open Slack right now and check any messages
+- 
+-->
+
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Go over Midterm I
+* Go over practice Midterm I
+* Trend lines
 
+### 2. In-class exercise
 
 
 ***
