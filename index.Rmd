@@ -1095,6 +1095,10 @@ to make an interactive version of plot 1.c) above.
 
 ### 2. In-class exercise
 
+* Go over ModernDive reading in schedule above.
+* Work on MP1
+
+
 
 ***
 
