@@ -1082,7 +1082,7 @@ to make an interactive version of plot 1.c) above.
 
 <!--
 - Everyone open Slack right now and check any messages
-- 
+- Show cover page of midterm
 -->
 
 
