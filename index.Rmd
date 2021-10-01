@@ -1077,13 +1077,16 @@ to make an interactive version of plot 1.c) above.
 
 ## Announcements
 
+* Everyone open Slack at the start of lecture
+    + Check for DM's
+    + Check `#midterm` channel
+* Update to office hours on syllabus 
+* In order to not disadvantage students who take the midterm earlier
+    + I won't be answering any Slack `#questions` after 3pm today
+    + I've instructed the Friday Spinelli tutor not to answer questions.
+the midterm earlier.
 * Discussion on managing group dynamics for MP1
-* 
 
-<!--
-- Everyone open Slack right now and check any messages
-- Show cover page of midterm
--->
 
 
 ## Today's topics/activities
@@ -1095,7 +1098,7 @@ to make an interactive version of plot 1.c) above.
 
 ### 2. In-class exercise
 
-* Go over ModernDive reading in schedule above.
+* Go over ModernDive reading in schedule above
 * Work on MP1
 
 
