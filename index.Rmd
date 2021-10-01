@@ -1079,7 +1079,7 @@ to make an interactive version of plot 1.c) above.
 
 ## Announcements
 
-* Everyone open Slack at the start of lecture
+* Open Slack at the start of **every** lecture
     + Check for DM's
     + Check `#midterm` channel
 * In order to not disadvantage students who take the midterm earlier
