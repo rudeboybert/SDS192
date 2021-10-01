@@ -1103,7 +1103,7 @@ the midterm earlier.
       ggplot(aes(x = "", y = prices)) +
       geom_boxplot() +
       coord_flip() +
-      labs(x = "", y = "price")
+      labs(x = "", y = "Book price in $")
     ```
 * Trend lines
 
