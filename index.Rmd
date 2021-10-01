@@ -1109,7 +1109,6 @@ to make an interactive version of plot 1.c) above.
       coord_flip() +
       labs(x = "", y = "Book price in $")
     ```
-* Trend lines
 
 
 
