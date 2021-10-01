@@ -1012,6 +1012,14 @@ Example:
 
 
 
+- where to put color aes, in ggplot or geom
+- quotation marks
+- minutes coming out wrong
+- colors
+
+
+
+
 ## Today's topics/activities
 
 ### 1. Chalk talk
