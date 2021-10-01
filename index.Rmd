@@ -1083,9 +1083,8 @@ to make an interactive version of plot 1.c) above.
     + Check for DM's
     + Check `#midterm` channel
 * In order to not disadvantage students who take the midterm earlier
-    + I won't be answering any Slack `#questions` after 3pm today
-    + I've instructed the Friday Spinelli tutor not to answer questions.
-the midterm earlier.
+    + I won't be answering any Slack `#midterms` after 3pm today
+    + I've instructed the Friday Spinelli tutor not to answer questions about the midterm
 * Update to office hours on syllabus 
 
 
@@ -1106,6 +1105,7 @@ the midterm earlier.
       labs(x = "", y = "Book price in $")
     ```
 * Trend lines
+
 
 
 
