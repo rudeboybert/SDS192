@@ -1001,6 +1001,8 @@ Example:
 
 ## Announcements
 
+* Discussion on managing group dynamics for MP1
+
 * Part of class-time on Monday to work on MP1
 * Go over updated [Midterm I](midterms.html) instructions
 
@@ -1080,12 +1082,11 @@ to make an interactive version of plot 1.c) above.
 * Everyone open Slack at the start of lecture
     + Check for DM's
     + Check `#midterm` channel
-* Update to office hours on syllabus 
 * In order to not disadvantage students who take the midterm earlier
     + I won't be answering any Slack `#questions` after 3pm today
     + I've instructed the Friday Spinelli tutor not to answer questions.
 the midterm earlier.
-* Discussion on managing group dynamics for MP1
+* Update to office hours on syllabus 
 
 
 
@@ -1093,8 +1094,21 @@ the midterm earlier.
 
 ### 1. Chalk talk
 
-* Go over practice Midterm I
+* Go over practice Midterm I. Boxplot for question 3.c):
+    ```{r, echo = FALSE}
+    prices <- c(-11, 12, 15, 20, 20, 
+                30, 30, 30, 30, 40, 
+                40, 40, 40, 41, 51)
+    tibble(prices = prices) %>% 
+      ggplot(aes(x = "", y = prices)) +
+      geom_boxplot() +
+      coord_flip() +
+      labs(x = "", y = "price")
+    ```
 * Trend lines
+
+
+
 
 ### 2. In-class exercise
 
