@@ -920,6 +920,14 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
     1. Group leader only: PDF of reflection piece on Moodle
 
 
+* If you're curious about my experiences in grad school, working at Google, switching to academia, and advice for aspiring data scientists, check out my appearance on episode #43 of the DataBytes podcast "To Google and Back." Also available on [Apple Podcasts](https://podcasts.apple.com/us/podcast/43-to-google-and-back/id1445241846?i=1000452290536){target="_blank"} and [Google Play](https://play.google.com/music/listen?u=0#/ps/Itfclix7dvr5c2kbtovrtufki2a){target="_blank"}.
+
+<center>
+<iframe src="https://open.spotify.com/embed-podcast/episode/4SEcmLwHdJfmXaQEY7NZlV" width="70%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</center>
+<br>
+
+
 ## Today's topics/activities
 
 ### 1. In-class exercise
@@ -931,61 +939,22 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 
 ***
 
+-->
 
+<!--
 
-# Lec 14: Wed 10/9 {#Lec14}
+# Lec 14: Fri 10/8 {#Lec14}
 
 ## Announcements
 
-*
+* 
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Intro to data wrangling
-* Pipe operator `%>%`
-* `filter()` rows that meet a certain criteria
-
-Example:
-
-<script src="https://gist.github.com/rudeboybert/ebf39a24a03216be55cb20d9c475f57d.js"></script>
-
-
-
-### 2. In-class exercise
-
-* Go over ModernDive 3 - 3.2
-
-
-
-***
-
-
-
-# Lec 13: Mon 10/7 {#Lec13}
-
-## Announcements
-
-* No talking about midterm until Wednesday's lecture please.
-* Sit next to your MP1 partner for today's lecture.
-* If you're curious about my experiences in grad school, working at Google, switching to academia, and advice for aspiring data scientists, check out my appearance on episode #43 of the DataBytes podcast "To Google and Back." Also available on [Apple Podcasts](https://podcasts.apple.com/us/podcast/43-to-google-and-back/id1445241846?i=1000452290536){target="_blank"} and [Google Play](https://play.google.com/music/listen?u=0#/ps/Itfclix7dvr5c2kbtovrtufki2a){target="_blank"}.
-
-<center>
-<iframe src="https://open.spotify.com/embed-podcast/episode/4SEcmLwHdJfmXaQEY7NZlV" width="70%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-</center>
-<br>
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-* Recap of Lec09:
-    + `span` argument from `geom_smooth()`
-    + What is `se = FALSE` mean
-* What is a "minimally viable product"?
-
+* None
 
 ### 2. In-class exercise
 
@@ -997,48 +966,64 @@ Example:
 
 
 
-# Lec 12: Fri 10/1 {#Lec12}
+# Lec 13: Wed 10/6 {#Lec13}
 
 ## Announcements
 
-* Update to office hours on syllabus 
-
-* Discussion on managing group dynamics for MP1
-
-* Part of class-time on Monday to work on MP1
-* Go over updated [Midterm I](midterms.html) instructions
-
-* Go over ModernDive reading in schedule above
-
-
-
-- where to put color aes, in ggplot or geom
-- quotation marks
-- minutes coming out wrong
-- colors
-
-
+* 
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Trend lines. Two types (among many):
-    + Linear regression
-    + LOESS smoother:  
-    ![](static/images/loess.gif)
-* Let's make a Shiny interactive visualization! If this is your first shiny app, you will need to install some packages: say "yes" to any prompts.
-    1. Go to RStudio menu bar -> File -> New File... -> Shiny -> Give it title "LOESS smoother"
-    1. Let's keep things simple and delete everything after line 38
-    1. Save it as `loess.Rmd`
-    1. Click "Run Document"
-    1. See all possible input methods by looking at cheatsheet. Go to RStudio menu bar -> Help -> Cheatsheets -> Web Applications with Shiny -> Look at right-side of first page.
+* Intro to data wrangling
+* Pipe operator `%>%`
+* `filter()` rows that meet a certain criteria
+
 
 
 ### 2. In-class exercise
 
-First, copy this to your `classnotes.Rmd` and go over code.
+* Go over ModernDive reading in schedule above
+
+
+
+***
+-->
+
+
+
+# Lec 12: Mon 10/4 {#Lec12}
+
+## Announcements
+
+* Update to office hours on syllabus 
+* MP1:
+    + Lecture schedule for Wed, Fri, and Wed after break
+    + Discussion on managing group dynamics
+
+<!--
+- where to put color aes, in ggplot or geom
+- quotation marks
+- minutes coming out wrong
+- colors
+--> 
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Trend lines. Two types:
+    + Linear regression
+    + LOESS (local regression) smoother <!--![](static/images/loess.gif) -->
+
+
+### 2. In-class exercise
+
+* Go over ModernDive reading in schedule above
+* Copy this to your `classnotes.Rmd` and go over code
 
 ```{r, eval=FALSE}
 library(ggplot2)
@@ -1059,7 +1044,7 @@ ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = p
   geom_point() +
   geom_smooth(se = FALSE)
 
-# 1.c) Change span of "smoothing" window by changing span = value. Try different values.
+# 1.c) Change span of "smoothing" window by change the value of span
 ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
   geom_point() +
   geom_smooth(se = FALSE, span = 0.25)
@@ -1070,22 +1055,11 @@ ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = p
   geom_smooth(method = "lm", se = FALSE)
 ```
 
-Second, in `loess.Rmd` you're change only the code within the code
-
-```
-renderPlot({ 
-    
-    
-})
-```
-
-to make an interactive version of plot 1.c) above.
-
 
 
 ***
 
--->
+
 
 
 
