@@ -39,7 +39,7 @@ library(ical)
 
 ## Importing the calendar
 
-The following pre-written code will load `.ics` calendar files that are in the same directory as this `.Rmd` file.
+The following pre-written code will load `.ics` calendar files that are in the same directory as this `.Rmd` file. **The `.ics` file needs to be in the same directory/folder as this `.Rmd` file.**
 
 ```{r, echo=FALSE}
 # Replace "192.ics" with the name of your calendar file:
@@ -59,6 +59,11 @@ calendar_data <- "192.ics" %>%
   # Do data wrangling to compute number of minutes and hours:
   group_by(date, summary) %>%
   summarize(minutes = sum(minutes) %>% as.numeric()) %>%
+  # If minutes are incorrectly reported in hours, uncomment next line to correct: 
+  # summarize(minutes = minutes*60) %>%
+  # (Optional) To filter dates for only those between 2019-09-03 and 2019-09-07, 
+  # uncomment next line:
+  # filter(date >= "2019-09-03" & date <= "2019-09-07") %>% 
   mutate(hours = minutes/60)
 ```
 
