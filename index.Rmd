@@ -999,7 +999,9 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 ## Announcements
 
 * Update to office hours on syllabus 
-* MP1: Lecture schedule for Wed, Fri, and Wed after break
+* MP1:
+    + Lecture schedule for Wed, Fri, and Wed after break
+    + Post questions about MP1 in `#mp1` on Slack
 * Discussion on managing group dynamics:
     + Life happens. If it does and it will affect you work, at the very least communicate and give your partner a heads up (text, Slack, etc.)
     + What to do when issues arise? 
