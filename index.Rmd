@@ -999,9 +999,12 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 ## Announcements
 
 * Update to office hours on syllabus 
-* MP1:
-    + Lecture schedule for Wed, Fri, and Wed after break
-    + Discussion on managing group dynamics
+* MP1: Lecture schedule for Wed, Fri, and Wed after break
+* Discussion on managing group dynamics:
+    + Life happens. If it does and it will affect you work, at the very least communicate and give your partner a heads up (text, Slack, etc.)
+    + What to do when issues arise? 
+    + Don't forget you'll be filling out peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSd6w4CC9-PrWrpupNfosQUBVoCWBihRwdezYb2jJEj7-kNdfg/viewform){target="_blank"}
+
 
 <!--
 - where to put color aes, in ggplot or geom
@@ -1015,16 +1018,11 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 
 ### 1. Chalk talk
 
-* Trend lines. Two types:
+* Trend lines via a `geom_smooth()` layer. Two types:
     + Linear regression
     + [LOWESS](https://www.statisticshowto.com/lowess-smoothing/): Locally Weighted Scatterplot Smoothing
     ![](static/images/loess.gif)
-
-
-### 2. In-class exercise
-
-* Go over ModernDive reading in schedule above
-* Copy this to your `classnotes.Rmd` and go over the code
+* Example code:
 
 ```{r, eval=FALSE}
 library(ggplot2)
@@ -1040,7 +1038,7 @@ ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = p
   geom_point() +
   geom_smooth()
 
-# 1.b) Remove standard error bars
+# 1.b) Remove standard error bars by setting se = FALSE
 ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = pop)) +
   geom_point() +
   geom_smooth(se = FALSE)
@@ -1055,6 +1053,15 @@ ggplot(data = gapminder_2007, mapping = aes(x = gdpPercap, y = lifeExp, size = p
   geom_point() +
   geom_smooth(method = "lm", se = FALSE)
 ```
+
+
+
+### 2. In-class exercise
+
+* Copy the example code above to your `classnotes.Rmd` and go over the code
+* Optional: Go over ModernDive reading in schedule above (this topic is covered in SDS 201/220 intro stats)
+* Work on MP1
+
 
 
 
