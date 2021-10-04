@@ -60,7 +60,7 @@ calendar_data <- "192.ics" %>%
   group_by(date, summary) %>%
   summarize(minutes = sum(minutes) %>% as.numeric()) %>%
   # If minutes are incorrectly reported in hours, uncomment next line to correct: 
-  # summarize(minutes = minutes*60) %>%
+  # mutate(minutes = minutes*60) %>%
   # (Optional) To filter dates for only those between 2019-09-03 and 2019-09-07, 
   # uncomment next line:
   # filter(date >= "2019-09-03" & date <= "2019-09-07") %>% 

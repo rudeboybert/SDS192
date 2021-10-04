@@ -965,21 +965,28 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 ***
 
 
+-->
+
 
 # Lec 13: Wed 10/6 {#Lec13}
 
 ## Announcements
 
-* 
+* ["File not found"](https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z){target="_blank"}; the struggle is real for instructors. 
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
+* Computer file theory
+    + What are folders/directories?
+    + How does R Markdown find the `.ics` file?
+    + What are `.zip` files? Special note for Windows users
+    + Computer file hygiene: Delete files you don't need anymore
 * Intro to data wrangling
-* Pipe operator `%>%`
-* `filter()` rows that meet a certain criteria
+    + Pipe operator `%>%` pronounced "then"
+    + `filter()` rows that meet a certain criteria
 
 
 
@@ -990,7 +997,6 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 
 
 ***
--->
 
 
 
