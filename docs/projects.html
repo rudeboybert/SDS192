@@ -353,17 +353,28 @@ div.tocify {
 <style>
 h1{font-weight: 400;}
 </style>
-<div id="MP1" class="section level1">
-<h1>Mini-Project 1</h1>
-<p><em>Due Wednesday 10/13 at 9pm.</em></p>
 <!--
+Many students are having trouble loading their .ics calendar files into R b/c of filepaths. Please strongly encourage them to create a MP1 folder somewhere, put the MP1.Rmd and .ics file in the same directory, and have them load it in R NOT by using filepaths but rather using RMarkdown's default assumption that the .ics file is in the same directory. i.e. do "192.ics" %>% ical_parse_df() and not "~/Downloads/SDS192/MP1/192.ics %>% ical_parse_df()
+Some students are exporting blank calendars. If the above doesn't work, have them verify using the Google Calendar online interface that there are actually more than 0 calendar entries recorded
+Windows users need to explicitly click "Extract All" when trying to unzip the MP1.zip file. Unlike macOS, double-clicking it only allows the user to view its contents; Windows users need to explicitly "extract all" to have an MP1 folder get created on their computer.
+Depending on the operating system, then calendar_data data frame might record minutes as seconds. Throw a mutate(minutes = minutes/60) %>% in there to fix that
+Tricky one: If a student recorded a calendar entry on a "repeat" schedule, only the first entry will get exported to .ics ; for purposes of this MP1 they need to create individual entries for all to export correctly (see my message in mp1 for a lengthier explanation)
+If you're still stuck, don't stress, and have the student message me. I'll take care of clean-up
+
+
+
+
 Things to remember for next time:
 
 - Add grading rubric
 - Output the data frame in a kable table
 - When calendar entries are set to "repeat" only the first entry shows up
 - Issue with time intervals being imported in seconds, minutes, hours, 
+
 -->
+<div id="MP1" class="section level1">
+<h1>Mini-Project 1</h1>
+<p><em>Due Wednesday 10/13 at 9pm.</em></p>
 <p><img src="static/images/google_calendar.png" width="960" style="display: block; margin: auto;" /></p>
 <div id="basic-outline" class="section level2">
 <h2>Basic outline</h2>
@@ -436,7 +447,7 @@ Things to remember for next time:
 <h2>Specifics</h2>
 <ul>
 <li>Has to involve intervals of time: a start time and end time. For example, not “I went to sleep at.” but “I slept during these times.”</li>
-<li>Enter in at least two types of activities in calendar. This activity type becomes the summary categorical variable with two levels.</li>
+<li>Enter in at least two types of activities in your calendar. This activity type becomes the summary categorical variable with two levels.</li>
 <li>How long does the analysis need to be? No firm rule, but think: if there are two equally insightful reports, one is 20 pages and the other is 2 pages. which will you read? Or think when you visit a webpage. How long does it take you to decide if you’re going to read it.</li>
 <li>Graphs can’t be redundant: Think in terms of ink/information ratio: if the graphs are very redundant, then why not show just one?</li>
 <li>How many much analysis? 5 sentences or less for analysis of each graph.</li>
