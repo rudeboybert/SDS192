@@ -972,6 +972,7 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 
 ## Announcements
 
+* Fill out Google Form posted on Slack in `#general` about the dining hall situation. Two of my colleagues in SDS, Prof. Katie Kinnaird and Prof. Lindsay Poirier are collecting data
 * ["File not found"](https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z){target="_blank"}; the struggle is real for instructors. 
 
 
