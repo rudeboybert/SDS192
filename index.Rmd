@@ -885,22 +885,22 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 
 
 
-# Lec 16: Wed 10/16 {#Lec16}
+# Lec 16: Wed 10/13 {#Lec16}
 
 ## Announcements
 
-* Slack: Post on `#random` 
+* 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
 * Recap of Lec14
+* Keyboard shortcut in RStudio
 * `summarize()` rows and `group_by() %>% summarize()`
 
 ### 2. In-class exercise
 
-* Keyboard shortcut in RStudio
 * Go over ModernDive 3.3 - 3.4
 
 
@@ -941,13 +941,14 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 
 -->
 
-<!--
+
 
 # Lec 14: Fri 10/8 {#Lec14}
 
 ## Announcements
 
-* 
+* You are responsible for completing the ModernDive readings for Lec13 on the `%>%` operator and `filter()` before Wednesday's lecture
+* A shorter PS04 will be assigned on Wednesday, due on Monday 10/18 9pm
 
 
 ## Today's topics/activities
@@ -965,14 +966,11 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 ***
 
 
--->
-
 
 # Lec 13: Wed 10/6 {#Lec13}
 
 ## Announcements
 
-* Fill out Google Form posted on Slack in `#general` about the dining hall situation. Two of my colleagues in SDS, Prof. Katie Kinnaird and Prof. Lindsay Poirier are collecting data
 * ["File not found"](https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z){target="_blank"}; the struggle is real for instructors. 
 
 
