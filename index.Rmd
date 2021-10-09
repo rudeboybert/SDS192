@@ -885,61 +885,68 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 
 
 
-# Lec 16: Wed 10/13 {#Lec16}
+
+
+
+# Lec 16: Fri 10/15 {#Lec16}
 
 ## Announcements
 
-* 
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-* Recap of Lec14
-* Keyboard shortcut in RStudio
-* `summarize()` rows and `group_by() %>% summarize()`
-
-### 2. In-class exercise
-
-* Go over ModernDive 3.3 - 3.4
-
-
-
-***
-
-
-
-# Lec 15: Fri 10/11 {#Lec15}
-
-## Announcements
-
-* PS04 posted
-* MP1: Due at 5pm on Friday.
-    1. Files on Moodle
-    1. Peer evaluation Google Form
-    1. Group leader only: PDF of reflection piece on Moodle
-
-
+* Mini-project 2 (MP2) assigned on Monday
+    + Add yourselves to the `#mp2` channel. Please ask all questions about MP2 in `#mp2`, not in `#questions`
+    + By Sunday 5pm I will post the new groups (of two) in the `#mp2` channel. Until `#mp2` is due, you will sit next to your partner in class.
+    + Please reach out to your partner with a Slack DM before Monday's lecture to coordinate meeting before lecture so you can sit next to each other.
+    + If you have seating restrictions due to hearing, sight, or mobility issues, please DM me
 * If you're curious about my experiences in grad school, working at Google, switching to academia, and advice for aspiring data scientists, check out my appearance on episode #43 of the DataBytes podcast "To Google and Back." Also available on [Apple Podcasts](https://podcasts.apple.com/us/podcast/43-to-google-and-back/id1445241846?i=1000452290536){target="_blank"} and [Google Play](https://play.google.com/music/listen?u=0#/ps/Itfclix7dvr5c2kbtovrtufki2a){target="_blank"}.
-
 <center>
 <iframe src="https://open.spotify.com/embed-podcast/episode/4SEcmLwHdJfmXaQEY7NZlV" width="70%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </center>
 <br>
 
-
 ## Today's topics/activities
 
-### 1. In-class exercise
+### 1. Chalk talk
 
-* Put finishing touches on MP1
-* Do readings from Lec14 on Wed 10/9: ModernDive 3 - 3.2
-* Start PS04 after you've done ModernDive readings
+* `mutate()` new columns/variables and `arrange()` i.e. sort rows
+
+
+### 2. In-class exercise
+
+* Go over ModernDive reading in schedule above
+
 
 
 ***
-
 -->
+
+
+# Lec 15: Wed 10/13 {#Lec15}
+
+## Announcements
+
+* PS04 (shorter) will be posted this afternoon
+* Keyboard shortcuts for:
+    1. `%>%` in RStudio: command + shift + m on macOS, control + shift + m on Windows
+    1. Running code in RStudio: command + enter on macOS, control + enter on Windwos
+    1. Quickly jumping between apps: command + tab on macOS, alt + tab on Windows
+    1. Selecting many files at once: click first file, hold shift, click last file
+    1. Deleting files: command + delete on macOS, delete on Windows
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* `summarize()` rows and `group_by() %>% summarize()`
+
+### 2. In-class exercise
+
+* Put finishing touches on MP1
+* Go over ModernDive reading in schedule above
+
+
+
+***
 
 
 

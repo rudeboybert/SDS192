@@ -208,6 +208,38 @@ Total: 9pts
 
 
 
+# Problem set 04 {#PS04}
+
+*Due Monday 10/18 9pm*
+
+<!--
+## 1. R Markdown component {#PS03_R}
+
+* Download the following Rmd template file: <a href="static/PS/PS03.Rmd" download>`PS03.Rmd`</a>.
+* You will be submitting the resulting `PS03.pdf` file on gradescope. Please use the "Knit to PDF" method directly, instead of "Knit to Word" and then save to PDF method.
+* Complete the individual questions. Knit early, knit often.
+* If you encounter issues knitting your document, consult the [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"}.
+* Submit on [gradescope](https://www.gradescope.com/courses/308310){target="_blank"}:
+    1. Anytime between Mon 9/20 5pm and Tue 9/29 9pm
+    1. For each questions, tag **all** pages of your PDF that relate to that question (not just the first)
+    1. You will be asked to tag the honor code question as well.
+
+
+
+## 2. Solutions {#PS03_solutions}
+
+* <a href="static/PS/PS03_solutions.Rmd" download>`PS03_solutions.Rmd`</a> R Markdown "source code" 
+* [`PS03_solutions.pdf`](static/PS/PS03_solutions.pdf){target="_blank"} PDF
+
+--> 
+
+
+
+***
+
+
+
+
 # Problem set 03 {#PS03}
 
 *Due Tuesday 9/28 9pm*
@@ -230,36 +262,6 @@ Total: 9pts
 * <a href="static/PS/PS03_solutions.Rmd" download>`PS03_solutions.Rmd`</a> R Markdown "source code" 
 * [`PS03_solutions.pdf`](static/PS/PS03_solutions.pdf){target="_blank"} PDF
 
-
-
-
-<!--
-
-## 2. Podcast quiz component
-
-Listen to the Not So Standard Deviations podcast episode 71 "Compromised Shoe Situation" (1h4m) available [here](https://overcast.fm/+FMBuKdMEI/){target="_blank"}. In class on Friday 9/27, you'll be giving a brief quiz on this podcast.
-
-Notes:
-
-1. The quiz will not be difficult. As long as you listen to the podcast once, you'll be fine.
-1. IMO you don't need to take notes. Listen while folding laundry or exercising! 
-1. This podcast relates to "data collection", which will be a theme for Mini-Project 1.
-
-
-
-## 3. Solutions & (imperfect) rubric {#PS03_solutions}
-
-**Solution**:
-
-* <a href="static/PS/PS03_solutions.Rmd" download>`PS03_solutions.Rmd`</a> R Markdown "source code" to create html report output. 
-* [`PS03_solutions.html`](static/PS/PS03_solutions.html){target="_blank"} html report.
-
-**Rubric**:
-
-1. Q1: 1 + 4 + 1 = 6pts
-1. Q2: 1 + 2 + 1 + 3 + 1 = 8pts
-1. Podcast quiz: 1pt
--->
 
 
 
