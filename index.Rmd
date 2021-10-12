@@ -924,6 +924,7 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 
 ## Announcements
 
+* See Slack `#general` for info about presentation of SDS major
 * PS04 (shorter) will be posted this afternoon
 * Keyboard shortcuts for:
     1. `%>%` in RStudio: command + shift + m on macOS, control + shift + m on Windows
