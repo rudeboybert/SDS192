@@ -6,14 +6,6 @@ date: "2021-10-18"
 output:
   pdf_document:
     toc: no
-  html_document:
-    highlight: tango
-    theme: cosmo
-    toc: yes
-    toc_depth: 2
-    toc_float:
-      collapsed: no
-    df_print: kable
 ---
 
 ```{r, include=FALSE}
