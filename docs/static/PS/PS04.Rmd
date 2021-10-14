@@ -2,18 +2,10 @@
 ---
 title: "Problem Set 04"
 author: "WRITE YOUR NAME HERE"
-date: "2021-09-18"
+date: "2021-10-18"
 output:
   pdf_document:
     toc: no
-  html_document:
-    highlight: tango
-    theme: cosmo
-    toc: yes
-    toc_depth: 2
-    toc_float:
-      collapsed: no
-    df_print: kable
 ---
 
 ```{r, include=FALSE}
