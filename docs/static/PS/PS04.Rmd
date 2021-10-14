@@ -2,10 +2,18 @@
 ---
 title: "Problem Set 04"
 author: "WRITE YOUR NAME HERE"
-date: "2021-10-18"
+date: "2021-09-18"
 output:
   pdf_document:
     toc: no
+  html_document:
+    highlight: tango
+    theme: cosmo
+    toc: yes
+    toc_depth: 2
+    toc_float:
+      collapsed: no
+    df_print: kable
 ---
 
 ```{r, include=FALSE}
@@ -52,7 +60,7 @@ Perform the data wrangling necessary to transform the `babynames` data frame inc
 
 ## Part b)
 
-Recreate the above visualization *exactly* including the capitalization of all label text.
+Recreate the visualization from Practice Midterm I Question 4 *exactly* including the capitalization of all label text.
 
 ```{r}
 
@@ -60,7 +68,7 @@ Recreate the above visualization *exactly* including the capitalization of all l
 
 ## Part c)
 
-Once again, recreate the above figure *exactly*, however this time add an appropriately chosen trend lines. For clarity's sake, do NOT include the standard error bars. 
+Once again, recreate the visualization from Practice Midterm I Question 4 *exactly*, however this time add an appropriately chosen trend lines. For clarity's sake, do NOT include the standard error bars. 
 
 ```{r}
 
@@ -87,7 +95,7 @@ Perform the data wrangling necessary to transform the `babynames` data frame inc
 
 ## Part b)
 
-Recreate the above visualization *exactly* including the capitalization of all label text, and with `"forestgreen"` and `"orange"` lines for male and female respectively. This time, the x-axis should only be for years 1960 and later, as saved in the `babynames_riley_casey_1960_later` data frame.
+Create the same version of the visualization as in Q2.b), but for the `babynames_riley_casey_1960_later` data frame and with `"forestgreen"` and `"orange"` lines for male and female respectively. This time, the x-axis should only be for years 1960 and later, as saved in the `babynames_riley_casey_1960_later` data frame.
 
 ```{r}
 
