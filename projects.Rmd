@@ -140,6 +140,8 @@ with two levels.
 
 # Mini-Project 2 {#MP2}
 
+*Due Monday 11/1 at 9pm.*
+
 
 <!--
 
@@ -150,8 +152,6 @@ Things to remember for next time:
 - Make sure .Rproj file has save .Rdata and .Rhistory set to FALSE
 - Use version of project here: https://drive.google.com/drive/u/1/folders/1Pzzyj1PJd0hNC11DlBC9oKcbYGV8Nc-F
 
-
-*Assigned on Friday 10/18, due Friday 11/1 at 5pm.*
 
 ## Data
 
@@ -224,6 +224,8 @@ Here are two randomly chosen examples to give a qualitative sense of the outcome
 
 
 -->
+
+
 
 ***
 

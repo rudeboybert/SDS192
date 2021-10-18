@@ -785,17 +785,12 @@ Work on MP2!
 
 
 
-# Lec 19: Wed 10/23 {#Lec19}
+# Lec 19: Fri 10/22 {#Lec19}
 
 ## Announcements
 
 * Sit next to your MP2 partner for today's in-class exercise
-* Are you interested in Majoring in SDS? Check out our presentation of the major tomorrow!
 
-<center>
-![](static/images/announcements/SDS_major.png){ width=750px }
-</center>
-<br>
 
 ## Today's topics/activities
 
@@ -825,7 +820,7 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 
 
 
-# Lec 18: Mon 10/21 {#Lec18}
+# Lec 18: Wed 10/20 {#Lec18}
 
 ## Announcements
 
@@ -844,23 +839,24 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 
 ### 2. In-class exercise
 
-* Go over ModernDive 3.7, 3.8.1 - 3.8.2.
+* Go over ModernDive reading in schedule above
 
 
 
 ***
 
+-->
 
 
-# Lec 17: Fri 10/18 {#Lec17}
+
+# Lec 17: Mon 10/18 {#Lec17}
 
 ## Announcements
 
-* PS05 posted: Due in one week.
-* [Mini-Project 2](projects.html#MP2) posted: Due in two weeks.
-
-
+* [Mini-Project 2](projects.html#MP2) posted
+* PS05 to be posted by this evening
 * If you're curious about my experiences in grad school, working at Google, switching to academia, and advice for aspiring data scientists, check out my appearance on episode #43 of the DataBytes podcast "To Google and Back." Also available on [Apple Podcasts](https://podcasts.apple.com/us/podcast/43-to-google-and-back/id1445241846?i=1000452290536){target="_blank"} and [Google Play](https://play.google.com/music/listen?u=0#/ps/Itfclix7dvr5c2kbtovrtufki2a){target="_blank"}.
+
 <center>
 <iframe src="https://open.spotify.com/embed-podcast/episode/4SEcmLwHdJfmXaQEY7NZlV" width="70%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </center>
@@ -873,22 +869,21 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 
 ### 1. Chalk talk
 
-* ifelse() function
-* Recap of Lec16:
-    + Go over diagram of `group_by() %>% summarize()`
-    + Difference between `sum()` and `n()` summary functions.
-* `mutate()` new columns/variables and `arrange()` i.e. sort rows
+* Adding to previous lectures:
+    + Lec15 on `group_by()` and `summarize()`: difference between `sum()` and `n()` summary functions.
+    + Lec16 on `mutate()`: `ifelse()` function
+* `_join()`, `select()`, and `rename()` functions
 
 ### 2. In-class exercise
 
-* Go over ModernDive 3.5 - 3.6
+* Go over ModernDive reading in schedule above
 
 
 
 ***
 
 
--->
+
 
 
 
