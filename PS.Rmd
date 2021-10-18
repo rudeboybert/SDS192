@@ -131,7 +131,7 @@ Total: 12pts
 
 
 
-<!--
+
 
 # Problem set 05 {#PS05}
 
@@ -148,21 +148,21 @@ Total: 12pts
     1. You will be asked to tag the honor code question as well.
 
 
-
+<!--
 
 ## 2. Solutions {#PS05_solutions}
 
 * <a href="static/PS/PS05_solutions.Rmd" download>`PS05_solutions.Rmd`</a> R Markdown "source code" 
 * [`PS05_solutions.pdf`](static/PS/PS05_solutions.pdf){target="_blank"} PDF
 
- 
+-->   
 
 
 
 
 ***
 
--->   
+
 
 
 # Problem set 04 {#PS04}
