@@ -789,7 +789,6 @@ Work on MP2!
 
 ## Announcements
 
-* Sit next to your MP2 partner for today's in-class exercise
 
 
 ## Today's topics/activities
@@ -800,23 +799,10 @@ Recap of Lec18: Click on tweet below to see all 6 different types of joins:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&amp;ref_src=twsrc%5Etfw">#dplyr</a>&#39;s join functions, inspired by this: <a href="http://t.co/40wMQDP0J4">http://t.co/40wMQDP0J4</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="http://t.co/P4XOLs5ov3">pic.twitter.com/P4XOLs5ov3</a></p>&mdash; Hiroaki Yutani (@yutannihilation) <a href="https://twitter.com/yutannihilation/status/551572539697143808?ref_src=twsrc%5Etfw">January 4, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Copy this to your `classnotes.Rmd`
-
-<script src="https://gist.github.com/rudeboybert/968dbf26d5f9407703ae7b24d217af67.js"></script>
-
-
-### 2. In-class exercise
-
-Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, compute available seat miles:
-
-<center>
-![](static/images/ASM.png){ width=750px }
-</center>
-<br>
 
 
 
-***
+-->
 
 
 
@@ -824,28 +810,35 @@ Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, c
 
 ## Announcements
 
-* MP2 rubric posted
-* Posting in `#maps` channel on Slack
-* For Wednesday's lecture sit next to your MP2 partner. We'll be doing an in-class data-wrangling exercise
+* Install `fec16` package
+* Discuss [Mini-Project 2](projects.html#MP2) in full detail
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Go over [PS04 solutions](PS.html#PS04_solutions)
-* Recap of Lec17: How to `arrange()` by more than one variable
-* Last major set of verbs: `_join()` data frames, `select()`, and `rename()` variables
+* What is pseudocode?
+* Types of joins: Copy this to your classnotes
+
+<script src="https://gist.github.com/rudeboybert/968dbf26d5f9407703ae7b24d217af67.js"></script>
+
 
 ### 2. In-class exercise
 
-* Go over ModernDive reading in schedule above
+Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, compute available seat miles for each airline separately:
+
+1. Write out the pseudocode first
+2. Then code it
+
+```{r, echo=FALSE, fig.align='center'}
+include_graphics("static/images/ASM.png")
+```
+
 
 
 
 ***
-
--->
 
 
 
