@@ -29,28 +29,26 @@ h1{font-weight: 400;}
 
 
 
+# Mini-Project 1 {#MP1}
+
 <!--
-Many students are having trouble loading their .ics calendar files into R b/c of filepaths. Please strongly encourage them to create a MP1 folder somewhere, put the MP1.Rmd and .ics file in the same directory, and have them load it in R NOT by using filepaths but rather using RMarkdown's default assumption that the .ics file is in the same directory. i.e. do "192.ics" %>% ical_parse_df() and not "~/Downloads/SDS192/MP1/192.ics %>% ical_parse_df()
-Some students are exporting blank calendars. If the above doesn't work, have them verify using the Google Calendar online interface that there are actually more than 0 calendar entries recorded
+
+READ THIS
+
+- Many students are having trouble loading their .ics calendar files into R b/c of filepaths. Please strongly encourage them to create a MP1 folder somewhere, put the MP1.Rmd and .ics file in the same directory, and have them load it in R NOT by using filepaths but rather using RMarkdown's default assumption that the .ics file is in the same directory. i.e. do "192.ics" %>% ical_parse_df() and not "~/Downloads/SDS192/MP1/192.ics %>% ical_parse_df()
+- Some students are exporting blank calendars. If the above doesn't work, have them verify using the Google Calendar online interface that there are actually more than 0 calendar entries recorded
 Windows users need to explicitly click "Extract All" when trying to unzip the MP1.zip file. Unlike macOS, double-clicking it only allows the user to view its contents; Windows users need to explicitly "extract all" to have an MP1 folder get created on their computer.
-Depending on the operating system, then calendar_data data frame might record minutes as seconds. Throw a mutate(minutes = minutes/60) %>% in there to fix that
-Tricky one: If a student recorded a calendar entry on a "repeat" schedule, only the first entry will get exported to .ics ; for purposes of this MP1 they need to create individual entries for all to export correctly (see my message in mp1 for a lengthier explanation)
-If you're still stuck, don't stress, and have the student message me. I'll take care of clean-up
-
-
-
+- Depending on the operating system, then calendar_data data frame might record minutes as seconds. Throw a mutate(minutes = minutes/60) %>% in there to fix that
+- Tricky one: If a student recorded a calendar entry on a "repeat" schedule, only the first entry will get exported to .ics ; for purposes of this MP1 they need to create individual entries for all to export correctly (see my message in mp1 for a lengthier explanation)
+- If you're still stuck, don't stress, and have the student message me. I'll take care of clean-up
 
 Things to remember for next time:
 
 - Add grading rubric
-- Output the data frame in a kable table
 - When calendar entries are set to "repeat" only the first entry shows up
 - Issue with time intervals being imported in seconds, minutes, hours, 
 
 -->
-
-
-# Mini-Project 1 {#MP1}
 
 *Due Wednesday 10/13 at 9pm.*
 
@@ -131,17 +129,11 @@ with two levels.
 
 
 
-
 ***
 
 
 
-
-
 # Mini-Project 2 {#MP2}
-
-*Due Monday 11/1 at 9pm.*
-
 
 <!--
 
@@ -152,34 +144,60 @@ Things to remember for next time:
 - Make sure .Rproj file has save .Rdata and .Rhistory set to FALSE
 - Use version of project here: https://drive.google.com/drive/u/1/folders/1Pzzyj1PJd0hNC11DlBC9oKcbYGV8Nc-F
 
+-->
+
+*Due Monday 11/1 at 9pm.*
+
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z7M71wmwWRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+## Basic outline
+
+The theme of your analysis will be **follow the money** as quoted in the video above. You will work with a partner to analyze Federal Election Commission data based on the 2011--2012 federal election cycle, as provided by the [Federal Election Commission](http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link){target="_blank"}. We'll be accessing this data in the `fec16` package, which was developed by Prof Ben Baumer, Rana Gahwagy, Irene Ryan, and Marium A. Tapal from Smith College. Check out Marium's poster from the [Women in Statistics and Data Science 2020 conference](https://ww2.amstat.org/meetings/wsds/2020/onlineprogram/AbstractDetails.cfm?AbstractID=309585){target="_blank"}:
 
 
+```{r, echo = FALSE, eval = TRUE}
+include_graphics("static/images/fec16.png")
+```
 
-
-
-## Data
-
-You will work with a partner to analyze Federal Election Commission data based on the 2011--2012 federal election cycle, as provided by the [Federal Election Commission](http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link). Be sure to read the [supporting documentation for these data](http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link){target="_blank"}.
-
-The theme of your analysis will be **follow the money** as quoted by Lester Freamon from the HBO show The Wire. Only for your project the context will not be the drug war in Baltimore MD, but rather political contributions in elections.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7M71wmwWRo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-
-
-## Examples
-
-Here are two randomly chosen examples to give a qualitative sense of the outcome. Note they both can be improved on.
+Here are two **randomly** chosen examples to give a **qualitative** sense of the outcome, there are many ways to do this project.
 
 * [Example 1](static/projects/MP2/MP2_example_1.html){target="_blank"}
 * [Example 2](static/projects/MP2/MP2_example_2.html){target="_blank"}
 
 
-## Doing the project
+## Steps
 
-* **Step 0**: Look in Slack in `#mp2` channel to see your group, your group number, and who your group leader is.
-* **Step 1**: Setup the MP2 RStudio project
+**Complete instructions will be posted by Wednesday's lecture**
+
+```{r, echo=FALSE}
+library(fec16)
+
+# A preview of 1000 rows of contributions
+contributions
+
+# Replace this data frame with complete dataset downloaded from the web
+contributions <- read_all_contributions()
+contributions
+
+# Look at help file
+?contributions
+
+expenditures <- read_all_expenditures()
+individuals <- read_all_individuals()
+transactions <- read_all_transactions()
+```
+
+
+
+### 1. Getting started
+
+<!--
+* Find your group in the `#mp2` channel. Please identify:
+    + Your group number
+    + Who your group leader is: whoever in your group is listed as `member_1`
+* Setup the MP2 RStudio project
     1. Download <a href="https://drive.google.com/open?id=1pU9BpVUTBw1AFU8VUknnD6BdwTSPwfCH" download>`MP2.zip`</a>.
     1. Move `MP2.zip` to wherever you keep your 192 files.
         + macOS users: Double-click `MP2.zip` to extract the `MP2` folder.
@@ -197,11 +215,11 @@ Here are two randomly chosen examples to give a qualitative sense of the outcome
         + If you add 500 lines of code and the R Markdown doesn't knit, you'll have a harder time locating the error.
     1. If you're confused about the meaning of variables in the four datasets, be sure to read the [supporting documentation for these data](http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link){target="_blank"}.
     1. Ask questions in the `#mp2` slack channel.
+--> 
 
-## Grading rubric
+### 2. Grading rubric
 
-**Note**: This rubric is likely not perfect. Please don't be shy to ask for clarifications.
-
+<!--
 1. **Baseline:** Projects that do not satisfy all "baseline" criteria can expect to get a grade of less than 8/10.
     + The `MP2.Rmd` R Markdown file must "knit" correctly when *someone else* knits it. This is known as producing reproducible research.
     + All visualizations have appropriately labeled axes, legends, titles, etc. Such information gives the data's context.
@@ -217,21 +235,18 @@ Here are two randomly chosen examples to give a qualitative sense of the outcome
 1. **Point of diminishing returns:** Grade: 9.5/10.
     + Satisfy all "baseline", "minimally viable product", and "due diligence" criteria.
     + Create a second data visualization that builds on the first data visualization, but is also non-redundant to the first. Include a written analysis.
-1. [**Polishing the cannonball**](https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball){target="_blank"}: Grade: 10/10
+1. **Polishing the cannonball**: Grade: 10/10
     + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
-    + Written text does an exceptional job of not only addressing "What is happening?" questions, but also "Why is this happening?" questions (this criteria is subjective).
+    + Written text does an exceptional job of not only addressing "What is happening?" questions, but also "Why is this happening?" questions. 
+-->
 
 
-### 3. Submit three things
+### 3. What to submit
 
 There are two components to your grade:
 
-1. Group leader only: Submit the `MP2.pdf` of your analysis
+1. Group leader only: Submit a `.zip` file of your analysis on Moodle
 1. Both group members: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSeqF7w2Hb1o4e08oYSbndefg3kqHetKL-wLirhUMrfE7sYRuQ/viewform){target="_blank"}
-
-
-
--->
 
 
 
