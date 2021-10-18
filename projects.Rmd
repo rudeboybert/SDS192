@@ -154,7 +154,7 @@ Things to remember for next time:
 
 ## Basic outline
 
-The theme of your analysis will be **follow the money** as quoted in the video above. You will work with a partner to analyze Federal Election Commission data based on the 2011--2012 federal election cycle, as provided by the [Federal Election Commission](http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link){target="_blank"}. We'll be accessing this data in the `fec16` package, which was developed by Prof Ben Baumer, Rana Gahwagy, Irene Ryan, and Marium A. Tapal from Smith College. Check out Marium's poster from the [Women in Statistics and Data Science 2020 conference](https://ww2.amstat.org/meetings/wsds/2020/onlineprogram/AbstractDetails.cfm?AbstractID=309585){target="_blank"}:
+The theme of your analysis will be **follow the money** as quoted in the video above. You will work with a partner to analyze Federal Election Commission data based on the 2016 federal election cycle, as provided by the Federal Election Commission. We'll be accessing this data in the `fec16` package, which was developed by Prof Ben Baumer, Rana Gahwagy, Irene Ryan, and Marium A. Tapal from Smith College. Check out Marium's poster from the [Women in Statistics and Data Science 2020 conference](https://ww2.amstat.org/meetings/wsds/2020/onlineprogram/AbstractDetails.cfm?AbstractID=309585){target="_blank"}:
 
 
 ```{r, echo = FALSE, eval = TRUE}
