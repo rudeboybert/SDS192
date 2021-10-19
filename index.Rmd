@@ -813,6 +813,9 @@ Recap of Lec18: Click on tweet below to see all 6 different types of joins:
 * Install `fec16` package
 * Discuss [Mini-Project 2](projects.html#MP2) in full detail
 
+<!--
+code on random
+-->
 
 ## Today's topics/activities
 
