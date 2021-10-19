@@ -814,7 +814,8 @@ Recap of Lec18: Click on tweet below to see all 6 different types of joins:
 * Discuss [Mini-Project 2](projects.html#MP2) in full detail
 
 <!--
-code on random
+- code on random
+- you can message me on weekend if you want, I just won't respond
 -->
 
 ## Today's topics/activities

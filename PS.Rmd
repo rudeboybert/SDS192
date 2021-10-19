@@ -181,14 +181,12 @@ Total: 12pts
     1. You will be asked to tag the honor code question as well.
 
 
-<!--
 
 ## 2. Solutions {#PS04_solutions}
 
 * <a href="static/PS/PS04_solutions.Rmd" download>`PS04_solutions.Rmd`</a> R Markdown "source code" 
 * [`PS04_solutions.pdf`](static/PS/PS04_solutions.pdf){target="_blank"} PDF
 
--->    
 
 
 
