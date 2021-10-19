@@ -814,6 +814,7 @@ Recap of Lec18: Click on tweet below to see all 6 different types of joins:
 * Discuss [Mini-Project 2](projects.html#MP2) in full detail
 
 <!--
+- Open General and give feedback on Spinelli
 - code on random
 - Pizza fund
 - Slack how to write code
