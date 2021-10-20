@@ -810,30 +810,36 @@ Recap of Lec18: Click on tweet below to see all 6 different types of joins:
 
 ## Announcements
 
-* Install `fec16` package
+* Slack:
+    + See `#general` Slack channel and give feedback on Spinelli tutors
+    + Practice making text look like `code`: create a DM with your project partner and let's practice.
 * Discuss [Mini-Project 2](projects.html#MP2) in full detail
+* Feel free to message me on weekends, I just likely won't respond.
+
 
 <!--
-- Open General and give feedback on Spinelli
-- code on random
 - Pizza fund
-- Slack how to write code
-- you can message me on weekend if you want, I just won't respond
 -->
+
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
 * What is pseudocode?
-* Types of joins: Copy this to your classnotes
+* Types of joins:
+    + Copy code below to your `classnotes.Rmd`
+    + Refer to image (ignore `semi_join()`)
+    ```{r, echo=FALSE, fig.align='center'}
+      include_graphics("static/images/joins.png")
+    ```
 
 <script src="https://gist.github.com/rudeboybert/968dbf26d5f9407703ae7b24d217af67.js"></script>
 
 
 ### 2. In-class exercise
 
-Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, compute available seat miles for each airline separately:
+With your MP2 partner, practice data wranling! Complete ModernDive Learning Check 3.20: Using data in `nycflights13` package, compute available seat miles for each airline separately:
 
 1. Write out the pseudocode first
 2. Then code it

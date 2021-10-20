@@ -117,7 +117,7 @@ There are three components to your grade:
 
 
 
-## Specifics
+## Details
 
 - Has to involve intervals of time: a start time and end time. For example, not "I went to sleep at." but "I slept during these times."
 - Enter in at least two types of activities in your calendar. This activity type becomes the summary categorical variable
@@ -148,17 +148,19 @@ Things to remember for next time:
 
 *Due Monday 11/1 at 9pm.*
 
+Words of wisdom from Detective Lester Freamon from The Wire:
+
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z7M71wmwWRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
 ## Basic outline
 
-The theme of your analysis will be **follow the money** as quoted in the video above. You will work with a partner to analyze Federal Election Commission data based on the 2016 federal election cycle, as provided by the Federal Election Commission. We'll be accessing this data in the `fec16` package, which was developed by Prof Ben Baumer, Rana Gahwagy, Irene Ryan, and Marium A. Tapal from Smith College. Check out Marium's poster from the [Women in Statistics and Data Science 2020 conference](https://ww2.amstat.org/meetings/wsds/2020/onlineprogram/AbstractDetails.cfm?AbstractID=309585){target="_blank"}:
+The theme of your analysis will be **follow the money** as quoted in the video above. You will work with a partner to analyze Federal Election Commission data based on the 2016 federal election cycle, as provided by the Federal Election Commission. We'll be accessing this data in the `fec16` package, which was developed by Prof Ben Baumer, Rana Gahwagy, Irene Ryan, and Marium A. Tapal from Smith College. Check out Marium's poster from the [Women in Statistics and Data Science 2020 conference](https://ww2.amstat.org/meetings/wsds/2020/onlineprogram/AbstractDetails.cfm?AbstractID=309585){target="_blank"}:  
 
 
 ```{r, echo = FALSE, eval = TRUE}
-include_graphics("static/images/fec16.png")
+include_graphics("static/projects/MP2/fec16.png")
 ```
 
 Here are two **randomly** chosen examples to give a **qualitative** sense of the outcome, there are many ways to do this project.
@@ -169,83 +171,66 @@ Here are two **randomly** chosen examples to give a **qualitative** sense of the
 
 ## Steps
 
-**Complete instructions will be posted by Wednesday's lecture**
 
-```{r, echo=FALSE}
+### 1. Getting started
+
+* Find your group in the `#mp2` channel. Please identify:
+    + Your group number
+    + Who your group leader is: whoever in your group is listed as `member_1`
+* Download <a href="static/projects/MP2/MP2.Rmd" download>`MP2.Rmd`</a>
+* Knit the `MP2.Rmd` file once and read it over
+* Read the `fec16` [poster](static/projects/MP2/fec16.pdf){target="_blank"} Marium Tapal presented to get an overview of the package, especially the datasets: some include full data by default, others only include a sample for which if you want full data you need to download it from the web (this is because R packages have file size restrictions). See code below.
+* This is A LOT of data; it will be easy to get lost
+    + `View()` is your best friend: simply looking at your data is so powerful, but also a step that's so easily neglected
+    + Read the help files for documentation: Know what all the variables mean, and what the values mean.
+    + Start simple: Get that minimally viable first visualization done, then iteratively add complexity. 
+
+
+
+```{r, eval = FALSE}
 library(fec16)
-
-# A preview of 1000 rows of contributions
-contributions
-
-# Replace this data frame with complete dataset downloaded from the web
-contributions <- read_all_contributions()
-contributions
 
 # Look at help file
 ?contributions
 
-expenditures <- read_all_expenditures()
-individuals <- read_all_individuals()
-transactions <- read_all_transactions()
+# By default the contributions data frame only contains the first 1000 rows:
+contributions
+
+# Download full contributions data from web and overwrite contributions using:
+# read_all_*() function:
+contributions <- read_all_contributions()
+
+# Now contributions has full 516,394 rows
+contributions
 ```
+  
 
+### 2. Grading
 
-
-### 1. Getting started
-
-<!--
-* Find your group in the `#mp2` channel. Please identify:
-    + Your group number
-    + Who your group leader is: whoever in your group is listed as `member_1`
-* Setup the MP2 RStudio project
-    1. Download <a href="https://drive.google.com/open?id=1pU9BpVUTBw1AFU8VUknnD6BdwTSPwfCH" download>`MP2.zip`</a>.
-    1. Move `MP2.zip` to wherever you keep your 192 files.
-        + macOS users: Double-click `MP2.zip` to extract the `MP2` folder.
-        + Windows users: Extract the contents of `MP2.zip` to a folder.
-    1. Double click the `MP2.Rproj` file to open RStudio in "Project mode":  
-    ![](static/images/MP2.png){ width=100px }
-    1. Verify that you are in RStudio Project mode by looking at the top right corner of RStudio. You should see this:  
-    ![](static/images/MP2_2.png){ width=100px }
-    1. Knit `MP2.Rmd` and go over the example R Markdown presentation tricks.
-    1. `View()` all four data frames that are loaded into R: `candidates`, `committees`, `contributions`, `house_elections`.
-* **Tips**:
-    1. Always work in RStudio Project mode. This will help R locate your `.csv` files easily.
-    1. Knit early and knit often. For example:
-        + If you add 5 lines of code and the R Markdown doesn't knit, you can easily locate the error.
-        + If you add 500 lines of code and the R Markdown doesn't knit, you'll have a harder time locating the error.
-    1. If you're confused about the meaning of variables in the four datasets, be sure to read the [supporting documentation for these data](http://www.fec.gov/finance/disclosure/ftpdet.shtml#archive_link){target="_blank"}.
-    1. Ask questions in the `#mp2` slack channel.
---> 
-
-### 2. Grading rubric
-
-<!--
-1. **Baseline:** Projects that do not satisfy all "baseline" criteria can expect to get a grade of less than 8/10.
-    + The `MP2.Rmd` R Markdown file must "knit" correctly when *someone else* knits it. This is known as producing reproducible research.
+1. **Baseline:** Projects that do not satisfy all "baseline" criteria can expect to get a grade of less than 7/10.
     + All visualizations have appropriately labeled axes, legends, titles, etc. Such information gives the data's context.
     + All visualizations are mindful of the [ink/information ratio](https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842){target="_blank"}.
-    + From the report reader's perspective, there should be no "superfluous" and non-informative output (examples include instructions text). You must be empathetic to your reader, or your reader will just throw your report in the trash. 
-    + You submit your peer evaluation.
-1. **Minimally viable product:** Grade: 8/10.
+    + All code must be visible in your PDF.
+    + Citations must be included as footnotes.
+1. **Minimally viable product:** Grade 7/10
     + Satisfy all "baseline" criteria.
     + Create one data visualization that "follows the money" i.e. involves campaign contributions and include a written analysis.
-1. **Due diligence:** Grade: 9/10.
+1. **Due diligence:** Grade 8/10
     + Satisfy all "baseline" and "minimally viable product" criteria.
     + The data visualization from the "minimally viable product" should be based on at least two joined data frames. 
-1. **Point of diminishing returns:** Grade: 9.5/10.
+1. **Point of diminishing returns:** Grade 9/10
     + Satisfy all "baseline", "minimally viable product", and "due diligence" criteria.
     + Create a second data visualization that builds on the first data visualization, but is also non-redundant to the first. Include a written analysis.
-1. **Polishing the cannonball**: Grade: 10/10
+1. **Polishing the cannonball** Grade >9/10
     + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
-    + Written text does an exceptional job of not only addressing "What is happening?" questions, but also "Why is this happening?" questions. 
--->
+    + Written text does an exceptional job of not only addressing what money-driven effect on politics is being observed, but also attempts to address *why* this money-driven effect on politics is happening.
 
 
 ### 3. What to submit
 
 There are two components to your grade:
 
-1. Group leader only: Submit a `.zip` file of your analysis on Moodle
+1. Group leader only: Submit the `MP2.pdf` of your analysis on gradescope
 1. Both group members: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSeqF7w2Hb1o4e08oYSbndefg3kqHetKL-wLirhUMrfE7sYRuQ/viewform){target="_blank"}
 
 

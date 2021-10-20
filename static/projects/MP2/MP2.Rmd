@@ -1,0 +1,65 @@
+
+---
+title: "SDS192 Mini-Project 2"
+date: "Monday, November 1st, 2021"
+output:
+  pdf_document:
+    toc: no
+    df_print: paged
+---
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+# Do not edit this chunk unless you know what you are doing
+knitr::opts_chunk$set(
+  echo = TRUE, message = FALSE, warning = FALSE, fig.width = 16/2, fig.height = 9/2
+)
+```
+
+```{r, echo=FALSE}
+# Load all packages here
+library(ggplot2)
+library(dplyr)
+
+```
+
+## Administrative info:
+
+* Section number: 
+* Group number: 
+* Group leader name: 
+* Group leader academic email: 
+* Partner name: 
+* Partner academic email: 
+
+
+# Peer evaluation Google Form
+
+Fill out the peer evaluation Google Form to receive credit.
+
+
+# Summary
+
+Write no more than 100 words here summarizing how you are "following the money":
+
+
+# Section 1 Title 
+
+Write no more than 250 words describing and interpreting your first visualization here. 
+
+```{r}
+# Put code to create first data visualization here:
+```
+
+
+# Section 2 Title 
+
+Write no more than 250 words describing and interpreting your second visualization here. 
+
+```{r}
+# Put code to create second non-redundant data visualization here:
+```
+
+
+# Additional Analysis
+
+(Strictly optional) Add any additional material here. ^[Here is an example footnote to be used as a citation.]
