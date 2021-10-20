@@ -34,7 +34,7 @@ library(dplyr)
 
 # Peer evaluation Google Form
 
-Both partners group members need to fill out the peer evaluation Google Form to receive credit.
+Fill out the peer evaluation Google Form to receive credit.
 
 
 # Summary
