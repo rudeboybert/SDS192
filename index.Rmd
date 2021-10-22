@@ -784,26 +784,36 @@ Work on MP2!
 ***
 
 
+-->
+
+
+
 
 # Lec 19: Fri 10/22 {#Lec19}
 
 ## Announcements
 
-* https://twitter.com/asmae_toumi/status/1450864160326172673
+* E-commerce concept: [conversion funnel](https://sleeknote.com/blog/e-commerce-sales-funnel){target="_blank"}
+* Check out the Smith [Common Goods Resource Center](https://www.smith.edu/student-life/commongoods){target="_blank"}
+* Struggling with data wrangling? Don't worry, that's normal since ["90% of data science is data wrangling."](https://blog.rstudio.com/2020/05/05/wrangling-unruly-data/){target="_blank"}
+* There are lots of "90% of data science is ..." quotes:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">90% of data science in industry is <a href="https://t.co/ikKWmeqw7O">pic.twitter.com/ikKWmeqw7O</a></p>&mdash; Jeep Wrangler Owner (@asmae_toumi) <a href="https://twitter.com/asmae_toumi/status/1450864160326172673?ref_src=twsrc%5Etfw">October 20, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-Recap of Lec18: Click on tweet below to see all 6 different types of joins:
+* Pseudocode to compute Available Seat Miles
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I created a cheat sheet of <a href="https://twitter.com/hashtag/dplyr?src=hash&amp;ref_src=twsrc%5Etfw">#dplyr</a>&#39;s join functions, inspired by this: <a href="http://t.co/40wMQDP0J4">http://t.co/40wMQDP0J4</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="http://t.co/P4XOLs5ov3">pic.twitter.com/P4XOLs5ov3</a></p>&mdash; Hiroaki Yutani (@yutannihilation) <a href="https://twitter.com/yutannihilation/status/551572539697143808?ref_src=twsrc%5Etfw">January 4, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+### 2. In-class exercise
+
+* Work on MP2
 
 
 
-
--->
+***
 
 
 
@@ -816,11 +826,6 @@ Recap of Lec18: Click on tweet below to see all 6 different types of joins:
     + Practice making text look like `code`: create a DM with your project partner and let's practice.
 * Discuss [Mini-Project 2](projects.html#MP2) in full detail
 * Feel free to message me on weekends, I just likely won't respond.
-
-
-<!--
-- Pizza fund
--->
 
 
 ## Today's topics/activities
