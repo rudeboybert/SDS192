@@ -749,12 +749,10 @@ Work on MP2!
 
 
 
-# Lec 20: Fri 10/25 {#Lec20}
+# Lec 20: Mon 10/25 {#Lec20}
 
 ## Announcements
 
-* Open floor to share thoughts/feeling about President McCartney's email.
-* MP1 grading update
 
 
 
@@ -762,9 +760,7 @@ Work on MP2!
 
 ### 1. Chalk talk
 
-* Recap of Lec19: In-class exercise, computing available seat miles. Note solution is in ModernDive Appendix D -> Learning Check 3.20.
-    1. Order of arithmetic matters!
-    1. Difference between `inner_join()` and `left_join()`
+* Recap of Lec19: Why did we use `inner_join()` for solution to LC 3.20 on computing Available Seat Miles
 * Importing spreadsheet data into R. Either Excel files or `.csv` Comma-Separated Values files. See image of example `.csv` file below.
 * "Tidy" data format, in other words, [long/tall/narrow format](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"}. This is as opposed to wide format. 
 

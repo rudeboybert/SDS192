@@ -197,7 +197,8 @@ library(fec16)
 contributions
 
 # Download full contributions data from web and overwrite contributions using:
-# read_all_*() function:
+# read_all_*() function.
+# You will need to install the usethis package for this line of code to work
 contributions <- read_all_contributions()
 
 # Now contributions has full 516,394 rows
