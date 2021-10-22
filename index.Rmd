@@ -886,6 +886,10 @@ include_graphics("static/images/ASM.png")
     + Lec16 on `mutate()`: `ifelse()` function
 * `_join()`, `select()`, and `rename()` functions
 
+<!--
+2021/10 fall note: Focus on inner_join first, do left & right later
+-->
+
 ### 2. In-class exercise
 
 * Go over ModernDive reading in schedule above
