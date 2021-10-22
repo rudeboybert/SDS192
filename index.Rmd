@@ -793,6 +793,7 @@ Work on MP2!
 
 ## Announcements
 
+* MP1 returned by Monday
 * E-commerce concept: [conversion funnel](https://sleeknote.com/blog/e-commerce-sales-funnel){target="_blank"}
 * Check out the Smith [Common Goods Resource Center](https://www.smith.edu/student-life/commongoods){target="_blank"}
 * Struggling with data wrangling? Don't worry, that's normal since ["90% of data science is data wrangling."](https://blog.rstudio.com/2020/05/05/wrangling-unruly-data/){target="_blank"}
