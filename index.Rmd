@@ -658,6 +658,7 @@ Two chief tools we'll be using.
 
 ## Announcements
 
+* MSA
 * Added "Tips & Tricks" tab to menu bar of course webpage
 * Useful RStudio cheatsheets: Go to RStudio menu bar on top -> Help -> Cheatsheets:
     + Data Transformation with `dplyr`
@@ -666,6 +667,27 @@ Two chief tools we'll be using.
 ## Today's topics/activities
 
 ### 1. Chalk talk
+
+
+* Install and then load the `tidyverse` package: An *umbrella* package that installs/loads many useful packages for data science all at once!
+    + See [tidyverse.org](https://www.tidyverse.org/){target="_blank"} for more info.
+    + In other words, from now on:  
+    ```{r, eval = FALSE}
+    # Don't do all this
+    library(ggplot2)
+    library(dplyr)
+    library(readr)
+    library(tidyr)
+    library(stringr)
+    library(tibble)
+    library(forcats)
+    library(purrr)
+    
+    # Do this
+    library(tidyverse)
+    ```
+
+
 
 Solutions to PS05 Q1.c). What happened to the average age above 60? The hint given on Slack was to look at the `ggplot2` cheatsheet -> 2nd page -> Bottom right corner -> "Zooming"
 
@@ -732,23 +754,6 @@ ggplot(example, aes(x = x, y = y)) +
 ### 1. Chalk talk
 
 * Recap of Lec19: Why did we use `inner_join()` for solution to LC 3.20 on computing Available Seat Miles
-* Install and then load the `tidyverse` package: An *umbrella* package that installs/loads many useful packages for data science all at once!
-    + See [tidyverse.org](https://www.tidyverse.org/){target="_blank"} for more info.
-    + In other words, from now on:  
-    ```{r, eval = FALSE}
-    # Don't do all this
-    library(ggplot2)
-    library(dplyr)
-    library(readr)
-    library(tidyr)
-    library(stringr)
-    library(tibble)
-    library(forcats)
-    library(purrr)
-    
-    # Do this
-    library(tidyverse)
-    ```
 * Importing spreadsheet data into R. Either Excel files or `.csv` Comma-Separated Values files. See image of example `.csv` file below.
 * [Data formats]](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"}: "tidy" AKA long;tall/narrow format versue "non-tidy" AKA wide format
 
