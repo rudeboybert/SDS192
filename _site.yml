@@ -22,8 +22,8 @@ navbar:
     href: https://sds192-all-fall2021.slack.com
   - text: ModernDive
     href: https://moderndive.com/
-  - text: Tips & Tricks
-    href: https://moderndive.com/C-appendixC.html
+#  - text: Tips & Tricks
+#    href: https://moderndive.com/C-appendixC.html
   right:
 #  - text: GitHub Website
 #    href: webpage.html
