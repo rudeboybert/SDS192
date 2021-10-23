@@ -755,7 +755,7 @@ ggplot(example, aes(x = x, y = y)) +
 
 * Recap of Lec19: Why did we use `inner_join()` for solution to LC 3.20 on computing Available Seat Miles
 * Importing spreadsheet data into R. Either Excel files or `.csv` Comma-Separated Values files. See image of example `.csv` file below.
-* [Data formats]](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"}: "tidy" AKA long;tall/narrow format versue "non-tidy" AKA wide format
+* [Data formats](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"}: "tidy" AKA long;tall/narrow format versue "non-tidy" AKA wide format
 
 <center>
 ![](static/images/CSV.png){ width=500px }
