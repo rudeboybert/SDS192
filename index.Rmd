@@ -560,23 +560,6 @@ Two chief tools we'll be using.
 ## Announcements
 
 * Office hours today are ~~3-4:30pm~~ 3-4pm
-* Install and then load the `tidyverse` package: An *umbrella* package that installs/loads many useful packages for data science all at once!
-    + See [tidyverse.org](https://www.tidyverse.org/){target="_blank"} for more info.
-    + In other words, from now on:  
-    ```{r, eval = FALSE}
-    # Don't do all this
-    library(ggplot2)
-    library(dplyr)
-    library(readr)
-    library(tidyr)
-    library(stringr)
-    library(tibble)
-    library(forcats)
-    library(purrr)
-    
-    # Do this
-    library(tidyverse)
-    ```
 * Smithies in SDS "Data Science Day" this Saturday in the Campus Center featuring:
     + RStudio tidyverse developer advocate [Mara Averick](https://twitter.com/dataandme){target="_blank"}
     + BaseballCloud data scientist and UMass MBA/MS in Sports Management student [Christien Wright](https://twitter.com/cfl1ght){target="_blank"}
@@ -647,27 +630,37 @@ Two chief tools we'll be using.
 
 
 
-# Lec 22: Wed 10/30 {#Lec22}
+# Lec 22: Fri 10/29 {#Lec22}
 
 ## Announcements
 
-* If you would like to give mid-semester feedback on how this course is going so far, you can leave feedback (either anonymously or not) via the Google Forms linke posted in the `#general_announcements` channel in Slack. The form will be open until Friday Nov 1st at 5pm.
-* Smithies in SDS FaculTEA on Friday 4pm in CC 103/104 with Albert Y. Kim, Ben Baumer, David Rockoff, Katherine Halvorsen, Miles Ott, and Randi Garcia.
-
-<center>
-![](static/images/announcements/SSDS_faculTEA.png){ width=750px }
-</center>
-<br>
+* 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Strategies for writing reports.
-
+* Install and then load the `tidyverse` package: An *umbrella* package that installs/loads many useful packages for data science all at once!
+    + See [tidyverse.org](https://www.tidyverse.org/){target="_blank"} for more info.
+    + In other words, from now on:  
+    ```{r, eval = FALSE}
+    # Don't do all this
+    library(ggplot2)
+    library(dplyr)
+    library(readr)
+    library(tidyr)
+    library(stringr)
+    library(tibble)
+    library(forcats)
+    library(purrr)
+    
+    # Do this
+    library(tidyverse)
+    ```
+* 
 ### 2. In-class exercise
 
-Work on MP2!
+* Work on MP2
 
 
 
@@ -677,23 +670,11 @@ Work on MP2!
 
 
 
-# Lec 21: Mon 10/28 {#Lec21}
+# Lec 21: Wed 10/27 {#Lec21}
 
 ## Announcements
 
-* Sit next to your MP2 partner today
-* Look at some posts in `#random` channel
-* Lecture policy reminder
-* Added "Tips & Tricks" tab to menu bar of course webpage
-* Reminder: joint SDS/PSY faculty member Randi Garci will be Honored with [Sherrerd Prize teaching award](https://www.smith.edu/news/sherrerd-2019-oct){target="_blank"} today 4:30pm in Campus Center Carroll Room. Please attend!
-* Biennial (every two years) graduate school panel and discussion on MVP's.
-
-<center>
-![](static/images/announcements/2019_grad_school_panel.png){ width=750px }
-</center>
-<br>
-
-
+* 
 
 ## Today's topics/activities
 
@@ -740,12 +721,13 @@ ggplot(example, aes(x = x, y = y)) +
 
 ### 2. In-class exercise
 
-Work on MP2!
+* Work on MP2
 
 
 
 ***
 
+-->
 
 
 
@@ -753,7 +735,10 @@ Work on MP2!
 
 ## Announcements
 
-
+* Added "Tips & Tricks" tab to menu bar of course webpage
+* Useful RStudio cheatsheets: Go to RStudio menu bar on top -> Help -> Cheatsheets:
+    + Data Transformation with `dplyr`
+    + Data Visualization with `ggplot2`
 
 
 ## Today's topics/activities
@@ -762,7 +747,7 @@ Work on MP2!
 
 * Recap of Lec19: Why did we use `inner_join()` for solution to LC 3.20 on computing Available Seat Miles
 * Importing spreadsheet data into R. Either Excel files or `.csv` Comma-Separated Values files. See image of example `.csv` file below.
-* "Tidy" data format, in other words, [long/tall/narrow format](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"}. This is as opposed to wide format. 
+* [Data formats]](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"}: "tidy" AKA long;tall/narrow format versue "non-tidy" AKA wide format
 
 <center>
 ![](static/images/CSV.png){ width=500px }
@@ -773,15 +758,11 @@ Work on MP2!
 
 ### 2. In-class exercise
 
-* Go over ModernDive 4.1 - 4.2
+* Go over ModernDive reading in schedule above
 
 
 
 ***
-
-
--->
-
 
 
 
