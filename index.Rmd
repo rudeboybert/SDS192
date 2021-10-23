@@ -735,6 +735,7 @@ ggplot(example, aes(x = x, y = y)) +
 
 ## Announcements
 
+* My office hours are highly variable the next month because SDS is hiring 3 new faculty; consult the calendars in the syllabus often
 * Added "Tips & Tricks" tab to menu bar of course webpage
 * Useful RStudio cheatsheets: Go to RStudio menu bar on top -> Help -> Cheatsheets:
     + Data Transformation with `dplyr`
