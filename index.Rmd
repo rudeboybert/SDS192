@@ -640,24 +640,8 @@ Two chief tools we'll be using.
 
 ### 1. Chalk talk
 
-* Install and then load the `tidyverse` package: An *umbrella* package that installs/loads many useful packages for data science all at once!
-    + See [tidyverse.org](https://www.tidyverse.org/){target="_blank"} for more info.
-    + In other words, from now on:  
-    ```{r, eval = FALSE}
-    # Don't do all this
-    library(ggplot2)
-    library(dplyr)
-    library(readr)
-    library(tidyr)
-    library(stringr)
-    library(tibble)
-    library(forcats)
-    library(purrr)
-    
-    # Do this
-    library(tidyverse)
-    ```
-* 
+*
+
 ### 2. In-class exercise
 
 * Work on MP2
@@ -747,6 +731,23 @@ ggplot(example, aes(x = x, y = y)) +
 ### 1. Chalk talk
 
 * Recap of Lec19: Why did we use `inner_join()` for solution to LC 3.20 on computing Available Seat Miles
+* Install and then load the `tidyverse` package: An *umbrella* package that installs/loads many useful packages for data science all at once!
+    + See [tidyverse.org](https://www.tidyverse.org/){target="_blank"} for more info.
+    + In other words, from now on:  
+    ```{r, eval = FALSE}
+    # Don't do all this
+    library(ggplot2)
+    library(dplyr)
+    library(readr)
+    library(tidyr)
+    library(stringr)
+    library(tibble)
+    library(forcats)
+    library(purrr)
+    
+    # Do this
+    library(tidyverse)
+    ```
 * Importing spreadsheet data into R. Either Excel files or `.csv` Comma-Separated Values files. See image of example `.csv` file below.
 * [Data formats]](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"}: "tidy" AKA long;tall/narrow format versue "non-tidy" AKA wide format
 
