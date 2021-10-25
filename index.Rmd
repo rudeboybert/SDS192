@@ -744,6 +744,7 @@ ggplot(example, aes(x = x, y = y)) +
 
 ## Announcements
 
+* MP1 grades posted: See Slack `#mp1` for details
 * SDS is currently working hard to hire [3 new faculty](https://docs.google.com/presentation/d/1ZJ8Xc_9AzlYd4HKrKK-7aaZEb7Y9BqfxluyO4eyWUGw/present#slide=id.gd84b73b16_0_52){target="_blank"} who will start in July 2022; I'm chairing one committee and sitting on another. As a result for the next month
     + My office hours will be highly variable; consult the calendars in the syllabus often
     + There will unfortunately be lags in returning grading
