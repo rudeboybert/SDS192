@@ -120,11 +120,11 @@ There are three components to your grade:
 
 On Moodle where
 
-1. Analysis:
+1. Analysis (gradescope):
     + Viz 1: 35%
     + Viz 2: 35%
-1. Joint reflection piece: 25%
-1. Peer evaluation Google Form: 5%
+1. Joint reflection piece (gradescope): 25%
+1. Peer evaluation (Google Form): 5%
 
 
 
