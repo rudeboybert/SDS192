@@ -111,9 +111,20 @@ IMO when working on any project
 
 There are three components to your grade:
 
-1. Both group members: Submit the `MP1.pdf` of your analysis of your partner's question on gradescope
+1. Both group members: Submit the `MP1.pdf` of your analysis of your partner's question on gradescope.
 1. Both group members: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSd6w4CC9-PrWrpupNfosQUBVoCWBihRwdezYb2jJEj7-kNdfg/viewform){target="_blank"}
 1. Group leader only: Submit a PDF of your joint reflection piece on gradescope
+
+
+### 4. Grades
+
+On Moodle where
+
+1. Analysis:
+    + Viz 1: 35%
+    + Viz 2: 35%
+1. Joint reflection piece: 25%
+1. Peer evaluation Google Form: 5%
 
 
 
