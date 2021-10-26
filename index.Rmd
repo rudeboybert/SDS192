@@ -658,6 +658,7 @@ Two chief tools we'll be using.
 
 ## Announcements
 
+* Denisse can't downlaod full data: have solution
 * MSA
 * Added "Tips & Tricks" tab to menu bar of course webpage
 * Mona Chalabi https://www.youtube.com/watch?v=IRJ2Ac9vI5o&oegoiuc
