@@ -660,6 +660,8 @@ Two chief tools we'll be using.
 
 * MSA
 * Added "Tips & Tricks" tab to menu bar of course webpage
+* Mona Chalabi https://www.youtube.com/watch?v=IRJ2Ac9vI5o&oegoiuc
+* Talk about SDS courses
 * Useful RStudio cheatsheets: Go to RStudio menu bar on top -> Help -> Cheatsheets:
     + Data Transformation with `dplyr`
     + Data Visualization with `ggplot2`
