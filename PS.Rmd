@@ -30,6 +30,19 @@ h1{font-weight: 400;}
 
 ***
 
+
+
+# Extension Requests
+
+* You have an extension "budget" of a maximum of 5 days for the rest of the semester; it's up to you to keep track of your budget
+* Request must be made before due date/time.
+* [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSeCrhqs-iTD5qPcf4FfcFNHE_rwMuaeF37yQuwusRsP9xHJ_Q/viewform){target="_blank"}
+
+
+
+***
+
+
 <!--
 # Problem set 07 {#PS07}
 
@@ -154,6 +167,49 @@ Total: 12pts
 
 * <a href="static/PS/PS05_solutions.Rmd" download>`PS05_solutions.Rmd`</a> R Markdown "source code" 
 * [`PS05_solutions.pdf`](static/PS/PS05_solutions.pdf){target="_blank"} PDF
+
+
+
+
+Solutions to PS05 Q1.c). What happened to the average age above 60? The hint given on Slack was to look at the `ggplot2` cheatsheet -> 2nd page -> Bottom right corner -> "Zooming"
+
+* `ylim(a, b)` sets the limit on the y-axis to be between `a` to `b` and "clips" (throws out) any points outside this interval
+* `coord_cartesian(ylim=c(a, b))` zooms in on the the y-axis to be between `a` to `b` but does not "clip" (throw out) the points outside this interval
+
+For example, consider the following regression line: 
+
+```{r, fig.width = 8/1.5, height = 4.5/1.5, eval=FALSE}
+library(ggplot2)
+library(dplyr)
+
+example <- tibble(
+  x = c(1, 2, 3, 4, 5),
+  y = c(1, 1, 1, 1, 5)
+)
+
+ggplot(example, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+Let's set the y-axis limit to be between 0 and 3. Using `ylim(0, 3)` clips out the point `(5, 5)` and thus the regression line is flat:
+
+```{r, fig.width = 8/1.5, height = 4.5/1.5, eval=FALSE}
+ggplot(example, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  ylim(0, 3)
+```
+
+However, using `coord_cartesian(ylim = c(0, 3))` merely zooms in on this part of the y-axis without clipping the point `(5, 5)` and thus the regression line is the original one: 
+
+```{r, fig.width = 8/1.5, height = 4.5/1.5, eval=FALSE}
+ggplot(example, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  coord_cartesian(ylim = c(0, 3))
+```
+
 
 -->   
 

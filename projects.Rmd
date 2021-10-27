@@ -28,6 +28,17 @@ h1{font-weight: 400;}
 </style>
 
 
+# Extension Requests
+
+* You have an extension "budget" of a maximum of 5 days for the rest of the semester; it's up to you to keep track of your budget
+* Request must be made before due date/time.
+* [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSeCrhqs-iTD5qPcf4FfcFNHE_rwMuaeF37yQuwusRsP9xHJ_Q/viewform){target="_blank"}
+
+
+
+***
+
+
 
 # Mini-Project 1 {#MP1}
 

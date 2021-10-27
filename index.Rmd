@@ -587,21 +587,15 @@ Two chief tools we'll be using.
 
 ## Announcements
 
-* Midterm II this weekend.
-* Coming on Wednesday. Organizers have:
-    + Stated "This space is not for debate between speakers and audience. It is for speakers to be heard and listened to."
-    + Asked that you wear black in solidarity.
-
-<center>
-![](static/images/announcements/exposing_the_truth.png){ width=450px }
-</center>
-<br>
+* Useful RStudio cheatsheets: Go to RStudio menu bar on top -> Help -> Cheatsheets:
+    + Data Transformation with `dplyr`
+    + Data Visualization with `ggplot2`
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Fact that will  about MP2 data.
+* Fact that will about MP2 data.
 * Midterm II discussion. See [midterms](midterms.html#midtermII) page.
 
 ### 2. In-class exercise
@@ -630,53 +624,27 @@ Two chief tools we'll be using.
 
 
 
+
+
+
 # Lec 22: Fri 10/29 {#Lec22}
 
 ## Announcements
 
-* 
+* Talk about Spring 2022 SDS courses
+* For a truly unique perspective on Data Visualization: Mona Chalabi [\@monachalabi](https://www.instagram.com/monachalabi/?hl=en){target="_blank"}
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IRJ2Ac9vI5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
-
-*
-
-### 2. In-class exercise
-
-* Work on MP2
-
-
-
-***
-
-
-
-
-
-# Lec 21: Wed 10/27 {#Lec21}
-
-## Announcements
-
-* Denisse can't downlaod full data: have solution
-* MSA
-* Added "Tips & Tricks" tab to menu bar of course webpage
-* Mona Chalabi https://www.youtube.com/watch?v=IRJ2Ac9vI5o&oegoiuc
-* Talk about SDS courses
-* Useful RStudio cheatsheets: Go to RStudio menu bar on top -> Help -> Cheatsheets:
-    + Data Transformation with `dplyr`
-    + Data Visualization with `ggplot2`
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
 
 * Install and then load the `tidyverse` package: An *umbrella* package that installs/loads many useful packages for data science all at once!
     + See [tidyverse.org](https://www.tidyverse.org/){target="_blank"} for more info.
     + In other words, from now on:  
     ```{r, eval = FALSE}
-    # Don't do all this
+    # Don't do all this:
     library(ggplot2)
     library(dplyr)
     library(readr)
@@ -686,50 +654,11 @@ Two chief tools we'll be using.
     library(forcats)
     library(purrr)
     
-    # Do this
+    # Instead, do this:
     library(tidyverse)
     ```
 
 
-
-Solutions to PS05 Q1.c). What happened to the average age above 60? The hint given on Slack was to look at the `ggplot2` cheatsheet -> 2nd page -> Bottom right corner -> "Zooming"
-
-* `ylim(a, b)` sets the limit on the y-axis to be between `a` to `b` and "clips" (throws out) any points outside this interval
-* `coord_cartesian(ylim=c(a, b))` zooms in on the the y-axis to be between `a` to `b` but does not "clip" (throw out) the points outside this interval
-
-For example, consider the following regression line: 
-
-```{r, fig.width = 8/1.5, height = 4.5/1.5}
-library(ggplot2)
-library(dplyr)
-
-example <- tibble(
-  x = c(1, 2, 3, 4, 5),
-  y = c(1, 1, 1, 1, 5)
-)
-
-ggplot(example, aes(x = x, y = y)) +
-  geom_point() +
-  geom_smooth(method = "lm", se = FALSE)
-```
-
-Let's set the y-axis limit to be between 0 and 3. Using `ylim(0, 3)` clips out the point `(5, 5)` and thus the regression line is flat:
-
-```{r, fig.width = 8/1.5, height = 4.5/1.5}
-ggplot(example, aes(x = x, y = y)) +
-  geom_point() +
-  geom_smooth(method = "lm", se = FALSE) +
-  ylim(0, 3)
-```
-
-However, using `coord_cartesian(ylim = c(0, 3))` merely zooms in on this part of the y-axis without clipping the point `(5, 5)` and thus the regression line is the original one: 
-
-```{r, fig.width = 8/1.5, height = 4.5/1.5}
-ggplot(example, aes(x = x, y = y)) +
-  geom_point() +
-  geom_smooth(method = "lm", se = FALSE) +
-  coord_cartesian(ylim = c(0, 3))
-```
 
 ### 2. In-class exercise
 
@@ -740,6 +669,32 @@ ggplot(example, aes(x = x, y = y)) +
 ***
 
 -->
+
+
+# Lec 21: Wed 10/27 {#Lec21}
+
+## Announcements
+
+* Mid-Semester Assessment:
+    + 1m26s [video](https://smith.zoom.us/rec/play/O14VUQdkLmLYk8rVIUTiZV5srowJnD1WY0ea32Src58MxBebmzApFoLj6QC7yIP07qryBdY_BTyC0mMr.uem-p46i7C1polTP?startTime=1632337008000&_x_zm_rtaid=xnfz95AGRVq1Q6k5BMaobg.1635335436110.113b109a84ea1ad5c5d637f778892a5a&_x_zm_rhtaid=173){target="_blank"}
+    + [Link to survey](https://smithcollege.qualtrics.com/jfe/form/SV_6rPDOKOBtfkvWJw){target="_blank"}
+* Added "Tips & Tricks" tab to menu bar of course webpage
+* Update to syllabus
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* None
+
+### 2. In-class exercise
+
+* Work on MP2
+
+
+
+***
 
 
 
