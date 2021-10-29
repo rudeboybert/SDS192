@@ -638,6 +638,7 @@ Two chief tools we'll be using.
 
 * Install and then load the `tidyverse` package: An *umbrella* package that installs/loads many useful packages for data science all at once.
     + See [tidyverse.org](https://www.tidyverse.org/){target="_blank"} for more info.
+    + [R for Data Science](https://r4ds.had.co.nz/){target="_blank"} is a good reference for these tools
     + In other words, from now on:  
     ```{r, eval = FALSE}
     # Don't do all this:
