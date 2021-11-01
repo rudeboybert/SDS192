@@ -161,7 +161,6 @@ Total: 12pts
     1. You will be asked to tag the honor code question as well.
 
 
-<!--
 
 ## 2. Solutions {#PS05_solutions}
 
@@ -169,9 +168,7 @@ Total: 12pts
 * [`PS05_solutions.pdf`](static/PS/PS05_solutions.pdf){target="_blank"} PDF
 
 
-
-
-Solutions to PS05 Q1.c). What happened to the average age above 60? The hint given on Slack was to look at the `ggplot2` cheatsheet -> 2nd page -> Bottom right corner -> "Zooming"
+**Solutions to PS05 Q1.c)**. What happened to the average age above 60? The hint given on Slack was to look at the `ggplot2` cheatsheet -> 2nd page -> Bottom right corner -> "Zooming"
 
 * `ylim(a, b)` sets the limit on the y-axis to be between `a` to `b` and "clips" (throws out) any points outside this interval
 * `coord_cartesian(ylim=c(a, b))` zooms in on the the y-axis to be between `a` to `b` but does not "clip" (throw out) the points outside this interval
@@ -210,8 +207,6 @@ ggplot(example, aes(x = x, y = y)) +
   coord_cartesian(ylim = c(0, 3))
 ```
 
-
--->   
 
 
 
