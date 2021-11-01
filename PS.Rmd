@@ -175,7 +175,7 @@ Total: 12pts
 
 For example, consider the following regression line: 
 
-```{r, fig.width = 8/1.5, height = 4.5/1.5, eval=FALSE}
+```{r, fig.width = 8/1.5, height = 4.5/1.5, eval=TRUE}
 library(ggplot2)
 library(dplyr)
 
@@ -191,7 +191,7 @@ ggplot(example, aes(x = x, y = y)) +
 
 Let's set the y-axis limit to be between 0 and 3. Using `ylim(0, 3)` clips out the point `(5, 5)` and thus the regression line is flat:
 
-```{r, fig.width = 8/1.5, height = 4.5/1.5, eval=FALSE}
+```{r, fig.width = 8/1.5, height = 4.5/1.5, eval=TRUE}
 ggplot(example, aes(x = x, y = y)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE) +
@@ -200,13 +200,12 @@ ggplot(example, aes(x = x, y = y)) +
 
 However, using `coord_cartesian(ylim = c(0, 3))` merely zooms in on this part of the y-axis without clipping the point `(5, 5)` and thus the regression line is the original one: 
 
-```{r, fig.width = 8/1.5, height = 4.5/1.5, eval=FALSE}
+```{r, fig.width = 8/1.5, height = 4.5/1.5, eval=TRUE}
 ggplot(example, aes(x = x, y = y)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE) +
   coord_cartesian(ylim = c(0, 3))
 ```
-
 
 
 
