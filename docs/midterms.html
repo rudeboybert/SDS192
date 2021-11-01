@@ -13,7 +13,8 @@
 
 <title>Midterms</title>
 
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -32,7 +33,6 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link rel="shortcut icon" href="static/images/192.png">
@@ -374,7 +374,7 @@ h1{font-weight: 400;}
 <li>Closed-book, no internet, and individually completed.</li>
 <li>In case of potential errors or ambiguity on the exam, please note them, state your assumptions, and use your best judgement.</li>
 <li>You will be given 140 mins to complete it (including transit time to writing areas), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.</li>
-<li>Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to a 50% penalty and an honor board case. Those with ODS accommodations have the extendeded time specified in their ODS documentation letter.</li>
+<li>Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case. Those with ODS accommodations have the extended time specified in their ODS documentation letter.</li>
 </ul></li>
 </ul>
 </div>
@@ -398,55 +398,45 @@ h1{font-weight: 400;}
 <h1>Midterm II</h1>
 <div id="administrative-notes-1" class="section level2">
 <h2>Administrative notes</h2>
-<!--
-
-
-* Community: spinelli + other people
-* Chalk talk notes!
-
-
-
-
-
-* **Friday 11/8 5pm through Sunday 11/10 11:55pm**. You must submit your midterm no later than Sunday at 11:55pm.
-* Instructions on taking exams for [Smithies](https://sophia.smith.edu/edtech/documentation/print-an-exam-from-the-direct-to-queue-application/){target="_blank"} and [Five College Students](https://sophia.smith.edu/edtech/documentation/special-instructions-for-five-college-and-high-school-students-using-direct-to-queue-exam-printing/){target="_blank"}. **Print the exam in color.**
-
-* Notes for before exam:
-    + Link to print exam in the Seelye basement lab is posted on Moodle.
-    + Bring colored pencils/pens.
-    + You do not need a calculator.
-    + Print exam in color.
-* Notes for during exam:
-    + Closed-book, no internet, and individually completed.
-    + You will be given 140 mins to complete it (including transit time to writing area), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.
-    + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case and depending on decision a 50% penalty.**
-    + In case of potential errors or ambiguity on the exam, please note them, state your assumptions, and use your best judgement.
-* Notes for after exam:
-    + Be sure to timestamp your exam before returning. 
-    + Insert exam in appropriately labeled box in hallway.
-
-
-## Topics
-    
-* Topics: 
-    + Lecture 10-12. Last few topics on Data viz: Color theory, trend lines. **Added on 11/6**: No Shiny apps.
-    + Lecture 14-20. Data wrangling, "tidy" data, and importing data.
-* Themes:
-    + The midterm is not "cummulative" in the sense that the focus will be on Lectures 10-20, but you still need to know/understand topics from Midterm I because the materials build on top of each other. 
-    + Know how to write *pseudocode* like in the Available Seat Miles exercise in Lecture 19 on Wed 10/23. Click [here](https://twitter.com/rudeboybert/status/964181298691629056){target="_blank"} for examples. Pseudocode is both:
-        + Just general enough to apply to any programming language/statistical software: R, python, SPSS, STATA, SAS, etc.
-        + Just specific enough that the instructions are unambigious
-    + Know the difference between these five joins: `left_join()`, `right_join()`, `inner_join()`, `full_join()`, and `anti_join()`. Go over the code examples on the course webpage for [Lec19](index.html#Lec19).
-* What to study. Here is my suggested order:
-    + Practice midterm posted on Slack under `#general_announcement`: this will give you a feel for the types of questions to expect.
-    + Read chalk talk notes: they emphasize/summarize the most important ideas.
-    + ModernDive Learning Check 3.20 on available seat miles (solutions in Appendix D): this is an all-encompassing problem that draws on nearly all the data wrangling verbs we've seen.
-    + ModernDive readings and learning checks: In particular the more theoretical ideas of "tidy" data.
-    + Problem sets 04 and 05
-
-
-    
--->
+<ul>
+<li>The exam periods are in the McConnell Hall Foyer this Friday 11/5 3:00-9:00 pm, Saturday 11/6 12:00-6:00 pm, and Sunday 11/7 12:00-6:00 pm.</li>
+<li>Since midterm starts on Fri 3pm, I’ve instructed Spinelli tutors not to answer questions on Friday’s 2:35-3:30pm session.</li>
+<li>Read the “Basics” and “For Students” sections of the <strong>new</strong> <a href="https://www.science.smith.edu/self-scheduled-exam-printing/" target="_blank">Fall 2021 Self Scheduled Exams instructions</a></li>
+<li>You are all subject to the <a href="https://www.smith.edu/about-smith/offices/student-affairs/student-handbook/academic-honor-code-0#:~:text=Honor%20Code%20Statement&amp;text=Smith%20College%20expects%20all%20students,of%20course%20work%20and%20examinations." target="_blank">Smith Honor Code</a></li>
+<li>Notes for before exam:
+<ul>
+<li>Bring 3 colored pencils/pens.</li>
+<li>Bring your Smith ID card</li>
+<li>You do not need a calculator.</li>
+</ul></li>
+<li>Notes for during exam:
+<ul>
+<li>Do not write your name on your exam, but rather your Smith ID number. This is for anonymous grading purposes.</li>
+<li>Closed-book, no internet, and individually completed.</li>
+<li>In case of potential errors or ambiguity on the exam, please note them, state your assumptions, and use your best judgement.</li>
+<li>You will be given 140 mins to complete it (including transit time to writing areas), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.</li>
+<li>Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject an honor board case. Those with ODS accommodations have the extended time specified in their ODS documentation letter.</li>
+</ul></li>
+</ul>
+</div>
+<div id="topics-1" class="section level2">
+<h2>Topics</h2>
+<ul>
+<li>Topics:
+<ul>
+<li>Lecture 13-25: Data wrangling, “tidy” data, and importing data.</li>
+<li>The midterm is not cumulative in that there are no direct questions from Lec 1-12, but you still need to know/understand topics from Midterm I because the materials build on top of each other.</li>
+</ul></li>
+<li>What to study:
+<ol style="list-style-type: decimal">
+<li>Minimum viable product: Practice midterm</li>
+<li>Problem set solutions</li>
+<li>Chalk talk notes</li>
+<li>ModernDive Learning Check 3.20 on available seat miles (solutions in Appendix D): this is an all-encompassing problem that draws on nearly all the data wrangling verbs we’ve seen.</li>
+<li>ModernDive readings and learning checks: In particular the more theoretical ideas of “tidy” data.</li>
+</ol></li>
+</ul>
+<p><img src="static/images/MVP_2.png" width="443" /></p>
 </div>
 </div>
 

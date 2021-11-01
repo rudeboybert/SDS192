@@ -61,7 +61,7 @@ h1{font-weight: 400;}
     + Closed-book, no internet, and individually completed.
     + In case of potential errors or ambiguity on the exam, please note them, state your assumptions, and use your best judgement.
     + You will be given 140 mins to complete it (including transit time to writing areas), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.
-    + Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to a 50% penalty and an honor board case. Those with ODS accommodations have the extendeded time specified in their ODS documentation letter. 
+    + Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case. Those with ODS accommodations have the extended time specified in their ODS documentation letter. 
 
 
 
@@ -85,55 +85,37 @@ h1{font-weight: 400;}
 
 ## Administrative notes
 
-
-
-
-<!--
-
-
-* Community: spinelli + other people
-* Chalk talk notes!
-
-
-
-
-
-* **Friday 11/8 5pm through Sunday 11/10 11:55pm**. You must submit your midterm no later than Sunday at 11:55pm.
-* Instructions on taking exams for [Smithies](https://sophia.smith.edu/edtech/documentation/print-an-exam-from-the-direct-to-queue-application/){target="_blank"} and [Five College Students](https://sophia.smith.edu/edtech/documentation/special-instructions-for-five-college-and-high-school-students-using-direct-to-queue-exam-printing/){target="_blank"}. **Print the exam in color.**
-
+* The exam periods are in the McConnell Hall Foyer this Friday 11/5 3:00-9:00 pm, Saturday 11/6 12:00-6:00 pm, and Sunday 11/7 12:00-6:00 pm.
+* Since midterm starts on Fri 3pm, I've instructed Spinelli tutors not to answer questions on Friday's 2:35-3:30pm session.
+* Read the "Basics" and "For Students" sections of the **new** [Fall 2021 Self Scheduled Exams instructions](https://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"}
+* You are all subject to the [Smith Honor Code](https://www.smith.edu/about-smith/offices/student-affairs/student-handbook/academic-honor-code-0#:~:text=Honor%20Code%20Statement&text=Smith%20College%20expects%20all%20students,of%20course%20work%20and%20examinations.){target="_blank"}
 * Notes for before exam:
-    + Link to print exam in the Seelye basement lab is posted on Moodle.
-    + Bring colored pencils/pens.
+    + Bring 3 colored pencils/pens.
+    + Bring your Smith ID card
     + You do not need a calculator.
-    + Print exam in color.
 * Notes for during exam:
+    + Do not write your name on your exam, but rather your Smith ID number. This is for anonymous grading purposes.
     + Closed-book, no internet, and individually completed.
-    + You will be given 140 mins to complete it (including transit time to writing area), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.
-    + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case and depending on decision a 50% penalty.**
     + In case of potential errors or ambiguity on the exam, please note them, state your assumptions, and use your best judgement.
-* Notes for after exam:
-    + Be sure to timestamp your exam before returning. 
-    + Insert exam in appropriately labeled box in hallway.
+    + You will be given 140 mins to complete it (including transit time to writing areas), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.
+    + Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject an honor board case. Those with ODS accommodations have the extended time specified in their ODS documentation letter. 
+
+
 
 
 ## Topics
     
 * Topics: 
-    + Lecture 10-12. Last few topics on Data viz: Color theory, trend lines. **Added on 11/6**: No Shiny apps.
-    + Lecture 14-20. Data wrangling, "tidy" data, and importing data.
-* Themes:
-    + The midterm is not "cummulative" in the sense that the focus will be on Lectures 10-20, but you still need to know/understand topics from Midterm I because the materials build on top of each other. 
-    + Know how to write *pseudocode* like in the Available Seat Miles exercise in Lecture 19 on Wed 10/23. Click [here](https://twitter.com/rudeboybert/status/964181298691629056){target="_blank"} for examples. Pseudocode is both:
-        + Just general enough to apply to any programming language/statistical software: R, python, SPSS, STATA, SAS, etc.
-        + Just specific enough that the instructions are unambigious
-    + Know the difference between these five joins: `left_join()`, `right_join()`, `inner_join()`, `full_join()`, and `anti_join()`. Go over the code examples on the course webpage for [Lec19](index.html#Lec19).
-* What to study. Here is my suggested order:
-    + Practice midterm posted on Slack under `#general_announcement`: this will give you a feel for the types of questions to expect.
-    + Read chalk talk notes: they emphasize/summarize the most important ideas.
-    + ModernDive Learning Check 3.20 on available seat miles (solutions in Appendix D): this is an all-encompassing problem that draws on nearly all the data wrangling verbs we've seen.
-    + ModernDive readings and learning checks: In particular the more theoretical ideas of "tidy" data.
-    + Problem sets 04 and 05
+    + Lecture 13-25: Data wrangling, "tidy" data, and importing data.
+    + The midterm is not cumulative in that there are no direct questions from Lec 1-12, but you still need to know/understand topics from Midterm I because the materials build on top of each other. 
+* What to study:
+    1. Minimum viable product: Practice midterm
+    1. Problem set solutions
+    1. Chalk talk notes
+    1. ModernDive Learning Check 3.20 on available seat miles (solutions in Appendix D): this is an all-encompassing problem that draws on nearly all the data wrangling verbs we've seen.
+    1. ModernDive readings and learning checks: In particular the more theoretical ideas of "tidy" data.
 
 
-    
---> 
+```{r, echo = FALSE, eval = TRUE}
+include_graphics("static/images/MVP_2.png")
+```    
