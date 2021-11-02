@@ -571,9 +571,9 @@ Two chief tools we'll be using.
 
 
 
-
-
 ***
+
+
 
 -->
 
@@ -584,9 +584,11 @@ Two chief tools we'll be using.
 ## Announcements
 
 * Note in `#random`
+* Friday lecture topics
 
 <!--
-End lecture 10min early today
+* MSA's
+* End lecture 10min early today
 -->
 
 ## Today's topics/activities
@@ -595,7 +597,9 @@ End lecture 10min early today
 
 * Note on why sometimes your knitted PDF doesn't match what's in your `.Rmd` file: reproducible research
 * Go over practice midterm
+* In-person office hours on Thursday are TBD (to be determined); I will confirm on calendar by Thursday 12pm.
 * "When would you use left or right join?" Example using student ID, GPA, and funding.
+
 
 ### 2. In-class exercise
 
@@ -607,15 +611,12 @@ End lecture 10min early today
 
 
 
-
-
 # Lec 23: Mon 11/1 {#Lec23}
 
 ## Announcements
 
 * Practice midterm posted on Slack in `#midterms`; we'll go over solutions on Wednesday
 * Midterm II discussion: see [midterms](midterms.html#midtermII) page
-* In-person office hours on Thursday are TBD (to be determined); I will confirm on calendar by Thursday 12pm.
 
 
 ## Today's topics/activities
