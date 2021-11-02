@@ -575,6 +575,8 @@ Two chief tools we'll be using.
 
 ***
 
+-->
+
 
 
 # Lec 24: Wed 11/3 {#Lec24}
@@ -588,6 +590,7 @@ Two chief tools we'll be using.
 ### 1. Chalk talk
 
 * Go over practice midterm
+* "When would you use left or right join?" Example using student ID, GPA, and funding.
 
 ### 2. In-class exercise
 
@@ -597,7 +600,7 @@ Two chief tools we'll be using.
 
 ***
 
--->
+
 
 
 
