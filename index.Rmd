@@ -585,6 +585,10 @@ Two chief tools we'll be using.
 
 * Note in `#random`
 
+<!--
+End lecture 10min early today
+-->
+
 ## Today's topics/activities
 
 ### 1. Chalk talk
