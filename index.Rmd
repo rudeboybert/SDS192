@@ -583,12 +583,13 @@ Two chief tools we'll be using.
 
 ## Announcements
 
-*
+* Note in `#random`
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
+* Note on why sometimes your knitted PDF doesn't match what's in your `.Rmd` file: reproducible research
 * Go over practice midterm
 * "When would you use left or right join?" Example using student ID, GPA, and funding.
 
