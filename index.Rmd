@@ -400,7 +400,7 @@ The application is [here](https://dsc-wav.github.io/www/students.html){target="_
 
 
 
-# Lec 28: Wed 11/13 {#Lec28}
+# Lec 28: Fri 11/12 {#Lec28}
 
 ## Announcements
 
@@ -464,7 +464,7 @@ SDS and GOV are hiring for a new joint position! The search committee would like
 
 
 
-# Lec 27: Mon 11/11 {#Lec27}
+# Lec 27: Wed 11/10 {#Lec27}
 
 ## Announcements
 
@@ -517,7 +517,14 @@ We're at the cutting edge of map technology in R!
 
 
 
-# Lec 26: Fri 11/8 {#Lec26}
+# Lec 26: Mon 11/8 {#Lec26}
+
+
+* MSA's
+* End lecture 10min early today
+* Note on why sometimes your knitted PDF doesn't match what's in your `.Rmd` file: reproducible research
+* Go over MP2 feedback from Google From
+* Contribution type
 
 ## Announcements
 
@@ -554,20 +561,16 @@ Two chief tools we'll be using.
 ***
 
 
-
+-->
 
 
 
 # Lec 25: Fri 11/5 {#Lec25}
 
-## Announcements
+No lecture today, instead optional in-class office hours:
 
-* 
-
-
-## Today's topics/activities
-
-### 1. Chalk talk
+* Sec02 Sabin-Reed 220: 9:25-10:25
+* Sec01 Stoddard G2: 10:55-11:55
 
 
 
@@ -575,30 +578,21 @@ Two chief tools we'll be using.
 
 
 
--->
-
-
-
 # Lec 24: Wed 11/3 {#Lec24}
 
 ## Announcements
 
-* Note in `#random`
-* Friday lecture topics
+* Slack note in `#random`
+* No office hours tomorrow (Thursday). Instead, optional in-class office hours on Friday.
 
-<!--
-* MSA's
-* End lecture 10min early today
--->
+
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
-* Note on why sometimes your knitted PDF doesn't match what's in your `.Rmd` file: reproducible research
-* Go over practice midterm
-* In-person office hours on Thursday are TBD (to be determined); I will confirm on calendar by Thursday 12pm.
-* "When would you use left or right join?" Example using student ID, GPA, and funding.
+* Practice midterm posted in `#midterms`
+* "When would you use left or right join?"
 
 
 ### 2. In-class exercise
