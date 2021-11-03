@@ -561,7 +561,7 @@ Two chief tools we'll be using.
 ***
 
 
--->
+
 
 
 
@@ -577,6 +577,7 @@ No lecture today, instead optional in-class office hours:
 ***
 
 
+-->
 
 # Lec 24: Wed 11/3 {#Lec24}
 
