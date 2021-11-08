@@ -478,6 +478,12 @@ SDS and GOV are hiring for a new joint position! The search committee would like
 
 ## Today's topics/activities
 
+* MSA's
+* Note on why sometimes your knitted PDF doesn't match what's in your `.Rmd` file: reproducible research
+* Go over MP2 feedback from Google From
+* Contribution type
+
+
 ### 1. Chalk talk
 
 1. Absolute vs relative filepaths
@@ -508,60 +514,60 @@ We're at the cutting edge of map technology in R!
 
 
 
-
-
-
-
-
 ***
+
+-->
 
 
 
 # Lec 26: Mon 11/8 {#Lec26}
 
-
-* MSA's
-* End lecture 10min early today
-* Note on why sometimes your knitted PDF doesn't match what's in your `.Rmd` file: reproducible research
-* Go over MP2 feedback from Google From
-* Contribution type
-
 ## Announcements
 
-* MP3: Maps!
-    + Groups posted on Slack in `#MP3` channel. 
-    + You will be making one interactive and one static map. More details on Monday.
-
-
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-* Reading of "On Exactitude in Science" by Borges.
-* Slides on [GIS](https://beanumber.github.io/sds192/lectures/24-shapefiles.html#17){target="_blank"}
-* London underground maps. Compare them. As stated in this [article](https://www.theverge.com/2015/11/11/9712376/london-walk-tube-underground-map){target="_blank"}, the transit map sacrifices accuracy for clarity.
+* Mini-project 3 (MP3) assigned on Wednesday, due Tuesday 11/23 at 9pm.
+    + Add yourselves to the `#mp3` channel. Please ask all questions about MP3 in `#mp3`, not in `#questions`
+    + By Tuesday 5pm I will post the new groups (of two) in the `#mp3` channel. Until `#mp3` is due, you will sit next to your partner in class.
+    + Please reach out to your partner with a Slack DM before Wednesday's lecture to coordinate meeting before lecture so you can sit next to each other.
+    + If you have seating restrictions due to hearing, sight, or mobility issues, please DM me.
+* PS06 to be posted by this evening
+* Compare the following London underground maps. As stated in this [article](https://www.theverge.com/2015/11/11/9712376/london-walk-tube-underground-map){target="_blank"}, the transit map on the right sacrifices accuracy for clarity.
     + The map of stations as they truly exist: 
     ![](static/images/underground_real_map.png){ width=700px }
     + The transit map inside the stations and trains. All lines are either straight or at 45 degrees and futhermore the geographic space is distorted. 
     ![](static/images/underground_transit_map.gif){ width=700px }
+
+
+## Today's topics/activities
+
+* Download <a href="static/projects/MP3/MP3.zip" download>`MP3.zip`</a>
+* Move `MP3.zip` to your SDS192 folder on your computer
+* Unzip `MP3.zip`. Windows users: be sure to "Extract all"
+* In the results MP3 folder, double-click the RStudio Project `MP3.Rproj` icon  
+    ![](static/images/MP2.png){ width=100px }  
+* Verify that RStudio opens with MP3 written in the top-right
+    ![](static/images/MP2_2.png){ width=100px }    
+    
+
+### 1. Chalk talk
+
+<!--
+* Reading of "On Exactitude in Science" by Borges.
+* Slides on [GIS](https://beanumber.github.io/sds192/lectures/24-shapefiles.html#17){target="_blank"}
+
+-->
+
+* RStudio Projects
+* `sf` package for static maps in `ggplot2` and loading shapefiles. See [Spatial Data Science](https://keen-swartz-3146c4.netlify.com/){target="_blank"} for more.
+
     
 
 ### 2. In-class exercise
 
-Two chief tools we'll be using.
-
-* [`leaflet` package](https://rstudio.github.io/leaflet/){target="_blank"} for interactive maps
-* `sf` package for static maps in `ggplot2` and loading shapefiles. See [Spatial Data Science](https://keen-swartz-3146c4.netlify.com/){target="_blank"}.
-
-**Note**: the code that was posted here has now been moved to the `example.Rmd` file in the `MP3` RStudio Project folder. 
+Section 1 Exercises in MP3 folder `examples.Rmd`
 
 
 
 ***
-
-
-
 
 
 
@@ -577,7 +583,6 @@ No lecture today, instead optional in-class office hours:
 ***
 
 
--->
 
 # Lec 24: Wed 11/3 {#Lec24}
 

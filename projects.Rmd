@@ -162,11 +162,12 @@ with two levels.
 Things to remember for next time:
 
 - 24A vs 24E transaction_typ varible
-- Write this as an R package?
 - Make sure .Rproj file has save .Rdata and .Rhistory set to FALSE
 - Use version of project here: https://drive.google.com/drive/u/1/folders/1Pzzyj1PJd0hNC11DlBC9oKcbYGV8Nc-F
 
 -->
+
+
 
 *Due Monday 11/1 at 9pm.*
 
@@ -263,6 +264,9 @@ There are two components to your grade:
 
 
 # Mini-Project 3 {#MP3}
+
+
+
 
 
 <!--
