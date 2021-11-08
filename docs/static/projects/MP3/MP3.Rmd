@@ -1,0 +1,86 @@
+---
+title: "Your title here (REPLACE THIS)"
+author: "Sec 01 AM, Group 76: Albert Y. Kim and P.K. Subban (REPLACE THIS)"
+date: "Friday, November 22nd, 2019"
+output:
+  html_document:
+    highlight: tango
+    theme: cosmo
+    toc: yes
+    toc_depth: 2
+    toc_float:
+      collapsed: false
+    df_print: kable
+---
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+# Set R chunk default options:
+# -do not output all R messages in html report
+# -do not output all R warnings in html report
+# -set default figure widths and heights for all code blocks, unless you 
+#  override them
+knitr::opts_chunk$set(
+  message = FALSE, warning = FALSE, fig.width = 16/2, fig.height = 9/2
+)
+```
+
+```{r, echo=FALSE}
+# Load all packages here. It's good practice to load all packages at the
+# beginning of a Rmd file so that collaborators can see in one shot all packages
+# they'll need installed:
+library(tidyverse)
+library(leaflet)
+library(sf)
+```
+
+```{r, echo=FALSE}
+# Load all the data here. Be sure to be in MP3 RStudio Project mode so that R
+# knows where to find all data.
+```
+
+
+
+# Summary
+
+Write no more than 100 words summarizing your work here.
+
+
+
+# Introduction
+
+Write no more than 250 words giving the data's context and source here.
+
+
+
+# Static map section title 
+
+Write no more than 250 words describing and interpreting your static map here. 
+
+```{r, echo = FALSE}
+# Put code to create your static map here:
+ggplot() +
+  geom_sf(data = bike_trails, col = "red")
+```
+
+
+
+# Interactive map section title 
+
+Write no more than 250 words describing and interpreting your interactive map here. 
+
+```{r, echo = FALSE}
+# Put code to create your interactive map here:
+
+```
+
+
+
+# Additional Analysis
+
+(Strictly optional) Add any additional material here.
+
+
+
+# References and Citations
+
+References should be generated using R Markdown footnotes, as you did in MP2.
