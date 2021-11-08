@@ -542,7 +542,7 @@ We're at the cutting edge of map technology in R!
 * Download <a href="static/projects/MP3/MP3.zip" download>`MP3.zip`</a>
 * Move `MP3.zip` to your SDS192 folder on your computer
 * Unzip `MP3.zip`. Windows users: be sure to "Extract all"
-* In the results MP3 folder, double-click the RStudio Project `MP3.Rproj` icon  
+* In the resulting MP3 folder, double-click the RStudio Project `MP3.Rproj` icon  
     ![](static/images/MP2.png){ width=100px }  
 * Verify that RStudio opens with MP3 written in the top-right  
     ![](static/images/MP2_2.png){ width=100px }    

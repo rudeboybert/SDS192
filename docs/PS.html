@@ -13,7 +13,8 @@
 
 <title>Problem Sets</title>
 
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -32,7 +33,6 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -58,19 +58,19 @@
   }
 </style>
 <style type="text/css" data-origin="pandoc">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -90,7 +90,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {  background-color: #f8f8f8; }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
@@ -506,56 +506,32 @@ How do I know if I've successfully completed the assignment?
 
 ***
 
-
-
-# Problem set 06 {#PS06}
-
-*Assigned Monday 11/11. Two components:*
-
-* **R component**. A `.zip` file of your `PS06` RStudio Project folder. Due on Friday 11/15 at 10:45am on Moodle.
-* **Quiz**. In-class on Monday 11/18. To do: Read the following Buzzfeed.com [article](https://www.buzzfeednews.com/article/daveyalba/datacamp-sexual-harassment-metoo-tech-startup){target="_blank"} on DataCamp (an online platform for learning data science). We'll be having a brief in-class ethics discussion based on this article. **Added Sun 11/17**: For context, DataCamp is an online and interactive platform for learning data science, featuring [courses in R, python, SQL, and git](https://www.datacamp.com/search){target="_blank"}. 
-
-
-## 1. R Markdown component {#PS06_R}
-
-Learning goals:
-
-* Get experience with maps by reproducing the two plots shown in this [example](http://rpubs.com/rudeboybert/PS06){target="_blank"}.
-* Understand absolute vs relative file paths
-* Start creating work that's reproducible
-
-To do:
-
-* Download the following template ~~`.Rmd` file~~ RStudio Project Folder: <a href="static/PS/PS06.zip" download>`PS06.zip`</a>.
-* **Be sure to be in RStudio Project mode**
-* Knit it once and read over the instructions.
-* Complete the problem set.
-* Submit a `.zip` file of all the contents of your `PS06` RStudio Project folder on [Moodle](https://moodle.smith.edu/course/view.php?id=35357){target="_blank"}. 
-
-**Hints**:
-
-1. If your R Markdown file won't "knit", go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first, then seek assistance. In my experience, these 6 fixes resolve 85% of issues.
-
-
-## 2. Solutions & (imperfect) rubric {#PS06_solutions}
-
-**Solution**:
-
-Copy this <a href="static/PS/PS06_solutions.Rmd" download>`PS06_solutions.Rmd`</a> R Markdown solutions file and put it in your `PS06` RStudio Project folder.
-
-**Rubric**:
-
-1. Quiz: 2 pts
-1. R component:
-    + Is your `PS06.Rmd` reproducible by the graders? 4 pts (we will be strict on this)
-    + Are your two graphs identical to ones in the [example](http://rpubs.com/rudeboybert/PS06){target="_blank"}? 6 pts
-
-Total: 12pts
-
-
-
-***
 -->
+</div>
+<div id="PS06" class="section level1">
+<h1>Problem set 06</h1>
+<p><em>Due Monday 11/15 9pm</em></p>
+<div id="PS06_R" class="section level2">
+<h2>1. R Markdown component</h2>
+<p>Getting started:</p>
+<ul>
+<li>Download the following <code>PS06.zip</code> file: <a href="static/PS/PS06.zip" download><code>PS06.zip</code></a>.</li>
+<li>Move <code>PS06.zip</code> to your SDS192 folder on your computer</li>
+<li>Unzip <code>PS06.zip</code>. Windows users: be sure to “Extract all”</li>
+<li>In the resulting PS06 folder, double-click the RStudio Project <code>PS06.Rproj</code> icon. For this PS you need to always work in “PS06” RStudio Project mode (See Lec 26 Mon 11/8)</li>
+</ul>
+<p>Submission:</p>
+<ul>
+<li>You will be submitting the resulting <code>PS06.pdf</code> file on gradescope. Please use the “Knit to PDF” method directly, instead of “Knit to Word” and then save to PDF method.</li>
+<li>If you encounter issues knitting your document, consult the <a href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/" target="_blank">6 R Markdown Fixes</a>.</li>
+<li>Submit on <a href="https://www.gradescope.com/courses/308310" target="_blank">gradescope</a>:
+<ol style="list-style-type: decimal">
+<li>For each questions, tag <strong>all</strong> pages of your PDF that relate to that question (not just the first)</li>
+<li>You will be asked to tag the honor code question as well.</li>
+</ol></li>
+</ul>
+<hr />
+</div>
 </div>
 <div id="PS05" class="section level1">
 <h1>Problem set 05</h1>
@@ -586,29 +562,29 @@ Total: 12pts
 <li><code>coord_cartesian(ylim=c(a, b))</code> zooms in on the the y-axis to be between <code>a</code> to <code>b</code> but does not “clip” (throw out) the points outside this interval</li>
 </ul>
 <p>For example, consider the following regression line:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb1-3"><a href="#cb1-3"></a></span>
-<span id="cb1-4"><a href="#cb1-4"></a>example &lt;-<span class="st"> </span><span class="kw">tibble</span>(</span>
-<span id="cb1-5"><a href="#cb1-5"></a>  <span class="dt">x =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>),</span>
-<span id="cb1-6"><a href="#cb1-6"></a>  <span class="dt">y =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">5</span>)</span>
-<span id="cb1-7"><a href="#cb1-7"></a>)</span>
-<span id="cb1-8"><a href="#cb1-8"></a></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>example <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>),</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">5</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(example, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <p><img src="PS_files/figure-html/unnamed-chunk-2-1.png" width="512" /></p>
 <p>Let’s set the y-axis limit to be between 0 and 3. Using <code>ylim(0, 3)</code> clips out the point <code>(5, 5)</code> and thus the regression line is flat:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) <span class="op">+</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="st">  </span><span class="kw">ylim</span>(<span class="dv">0</span>, <span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(example, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>, <span class="dv">3</span>)</span></code></pre></div>
 <p><img src="PS_files/figure-html/unnamed-chunk-3-1.png" width="512" /></p>
 <p>However, using <code>coord_cartesian(ylim = c(0, 3))</code> merely zooms in on this part of the y-axis without clipping the point <code>(5, 5)</code> and thus the regression line is the original one:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) <span class="op">+</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="st">  </span><span class="kw">coord_cartesian</span>(<span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">3</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(example, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">3</span>))</span></code></pre></div>
 <p><img src="PS_files/figure-html/unnamed-chunk-4-1.png" width="512" /></p>
 <hr />
 </div>

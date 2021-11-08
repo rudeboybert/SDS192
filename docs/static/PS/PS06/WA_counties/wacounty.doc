@@ -1,0 +1,60 @@
+  List Report         : c:\censuscd\wacounty.txt                            
+  Area Type           : Geographic Area                                   
+  Subarea             : County                                            
+  Field Type          : Descriptive                                       
+  Area Name           : On                                                
+  Area Key            : On                                                
+  Area Lat/Lon        : On                                                
+                                                                          
+  Geographic Area     : County                                            
+                      : WA, Adams County                                  
+                      : WA, Asotin County                                 
+                      : WA, Benton County                                 
+                      : WA, Chelan County                                 
+                      : WA, Clallam County                                
+                      : WA, Clark County                                  
+                      : WA, Columbia County                               
+                      : WA, Cowlitz County                                
+                      : WA, Douglas County                                
+                      : WA, Ferry County                                  
+                      : WA, Franklin County                               
+                      : WA, Garfield County                               
+                      : WA, Grant County                                  
+                      : WA, Grays Harbor County                           
+                      : WA, Island County                                 
+                      : WA, Jefferson County                              
+                      : WA, King County                                   
+                      : WA, Kitsap County                                 
+                      : WA, Kittitas County                               
+                      : WA, Klickitat County                              
+                      : WA, Lewis County                                  
+                      : WA, Lincoln County                                
+                      : WA, Mason County                                  
+                      : WA, Okanogan County                               
+                      : WA, Pacific County                                
+                      : WA, Pend Oreille County                           
+                      : WA, Pierce County                                 
+                      : WA, San Juan County                               
+                      : WA, Skagit County                                 
+                      : WA, Skamania County                               
+                      : WA, Snohomish County                              
+                      : WA, Spokane County                                
+                      : WA, Stevens County                                
+                      : WA, Thurston County                               
+                      : WA, Wahkiakum County                              
+                      : WA, Walla Walla County                            
+                      : WA, Whatcom County                                
+                      : WA, Whitman County                                
+                      : WA, Yakima County                                 
+                                                                          
+  Counts Short Name   : Description                                       
+  -----------------   : -----------                                       
+    1. AreaName       : Area name                                         
+    2. AreaKey        : Area key                                          
+    3. INTPTLAT       : Internal point latitude                           
+    4. INTPTLON       : Internal point longitude                          
+                      : PERSONS                                           
+                      : Universe: Persons                                 
+    5. TotPop90       : Total Population in 1990..........................
+                      : GEOGRAPHIC IDENTIFIERS                            
+    6. CNTY           : County............................................

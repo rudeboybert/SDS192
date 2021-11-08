@@ -1,0 +1,61 @@
+
+---
+title: "Problem Set 06"
+author: "WRITE YOUR NAME HERE"
+date: "2021-11-15"
+output:
+  pdf_document:
+    toc: no
+---
+
+```{r, include=FALSE}
+# Do not edit this code block/chunk
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE, fig.width = 16/2, fig.height = 9/2)
+```
+
+
+# Learning goals
+
+* Working in RStudio Project mode
+* Understand absolute vs relative file paths
+* Practice making static maps
+
+
+# Setup
+
+Load necessary packages:
+
+```{r}
+library(tidyverse)
+library(sf)
+library(maps)
+```
+
+
+
+# Question 1:  Honor code
+
+For this problem set I worked with: 
+
+
+
+# Question 2: Map of Washington State
+
+Using the code from Lec26, create a map of Washington state with the cities of Seattle, Olympia, and Spokane marked with a dot.
+
+```{r}
+
+```
+
+
+
+
+
+# Question 3: Map of Counties in Washington State
+
+Create another map of Washington state with the same three cities marked, but this time showing all 39 counties using the `WA_counties` shapefile data. Use a **relative** filepath and not an **absolute** filepath to load this shapefile.
+
+```{r}
+
+```
+

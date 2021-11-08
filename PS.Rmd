@@ -90,59 +90,35 @@ How do I know if I've successfully completed the assignment?
 
 ***
 
-
-
-# Problem set 06 {#PS06}
-
-*Assigned Monday 11/11. Two components:*
-
-* **R component**. A `.zip` file of your `PS06` RStudio Project folder. Due on Friday 11/15 at 10:45am on Moodle.
-* **Quiz**. In-class on Monday 11/18. To do: Read the following Buzzfeed.com [article](https://www.buzzfeednews.com/article/daveyalba/datacamp-sexual-harassment-metoo-tech-startup){target="_blank"} on DataCamp (an online platform for learning data science). We'll be having a brief in-class ethics discussion based on this article. **Added Sun 11/17**: For context, DataCamp is an online and interactive platform for learning data science, featuring [courses in R, python, SQL, and git](https://www.datacamp.com/search){target="_blank"}. 
-
-
-## 1. R Markdown component {#PS06_R}
-
-Learning goals:
-
-* Get experience with maps by reproducing the two plots shown in this [example](http://rpubs.com/rudeboybert/PS06){target="_blank"}.
-* Understand absolute vs relative file paths
-* Start creating work that's reproducible
-
-To do:
-
-* Download the following template ~~`.Rmd` file~~ RStudio Project Folder: <a href="static/PS/PS06.zip" download>`PS06.zip`</a>.
-* **Be sure to be in RStudio Project mode**
-* Knit it once and read over the instructions.
-* Complete the problem set.
-* Submit a `.zip` file of all the contents of your `PS06` RStudio Project folder on [Moodle](https://moodle.smith.edu/course/view.php?id=35357){target="_blank"}. 
-
-**Hints**:
-
-1. If your R Markdown file won't "knit", go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first, then seek assistance. In my experience, these 6 fixes resolve 85% of issues.
-
-
-## 2. Solutions & (imperfect) rubric {#PS06_solutions}
-
-**Solution**:
-
-Copy this <a href="static/PS/PS06_solutions.Rmd" download>`PS06_solutions.Rmd`</a> R Markdown solutions file and put it in your `PS06` RStudio Project folder.
-
-**Rubric**:
-
-1. Quiz: 2 pts
-1. R component:
-    + Is your `PS06.Rmd` reproducible by the graders? 4 pts (we will be strict on this)
-    + Are your two graphs identical to ones in the [example](http://rpubs.com/rudeboybert/PS06){target="_blank"}? 6 pts
-
-Total: 12pts
-
-
-
-***
 -->
 
 
 
+
+# Problem set 06 {#PS06}
+
+*Due Monday 11/15 9pm*
+
+## 1. R Markdown component {#PS06_R}
+
+Getting started:
+
+* Download the following zip file: <a href="static/PS/PS06.zip" download>`PS06.zip`</a>.
+* Move `PS06.zip` to your SDS192 folder on your computer
+* Unzip `PS06.zip`. Windows users: be sure to "Extract all"
+* In the resulting PS06 folder, double-click the RStudio Project `PS06.Rproj` icon. For this PS you sound **always** work in "PS06" RStudio Project mode (See Lec26 Mon 11/8)
+
+Submission:
+
+* You will only be submitting the resulting `PS06.pdf` file on gradescope. Please use the "Knit to PDF" method directly, instead of "Knit to Word" and then save to PDF method.
+* If you encounter issues knitting your document, consult the [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"}.
+* Submit on [gradescope](https://www.gradescope.com/courses/308310){target="_blank"}:
+    1. For each questions, tag **all** pages of your PDF that relate to that question (not just the first)
+    1. You will be asked to tag the honor code question as well.
+
+
+
+***
 
 
 
