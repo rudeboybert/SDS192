@@ -449,19 +449,22 @@ The application is [here](https://dsc-wav.github.io/www/students.html){target="_
 
 ### 1. Chalk talk
 
-1. Example solutions to `examples.Rmd` Section 1 exercise.
+1. Example solutions to `examples.Rmd` Section 1 exercise. Code posted in `#mp3`; screencast below
 1. Shapefiles
 <!--
 1. Centroids: [Geographic](https://en.wikipedia.org/wiki/Geographic_center_of_the_contiguous_United_States){target="_blank"} and [population](https://en.wikipedia.org/wiki/Mean_center_of_the_United_States_population){target="_blank"} weighted. Not coincidentally, check out where FedEx and UPS main airport hubs are [located](https://www.google.com/maps/dir/UPS+Worldport,+Grade+Lane,+Louisville,+KY/FedEx+World+Hub,+2903+Sprankel+Ave,+Memphis,+TN+38118/@36.6002171,-90.0693041,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x88690c2c6dc6fe95:0xae70a6ac610364fe!2m2!1d-85.7307215!2d38.1657255!1m5!1m1!1s0x887f87b59bc63573:0x37d7df503bee2e8f!2m2!1d-89.9608239!2d35.0674784!3e0){target="_blank"}.
 -->
 1. Recap of data sources we've been converting to `sf` data objects so far
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/esQrPSJfFkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 ### 2. In-class exercise
 
 While you are free to work in any order you like, I suggest you:
 
-1. Go over solutions to Exercise 1 and code for Exercise 2. This is direct practice for PS06.
+1. Go over solutions to Exercise 1 and code for Exercise 2. This is direct practice for PS06. 
 1. Work on PS06. This is direct practice for MP3.
 1. Then start on MP3.
 
