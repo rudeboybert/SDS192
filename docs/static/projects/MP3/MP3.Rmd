@@ -1,86 +1,75 @@
+
 ---
-title: "Your title here (REPLACE THIS)"
-author: "Sec 01 AM, Group 76: Albert Y. Kim and P.K. Subban (REPLACE THIS)"
-date: "Friday, November 22nd, 2019"
+title: "SDS192 Mini-Project 3"
+date: "Tuesday, November 23rd, 2021"
 output:
-  html_document:
-    highlight: tango
-    theme: cosmo
-    toc: yes
-    toc_depth: 2
-    toc_float:
-      collapsed: false
-    df_print: kable
+  pdf_document:
+    toc: no
+    df_print: paged
 ---
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
-# Set R chunk default options:
-# -do not output all R messages in html report
-# -do not output all R warnings in html report
-# -set default figure widths and heights for all code blocks, unless you 
-#  override them
+# Do not edit this chunk unless you know what you are doing
 knitr::opts_chunk$set(
-  message = FALSE, warning = FALSE, fig.width = 16/2, fig.height = 9/2
+  echo = TRUE, message = FALSE, warning = FALSE, fig.width = 16/2, fig.height = 9/2
 )
 ```
 
 ```{r, echo=FALSE}
-# Load all packages here. It's good practice to load all packages at the
-# beginning of a Rmd file so that collaborators can see in one shot all packages
-# they'll need installed:
+# Load all packages here
 library(tidyverse)
-library(leaflet)
 library(sf)
 ```
 
+## Administrative info:
+
+* Section number: 
+* Group number: 
+* Group leader name: 
+* Group leader academic email: 
+* Partner name: 
+* Partner academic email: 
+
+
 ```{r, echo=FALSE}
-# Load all the data here. Be sure to be in MP3 RStudio Project mode so that R
-# knows where to find all data.
+# Load all your data here. Be sure to be in MP3 RStudio Project mode so that R
+# knows where to find all data. Here is an example
+
+# Load bike trails shapefile and convert to sf object:
+bike_trails <- "biketrails_arc/" %>%
+  read_sf()
+
+# Load MA cities from CSV and convert to sf object:
+MA_cities_sf <- read_csv("data/ma_cities.csv") %>% 
+  st_as_sf(coords = c("lon", "lat"), crs = 4326)
 ```
 
 
 
-# Summary
+# Q1: Peer evaluation Google Form
 
-Write no more than 100 words summarizing your work here.
-
-
-
-# Introduction
-
-Write no more than 250 words giving the data's context and source here.
+Fill out the peer evaluation Google Form to receive credit.
 
 
 
-# Static map section title 
+# Q2: Introduction
 
-Write no more than 250 words describing and interpreting your static map here. 
+Write no more than 250 words giving the data's context and source here. References should be generated using R Markdown footnotes, as you did in MP2.^[This is an example footnote.]
+
+
+
+# Q3: Your map
 
 ```{r, echo = FALSE}
 # Put code to create your static map here:
 ggplot() +
-  geom_sf(data = bike_trails, col = "red")
+  geom_sf(data = bike_trails, col = "black") +
+  geom_sf(data = MA_cities_sf, aes(col = name), size = 2) +
+  theme_bw() +
+  labs(col = "City")
 ```
-
-
-
-# Interactive map section title 
-
-Write no more than 250 words describing and interpreting your interactive map here. 
-
-```{r, echo = FALSE}
-# Put code to create your interactive map here:
-
-```
-
 
 
 # Additional Analysis
 
-(Strictly optional) Add any additional material here.
-
-
-
-# References and Citations
-
-References should be generated using R Markdown footnotes, as you did in MP2.
+((Optional) If you have any additional analysis you would like to add, add it here. This is optional.

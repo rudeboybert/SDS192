@@ -158,15 +158,15 @@ with two levels.
 # Mini-Project 2 {#MP2}
 
 <!--
-
 Things to remember for next time:
 
 - 24A vs 24E transaction_typ varible
-- Make sure .Rproj file has save .Rdata and .Rhistory set to FALSE
-- Use version of project here: https://drive.google.com/drive/u/1/folders/1Pzzyj1PJd0hNC11DlBC9oKcbYGV8Nc-F
+- Make sure .Rproj file has save .Rdata and .Rhistory set to FALSE b/c fec16 package data is huge
+- Look at current and past fec16 package issues here: https://github.com/baumer-lab/fec16/issues, especially
+    + SSL errors
+    + Some datasets are just too huge
 
 -->
-
 
 
 *Due Monday 11/1 at 9pm.*
@@ -207,8 +207,6 @@ Here are two **randomly** chosen examples to give a **qualitative** sense of the
     + `View()` is your best friend: simply looking at your data is so powerful, but also a step that's so easily neglected
     + Read the help files for documentation: Know what all the variables mean, and what the values mean.
     + Start simple: Get that minimally viable first visualization done, then iteratively add complexity. 
-
-
 
 ```{r, eval = FALSE}
 library(fec16)
@@ -265,84 +263,78 @@ There are two components to your grade:
 
 # Mini-Project 3 {#MP3}
 
-
-
-
-
 <!--
-
 Things to remember for next time:
 - Contact Smith Spatial Lab MUCH EARLIER
-- Contact Data Counselor MUCH EARLIER
 - Give example of joining sf object with data frame in examples.Rmd to create choropleth map of external variable
+-->
 
 
-*Assigned on Monday 11/11, due Friday 11/22 at ~~5pm~~ 9pm.*
+*Due Tuesday 11/23 at 9pm.*
 
-## Data
 
-* Any data of your choosing, as long as you can make one interactive map using `leaflet` (not `shiny`) and one static map using the `sf` package. 
+## Basic outline
 
-## Examples
-
-Here are two arbitrarily chosen examples to give a qualitative sense of the outcome. Note they both can be improved and the criteria of the MP has shifted slightly.
+Create maps using the `sf` package. Here are two **randomly** chosen examples to give a **qualitative** sense of the outcome. 
 
 * [Example 1](static/projects/MP3/MP3_example_1.html){target="_blank"}
 * [Example 2](static/projects/MP3/MP3_example_2.html){target="_blank"}
 
+Note you do not need to submit a interactive map, just a static (non-interactive) map generated with the `sf` package. If you would like to learn how to make interactive maps on your own, check out the [`leaflet` package](https://rstudio.github.io/leaflet/){target="_blank"}.
 
-## Doing the project
+## Steps
 
-* **Step 0**: Determine a group leader
-* **Step 1**: Setup the MP3 RStudio project
-    1. Download <a href="static/projects/MP3.zip" download>`MP3.zip`</a>.
-    1. Move `MP3.zip` to wherever you keep your 192 files.
-        + macOS users: Double-click `MP3.zip` to extract the `MP3` folder.
-        + Windows users: Extract the contents of `MP3.zip` to a folder.
-    1. Double click the `MP3.Rproj` file to open RStudio in "Project mode"
-* **Tips**:
-    1. Always work in RStudio Project mode. This will help R locate your data files easily.
-    1. Knit early and knit often. For example:
-        + If you add 5 lines of code and the R Markdown doesn't knit, you can easily locate the error.
-        + If you add 500 lines of code and the R Markdown doesn't knit, you'll have a harder time locating the error.
-    1. Ask questions in the `#mp3` slack channel.
+### 1. Getting started
+
+* Find your group in the `#mp3` channel. Please identify:
+    + Your group number
+    + Designate a group leader.
+* Add the following to the folder that has your `MP3.Rproj` RStudio Project you created in [Lec26](index.html#Lec26):
+    + Download <a href="static/projects/MP3/MP3.Rmd" download>`MP3.Rmd`</a> and add it to the above folder
+    + In the above folder create a new directory called `data/`
+    + Download <a href="static/projects/MP3/ma_cities.csv" download>`ma_cities.csv`</a> and add it to the `data/` folder
+* Knit the `MP3.Rmd` file once and read it over
+* Map making can get very complicated, so start simple. Get that minimally viable first visualization done, then iteratively add complexity. 
+
+```{r, echo = FALSE, eval = TRUE}
+include_graphics("static/images/MVP_2.png")
+```
 
 
-## Grading rubric
 
-**Note**: This rubric is likely not perfect. Please don't be shy to ask for clarifications.
+### 2. Grading
 
 1. **Baseline:** Projects that do not satisfy all "baseline" criteria can expect to get a grade of less than 8/10.
     + **This will be strictly evaluated**: The `MP3.Rmd` R Markdown file must "knit" correctly when *someone else* knits it. This is known as producing *reproducible research*.
-    + Wherever possible, all maps have appropriately labeled axes, legends, titles, etc. Such information gives the data's context.
-    + All maps are mindful of the [ink/information ratio](https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842){target="_blank"}.
-    + All accompanying write-ups are coherent and respect the word count limit.
-    + From the report reader's perspective, there should be no "superfluous" and non-informative output (examples include instructions text). You must be empathetic to your reader, or your reader will just throw your report in the trash. 
+    + Wherever possible, all maps have appropriately labeled axes, legends, and titles and all maps are mindful of the [ink/information ratio](https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842){target="_blank"}.
+    + From the report reader's perspective, there should be no "superfluous" and non-informative output (e.g. instructions text). You must be empathetic to your reader, or your reader will just throw your report in the trash. 
     + You submit your peer evaluation.
 1. **Minimally viable product:** Grade: 8/10.
     + Satisfy all "baseline" criteria.
-    + Include *either* an interactive map using `leaflet` (not `shiny`) or a static map using the `sf` package.
+    + Include any map generated by the `sf` package.
 1. **Due diligence:** Grade: 9/10.
     + Satisfy all "baseline" and "minimally viable product" criteria.
-    + Include *both* an interactive map and a static map. These two maps may be "redundant" in that they provide the same information.
-1. **Point of diminishing returns:** Grade: 9.5/10.
+    + Add to the map by layering points on top of it. The points
+        + Need to be imported from an external `.csv` file that you will find  (cite source).
+        + Need to overlap the map.
+1. **Point of diminishing returns:** Grade: 10/10.
     + Satisfy all "baseline", "minimally viable product", and "due diligence" criteria.
-    + Your interactive map and static map must now not be "redundant."
-1. [**Polishing the cannonball**](https://www.urbandictionary.com/define.php?term=Polishing%20the%20Cannonball){target="_blank"}: Grade: 10/10
-    + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
-    + **Changed on 11/13 at 2pm** Include a third map of your choice that it not redundant to the first two. Can be either interactive or static.
+    + Add to the map by also layering data from a shapefile on it. This shapefile data
+        + Needs to be imported data from a shapefile you will find (cite source). 
+        + Can be points, lines, or polygons.
+        + Need to overlap the map.
 
 
-## To submit
+### 3. What to submit
 
-1. Each group will make only one submission: the group leader will submit a `.zip` file of all the contents of the `MP3` folder on Moodle.
-1. **Individually**: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfUfxg2j9MYf60O70JerAQBeX0rxEFX6k5749P6gYEIHgr-9g/viewform){target="_blank"}
+There are two components to your grade:
 
--->
+1. Group leader only: Submit the `MP3.zip` file of your entire RStudio Project folder on [moodle](https://moodle.smith.edu/course/view.php?id=42274){target="_blank"}.
+1. Both group members: Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdf2M_0oYOR8hwUgxoQFeMR5bKvz4FMZs7Z4k1L1uOy3e_dQw/viewform){target="_blank"}
+
+
 
 ***
-
-
 
 
 

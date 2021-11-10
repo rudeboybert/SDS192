@@ -402,46 +402,18 @@ The application is [here](https://dsc-wav.github.io/www/students.html){target="_
 
 # Lec 28: Fri 11/12 {#Lec28}
 
+
+* Data Research and Statistics Counselor from Spinelli Center Osman Keshawarz. You can book office hours [here](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
+* MSA's
+* Note on why sometimes your knitted PDF doesn't match what's in your `.Rmd` file: reproducible research
+* Go over MP2 feedback from Google From
+* Contribution type
+
+
 ## Announcements
 
-* Office hours today ~~3-4:30pm~~ 3-4pm
-* This Friday the 15th: I'm out of town
-    + No office hours on 9-10:30am
-    + Guest lecturer: Prof. Ben Baumer
-    + I will post PS06 solutions no later than Friday 5pm
-* MP3 examples and rubric posted
-* Members of the [Smith College Spatial Analysis Lab](http://www.science.smith.edu/sal/){target="_blank"} will be making a brief presentation next week:
-    + Sec01 AM: Wed 11/20 at 11:30am
-    + Sec02 PM: Mon 11/18 at beginning of lecture
-* Check out the Jill Ker Conway Innovation & Entrepreneurship Center's feature on [SDS student Rachel Laflamme](https://conway-connect.com/innovation-news/2019/10/31/datascienceatvaliantlabs){target="_blank"}. In particular the quotes from the final paragraph:
+* Members of the [Smith College Spatial Analysis Lab](http://www.science.smith.edu/sal/){target="_blank"} will be making a brief presentation on Monday.
 
-> Rachel indicated that being surrounded by "so many really intimidating Smithies" in classes, students who she believed were much smarter than she, caused her to question whether she should even pursue a career as a statistical and data scientist. Needless to say, those of us in attendance during her presentation - one delivered by a knowledgeable, talented and confident Smithie - were surprised by her revelation...
-> 
-> Asked about her most important take-away from the summer, Rachel thoughtfully replied:  
-> **"I learned that you have to understand your value and that you have a right to be compensated for the value that you bring. It’s a bold thing to fight for what you know you’re worth."**
-
-### Mega Announcement
-
-SDS and GOV are hiring for a new joint position! The search committee would like your feedback which they take *very* seriously.
-
-1. **Tea Times**: They are looking for students who would like to have tea with the candidates on 11/19, 11/21, and 11/22 at 3:30-4:30pm in Bass 418. Sign up [here](https://docs.google.com/spreadsheets/d/15TLrH4DUtDU4M7-yJQ9uKG2oVvERnLBvShw8sABWDwY/edit#gid=0){target="_blank"}. 
-1. **Teaching demos**: Please bring your laptop! We need students here since this is a teaching demonstration!
-    + Ju Yeon (Julia) Park (University of Pittsburgh - Postdoc)  
-    Tue 11/19, 5-6pm, Sabin-Reed 301.
-    + Scott LaCombe (University of Iowa - Doctoral Student)  
-    Thu 11/21, 5-6pm, Sabin-Reed 301.
-    + Stan Oklobdzija (Claremont McKenna College - Postdoc)  
-    Fri 11/22, 5-6pm, Sabin-Reed 301.     
-1. **Research Talks**: A limited number of lunches will be available (first come, first served) at the lunchtime research talks.  This is a chance for you to see how scholars present their work to other scholars.  The talks will be aimed for the professors in the audience. Students are very welcome to attend, though we invite students to observe but not ask questions.
-    + Ju Yeon (Julia) Park (University of Pittsburgh - Postdoc)  
-    Tue 11/19, 12:15-1:15pm, Campus Center 103/104  
-    Title:  *When Do Politicians Grandstand? Measuring Message Politics in Committee Hearings*
-    + Scott LaCombe (University of Iowa-Doctoral Student)  
-    Thu 11/21, 12:15-1:15pm, Campus Center 103/104  
-    Title: *Institutional Design and Policy Responsiveness in US States*
-    + Stan Oklobdzija (Claremont McKenna College - Postdoc)  
-    Fri 11/22, 12:15-1:15pm, McConnell B15  
-    Title: *Dark Money and Political Parties After Citizens United*
 
 ## Today's topics/activities
 
@@ -461,6 +433,7 @@ SDS and GOV are hiring for a new joint position! The search committee would like
 
 ***
 
+-->
 
 
 
@@ -468,55 +441,33 @@ SDS and GOV are hiring for a new joint position! The search committee would like
 
 ## Announcements
 
-* I filled out a rough schedule of topics for the rest of the semester in the spreadsheet above.
-* Data Research and Statistics Counselor from Spinelli Center Osman Keshawarz. You can book office hours [here](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
-* PS06 posted: Two components
-    + R component due on Friday 11/15 10:45am: Straightforward and serves as practice for MP3.
-    + Ethics reading quiz in-class on Monday 11/18. This is to ensure you are prepared for an in-class discussion. What do we do when "bad" people make "good" technology?
-* MP3 details posted.
+* Check important Slack announcement in `#general`
+* [Mini-Project 3](projects.html#MP3) posted.
 
 
 ## Today's topics/activities
 
-* MSA's
-* Note on why sometimes your knitted PDF doesn't match what's in your `.Rmd` file: reproducible research
-* Go over MP2 feedback from Google From
-* Contribution type
-
-
 ### 1. Chalk talk
 
-1. Absolute vs relative filepaths
-1. Converting data in R into `sf` objects. We can then do both
-    + Data wrangling using `dplyr` on them
-    + Plot them in `ggplot2` using `geom_sf()` layers
+1. Example solutions to `examples.Rmd` Section 1 exercise.
+1. Shapefiles
+<!--
 1. Centroids: [Geographic](https://en.wikipedia.org/wiki/Geographic_center_of_the_contiguous_United_States){target="_blank"} and [population](https://en.wikipedia.org/wiki/Mean_center_of_the_United_States_population){target="_blank"} weighted. Not coincidentally, check out where FedEx and UPS main airport hubs are [located](https://www.google.com/maps/dir/UPS+Worldport,+Grade+Lane,+Louisville,+KY/FedEx+World+Hub,+2903+Sprankel+Ave,+Memphis,+TN+38118/@36.6002171,-90.0693041,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x88690c2c6dc6fe95:0xae70a6ac610364fe!2m2!1d-85.7307215!2d38.1657255!1m5!1m1!1s0x887f87b59bc63573:0x37d7df503bee2e8f!2m2!1d-89.9608239!2d35.0674784!3e0){target="_blank"}.
+-->
+1. Recap of data sources we've been converting to `sf` data objects so far
 
 
 ### 2. In-class exercise
 
 While you are free to work in any order you like, I suggest you:
 
-1. Go thru the `examples.Rmd` file in the `MP3` RStudio Project (be sure to be working in RStudio Project mode):
-    * Section 1: Interactive maps using leaflet
-    * Section 2: Convert data frames into `sf` objects
-    * Section 3: Loading shapefiles into R
-    * Section 4: (We'll do this on Wednesday) Choropleth maps using census data.
+1. Go over solutions to Exercise 1 and code for Exercise 2. This is direct practice for PS06.
 1. Work on PS06. This is direct practice for MP3.
 1. Then start on MP3.
 
 
-### 3. Tweet of the day
-
-We're at the cutting edge of map technology in R!
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Slides for my talk at <a href="https://twitter.com/hashtag/rstatdc?src=hash&amp;ref_src=twsrc%5Etfw">#rstatdc</a> can be found at <a href="https://t.co/GB58zIy3ND">https://t.co/GB58zIy3ND</a>! My talk was based off of questions I get all the time at the R Spatial Workshop at <a href="https://twitter.com/GeoDaCenter?ref_src=twsrc%5Etfw">@GeoDaCenter</a>: <br><br>1) How to get started with spatial analysis?<br>2) What tools to use?<br>3) What can you do in <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>? <a href="https://t.co/qzEKO0T8Y4">pic.twitter.com/qzEKO0T8Y4</a></p>&mdash; Angela Li (@CivicAngela) <a href="https://twitter.com/CivicAngela/status/1193218533783568385?ref_src=twsrc%5Etfw">November 9, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
 
 ***
-
--->
 
 
 
@@ -551,10 +502,11 @@ We're at the cutting edge of map technology in R!
 ### 1. Chalk talk
 
 <!--
+* DO THIS: Have all students install Rcpp package before sf package. Otherwise there might be RStudio fatal errors
 * Reading of "On Exactitude in Science" by Borges.
 * Slides on [GIS](https://beanumber.github.io/sds192/lectures/24-shapefiles.html#17){target="_blank"}
-
 -->
+
 
 * RStudio Projects
 * `sf` package for static maps in `ggplot2` and loading shapefiles. See [Spatial Data Science](https://keen-swartz-3146c4.netlify.com/){target="_blank"} for more.
