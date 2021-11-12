@@ -364,33 +364,16 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 
 
 
-# Lec 29: Fri 11/15 {#Lec29}
+# Lec 31: Fri 11/19 {#Lec31}
 
 ## Announcements
-
-* Sit next to your MP3 partner
-* Guest lecturer: Prof. Ben Baumer
-
-### Mega Announcement
-
-Recently, the Five Colleges (with Smith as the lead institution) received a three-year grant from the NSF (totaling $1.2 million) for workforce development in data science. Most of that money will go to students, who will work on real-world data science projects sponsored by local community-based organizations. The Jandon Center for Community Engagement will be integrated into the project to bind all parties together. 
-
-We are looking for students to join the first cohort. Smith students can earn up to $2500 per semester, which is approximately 60% more than you would make in any other campus job. The minimum requirements for data science students are:
-
-* Has taken at least one course in computer programming
-* Has taken at least one course in statistics
-* Has taken at least one additional course in data science, data analysis, etc.
-* Is a sophomore or junior
-* Ability to commit to 8-10 hours per week through the spring semester
-
-Unfortunately, only US citizens or permanent residents are eligible for funding from the NSF. It is possible that international students could be funded through a different mechanism, but there are no such alternative funding sources in place at present. 
-
-The application is [here](https://dsc-wav.github.io/www/students.html){target="_blank"}, please APPLY NOW!! Please contact Ben Baumer if you have more questions.
 
 
 ## Today's topics/activities
 
-### 1. In-class exercise
+### 1. Chalk talk
+
+### 2. In-class exercise
 
 * Work on MP3
 
@@ -400,40 +383,77 @@ The application is [here](https://dsc-wav.github.io/www/students.html){target="_
 
 
 
-# Lec 28: Fri 11/12 {#Lec28}
-
-
-* Data Research and Statistics Counselor from Spinelli Center Osman Keshawarz. You can book office hours [here](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
-* MSA's
-* Note on why sometimes your knitted PDF doesn't match what's in your `.Rmd` file: reproducible research
-* Go over MP2 feedback from Google From
-* Contribution type
-
+# Lec 30: Wed 11/17 {#Lec30}
 
 ## Announcements
-
-* Members of the [Smith College Spatial Analysis Lab](http://www.science.smith.edu/sal/){target="_blank"} will be making a brief presentation on Monday.
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
 
+### 2. In-class exercise
+
+* Work on MP3
+
+
+
+***
+
+
+
+# Lec 29: Mon 11/15 {#Lec29}
+
+## Announcements
+
+* Data Research and Statistics Counselor from Spinelli Center Osman Keshawarz. You can book office hours [here](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
+* MSA's
+* Go over MP2 feedback from Google From
+* Contribution type
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* [Application Programmer Interfaces](https://en.wikipedia.org/wiki/Application_programming_interface){target="_blank"}
 * Choropleth maps. In particular, how you set the *bins* corresponding to the color gradient can affect how your map looks. As indicated [here](https://gisgeography.com/choropleth-maps-data-classification/){target="_blank"}, there are two approaches:
     + Equally sized interval bins
     + Quantile based bins
-* [Application Programmer Interfaces](https://en.wikipedia.org/wiki/Application_programming_interface){target="_blank"}
 
 
 ### 2. In-class exercise
 
 * `tidycensus` package
 
-
-
 ***
 
 -->
+
+
+
+
+# Lec 28: Fri 11/12 {#Lec28}
+
+## Announcements
+
+* Grad school panel on Mon 11/22 featuring SDS alumna. More info in `#general`
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* Guest lecture by the [Smith College Spatial Analysis Lab](http://www.science.smith.edu/sal/){target="_blank"}.
+
+
+### 2. In-class exercise
+
+1. Work on PS06. This is direct practice for MP3.
+1. Then start on MP3.
+
+
+
+***
 
 
 
