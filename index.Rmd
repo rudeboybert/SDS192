@@ -396,6 +396,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 
 ## Announcements
 
+* Slack messages
 * [Data Research and Statistics Counselor](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"} Osman Keshawarz
 * Poll
 
@@ -405,12 +406,13 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 
 ### 1. Chalk talk
 
+* Recap of all data seen in MP3 Project -> `examples.Rmd`
 * [Federal Information Processing Standard](https://en.wikipedia.org/wiki/FIPS_county_code){target="_blank"} (FIPS) codes for counties  
     ![](static/images/FIPS.png){ width=300px }
 * Example: Looking up the [database](https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt#:~:text=FIPS%20codes%20are%20numbers%20which,to%20which%20the%20county%20belongs.){target="_blank"}:
     + 25XXX = Massachusetts counties
     + 25105 = Hampshire County, Massachusetts
-* From MP3 Project -> `examples.Rmd` -> Section 3 -> Look at contents of `mass_pop_orig`:
+* From MP3 Project -> `examples.Rmd` -> Section 3 -> Look at contents of `mass_pop_orig` -> `GEOID` variable:
 
 ```{r, eval = FALSE}
 > mass_pop_orig
