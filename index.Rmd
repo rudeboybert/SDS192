@@ -369,26 +369,6 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 
 ## Announcements
 
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-### 2. In-class exercise
-
-* Work on MP3
-
-
-
-***
-
-
-
-# Lec 30: Wed 11/17 {#Lec30}
-
-## Announcements
-
-* Osman Keshawarz Spinelli Data Consultant
 * MSA's
 * Go over MP2 feedback from Google From
 * Contribution type
@@ -408,6 +388,59 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 ***
 
 -->
+
+
+
+
+# Lec 30: Wed 11/17 {#Lec30}
+
+## Announcements
+
+* [Data Research and Statistics Counselor](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"} Osman Keshawarz
+* Poll
+
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* [Federal Information Processing Standard](https://en.wikipedia.org/wiki/FIPS_county_code){target="_blank"} (FIPS) codes for counties  
+    ![](static/images/FIPS.png){ width=300px }
+* Example: Looking up the [database](https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt#:~:text=FIPS%20codes%20are%20numbers%20which,to%20which%20the%20county%20belongs.){target="_blank"}:
+    + 25XXX = Massachusetts counties
+    + 25105 = Hampshire County, Massachusetts
+* From MP3 Project -> `examples.Rmd` -> Section 3 -> Look at contents of `mass_pop_orig`:
+
+```{r, eval = FALSE}
+> mass_pop_orig
+Simple feature collection with 14 features and 7 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -73.50814 ymin: 41.23796 xmax: -69.92839 ymax: 42.88659
+Geodetic CRS:  NAD83
+First 10 features:
+   GEOID                             NAME   variable estimate moe
+1  25017  Middlesex County, Massachusetts B01003_001  1600842  NA
+2  25025    Suffolk County, Massachusetts B01003_001   796605  NA
+3  25001 Barnstable County, Massachusetts B01003_001   213496  NA
+4  25027  Worcester County, Massachusetts B01003_001   824772  NA
+5  25011   Franklin County, Massachusetts B01003_001    70577  NA
+6  25013    Hampden County, Massachusetts B01003_001   467871  NA
+7  25015  Hampshire County, Massachusetts B01003_001   161032  NA
+8  25021    Norfolk County, Massachusetts B01003_001   700437  NA
+9  25005    Bristol County, Massachusetts B01003_001   561037  NA
+10 25009      Essex County, Massachusetts B01003_001   783676  NA
+```
+
+
+### 2. In-class exercise
+
+* Work on MP3
+
+
+
+***
 
 
 
