@@ -369,6 +369,10 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 
 ## Announcements
 
+patchwork
+janitor
+
+
 * MSA's
 * Go over MP2 feedback from Google From
 * Contribution type
