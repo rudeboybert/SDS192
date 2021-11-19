@@ -367,14 +367,9 @@ Today you'll be building your own R Markdown Website, which is the technology I 
     + If you want to rename your webpage's URL rather than use the default one you've been assigned: Click on "Domain settings" -> Click on the "..." next to your default site name -> Click on "Edit site name" -> Rename your site
 
 
-
-
 ***
 
-
-
 -->
-
 
 
 
@@ -384,7 +379,6 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 
 * MP3 now due Tuesday 11/30 at 9pm (after break). There will be no extensions past this due date/time.
 * 
-
 
 
 ## Today's topics/activities
@@ -398,8 +392,6 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 
 
 ***
-
-
 
 
 
