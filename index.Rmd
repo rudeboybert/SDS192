@@ -309,6 +309,15 @@ Accept the following [GitHub classroom assignment](https://classroom.github.com/
 
 ## Announcements
 
+
+
+
+* MSA's
+* Go over MP2 feedback from Google From
+* Contribution type
+
+
+
 * MP3 due on Friday at ~~5pm~~ 9pm
 * Updates: MP2 feedback and Midterm II
 * DataCamp article:
@@ -364,15 +373,18 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 
 
 
+-->
+
+
+
 
 # Lec 31: Fri 11/19 {#Lec31}
 
 ## Announcements
 
-* MSA's
-* Go over MP2 feedback from Google From
-* Contribution type
-* Recap of data sources we've been converting to `sf` data objects so far
+* MP3 now due Tuesday 11/30 at 9pm (after break). There will be no extensions past this due date/time.
+* 
+
 
 
 ## Today's topics/activities
@@ -387,7 +399,6 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 
 ***
 
--->
 
 
 
@@ -406,7 +417,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 
 ### 1. Chalk talk
 
-* Recap of all data seen in MP3 Project -> `examples.Rmd`
+* Recap of all `sf` data frames seen so far in MP3 Project -> `examples.Rmd`
 * [Federal Information Processing Standard](https://en.wikipedia.org/wiki/FIPS_county_code){target="_blank"} (FIPS) codes for counties  
     ![](static/images/FIPS.png){ width=300px }
 * Example: Looking up the [database](https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt#:~:text=FIPS%20codes%20are%20numbers%20which,to%20which%20the%20county%20belongs.){target="_blank"}:
