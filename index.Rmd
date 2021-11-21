@@ -309,22 +309,10 @@ Accept the following [GitHub classroom assignment](https://classroom.github.com/
 
 ## Announcements
 
-
-
-
+* https://twitter.com/CACMmag/status/1461761131639418881?s=20
 * MSA's
 * Go over MP2 feedback from Google From
 * Contribution type
-
-
-
-* MP3 due on Friday at ~~5pm~~ 9pm
-* Updates: MP2 feedback and Midterm II
-* DataCamp article:
-    + Quiz
-    + Brief demo of DataCamp based on the course ["Modeling with Data in the Tidyverse"](https://www.datacamp.com/courses/modeling-with-data-in-the-tidyverse){target="_blank"}: Video lectures + coding
-    + List of [courses](https://www.datacamp.com/courses/){target="_blank"} available
-    + Ethics discussion, followed by sharing your (anonymous) opinions via [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfnVDe8p2bHgAqROGP4zb304fZWP9kkwrif6Jn4SzsxCl5KGQ/viewform){target="_blank"}
 
 
 ## Today's topics/activities
@@ -373,17 +361,41 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 
 
 
-# Lec 31: Fri 11/19 {#Lec31}
+# Lec 32: Mon 11/22 {#Lec32}
 
 ## Announcements
 
 * MP3 now due Tuesday 11/30 at 9pm (after break). There will be no extensions past this due date/time.
-* 
 
 
 ## Today's topics/activities
 
 ### 1. Chalk talk
+
+* None
+
+### 2. In-class exercise
+
+* Work on MP3
+
+
+
+***
+
+
+
+# Lec 31: Fri 11/19 {#Lec31}
+
+## Announcements
+
+* MP3 now due Tuesday 11/30 at 9pm (after break). There will be no extensions past this due date/time.
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+* None
 
 ### 2. In-class exercise
 
