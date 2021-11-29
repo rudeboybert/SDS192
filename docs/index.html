@@ -14,7 +14,7 @@
 
 <title>SDS 192: Introduction to Data Science</title>
 
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -440,7 +440,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS 192: Introduction to Data Science</h1>
 <h4 class="author">Albert Y. Kim</h4>
-<h4 class="date">Last updated on 2021-11-21</h4>
+<h4 class="date">Last updated on 2021-11-28</h4>
 
 </div>
 
@@ -469,54 +469,21 @@ h1{font-weight: 400;}
 -->
 <hr />
 <!--
-# Lec 37: Wed 12/11 {#Lec37}
+
+
+
+# Lec 38: Fri 12/10 {#Lec38}
 
 ## Announcements
 
-* SDS Major Fatima Keita is interested in organizing a group for students of color within SDS. She has also put together a [survey](https://www.surveymonkey.com/r/2YZ785Y){target="_blank"} to gather students of color's experiences within SDS courses and the program more generally. The idea is that these experiences would then be anonymously shared with the SDS faculty in hope that we can work to improve inclusivity within the program and curriculum.  
+
 * Comment about ModernDive:
     + Always free, always available at [ModernDive.com](https://moderndive.com/)
     + Thank you for your role in making it happen!
-* Thank you to the Spinelli Center tutors Tina, Elaona, Jordan, and Maggie!
+* Thank you to the Spinelli Center tutors
 * Please fill out teaching evaluations during the break!
-
-## Reading and exam week
-
-* Office hours: By appointment at [bit.ly/meet_with_albert](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"} on Fri 12/13, Tue 12/17, and Wed 12/18
 * Spinelli center tutoring: Alas, no tutoring during reading and finals week.
-* Slack: I'll be checking it periodically. Also, I'm busy on from Thu 12/19 5pm to Friday 12/20 afternoon, so you might not get a response in time if you message me then.
 
-
-## Today's Topics/Activities
-
-* Work on Final Project
-
-
-
-***
-
-
-
-# Lec 36: Mon 12/9 {#Lec36}
-
-## Announcements
-
-* MP3 update
-* All details for final project posted. Due Friday 12/20 at noon.
-
-## Today's Topics/Activities
-
-* Work on Final Project
-
-
-
-***
-
-
-
-# Lec 35: Fri 12/6 {#Lec35}
-
-## Announcements
 
 * Please fill out this feedback [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfHOQeDiWv41Ps1Yin7r1mZaCMou23_hixa9DljmTih9lDrow/viewform){target="_blank"} about PS07 GitHub.
 * By Monday: I will post
@@ -527,6 +494,28 @@ h1{font-weight: 400;}
 
 
 ## Today's Topics/Activities
+
+
+
+***
+
+
+
+# Lec 37: Wed 12/8 {#Lec37}
+
+## Announcements
+
+
+
+***
+
+
+
+# Lec 36: Mon 12/6 {#Lec36}
+
+## Announcements
+
+Talk about `patchwork` package
 
 **Tip for final project**:  Install the `janitor` package and then run the following code.
 
@@ -555,14 +544,12 @@ data_frame_clean
 
 
 
-# Lec 34: Wed 12/4 {#Lec34}
+
+# Lec 35: Fri 12/3 {#Lec35}
 
 ## Announcements
 
 * If you haven't already, download and install [MySQL Workbench](https://dev.mysql.com/downloads/workbench/){target="_blank"}
-* If you need a Final Project Group, Slack DM me with your Section number.
-* PS07 due on Friday. Start today! Also, I added a [hint](PS.html#PS07hint). 
-* No office hours on Friday morning: the SDS faculty have a curriculum meeting.
 
 ## Today's Topics/Activities
 
@@ -608,101 +595,15 @@ If you want to learn more, check out SDS Prof. Ben Baumer's notes [here](https:/
 
 
 
-# Lec 33: Mon 11/25 {#Lec33}
+# Lec 34: Wed 12/1 {#Lec34}
 
 ## Announcements
 
-* I sent an email on Saturday inviting you to the [Fall 2019 SDS192 Intro to Data Science
-](https://github.com/192-2019-09-Fall){target="_blank"} GitHub Classroom Organization. Please accept this invitation.
-* MP2 scores to be posted by Monday after break.
-* PS07 posted, due Friday 12/6 (after break). Notes:
-    + **Start this problem set early!**
-    + **I will not answer your questions until you've been to the Spinelli Center Sun-Thurs 7-9pm tutoring hours first.**
-* Final project [assigned](projects.html#Final)
-
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-* Go over Midterm II
-* Enjoy the break!
-
-
-
-***
-
-
-
-# Lec 32: Fri 11/22 {#Lec32}
-
-## Announcements
-
+* Download and install [MySQL Workbench](https://dev.mysql.com/downloads/workbench/){target="_blank"} before Friday
+* Final project
 * Coding style
     + Check out the [`tidyverse` style guide](https://style.tidyverse.org/){target="_blank"}. First quote: _Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread._
     + Why is it important to write clean code, that is well documented, and actually works? To be mindful of the work you create for your [most important collaborator](https://rmhogervorst.nl/cleancode/blog/2016/05/26/content/post/2016-05-26-your-most-valuable-collaborator-future-you/){target="_blank"}.
-* Say you're excited about a new battery-powered [leaf blower](https://egopowerplus.com/blower-580cfm/){target="_blank"} you just bought. 
-    + What is a [quickstart guide](https://en.wikipedia.org/wiki/Quickstart_guide){target="_blank"} vs 
-    + The regular instruction manual?
-* Do before chalk talk
-    + Login to GitHub
-    + Open the GitHub repo for the [`fivethirtyeight`](https://github.com/rudeboybert/fivethirtyeight){target="_blank"} R package
-
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-GitHub: Theory and terminology
-
-* What is git?
-* What is GitHub?
-* Terminology: Repo, clone, pull, commit/push, local vs remote
-* Important files in any repo: `README.md`, `.gitigore`, and if an RStudio Project `.Rproj`
-* Collaboration tools: Issues, pull requests 
-
-### 2. In-class exercise
-
-Accept the following [GitHub classroom assignment](https://classroom.github.com/a/sgKoAnsq){target="_blank"}
-
-
-
-***
-
-
-
-# Lec 31: Wed 11/20 {#Lec31}
-
-## Announcements
-
-* MP2 update
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-* Yingke's observation about "tidy" data using the example from the [Wide and narrow data](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"} Wikipedia page: the "narrow" data example is not a good example of "tidy" data because the Value variable does not have consistent units (years, lbs/kg, m/feet)
-
-
-### 2. In-class exercise
-
-1. Sec01: Visit from Smith GIS Lab at 11:30am. Slides on how to find [spatial data](https://docs.google.com/presentation/d/18aJLmC1Quv-VCTVc8htQjcH6R3psyMKKOmSpxQea4Ew/edit?ts=5dd56f96#slide=id.g28549d7dc2_0_24){target="_blank"}
-1. Sec02: Get a version of your R Markdown Website deployed on Netlify
-
-
-
-***
-
-
-
-# Lec 30: Mon 11/18 {#Lec30}
-
-## Announcements
-
-* https://twitter.com/CACMmag/status/1461761131639418881?s=20
-* MSA's
-* Go over MP2 feedback from Google From
-* Contribution type
 
 
 ## Today's topics/activities
@@ -745,24 +646,35 @@ Today you'll be building your own R Markdown Website, which is the technology I 
     + If you want to rename your webpage's URL rather than use the default one you've been assigned: Click on "Domain settings" -> Click on the "..." next to your default site name -> Click on "Edit site name" -> Rename your site
 
 
+
 ***
 
 -->
 </div>
-<div id="Lec32" class="section level1">
-<h1>Lec 32: Mon 11/22</h1>
+<div id="Lec33" class="section level1">
+<h1>Lec 33: Mon 11/29</h1>
 <div id="announcements" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>MP3 now due Tuesday 11/30 at 9pm (after break). There will be no extensions past this due date/time.</li>
+<li>SDS data science new faculty candidates on campus this week and next! See “Meet the SDS Data Science New Faculty Candidates!” email sent to SDS student mailing list.</li>
+<li>Final project in groups of 2-3 will be assigned on Wednesday and due Fri 12/17 9pm (last day of exams). You can choose your groupmates.</li>
+<li>To do before chalk talk
+<ul>
+<li>If you haven’t already, create an account on GitHub.com <strong>using your Smith email address</strong>. If you already have a GitHub account, make sure your Smith email is in your Profile settings.</li>
+<li>Open the GitHub repo for the <a href="https://github.com/rudeboybert/fivethirtyeight" target="_blank"><code>fivethirtyeight</code></a> R package</li>
+</ul></li>
 </ul>
 </div>
 <div id="todays-topicsactivities" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk" class="section level3">
 <h3>1. Chalk talk</h3>
+<p>GitHub: Theory and terminology</p>
 <ul>
-<li>None</li>
+<li>What is git?</li>
+<li>What is GitHub?</li>
+<li>Terminology: Repo, local vs remote, clone, pull, commit/push</li>
+<li>Most important files in any repo: <code>README.md</code></li>
 </ul>
 </div>
 <div id="in-class-exercise" class="section level3">
@@ -770,12 +682,15 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 <ul>
 <li>Work on MP3</li>
 </ul>
+<!--
+* Work on PS07
+-->
 <hr />
 </div>
 </div>
 </div>
-<div id="Lec31" class="section level1">
-<h1>Lec 31: Fri 11/19</h1>
+<div id="Lec32" class="section level1">
+<h1>Lec 32: Mon 11/22</h1>
 <div id="announcements-1" class="section level2">
 <h2>Announcements</h2>
 <ul>
@@ -799,9 +714,34 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 </div>
 </div>
+<div id="Lec31" class="section level1">
+<h1>Lec 31: Fri 11/19</h1>
+<div id="announcements-2" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>MP3 now due Tuesday 11/30 at 9pm (after break). There will be no extensions past this due date/time.</li>
+</ul>
+</div>
+<div id="todays-topicsactivities-2" class="section level2">
+<h2>Today’s topics/activities</h2>
+<div id="chalk-talk-2" class="section level3">
+<h3>1. Chalk talk</h3>
+<ul>
+<li>None</li>
+</ul>
+</div>
+<div id="in-class-exercise-2" class="section level3">
+<h3>2. In-class exercise</h3>
+<ul>
+<li>Work on MP3</li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
 <div id="Lec30" class="section level1">
 <h1>Lec 30: Wed 11/17</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack messages</li>
@@ -809,9 +749,9 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 <li>Poll</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-2" class="section level3">
+<div id="chalk-talk-3" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of all <code>sf</code> data frames seen so far in MP3 Project -&gt; <code>examples.Rmd</code></li>
@@ -843,7 +783,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 <span id="cb1-17"><a href="#cb1-17"></a><span class="dv">9</span>  <span class="dv">25005</span>    Bristol County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">561037</span>  <span class="ot">NA</span></span>
 <span id="cb1-18"><a href="#cb1-18"></a><span class="dv">10</span> <span class="dv">25009</span>      Essex County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">783676</span>  <span class="ot">NA</span></span></code></pre></div>
 </div>
-<div id="in-class-exercise-2" class="section level3">
+<div id="in-class-exercise-3" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP3</li>
@@ -854,15 +794,15 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec29" class="section level1">
 <h1>Lec 29: Mon 11/15</h1>
-<div id="announcements-3" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Work on MP3 this Wed, Fri, and Mon before Thanksgiving break.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-3" class="section level2">
+<div id="todays-topicsactivities-4" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-3" class="section level3">
+<div id="chalk-talk-4" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Application_programming_interface" target="_blank">Application Programmer Interfaces</a></li>
@@ -873,7 +813,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-3" class="section level3">
+<div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over code in MP3 folder -&gt; <code>examples.Rmd</code> -&gt; Section 3 on “Choropleth maps using census data”</li>
@@ -885,21 +825,21 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec28" class="section level1">
 <h1>Lec 28: Fri 11/12</h1>
-<div id="announcements-4" class="section level2">
+<div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Grad school panel on Mon 11/22 featuring SDS alumna. More info in <code>#general</code></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-4" class="section level2">
+<div id="todays-topicsactivities-5" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-4" class="section level3">
+<div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Guest lecture by the <a href="http://www.science.smith.edu/sal/" target="_blank">Smith College Spatial Analysis Lab</a>.</li>
 </ul>
 </div>
-<div id="in-class-exercise-4" class="section level3">
+<div id="in-class-exercise-5" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Work on PS06. This is direct practice for MP3.</li>
@@ -911,16 +851,16 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec27" class="section level1">
 <h1>Lec 27: Wed 11/10</h1>
-<div id="announcements-5" class="section level2">
+<div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Check important Slack announcement in <code>#general</code></li>
 <li><a href="projects.html#MP3">Mini-Project 3</a> posted.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-5" class="section level2">
+<div id="todays-topicsactivities-6" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-5" class="section level3">
+<div id="chalk-talk-6" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Example solutions to <code>examples.Rmd</code> Section 1 exercise. Code posted in <code>#mp3</code>; screencast below</li>
@@ -931,7 +871,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/esQrPSJfFkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </div>
-<div id="in-class-exercise-5" class="section level3">
+<div id="in-class-exercise-6" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>While you are free to work in any order you like, I suggest you:</p>
 <ol style="list-style-type: decimal">
@@ -946,7 +886,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec26" class="section level1">
 <h1>Lec 26: Mon 11/8</h1>
-<div id="announcements-6" class="section level2">
+<div id="announcements-7" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Mini-project 3 (MP3) assigned on Wednesday, due Tuesday 11/23 at 9pm.
@@ -964,7 +904,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-6" class="section level2">
+<div id="todays-topicsactivities-7" class="section level2">
 <h2>Today’s topics/activities</h2>
 <ul>
 <li>Download <a href="static/projects/MP3/MP3.zip" download><code>MP3.zip</code></a></li>
@@ -976,7 +916,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 <li>Verify that RStudio opens with MP3 written in the top-right<br />
 <img src="static/images/MP2_2.png" width="100" /></li>
 </ul>
-<div id="chalk-talk-6" class="section level3">
+<div id="chalk-talk-7" class="section level3">
 <h3>1. Chalk talk</h3>
 <!--
 * DO THIS: Have all students install Rcpp package before sf package. Otherwise there might be RStudio fatal errors
@@ -988,7 +928,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 <li><code>sf</code> package for static maps in <code>ggplot2</code> and loading shapefiles. See <a href="https://keen-swartz-3146c4.netlify.com/" target="_blank">Spatial Data Science</a> for more.</li>
 </ul>
 </div>
-<div id="in-class-exercise-6" class="section level3">
+<div id="in-class-exercise-7" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>In MP3 folder -&gt; <code>examples.Rmd</code> -&gt; Section 1 on “Converting data frames to sf objects”, do exercises</li>
@@ -1008,23 +948,23 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec24" class="section level1">
 <h1>Lec 24: Wed 11/3</h1>
-<div id="announcements-7" class="section level2">
+<div id="announcements-8" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack note in <code>#random</code></li>
 <li>No office hours tomorrow (Thursday). Instead, optional in-class office hours on Friday.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-7" class="section level2">
+<div id="todays-topicsactivities-8" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-7" class="section level3">
+<div id="chalk-talk-8" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Practice midterm posted in <code>#midterms</code></li>
 <li>“When would you use left or right join?”</li>
 </ul>
 </div>
-<div id="in-class-exercise-7" class="section level3">
+<div id="in-class-exercise-8" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Open office hours</li>
@@ -1035,16 +975,16 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec23" class="section level1">
 <h1>Lec 23: Mon 11/1</h1>
-<div id="announcements-8" class="section level2">
+<div id="announcements-9" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Practice midterm posted on Slack in <code>#midterms</code>; we’ll go over solutions on Wednesday</li>
 <li>Midterm II discussion: see <a href="midterms.html#midtermII">midterms</a> page</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-8" class="section level2">
+<div id="todays-topicsactivities-9" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="in-class-exercise-8" class="section level3">
+<div id="in-class-exercise-9" class="section level3">
 <h3>1. In-class exercise</h3>
 <ul>
 <li>Work on MP2</li>
@@ -1055,7 +995,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec22" class="section level1">
 <h1>Lec 22: Fri 10/29</h1>
-<div id="announcements-9" class="section level2">
+<div id="announcements-10" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Useful RStudio cheatsheets: Go to RStudio menu bar on top -&gt; Help -&gt; Cheatsheets:
@@ -1065,9 +1005,9 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-9" class="section level2">
+<div id="todays-topicsactivities-10" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-8" class="section level3">
+<div id="chalk-talk-9" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Install and then load the <code>tidyverse</code> package: An <em>umbrella</em> package that installs/loads many useful packages for data science all at once.
@@ -1090,7 +1030,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 <span id="cb2-12"><a href="#cb2-12"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div></li>
 </ul>
 </div>
-<div id="in-class-exercise-9" class="section level3">
+<div id="in-class-exercise-10" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP2</li>
@@ -1101,7 +1041,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec21" class="section level1">
 <h1>Lec 21: Wed 10/27</h1>
-<div id="announcements-10" class="section level2">
+<div id="announcements-11" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Mid-Semester Assessment:
@@ -1117,15 +1057,15 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IRJ2Ac9vI5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </div>
-<div id="todays-topicsactivities-10" class="section level2">
+<div id="todays-topicsactivities-11" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-9" class="section level3">
+<div id="chalk-talk-10" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>None</li>
 </ul>
 </div>
-<div id="in-class-exercise-10" class="section level3">
+<div id="in-class-exercise-11" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP2</li>
@@ -1136,7 +1076,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec20" class="section level1">
 <h1>Lec 20: Mon 10/25</h1>
-<div id="announcements-11" class="section level2">
+<div id="announcements-12" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>MP1 grades posted: See Slack <code>#mp1</code> for details</li>
@@ -1148,9 +1088,9 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-11" class="section level2">
+<div id="todays-topicsactivities-12" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-10" class="section level3">
+<div id="chalk-talk-11" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec19: Why did we use <code>inner_join()</code> for solution to LC 3.20 on computing Available Seat Miles</li>
@@ -1162,7 +1102,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </center>
 <p><br></p>
 </div>
-<div id="in-class-exercise-11" class="section level3">
+<div id="in-class-exercise-12" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above</li>
@@ -1173,7 +1113,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec19" class="section level1">
 <h1>Lec 19: Fri 10/22</h1>
-<div id="announcements-12" class="section level2">
+<div id="announcements-13" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>MP1 returned by Monday</li>
@@ -1190,15 +1130,15 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-12" class="section level2">
+<div id="todays-topicsactivities-13" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-11" class="section level3">
+<div id="chalk-talk-12" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Pseudocode to compute Available Seat Miles</li>
 </ul>
 </div>
-<div id="in-class-exercise-12" class="section level3">
+<div id="in-class-exercise-13" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP2</li>
@@ -1209,7 +1149,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec18" class="section level1">
 <h1>Lec 18: Wed 10/20</h1>
-<div id="announcements-13" class="section level2">
+<div id="announcements-14" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack:
@@ -1221,9 +1161,9 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 <li>Feel free to message me on weekends, I just likely won’t respond.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-13" class="section level2">
+<div id="todays-topicsactivities-14" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-12" class="section level3">
+<div id="chalk-talk-13" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>What is pseudocode?</li>
@@ -1235,7 +1175,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </ul>
 <script src="https://gist.github.com/rudeboybert/968dbf26d5f9407703ae7b24d217af67.js"></script>
 </div>
-<div id="in-class-exercise-13" class="section level3">
+<div id="in-class-exercise-14" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>With your MP2 partner, practice data wranling! Complete ModernDive Learning Check 3.20: Using data in <code>nycflights13</code> package, compute available seat miles for each airline separately:</p>
 <ol style="list-style-type: decimal">
@@ -1249,7 +1189,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec17" class="section level1">
 <h1>Lec 17: Mon 10/18</h1>
-<div id="announcements-14" class="section level2">
+<div id="announcements-15" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><a href="projects.html#MP2">Mini-Project 2</a> posted</li>
@@ -1262,9 +1202,9 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-14" class="section level2">
+<div id="todays-topicsactivities-15" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-13" class="section level3">
+<div id="chalk-talk-14" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Adding to previous lectures:
@@ -1278,7 +1218,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 2021/10 fall note: Focus on inner_join first, do left & right later
 -->
 </div>
-<div id="in-class-exercise-14" class="section level3">
+<div id="in-class-exercise-15" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above</li>
@@ -1289,7 +1229,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec16" class="section level1">
 <h1>Lec 16: Fri 10/15</h1>
-<div id="announcements-15" class="section level2">
+<div id="announcements-16" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Mini-project 2 (MP2) assigned on Monday
@@ -1301,15 +1241,15 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-15" class="section level2">
+<div id="todays-topicsactivities-16" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-14" class="section level3">
+<div id="chalk-talk-15" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li><code>mutate()</code> new columns/variables and <code>arrange()</code> i.e. sort rows</li>
 </ul>
 </div>
-<div id="in-class-exercise-15" class="section level3">
+<div id="in-class-exercise-16" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above</li>
@@ -1320,7 +1260,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec15" class="section level1">
 <h1>Lec 15: Wed 10/13</h1>
-<div id="announcements-16" class="section level2">
+<div id="announcements-17" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>See Slack <code>#general</code> for info about presentation of SDS major</li>
@@ -1335,15 +1275,15 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </ol></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-16" class="section level2">
+<div id="todays-topicsactivities-17" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-15" class="section level3">
+<div id="chalk-talk-16" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li><code>summarize()</code> rows and <code>group_by() %&gt;% summarize()</code></li>
 </ul>
 </div>
-<div id="in-class-exercise-16" class="section level3">
+<div id="in-class-exercise-17" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Put finishing touches on MP1</li>
@@ -1355,22 +1295,22 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec14" class="section level1">
 <h1>Lec 14: Fri 10/8</h1>
-<div id="announcements-17" class="section level2">
+<div id="announcements-18" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>You are responsible for completing the ModernDive readings for Lec13 on the <code>%&gt;%</code> operator and <code>filter()</code> before Wednesday’s lecture</li>
 <li>A shorter PS04 will be assigned on Wednesday, due on Monday 10/18 9pm</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-17" class="section level2">
+<div id="todays-topicsactivities-18" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-16" class="section level3">
+<div id="chalk-talk-17" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>None</li>
 </ul>
 </div>
-<div id="in-class-exercise-17" class="section level3">
+<div id="in-class-exercise-18" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP1</li>
@@ -1381,15 +1321,15 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec13" class="section level1">
 <h1>Lec 13: Wed 10/6</h1>
-<div id="announcements-18" class="section level2">
+<div id="announcements-19" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><a href="https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z" target="_blank">“File not found”</a>; the struggle is real for instructors.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-18" class="section level2">
+<div id="todays-topicsactivities-19" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-17" class="section level3">
+<div id="chalk-talk-18" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Computer file theory
@@ -1406,7 +1346,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-18" class="section level3">
+<div id="in-class-exercise-19" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above</li>
@@ -1417,7 +1357,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec12" class="section level1">
 <h1>Lec 12: Mon 10/4</h1>
-<div id="announcements-19" class="section level2">
+<div id="announcements-20" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Midterm:
@@ -1445,9 +1385,9 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 - colors
 -->
 </div>
-<div id="todays-topicsactivities-19" class="section level2">
+<div id="todays-topicsactivities-20" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-18" class="section level3">
+<div id="chalk-talk-19" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Trend lines via a <code>geom_smooth()</code> layer. Two types:
@@ -1485,7 +1425,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 <span id="cb3-26"><a href="#cb3-26"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
 <span id="cb3-27"><a href="#cb3-27"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</span></code></pre></div>
 </div>
-<div id="in-class-exercise-19" class="section level3">
+<div id="in-class-exercise-20" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Copy the example code above to your <code>classnotes.Rmd</code> and go over the code</li>
@@ -1498,7 +1438,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec11" class="section level1">
 <h1>Lec 11: Fri 10/1</h1>
-<div id="announcements-20" class="section level2">
+<div id="announcements-21" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Open Slack at the start of <strong>every</strong> lecture
@@ -1513,15 +1453,15 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-20" class="section level2">
+<div id="todays-topicsactivities-21" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-19" class="section level3">
+<div id="chalk-talk-20" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Go over practice Midterm I. Boxplot for question 3.c): <img src="index_files/figure-html/unnamed-chunk-7-1.png" width="768" /></li>
 </ul>
 </div>
-<div id="in-class-exercise-20" class="section level3">
+<div id="in-class-exercise-21" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP1</li>
@@ -1532,7 +1472,7 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 </div>
 <div id="Lec10" class="section level1">
 <h1>Lec 10: Wed 9/29</h1>
-<div id="announcements-21" class="section level2">
+<div id="announcements-22" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Sit next to your MP1 partner; your partner was posted in the <code>#mp1</code> channel on Sunday 5pm.</li>
@@ -1548,9 +1488,9 @@ Our department is offering a pre-application review service (PARS) initiative to
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-21" class="section level2">
+<div id="todays-topicsactivities-22" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-20" class="section level3">
+<div id="chalk-talk-21" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of color palettes from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a>
@@ -1562,7 +1502,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 <li>Discuss <a href="projects.html#MP1">Mini-Project 1</a></li>
 </ul>
 </div>
-<div id="in-class-exercise-21" class="section level3">
+<div id="in-class-exercise-22" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>With your partner, build a minimally viable product of your MP1</li>
@@ -1578,7 +1518,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 </div>
 <div id="Lec09" class="section level1">
 <h1>Lec 09: Fri 9/24</h1>
-<div id="announcements-22" class="section level2">
+<div id="announcements-23" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>On Slack <code>#general</code>: new SDS student lounge in McConnell 209</li>
@@ -1592,9 +1532,9 @@ Our department is offering a pre-application review service (PARS) initiative to
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-22" class="section level2">
+<div id="todays-topicsactivities-23" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-21" class="section level3">
+<div id="chalk-talk-22" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of barplots: Exercise on pie charts vs barplots below</li>
@@ -1620,7 +1560,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 <p>Compare that to using barplots. Which do you prefer?</p>
 <p><img src="static/images/barplots.png" width="600" /></p>
 </div>
-<div id="in-class-exercise-22" class="section level3">
+<div id="in-class-exercise-23" class="section level3">
 <h3>3. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1667,7 +1607,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 </div>
 <div id="Lec08" class="section level1">
 <h1>Lec 08: Wed 9/22</h1>
-<div id="announcements-23" class="section level2">
+<div id="announcements-24" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Problem sets:
@@ -1680,9 +1620,9 @@ Our department is offering a pre-application review service (PARS) initiative to
 * What kind of questions are appropriate for `#questions` Slack channel
 -->
 </div>
-<div id="todays-topicsactivities-23" class="section level2">
+<div id="todays-topicsactivities-24" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-22" class="section level3">
+<div id="chalk-talk-23" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Searching the internet effectively: a critical data science tool</li>
@@ -1699,7 +1639,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-23" class="section level3">
+<div id="in-class-exercise-24" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1710,7 +1650,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 </div>
 <div id="Lec07" class="section level1">
 <h1>Lec 07: Mon 9/20</h1>
-<div id="announcements-24" class="section level2">
+<div id="announcements-25" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Office of Disability Services is looking to hire a note taker for the class. If interested, see note in Slack <code>#general</code>.</li>
@@ -1721,9 +1661,9 @@ Our department is offering a pre-application review service (PARS) initiative to
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-24" class="section level2">
+<div id="todays-topicsactivities-25" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-23" class="section level3">
+<div id="chalk-talk-24" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of histograms</li>
@@ -1766,7 +1706,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 <p>Let’s compare the points and the corresponding boxplot side-by-side with the values on the <span class="math inline">\(y\)</span>-axis matching:</p>
 <p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-24" class="section level3">
+<div id="in-class-exercise-25" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1777,7 +1717,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 </div>
 <div id="Lec06" class="section level1">
 <h1>Lec 06: Fri 9/17</h1>
-<div id="announcements-25" class="section level2">
+<div id="announcements-26" class="section level2">
 <h2>Announcements</h2>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
@@ -1787,9 +1727,9 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-25" class="section level2">
+<div id="todays-topicsactivities-26" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-24" class="section level3">
+<div id="chalk-talk-25" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>In-class demo of using RMarkdown features in a <code>classnotes.Rmd</code> file to save lecture code</li>
@@ -1811,7 +1751,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </iframe>
 </div>
 </div>
-<div id="in-class-exercise-25" class="section level3">
+<div id="in-class-exercise-26" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>If you still haven’t been able to “Knit to PDF”, please ask for help</li>
@@ -1823,22 +1763,22 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec05" class="section level1">
 <h1>Lec 05: Wed 9/15</h1>
-<div id="announcements-26" class="section level2">
+<div id="announcements-27" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>PS02 was posted after Monday’s lecture.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-26" class="section level2">
+<div id="todays-topicsactivities-27" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-25" class="section level3">
+<div id="chalk-talk-26" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Overplotting and two approaches for addressing it</li>
 <li>Linegraphs</li>
 </ul>
 </div>
-<div id="in-class-exercise-26" class="section level3">
+<div id="in-class-exercise-27" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Explore the different formatting tools in R Markdown: go to RStudio top menu bar -&gt; Help -&gt; Markdown quick reference.</li>
@@ -1851,15 +1791,15 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec04" class="section level1">
 <h1>Lec 04: Mon 9/13</h1>
-<div id="announcements-27" class="section level2">
+<div id="announcements-28" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Problem Set 02 due next Monday 5pm, now posted under <a href="PS.html">Problem Sets</a></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-27" class="section level2">
+<div id="todays-topicsactivities-28" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-26" class="section level3">
+<div id="chalk-talk-27" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1880,7 +1820,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </tbody>
 </table>
 </div>
-<div id="in-class-exercise-27" class="section level3">
+<div id="in-class-exercise-28" class="section level3">
 <h3>2. In-class exercise</h3>
 <p><strong>In-class battle-testing and practicing for PS02:</strong></p>
 <ol style="list-style-type: decimal">
@@ -1948,7 +1888,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec03" class="section level1">
 <h1>Lec 03: Fri 9/10</h1>
-<div id="announcements-28" class="section level2">
+<div id="announcements-29" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Spinelli Center <a href="https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats." target="_blank">SDS drop-in tutoring hours</a> now open! Get individual attention from SDS majors! In Sabin-Reed 301
@@ -1972,9 +1912,9 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-28" class="section level2">
+<div id="todays-topicsactivities-29" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-27" class="section level3">
+<div id="chalk-talk-28" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
@@ -1987,7 +1927,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-28" class="section level3">
+<div id="in-class-exercise-29" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1998,15 +1938,15 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec02" class="section level1">
 <h1>Lec 02: Wed 9/8</h1>
-<div id="announcements-29" class="section level2">
+<div id="announcements-30" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Problem Set 01 due this Monday 5pm, posted under <a href="PS.html">Problem Sets</a>.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-29" class="section level2">
+<div id="todays-topicsactivities-30" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-28" class="section level3">
+<div id="chalk-talk-29" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Intro to Slack</li>
@@ -2014,7 +1954,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <li>What are R packages?</li>
 </ul>
 </div>
-<div id="in-class-exercise-29" class="section level3">
+<div id="in-class-exercise-30" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -2032,11 +1972,11 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec01" class="section level1">
 <h1>Lec 01: Fri 9/3</h1>
-<div id="announcements-30" class="section level2">
+<div id="announcements-31" class="section level2">
 <h2>Announcements</h2>
 <p>Welcome!</p>
 </div>
-<div id="todays-topicsactivities-30" class="section level2">
+<div id="todays-topicsactivities-31" class="section level2">
 <h2>Today’s topics/activities</h2>
 <ul>
 <li>Course webpage: bit.ly/sds192kim</li>

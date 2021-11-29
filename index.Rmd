@@ -80,54 +80,21 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 <!--
-# Lec 37: Wed 12/11 {#Lec37}
+
+
+
+# Lec 38: Fri 12/10 {#Lec38}
 
 ## Announcements
 
-* SDS Major Fatima Keita is interested in organizing a group for students of color within SDS. She has also put together a [survey](https://www.surveymonkey.com/r/2YZ785Y){target="_blank"} to gather students of color's experiences within SDS courses and the program more generally. The idea is that these experiences would then be anonymously shared with the SDS faculty in hope that we can work to improve inclusivity within the program and curriculum.  
+
 * Comment about ModernDive:
     + Always free, always available at [ModernDive.com](https://moderndive.com/)
     + Thank you for your role in making it happen!
-* Thank you to the Spinelli Center tutors Tina, Elaona, Jordan, and Maggie!
+* Thank you to the Spinelli Center tutors
 * Please fill out teaching evaluations during the break!
-
-## Reading and exam week
-
-* Office hours: By appointment at [bit.ly/meet_with_albert](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"} on Fri 12/13, Tue 12/17, and Wed 12/18
 * Spinelli center tutoring: Alas, no tutoring during reading and finals week.
-* Slack: I'll be checking it periodically. Also, I'm busy on from Thu 12/19 5pm to Friday 12/20 afternoon, so you might not get a response in time if you message me then.
 
-
-## Today's Topics/Activities
-
-* Work on Final Project
-
-
-
-***
-
-
-
-# Lec 36: Mon 12/9 {#Lec36}
-
-## Announcements
-
-* MP3 update
-* All details for final project posted. Due Friday 12/20 at noon.
-
-## Today's Topics/Activities
-
-* Work on Final Project
-
-
-
-***
-
-
-
-# Lec 35: Fri 12/6 {#Lec35}
-
-## Announcements
 
 * Please fill out this feedback [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfHOQeDiWv41Ps1Yin7r1mZaCMou23_hixa9DljmTih9lDrow/viewform){target="_blank"} about PS07 GitHub.
 * By Monday: I will post
@@ -138,6 +105,28 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 ## Today's Topics/Activities
+
+
+
+***
+
+
+
+# Lec 37: Wed 12/8 {#Lec37}
+
+## Announcements
+
+
+
+***
+
+
+
+# Lec 36: Mon 12/6 {#Lec36}
+
+## Announcements
+
+Talk about `patchwork` package
 
 **Tip for final project**:  Install the `janitor` package and then run the following code.
 
@@ -165,14 +154,12 @@ data_frame_clean
 
 
 
-# Lec 34: Wed 12/4 {#Lec34}
+
+# Lec 35: Fri 12/3 {#Lec35}
 
 ## Announcements
 
 * If you haven't already, download and install [MySQL Workbench](https://dev.mysql.com/downloads/workbench/){target="_blank"}
-* If you need a Final Project Group, Slack DM me with your Section number.
-* PS07 due on Friday. Start today! Also, I added a [hint](PS.html#PS07hint). 
-* No office hours on Friday morning: the SDS faculty have a curriculum meeting.
 
 ## Today's Topics/Activities
 
@@ -218,101 +205,15 @@ If you want to learn more, check out SDS Prof. Ben Baumer's notes [here](https:/
 
 
 
-# Lec 33: Mon 11/25 {#Lec33}
+# Lec 34: Wed 12/1 {#Lec34}
 
 ## Announcements
 
-* I sent an email on Saturday inviting you to the [Fall 2019 SDS192 Intro to Data Science
-](https://github.com/192-2019-09-Fall){target="_blank"} GitHub Classroom Organization. Please accept this invitation.
-* MP2 scores to be posted by Monday after break.
-* PS07 posted, due Friday 12/6 (after break). Notes:
-    + **Start this problem set early!**
-    + **I will not answer your questions until you've been to the Spinelli Center Sun-Thurs 7-9pm tutoring hours first.**
-* Final project [assigned](projects.html#Final)
-
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-* Go over Midterm II
-* Enjoy the break!
-
-
-
-***
-
-
-
-# Lec 32: Fri 11/22 {#Lec32}
-
-## Announcements
-
+* Download and install [MySQL Workbench](https://dev.mysql.com/downloads/workbench/){target="_blank"} before Friday
+* Final project
 * Coding style
     + Check out the [`tidyverse` style guide](https://style.tidyverse.org/){target="_blank"}. First quote: _Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread._
     + Why is it important to write clean code, that is well documented, and actually works? To be mindful of the work you create for your [most important collaborator](https://rmhogervorst.nl/cleancode/blog/2016/05/26/content/post/2016-05-26-your-most-valuable-collaborator-future-you/){target="_blank"}.
-* Say you're excited about a new battery-powered [leaf blower](https://egopowerplus.com/blower-580cfm/){target="_blank"} you just bought. 
-    + What is a [quickstart guide](https://en.wikipedia.org/wiki/Quickstart_guide){target="_blank"} vs 
-    + The regular instruction manual?
-* Do before chalk talk
-    + Login to GitHub
-    + Open the GitHub repo for the [`fivethirtyeight`](https://github.com/rudeboybert/fivethirtyeight){target="_blank"} R package
-
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-GitHub: Theory and terminology
-
-* What is git?
-* What is GitHub?
-* Terminology: Repo, clone, pull, commit/push, local vs remote
-* Important files in any repo: `README.md`, `.gitigore`, and if an RStudio Project `.Rproj`
-* Collaboration tools: Issues, pull requests 
-
-### 2. In-class exercise
-
-Accept the following [GitHub classroom assignment](https://classroom.github.com/a/sgKoAnsq){target="_blank"}
-
-
-
-***
-
-
-
-# Lec 31: Wed 11/20 {#Lec31}
-
-## Announcements
-
-* MP2 update
-
-## Today's topics/activities
-
-### 1. Chalk talk
-
-* Yingke's observation about "tidy" data using the example from the [Wide and narrow data](https://en.wikipedia.org/wiki/Wide_and_narrow_data){target="_blank"} Wikipedia page: the "narrow" data example is not a good example of "tidy" data because the Value variable does not have consistent units (years, lbs/kg, m/feet)
-
-
-### 2. In-class exercise
-
-1. Sec01: Visit from Smith GIS Lab at 11:30am. Slides on how to find [spatial data](https://docs.google.com/presentation/d/18aJLmC1Quv-VCTVc8htQjcH6R3psyMKKOmSpxQea4Ew/edit?ts=5dd56f96#slide=id.g28549d7dc2_0_24){target="_blank"}
-1. Sec02: Get a version of your R Markdown Website deployed on Netlify
-
-
-
-***
-
-
-
-# Lec 30: Mon 11/18 {#Lec30}
-
-## Announcements
-
-* https://twitter.com/CACMmag/status/1461761131639418881?s=20
-* MSA's
-* Go over MP2 feedback from Google From
-* Contribution type
 
 
 ## Today's topics/activities
@@ -355,9 +256,48 @@ Today you'll be building your own R Markdown Website, which is the technology I 
     + If you want to rename your webpage's URL rather than use the default one you've been assigned: Click on "Domain settings" -> Click on the "..." next to your default site name -> Click on "Edit site name" -> Rename your site
 
 
+
 ***
 
 -->
+
+
+
+
+# Lec 33: Mon 11/29 {#Lec33}
+
+## Announcements
+
+* SDS data science new faculty candidates on campus this week and next! See "Meet the SDS Data Science New Faculty Candidates!" email sent to SDS student mailing list.
+* Final project in groups of 2-3 will be assigned on Wednesday and due Fri 12/17 9pm (last day of exams). You can choose your groupmates. 
+* To do before chalk talk
+    + If you haven't already, create an account on GitHub.com **using your Smith email address**. If you already have a GitHub account, make sure your Smith email is in your Profile settings.
+    + Open the GitHub repo for the [`fivethirtyeight`](https://github.com/rudeboybert/fivethirtyeight){target="_blank"} R package
+
+
+## Today's topics/activities
+
+### 1. Chalk talk
+
+GitHub: Theory and terminology
+
+* What is git?
+* What is GitHub?
+* Terminology: Repo, local vs remote, clone, pull, commit/push
+* Most important files in any repo: `README.md`
+
+### 2. In-class exercise
+
+* Work on MP3
+
+<!--
+* Work on PS07
+-->
+
+
+***
+
+
 
 
 
@@ -366,7 +306,6 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 ## Announcements
 
 * MP3 now due Tuesday 11/30 at 9pm (after break). There will be no extensions past this due date/time.
-
 
 ## Today's topics/activities
 
@@ -377,7 +316,6 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 ### 2. In-class exercise
 
 * Work on MP3
-
 
 
 ***

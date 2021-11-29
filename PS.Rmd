@@ -44,9 +44,10 @@ h1{font-weight: 400;}
 
 
 <!--
+
 # Problem set 07 {#PS07}
 
-*Assigned Friday 11/25, due Friday 12/6 at 10:45am on GitHub Classroom.*
+*Due Monday 12/6 9pm*
 
 1. **Start this problem set early!** That way you will have time to get help at the Spinelli Center tutoring hours if you run into trouble.
 1. **I will not answer your questions until you've been to the Spinelli Center Sun-Thurs 7-9pm tutoring hours first.**
@@ -91,6 +92,7 @@ How do I know if I've successfully completed the assignment?
 ***
 
 -->
+
 
 
 
