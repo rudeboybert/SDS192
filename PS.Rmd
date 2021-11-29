@@ -77,6 +77,7 @@ For this problem set you will start building a GitHub portfolio of work. You nee
 1. Knit `README.Rmd` to produce `README.md` which is your repo's cover page
 1. Put your work on GitHub. See screencast:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4-9z_MIGvXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## 3. Submission
