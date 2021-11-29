@@ -271,8 +271,9 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 * Candidates for two new SDS faculty will be on campus this week and next
     + For data science position: See "Meet the SDS Data Science New Faculty Candidates!" email sent to SDS student mailing list. 
     + For joint MTH/SDS position: To be confirmed soon.
-* Accordingly, office hours are highly inconsistent and variable this week. However, they will always be confirmed and posted at least 24h in advance. 
-* Final project in groups of 2-3 will be assigned on Wednesday and due Fri 12/17 9pm (last day of exams). You can choose your groupmates. 
+    + Because of this office hours are highly inconsistent and variable this week. However, they will always be confirmed and posted at least 24h in advance. 
+* Final project in groups of 2-3 will be assigned on Wednesday and due Fri 12/17 9pm (last day of exams). You can choose your group. 
+* PS07 posted
 * To do before chalk talk
     + If you haven't already, create an account on GitHub.com **using your Smith email address**. If you already have a GitHub account, make sure your Smith email is in your Profile settings.
     + Open the GitHub repo for the [`fivethirtyeight`](https://github.com/rudeboybert/fivethirtyeight){target="_blank"} R package
@@ -291,11 +292,8 @@ GitHub: Theory and terminology
 
 ### 2. In-class exercise
 
-* Work on MP3
-
-<!--
+* Work on MP3 (due tomorrow at 9pm), don't forget to submit your Peer Evaluation Google Form.
 * Work on PS07
--->
 
 
 ***

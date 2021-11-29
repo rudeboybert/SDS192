@@ -43,12 +43,51 @@ h1{font-weight: 400;}
 ***
 
 
-<!--
 
 # Problem set 07 {#PS07}
 
 *Due Monday 12/6 9pm*
 
+For this problem set you will start building a GitHub portfolio of work. You need to complete all steps to receive full credit.
+
+
+
+## 1. Edit your public GitHub profile
+
+**Learning Goal**: Edit your public GitHub profile (if you haven't already). Think of this as a professional profile like a LinkedIn profile. Refer to Sec02 in-class data assistant Marium Tapal's [profile](https://github.com/mariumtapal){target="_blank"} as an example.
+
+1. Add your name
+1. Change your default profile picture. It doesn't have to include your face if you're not comfortable.
+1. Add whatever other info to your profile you feel comfortable being public.
+
+
+## 2. Create your first repo with a README
+
+**Learning Goal**: Build your first README. Think of this as a cover page to market your project.
+
+1. Get started
+    1. Download the following zip file: <a href="static/PS/PS07.zip" download>`PS07.zip`</a>.
+    1. Move `PS07.zip` to your SDS192 folder on your computer
+    1. Unzip `PS07.zip`. Windows users: be sure to "Extract all"
+    1. In the resulting PS07 folder, double-click the RStudio Project `PS07.Rproj` icon. For this PS you sound **always** work in "PS07" RStudio Project mode
+1. Change the default contents of `README.Rmd` to anything you like. In particular look at RStudio menu bar -> Help -> Markdown Quick Reference for markdown formatting tips.
+    1. Title
+    1. Section names
+    1. The plot (change it to be a `ggplot2` plot)
+1. Knit `README.Rmd` to produce `README.md` which is your repo's cover page
+1. Put your work on GitHub. See screencast:
+
+
+
+## 3. Submission
+
+Submit a link to this GitHub repository using this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSf8wZIviqbDpf0jtecTGgg35LnKTvnW26tDZMhh1OB59bFexQ/viewform){target="_blank"}. 
+
+
+
+
+
+<!--
 1. **Start this problem set early!** That way you will have time to get help at the Spinelli Center tutoring hours if you run into trouble.
 1. **I will not answer your questions until you've been to the Spinelli Center Sun-Thurs 7-9pm tutoring hours first.**
     + It will be very difficult for me to help 68 students individually. Please help me spread the workload. If you're stuck, please get help at the Spinelli Center first: that way they can handle the easy questions, leaving only the harder ones for me. I will be asking you if you've already gone to the Spinelli Center first before answering any of your questions.
@@ -86,14 +125,11 @@ How do I know if I've successfully completed the assignment?
 
 1. Go to the [SDS192 Intro to Data Science](https://github.com/192-2019-09-Fall) GitHub organization and make sure you see your `learning-github-YOUR_GITHUB_USER_NAME` folder.
 1. Then go to your `learning-github-YOUR_GITHUB_USER_NAME` folder and then look at your README. There should be the line "This is a line from RStudio" on it. 
+-->
 
 
 
 ***
-
--->
-
-
 
 
 
