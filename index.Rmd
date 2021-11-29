@@ -268,7 +268,10 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 
 ## Announcements
 
-* SDS data science new faculty candidates on campus this week and next! See "Meet the SDS Data Science New Faculty Candidates!" email sent to SDS student mailing list.
+* Candidates for two new SDS faculty will be on campus this week and next
+    + For data science position: See "Meet the SDS Data Science New Faculty Candidates!" email sent to SDS student mailing list. 
+    + For joint MTH/SDS position: To be confirmed soon.
+* Accordingly, office hours are highly inconsistent and variable this week. However, they will always be confirmed and posted at least 24h in advance. 
 * Final project in groups of 2-3 will be assigned on Wednesday and due Fri 12/17 9pm (last day of exams). You can choose your groupmates. 
 * To do before chalk talk
     + If you haven't already, create an account on GitHub.com **using your Smith email address**. If you already have a GitHub account, make sure your Smith email is in your Profile settings.
