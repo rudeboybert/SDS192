@@ -768,51 +768,67 @@ Things to remember for next time:
 <div id="Final" class="section level1">
 <h1>Final Project</h1>
 <p><em>Assigned on Wed Dec 1, due Fri 12/17 at 9pm.</em></p>
+<div id="basic-outline-3" class="section level2">
+<h2>Basic outline</h2>
+<p>Using an R Markdown website you will answer any scientific question of your choosing using data:</p>
+<ul>
+<li>Your website must at least have the following two pages:
+<ul>
+<li>An intro <code>index.html</code> page in blog-post style that summarizes your work. It should have
+<ol style="list-style-type: decimal">
+<li>One visualization that best summarizes your work.</li>
+<li>No more than 200 words of text</li>
+</ol></li>
+<li>A second <code>more_info.html</code> page going more in-depth for people who want more details. In should have
+<ol style="list-style-type: decimal">
+<li>Between 2-3 more visualizations.</li>
+<li>No more than 500 words of text</li>
+</ol></li>
+</ul></li>
+<li>Publishing to the web:
+<ul>
+<li>If your data/analysis is not sensitive or private in nature, publish your R Markdown Website using Netlify Drop</li>
+<li>If your data/analysis is sensitive or private in nature, please DM me on Slack and we’ll work something out.</li>
+</ul></li>
+</ul>
+<p>Here are some arbitrarily chosen examples. Note the topics covered this semester have shifted.</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://ctimmons1.github.io/webpage/index.html" target="_blank">America’s Leaky Pipes: The Environmental Impact of Oil Pipeline Spills</a></li>
+<li><a href="https://estherrose21.github.io/webpage/index.html" target="_blank">💵The Gigantic Gender Pay Gap💵</a></li>
+<li><a href="https://jcflohr.github.io/final-project/index.html" target="_blank">Putting Food on the Table in 50 States</a></li>
+<li><a href="https://lepidopterane-atsmith.github.io/sds192fp/index.html" target="_blank">Who Are The Noisemakers? | Analyzing the Loudest Parties in NYC</a></li>
+<li><a href="https://loblatt.github.io/final_project_webpage/index.html" target="_blank">Bigfoot: True or Real?</a></li>
+</ol>
+</div>
+<div id="getting-started-3" class="section level2">
+<h2>Getting started</h2>
+<ol style="list-style-type: decimal">
+<li>Join <code>#final_project</code> Slack channel</li>
+<li>Create groups of 2-3 students from any section and post in Google Sheet in <code>#final_project</code> channel in Slack</li>
+<li>Finding data. This is often the hardest part of such projects and I suggest you <strong>do this as soon as possible</strong>
+<ul>
+<li>Ideally, determine a research question you are interested in. Then find this data.</li>
+<li>Often however you can’t find data that answers your desired question, but rather only some modified form of your question. This is fine, done is better than perfect.</li>
+<li>If you are still stuck, find data first and then reverse-engineer a question. Not ideal, but again, done is better than perfect.</li>
+<li>Use Smith College data resources. In particular:
+<ul>
+<li>The Spinelli Center <a href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr" target="_blank">Data Research and Statistics Counselor</a> Osman Keshawarz</li>
+<li>The <a href="http://www.science.smith.edu/sal/" target="_blank">Spatial Analysis Lab</a></li>
+</ul></li>
+</ul></li>
+<li>Setup the Final Project RStudio Project
+<ol style="list-style-type: decimal">
+<li>Download the following zip file: <a href="static/projects/final_project.zip" download><code>final_project.zip</code></a></li>
+<li>Move <code>final_project.zip</code> to your SDS192 folder on your computer</li>
+<li>Unzip <code>final_project.zip</code>. Windows users: be sure to “Extract all”</li>
+<li>In the resulting <code>final_project</code> folder, double-click the RStudio Project <code>final_project.Rproj</code> icon to open in RStudio Project mode</li>
+</ol></li>
+</ol>
+</div>
+<div id="submitting-the-project" class="section level2">
+<h2>Submitting the project</h2>
+<p>Coming soon</p>
 <!--
-In groups of 2-3 students of your choosing you will answer any scientific question of your choosing using data. Your submission will be an RStudio Project of an RMarkdown Website. 
-
-* Use any data of your choosing that answers your scientific question. 
-* Your website must at least have the following two pages:
-    + An intro `index.html` page in blog-post style that summarizes your work. It should have
-        1. One visualization that best summarizes your work.
-        1. No more than 200 words of text
-    + A second `more_info.html` page going more in-depth for people who want more details. In should have
-        1. Between 2-3 more visualizations.
-        1. No more than 500 words of text
-* Publishing to the web: 
-    + If your data/analysis is not sensitive or private in nature, publish your R Markdown Website on the web and post the URL in the Groups Google Sheet in the `#final_project` Slack team.
-    + If your data/analysis is sensitive or private in nature, please DM me on Slack and we'll work something out.
-
-Here are some arbitrarily chosen examples:
-
-1. [America’s Leaky Pipes: The Environmental Impact of Oil Pipeline Spills](https://ctimmons1.github.io/webpage/index.html){target="_blank"}
-1. [💵The Gigantic Gender Pay Gap💵](https://estherrose21.github.io/webpage/index.html){target="_blank"}
-1. [Putting Food on the Table in 50 States](https://jcflohr.github.io/final-project/index.html){target="_blank"}
-1. [Who Are The Noisemakers? | Analyzing the Loudest Parties in NYC](https://lepidopterane-atsmith.github.io/sds192fp/index.html){target="_blank"}
-1. [Bigfoot: True or Real?](https://loblatt.github.io/final_project_webpage/index.html){target="_blank"}
-
-
-## Doing the project
-
-1. Choose groups of 2-3 members then fill in your group information in the Google Sheet in the `#final_project` Slack channel. If you need a group, DM me on Slack with your Section number.
-1. **Do this as soon as possible**: Finding data is often the hardest part of such projects
-    + Ideally, determine a research question you are interested in. Then find this data.
-    + Often however you can't find data that answers your desired question, but rather only some modified form of your question. This is fine, done is better than perfect.
-    + If you are still stuck, find data first and then reverse-engineer a question. Not ideal, but again, done is better than perfect.
-    + Use Smith College data resources. In particular:
-        + The Spinelli Center [Data Research and Statistics Counselor](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"} Osman Keshawarz
-        + The [Spatial Analysis Lab](http://www.science.smith.edu/sal/){target="_blank"}
-1. Setup the Final Project RStudio Project
-    1. Download <a href="static/projects/final_project.zip" download>`final_project.zip`</a>.
-    1. Move `final_project.zip` to wherever you keep your 192 files.
-        + macOS users: Double-click `final_project.zip` to extract the `final_project` folder.
-        + Windows users: Extract the contents of `final_project.zip` to a folder.
-    1. Double click the `final_project.Rproj` file to open RStudio in "Project mode"
-
-
-
-## Submitting the project
-
 * **Group leader only**:
     1. On Moodle: Submit a `.zip` archive file of the RStudio Project folder necessary to build your RMarkdown Website. There will be only one submission per group.
     1. In the `#final_project` Slack team, go to the Groups Google Sheet, then post the URL to your RMarkdown Website published online (as long as data/work is not private or sensitive in nature).  
@@ -822,36 +838,48 @@ Here are some arbitrarily chosen examples:
 * **Individually**:
     1. Fill out the [peer evaluation](https://docs.google.com/forms/d/e/1FAIpQLSfRfVN58QWyv2LRB865eA-JdCIWm-AUUx959cdGBgFo0Wk5MA/viewform){target="_blank"} Google Form.
     1. Fill out the [exit survey](https://docs.google.com/forms/d/e/1FAIpQLSdcVrUjjPEAM587UKIG_T7Nv7vsb351lcWL8SLZUw3qJ9UWAA/closedform){target="_blank"} Google Form.
-
-
-
-## Grading rubric
-
-1. **Baseline:** Projects that do not satisfy all "baseline" criteria can expect to get a grade of less than 8/10.
-    + The RMarkdown Website must "build" correctly when someone else builds it. *This is known as producing reproducible research.*
-    + Wherever possible, all visualizations have appropriately labeled axes, legends, titles, etc and are mindful of the [ink/information ratio](https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842){target="_blank"}.    
-    + Your code is clean, commented, and well-indented. See both your MP2 and MP3 video feedback for individualized feedback and the [tidyverse style guide](https://style.tidyverse.org/){target="_blank"}. *This is being mindful of the work you create for collaborators, including future you.*
-    + From the perspective of both the report reader and potential collaborators who might reproduce your work, no "superfluous" and non-informative inputs or outputs are included. *This is being mindful of the work you create for readers and collaborators, including future you.* Ex: Do not
-        1. Include my original instructions in the report.
-        1. Include "Data dumps" like showing all the contents of a 1000 row data frame.
-        1. Submit files in your RStudio Project folder that aren't relevant to your analysis. 
-    + All accompanying write-ups are coherent and respect the word count limit.
-    + You submit both your peer evaluations and your exit survey responses.
-1. **Minimally viable product:** Grade: 8/10.
-    + Satisfy all "baseline" criteria.
-    + Complete the intro `index.html` blog-post page.
-1. **Due diligence:** Grade: 9/10.
-    + Satisfy all "baseline" and "minimally viable product" criteria.
-    + Complete the second `more_info.html` page with 1 visualization.
-1. **Point of diminishing returns:** Grade: 9.5/10.
-    + Satisfy all "baseline", "minimally viable product", and "due diligence" criteria.
-    + Complete the second `more_info.html` page with 2-3 visualizations.
-1. **Polishing the cannonball**: Grade: 10/10
-    + Satisfy all "baseline", "minimally viable product", "due diligence", and "point of diminishing returns" criteria.
-    + Impress me. Yes, this criteria is deliberately vague. However, you've had the semester to get to know me and I've given you all individualized and personalized feedback for three mini-projects. Think of this is as an exercise in "knowing your audience," a skill that is part art and part science.
-
-    
 -->
+</div>
+<div id="grading-rubric" class="section level2">
+<h2>Grading rubric</h2>
+<ol style="list-style-type: decimal">
+<li><strong>Baseline:</strong> Projects that do not satisfy all “baseline” criteria can expect to get a grade of less than 8/10.
+<ul>
+<li>The RMarkdown Website must “build” correctly when someone else builds it. <em>This is known as producing reproducible research.</em></li>
+<li>Wherever possible, all visualizations have appropriately labeled axes, legends, titles, etc and are mindful of the <a href="https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842" target="_blank">ink/information ratio</a>.<br />
+</li>
+<li>Your code is clean, commented, and well-indented.</li>
+<li>From the perspective of both the report reader and potential collaborators who might reproduce your work, no “superfluous” and non-informative inputs or outputs are included. <em>This is being mindful of the work you create for readers and collaborators, including future you.</em> Ex: Do not
+<ol style="list-style-type: decimal">
+<li>Include my original instructions in the report.</li>
+<li>Include “Data dumps” like showing all the contents of a 1000 row data frame.</li>
+<li>Submit files in your RStudio Project folder that aren’t relevant to your analysis.</li>
+</ol></li>
+<li>All accompanying write-ups are coherent and respect the word count limit.</li>
+<li>You submit both your peer evaluations and your exit survey responses.</li>
+</ul></li>
+<li><strong>Minimally viable product:</strong> Grade: 8/10.
+<ul>
+<li>Satisfy all “baseline” criteria.</li>
+<li>Complete the intro <code>index.html</code> blog-post page.</li>
+</ul></li>
+<li><strong>Due diligence:</strong> Grade: 9/10.
+<ul>
+<li>Satisfy all “baseline” and “minimally viable product” criteria.</li>
+<li>Complete the second <code>more_info.html</code> page with 1 visualization.</li>
+</ul></li>
+<li><strong>Point of diminishing returns:</strong> Grade: 9.5/10.
+<ul>
+<li>Satisfy all “baseline”, “minimally viable product”, and “due diligence” criteria.</li>
+<li>Complete the second <code>more_info.html</code> page with 2-3 visualizations.</li>
+</ul></li>
+<li><strong>Polishing the cannonball</strong>: Grade: 10/10
+<ul>
+<li>Satisfy all “baseline”, “minimally viable product”, “due diligence”, and “point of diminishing returns” criteria.</li>
+<li>Impress me by using the tools you’ve learned this semester. Yes, this criteria is deliberately vague.</li>
+</ul></li>
+</ol>
+</div>
 </div>
 
 

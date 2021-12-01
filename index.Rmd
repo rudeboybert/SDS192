@@ -217,9 +217,6 @@ If you want to learn more, check out SDS Prof. Ben Baumer's notes [here](https:/
 ## Announcements
 
 * Download and install [MySQL Workbench](https://dev.mysql.com/downloads/workbench/){target="_blank"} before Friday's lecture
-<!-- 
-* Final project [posted](projects.html#final)
--->
 * Before chalk talk:
     1. Download the following zip file: <a href="static/example_webpage.zip" download>`example_webpage.zip`</a>
     1. Move `example_webpage.zip` to your SDS192 folder on your computer
