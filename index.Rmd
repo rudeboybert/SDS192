@@ -126,6 +126,11 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
+* Coding style
+    + Check out the [`tidyverse` style guide](https://style.tidyverse.org/){target="_blank"}. First quote: _Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread._
+    + Why is it important to write clean code, that is well documented, and actually works? To be mindful of the work you create for your [most important collaborator](https://rmhogervorst.nl/cleancode/blog/2016/05/26/content/post/2016-05-26-your-most-valuable-collaborator-future-you/){target="_blank"}.
+
+
 Talk about `patchwork` package
 
 **Tip for final project**:  Install the `janitor` package and then run the following code.
@@ -203,24 +208,31 @@ If you want to learn more, check out SDS Prof. Ben Baumer's notes [here](https:/
 
 ***
 
+-->
+
 
 
 # Lec 34: Wed 12/1 {#Lec34}
 
 ## Announcements
 
-* Download and install [MySQL Workbench](https://dev.mysql.com/downloads/workbench/){target="_blank"} before Friday
-* Final project
-* Coding style
-    + Check out the [`tidyverse` style guide](https://style.tidyverse.org/){target="_blank"}. First quote: _Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread._
-    + Why is it important to write clean code, that is well documented, and actually works? To be mindful of the work you create for your [most important collaborator](https://rmhogervorst.nl/cleancode/blog/2016/05/26/content/post/2016-05-26-your-most-valuable-collaborator-future-you/){target="_blank"}.
-
+* Download and install [MySQL Workbench](https://dev.mysql.com/downloads/workbench/){target="_blank"} before Friday's lecture
+<!-- 
+* Final project [posted](projects.html#final)
+-->
+* Before chalk talk:
+    1. Download the following zip file: <a href="static/example_webpage.zip" download>`example_webpage.zip`</a>
+    1. Move `example_webpage.zip` to your SDS192 folder on your computer
+    1. Unzip `example_webpage.zip`. Windows users: be sure to "Extract all"
+    1. In the resulting `example_webpage` folder, double-click the RStudio Project `example_webpage.Rproj` icon to open RStudio Project mode
+    
 
 ## Today's topics/activities
 
+
 ### 1. Chalk talk
 
-You'll be submitting your final project using [R Markdown Websites](https://rmarkdown.rstudio.com/lesson-13.html){target="_blank"} and if your project has no sensitive data, publishing it on the web as well. Background: 
+`example_webpage` is a portion of the [R Markdown Websites](https://rmarkdown.rstudio.com/lesson-13.html){target="_blank"} code for this course webpage: 
 
 * Inputs: `.Rmd` and `_site.yml` files
 * Output: webpage in `docs/` folder, in particular the `index.html` mainpage
@@ -229,19 +241,15 @@ You'll be submitting your final project using [R Markdown Websites](https://rmar
 
 ### 2. In-class exercise
 
-Today you'll be building your own R Markdown Website, which is the technology I use for this 192 webpage. Then you'll be deploying it to the web using [Netlify drop](https://app.netlify.com/drop){target="_blank"}.
+Today you'll modify the source code for `example_webpage` and then deploying this webpage using [Netlify drop](https://app.netlify.com/drop){target="_blank"}:
 
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-LRlQ_jaLAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 </br>
 
-1. Setup the RStudio Project for an example R Markdown Website
-    + Download the RStudio Project <a href="static/example_webpage.zip" download>`example_webpage.zip`</a>
-    + Move `example_webpage.zip` to where you keep your 192 work, then unzip it to open the RStudio Project folder
-    + Click on the `example_webpage.Rproj` RStudio Project file to open RStudio in "Project Mode". **You must do this.**
 1. Create an account on netlify.com using your GitHub account
-    + Log into [GitHub](https://github.com/){target="_blank"} first
+    + Log into [GitHub](https://github.com/){target="_blank"} first. If you haven't created an account, do so using **using your Smith email address**.
     + Sign into [Netlify](https://app.netlify.com/){target="_blank"} using your GitHub account
 1. Change and build your website locally (on your computer)
     + In `index.Rmd` change the `author` from `"Albert Y. Kim"` to you and change the `title`
@@ -258,9 +266,6 @@ Today you'll be building your own R Markdown Website, which is the technology I 
 
 
 ***
-
--->
-
 
 
 
@@ -296,9 +301,8 @@ GitHub: Theory and terminology
 * Work on PS07
 
 
+
 ***
-
-
 
 
 
@@ -317,6 +321,7 @@ GitHub: Theory and terminology
 ### 2. In-class exercise
 
 * Work on MP3
+
 
 
 ***
