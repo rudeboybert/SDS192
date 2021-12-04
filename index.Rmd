@@ -87,16 +87,20 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
+* No Alb
 
-* Comment about ModernDive:
-    + Always free, always available at [ModernDive.com](https://moderndive.com/)
-    + Thank you for your role in making it happen!
-* Thank you to the Spinelli Center tutors
-* Please fill out teaching evaluations during the break!
-* Spinelli center tutoring: Alas, no tutoring during reading and finals week.
+## Today's Topics/Activities
+
+### 1. In-class exercise
+
+* Work on Final Project
 
 
-* Please fill out this feedback [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfHOQeDiWv41Ps1Yin7r1mZaCMou23_hixa9DljmTih9lDrow/viewform){target="_blank"} about PS07 GitHub.
+
+
+
+
+
 * By Monday: I will post
     + Precise grading rubric for final project
     + Submission method for final project
@@ -116,9 +120,24 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
+* ModernDive will always be free, always available at [ModernDive.com](https://moderndive.com/)
+* Spinelli center notes:
+    + No tutoring during reading and finals week: Fri 12/10 is last day.
+    + Thank you to the in-class data assistants Marium, Emma, Sunni, and Swaha
+    + Thank you to the Spinelli Center tutors
+* Reflection exercise
+* Fill out course evaluations
+
+
+## Today's Topics/Activities
+
+### 1. In-class exercise
+
+* Work on Final Project
 
 
 ***
+-->
 
 
 
@@ -126,28 +145,48 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 ## Announcements
 
-* Coding style
+* Go over final project submission instructions
+* Wednesday is final lecture I'll be present. On Friday the in-class data assistants will still be present.
+* Note on coding style
     + Check out the [`tidyverse` style guide](https://style.tidyverse.org/){target="_blank"}. First quote: _Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread._
     + Why is it important to write clean code, that is well documented, and actually works? To be mindful of the work you create for your [most important collaborator](https://rmhogervorst.nl/cleancode/blog/2016/05/26/content/post/2016-05-26-your-most-valuable-collaborator-future-you/){target="_blank"}.
 
 
-Talk about `patchwork` package
+## Today's Topics/Activities
 
-**Tip for final project**:  Install the `janitor` package and then run the following code.
+### 1. In-class exercise
+
+* Test two useful packages below: 
+    + `patchwork`: Combine two ggplots together
+    + `janitor`: Clean-up messy variable names
+* Work on Final Project
 
 ```{r, eval=FALSE}
 library(tidyverse)
-library(janitor)
 
-# Say we have a data frame with really messy names:
+# 1. Combine two ggplots together using patchwork package:
+library(patchwork)
+
+plot_1 <- ggplot(mtcars) + geom_point(aes(mpg, disp))
+plot_2 <- ggplot(mtcars) + geom_boxplot(aes(gear, disp, group = gear))
+
+# Side-by-side:
+plot_1 + plot_2
+
+# On top of each other:
+plot_1 / plot_2
+
+
+# 2. Say we have a data frame with really messy names:
 data_frame_ugly <- tibble(
   `asdf ?!? qwerty%` = c(1, 2),
-  variable.name = c(2,1)
+  variable.name...NAMES = c(2,1)
 )
 data_frame_ugly
 
 # You can clean them very easily using the clean_names() function from the 
-# janitor package!
+# janitor package
+library(janitor)
 data_frame_clean <- data_frame_ugly %>% 
   clean_names()
 data_frame_clean
@@ -156,9 +195,6 @@ data_frame_clean
 
 
 ***
-
--->
-
 
 
 
