@@ -146,9 +146,9 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ## Announcements
 
 * Go over final project submission instructions
-* Wednesday is final lecture I'll be present. On Friday the in-class data assistants will still be present.
+* Wednesday is final lecture I'll be present; on Friday the Spinelli data assistants will hold in-class office hours.
 * Note on coding style
-    + Check out the [`tidyverse` style guide](https://style.tidyverse.org/){target="_blank"}. First quote: _Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread._
+    + Check out the [`tidyverse` style guide](https://style.tidyverse.org/){target="_blank"}.
     + Why is it important to write clean code, that is well documented, and actually works? To be mindful of the work you create for your [most important collaborator](https://rmhogervorst.nl/cleancode/blog/2016/05/26/content/post/2016-05-26-your-most-valuable-collaborator-future-you/){target="_blank"}.
 
 

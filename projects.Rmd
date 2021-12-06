@@ -384,20 +384,10 @@ Here are some arbitrarily chosen examples. Note the topics covered this semester
 
 ## Submitting the project
 
-Coming soon
-
-<!--
-* **Group leader only**:
-    1. On Moodle: Submit a `.zip` archive file of the RStudio Project folder necessary to build your RMarkdown Website. There will be only one submission per group.
-    1. In the `#final_project` Slack team, go to the Groups Google Sheet, then post the URL to your RMarkdown Website published online (as long as data/work is not private or sensitive in nature).  
-    You have two options for publishing your website, both being equally acceptable. Either:
-        * *The beginner-friendly way:* Using Netlify drag-and-drop as we saw in Lec30
-        * *The more advanced, but more efficient way:* Committing and pushing your RStudio Project to Github and publishing the content of your `docs/` folder to GitHub pages: Go to your repo's Settings page and change the GitHub Pages source link like [this](https://github.blog/wp-content/uploads/2016/08/d516076e-640c-11e6-8086-ce1d246a87d2.png?w=1460){target="_blank"}. For example, this is how I publish this course webpage.
-* **Individually**:
-    1. Fill out the [peer evaluation](https://docs.google.com/forms/d/e/1FAIpQLSfRfVN58QWyv2LRB865eA-JdCIWm-AUUx959cdGBgFo0Wk5MA/viewform){target="_blank"} Google Form.
-    1. Fill out the [exit survey](https://docs.google.com/forms/d/e/1FAIpQLSdcVrUjjPEAM587UKIG_T7Nv7vsb351lcWL8SLZUw3qJ9UWAA/closedform){target="_blank"} Google Form.
--->
-
+1. Group leader only: Submit a `final_project.zip` file of your entire RStudio Project folder on [moodle](https://moodle.smith.edu/course/view.php?id=42274){target="_blank"}.
+1. All group members:
+    + Fill out the peer evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSegFq2mD2-twioEq3aniLRnAJQR90vJuKY1VJzN3_ZP0KGQ3g/viewform){target="_blank"}. Note you will need the Netlify Drop URL of the website you deployed on the web (unless your project involves sensitive non-public data).
+    + Fill out [exit survey](https://docs.google.com/forms/d/e/1FAIpQLSdcVrUjjPEAM587UKIG_T7Nv7vsb351lcWL8SLZUw3qJ9UWAA/closedform){target="_blank"} Google Form
 
 
 ## Grading rubric
