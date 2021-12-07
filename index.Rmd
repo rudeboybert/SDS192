@@ -113,6 +113,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 ***
+-->
 
 
 
@@ -121,12 +122,13 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ## Announcements
 
 * ModernDive will always be free, always available at [ModernDive.com](https://moderndive.com/)
+* Tomorrow during lecture the in-class data assistants will hold office hours
 * Spinelli center notes:
-    + No tutoring during reading and finals week: Fri 12/10 is last day.
+    + No tutoring during finals week
     + Thank you to the in-class data assistants Marium, Emma, Sunni, and Swaha
     + Thank you to the Spinelli Center tutors
 * Reflection exercise
-* Fill out course evaluations
+* Time to fill out course evaluations
 
 
 ## Today's Topics/Activities
@@ -136,8 +138,8 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 * Work on Final Project
 
 
+
 ***
--->
 
 
 

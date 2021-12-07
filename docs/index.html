@@ -14,7 +14,8 @@
 
 <title>SDS 192: Introduction to Data Science</title>
 
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -33,7 +34,6 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link rel="shortcut icon" href="static/images/192.png">
@@ -57,19 +57,19 @@
   }
 </style>
 <style type="text/css" data-origin="pandoc">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -89,7 +89,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {  background-color: #f8f8f8; }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
@@ -440,7 +440,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS 192: Introduction to Data Science</h1>
 <h4 class="author">Albert Y. Kim</h4>
-<h4 class="date">Last updated on 2021-12-06</h4>
+<h4 class="date">Last updated on 2021-12-07</h4>
 
 </div>
 
@@ -502,35 +502,39 @@ h1{font-weight: 400;}
 
 
 ***
-
-
-
-# Lec 37: Wed 12/8 {#Lec37}
-
-## Announcements
-
-* ModernDive will always be free, always available at [ModernDive.com](https://moderndive.com/)
-* Spinelli center notes:
-    + No tutoring during reading and finals week: Fri 12/10 is last day.
-    + Thank you to the in-class data assistants Marium, Emma, Sunni, and Swaha
-    + Thank you to the Spinelli Center tutors
-* Reflection exercise
-* Fill out course evaluations
-
-
-## Today's Topics/Activities
-
-### 1. In-class exercise
-
-* Work on Final Project
-
-
-***
 -->
+</div>
+<div id="Lec37" class="section level1">
+<h1>Lec 37: Wed 12/8</h1>
+<div id="announcements" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>ModernDive will always be free, always available at <a href="https://moderndive.com/">ModernDive.com</a></li>
+<li>Tomorrow during lecture the in-class data assistants will hold office hours</li>
+<li>Spinelli center notes:
+<ul>
+<li>No tutoring during finals week</li>
+<li>Thank you to the in-class data assistants Marium, Emma, Sunni, and Swaha</li>
+<li>Thank you to the Spinelli Center tutors</li>
+</ul></li>
+<li>Reflection exercise</li>
+<li>Time to fill out course evaluations</li>
+</ul>
+</div>
+<div id="todays-topicsactivities" class="section level2">
+<h2>Today’s Topics/Activities</h2>
+<div id="in-class-exercise" class="section level3">
+<h3>1. In-class exercise</h3>
+<ul>
+<li>Work on Final Project</li>
+</ul>
+<hr />
+</div>
+</div>
 </div>
 <div id="Lec36" class="section level1">
 <h1>Lec 36: Mon 12/6</h1>
-<div id="announcements" class="section level2">
+<div id="announcements-1" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Go over final project submission instructions</li>
@@ -542,9 +546,9 @@ h1{font-weight: 400;}
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities" class="section level2">
+<div id="todays-topicsactivities-1" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="in-class-exercise" class="section level3">
+<div id="in-class-exercise-1" class="section level3">
 <h3>1. In-class exercise</h3>
 <ul>
 <li>Test two useful packages below:
@@ -554,41 +558,41 @@ h1{font-weight: 400;}
 </ul></li>
 <li>Work on Final Project</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(tidyverse)</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># 1. Combine two ggplots together using patchwork package:</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="kw">library</span>(patchwork)</span>
-<span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a>plot_<span class="dv">1</span> &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mtcars) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(mpg, disp))</span>
-<span id="cb1-7"><a href="#cb1-7"></a>plot_<span class="dv">2</span> &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mtcars) <span class="op">+</span><span class="st"> </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(gear, disp, <span class="dt">group =</span> gear))</span>
-<span id="cb1-8"><a href="#cb1-8"></a></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="co"># Side-by-side:</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a>plot_<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>plot_<span class="dv">2</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a></span>
-<span id="cb1-12"><a href="#cb1-12"></a><span class="co"># On top of each other:</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a>plot_<span class="dv">1</span> <span class="op">/</span><span class="st"> </span>plot_<span class="dv">2</span></span>
-<span id="cb1-14"><a href="#cb1-14"></a></span>
-<span id="cb1-15"><a href="#cb1-15"></a></span>
-<span id="cb1-16"><a href="#cb1-16"></a><span class="co"># 2. Say we have a data frame with really messy names:</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a>data_frame_ugly &lt;-<span class="st"> </span><span class="kw">tibble</span>(</span>
-<span id="cb1-18"><a href="#cb1-18"></a>  <span class="st">`</span><span class="dt">asdf ?!? qwerty%</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>),</span>
-<span id="cb1-19"><a href="#cb1-19"></a>  <span class="dt">variable.name...NAMES =</span> <span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">1</span>)</span>
-<span id="cb1-20"><a href="#cb1-20"></a>)</span>
-<span id="cb1-21"><a href="#cb1-21"></a>data_frame_ugly</span>
-<span id="cb1-22"><a href="#cb1-22"></a></span>
-<span id="cb1-23"><a href="#cb1-23"></a><span class="co"># You can clean them very easily using the clean_names() function from the </span></span>
-<span id="cb1-24"><a href="#cb1-24"></a><span class="co"># janitor package</span></span>
-<span id="cb1-25"><a href="#cb1-25"></a><span class="kw">library</span>(janitor)</span>
-<span id="cb1-26"><a href="#cb1-26"></a>data_frame_clean &lt;-<span class="st"> </span>data_frame_ugly <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb1-27"><a href="#cb1-27"></a><span class="st">  </span><span class="kw">clean_names</span>()</span>
-<span id="cb1-28"><a href="#cb1-28"></a>data_frame_clean</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Combine two ggplots together using patchwork package:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>plot_1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(mtcars) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="fu">aes</span>(mpg, disp))</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>plot_2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(mtcars) <span class="sc">+</span> <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(gear, disp, <span class="at">group =</span> gear))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Side-by-side:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plot_1 <span class="sc">+</span> plot_2</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># On top of each other:</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plot_1 <span class="sc">/</span> plot_2</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Say we have a data frame with really messy names:</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>data_frame_ugly <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">asdf ?!? qwerty%</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>),</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">variable.name...NAMES =</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">1</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>data_frame_ugly</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co"># You can clean them very easily using the clean_names() function from the </span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co"># janitor package</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>data_frame_clean <span class="ot">&lt;-</span> data_frame_ugly <span class="sc">%&gt;%</span> </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>()</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>data_frame_clean</span></code></pre></div>
 <hr />
 </div>
 </div>
 </div>
 <div id="Lec35" class="section level1">
 <h1>Lec 35: Fri 12/3</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>MTH/SDS tenure track search email</li>
@@ -601,7 +605,7 @@ h1{font-weight: 400;}
 <li>If you haven’t already download and install <a href="https://dev.mysql.com/downloads/workbench/" target="_blank">MySQL Workbench</a></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Today’s Topics/Activities</h2>
 <div id="chalk-talk" class="section level3">
 <h3>1. Chalk Talk</h3>
@@ -610,7 +614,7 @@ h1{font-weight: 400;}
 <li>Moral of the story: If you know the <code>dplyr</code> package for data wrangling, you can learn SQL very quickly.</li>
 </ul>
 </div>
-<div id="in-class-exercise-1" class="section level3">
+<div id="in-class-exercise-2" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Perform 2-3 SQL queries to convince yourself that if you know <code>dplyr</code>, you can learn SQL very quickly. This exercise is based on Prof. Baumer’s <a href="https://beanumber.github.io/sds192/lectures/29-sql.html#1" target="_blank">lecture notes</a>.</p>
 <ol style="list-style-type: decimal">
@@ -635,7 +639,7 @@ h1{font-weight: 400;}
 </div>
 <div id="Lec34" class="section level1">
 <h1>Lec 34: Wed 12/1</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Download and install <a href="https://dev.mysql.com/downloads/workbench/" target="_blank">MySQL Workbench</a> before Friday’s lecture</li>
@@ -648,7 +652,7 @@ h1{font-weight: 400;}
 </ol></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-1" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -659,7 +663,7 @@ h1{font-weight: 400;}
 <li>“Deploying” your webpage: Many ways</li>
 </ul>
 </div>
-<div id="in-class-exercise-2" class="section level3">
+<div id="in-class-exercise-3" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Today you’ll modify the source code for <code>example_webpage</code> and then deploying this webpage using <a href="https://app.netlify.com/drop" target="_blank">Netlify drop</a>:</p>
 <center>
@@ -697,7 +701,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec33" class="section level1">
 <h1>Lec 33: Mon 11/29</h1>
-<div id="announcements-3" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Candidates for two new SDS faculty will be on campus this week and next
@@ -715,7 +719,7 @@ You can also use the keyboard shortcuts:
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-3" class="section level2">
+<div id="todays-topicsactivities-4" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -727,7 +731,7 @@ You can also use the keyboard shortcuts:
 <li>Most important files in any repo: <code>README.md</code></li>
 </ul>
 </div>
-<div id="in-class-exercise-3" class="section level3">
+<div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP3 (due tomorrow at 9pm), don’t forget to submit your Peer Evaluation Google Form.</li>
@@ -739,31 +743,6 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec32" class="section level1">
 <h1>Lec 32: Mon 11/22</h1>
-<div id="announcements-4" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>MP3 now due Tuesday 11/30 at 9pm (after break). There will be no extensions past this due date/time.</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-4" class="section level2">
-<h2>Today’s topics/activities</h2>
-<div id="chalk-talk-3" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>None</li>
-</ul>
-</div>
-<div id="in-class-exercise-4" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Work on MP3</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec31" class="section level1">
-<h1>Lec 31: Fri 11/19</h1>
 <div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ul>
@@ -772,7 +751,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="todays-topicsactivities-5" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="chalk-talk-4" class="section level3">
+<div id="chalk-talk-3" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>None</li>
@@ -787,9 +766,34 @@ You can also use the keyboard shortcuts:
 </div>
 </div>
 </div>
+<div id="Lec31" class="section level1">
+<h1>Lec 31: Fri 11/19</h1>
+<div id="announcements-6" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>MP3 now due Tuesday 11/30 at 9pm (after break). There will be no extensions past this due date/time.</li>
+</ul>
+</div>
+<div id="todays-topicsactivities-6" class="section level2">
+<h2>Today’s topics/activities</h2>
+<div id="chalk-talk-4" class="section level3">
+<h3>1. Chalk talk</h3>
+<ul>
+<li>None</li>
+</ul>
+</div>
+<div id="in-class-exercise-6" class="section level3">
+<h3>2. In-class exercise</h3>
+<ul>
+<li>Work on MP3</li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
 <div id="Lec30" class="section level1">
 <h1>Lec 30: Wed 11/17</h1>
-<div id="announcements-6" class="section level2">
+<div id="announcements-7" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack messages</li>
@@ -797,7 +801,7 @@ You can also use the keyboard shortcuts:
 <li>Poll</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-6" class="section level2">
+<div id="todays-topicsactivities-7" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -812,26 +816,26 @@ You can also use the keyboard shortcuts:
 </ul></li>
 <li>From MP3 Project -&gt; <code>examples.Rmd</code> -&gt; Section 3 -&gt; Look at contents of <code>mass_pop_orig</code> -&gt; <code>GEOID</code> variable:</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="op">&gt;</span><span class="st"> </span>mass_pop_orig</span>
-<span id="cb2-2"><a href="#cb2-2"></a>Simple feature collection with <span class="dv">14</span> features and <span class="dv">7</span> fields</span>
-<span id="cb2-3"><a href="#cb2-3"></a>Geometry type<span class="op">:</span><span class="st"> </span>MULTIPOLYGON</span>
-<span id="cb2-4"><a href="#cb2-4"></a>Dimension<span class="op">:</span><span class="st">     </span>XY</span>
-<span id="cb2-5"><a href="#cb2-5"></a>Bounding box<span class="op">:</span><span class="st">  </span>xmin<span class="op">:</span><span class="st"> </span><span class="fl">-73.50814</span> ymin<span class="op">:</span><span class="st"> </span><span class="fl">41.23796</span> xmax<span class="op">:</span><span class="st"> </span><span class="fl">-69.92839</span> ymax<span class="op">:</span><span class="st"> </span><span class="fl">42.88659</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a>Geodetic CRS<span class="op">:</span><span class="st">  </span>NAD83</span>
-<span id="cb2-7"><a href="#cb2-7"></a>First <span class="dv">10</span> features<span class="op">:</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="st">   </span>GEOID                             NAME   variable estimate moe</span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="dv">1</span>  <span class="dv">25017</span>  Middlesex County, Massachusetts B01003_<span class="dv">001</span>  <span class="dv">1600842</span>  <span class="ot">NA</span></span>
-<span id="cb2-10"><a href="#cb2-10"></a><span class="dv">2</span>  <span class="dv">25025</span>    Suffolk County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">796605</span>  <span class="ot">NA</span></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="dv">3</span>  <span class="dv">25001</span> Barnstable County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">213496</span>  <span class="ot">NA</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a><span class="dv">4</span>  <span class="dv">25027</span>  Worcester County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">824772</span>  <span class="ot">NA</span></span>
-<span id="cb2-13"><a href="#cb2-13"></a><span class="dv">5</span>  <span class="dv">25011</span>   Franklin County, Massachusetts B01003_<span class="dv">001</span>    <span class="dv">70577</span>  <span class="ot">NA</span></span>
-<span id="cb2-14"><a href="#cb2-14"></a><span class="dv">6</span>  <span class="dv">25013</span>    Hampden County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">467871</span>  <span class="ot">NA</span></span>
-<span id="cb2-15"><a href="#cb2-15"></a><span class="dv">7</span>  <span class="dv">25015</span>  Hampshire County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">161032</span>  <span class="ot">NA</span></span>
-<span id="cb2-16"><a href="#cb2-16"></a><span class="dv">8</span>  <span class="dv">25021</span>    Norfolk County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">700437</span>  <span class="ot">NA</span></span>
-<span id="cb2-17"><a href="#cb2-17"></a><span class="dv">9</span>  <span class="dv">25005</span>    Bristol County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">561037</span>  <span class="ot">NA</span></span>
-<span id="cb2-18"><a href="#cb2-18"></a><span class="dv">10</span> <span class="dv">25009</span>      Essex County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">783676</span>  <span class="ot">NA</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> mass_pop_orig</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Simple feature collection with <span class="dv">14</span> features and <span class="dv">7</span> fields</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Geometry type<span class="sc">:</span> MULTIPOLYGON</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>Dimension<span class="sc">:</span>     XY</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>Bounding box<span class="sc">:</span>  xmin<span class="sc">:</span> <span class="sc">-</span><span class="fl">73.50814</span> ymin<span class="sc">:</span> <span class="fl">41.23796</span> xmax<span class="sc">:</span> <span class="sc">-</span><span class="fl">69.92839</span> ymax<span class="sc">:</span> <span class="fl">42.88659</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>Geodetic CRS<span class="sc">:</span>  NAD83</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>First <span class="dv">10</span> features<span class="sc">:</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>   GEOID                             NAME   variable estimate moe</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>  <span class="dv">25017</span>  Middlesex County, Massachusetts B01003_001  <span class="dv">1600842</span>  <span class="cn">NA</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="dv">25025</span>    Suffolk County, Massachusetts B01003_001   <span class="dv">796605</span>  <span class="cn">NA</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>  <span class="dv">25001</span> Barnstable County, Massachusetts B01003_001   <span class="dv">213496</span>  <span class="cn">NA</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>  <span class="dv">25027</span>  Worcester County, Massachusetts B01003_001   <span class="dv">824772</span>  <span class="cn">NA</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span>  <span class="dv">25011</span>   Franklin County, Massachusetts B01003_001    <span class="dv">70577</span>  <span class="cn">NA</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span>  <span class="dv">25013</span>    Hampden County, Massachusetts B01003_001   <span class="dv">467871</span>  <span class="cn">NA</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span>  <span class="dv">25015</span>  Hampshire County, Massachusetts B01003_001   <span class="dv">161032</span>  <span class="cn">NA</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span>  <span class="dv">25021</span>    Norfolk County, Massachusetts B01003_001   <span class="dv">700437</span>  <span class="cn">NA</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="dv">9</span>  <span class="dv">25005</span>    Bristol County, Massachusetts B01003_001   <span class="dv">561037</span>  <span class="cn">NA</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span> <span class="dv">25009</span>      Essex County, Massachusetts B01003_001   <span class="dv">783676</span>  <span class="cn">NA</span></span></code></pre></div>
 </div>
-<div id="in-class-exercise-6" class="section level3">
+<div id="in-class-exercise-7" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP3</li>
@@ -842,13 +846,13 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec29" class="section level1">
 <h1>Lec 29: Mon 11/15</h1>
-<div id="announcements-7" class="section level2">
+<div id="announcements-8" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Work on MP3 this Wed, Fri, and Mon before Thanksgiving break.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-7" class="section level2">
+<div id="todays-topicsactivities-8" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-6" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -861,7 +865,7 @@ You can also use the keyboard shortcuts:
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-7" class="section level3">
+<div id="in-class-exercise-8" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over code in MP3 folder -&gt; <code>examples.Rmd</code> -&gt; Section 3 on “Choropleth maps using census data”</li>
@@ -873,13 +877,13 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec28" class="section level1">
 <h1>Lec 28: Fri 11/12</h1>
-<div id="announcements-8" class="section level2">
+<div id="announcements-9" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Grad school panel on Mon 11/22 featuring SDS alumna. More info in <code>#general</code></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-8" class="section level2">
+<div id="todays-topicsactivities-9" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-7" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -887,7 +891,7 @@ You can also use the keyboard shortcuts:
 <li>Guest lecture by the <a href="http://www.science.smith.edu/sal/" target="_blank">Smith College Spatial Analysis Lab</a>.</li>
 </ul>
 </div>
-<div id="in-class-exercise-8" class="section level3">
+<div id="in-class-exercise-9" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Work on PS06. This is direct practice for MP3.</li>
@@ -899,14 +903,14 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec27" class="section level1">
 <h1>Lec 27: Wed 11/10</h1>
-<div id="announcements-9" class="section level2">
+<div id="announcements-10" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Check important Slack announcement in <code>#general</code></li>
 <li><a href="projects.html#MP3">Mini-Project 3</a> posted.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-9" class="section level2">
+<div id="todays-topicsactivities-10" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-8" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -919,7 +923,7 @@ You can also use the keyboard shortcuts:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/esQrPSJfFkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </div>
-<div id="in-class-exercise-9" class="section level3">
+<div id="in-class-exercise-10" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>While you are free to work in any order you like, I suggest you:</p>
 <ol style="list-style-type: decimal">
@@ -934,7 +938,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec26" class="section level1">
 <h1>Lec 26: Mon 11/8</h1>
-<div id="announcements-10" class="section level2">
+<div id="announcements-11" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Mini-project 3 (MP3) assigned on Wednesday, due Tuesday 11/23 at 9pm.
@@ -952,7 +956,7 @@ You can also use the keyboard shortcuts:
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-10" class="section level2">
+<div id="todays-topicsactivities-11" class="section level2">
 <h2>Today’s topics/activities</h2>
 <ul>
 <li>Download <a href="static/projects/MP3/MP3.zip" download><code>MP3.zip</code></a></li>
@@ -976,7 +980,7 @@ You can also use the keyboard shortcuts:
 <li><code>sf</code> package for static maps in <code>ggplot2</code> and loading shapefiles. See <a href="https://keen-swartz-3146c4.netlify.com/" target="_blank">Spatial Data Science</a> for more.</li>
 </ul>
 </div>
-<div id="in-class-exercise-10" class="section level3">
+<div id="in-class-exercise-11" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>In MP3 folder -&gt; <code>examples.Rmd</code> -&gt; Section 1 on “Converting data frames to sf objects”, do exercises</li>
@@ -996,14 +1000,14 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec24" class="section level1">
 <h1>Lec 24: Wed 11/3</h1>
-<div id="announcements-11" class="section level2">
+<div id="announcements-12" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack note in <code>#random</code></li>
 <li>No office hours tomorrow (Thursday). Instead, optional in-class office hours on Friday.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-11" class="section level2">
+<div id="todays-topicsactivities-12" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-10" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1012,7 +1016,7 @@ You can also use the keyboard shortcuts:
 <li>“When would you use left or right join?”</li>
 </ul>
 </div>
-<div id="in-class-exercise-11" class="section level3">
+<div id="in-class-exercise-12" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Open office hours</li>
@@ -1023,16 +1027,16 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec23" class="section level1">
 <h1>Lec 23: Mon 11/1</h1>
-<div id="announcements-12" class="section level2">
+<div id="announcements-13" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Practice midterm posted on Slack in <code>#midterms</code>; we’ll go over solutions on Wednesday</li>
 <li>Midterm II discussion: see <a href="midterms.html#midtermII">midterms</a> page</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-12" class="section level2">
+<div id="todays-topicsactivities-13" class="section level2">
 <h2>Today’s topics/activities</h2>
-<div id="in-class-exercise-12" class="section level3">
+<div id="in-class-exercise-13" class="section level3">
 <h3>1. In-class exercise</h3>
 <ul>
 <li>Work on MP2</li>
@@ -1043,7 +1047,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec22" class="section level1">
 <h1>Lec 22: Fri 10/29</h1>
-<div id="announcements-13" class="section level2">
+<div id="announcements-14" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Useful RStudio cheatsheets: Go to RStudio menu bar on top -&gt; Help -&gt; Cheatsheets:
@@ -1053,7 +1057,7 @@ You can also use the keyboard shortcuts:
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-13" class="section level2">
+<div id="todays-topicsactivities-14" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-11" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1064,21 +1068,21 @@ You can also use the keyboard shortcuts:
 <li><a href="https://r4ds.had.co.nz/" target="_blank">R for Data Science</a> is a good reference for these tools</li>
 <li>In other words, from now on:</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Don&#39;t do all this:</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="kw">library</span>(readr)</span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="kw">library</span>(tidyr)</span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="kw">library</span>(stringr)</span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="kw">library</span>(tibble)</span>
-<span id="cb3-8"><a href="#cb3-8"></a><span class="kw">library</span>(forcats)</span>
-<span id="cb3-9"><a href="#cb3-9"></a><span class="kw">library</span>(purrr)</span>
-<span id="cb3-10"><a href="#cb3-10"></a></span>
-<span id="cb3-11"><a href="#cb3-11"></a><span class="co"># Instead, do this:</span></span>
-<span id="cb3-12"><a href="#cb3-12"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div></li>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Don&#39;t do all this:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(forcats)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Instead, do this:</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div></li>
 </ul>
 </div>
-<div id="in-class-exercise-13" class="section level3">
+<div id="in-class-exercise-14" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP2</li>
@@ -1089,7 +1093,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec21" class="section level1">
 <h1>Lec 21: Wed 10/27</h1>
-<div id="announcements-14" class="section level2">
+<div id="announcements-15" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Mid-Semester Assessment:
@@ -1105,7 +1109,7 @@ You can also use the keyboard shortcuts:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IRJ2Ac9vI5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </div>
-<div id="todays-topicsactivities-14" class="section level2">
+<div id="todays-topicsactivities-15" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-12" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1113,7 +1117,7 @@ You can also use the keyboard shortcuts:
 <li>None</li>
 </ul>
 </div>
-<div id="in-class-exercise-14" class="section level3">
+<div id="in-class-exercise-15" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP2</li>
@@ -1124,7 +1128,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec20" class="section level1">
 <h1>Lec 20: Mon 10/25</h1>
-<div id="announcements-15" class="section level2">
+<div id="announcements-16" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>MP1 grades posted: See Slack <code>#mp1</code> for details</li>
@@ -1136,7 +1140,7 @@ You can also use the keyboard shortcuts:
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-15" class="section level2">
+<div id="todays-topicsactivities-16" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-13" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1150,7 +1154,7 @@ You can also use the keyboard shortcuts:
 </center>
 <p><br></p>
 </div>
-<div id="in-class-exercise-15" class="section level3">
+<div id="in-class-exercise-16" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above</li>
@@ -1161,7 +1165,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec19" class="section level1">
 <h1>Lec 19: Fri 10/22</h1>
-<div id="announcements-16" class="section level2">
+<div id="announcements-17" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>MP1 returned by Monday</li>
@@ -1178,7 +1182,7 @@ You can also use the keyboard shortcuts:
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-16" class="section level2">
+<div id="todays-topicsactivities-17" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-14" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1186,7 +1190,7 @@ You can also use the keyboard shortcuts:
 <li>Pseudocode to compute Available Seat Miles</li>
 </ul>
 </div>
-<div id="in-class-exercise-16" class="section level3">
+<div id="in-class-exercise-17" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP2</li>
@@ -1197,7 +1201,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec18" class="section level1">
 <h1>Lec 18: Wed 10/20</h1>
-<div id="announcements-17" class="section level2">
+<div id="announcements-18" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack:
@@ -1209,7 +1213,7 @@ You can also use the keyboard shortcuts:
 <li>Feel free to message me on weekends, I just likely won’t respond.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-17" class="section level2">
+<div id="todays-topicsactivities-18" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-15" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1223,7 +1227,7 @@ You can also use the keyboard shortcuts:
 </ul>
 <script src="https://gist.github.com/rudeboybert/968dbf26d5f9407703ae7b24d217af67.js"></script>
 </div>
-<div id="in-class-exercise-17" class="section level3">
+<div id="in-class-exercise-18" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>With your MP2 partner, practice data wranling! Complete ModernDive Learning Check 3.20: Using data in <code>nycflights13</code> package, compute available seat miles for each airline separately:</p>
 <ol style="list-style-type: decimal">
@@ -1237,7 +1241,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec17" class="section level1">
 <h1>Lec 17: Mon 10/18</h1>
-<div id="announcements-18" class="section level2">
+<div id="announcements-19" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><a href="projects.html#MP2">Mini-Project 2</a> posted</li>
@@ -1250,7 +1254,7 @@ You can also use the keyboard shortcuts:
 </center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-18" class="section level2">
+<div id="todays-topicsactivities-19" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-16" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1266,7 +1270,7 @@ You can also use the keyboard shortcuts:
 2021/10 fall note: Focus on inner_join first, do left & right later
 -->
 </div>
-<div id="in-class-exercise-18" class="section level3">
+<div id="in-class-exercise-19" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above</li>
@@ -1277,7 +1281,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec16" class="section level1">
 <h1>Lec 16: Fri 10/15</h1>
-<div id="announcements-19" class="section level2">
+<div id="announcements-20" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Mini-project 2 (MP2) assigned on Monday
@@ -1289,7 +1293,7 @@ You can also use the keyboard shortcuts:
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-19" class="section level2">
+<div id="todays-topicsactivities-20" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-17" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1297,7 +1301,7 @@ You can also use the keyboard shortcuts:
 <li><code>mutate()</code> new columns/variables and <code>arrange()</code> i.e. sort rows</li>
 </ul>
 </div>
-<div id="in-class-exercise-19" class="section level3">
+<div id="in-class-exercise-20" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above</li>
@@ -1308,7 +1312,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec15" class="section level1">
 <h1>Lec 15: Wed 10/13</h1>
-<div id="announcements-20" class="section level2">
+<div id="announcements-21" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>See Slack <code>#general</code> for info about presentation of SDS major</li>
@@ -1323,7 +1327,7 @@ You can also use the keyboard shortcuts:
 </ol></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-20" class="section level2">
+<div id="todays-topicsactivities-21" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-18" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1331,7 +1335,7 @@ You can also use the keyboard shortcuts:
 <li><code>summarize()</code> rows and <code>group_by() %&gt;% summarize()</code></li>
 </ul>
 </div>
-<div id="in-class-exercise-20" class="section level3">
+<div id="in-class-exercise-21" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Put finishing touches on MP1</li>
@@ -1343,14 +1347,14 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec14" class="section level1">
 <h1>Lec 14: Fri 10/8</h1>
-<div id="announcements-21" class="section level2">
+<div id="announcements-22" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>You are responsible for completing the ModernDive readings for Lec13 on the <code>%&gt;%</code> operator and <code>filter()</code> before Wednesday’s lecture</li>
 <li>A shorter PS04 will be assigned on Wednesday, due on Monday 10/18 9pm</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-21" class="section level2">
+<div id="todays-topicsactivities-22" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-19" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1358,7 +1362,7 @@ You can also use the keyboard shortcuts:
 <li>None</li>
 </ul>
 </div>
-<div id="in-class-exercise-21" class="section level3">
+<div id="in-class-exercise-22" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP1</li>
@@ -1369,13 +1373,13 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec13" class="section level1">
 <h1>Lec 13: Wed 10/6</h1>
-<div id="announcements-22" class="section level2">
+<div id="announcements-23" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><a href="https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z" target="_blank">“File not found”</a>; the struggle is real for instructors.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-22" class="section level2">
+<div id="todays-topicsactivities-23" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-20" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1394,7 +1398,7 @@ You can also use the keyboard shortcuts:
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-22" class="section level3">
+<div id="in-class-exercise-23" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above</li>
@@ -1405,7 +1409,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec12" class="section level1">
 <h1>Lec 12: Mon 10/4</h1>
-<div id="announcements-23" class="section level2">
+<div id="announcements-24" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Midterm:
@@ -1433,7 +1437,7 @@ You can also use the keyboard shortcuts:
 - colors
 -->
 </div>
-<div id="todays-topicsactivities-23" class="section level2">
+<div id="todays-topicsactivities-24" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-21" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1445,35 +1449,35 @@ You can also use the keyboard shortcuts:
 </ul></li>
 <li>Example code:</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="kw">library</span>(gapminder)</span>
-<span id="cb4-4"><a href="#cb4-4"></a></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="co"># 1. Recreate plot from PS02 but with no color:</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a>gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb4-7"><a href="#cb4-7"></a><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</span>
-<span id="cb4-8"><a href="#cb4-8"></a></span>
-<span id="cb4-9"><a href="#cb4-9"></a><span class="co"># 1.a) Add LOESS smoother layer with geom_smooth()</span></span>
-<span id="cb4-10"><a href="#cb4-10"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
-<span id="cb4-12"><a href="#cb4-12"></a><span class="st">  </span><span class="kw">geom_smooth</span>()</span>
-<span id="cb4-13"><a href="#cb4-13"></a></span>
-<span id="cb4-14"><a href="#cb4-14"></a><span class="co"># 1.b) Remove standard error bars by setting se = FALSE</span></span>
-<span id="cb4-15"><a href="#cb4-15"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></span>
-<span id="cb4-16"><a href="#cb4-16"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
-<span id="cb4-17"><a href="#cb4-17"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>)</span>
-<span id="cb4-18"><a href="#cb4-18"></a></span>
-<span id="cb4-19"><a href="#cb4-19"></a><span class="co"># 1.c) Change span of &quot;smoothing&quot; window by change the value of span</span></span>
-<span id="cb4-20"><a href="#cb4-20"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></span>
-<span id="cb4-21"><a href="#cb4-21"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
-<span id="cb4-22"><a href="#cb4-22"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>, <span class="dt">span =</span> <span class="fl">0.25</span>)</span>
-<span id="cb4-23"><a href="#cb4-23"></a></span>
-<span id="cb4-24"><a href="#cb4-24"></a><span class="co"># 1.d) Force line to be straight. i.e. linear regression</span></span>
-<span id="cb4-25"><a href="#cb4-25"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></span>
-<span id="cb4-26"><a href="#cb4-26"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
-<span id="cb4-27"><a href="#cb4-27"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gapminder)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Recreate plot from PS02 but with no color:</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>gapminder_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">%&gt;%</span> </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 1.a) Add LOESS smoother layer with geom_smooth()</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">size =</span> pop)) <span class="sc">+</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 1.b) Remove standard error bars by setting se = FALSE</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">size =</span> pop)) <span class="sc">+</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="co"># 1.c) Change span of &quot;smoothing&quot; window by change the value of span</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">size =</span> pop)) <span class="sc">+</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">span =</span> <span class="fl">0.25</span>)</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="co"># 1.d) Force line to be straight. i.e. linear regression</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">size =</span> pop)) <span class="sc">+</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 </div>
-<div id="in-class-exercise-23" class="section level3">
+<div id="in-class-exercise-24" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Copy the example code above to your <code>classnotes.Rmd</code> and go over the code</li>
@@ -1486,7 +1490,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec11" class="section level1">
 <h1>Lec 11: Fri 10/1</h1>
-<div id="announcements-24" class="section level2">
+<div id="announcements-25" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Open Slack at the start of <strong>every</strong> lecture
@@ -1501,7 +1505,7 @@ You can also use the keyboard shortcuts:
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-24" class="section level2">
+<div id="todays-topicsactivities-25" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-22" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1509,7 +1513,7 @@ You can also use the keyboard shortcuts:
 <li>Go over practice Midterm I. Boxplot for question 3.c): <img src="index_files/figure-html/unnamed-chunk-7-1.png" width="768" /></li>
 </ul>
 </div>
-<div id="in-class-exercise-24" class="section level3">
+<div id="in-class-exercise-25" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on MP1</li>
@@ -1520,7 +1524,7 @@ You can also use the keyboard shortcuts:
 </div>
 <div id="Lec10" class="section level1">
 <h1>Lec 10: Wed 9/29</h1>
-<div id="announcements-25" class="section level2">
+<div id="announcements-26" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Sit next to your MP1 partner; your partner was posted in the <code>#mp1</code> channel on Sunday 5pm.</li>
@@ -1536,7 +1540,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-25" class="section level2">
+<div id="todays-topicsactivities-26" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-23" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1550,7 +1554,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 <li>Discuss <a href="projects.html#MP1">Mini-Project 1</a></li>
 </ul>
 </div>
-<div id="in-class-exercise-25" class="section level3">
+<div id="in-class-exercise-26" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>With your partner, build a minimally viable product of your MP1</li>
@@ -1566,7 +1570,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 </div>
 <div id="Lec09" class="section level1">
 <h1>Lec 09: Fri 9/24</h1>
-<div id="announcements-26" class="section level2">
+<div id="announcements-27" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>On Slack <code>#general</code>: new SDS student lounge in McConnell 209</li>
@@ -1580,7 +1584,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-26" class="section level2">
+<div id="todays-topicsactivities-27" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-24" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1608,7 +1612,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 <p>Compare that to using barplots. Which do you prefer?</p>
 <p><img src="static/images/barplots.png" width="600" /></p>
 </div>
-<div id="in-class-exercise-26" class="section level3">
+<div id="in-class-exercise-27" class="section level3">
 <h3>3. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1619,43 +1623,43 @@ Our department is offering a pre-application review service (PARS) initiative to
 <li>Run <code>colors()</code> in your console to get English names of all colors in R</li>
 </ol></li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="kw">library</span>(nycflights13)</span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="kw">library</span>(gapminder)</span>
-<span id="cb5-5"><a href="#cb5-5"></a></span>
-<span id="cb5-6"><a href="#cb5-6"></a><span class="co"># 1. Recreate plot from PS02, but change default &quot;color&quot; palette of points:</span></span>
-<span id="cb5-7"><a href="#cb5-7"></a>gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb5-8"><a href="#cb5-8"></a><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</span>
-<span id="cb5-9"><a href="#cb5-9"></a><span class="kw">ggplot</span>(gapminder_<span class="dv">2007</span>, <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop, <span class="dt">color =</span> continent)) <span class="op">+</span></span>
-<span id="cb5-10"><a href="#cb5-10"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
-<span id="cb5-11"><a href="#cb5-11"></a><span class="st">  </span><span class="kw">scale_color_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</span>
-<span id="cb5-12"><a href="#cb5-12"></a></span>
-<span id="cb5-13"><a href="#cb5-13"></a><span class="co"># 2.a) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by adding a </span></span>
-<span id="cb5-14"><a href="#cb5-14"></a><span class="co"># palette layer:</span></span>
-<span id="cb5-15"><a href="#cb5-15"></a><span class="kw">ggplot</span>(flights, <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></span>
-<span id="cb5-16"><a href="#cb5-16"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></span>
-<span id="cb5-17"><a href="#cb5-17"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</span>
-<span id="cb5-18"><a href="#cb5-18"></a></span>
-<span id="cb5-19"><a href="#cb5-19"></a><span class="co"># 2.b) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></span>
-<span id="cb5-20"><a href="#cb5-20"></a><span class="co"># changing colors in a layer:</span></span>
-<span id="cb5-21"><a href="#cb5-21"></a><span class="kw">ggplot</span>(flights, <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></span>
-<span id="cb5-22"><a href="#cb5-22"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></span>
-<span id="cb5-23"><a href="#cb5-23"></a><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;darkorange&quot;</span>, <span class="st">&quot;forestgreen&quot;</span>, <span class="st">&quot;navyblue&quot;</span>))</span>
-<span id="cb5-24"><a href="#cb5-24"></a></span>
-<span id="cb5-25"><a href="#cb5-25"></a><span class="co"># 2.c) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></span>
-<span id="cb5-26"><a href="#cb5-26"></a><span class="co"># changing colors in a layer using hex codes from: </span></span>
-<span id="cb5-27"><a href="#cb5-27"></a><span class="co"># https://www.color-hex.com/color-palette/114219</span></span>
-<span id="cb5-28"><a href="#cb5-28"></a><span class="kw">ggplot</span>(flights, <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></span>
-<span id="cb5-29"><a href="#cb5-29"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></span>
-<span id="cb5-30"><a href="#cb5-30"></a><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;#dc323a&quot;</span>, <span class="st">&quot;#003f77&quot;</span>, <span class="st">&quot;#c4c1c1&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(nycflights13)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gapminder)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Recreate plot from PS02, but change default &quot;color&quot; palette of points:</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>gapminder_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">%&gt;%</span> </span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(gapminder_2007, <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">size =</span> pop, <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;Set1&quot;</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 2.a) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by adding a </span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># palette layer:</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(flights, <span class="fu">aes</span>(<span class="at">x =</span> carrier, <span class="at">fill =</span> origin)) <span class="sc">+</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;Set1&quot;</span>)</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co"># 2.b) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="co"># changing colors in a layer:</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(flights, <span class="fu">aes</span>(<span class="at">x =</span> carrier, <span class="at">fill =</span> origin)) <span class="sc">+</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;darkorange&quot;</span>, <span class="st">&quot;forestgreen&quot;</span>, <span class="st">&quot;navyblue&quot;</span>))</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="co"># 2.c) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="co"># changing colors in a layer using hex codes from: </span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="co"># https://www.color-hex.com/color-palette/114219</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(flights, <span class="fu">aes</span>(<span class="at">x =</span> carrier, <span class="at">fill =</span> origin)) <span class="sc">+</span></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;#dc323a&quot;</span>, <span class="st">&quot;#003f77&quot;</span>, <span class="st">&quot;#c4c1c1&quot;</span>))</span></code></pre></div>
 <hr />
 </div>
 </div>
 </div>
 <div id="Lec08" class="section level1">
 <h1>Lec 08: Wed 9/22</h1>
-<div id="announcements-27" class="section level2">
+<div id="announcements-28" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Problem sets:
@@ -1668,7 +1672,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 * What kind of questions are appropriate for `#questions` Slack channel
 -->
 </div>
-<div id="todays-topicsactivities-27" class="section level2">
+<div id="todays-topicsactivities-28" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-25" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1687,7 +1691,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-27" class="section level3">
+<div id="in-class-exercise-28" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1698,7 +1702,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 </div>
 <div id="Lec07" class="section level1">
 <h1>Lec 07: Mon 9/20</h1>
-<div id="announcements-28" class="section level2">
+<div id="announcements-29" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Office of Disability Services is looking to hire a note taker for the class. If interested, see note in Slack <code>#general</code>.</li>
@@ -1709,7 +1713,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-28" class="section level2">
+<div id="todays-topicsactivities-29" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-26" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1754,7 +1758,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 <p>Let’s compare the points and the corresponding boxplot side-by-side with the values on the <span class="math inline">\(y\)</span>-axis matching:</p>
 <p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-28" class="section level3">
+<div id="in-class-exercise-29" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1765,7 +1769,7 @@ Our department is offering a pre-application review service (PARS) initiative to
 </div>
 <div id="Lec06" class="section level1">
 <h1>Lec 06: Fri 9/17</h1>
-<div id="announcements-29" class="section level2">
+<div id="announcements-30" class="section level2">
 <h2>Announcements</h2>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
@@ -1775,7 +1779,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-29" class="section level2">
+<div id="todays-topicsactivities-30" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-27" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1799,7 +1803,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </iframe>
 </div>
 </div>
-<div id="in-class-exercise-29" class="section level3">
+<div id="in-class-exercise-30" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>If you still haven’t been able to “Knit to PDF”, please ask for help</li>
@@ -1811,13 +1815,13 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec05" class="section level1">
 <h1>Lec 05: Wed 9/15</h1>
-<div id="announcements-30" class="section level2">
+<div id="announcements-31" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>PS02 was posted after Monday’s lecture.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-30" class="section level2">
+<div id="todays-topicsactivities-31" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-28" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1826,7 +1830,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <li>Linegraphs</li>
 </ul>
 </div>
-<div id="in-class-exercise-30" class="section level3">
+<div id="in-class-exercise-31" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Explore the different formatting tools in R Markdown: go to RStudio top menu bar -&gt; Help -&gt; Markdown quick reference.</li>
@@ -1839,13 +1843,13 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec04" class="section level1">
 <h1>Lec 04: Mon 9/13</h1>
-<div id="announcements-31" class="section level2">
+<div id="announcements-32" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Problem Set 02 due next Monday 5pm, now posted under <a href="PS.html">Problem Sets</a></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-31" class="section level2">
+<div id="todays-topicsactivities-32" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-29" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1868,7 +1872,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </tbody>
 </table>
 </div>
-<div id="in-class-exercise-31" class="section level3">
+<div id="in-class-exercise-32" class="section level3">
 <h3>2. In-class exercise</h3>
 <p><strong>In-class battle-testing and practicing for PS02:</strong></p>
 <ol style="list-style-type: decimal">
@@ -1911,7 +1915,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <li>Next to “Console” go to “Terminal”</li>
 <li>Run this line of code:</li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>sudo chown <span class="op">-</span>R <span class="st">`</span><span class="dt">whoami</span><span class="st">`</span><span class="op">:</span>admin <span class="op">/</span>usr<span class="op">/</span>local<span class="op">/</span>bin</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>sudo chown <span class="sc">-</span>R <span class="st">`</span><span class="at">whoami</span><span class="st">`</span><span class="sc">:</span>admin <span class="sc">/</span>usr<span class="sc">/</span>local<span class="sc">/</span>bin</span></code></pre></div>
 <ul>
 <li>Enter your password. Note: Terminal has weird behavior whereby as you enter your password, the cursor will not move. Don’t worry your password is registering.</li>
 </ul></li>
@@ -1919,8 +1923,8 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <ul>
 <li>Run the following code in your console just once:</li>
 </ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;tinytex&#39;</span>)</span>
-<span id="cb7-2"><a href="#cb7-2"></a>tinytex<span class="op">::</span><span class="kw">install_tinytex</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;tinytex&#39;</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>tinytex<span class="sc">::</span><span class="fu">install_tinytex</span>()</span></code></pre></div>
 <ul>
 <li>Click the arrow next to “Knit” -&gt; “Knit to PDF”.</li>
 </ul></li>
@@ -1936,7 +1940,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec03" class="section level1">
 <h1>Lec 03: Fri 9/10</h1>
-<div id="announcements-32" class="section level2">
+<div id="announcements-33" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Spinelli Center <a href="https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats." target="_blank">SDS drop-in tutoring hours</a> now open! Get individual attention from SDS majors! In Sabin-Reed 301
@@ -1960,7 +1964,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-32" class="section level2">
+<div id="todays-topicsactivities-33" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-30" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1975,7 +1979,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-32" class="section level3">
+<div id="in-class-exercise-33" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -1986,13 +1990,13 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec02" class="section level1">
 <h1>Lec 02: Wed 9/8</h1>
-<div id="announcements-33" class="section level2">
+<div id="announcements-34" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Problem Set 01 due this Monday 5pm, posted under <a href="PS.html">Problem Sets</a>.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-33" class="section level2">
+<div id="todays-topicsactivities-34" class="section level2">
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-31" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -2002,7 +2006,7 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <li>What are R packages?</li>
 </ul>
 </div>
-<div id="in-class-exercise-33" class="section level3">
+<div id="in-class-exercise-34" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
@@ -2020,11 +2024,11 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="Lec01" class="section level1">
 <h1>Lec 01: Fri 9/3</h1>
-<div id="announcements-34" class="section level2">
+<div id="announcements-35" class="section level2">
 <h2>Announcements</h2>
 <p>Welcome!</p>
 </div>
-<div id="todays-topicsactivities-34" class="section level2">
+<div id="todays-topicsactivities-35" class="section level2">
 <h2>Today’s topics/activities</h2>
 <ul>
 <li>Course webpage: bit.ly/sds192kim</li>
@@ -2044,31 +2048,31 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </div>
 <div id="code-examples-from-class" class="section level2">
 <h2>Code examples from class</h2>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># Data visualization</span></span>
-<span id="cb8-2"><a href="#cb8-2"></a><span class="kw">library</span>(fivethirtyeight)</span>
-<span id="cb8-3"><a href="#cb8-3"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb8-4"><a href="#cb8-4"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb8-5"><a href="#cb8-5"></a>year_bins &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;&#39;70-&#39;74&quot;</span>, <span class="st">&quot;&#39;75-&#39;79&quot;</span>, <span class="st">&quot;&#39;80-&#39;84&quot;</span>, <span class="st">&quot;&#39;85-&#39;89&quot;</span>, <span class="st">&quot;&#39;90-&#39;94&quot;</span>,</span>
-<span id="cb8-6"><a href="#cb8-6"></a>               <span class="st">&quot;&#39;95-&#39;99&quot;</span>, <span class="st">&quot;&#39;00-&#39;04&quot;</span>, <span class="st">&quot;&#39;05-&#39;09&quot;</span>, <span class="st">&quot;&#39;10-&#39;13&quot;</span>)</span>
-<span id="cb8-7"><a href="#cb8-7"></a></span>
-<span id="cb8-8"><a href="#cb8-8"></a>bechdel &lt;-<span class="st"> </span>bechdel <span class="op">%&gt;%</span></span>
-<span id="cb8-9"><a href="#cb8-9"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">five_year =</span> <span class="kw">cut</span>(year, <span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="dv">1969</span>, <span class="dv">2014</span>, <span class="dv">5</span>), <span class="dt">labels =</span> year_bins))</span>
-<span id="cb8-10"><a href="#cb8-10"></a></span>
-<span id="cb8-11"><a href="#cb8-11"></a><span class="kw">ggplot</span>(bechdel, <span class="kw">aes</span>(<span class="dt">x =</span> five_year, <span class="dt">fill =</span> clean_test)) <span class="op">+</span></span>
-<span id="cb8-12"><a href="#cb8-12"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="st">&quot;fill&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span></span>
-<span id="cb8-13"><a href="#cb8-13"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Year&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Proportion&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;Bechdel Test&quot;</span>) <span class="op">+</span></span>
-<span id="cb8-14"><a href="#cb8-14"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;YlGnBu&quot;</span>)</span>
-<span id="cb8-15"><a href="#cb8-15"></a></span>
-<span id="cb8-16"><a href="#cb8-16"></a><span class="co"># Data Wranling</span></span>
-<span id="cb8-17"><a href="#cb8-17"></a><span class="kw">library</span>(fec16)</span>
-<span id="cb8-18"><a href="#cb8-18"></a>all_transactions &lt;-<span class="st"> </span><span class="kw">read_all_transactions</span>()</span>
-<span id="cb8-19"><a href="#cb8-19"></a><span class="kw">View</span>(all_transactions)</span>
-<span id="cb8-20"><a href="#cb8-20"></a></span>
-<span id="cb8-21"><a href="#cb8-21"></a><span class="co"># Maps</span></span>
-<span id="cb8-22"><a href="#cb8-22"></a><span class="kw">library</span>(leaflet)</span>
-<span id="cb8-23"><a href="#cb8-23"></a><span class="kw">leaflet</span>() <span class="op">%&gt;%</span></span>
-<span id="cb8-24"><a href="#cb8-24"></a><span class="st">  </span><span class="kw">addTiles</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb8-25"><a href="#cb8-25"></a><span class="st">  </span><span class="kw">addMarkers</span>(<span class="dt">lng=</span><span class="op">-</span><span class="fl">72.64022</span>, <span class="dt">lat=</span><span class="fl">42.31706</span>, <span class="dt">popup=</span><span class="st">&quot;Smith College&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Data visualization</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fivethirtyeight)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>year_bins <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;&#39;70-&#39;74&quot;</span>, <span class="st">&quot;&#39;75-&#39;79&quot;</span>, <span class="st">&quot;&#39;80-&#39;84&quot;</span>, <span class="st">&quot;&#39;85-&#39;89&quot;</span>, <span class="st">&quot;&#39;90-&#39;94&quot;</span>,</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>               <span class="st">&quot;&#39;95-&#39;99&quot;</span>, <span class="st">&quot;&#39;00-&#39;04&quot;</span>, <span class="st">&quot;&#39;05-&#39;09&quot;</span>, <span class="st">&quot;&#39;10-&#39;13&quot;</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>bechdel <span class="ot">&lt;-</span> bechdel <span class="sc">%&gt;%</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">five_year =</span> <span class="fu">cut</span>(year, <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1969</span>, <span class="dv">2014</span>, <span class="dv">5</span>), <span class="at">labels =</span> year_bins))</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> five_year, <span class="at">fill =</span> clean_test)) <span class="sc">+</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">&quot;fill&quot;</span>, <span class="at">color =</span> <span class="st">&quot;black&quot;</span>) <span class="sc">+</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Year&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Proportion&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;Bechdel Test&quot;</span>) <span class="sc">+</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;YlGnBu&quot;</span>)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Data Wranling</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fec16)</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>all_transactions <span class="ot">&lt;-</span> <span class="fu">read_all_transactions</span>()</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(all_transactions)</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Maps</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng=</span><span class="sc">-</span><span class="fl">72.64022</span>, <span class="at">lat=</span><span class="fl">42.31706</span>, <span class="at">popup=</span><span class="st">&quot;Smith College&quot;</span>)</span></code></pre></div>
 </div>
 </div>
 
