@@ -97,22 +97,10 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 
-
-
-
-
-* By Monday: I will post
-    + Precise grading rubric for final project
-    + Submission method for final project
-    + Exit survey Google form link
-    + MP3 feedback (hopefully)
-
-
-## Today's Topics/Activities
-
-
-
 ***
+
+
+
 -->
 
 
@@ -123,6 +111,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 * ModernDive will always be free, always available at [ModernDive.com](https://moderndive.com/)
 * Tomorrow during lecture the in-class data assistants will hold office hours
+* I've posted office hours during finals week
 * Spinelli center notes:
     + No tutoring during finals week
     + Thank you to the in-class data assistants Marium, Emma, Sunni, and Swaha
