@@ -112,6 +112,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 * ModernDive will always be free, always available at [ModernDive.com](https://moderndive.com/)
 * Tomorrow during lecture the in-class data assistants will hold office hours
 * I've posted office hours during finals week
+* Final project due date/time is Friday 12/17 at 2pm (not 9pm)
 * Spinelli center notes:
     + No tutoring during finals week
     + Thank you to the in-class data assistants Marium, Emma, Sunni, and Swaha

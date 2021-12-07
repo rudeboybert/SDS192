@@ -337,7 +337,7 @@ There are two components to your grade:
 
 # Final Project {#Final}
 
-*Assigned on Wed Dec 1, due Fri 12/17 at 9pm.*
+*Assigned on Wed Dec 1, due Fri 12/17 at 2pm ~~9pm~~.*
 
 ## Basic outline
 
