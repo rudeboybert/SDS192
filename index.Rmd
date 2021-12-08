@@ -110,7 +110,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ## Announcements
 
 * ModernDive will always be free, always available at [ModernDive.com](https://moderndive.com/)
-* Tomorrow during lecture the in-class data assistants will hold office hours
+* For Friday's lecture the in-class data assistants will hold office hours
 * Finals week:
     + I've posted office hours for next week
     + **Final project due date/time is Friday 12/17 at 2pm (not 9pm)**
