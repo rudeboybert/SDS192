@@ -79,15 +79,14 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 ***
 
 
-<!--
-
-
 
 # Lec 38: Fri 12/10 {#Lec38}
 
 ## Announcements
 
-* No Alb
+* Today: the in-class data assistants will hold office hours
+* **Final project due date/time is Friday 12/17 at 2pm (not 9pm)**
+
 
 ## Today's Topics/Activities
 
@@ -98,10 +97,6 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 
 
 ***
-
-
-
--->
 
 
 
