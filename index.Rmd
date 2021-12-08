@@ -113,7 +113,7 @@ Note that while topics and topics dates may change, all problem sets (PS), proje
 * Tomorrow during lecture the in-class data assistants will hold office hours
 * Finals week:
     + I've posted office hours for next week
-    + Final project due date/time is Friday 12/17 at 2pm (not 9pm)
+    + **Final project due date/time is Friday 12/17 at 2pm (not 9pm)**
 * Spinelli center notes:
     + Friday 12/10 is final Spinelli drop-in tutoring hours
     + Thank you to the in-class data assistants Marium, Emma, Sunni, and Swaha
