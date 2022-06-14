@@ -13,7 +13,6 @@
 
 <title>Problem Sets</title>
 
-<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -33,6 +32,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -59,19 +59,19 @@
   }
 </style>
 <style type="text/css" data-origin="pandoc">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -91,7 +91,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {  background-color: #f8f8f8; }
 @media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
@@ -458,62 +458,43 @@ h1{font-weight: 400;}
 <div id="extension-requests" class="section level1">
 <h1>Extension Requests</h1>
 <ul>
-<li>You have an extension “budget” of a maximum of 5 days for the rest
-of the semester; it’s up to you to keep track of your budget</li>
+<li>You have an extension “budget” of a maximum of 5 days for the rest of the semester; it’s up to you to keep track of your budget</li>
 <li>Request must be made before due date/time.</li>
-<li><a
-href="https://docs.google.com/forms/d/e/1FAIpQLSeCrhqs-iTD5qPcf4FfcFNHE_rwMuaeF37yQuwusRsP9xHJ_Q/viewform"
-target="_blank">Google Form</a></li>
+<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeCrhqs-iTD5qPcf4FfcFNHE_rwMuaeF37yQuwusRsP9xHJ_Q/viewform" target="_blank">Google Form</a></li>
 </ul>
 <hr />
 </div>
 <div id="PS07" class="section level1">
 <h1>Problem set 07</h1>
 <p><em>Due Monday 12/6 9pm</em></p>
-<p>For this problem set you will start building a GitHub portfolio of
-work. You need to complete all steps to receive full credit.</p>
+<p>For this problem set you will start building a GitHub portfolio of work. You need to complete all steps to receive full credit.</p>
 <div id="edit-your-public-github-profile" class="section level2">
 <h2>1. Edit your public GitHub profile</h2>
-<p><strong>Learning Goal</strong>: Edit your public GitHub profile (if
-you haven’t already). Think of this as a professional profile like a
-LinkedIn profile. Refer to Sec02 in-class data assistant Marium Tapal’s
-<a href="https://github.com/mariumtapal" target="_blank">profile</a> as
-an example.</p>
+<p><strong>Learning Goal</strong>: Edit your public GitHub profile (if you haven’t already). Think of this as a professional profile like a LinkedIn profile. Refer to Sec02 in-class data assistant Marium Tapal’s <a href="https://github.com/mariumtapal" target="_blank">profile</a> as an example.</p>
 <ol style="list-style-type: decimal">
 <li>Add your name</li>
-<li>Change your default profile picture. It doesn’t have to include your
-face if you’re not comfortable.</li>
-<li>Add whatever other info to your profile you feel comfortable being
-public.</li>
+<li>Change your default profile picture. It doesn’t have to include your face if you’re not comfortable.</li>
+<li>Add whatever other info to your profile you feel comfortable being public.</li>
 </ol>
 </div>
 <div id="create-your-first-repo-with-a-readme" class="section level2">
 <h2>2. Create your first repo with a README</h2>
-<p><strong>Learning Goal</strong>: Build your first README. Think of
-this as a cover page to market your project.</p>
+<p><strong>Learning Goal</strong>: Build your first README. Think of this as a cover page to market your project.</p>
 <ol style="list-style-type: decimal">
 <li>Get started
 <ol style="list-style-type: decimal">
-<li>Download the following zip file:
-<a href="static/PS/PS07.zip" download><code>PS07.zip</code></a>.</li>
-<li>Move <code>PS07.zip</code> to your SDS192 folder on your
-computer</li>
-<li>Unzip <code>PS07.zip</code>. Windows users: be sure to “Extract
-all”</li>
-<li>In the resulting PS07 folder, double-click the RStudio Project
-<code>PS07.Rproj</code> icon. For this PS you should
-<strong>always</strong> work in “PS07” RStudio Project mode</li>
+<li>Download the following zip file: <a href="static/PS/PS07.zip" download><code>PS07.zip</code></a>.</li>
+<li>Move <code>PS07.zip</code> to your SDS192 folder on your computer</li>
+<li>Unzip <code>PS07.zip</code>. Windows users: be sure to “Extract all”</li>
+<li>In the resulting PS07 folder, double-click the RStudio Project <code>PS07.Rproj</code> icon. For this PS you should <strong>always</strong> work in “PS07” RStudio Project mode</li>
 </ol></li>
-<li>Change the default contents of <code>README.Rmd</code> to anything
-you like. In particular look at RStudio menu bar -&gt; Help -&gt;
-Markdown Quick Reference for markdown formatting tips.
+<li>Change the default contents of <code>README.Rmd</code> to anything you like. In particular look at RStudio menu bar -&gt; Help -&gt; Markdown Quick Reference for markdown formatting tips.
 <ol style="list-style-type: decimal">
 <li>Title</li>
 <li>Section names</li>
 <li>The plot (change it to be a <code>ggplot2</code> plot)</li>
 </ol></li>
-<li>Knit <code>README.Rmd</code> to produce <code>README.md</code> which
-is your repo’s cover page</li>
+<li>Knit <code>README.Rmd</code> to produce <code>README.md</code> which is your repo’s cover page</li>
 <li>Put your work on GitHub. See screencast:</li>
 </ol>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4-9z_MIGvXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -521,9 +502,7 @@ is your repo’s cover page</li>
 </div>
 <div id="submission" class="section level2">
 <h2>3. Submission</h2>
-<p>Submit a link to this GitHub repository using this <a
-href="https://docs.google.com/forms/d/e/1FAIpQLSf8wZIviqbDpf0jtecTGgg35LnKTvnW26tDZMhh1OB59bFexQ/viewform"
-target="_blank">Google Form</a>.</p>
+<p>Submit a link to this GitHub repository using this <a href="https://docs.google.com/forms/d/e/1FAIpQLSf8wZIviqbDpf0jtecTGgg35LnKTvnW26tDZMhh1OB59bFexQ/viewform" target="_blank">Google Form</a>.</p>
 <!--
 1. **Start this problem set early!** That way you will have time to get help at the Spinelli Center tutoring hours if you run into trouble.
 1. **I will not answer your questions until you've been to the Spinelli Center Sun-Thurs 7-9pm tutoring hours first.**
@@ -573,30 +552,18 @@ How do I know if I've successfully completed the assignment?
 <h2>1. R Markdown component</h2>
 <p>Getting started:</p>
 <ul>
-<li>Download the following zip file:
-<a href="static/PS/PS06.zip" download><code>PS06.zip</code></a>.</li>
-<li>Move <code>PS06.zip</code> to your SDS192 folder on your
-computer</li>
-<li>Unzip <code>PS06.zip</code>. Windows users: be sure to “Extract
-all”</li>
-<li>In the resulting PS06 folder, double-click the RStudio Project
-<code>PS06.Rproj</code> icon. For this PS you sound
-<strong>always</strong> work in “PS06” RStudio Project mode (See Lec26
-Mon 11/8)</li>
+<li>Download the following zip file: <a href="static/PS/PS06.zip" download><code>PS06.zip</code></a>.</li>
+<li>Move <code>PS06.zip</code> to your SDS192 folder on your computer</li>
+<li>Unzip <code>PS06.zip</code>. Windows users: be sure to “Extract all”</li>
+<li>In the resulting PS06 folder, double-click the RStudio Project <code>PS06.Rproj</code> icon. For this PS you sound <strong>always</strong> work in “PS06” RStudio Project mode (See Lec26 Mon 11/8)</li>
 </ul>
 <p>Submission:</p>
 <ul>
-<li>You will only be submitting the resulting <code>PS06.pdf</code> file
-on gradescope. Please use the “Knit to PDF” method directly, instead of
-“Knit to Word” and then save to PDF method.</li>
-<li>If you encounter issues knitting your document, consult the <a
-href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/"
-target="_blank">6 R Markdown Fixes</a>.</li>
-<li>Submit on <a href="https://www.gradescope.com/courses/308310"
-target="_blank">gradescope</a>:
+<li>You will only be submitting the resulting <code>PS06.pdf</code> file on gradescope. Please use the “Knit to PDF” method directly, instead of “Knit to Word” and then save to PDF method.</li>
+<li>If you encounter issues knitting your document, consult the <a href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/" target="_blank">6 R Markdown Fixes</a>.</li>
+<li>Submit on <a href="https://www.gradescope.com/courses/308310" target="_blank">gradescope</a>:
 <ol style="list-style-type: decimal">
-<li>For each questions, tag <strong>all</strong> pages of your PDF that
-relate to that question (not just the first)</li>
+<li>For each questions, tag <strong>all</strong> pages of your PDF that relate to that question (not just the first)</li>
 <li>You will be asked to tag the honor code question as well.</li>
 </ol></li>
 </ul>
@@ -609,20 +576,13 @@ relate to that question (not just the first)</li>
 <div id="PS05_R" class="section level2">
 <h2>1. R Markdown component</h2>
 <ul>
-<li>Download the following Rmd template file:
-<a href="static/PS/PS05.Rmd" download><code>PS05.Rmd</code></a>.</li>
-<li>You will be submitting the resulting <code>PS05.pdf</code> file on
-gradescope. Please use the “Knit to PDF” method directly, instead of
-“Knit to Word” and then save to PDF method.</li>
+<li>Download the following Rmd template file: <a href="static/PS/PS05.Rmd" download><code>PS05.Rmd</code></a>.</li>
+<li>You will be submitting the resulting <code>PS05.pdf</code> file on gradescope. Please use the “Knit to PDF” method directly, instead of “Knit to Word” and then save to PDF method.</li>
 <li>Complete the individual questions. Knit early, knit often.</li>
-<li>If you encounter issues knitting your document, consult the <a
-href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/"
-target="_blank">6 R Markdown Fixes</a>.</li>
-<li>Submit on <a href="https://www.gradescope.com/courses/308310"
-target="_blank">gradescope</a>:
+<li>If you encounter issues knitting your document, consult the <a href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/" target="_blank">6 R Markdown Fixes</a>.</li>
+<li>Submit on <a href="https://www.gradescope.com/courses/308310" target="_blank">gradescope</a>:
 <ol style="list-style-type: decimal">
-<li>For each questions, tag <strong>all</strong> pages of your PDF that
-relate to that question (not just the first)</li>
+<li>For each questions, tag <strong>all</strong> pages of your PDF that relate to that question (not just the first)</li>
 <li>You will be asked to tag the honor code question as well.</li>
 </ol></li>
 </ul>
@@ -630,52 +590,38 @@ relate to that question (not just the first)</li>
 <div id="PS05_solutions" class="section level2">
 <h2>2. Solutions</h2>
 <ul>
-<li><a href="static/PS/PS05_solutions.Rmd" download><code>PS05_solutions.Rmd</code></a>
-R Markdown “source code”</li>
-<li><a href="static/PS/PS05_solutions.pdf"
-target="_blank"><code>PS05_solutions.pdf</code></a> PDF</li>
+<li><a href="static/PS/PS05_solutions.Rmd" download><code>PS05_solutions.Rmd</code></a> R Markdown “source code”</li>
+<li><a href="static/PS/PS05_solutions.pdf" target="_blank"><code>PS05_solutions.pdf</code></a> PDF</li>
 </ul>
-<p><strong>Solutions to PS05 Q1.c)</strong>. What happened to the
-average age above 60? The hint given on Slack was to look at the
-<code>ggplot2</code> cheatsheet -&gt; 2nd page -&gt; Bottom right corner
--&gt; “Zooming”</p>
+<p><strong>Solutions to PS05 Q1.c)</strong>. What happened to the average age above 60? The hint given on Slack was to look at the <code>ggplot2</code> cheatsheet -&gt; 2nd page -&gt; Bottom right corner -&gt; “Zooming”</p>
 <ul>
-<li><code>ylim(a, b)</code> sets the limit on the y-axis to be between
-<code>a</code> to <code>b</code> and “clips” (throws out) any points
-outside this interval</li>
-<li><code>coord_cartesian(ylim=c(a, b))</code> zooms in on the the
-y-axis to be between <code>a</code> to <code>b</code> but does not
-“clip” (throw out) the points outside this interval</li>
+<li><code>ylim(a, b)</code> sets the limit on the y-axis to be between <code>a</code> to <code>b</code> and “clips” (throws out) any points outside this interval</li>
+<li><code>coord_cartesian(ylim=c(a, b))</code> zooms in on the the y-axis to be between <code>a</code> to <code>b</code> but does not “clip” (throw out) the points outside this interval</li>
 </ul>
 <p>For example, consider the following regression line:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>example <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>),</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">5</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(example, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a>example &lt;-<span class="st"> </span><span class="kw">tibble</span>(</span>
+<span id="cb1-5"><a href="#cb1-5"></a>  <span class="dt">x =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>),</span>
+<span id="cb1-6"><a href="#cb1-6"></a>  <span class="dt">y =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">5</span>)</span>
+<span id="cb1-7"><a href="#cb1-7"></a>)</span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</span></code></pre></div>
 <p><img src="PS_files/figure-html/unnamed-chunk-2-1.png" width="512" /></p>
-<p>Let’s set the y-axis limit to be between 0 and 3. Using
-<code>ylim(0, 3)</code> clips out the point <code>(5, 5)</code> and thus
-the regression line is flat:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(example, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>, <span class="dv">3</span>)</span></code></pre></div>
+<p>Let’s set the y-axis limit to be between 0 and 3. Using <code>ylim(0, 3)</code> clips out the point <code>(5, 5)</code> and thus the regression line is flat:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) <span class="op">+</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="st">  </span><span class="kw">ylim</span>(<span class="dv">0</span>, <span class="dv">3</span>)</span></code></pre></div>
 <p><img src="PS_files/figure-html/unnamed-chunk-3-1.png" width="512" /></p>
-<p>However, using <code>coord_cartesian(ylim = c(0, 3))</code> merely
-zooms in on this part of the y-axis without clipping the point
-<code>(5, 5)</code> and thus the regression line is the original
-one:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(example, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">3</span>))</span></code></pre></div>
+<p>However, using <code>coord_cartesian(ylim = c(0, 3))</code> merely zooms in on this part of the y-axis without clipping the point <code>(5, 5)</code> and thus the regression line is the original one:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">ggplot</span>(example, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) <span class="op">+</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="st">  </span><span class="kw">coord_cartesian</span>(<span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">3</span>))</span></code></pre></div>
 <p><img src="PS_files/figure-html/unnamed-chunk-4-1.png" width="512" /></p>
 <hr />
 </div>
@@ -686,21 +632,14 @@ one:</p>
 <div id="PS04_R" class="section level2">
 <h2>1. R Markdown component</h2>
 <ul>
-<li>Download the following Rmd template file:
-<a href="static/PS/PS04.Rmd" download><code>PS04.Rmd</code></a>.</li>
-<li>You will be submitting the resulting <code>PS04.pdf</code> file on
-gradescope. Please use the “Knit to PDF” method directly, instead of
-“Knit to Word” and then save to PDF method.</li>
+<li>Download the following Rmd template file: <a href="static/PS/PS04.Rmd" download><code>PS04.Rmd</code></a>.</li>
+<li>You will be submitting the resulting <code>PS04.pdf</code> file on gradescope. Please use the “Knit to PDF” method directly, instead of “Knit to Word” and then save to PDF method.</li>
 <li>Complete the individual questions. Knit early, knit often.</li>
-<li>If you encounter issues knitting your document, consult the <a
-href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/"
-target="_blank">6 R Markdown Fixes</a>.</li>
-<li>Submit on <a href="https://www.gradescope.com/courses/308310"
-target="_blank">gradescope</a>:
+<li>If you encounter issues knitting your document, consult the <a href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/" target="_blank">6 R Markdown Fixes</a>.</li>
+<li>Submit on <a href="https://www.gradescope.com/courses/308310" target="_blank">gradescope</a>:
 <ol style="list-style-type: decimal">
 <li>Anytime between Wed 10/13 8pm and Mon 10/18 9pm</li>
-<li>For each questions, tag <strong>all</strong> pages of your PDF that
-relate to that question (not just the first)</li>
+<li>For each questions, tag <strong>all</strong> pages of your PDF that relate to that question (not just the first)</li>
 <li>You will be asked to tag the honor code question as well.</li>
 </ol></li>
 </ul>
@@ -708,10 +647,8 @@ relate to that question (not just the first)</li>
 <div id="PS04_solutions" class="section level2">
 <h2>2. Solutions</h2>
 <ul>
-<li><a href="static/PS/PS04_solutions.Rmd" download><code>PS04_solutions.Rmd</code></a>
-R Markdown “source code”</li>
-<li><a href="static/PS/PS04_solutions.pdf"
-target="_blank"><code>PS04_solutions.pdf</code></a> PDF</li>
+<li><a href="static/PS/PS04_solutions.Rmd" download><code>PS04_solutions.Rmd</code></a> R Markdown “source code”</li>
+<li><a href="static/PS/PS04_solutions.pdf" target="_blank"><code>PS04_solutions.pdf</code></a> PDF</li>
 </ul>
 <hr />
 </div>
@@ -722,21 +659,14 @@ target="_blank"><code>PS04_solutions.pdf</code></a> PDF</li>
 <div id="PS03_R" class="section level2">
 <h2>1. R Markdown component</h2>
 <ul>
-<li>Download the following Rmd template file:
-<a href="static/PS/PS03.Rmd" download><code>PS03.Rmd</code></a>.</li>
-<li>You will be submitting the resulting <code>PS03.pdf</code> file on
-gradescope. Please use the “Knit to PDF” method directly, instead of
-“Knit to Word” and then save to PDF method.</li>
+<li>Download the following Rmd template file: <a href="static/PS/PS03.Rmd" download><code>PS03.Rmd</code></a>.</li>
+<li>You will be submitting the resulting <code>PS03.pdf</code> file on gradescope. Please use the “Knit to PDF” method directly, instead of “Knit to Word” and then save to PDF method.</li>
 <li>Complete the individual questions. Knit early, knit often.</li>
-<li>If you encounter issues knitting your document, consult the <a
-href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/"
-target="_blank">6 R Markdown Fixes</a>.</li>
-<li>Submit on <a href="https://www.gradescope.com/courses/308310"
-target="_blank">gradescope</a>:
+<li>If you encounter issues knitting your document, consult the <a href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/" target="_blank">6 R Markdown Fixes</a>.</li>
+<li>Submit on <a href="https://www.gradescope.com/courses/308310" target="_blank">gradescope</a>:
 <ol style="list-style-type: decimal">
 <li>Anytime between Mon 9/20 5pm and Tue 9/29 9pm</li>
-<li>For each questions, tag <strong>all</strong> pages of your PDF that
-relate to that question (not just the first)</li>
+<li>For each questions, tag <strong>all</strong> pages of your PDF that relate to that question (not just the first)</li>
 <li>You will be asked to tag the honor code question as well.</li>
 </ol></li>
 </ul>
@@ -744,10 +674,8 @@ relate to that question (not just the first)</li>
 <div id="PS03_solutions" class="section level2">
 <h2>2. Solutions</h2>
 <ul>
-<li><a href="static/PS/PS03_solutions.Rmd" download><code>PS03_solutions.Rmd</code></a>
-R Markdown “source code”</li>
-<li><a href="static/PS/PS03_solutions.pdf"
-target="_blank"><code>PS03_solutions.pdf</code></a> PDF</li>
+<li><a href="static/PS/PS03_solutions.Rmd" download><code>PS03_solutions.Rmd</code></a> R Markdown “source code”</li>
+<li><a href="static/PS/PS03_solutions.pdf" target="_blank"><code>PS03_solutions.pdf</code></a> PDF</li>
 </ul>
 <hr />
 </div>
@@ -758,36 +686,26 @@ target="_blank"><code>PS03_solutions.pdf</code></a> PDF</li>
 <div id="PS02_R" class="section level2">
 <h2>1. R Markdown component</h2>
 <ul>
-<li>Download the following Rmd template file:
-<a href="static/PS/PS02.Rmd" download><code>PS02.Rmd</code></a>.</li>
-<li>You will be submitting the resulting <code>PS02.pdf</code> file on
-gradescope. There are two methods to create a PDF:
+<li>Download the following Rmd template file: <a href="static/PS/PS02.Rmd" download><code>PS02.Rmd</code></a>.</li>
+<li>You will be submitting the resulting <code>PS02.pdf</code> file on gradescope. There are two methods to create a PDF:
 <ol style="list-style-type: decimal">
-<li>“Knit to PDF”. This is the preferred format (for consistency for the
-graders).</li>
-<li>If this doesn’t work for you, then “Knit to Word” and then
-export/save as PDF</li>
+<li>“Knit to PDF”. This is the preferred format (for consistency for the graders).</li>
+<li>If this doesn’t work for you, then “Knit to Word” and then export/save as PDF</li>
 </ol></li>
 <li>Complete the individual questions. Knit early, knit often.</li>
-<li>If you encounter issues knitting your document, consult the <a
-href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/"
-target="_blank">6 R Markdown Fixes</a>.</li>
-<li>Submit on <a href="https://www.gradescope.com/courses/308310"
-target="_blank">gradescope</a>:
+<li>If you encounter issues knitting your document, consult the <a href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/" target="_blank">6 R Markdown Fixes</a>.</li>
+<li>Submit on <a href="https://www.gradescope.com/courses/308310" target="_blank">gradescope</a>:
 <ol style="list-style-type: decimal">
 <li>Anytime between Mon 9/13 5pm and Mon 9/20 5pm</li>
-<li>For each questions, tag <strong>all</strong> pages of your PDF that
-relate to that question (not just the first)</li>
+<li>For each questions, tag <strong>all</strong> pages of your PDF that relate to that question (not just the first)</li>
 </ol></li>
 </ul>
 </div>
 <div id="PS02_solutions" class="section level2">
 <h2>2. Solutions</h2>
 <ul>
-<li><a href="static/PS/PS02_solutions.Rmd" download><code>PS02_solutions.Rmd</code></a>
-R Markdown “source code”</li>
-<li><a href="static/PS/PS02_solutions.pdf"
-target="_blank"><code>PS02_solutions.pdf</code></a> PDF</li>
+<li><a href="static/PS/PS02_solutions.Rmd" download><code>PS02_solutions.Rmd</code></a> R Markdown “source code”</li>
+<li><a href="static/PS/PS02_solutions.pdf" target="_blank"><code>PS02_solutions.pdf</code></a> PDF</li>
 </ul>
 <hr />
 </div>
@@ -796,32 +714,19 @@ target="_blank"><code>PS02_solutions.pdf</code></a> PDF</li>
 <h1>Problem set 01</h1>
 <p><em>Due Monday 9/13 5pm</em></p>
 <ol style="list-style-type: decimal">
-<li>If you haven’t already, complete the <a
-href="https://docs.google.com/forms/d/e/1FAIpQLSdA6uWnig5oR3ITCsVBFDxC6IC5Nq1tYzo-atdChe8CVTTqag/viewform"
-target="_blank">intro survey</a> distributed on Friday.</li>
+<li>If you haven’t already, complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLSdA6uWnig5oR3ITCsVBFDxC6IC5Nq1tYzo-atdChe8CVTTqag/viewform" target="_blank">intro survey</a> distributed on Friday.</li>
 <li>Complete a syllabus quiz.
 <ul>
-<li>Open the following <a
-href="https://docs.google.com/document/d/1WknUhbtDeTGw8vvO8ytTURkF1_72ve4UXF5-SPk5NO8/"
-target="_blank">Google Doc</a> and in the menu bar click “File -&gt;
-Make a copy…”</li>
-<li>Answer the questions based on information in the <a
-href="syllabus.html">syllabus</a>.</li>
+<li>Open the following <a href="https://docs.google.com/document/d/1WknUhbtDeTGw8vvO8ytTURkF1_72ve4UXF5-SPk5NO8/" target="_blank">Google Doc</a> and in the menu bar click “File -&gt; Make a copy…”</li>
+<li>Answer the questions based on information in the <a href="syllabus.html">syllabus</a>.</li>
 </ul></li>
 <li>Submit a PDF of your syllabus quiz responses on gradescope:
 <ul>
-<li>Your gradescope account is based on your Smith, 5 College, or other
-official email.</li>
-<li>Create your account on gradescope via the email sent to you this
-morning. If you did not receive such an email, add yourself to the
-course using Entry Code: 6PNXZ5.</li>
-<li>Log into <a href="https://www.gradescope.com/courses/308310"
-target="_blank">gradescope</a></li>
-<li><strong>Added after lecture</strong>: You can edit gradescope
-submissions as many times as you like before the due date/time.</li>
-<li><strong>Added after lecture</strong>: You need to “tag” the 11
-individual questions on whatever page(s) they are on (demo on Fri
-9/10)</li>
+<li>Your gradescope account is based on your Smith, 5 College, or other official email.</li>
+<li>Create your account on gradescope via the email sent to you this morning. If you did not receive such an email, add yourself to the course using Entry Code: 6PNXZ5.</li>
+<li>Log into <a href="https://www.gradescope.com/courses/308310" target="_blank">gradescope</a></li>
+<li><strong>Added after lecture</strong>: You can edit gradescope submissions as many times as you like before the due date/time.</li>
+<li><strong>Added after lecture</strong>: You need to “tag” the 11 individual questions on whatever page(s) they are on (demo on Fri 9/10)</li>
 </ul></li>
 </ol>
 </div>
