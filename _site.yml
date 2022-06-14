@@ -30,7 +30,7 @@ navbar:
   - text: Problem Sets
     href: PS.html
   - text: Projects
-    href: projects.html#Final
+    href: projects.html
   - text: Midterms
     href: midterms.html
   - text: Syllabus

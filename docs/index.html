@@ -14,6 +14,7 @@
 
 <title>SDS 192: Introduction to Data Science</title>
 
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -33,7 +34,6 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link rel="shortcut icon" href="static/images/192.png">
@@ -48,6 +48,7 @@
     </style>
 
 
+
 <style type="text/css">
   code {
     white-space: pre;
@@ -57,19 +58,19 @@
   }
 </style>
 <style type="text/css" data-origin="pandoc">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -89,7 +90,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {  background-color: #f8f8f8; }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
@@ -169,6 +170,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -394,7 +398,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -421,7 +425,7 @@ div.tocify {
   <a href="PS.html">Problem Sets</a>
 </li>
 <li>
-  <a href="projects.html#Final">Projects</a>
+  <a href="projects.html">Projects</a>
 </li>
 <li>
   <a href="midterms.html">Midterms</a>
@@ -440,7 +444,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS 192: Introduction to Data Science</h1>
 <h4 class="author">Albert Y. Kim</h4>
-<h4 class="date">Last updated on 2022-01-02</h4>
+<h4 class="date">Last updated on 2022-06-14</h4>
 
 </div>
 
@@ -456,12 +460,16 @@ h1{font-weight: 400;}
 <h1>Schedule</h1>
 <p><strong>Topics</strong>:</p>
 <ol style="list-style-type: decimal">
-<li>Data visualization (pink): Grammar of Graphics, Five Named Graphs (5NG), color theory.</li>
-<li>Working with data (blue): data wrangling, importing, and formatting</li>
+<li>Data visualization (pink): Grammar of Graphics, Five Named Graphs
+(5NG), color theory.</li>
+<li>Working with data (blue): data wrangling, importing, and
+formatting</li>
 <li>Maps and spatial data (green): Maps and geospatial data.</li>
-<li>Learning how to learn new data science tools (yellow): SQL, TBD.</li>
+<li>Learning how to learn new data science tools (yellow): SQL,
+TBD.</li>
 </ol>
-<p>Note that while topics and topics dates may change, all problem sets (PS), project, and midterm dates will not.</p>
+<p>Note that while topics and topics dates may change, all problem sets
+(PS), project, and midterm dates will not.</p>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRvggFhESyu_EFxrcFQXsZtdaQqaqcQ6kgWg173WTkTeWV67RWiZ01G8jhJsQ2b5VUVCJqQ8xo6COWM/pubhtml?gid=833934180&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="850">
 </iframe>
 <!--
@@ -475,7 +483,8 @@ h1{font-weight: 400;}
 <h2>Announcements</h2>
 <ul>
 <li>Today: the in-class data assistants will hold office hours</li>
-<li><strong>Final project due date/time is Friday 12/17 at 2pm (not 9pm)</strong></li>
+<li><strong>Final project due date/time is Friday 12/17 at 2pm (not
+9pm)</strong></li>
 </ul>
 </div>
 <div id="todays-topicsactivities" class="section level2">
@@ -494,17 +503,21 @@ h1{font-weight: 400;}
 <div id="announcements-1" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>ModernDive will always be free, always available at <a href="https://moderndive.com/">ModernDive.com</a></li>
-<li>For Friday’s lecture the in-class data assistants will hold office hours</li>
+<li>ModernDive will always be free, always available at <a
+href="https://moderndive.com/">ModernDive.com</a></li>
+<li>For Friday’s lecture the in-class data assistants will hold office
+hours</li>
 <li>Finals week:
 <ul>
 <li>I’ve posted office hours for next week</li>
-<li><strong>Final project due date/time is Friday 12/17 at 2pm (not 9pm)</strong></li>
+<li><strong>Final project due date/time is Friday 12/17 at 2pm (not
+9pm)</strong></li>
 </ul></li>
 <li>Spinelli center notes:
 <ul>
 <li>Friday 12/10 is final Spinelli drop-in tutoring hours</li>
-<li>Thank you to the in-class data assistants Marium, Emma, Sunni, and Swaha</li>
+<li>Thank you to the in-class data assistants Marium, Emma, Sunni, and
+Swaha</li>
 <li>Thank you to the Spinelli Center tutors</li>
 </ul></li>
 <li>Reflection exercise</li>
@@ -528,11 +541,16 @@ h1{font-weight: 400;}
 <h2>Announcements</h2>
 <ul>
 <li>Go over final project submission instructions</li>
-<li>Wednesday is final lecture I’ll be present; on Friday the Spinelli data assistants will hold in-class office hours.</li>
+<li>Wednesday is final lecture I’ll be present; on Friday the Spinelli
+data assistants will hold in-class office hours.</li>
 <li>Note on coding style
 <ul>
-<li>Check out the <a href="https://style.tidyverse.org/" target="_blank"><code>tidyverse</code> style guide</a>.</li>
-<li>Why is it important to write clean code, that is well documented, and actually works? To be mindful of the work you create for your <a href="https://rmhogervorst.nl/cleancode/blog/2016/05/26/content/post/2016-05-26-your-most-valuable-collaborator-future-you/" target="_blank">most important collaborator</a>.</li>
+<li>Check out the <a href="https://style.tidyverse.org/"
+target="_blank"><code>tidyverse</code> style guide</a>.</li>
+<li>Why is it important to write clean code, that is well documented,
+and actually works? To be mindful of the work you create for your <a
+href="https://rmhogervorst.nl/cleancode/blog/2016/05/26/content/post/2016-05-26-your-most-valuable-collaborator-future-you/"
+target="_blank">most important collaborator</a>.</li>
 </ul></li>
 </ul>
 </div>
@@ -548,34 +566,34 @@ h1{font-weight: 400;}
 </ul></li>
 <li>Work on Final Project</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(tidyverse)</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># 1. Combine two ggplots together using patchwork package:</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="kw">library</span>(patchwork)</span>
-<span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a>plot_<span class="dv">1</span> &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mtcars) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(mpg, disp))</span>
-<span id="cb1-7"><a href="#cb1-7"></a>plot_<span class="dv">2</span> &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mtcars) <span class="op">+</span><span class="st"> </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(gear, disp, <span class="dt">group =</span> gear))</span>
-<span id="cb1-8"><a href="#cb1-8"></a></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="co"># Side-by-side:</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a>plot_<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>plot_<span class="dv">2</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a></span>
-<span id="cb1-12"><a href="#cb1-12"></a><span class="co"># On top of each other:</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a>plot_<span class="dv">1</span> <span class="op">/</span><span class="st"> </span>plot_<span class="dv">2</span></span>
-<span id="cb1-14"><a href="#cb1-14"></a></span>
-<span id="cb1-15"><a href="#cb1-15"></a></span>
-<span id="cb1-16"><a href="#cb1-16"></a><span class="co"># 2. Say we have a data frame with really messy names:</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a>data_frame_ugly &lt;-<span class="st"> </span><span class="kw">tibble</span>(</span>
-<span id="cb1-18"><a href="#cb1-18"></a>  <span class="st">`</span><span class="dt">asdf ?!? qwerty%</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>),</span>
-<span id="cb1-19"><a href="#cb1-19"></a>  <span class="dt">variable.name...NAMES =</span> <span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">1</span>)</span>
-<span id="cb1-20"><a href="#cb1-20"></a>)</span>
-<span id="cb1-21"><a href="#cb1-21"></a>data_frame_ugly</span>
-<span id="cb1-22"><a href="#cb1-22"></a></span>
-<span id="cb1-23"><a href="#cb1-23"></a><span class="co"># You can clean them very easily using the clean_names() function from the </span></span>
-<span id="cb1-24"><a href="#cb1-24"></a><span class="co"># janitor package</span></span>
-<span id="cb1-25"><a href="#cb1-25"></a><span class="kw">library</span>(janitor)</span>
-<span id="cb1-26"><a href="#cb1-26"></a>data_frame_clean &lt;-<span class="st"> </span>data_frame_ugly <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb1-27"><a href="#cb1-27"></a><span class="st">  </span><span class="kw">clean_names</span>()</span>
-<span id="cb1-28"><a href="#cb1-28"></a>data_frame_clean</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Combine two ggplots together using patchwork package:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>plot_1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(mtcars) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="fu">aes</span>(mpg, disp))</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>plot_2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(mtcars) <span class="sc">+</span> <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(gear, disp, <span class="at">group =</span> gear))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Side-by-side:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plot_1 <span class="sc">+</span> plot_2</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># On top of each other:</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plot_1 <span class="sc">/</span> plot_2</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Say we have a data frame with really messy names:</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>data_frame_ugly <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">asdf ?!? qwerty%</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>),</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">variable.name...NAMES =</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">1</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>data_frame_ugly</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co"># You can clean them very easily using the clean_names() function from the </span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co"># janitor package</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>data_frame_clean <span class="ot">&lt;-</span> data_frame_ugly <span class="sc">%&gt;%</span> </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>()</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>data_frame_clean</span></code></pre></div>
 <hr />
 </div>
 </div>
@@ -589,10 +607,13 @@ h1{font-weight: 400;}
 <li>Final project:
 <ul>
 <li>Open Slack to <code>#final_project</code> channel</li>
-<li>Group leader: Create a Slack DM with all members AND myself and say “we’re a group”</li>
+<li>Group leader: Create a Slack DM with all members AND myself and say
+“we’re a group”</li>
 <li>Submission details for Final Project to be posted on Monday.</li>
 </ul></li>
-<li>If you haven’t already download and install <a href="https://dev.mysql.com/downloads/workbench/" target="_blank">MySQL Workbench</a></li>
+<li>If you haven’t already download and install <a
+href="https://dev.mysql.com/downloads/workbench/" target="_blank">MySQL
+Workbench</a></li>
 </ul>
 </div>
 <div id="todays-topicsactivities-3" class="section level2">
@@ -600,26 +621,40 @@ h1{font-weight: 400;}
 <div id="chalk-talk" class="section level3">
 <h3>1. Chalk Talk</h3>
 <ul>
-<li><code>dplyr</code> and SQL are very similar. Both based on the same idea of <a href="https://en.wikipedia.org/wiki/Database_normalization" target="_blank">database normalization</a> (1970).</li>
-<li>Moral of the story: If you know the <code>dplyr</code> package for data wrangling, you can learn SQL very quickly.</li>
+<li><code>dplyr</code> and SQL are very similar. Both based on the same
+idea of <a href="https://en.wikipedia.org/wiki/Database_normalization"
+target="_blank">database normalization</a> (1970).</li>
+<li>Moral of the story: If you know the <code>dplyr</code> package for
+data wrangling, you can learn SQL very quickly.</li>
 </ul>
 </div>
 <div id="in-class-exercise-3" class="section level3">
 <h3>2. In-class exercise</h3>
-<p>Perform 2-3 SQL queries to convince yourself that if you know <code>dplyr</code>, you can learn SQL very quickly. This exercise is based on Prof. Baumer’s <a href="https://beanumber.github.io/sds192/lectures/29-sql.html#1" target="_blank">lecture notes</a>.</p>
+<p>Perform 2-3 SQL queries to convince yourself that if you know
+<code>dplyr</code>, you can learn SQL very quickly. This exercise is
+based on Prof. Baumer’s <a
+href="https://beanumber.github.io/sds192/lectures/29-sql.html#1"
+target="_blank">lecture notes</a>.</p>
 <ol style="list-style-type: decimal">
 <li>Setup
 <ol style="list-style-type: decimal">
-<li>Install and open <a href="https://dev.mysql.com/downloads/workbench/" target="_blank">MySQLWorkbench</a>; this whole process takes about 10 minutes and necessitates creating an account with Oracle.</li>
+<li>Install and open <a
+href="https://dev.mysql.com/downloads/workbench/"
+target="_blank">MySQLWorkbench</a>; this whole process takes about 10
+minutes and necessitates creating an account with Oracle.</li>
 <li>Close the “Welcome to MySQL Workbench” message</li>
-<li>Click the plus sign next to “MySQL Connections” to add a connection to a SQL database.</li>
-<li>Setup a new connection" as shown in <code>#general</code> in Slack</li>
-<li>Click the resulting “Playing with SQL” connection and input the password in <code>#general</code> in Slack</li>
+<li>Click the plus sign next to “MySQL Connections” to add a connection
+to a SQL database.</li>
+<li>Setup a new connection” as shown in <code>#general</code> in
+Slack</li>
+<li>Click the resulting “Playing with SQL” connection and input the
+password in <code>#general</code> in Slack</li>
 </ol></li>
 <li>Running SQL code
 <ol style="list-style-type: decimal">
 <li>Copy and paste the code below into the Query window</li>
-<li>For each of the 10 code segments: highlight it and then run it by clicking the “lightning” icon.</li>
+<li>For each of the 10 code segments: highlight it and then run it by
+clicking the “lightning” icon.</li>
 </ol></li>
 </ol>
 <script src="https://gist.github.com/rudeboybert/35098400f4f36c36fc5d0e96cb40786d.js"></script>
@@ -632,13 +667,20 @@ h1{font-weight: 400;}
 <div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>Download and install <a href="https://dev.mysql.com/downloads/workbench/" target="_blank">MySQL Workbench</a> before Friday’s lecture</li>
+<li>Download and install <a
+href="https://dev.mysql.com/downloads/workbench/" target="_blank">MySQL
+Workbench</a> before Friday’s lecture</li>
 <li>Before chalk talk:
 <ol style="list-style-type: decimal">
-<li>Download the following zip file: <a href="static/example_webpage.zip" download><code>example_webpage.zip</code></a></li>
-<li>Move <code>example_webpage.zip</code> to your SDS192 folder on your computer</li>
-<li>Unzip <code>example_webpage.zip</code>. Windows users: be sure to “Extract all”</li>
-<li>In the resulting <code>example_webpage</code> folder, double-click the RStudio Project <code>example_webpage.Rproj</code> icon to open RStudio Project mode</li>
+<li>Download the following zip file:
+<a href="static/example_webpage.zip" download><code>example_webpage.zip</code></a></li>
+<li>Move <code>example_webpage.zip</code> to your SDS192 folder on your
+computer</li>
+<li>Unzip <code>example_webpage.zip</code>. Windows users: be sure to
+“Extract all”</li>
+<li>In the resulting <code>example_webpage</code> folder, double-click
+the RStudio Project <code>example_webpage.Rproj</code> icon to open
+RStudio Project mode</li>
 </ol></li>
 </ul>
 </div>
@@ -646,16 +688,22 @@ h1{font-weight: 400;}
 <h2>Today’s topics/activities</h2>
 <div id="chalk-talk-1" class="section level3">
 <h3>1. Chalk talk</h3>
-<p><code>example_webpage</code> is a portion of the <a href="https://rmarkdown.rstudio.com/lesson-13.html" target="_blank">R Markdown Websites</a> code for this course webpage:</p>
+<p><code>example_webpage</code> is a portion of the <a
+href="https://rmarkdown.rstudio.com/lesson-13.html" target="_blank">R
+Markdown Websites</a> code for this course webpage:</p>
 <ul>
 <li>Inputs: <code>.Rmd</code> and <code>_site.yml</code> files</li>
-<li>Output: webpage in <code>docs/</code> folder, in particular the <code>index.html</code> mainpage</li>
+<li>Output: webpage in <code>docs/</code> folder, in particular the
+<code>index.html</code> mainpage</li>
 <li>“Deploying” your webpage: Many ways</li>
 </ul>
 </div>
 <div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>
-<p>Today you’ll modify the source code for <code>example_webpage</code> and then deploying this webpage using <a href="https://app.netlify.com/drop" target="_blank">Netlify drop</a>:</p>
+<p>Today you’ll modify the source code for <code>example_webpage</code>
+and then deploying this webpage using <a
+href="https://app.netlify.com/drop" target="_blank">Netlify
+drop</a>:</p>
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-LRlQ_jaLAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
@@ -664,13 +712,19 @@ h1{font-weight: 400;}
 <ol style="list-style-type: decimal">
 <li>Create an account on netlify.com using your GitHub account
 <ul>
-<li>Log into <a href="https://github.com/" target="_blank">GitHub</a> first. If you haven’t created an account, do so using <strong>using your Smith email address</strong>.</li>
-<li>Sign into <a href="https://app.netlify.com/" target="_blank">Netlify</a> using your GitHub account</li>
+<li>Log into <a href="https://github.com/" target="_blank">GitHub</a>
+first. If you haven’t created an account, do so using <strong>using your
+Smith email address</strong>.</li>
+<li>Sign into <a href="https://app.netlify.com/"
+target="_blank">Netlify</a> using your GitHub account</li>
 </ul></li>
 <li>Change and build your website locally (on your computer)
 <ul>
-<li>In <code>index.Rmd</code> change the <code>author</code> from <code>"Albert Y. Kim"</code> to you and change the <code>title</code></li>
-<li>Build your R Markdown Website by going to the “Build” panel of RStudio -&gt; Clicking “Build Website”.<br />
+<li>In <code>index.Rmd</code> change the <code>author</code> from
+<code>"Albert Y. Kim"</code> to you and change the
+<code>title</code></li>
+<li>Build your R Markdown Website by going to the “Build” panel of
+RStudio -&gt; Clicking “Build Website”.<br />
 You can also use the keyboard shortcuts:
 <ul>
 <li>macOS: Command+Shift+B</li>
@@ -680,9 +734,14 @@ You can also use the keyboard shortcuts:
 </ul></li>
 <li>Deploy your R Markdown Website
 <ul>
-<li>Go to <a href="https://app.netlify.com/drop" target="_blank">Netlify Drop</a></li>
-<li>Drag-and-drop the <code>docs/</code> folder output in your <code>example_webpage</code> RStudio Project folder.</li>
-<li>If you want to rename your webpage’s URL rather than use the default one you’ve been assigned: Click on “Domain settings” -&gt; Click on the “…” next to your default site name -&gt; Click on “Edit site name” -&gt; Rename your site</li>
+<li>Go to <a href="https://app.netlify.com/drop" target="_blank">Netlify
+Drop</a></li>
+<li>Drag-and-drop the <code>docs/</code> folder output in your
+<code>example_webpage</code> RStudio Project folder.</li>
+<li>If you want to rename your webpage’s URL rather than use the default
+one you’ve been assigned: Click on “Domain settings” -&gt; Click on the
+“…” next to your default site name -&gt; Click on “Edit site name” -&gt;
+Rename your site</li>
 </ul></li>
 </ol>
 <hr />
@@ -694,18 +753,28 @@ You can also use the keyboard shortcuts:
 <div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>Candidates for two new SDS faculty will be on campus this week and next
+<li>Candidates for two new SDS faculty will be on campus this week and
+next
 <ul>
-<li>For data science position: See “Meet the SDS Data Science New Faculty Candidates!” email sent to SDS student mailing list.</li>
+<li>For data science position: See “Meet the SDS Data Science New
+Faculty Candidates!” email sent to SDS student mailing list.</li>
 <li>For joint MTH/SDS position: To be confirmed soon.</li>
-<li>Because of this office hours are highly inconsistent and variable this week. However, they will always be confirmed and posted at least 24h in advance.</li>
+<li>Because of this office hours are highly inconsistent and variable
+this week. However, they will always be confirmed and posted at least
+24h in advance.</li>
 </ul></li>
-<li>Final project in groups of 2-3 will be assigned on Wednesday and due Fri 12/17 9pm (last day of exams). You can choose your group.</li>
+<li>Final project in groups of 2-3 will be assigned on Wednesday and due
+Fri 12/17 9pm (last day of exams). You can choose your group.</li>
 <li>PS07 posted</li>
 <li>To do before chalk talk
 <ul>
-<li>If you haven’t already, create an account on GitHub.com <strong>using your Smith email address</strong>. If you already have a GitHub account, make sure your Smith email is in your Profile settings.</li>
-<li>Open the GitHub repo for the <a href="https://github.com/rudeboybert/fivethirtyeight" target="_blank"><code>fivethirtyeight</code></a> R package</li>
+<li>If you haven’t already, create an account on GitHub.com
+<strong>using your Smith email address</strong>. If you already have a
+GitHub account, make sure your Smith email is in your Profile
+settings.</li>
+<li>Open the GitHub repo for the <a
+href="https://github.com/rudeboybert/fivethirtyeight"
+target="_blank"><code>fivethirtyeight</code></a> R package</li>
 </ul></li>
 </ul>
 </div>
@@ -724,7 +793,8 @@ You can also use the keyboard shortcuts:
 <div id="in-class-exercise-5" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
-<li>Work on MP3 (due tomorrow at 9pm), don’t forget to submit your Peer Evaluation Google Form.</li>
+<li>Work on MP3 (due tomorrow at 9pm), don’t forget to submit your Peer
+Evaluation Google Form.</li>
 <li>Work on PS07</li>
 </ul>
 <hr />
@@ -736,7 +806,8 @@ You can also use the keyboard shortcuts:
 <div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>MP3 now due Tuesday 11/30 at 9pm (after break). There will be no extensions past this due date/time.</li>
+<li>MP3 now due Tuesday 11/30 at 9pm (after break). There will be no
+extensions past this due date/time.</li>
 </ul>
 </div>
 <div id="todays-topicsactivities-6" class="section level2">
@@ -761,7 +832,8 @@ You can also use the keyboard shortcuts:
 <div id="announcements-7" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>MP3 now due Tuesday 11/30 at 9pm (after break). There will be no extensions past this due date/time.</li>
+<li>MP3 now due Tuesday 11/30 at 9pm (after break). There will be no
+extensions past this due date/time.</li>
 </ul>
 </div>
 <div id="todays-topicsactivities-7" class="section level2">
@@ -787,7 +859,10 @@ You can also use the keyboard shortcuts:
 <h2>Announcements</h2>
 <ul>
 <li>Slack messages</li>
-<li><a href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr" target="_blank">Data Research and Statistics Counselor</a> Osman Keshawarz</li>
+<li><a
+href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr"
+target="_blank">Data Research and Statistics Counselor</a> Osman
+Keshawarz</li>
 <li>Poll</li>
 </ul>
 </div>
@@ -796,34 +871,41 @@ You can also use the keyboard shortcuts:
 <div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
-<li>Recap of all <code>sf</code> data frames seen so far in MP3 Project -&gt; <code>examples.Rmd</code></li>
-<li><a href="https://en.wikipedia.org/wiki/FIPS_county_code" target="_blank">Federal Information Processing Standard</a> (FIPS) codes for counties<br />
+<li>Recap of all <code>sf</code> data frames seen so far in MP3 Project
+-&gt; <code>examples.Rmd</code></li>
+<li><a href="https://en.wikipedia.org/wiki/FIPS_county_code"
+target="_blank">Federal Information Processing Standard</a> (FIPS) codes
+for counties<br />
 <img src="static/images/FIPS.png" width="300" /></li>
-<li>Example: Looking up the <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt#:~:text=FIPS%20codes%20are%20numbers%20which,to%20which%20the%20county%20belongs." target="_blank">database</a>:
+<li>Example: Looking up the <a
+href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt#:~:text=FIPS%20codes%20are%20numbers%20which,to%20which%20the%20county%20belongs."
+target="_blank">database</a>:
 <ul>
 <li>25XXX = Massachusetts counties</li>
 <li>25105 = Hampshire County, Massachusetts</li>
 </ul></li>
-<li>From MP3 Project -&gt; <code>examples.Rmd</code> -&gt; Section 3 -&gt; Look at contents of <code>mass_pop_orig</code> -&gt; <code>GEOID</code> variable:</li>
+<li>From MP3 Project -&gt; <code>examples.Rmd</code> -&gt; Section 3
+-&gt; Look at contents of <code>mass_pop_orig</code> -&gt;
+<code>GEOID</code> variable:</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="op">&gt;</span><span class="st"> </span>mass_pop_orig</span>
-<span id="cb2-2"><a href="#cb2-2"></a>Simple feature collection with <span class="dv">14</span> features and <span class="dv">7</span> fields</span>
-<span id="cb2-3"><a href="#cb2-3"></a>Geometry type<span class="op">:</span><span class="st"> </span>MULTIPOLYGON</span>
-<span id="cb2-4"><a href="#cb2-4"></a>Dimension<span class="op">:</span><span class="st">     </span>XY</span>
-<span id="cb2-5"><a href="#cb2-5"></a>Bounding box<span class="op">:</span><span class="st">  </span>xmin<span class="op">:</span><span class="st"> </span><span class="fl">-73.50814</span> ymin<span class="op">:</span><span class="st"> </span><span class="fl">41.23796</span> xmax<span class="op">:</span><span class="st"> </span><span class="fl">-69.92839</span> ymax<span class="op">:</span><span class="st"> </span><span class="fl">42.88659</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a>Geodetic CRS<span class="op">:</span><span class="st">  </span>NAD83</span>
-<span id="cb2-7"><a href="#cb2-7"></a>First <span class="dv">10</span> features<span class="op">:</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="st">   </span>GEOID                             NAME   variable estimate moe</span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="dv">1</span>  <span class="dv">25017</span>  Middlesex County, Massachusetts B01003_<span class="dv">001</span>  <span class="dv">1600842</span>  <span class="ot">NA</span></span>
-<span id="cb2-10"><a href="#cb2-10"></a><span class="dv">2</span>  <span class="dv">25025</span>    Suffolk County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">796605</span>  <span class="ot">NA</span></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="dv">3</span>  <span class="dv">25001</span> Barnstable County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">213496</span>  <span class="ot">NA</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a><span class="dv">4</span>  <span class="dv">25027</span>  Worcester County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">824772</span>  <span class="ot">NA</span></span>
-<span id="cb2-13"><a href="#cb2-13"></a><span class="dv">5</span>  <span class="dv">25011</span>   Franklin County, Massachusetts B01003_<span class="dv">001</span>    <span class="dv">70577</span>  <span class="ot">NA</span></span>
-<span id="cb2-14"><a href="#cb2-14"></a><span class="dv">6</span>  <span class="dv">25013</span>    Hampden County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">467871</span>  <span class="ot">NA</span></span>
-<span id="cb2-15"><a href="#cb2-15"></a><span class="dv">7</span>  <span class="dv">25015</span>  Hampshire County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">161032</span>  <span class="ot">NA</span></span>
-<span id="cb2-16"><a href="#cb2-16"></a><span class="dv">8</span>  <span class="dv">25021</span>    Norfolk County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">700437</span>  <span class="ot">NA</span></span>
-<span id="cb2-17"><a href="#cb2-17"></a><span class="dv">9</span>  <span class="dv">25005</span>    Bristol County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">561037</span>  <span class="ot">NA</span></span>
-<span id="cb2-18"><a href="#cb2-18"></a><span class="dv">10</span> <span class="dv">25009</span>      Essex County, Massachusetts B01003_<span class="dv">001</span>   <span class="dv">783676</span>  <span class="ot">NA</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> mass_pop_orig</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Simple feature collection with <span class="dv">14</span> features and <span class="dv">7</span> fields</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Geometry type<span class="sc">:</span> MULTIPOLYGON</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>Dimension<span class="sc">:</span>     XY</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>Bounding box<span class="sc">:</span>  xmin<span class="sc">:</span> <span class="sc">-</span><span class="fl">73.50814</span> ymin<span class="sc">:</span> <span class="fl">41.23796</span> xmax<span class="sc">:</span> <span class="sc">-</span><span class="fl">69.92839</span> ymax<span class="sc">:</span> <span class="fl">42.88659</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>Geodetic CRS<span class="sc">:</span>  NAD83</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>First <span class="dv">10</span> features<span class="sc">:</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>   GEOID                             NAME   variable estimate moe</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>  <span class="dv">25017</span>  Middlesex County, Massachusetts B01003_001  <span class="dv">1600842</span>  <span class="cn">NA</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="dv">25025</span>    Suffolk County, Massachusetts B01003_001   <span class="dv">796605</span>  <span class="cn">NA</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>  <span class="dv">25001</span> Barnstable County, Massachusetts B01003_001   <span class="dv">213496</span>  <span class="cn">NA</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>  <span class="dv">25027</span>  Worcester County, Massachusetts B01003_001   <span class="dv">824772</span>  <span class="cn">NA</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span>  <span class="dv">25011</span>   Franklin County, Massachusetts B01003_001    <span class="dv">70577</span>  <span class="cn">NA</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span>  <span class="dv">25013</span>    Hampden County, Massachusetts B01003_001   <span class="dv">467871</span>  <span class="cn">NA</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span>  <span class="dv">25015</span>  Hampshire County, Massachusetts B01003_001   <span class="dv">161032</span>  <span class="cn">NA</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span>  <span class="dv">25021</span>    Norfolk County, Massachusetts B01003_001   <span class="dv">700437</span>  <span class="cn">NA</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="dv">9</span>  <span class="dv">25005</span>    Bristol County, Massachusetts B01003_001   <span class="dv">561037</span>  <span class="cn">NA</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span> <span class="dv">25009</span>      Essex County, Massachusetts B01003_001   <span class="dv">783676</span>  <span class="cn">NA</span></span></code></pre></div>
 </div>
 <div id="in-class-exercise-8" class="section level3">
 <h3>2. In-class exercise</h3>
@@ -847,8 +929,14 @@ You can also use the keyboard shortcuts:
 <div id="chalk-talk-6" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Application_programming_interface" target="_blank">Application Programmer Interfaces</a></li>
-<li>Choropleth maps. In particular, how you set the <em>bins</em> corresponding to the color gradient can affect how your map looks. As indicated <a href="https://gisgeography.com/choropleth-maps-data-classification/" target="_blank">here</a>, there are two approaches:
+<li><a
+href="https://en.wikipedia.org/wiki/Application_programming_interface"
+target="_blank">Application Programmer Interfaces</a></li>
+<li>Choropleth maps. In particular, how you set the <em>bins</em>
+corresponding to the color gradient can affect how your map looks. As
+indicated <a
+href="https://gisgeography.com/choropleth-maps-data-classification/"
+target="_blank">here</a>, there are two approaches:
 <ul>
 <li>Equally sized interval bins</li>
 <li>Quantile based bins</li>
@@ -858,8 +946,10 @@ You can also use the keyboard shortcuts:
 <div id="in-class-exercise-9" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
-<li>Go over code in MP3 folder -&gt; <code>examples.Rmd</code> -&gt; Section 3 on “Choropleth maps using census data”</li>
-<li>You will need to register an API key from the census bureau. Carefully read warning message to do so.</li>
+<li>Go over code in MP3 folder -&gt; <code>examples.Rmd</code> -&gt;
+Section 3 on “Choropleth maps using census data”</li>
+<li>You will need to register an API key from the census bureau.
+Carefully read warning message to do so.</li>
 </ul>
 <hr />
 </div>
@@ -870,7 +960,8 @@ You can also use the keyboard shortcuts:
 <div id="announcements-10" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>Grad school panel on Mon 11/22 featuring SDS alumna. More info in <code>#general</code></li>
+<li>Grad school panel on Mon 11/22 featuring SDS alumna. More info in
+<code>#general</code></li>
 </ul>
 </div>
 <div id="todays-topicsactivities-10" class="section level2">
@@ -878,7 +969,8 @@ You can also use the keyboard shortcuts:
 <div id="chalk-talk-7" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
-<li>Guest lecture by the <a href="http://www.science.smith.edu/sal/" target="_blank">Smith College Spatial Analysis Lab</a>.</li>
+<li>Guest lecture by the <a href="http://www.science.smith.edu/sal/"
+target="_blank">Smith College Spatial Analysis Lab</a>.</li>
 </ul>
 </div>
 <div id="in-class-exercise-10" class="section level3">
@@ -905,7 +997,8 @@ You can also use the keyboard shortcuts:
 <div id="chalk-talk-8" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
-<li>Example solutions to <code>examples.Rmd</code> Section 1 exercise. Code posted in <code>#mp3</code>; screencast below</li>
+<li>Example solutions to <code>examples.Rmd</code> Section 1 exercise.
+Code posted in <code>#mp3</code>; screencast below</li>
 <li>Shapefiles <!--
 1. Centroids: [Geographic](https://en.wikipedia.org/wiki/Geographic_center_of_the_contiguous_United_States){target="_blank"} and [population](https://en.wikipedia.org/wiki/Mean_center_of_the_United_States_population){target="_blank"} weighted. Not coincidentally, check out where FedEx and UPS main airport hubs are [located](https://www.google.com/maps/dir/UPS+Worldport,+Grade+Lane,+Louisville,+KY/FedEx+World+Hub,+2903+Sprankel+Ave,+Memphis,+TN+38118/@36.6002171,-90.0693041,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x88690c2c6dc6fe95:0xae70a6ac610364fe!2m2!1d-85.7307215!2d38.1657255!1m5!1m1!1s0x887f87b59bc63573:0x37d7df503bee2e8f!2m2!1d-89.9608239!2d35.0674784!3e0){target="_blank"}.
 --></li>
@@ -917,8 +1010,10 @@ You can also use the keyboard shortcuts:
 <h3>2. In-class exercise</h3>
 <p>While you are free to work in any order you like, I suggest you:</p>
 <ol style="list-style-type: decimal">
-<li>Go over solutions to <code>examples.Rmd</code> -&gt; Section 1 on “Converting data frames to sf objects”</li>
-<li>Go code for Section 2 “Loading shapefiles into R”. This is direct practice for PS06.</li>
+<li>Go over solutions to <code>examples.Rmd</code> -&gt; Section 1 on
+“Converting data frames to sf objects”</li>
+<li>Go code for Section 2 “Loading shapefiles into R”. This is direct
+practice for PS06.</li>
 <li>Work on PS06. This is direct practice for MP3.</li>
 <li>Then start on MP3.</li>
 </ol>
@@ -931,28 +1026,47 @@ You can also use the keyboard shortcuts:
 <div id="announcements-12" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>Mini-project 3 (MP3) assigned on Wednesday, due Tuesday 11/23 at 9pm.
+<li>Mini-project 3 (MP3) assigned on Wednesday, due Tuesday 11/23 at
+9pm.
 <ul>
-<li>Add yourselves to the <code>#mp3</code> channel. Please ask all questions about MP3 in <code>#mp3</code>, not in <code>#questions</code></li>
-<li>By Tuesday 5pm I will post the new groups (of two) in the <code>#mp3</code> channel. Until <code>#mp3</code> is due, you will sit next to your partner in class.</li>
-<li>Please reach out to your partner with a Slack DM before Wednesday’s lecture to coordinate meeting before lecture so you can sit next to each other.</li>
-<li>If you have seating restrictions due to hearing, sight, or mobility issues, please DM me.</li>
+<li>Add yourselves to the <code>#mp3</code> channel. Please ask all
+questions about MP3 in <code>#mp3</code>, not in
+<code>#questions</code></li>
+<li>By Tuesday 5pm I will post the new groups (of two) in the
+<code>#mp3</code> channel. Until <code>#mp3</code> is due, you will sit
+next to your partner in class.</li>
+<li>Please reach out to your partner with a Slack DM before Wednesday’s
+lecture to coordinate meeting before lecture so you can sit next to each
+other.</li>
+<li>If you have seating restrictions due to hearing, sight, or mobility
+issues, please DM me.</li>
 </ul></li>
 <li>PS06 to be posted by this evening</li>
-<li>Compare the following London underground maps. As stated in this <a href="https://www.theverge.com/2015/11/11/9712376/london-walk-tube-underground-map" target="_blank">article</a>, the transit map on the right sacrifices accuracy for clarity.
+<li>Compare the following London underground maps. As stated in this <a
+href="https://www.theverge.com/2015/11/11/9712376/london-walk-tube-underground-map"
+target="_blank">article</a>, the transit map on the right sacrifices
+accuracy for clarity.
 <ul>
-<li>The map of stations as they truly exist: <img src="static/images/underground_real_map.png" width="700" /></li>
-<li>The transit map inside the stations and trains. All lines are either straight or at 45 degrees and futhermore the geographic space is distorted. <img src="static/images/underground_transit_map.gif" width="700" /></li>
+<li>The map of stations as they truly exist: <img
+src="static/images/underground_real_map.png" width="700" /></li>
+<li>The transit map inside the stations and trains. All lines are either
+straight or at 45 degrees and futhermore the geographic space is
+distorted. <img src="static/images/underground_transit_map.gif"
+width="700" /></li>
 </ul></li>
 </ul>
 </div>
 <div id="todays-topicsactivities-12" class="section level2">
 <h2>Today’s topics/activities</h2>
 <ul>
-<li>Download <a href="static/projects/MP3/MP3.zip" download><code>MP3.zip</code></a></li>
-<li>Move <code>MP3.zip</code> to your SDS192 folder on your computer</li>
-<li>Unzip <code>MP3.zip</code>. Windows users: be sure to “Extract all”</li>
-<li>In the resulting MP3 folder, double-click the RStudio Project <code>MP3.Rproj</code> icon<br />
+<li>Download
+<a href="static/projects/MP3/MP3.zip" download><code>MP3.zip</code></a></li>
+<li>Move <code>MP3.zip</code> to your SDS192 folder on your
+computer</li>
+<li>Unzip <code>MP3.zip</code>. Windows users: be sure to “Extract
+all”</li>
+<li>In the resulting MP3 folder, double-click the RStudio Project
+<code>MP3.Rproj</code> icon<br />
 <img src="static/images/MP2.png" width="100" /><br />
 </li>
 <li>Verify that RStudio opens with MP3 written in the top-right<br />
@@ -967,13 +1081,17 @@ You can also use the keyboard shortcuts:
 -->
 <ul>
 <li>RStudio Projects</li>
-<li><code>sf</code> package for static maps in <code>ggplot2</code> and loading shapefiles. See <a href="https://keen-swartz-3146c4.netlify.com/" target="_blank">Spatial Data Science</a> for more.</li>
+<li><code>sf</code> package for static maps in <code>ggplot2</code> and
+loading shapefiles. See <a
+href="https://keen-swartz-3146c4.netlify.com/" target="_blank">Spatial
+Data Science</a> for more.</li>
 </ul>
 </div>
 <div id="in-class-exercise-12" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
-<li>In MP3 folder -&gt; <code>examples.Rmd</code> -&gt; Section 1 on “Converting data frames to sf objects”, do exercises</li>
+<li>In MP3 folder -&gt; <code>examples.Rmd</code> -&gt; Section 1 on
+“Converting data frames to sf objects”, do exercises</li>
 </ul>
 <hr />
 </div>
@@ -994,7 +1112,8 @@ You can also use the keyboard shortcuts:
 <h2>Announcements</h2>
 <ul>
 <li>Slack note in <code>#random</code></li>
-<li>No office hours tomorrow (Thursday). Instead, optional in-class office hours on Friday.</li>
+<li>No office hours tomorrow (Thursday). Instead, optional in-class
+office hours on Friday.</li>
 </ul>
 </div>
 <div id="todays-topicsactivities-13" class="section level2">
@@ -1020,8 +1139,10 @@ You can also use the keyboard shortcuts:
 <div id="announcements-14" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>Practice midterm posted on Slack in <code>#midterms</code>; we’ll go over solutions on Wednesday</li>
-<li>Midterm II discussion: see <a href="midterms.html#midtermII">midterms</a> page</li>
+<li>Practice midterm posted on Slack in <code>#midterms</code>; we’ll go
+over solutions on Wednesday</li>
+<li>Midterm II discussion: see <a
+href="midterms.html#midtermII">midterms</a> page</li>
 </ul>
 </div>
 <div id="todays-topicsactivities-14" class="section level2">
@@ -1040,7 +1161,8 @@ You can also use the keyboard shortcuts:
 <div id="announcements-15" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>Useful RStudio cheatsheets: Go to RStudio menu bar on top -&gt; Help -&gt; Cheatsheets:
+<li>Useful RStudio cheatsheets: Go to RStudio menu bar on top -&gt; Help
+-&gt; Cheatsheets:
 <ul>
 <li>Data Transformation with <code>dplyr</code></li>
 <li>Data Visualization with <code>ggplot2</code></li>
@@ -1052,24 +1174,29 @@ You can also use the keyboard shortcuts:
 <div id="chalk-talk-11" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
-<li>Install and then load the <code>tidyverse</code> package: An <em>umbrella</em> package that installs/loads many useful packages for data science all at once.
+<li>Install and then load the <code>tidyverse</code> package: An
+<em>umbrella</em> package that installs/loads many useful packages for
+data science all at once.
 <ul>
-<li>See <a href="https://www.tidyverse.org/" target="_blank">tidyverse.org</a> for more info.</li>
-<li><a href="https://r4ds.had.co.nz/" target="_blank">R for Data Science</a> is a good reference for these tools</li>
+<li>See <a href="https://www.tidyverse.org/"
+target="_blank">tidyverse.org</a> for more info.</li>
+<li><a href="https://r4ds.had.co.nz/" target="_blank">R for Data
+Science</a> is a good reference for these tools</li>
 <li>In other words, from now on:</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Don&#39;t do all this:</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="kw">library</span>(readr)</span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="kw">library</span>(tidyr)</span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="kw">library</span>(stringr)</span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="kw">library</span>(tibble)</span>
-<span id="cb3-8"><a href="#cb3-8"></a><span class="kw">library</span>(forcats)</span>
-<span id="cb3-9"><a href="#cb3-9"></a><span class="kw">library</span>(purrr)</span>
-<span id="cb3-10"><a href="#cb3-10"></a></span>
-<span id="cb3-11"><a href="#cb3-11"></a><span class="co"># Instead, do this:</span></span>
-<span id="cb3-12"><a href="#cb3-12"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div></li>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Don&#39;t do all this:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(forcats)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Instead, do this:</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div></li>
 </ul>
 </div>
 <div id="in-class-exercise-15" class="section level3">
@@ -1088,13 +1215,19 @@ You can also use the keyboard shortcuts:
 <ul>
 <li>Mid-Semester Assessment:
 <ul>
-<li>1m26s <a href="https://smith.zoom.us/rec/play/O14VUQdkLmLYk8rVIUTiZV5srowJnD1WY0ea32Src58MxBebmzApFoLj6QC7yIP07qryBdY_BTyC0mMr.uem-p46i7C1polTP?startTime=1632337008000&amp;_x_zm_rtaid=xnfz95AGRVq1Q6k5BMaobg.1635335436110.113b109a84ea1ad5c5d637f778892a5a&amp;_x_zm_rhtaid=173" target="_blank">video</a></li>
-<li><a href="https://smithcollege.qualtrics.com/jfe/form/SV_6rPDOKOBtfkvWJw" target="_blank">Link to survey</a></li>
+<li>1m26s <a
+href="https://smith.zoom.us/rec/play/O14VUQdkLmLYk8rVIUTiZV5srowJnD1WY0ea32Src58MxBebmzApFoLj6QC7yIP07qryBdY_BTyC0mMr.uem-p46i7C1polTP?startTime=1632337008000&amp;_x_zm_rtaid=xnfz95AGRVq1Q6k5BMaobg.1635335436110.113b109a84ea1ad5c5d637f778892a5a&amp;_x_zm_rhtaid=173"
+target="_blank">video</a></li>
+<li><a
+href="https://smithcollege.qualtrics.com/jfe/form/SV_6rPDOKOBtfkvWJw"
+target="_blank">Link to survey</a></li>
 </ul></li>
 <li>Talk about Spring 2022 SDS courses</li>
 <li>Added “Tips &amp; Tricks” tab to menu bar of course webpage</li>
 <li>Update to syllabus</li>
-<li>For a truly unique perspective on Data Visualization: Mona Chalabi <a href="https://www.instagram.com/monachalabi/?hl=en" target="_blank">@monachalabi</a>. See video below:</li>
+<li>For a truly unique perspective on Data Visualization: Mona Chalabi
+<a href="https://www.instagram.com/monachalabi/?hl=en"
+target="_blank">@monachalabi</a>. See video below:</li>
 </ul>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IRJ2Ac9vI5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
@@ -1122,11 +1255,17 @@ You can also use the keyboard shortcuts:
 <h2>Announcements</h2>
 <ul>
 <li>MP1 grades posted: See Slack <code>#mp1</code> for details</li>
-<li>SDS is currently working hard to hire <a href="https://docs.google.com/presentation/d/1ZJ8Xc_9AzlYd4HKrKK-7aaZEb7Y9BqfxluyO4eyWUGw/present#slide=id.gd84b73b16_0_52" target="_blank">3 new faculty</a> who will start in July 2022; I’m chairing one committee and sitting on another. As a result for the next month
+<li>SDS is currently working hard to hire <a
+href="https://docs.google.com/presentation/d/1ZJ8Xc_9AzlYd4HKrKK-7aaZEb7Y9BqfxluyO4eyWUGw/present#slide=id.gd84b73b16_0_52"
+target="_blank">3 new faculty</a> who will start in July 2022; I’m
+chairing one committee and sitting on another. As a result for the next
+month
 <ul>
-<li>My office hours will be highly variable; consult the calendars in the syllabus often</li>
+<li>My office hours will be highly variable; consult the calendars in
+the syllabus often</li>
 <li>There will unfortunately be lags in returning grading</li>
-<li>Sec01 Stoddard only: I won’t be able to stay past 12:05pm so that I can attend lunch meetings.</li>
+<li>Sec01 Stoddard only: I won’t be able to stay past 12:05pm so that I
+can attend lunch meetings.</li>
 </ul></li>
 </ul>
 </div>
@@ -1135,9 +1274,14 @@ You can also use the keyboard shortcuts:
 <div id="chalk-talk-13" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
-<li>Recap of Lec19: Why did we use <code>inner_join()</code> for solution to LC 3.20 on computing Available Seat Miles</li>
-<li>Importing spreadsheet data into R. Either Excel files or <code>.csv</code> Comma-Separated Values files. See image of example <code>.csv</code> file below.</li>
-<li><a href="https://en.wikipedia.org/wiki/Wide_and_narrow_data" target="_blank">Data formats</a>: “tidy” AKA long/tall/narrow format versue “non-tidy” AKA wide format</li>
+<li>Recap of Lec19: Why did we use <code>inner_join()</code> for
+solution to LC 3.20 on computing Available Seat Miles</li>
+<li>Importing spreadsheet data into R. Either Excel files or
+<code>.csv</code> Comma-Separated Values files. See image of example
+<code>.csv</code> file below.</li>
+<li><a href="https://en.wikipedia.org/wiki/Wide_and_narrow_data"
+target="_blank">Data formats</a>: “tidy” AKA long/tall/narrow format
+versue “non-tidy” AKA wide format</li>
 </ul>
 <center>
 <img src="static/images/CSV.png" width="500" />
@@ -1159,16 +1303,25 @@ You can also use the keyboard shortcuts:
 <h2>Announcements</h2>
 <ul>
 <li>MP1 returned by Monday</li>
-<li>E-commerce concept: <a href="https://sleeknote.com/blog/e-commerce-sales-funnel" target="_blank">conversion funnel</a></li>
-<li>Check out the Smith <a href="https://www.smith.edu/student-life/commongoods" target="_blank">Common Goods Resource Center</a></li>
-<li>Struggling with data wrangling? Don’t worry, that’s normal since <a href="https://blog.rstudio.com/2020/05/05/wrangling-unruly-data/" target="_blank">“90% of data science is data wrangling.”</a></li>
+<li>E-commerce concept: <a
+href="https://sleeknote.com/blog/e-commerce-sales-funnel"
+target="_blank">conversion funnel</a></li>
+<li>Check out the Smith <a
+href="https://www.smith.edu/student-life/commongoods"
+target="_blank">Common Goods Resource Center</a></li>
+<li>Struggling with data wrangling? Don’t worry, that’s normal since <a
+href="https://blog.rstudio.com/2020/05/05/wrangling-unruly-data/"
+target="_blank">“90% of data science is data wrangling.”</a></li>
 <li>There are lots of “90% of data science is …” quotes:</li>
 </ul>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
-90% of data science in industry is <a href="https://t.co/ikKWmeqw7O">pic.twitter.com/ikKWmeqw7O</a>
+90% of data science in industry is
+<a href="https://t.co/ikKWmeqw7O">pic.twitter.com/ikKWmeqw7O</a>
 </p>
-— Jeep Wrangler Owner (<span class="citation">@asmae_toumi</span>) <a href="https://twitter.com/asmae_toumi/status/1450864160326172673?ref_src=twsrc%5Etfw">October 20, 2021</a>
+— Jeep Wrangler Owner (<span class="citation">@asmae_toumi</span>)
+<a href="https://twitter.com/asmae_toumi/status/1450864160326172673?ref_src=twsrc%5Etfw">October
+20, 2021</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
@@ -1196,11 +1349,15 @@ You can also use the keyboard shortcuts:
 <ul>
 <li>Slack:
 <ul>
-<li>See <code>#general</code> Slack channel and give feedback on Spinelli tutors</li>
-<li>Practice making text look like <code>code</code>: create a DM with your project partner and let’s practice.</li>
+<li>See <code>#general</code> Slack channel and give feedback on
+Spinelli tutors</li>
+<li>Practice making text look like <code>code</code>: create a DM with
+your project partner and let’s practice.</li>
 </ul></li>
-<li>Discuss <a href="projects.html#MP2">Mini-Project 2</a> in full detail</li>
-<li>Feel free to message me on weekends, I just likely won’t respond.</li>
+<li>Discuss <a href="projects.html#MP2">Mini-Project 2</a> in full
+detail</li>
+<li>Feel free to message me on weekends, I just likely won’t
+respond.</li>
 </ul>
 </div>
 <div id="todays-topicsactivities-19" class="section level2">
@@ -1212,14 +1369,17 @@ You can also use the keyboard shortcuts:
 <li>Types of joins:
 <ul>
 <li>Copy code below to your <code>classnotes.Rmd</code></li>
-<li>Refer to image (ignore <code>semi_join()</code>) <img src="static/images/joins.png" width="300" style="display: block; margin: auto;" /></li>
+<li>Refer to image (ignore <code>semi_join()</code>)
+<img src="static/images/joins.png" width="300" style="display: block; margin: auto;" /></li>
 </ul></li>
 </ul>
 <script src="https://gist.github.com/rudeboybert/968dbf26d5f9407703ae7b24d217af67.js"></script>
 </div>
 <div id="in-class-exercise-19" class="section level3">
 <h3>2. In-class exercise</h3>
-<p>With your MP2 partner, practice data wranling! Complete ModernDive Learning Check 3.20: Using data in <code>nycflights13</code> package, compute available seat miles for each airline separately:</p>
+<p>With your MP2 partner, practice data wranling! Complete ModernDive
+Learning Check 3.20: Using data in <code>nycflights13</code> package,
+compute available seat miles for each airline separately:</p>
 <ol style="list-style-type: decimal">
 <li>Write out the pseudocode first</li>
 <li>Then code it</li>
@@ -1236,7 +1396,14 @@ You can also use the keyboard shortcuts:
 <ul>
 <li><a href="projects.html#MP2">Mini-Project 2</a> posted</li>
 <li>PS05 to be posted by this evening</li>
-<li>If you’re curious about my experiences in grad school, working at Google, switching to academia, and advice for aspiring data scientists, check out my appearance on episode #43 of the DataBytes podcast “To Google and Back.” Also available on <a href="https://podcasts.apple.com/us/podcast/43-to-google-and-back/id1445241846?i=1000452290536" target="_blank">Apple Podcasts</a> and <a href="https://play.google.com/music/listen?u=0#/ps/Itfclix7dvr5c2kbtovrtufki2a" target="_blank">Google Play</a>.</li>
+<li>If you’re curious about my experiences in grad school, working at
+Google, switching to academia, and advice for aspiring data scientists,
+check out my appearance on episode #43 of the DataBytes podcast “To
+Google and Back.” Also available on <a
+href="https://podcasts.apple.com/us/podcast/43-to-google-and-back/id1445241846?i=1000452290536"
+target="_blank">Apple Podcasts</a> and <a
+href="https://play.google.com/music/listen?u=0#/ps/Itfclix7dvr5c2kbtovrtufki2a"
+target="_blank">Google Play</a>.</li>
 </ul>
 <center>
 <iframe src="https://open.spotify.com/embed-podcast/episode/4SEcmLwHdJfmXaQEY7NZlV" width="70%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">
@@ -1251,10 +1418,13 @@ You can also use the keyboard shortcuts:
 <ul>
 <li>Adding to previous lectures:
 <ul>
-<li>Lec15 on <code>group_by()</code> and <code>summarize()</code>: difference between <code>sum()</code> and <code>n()</code> summary functions.</li>
+<li>Lec15 on <code>group_by()</code> and <code>summarize()</code>:
+difference between <code>sum()</code> and <code>n()</code> summary
+functions.</li>
 <li>Lec16 on <code>mutate()</code>: <code>ifelse()</code> function</li>
 </ul></li>
-<li><code>_join()</code>, <code>select()</code>, and <code>rename()</code> functions</li>
+<li><code>_join()</code>, <code>select()</code>, and
+<code>rename()</code> functions</li>
 </ul>
 <!--
 2021/10 fall note: Focus on inner_join first, do left & right later
@@ -1276,10 +1446,17 @@ You can also use the keyboard shortcuts:
 <ul>
 <li>Mini-project 2 (MP2) assigned on Monday
 <ul>
-<li>Add yourselves to the <code>#mp2</code> channel. Please ask all questions about MP2 in <code>#mp2</code>, not in <code>#questions</code></li>
-<li>By Sunday 5pm I will post the new groups (of two) in the <code>#mp2</code> channel. Until <code>#mp2</code> is due, you will sit next to your partner in class.</li>
-<li>Please reach out to your partner with a Slack DM before Monday’s lecture to coordinate meeting before lecture so you can sit next to each other.</li>
-<li>If you have seating restrictions due to hearing, sight, or mobility issues, please DM me.</li>
+<li>Add yourselves to the <code>#mp2</code> channel. Please ask all
+questions about MP2 in <code>#mp2</code>, not in
+<code>#questions</code></li>
+<li>By Sunday 5pm I will post the new groups (of two) in the
+<code>#mp2</code> channel. Until <code>#mp2</code> is due, you will sit
+next to your partner in class.</li>
+<li>Please reach out to your partner with a Slack DM before Monday’s
+lecture to coordinate meeting before lecture so you can sit next to each
+other.</li>
+<li>If you have seating restrictions due to hearing, sight, or mobility
+issues, please DM me.</li>
 </ul></li>
 </ul>
 </div>
@@ -1288,7 +1465,8 @@ You can also use the keyboard shortcuts:
 <div id="chalk-talk-17" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
-<li><code>mutate()</code> new columns/variables and <code>arrange()</code> i.e. sort rows</li>
+<li><code>mutate()</code> new columns/variables and
+<code>arrange()</code> i.e. sort rows</li>
 </ul>
 </div>
 <div id="in-class-exercise-21" class="section level3">
@@ -1305,14 +1483,19 @@ You can also use the keyboard shortcuts:
 <div id="announcements-22" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>See Slack <code>#general</code> for info about presentation of SDS major</li>
+<li>See Slack <code>#general</code> for info about presentation of SDS
+major</li>
 <li>PS04 (shorter) will be posted this afternoon</li>
 <li>Keyboard shortcuts for:
 <ol style="list-style-type: decimal">
-<li><code>%&gt;%</code> in RStudio: command + shift + m on macOS, control + shift + m on Windows</li>
-<li>Running code in RStudio: command + enter on macOS, control + enter on Windwos</li>
-<li>Quickly jumping between apps: command + tab on macOS, alt + tab on Windows</li>
-<li>Selecting many files at once: click first file, hold shift, click last file</li>
+<li><code>%&gt;%</code> in RStudio: command + shift + m on macOS,
+control + shift + m on Windows</li>
+<li>Running code in RStudio: command + enter on macOS, control + enter
+on Windwos</li>
+<li>Quickly jumping between apps: command + tab on macOS, alt + tab on
+Windows</li>
+<li>Selecting many files at once: click first file, hold shift, click
+last file</li>
 <li>Deleting files: command + delete on macOS, delete on Windows</li>
 </ol></li>
 </ul>
@@ -1322,7 +1505,8 @@ You can also use the keyboard shortcuts:
 <div id="chalk-talk-18" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
-<li><code>summarize()</code> rows and <code>group_by() %&gt;% summarize()</code></li>
+<li><code>summarize()</code> rows and
+<code>group_by() %&gt;% summarize()</code></li>
 </ul>
 </div>
 <div id="in-class-exercise-22" class="section level3">
@@ -1340,8 +1524,11 @@ You can also use the keyboard shortcuts:
 <div id="announcements-23" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>You are responsible for completing the ModernDive readings for Lec13 on the <code>%&gt;%</code> operator and <code>filter()</code> before Wednesday’s lecture</li>
-<li>A shorter PS04 will be assigned on Wednesday, due on Monday 10/18 9pm</li>
+<li>You are responsible for completing the ModernDive readings for Lec13
+on the <code>%&gt;%</code> operator and <code>filter()</code> before
+Wednesday’s lecture</li>
+<li>A shorter PS04 will be assigned on Wednesday, due on Monday 10/18
+9pm</li>
 </ul>
 </div>
 <div id="todays-topicsactivities-23" class="section level2">
@@ -1366,7 +1553,10 @@ You can also use the keyboard shortcuts:
 <div id="announcements-24" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li><a href="https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z" target="_blank">“File not found”</a>; the struggle is real for instructors.</li>
+<li><a
+href="https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z"
+target="_blank">“File not found”</a>; the struggle is real for
+instructors.</li>
 </ul>
 </div>
 <div id="todays-topicsactivities-24" class="section level2">
@@ -1378,7 +1568,8 @@ You can also use the keyboard shortcuts:
 <ul>
 <li>What are folders/directories?</li>
 <li>How does R Markdown find the <code>.ics</code> file?</li>
-<li>What are <code>.zip</code> files? Special note for Windows users</li>
+<li>What are <code>.zip</code> files? Special note for Windows
+users</li>
 <li>Computer file hygiene: Delete files you don’t need anymore</li>
 </ul></li>
 <li>Intro to data wrangling
@@ -1404,7 +1595,8 @@ You can also use the keyboard shortcuts:
 <ul>
 <li>Midterm:
 <ul>
-<li>No talking about it until after 5pm today please; there is one or more students who need to take it.</li>
+<li>No talking about it until after 5pm today please; there is one or
+more students who need to take it.</li>
 <li>Why student ID and not name? For anonymized grading.</li>
 </ul></li>
 <li>Update to office hours on syllabus</li>
@@ -1415,9 +1607,13 @@ You can also use the keyboard shortcuts:
 </ul></li>
 <li>Discussion on managing group dynamics:
 <ul>
-<li>Life happens. If it does and it will affect you work, at the very least communicate and give your partner a heads up (text, Slack, etc.)</li>
+<li>Life happens. If it does and it will affect you work, at the very
+least communicate and give your partner a heads up (text, Slack,
+etc.)</li>
 <li>What to do when issues arise?</li>
-<li>Don’t forget you’ll be filling out peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6w4CC9-PrWrpupNfosQUBVoCWBihRwdezYb2jJEj7-kNdfg/viewform" target="_blank">Google Form</a></li>
+<li>Don’t forget you’ll be filling out peer evaluation <a
+href="https://docs.google.com/forms/d/e/1FAIpQLSd6w4CC9-PrWrpupNfosQUBVoCWBihRwdezYb2jJEj7-kNdfg/viewform"
+target="_blank">Google Form</a></li>
 </ul></li>
 </ul>
 <!--
@@ -1435,43 +1631,48 @@ You can also use the keyboard shortcuts:
 <li>Trend lines via a <code>geom_smooth()</code> layer. Two types:
 <ul>
 <li>Linear regression</li>
-<li><a href="https://www.statisticshowto.com/lowess-smoothing/">LOWESS</a>: Locally Weighted Scatterplot Smoothing <img src="static/images/loess.gif" /></li>
+<li><a
+href="https://www.statisticshowto.com/lowess-smoothing/">LOWESS</a>:
+Locally Weighted Scatterplot Smoothing <img
+src="static/images/loess.gif" /></li>
 </ul></li>
 <li>Example code:</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="kw">library</span>(gapminder)</span>
-<span id="cb4-4"><a href="#cb4-4"></a></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="co"># 1. Recreate plot from PS02 but with no color:</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a>gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb4-7"><a href="#cb4-7"></a><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</span>
-<span id="cb4-8"><a href="#cb4-8"></a></span>
-<span id="cb4-9"><a href="#cb4-9"></a><span class="co"># 1.a) Add LOESS smoother layer with geom_smooth()</span></span>
-<span id="cb4-10"><a href="#cb4-10"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
-<span id="cb4-12"><a href="#cb4-12"></a><span class="st">  </span><span class="kw">geom_smooth</span>()</span>
-<span id="cb4-13"><a href="#cb4-13"></a></span>
-<span id="cb4-14"><a href="#cb4-14"></a><span class="co"># 1.b) Remove standard error bars by setting se = FALSE</span></span>
-<span id="cb4-15"><a href="#cb4-15"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></span>
-<span id="cb4-16"><a href="#cb4-16"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
-<span id="cb4-17"><a href="#cb4-17"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>)</span>
-<span id="cb4-18"><a href="#cb4-18"></a></span>
-<span id="cb4-19"><a href="#cb4-19"></a><span class="co"># 1.c) Change span of &quot;smoothing&quot; window by change the value of span</span></span>
-<span id="cb4-20"><a href="#cb4-20"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></span>
-<span id="cb4-21"><a href="#cb4-21"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
-<span id="cb4-22"><a href="#cb4-22"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">se =</span> <span class="ot">FALSE</span>, <span class="dt">span =</span> <span class="fl">0.25</span>)</span>
-<span id="cb4-23"><a href="#cb4-23"></a></span>
-<span id="cb4-24"><a href="#cb4-24"></a><span class="co"># 1.d) Force line to be straight. i.e. linear regression</span></span>
-<span id="cb4-25"><a href="#cb4-25"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> gapminder_<span class="dv">2007</span>, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop)) <span class="op">+</span></span>
-<span id="cb4-26"><a href="#cb4-26"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
-<span id="cb4-27"><a href="#cb4-27"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gapminder)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Recreate plot from PS02 but with no color:</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>gapminder_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">%&gt;%</span> </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 1.a) Add LOESS smoother layer with geom_smooth()</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">size =</span> pop)) <span class="sc">+</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 1.b) Remove standard error bars by setting se = FALSE</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">size =</span> pop)) <span class="sc">+</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="co"># 1.c) Change span of &quot;smoothing&quot; window by change the value of span</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">size =</span> pop)) <span class="sc">+</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">span =</span> <span class="fl">0.25</span>)</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="co"># 1.d) Force line to be straight. i.e. linear regression</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">size =</span> pop)) <span class="sc">+</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 </div>
 <div id="in-class-exercise-25" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
-<li>Copy the example code above to your <code>classnotes.Rmd</code> and go over the code</li>
-<li>Optional: Go over ModernDive reading in schedule above (this topic is covered in SDS 201/220 intro stats)</li>
+<li>Copy the example code above to your <code>classnotes.Rmd</code> and
+go over the code</li>
+<li>Optional: Go over ModernDive reading in schedule above (this topic
+is covered in SDS 201/220 intro stats)</li>
 <li>Work on MP1</li>
 </ul>
 <hr />
@@ -1490,8 +1691,10 @@ You can also use the keyboard shortcuts:
 </ul></li>
 <li>In order to not disadvantage students who take the midterm earlier
 <ul>
-<li>I won’t be answering any Slack <code>#midterms</code> after 3pm today</li>
-<li>I’ve instructed the Friday Spinelli tutor not to answer questions about the midterm</li>
+<li>I won’t be answering any Slack <code>#midterms</code> after 3pm
+today</li>
+<li>I’ve instructed the Friday Spinelli tutor not to answer questions
+about the midterm</li>
 </ul></li>
 </ul>
 </div>
@@ -1500,7 +1703,8 @@ You can also use the keyboard shortcuts:
 <div id="chalk-talk-22" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
-<li>Go over practice Midterm I. Boxplot for question 3.c): <img src="index_files/figure-html/unnamed-chunk-7-1.png" width="768" /></li>
+<li>Go over practice Midterm I. Boxplot for question 3.c):
+<img src="index_files/figure-html/unnamed-chunk-7-1.png" width="768" /></li>
 </ul>
 </div>
 <div id="in-class-exercise-26" class="section level3">
@@ -1517,16 +1721,24 @@ You can also use the keyboard shortcuts:
 <div id="announcements-27" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>Sit next to your MP1 partner; your partner was posted in the <code>#mp1</code> channel on Sunday 5pm.</li>
-<li>If have an Office of Disability Services accommodations letter and you haven’t already, please Slack DM it to me.</li>
+<li>Sit next to your MP1 partner; your partner was posted in the
+<code>#mp1</code> channel on Sunday 5pm.</li>
+<li>If have an Office of Disability Services accommodations letter and
+you haven’t already, please Slack DM it to me.</li>
 <li><a href="midterms.html#midtermI">Midterm I</a> info posted</li>
 <li><a href="projects.html#MP1">Mini-Project 1</a> info posted</li>
 </ul>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
-Our department is offering a pre-application review service (PARS) initiative to provide support and mentorship to PhD applicants from from historically marginalized groups. See details here: <a href="https://t.co/1g8lol4dRf">https://t.co/1g8lol4dRf</a> <a href="https://t.co/rHaMFHr5GF">pic.twitter.com/rHaMFHr5GF</a>
+Our department is offering a pre-application review service (PARS)
+initiative to provide support and mentorship to PhD applicants from from
+historically marginalized groups. See details here:
+<a href="https://t.co/1g8lol4dRf">https://t.co/1g8lol4dRf</a>
+<a href="https://t.co/rHaMFHr5GF">pic.twitter.com/rHaMFHr5GF</a>
 </p>
-— UW Statistics (<span class="citation">@UWStat</span>) <a href="https://twitter.com/UWStat/status/1441591608709812227?ref_src=twsrc%5Etfw">September 25, 2021</a>
+— UW Statistics (<span class="citation">@UWStat</span>)
+<a href="https://twitter.com/UWStat/status/1441591608709812227?ref_src=twsrc%5Etfw">September
+25, 2021</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
@@ -1535,10 +1747,14 @@ Our department is offering a pre-application review service (PARS) initiative to
 <div id="chalk-talk-23" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
-<li>Recap of color palettes from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a>
+<li>Recap of color palettes from <a href="http://colorbrewer2.org/"
+target="_blank">colorbrewer2.org</a>
 <ul>
-<li><code>fill</code> vs <code>color</code> aesthetics and <code>brewer</code> vs <code>manual</code></li>
-<li>You can also download color palettes in R packages, like <a href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html" target="_blank"><code>viridis</code></a></li>
+<li><code>fill</code> vs <code>color</code> aesthetics and
+<code>brewer</code> vs <code>manual</code></li>
+<li>You can also download color palettes in R packages, like <a
+href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html"
+target="_blank"><code>viridis</code></a></li>
 </ul></li>
 <li>Discuss <a href="midterms.html#midtermI">Midterm I</a></li>
 <li>Discuss <a href="projects.html#MP1">Mini-Project 1</a></li>
@@ -1563,14 +1779,24 @@ Our department is offering a pre-application review service (PARS) initiative to
 <div id="announcements-28" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>On Slack <code>#general</code>: new SDS student lounge in McConnell 209</li>
-<li>Additional resource: Prof. Ben Baumer’s book <a href="https://mdsr-book.github.io/mdsr2e/" target="_blank">Modern Data Science with R</a> used in his version of SDS 192.</li>
+<li>On Slack <code>#general</code>: new SDS student lounge in McConnell
+209</li>
+<li>Additional resource: Prof. Ben Baumer’s book <a
+href="https://mdsr-book.github.io/mdsr2e/" target="_blank">Modern Data
+Science with R</a> used in his version of SDS 192.</li>
 <li>Mini-project 1 (MP1) assigned on Monday
 <ul>
-<li>Slack demo of how to subscribe to a <code>#channel</code>: Adding yourselves to the <code>#mp1</code> channel. Please ask all questions about MP1 there</li>
-<li>You will be assigned groups for MP1, MP2, and MP3. You can choose your groups for the final project.</li>
-<li>By Sunday 5pm I will post the groups (of two) in the <code>#mp1</code> channel. Until <code>#mp1</code> is due, <strong>you will sit next to your partner in class</strong>.</li>
-<li>Please reach out to your partner with a Slack DM before Monday’s lecture to coordinate meeting before lecture so you can sit next to each other.</li>
+<li>Slack demo of how to subscribe to a <code>#channel</code>: Adding
+yourselves to the <code>#mp1</code> channel. Please ask all questions
+about MP1 there</li>
+<li>You will be assigned groups for MP1, MP2, and MP3. You can choose
+your groups for the final project.</li>
+<li>By Sunday 5pm I will post the groups (of two) in the
+<code>#mp1</code> channel. Until <code>#mp1</code> is due, <strong>you
+will sit next to your partner in class</strong>.</li>
+<li>Please reach out to your partner with a Slack DM before Monday’s
+lecture to coordinate meeting before lecture so you can sit next to each
+other.</li>
 </ul></li>
 </ul>
 </div>
@@ -1582,22 +1808,33 @@ Our department is offering a pre-application review service (PARS) initiative to
 <li>Recap of barplots: Exercise on pie charts vs barplots below</li>
 <li>Color theory
 <ol style="list-style-type: decimal">
-<li><code>color</code> vs <code>fill</code> aesthetics in <code>ggplot2</code></li>
-<li>Selecting an appropriate color palette from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a> <img src="static/images/colorbrewer.png" width="600" /></li>
-<li>How does <code>ggplot2</code> pick default colors? Using a <a href="https://stackoverflow.com/questions/21490210/how-to-plot-a-colour-wheel-by-using-ggplot" target="_blank">color wheel</a></li>
-<li>Also define colors in terms of <a href="https://www.color-hex.com/color/f8766d" target="_blank">hex codes</a></li>
+<li><code>color</code> vs <code>fill</code> aesthetics in
+<code>ggplot2</code></li>
+<li>Selecting an appropriate color palette from <a
+href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a>
+<img src="static/images/colorbrewer.png" width="600" /></li>
+<li>How does <code>ggplot2</code> pick default colors? Using a <a
+href="https://stackoverflow.com/questions/21490210/how-to-plot-a-colour-wheel-by-using-ggplot"
+target="_blank">color wheel</a></li>
+<li>Also define colors in terms of <a
+href="https://www.color-hex.com/color/f8766d" target="_blank">hex
+codes</a></li>
 </ol></li>
 </ul>
 </div>
 <div id="exercise-on-pie-charts-vs-barplots" class="section level3">
 <h3>2. Exercise on pie charts vs barplots</h3>
-<p>Say the following piecharts represent results of an election poll at time points: A = September, B = October, and C = November. At each time point we present the proportion of the poll respondents who say they will support one of 5 candidates: 1 through 5.</p>
+<p>Say the following piecharts represent results of an election poll at
+time points: A = September, B = October, and C = November. At each time
+point we present the proportion of the poll respondents who say they
+will support one of 5 candidates: 1 through 5.</p>
 <p><img src="static/images/piecharts.png" width="600" /></p>
 <p>Based on these 3 piecharts, answer the following questions:</p>
 <ol style="list-style-type: decimal">
 <li>At time point A, is candidate 5 doing better than candidate 4?</li>
 <li>Did candidate 3 do better at time point B or time point C?</li>
-<li>Who gained more support between time point A and time point B, candidate 2 or candidate 4?</li>
+<li>Who gained more support between time point A and time point B,
+candidate 2 or candidate 4?</li>
 </ol>
 <p>Compare that to using barplots. Which do you prefer?</p>
 <p><img src="static/images/barplots.png" width="600" /></p>
@@ -1606,43 +1843,49 @@ Our department is offering a pre-application review service (PARS) initiative to
 <h3>3. In-class exercise</h3>
 <ul>
 <li>Go over ModernDive reading in schedule above.</li>
-<li>Changing default <code>color</code> and <code>fill</code> color aesthetics:
+<li>Changing default <code>color</code> and <code>fill</code> color
+aesthetics:
 <ol style="list-style-type: decimal">
-<li>Copy and paste the code below into your <code>classnotes.Rmd</code> file</li>
-<li>Change both the color of the scatterplot points and the fill of the bars. You can do this by selecting a palette from <a href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a> or by setting them manually</li>
-<li>Run <code>colors()</code> in your console to get English names of all colors in R</li>
+<li>Copy and paste the code below into your <code>classnotes.Rmd</code>
+file</li>
+<li>Change both the color of the scatterplot points and the fill of the
+bars. You can do this by selecting a palette from <a
+href="http://colorbrewer2.org/" target="_blank">colorbrewer2.org</a> or
+by setting them manually</li>
+<li>Run <code>colors()</code> in your console to get English names of
+all colors in R</li>
 </ol></li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="kw">library</span>(nycflights13)</span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="kw">library</span>(gapminder)</span>
-<span id="cb5-5"><a href="#cb5-5"></a></span>
-<span id="cb5-6"><a href="#cb5-6"></a><span class="co"># 1. Recreate plot from PS02, but change default &quot;color&quot; palette of points:</span></span>
-<span id="cb5-7"><a href="#cb5-7"></a>gapminder_<span class="dv">2007</span> &lt;-<span class="st"> </span>gapminder <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb5-8"><a href="#cb5-8"></a><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</span>
-<span id="cb5-9"><a href="#cb5-9"></a><span class="kw">ggplot</span>(gapminder_<span class="dv">2007</span>, <span class="kw">aes</span>(<span class="dt">x =</span> gdpPercap, <span class="dt">y =</span> lifeExp, <span class="dt">size =</span> pop, <span class="dt">color =</span> continent)) <span class="op">+</span></span>
-<span id="cb5-10"><a href="#cb5-10"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
-<span id="cb5-11"><a href="#cb5-11"></a><span class="st">  </span><span class="kw">scale_color_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</span>
-<span id="cb5-12"><a href="#cb5-12"></a></span>
-<span id="cb5-13"><a href="#cb5-13"></a><span class="co"># 2.a) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by adding a </span></span>
-<span id="cb5-14"><a href="#cb5-14"></a><span class="co"># palette layer:</span></span>
-<span id="cb5-15"><a href="#cb5-15"></a><span class="kw">ggplot</span>(flights, <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></span>
-<span id="cb5-16"><a href="#cb5-16"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></span>
-<span id="cb5-17"><a href="#cb5-17"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set1&quot;</span>)</span>
-<span id="cb5-18"><a href="#cb5-18"></a></span>
-<span id="cb5-19"><a href="#cb5-19"></a><span class="co"># 2.b) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></span>
-<span id="cb5-20"><a href="#cb5-20"></a><span class="co"># changing colors in a layer:</span></span>
-<span id="cb5-21"><a href="#cb5-21"></a><span class="kw">ggplot</span>(flights, <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></span>
-<span id="cb5-22"><a href="#cb5-22"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></span>
-<span id="cb5-23"><a href="#cb5-23"></a><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;darkorange&quot;</span>, <span class="st">&quot;forestgreen&quot;</span>, <span class="st">&quot;navyblue&quot;</span>))</span>
-<span id="cb5-24"><a href="#cb5-24"></a></span>
-<span id="cb5-25"><a href="#cb5-25"></a><span class="co"># 2.c) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></span>
-<span id="cb5-26"><a href="#cb5-26"></a><span class="co"># changing colors in a layer using hex codes from: </span></span>
-<span id="cb5-27"><a href="#cb5-27"></a><span class="co"># https://www.color-hex.com/color-palette/114219</span></span>
-<span id="cb5-28"><a href="#cb5-28"></a><span class="kw">ggplot</span>(flights, <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> origin)) <span class="op">+</span></span>
-<span id="cb5-29"><a href="#cb5-29"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="op">+</span></span>
-<span id="cb5-30"><a href="#cb5-30"></a><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;#dc323a&quot;</span>, <span class="st">&quot;#003f77&quot;</span>, <span class="st">&quot;#c4c1c1&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(nycflights13)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gapminder)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Recreate plot from PS02, but change default &quot;color&quot; palette of points:</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>gapminder_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">%&gt;%</span> </span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(gapminder_2007, <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">size =</span> pop, <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;Set1&quot;</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 2.a) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by adding a </span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># palette layer:</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(flights, <span class="fu">aes</span>(<span class="at">x =</span> carrier, <span class="at">fill =</span> origin)) <span class="sc">+</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;Set1&quot;</span>)</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co"># 2.b) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="co"># changing colors in a layer:</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(flights, <span class="fu">aes</span>(<span class="at">x =</span> carrier, <span class="at">fill =</span> origin)) <span class="sc">+</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;darkorange&quot;</span>, <span class="st">&quot;forestgreen&quot;</span>, <span class="st">&quot;navyblue&quot;</span>))</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="co"># 2.c) Recreate Figure 2.26 but change default &quot;fill&quot; color of bars by manually </span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="co"># changing colors in a layer using hex codes from: </span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="co"># https://www.color-hex.com/color-palette/114219</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(flights, <span class="fu">aes</span>(<span class="at">x =</span> carrier, <span class="at">fill =</span> origin)) <span class="sc">+</span></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">preserve =</span> <span class="st">&quot;single&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;#dc323a&quot;</span>, <span class="st">&quot;#003f77&quot;</span>, <span class="st">&quot;#c4c1c1&quot;</span>))</span></code></pre></div>
 <hr />
 </div>
 </div>
@@ -1667,17 +1910,21 @@ Our department is offering a pre-application review service (PARS) initiative to
 <div id="chalk-talk-25" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
-<li>Searching the internet effectively: a critical data science tool</li>
+<li>Searching the internet effectively: a critical data science
+tool</li>
 <li>Wrapping-up boxplots:
 <ul>
-<li>For a side-by-side boxplot, the x variable has to be categorical</li>
+<li>For a side-by-side boxplot, the x variable has to be
+categorical</li>
 <li>Summary statistics that are robust to outliers: median and IQR</li>
 <li>Why 1.5 x IQR?</li>
 </ul></li>
 <li>Barplots
 <ul>
-<li><code>geom_bar()</code> when counts are not pre-computed i.e. listed individually</li>
-<li><code>geom_col()</code> when counts are pre-computed and saved in a variable</li>
+<li><code>geom_bar()</code> when counts are not pre-computed i.e. listed
+individually</li>
+<li><code>geom_col()</code> when counts are pre-computed and saved in a
+variable</li>
 </ul></li>
 </ul>
 </div>
@@ -1695,7 +1942,8 @@ Our department is offering a pre-application review service (PARS) initiative to
 <div id="announcements-30" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>Office of Disability Services is looking to hire a note taker for the class. If interested, see note in Slack <code>#general</code>.</li>
+<li>Office of Disability Services is looking to hire a note taker for
+the class. If interested, see note in Slack <code>#general</code>.</li>
 <li>Problem sets:
 <ul>
 <li>PS02 due today at 5pm</li>
@@ -1709,21 +1957,38 @@ Our department is offering a pre-application review service (PARS) initiative to
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of histograms</li>
-<li>Facets to split a visualization by the values of another variable</li>
-<li>Default ordering of functions such as <code>ggplot()</code> where <code>data =</code> is assumed first and <code>mapping =</code> is assumed second</li>
+<li>Facets to split a visualization by the values of another
+variable</li>
+<li>Default ordering of functions such as <code>ggplot()</code> where
+<code>data =</code> is assumed first and <code>mapping =</code> is
+assumed second</li>
 <li>Boxplots! Powerful, but tricky!</li>
 </ul>
-<p>Say we want to study the distribution of the following 12 values which are pre-sorted:</p>
+<p>Say we want to study the distribution of the following 12 values
+which are pre-sorted:</p>
 <blockquote>
 <p>1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30</p>
 </blockquote>
-<p>They have the following <em>summary statistics</em>. A summary statistic is a single numerical value <em>summarizing</em> many values. Examples include the immediately obvious mean AKA average and median. Other less immediately obvious examples include:</p>
+<p>They have the following <em>summary statistics</em>. A summary
+statistic is a single numerical value <em>summarizing</em> many values.
+Examples include the immediately obvious mean AKA average and median.
+Other less immediately obvious examples include:</p>
 <ul>
-<li>Quartiles (1st, 2nd, and 3rd) that cut up the data into 4 parts, each containing roughly one quarter = 25% of the data</li>
+<li>Quartiles (1st, 2nd, and 3rd) that cut up the data into 4 parts,
+each containing roughly one quarter = 25% of the data</li>
 <li>Minimum &amp; maximum</li>
-<li>Interquartile-range (IQR): the distance between the 3rd and 1st quartiles</li>
+<li>Interquartile-range (IQR): the distance between the 3rd and 1st
+quartiles</li>
 </ul>
 <table>
+<colgroup>
+<col width="13%" />
+<col width="23%" />
+<col width="20%" />
+<col width="23%" />
+<col width="10%" />
+<col width="10%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Min.</th>
@@ -1745,7 +2010,9 @@ Our department is offering a pre-application review service (PARS) initiative to
 </tr>
 </tbody>
 </table>
-<p>Let’s compare the points and the corresponding boxplot side-by-side with the values on the <span class="math inline">\(y\)</span>-axis matching:</p>
+<p>Let’s compare the points and the corresponding boxplot side-by-side
+with the values on the <span class="math inline">\(y\)</span>-axis
+matching:</p>
 <p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" /></p>
 </div>
 <div id="in-class-exercise-30" class="section level3">
@@ -1763,9 +2030,18 @@ Our department is offering a pre-application review service (PARS) initiative to
 <h2>Announcements</h2>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
-Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span class="citation">@SmithCollegeSDS</span></a> is on a hiring spree! Put 👀 on these 3⃣ tenure track positions, apps due:<br><br>- 10/8 Biostatistics, statistics, or related<br>- 10/15 joint hire with the Math dept<br>- 10/22 candidates with a Ph.D. in stats, CS, information sciences, math, or related <a href="https://t.co/RCmtlSzg3S">https://t.co/RCmtlSzg3S</a>
+Oh snap!
+<a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
+class="citation">@SmithCollegeSDS</span></a> is on a hiring spree! Put
+👀 on these 3⃣ tenure track positions, apps due:<br><br>- 10/8
+Biostatistics, statistics, or related<br>- 10/15 joint hire with the
+Math dept<br>- 10/22 candidates with a Ph.D. in stats, CS, information
+sciences, math, or related
+<a href="https://t.co/RCmtlSzg3S">https://t.co/RCmtlSzg3S</a>
 </p>
-— Albert Y. Kim (<span class="citation">@rudeboybert</span>) <a href="https://twitter.com/rudeboybert/status/1438822302490275844?ref_src=twsrc%5Etfw">September 17, 2021</a>
+— Albert Y. Kim (<span class="citation">@rudeboybert</span>)
+<a href="https://twitter.com/rudeboybert/status/1438822302490275844?ref_src=twsrc%5Etfw">September
+17, 2021</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
@@ -1774,13 +2050,18 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <div id="chalk-talk-27" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
-<li>In-class demo of using RMarkdown features in a <code>classnotes.Rmd</code> file to save lecture code</li>
+<li>In-class demo of using RMarkdown features in a
+<code>classnotes.Rmd</code> file to save lecture code</li>
 <li>Take screenshots of your screen!
 <ul>
-<li>macOS: Command+Shift+3 to take shot of whole screen, Command+Shift+4 to take subportion</li>
-<li>Windows: <a href="https://www.pcmag.com/how-to/how-to-take-screenshots-in-windows-10" target="_blank">Shift-Windows Key-S and Snip &amp; Sketch</a></li>
+<li>macOS: Command+Shift+3 to take shot of whole screen, Command+Shift+4
+to take subportion</li>
+<li>Windows: <a
+href="https://www.pcmag.com/how-to/how-to-take-screenshots-in-windows-10"
+target="_blank">Shift-Windows Key-S and Snip &amp; Sketch</a></li>
 </ul></li>
-<li>Histograms for visualizing the <em>distribution</em> of a numerical variable</li>
+<li>Histograms for visualizing the <em>distribution</em> of a numerical
+variable</li>
 </ul>
 <div id="section-1-stoddard-g6-demo" class="section level4">
 <h4>Section 1 (Stoddard G6) Demo</h4>
@@ -1796,7 +2077,8 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <div id="in-class-exercise-31" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
-<li>If you still haven’t been able to “Knit to PDF”, please ask for help</li>
+<li>If you still haven’t been able to “Knit to PDF”, please ask for
+help</li>
 <li>Go over ModernDive reading in schedule above.</li>
 </ul>
 <hr />
@@ -1823,8 +2105,14 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <div id="in-class-exercise-32" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
-<li>Explore the different formatting tools in R Markdown: go to RStudio top menu bar -&gt; Help -&gt; Markdown quick reference.</li>
-<li>Sec01 in Stoddard: There was an typo in Step 8 in last lecture’s in-class exercise. If you weren’t able to Knit directly to PDF, please re-attempt Steps 8-9. Knitting directly to PDF, instead of Knitting to Word and then saving to PDF, is the preferred submission format for all problem sets. It will be less hassle for you and provide consistency for the graders.</li>
+<li>Explore the different formatting tools in R Markdown: go to RStudio
+top menu bar -&gt; Help -&gt; Markdown quick reference.</li>
+<li>Sec01 in Stoddard: There was an typo in Step 8 in last lecture’s
+in-class exercise. If you weren’t able to Knit directly to PDF, please
+re-attempt Steps 8-9. Knitting directly to PDF, instead of Knitting to
+Word and then saving to PDF, is the preferred submission format for all
+problem sets. It will be less hassle for you and provide consistency for
+the graders.</li>
 <li>Go over ModernDive reading in schedule above.</li>
 </ul>
 <hr />
@@ -1836,7 +2124,8 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <div id="announcements-33" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>Problem Set 02 due next Monday 5pm, now posted under <a href="PS.html">Problem Sets</a></li>
+<li>Problem Set 02 due next Monday 5pm, now posted under <a
+href="PS.html">Problem Sets</a></li>
 </ul>
 </div>
 <div id="todays-topicsactivities-33" class="section level2">
@@ -1845,13 +2134,20 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of previous lecture</li>
-<li>“Where can I save all the code I run in class?” In an R Markdown <code>.Rmd</code> file; R Markdown is a tool for <em>reproducible research</em></li>
+<li>“Where can I save all the code I run in class?” In an R Markdown
+<code>.Rmd</code> file; R Markdown is a tool for <em>reproducible
+research</em></li>
 </ul>
 <table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th><strong>Input</strong>: An <code>.Rmd</code> file</th>
-<th><strong>Output</strong>: An <code>.html</code>, <code>.docx</code>, or <code>.pdf</code> file.</th>
+<th><strong>Output</strong>: An <code>.html</code>, <code>.docx</code>,
+or <code>.pdf</code> file.</th>
 </tr>
 </thead>
 <tbody>
@@ -1866,31 +2162,46 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <h3>2. In-class exercise</h3>
 <p><strong>In-class battle-testing and practicing for PS02:</strong></p>
 <ol style="list-style-type: decimal">
-<li>At a couple of steps in this process, you will be asked to install packages. Say yes to all of them.</li>
-<li>If at any point your code won’t knit, go through these <a href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/" target="_blank">6 R Markdown Fixes</a> first, then seek assistance. <strong>These 6 fixes will resolve 85% of issues.</strong></li>
+<li>At a couple of steps in this process, you will be asked to install
+packages. Say yes to all of them.</li>
+<li>If at any point your code won’t knit, go through these <a
+href="https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/"
+target="_blank">6 R Markdown Fixes</a> first, then seek assistance.
+<strong>These 6 fixes will resolve 85% of issues.</strong></li>
 <li><strong>Create new R Markdown <code>.Rmd</code> file</strong>:
 <ul>
-<li>Go to RStudio menu bar -&gt; File -&gt; New File -&gt; R Markdown</li>
-<li>Set “Title” to “My first R Markdown report” and “Author” as your name.</li>
-<li>Save this file as <code>testing</code> somewhere on your computer. This will create a file called <code>testing.Rmd</code></li>
+<li>Go to RStudio menu bar -&gt; File -&gt; New File -&gt; R
+Markdown</li>
+<li>Set “Title” to “My first R Markdown report” and “Author” as your
+name.</li>
+<li>Save this file as <code>testing</code> somewhere on your computer.
+This will create a file called <code>testing.Rmd</code></li>
 </ul></li>
 <li><strong>Method 1: “Knit” a report to HTML</strong>:
 <ul>
 <li>Click the arrow next to “Knit” -&gt; “Knit to HTML”.</li>
-<li>An HTML webpage should pop up. However, it may be blocked by your browser. If so, in your browser’s URL bar, click on “Always allow pop-ups”.</li>
+<li>An HTML webpage should pop up. However, it may be blocked by your
+browser. If so, in your browser’s URL bar, click on “Always allow
+pop-ups”.</li>
 </ul></li>
 <li><strong>Method 1: Publish HTML report on web</strong>:
 <ul>
-<li>Click on blue “Publish” button on top right of the resulting <strong>pop-up html</strong>.</li>
+<li>Click on blue “Publish” button on top right of the resulting
+<strong>pop-up html</strong>.</li>
 <li>Select RPubs.</li>
-<li>If you haven’t previously, create an account on Rpubs.com. If you have previously, login.</li>
-<li>Set “Title” to “My first R Markdown report” and “Slug” to “testing”</li>
-<li>You should end up with a webpage that looks like this <a href="http://rpubs.com/rudeboybert/testing" target="_blank">one</a>. This is live on the web!</li>
+<li>If you haven’t previously, create an account on Rpubs.com. If you
+have previously, login.</li>
+<li>Set “Title” to “My first R Markdown report” and “Slug” to
+“testing”</li>
+<li>You should end up with a webpage that looks like this <a
+href="http://rpubs.com/rudeboybert/testing" target="_blank">one</a>.
+This is live on the web!</li>
 </ul></li>
 <li><strong>Method 1: Update HTML report on web</strong>:
 <ul>
 <li>Make some trivial change to your <code>testing.Rmd</code> file.</li>
-<li>“Re-knit” your report and make sure your trivial change is reflected.</li>
+<li>“Re-knit” your report and make sure your trivial change is
+reflected.</li>
 <li>The blue “Publish” button should now read “Republish”</li>
 <li>Click “Update existing”</li>
 <li>Your updates are now live on the web!</li>
@@ -1905,16 +2216,18 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <li>Next to “Console” go to “Terminal”</li>
 <li>Run this line of code:</li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>sudo chown <span class="op">-</span>R <span class="st">`</span><span class="dt">whoami</span><span class="st">`</span><span class="op">:</span>admin <span class="op">/</span>usr<span class="op">/</span>local<span class="op">/</span>bin</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>sudo chown <span class="sc">-</span>R <span class="st">`</span><span class="at">whoami</span><span class="st">`</span><span class="sc">:</span>admin <span class="sc">/</span>usr<span class="sc">/</span>local<span class="sc">/</span>bin</span></code></pre></div>
 <ul>
-<li>Enter your password. Note: Terminal has weird behavior whereby as you enter your password, the cursor will not move. Don’t worry your password is registering.</li>
+<li>Enter your password. Note: Terminal has weird behavior whereby as
+you enter your password, the cursor will not move. Don’t worry your
+password is registering.</li>
 </ul></li>
 <li><strong>Method 3: “Knit” a report to PDF</strong>
 <ul>
 <li>Run the following code in your console just once:</li>
 </ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;tinytex&#39;</span>)</span>
-<span id="cb7-2"><a href="#cb7-2"></a>tinytex<span class="op">::</span><span class="kw">install_tinytex</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;tinytex&#39;</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>tinytex<span class="sc">::</span><span class="fu">install_tinytex</span>()</span></code></pre></div>
 <ul>
 <li>Click the arrow next to “Knit” -&gt; “Knit to PDF”.</li>
 </ul></li>
@@ -1933,24 +2246,39 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <div id="announcements-34" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>Spinelli Center <a href="https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats." target="_blank">SDS drop-in tutoring hours</a> now open! Get individual attention from SDS majors! In Sabin-Reed 301
+<li>Spinelli Center <a
+href="https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats."
+target="_blank">SDS drop-in tutoring hours</a> now open! Get individual
+attention from SDS majors! In Sabin-Reed 301
 <ul>
 <li>Sunday through Thursday 7-9pm</li>
 <li>Friday 2:35-3:30pm</li>
 </ul></li>
 <li>By popular request:
 <ul>
-<li>Sec 01 in Stoddard G2 will now start 5 minutes later: 10:55 AM instead of 10:50AM</li>
-<li>Sec 02 in Sabin-Reed 220 will now end 5 minutes earlier: 10:35 AM instead of 10:40 AM</li>
+<li>Sec 01 in Stoddard G2 will now start 5 minutes later: 10:55 AM
+instead of 10:50AM</li>
+<li>Sec 02 in Sabin-Reed 220 will now end 5 minutes earlier: 10:35 AM
+instead of 10:40 AM</li>
 </ul></li>
-<li>I added extra instructions for Problem Set 01 after lecture, posted under <a href="PS.html">Problem Sets</a>
+<li>I added extra instructions for Problem Set 01 after lecture, posted
+under <a href="PS.html">Problem Sets</a>
 <ul>
 <li>Show don’t tell how to tag questions on gradescope</li>
 </ul></li>
-<li>ASA StatFest 2021 Sat 9/18 thru Sun 9/19 <a href="static/images/announcements/statfest2021.pdf" target="_blank">flyer</a> and <a href="https://community.amstat.org/cmis/events/statfest/statfest-2021" target="_blank">event webpage</a>
+<li>ASA StatFest 2021 Sat 9/18 thru Sun 9/19 <a
+href="static/images/announcements/statfest2021.pdf"
+target="_blank">flyer</a> and <a
+href="https://community.amstat.org/cmis/events/statfest/statfest-2021"
+target="_blank">event webpage</a>
 <ul>
-<li>Sunday 9/19 at 11:50AM: Opportunities in Statistics &amp; Data Science in Academia, Government, &amp; Non-Profit featuring SDS’s <strong>Prof. Randi Garcia</strong>!</li>
-<li>Keynote address by <strong>Robert Santos</strong>, 116th President of the ASA, and President Biden’s nominee to serve as Director of the United States Census Bureau! If approved by the Senate, he would be the first Latinx Director of the Bureau!</li>
+<li>Sunday 9/19 at 11:50AM: Opportunities in Statistics &amp; Data
+Science in Academia, Government, &amp; Non-Profit featuring SDS’s
+<strong>Prof. Randi Garcia</strong>!</li>
+<li>Keynote address by <strong>Robert Santos</strong>, 116th President
+of the ASA, and President Biden’s nominee to serve as Director of the
+United States Census Bureau! If approved by the Senate, he would be the
+first Latinx Director of the Bureau!</li>
 </ul></li>
 </ul>
 </div>
@@ -1964,8 +2292,11 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <li>5NG1: Scatterplots</li>
 <li>Next time:
 <ul>
-<li>Question: Do I need to re-type my code in the Console every single time?</li>
-<li>Answer: No! Save your work in an <a href="https://rmarkdown.rstudio.com/" target="_blank">RMarkdown document</a></li>
+<li>Question: Do I need to re-type my code in the Console every single
+time?</li>
+<li>Answer: No! Save your work in an <a
+href="https://rmarkdown.rstudio.com/" target="_blank">RMarkdown
+document</a></li>
 </ul></li>
 </ul>
 </div>
@@ -1983,7 +2314,8 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 <div id="announcements-35" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>Problem Set 01 due this Monday 5pm, posted under <a href="PS.html">Problem Sets</a>.</li>
+<li>Problem Set 01 due this Monday 5pm, posted under <a
+href="PS.html">Problem Sets</a>.</li>
 </ul>
 </div>
 <div id="todays-topicsactivities-35" class="section level2">
@@ -2003,10 +2335,17 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </ul>
 <p><em>About readings in this course</em>:</p>
 <ul>
-<li>You are responsible for completing a lecture’s readings before the next lecture. Ex: you are responsible to read all of ModernDive Chapter 1 before Wednesday.</li>
-<li>I teach lectures assuming you have not done the readings beforehand. However, if it suits your learning style better, please do read beforehand.</li>
-<li>While you don’t need to turn in your learning check answers, I <em>highly</em> recommend you still do them. The solutions are in Appendix D of the book.</li>
-<li>If you have your headphones, you may listen to music during in-class reading time.</li>
+<li>You are responsible for completing a lecture’s readings before the
+next lecture. Ex: you are responsible to read all of ModernDive Chapter
+1 before Wednesday.</li>
+<li>I teach lectures assuming you have not done the readings beforehand.
+However, if it suits your learning style better, please do read
+beforehand.</li>
+<li>While you don’t need to turn in your learning check answers, I
+<em>highly</em> recommend you still do them. The solutions are in
+Appendix D of the book.</li>
+<li>If you have your headphones, you may listen to music during in-class
+reading time.</li>
 </ul>
 <hr />
 </div>
@@ -2033,36 +2372,38 @@ Oh snap! <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span
 </ol></li>
 <li>Break!</li>
 <li>Executive summary of syllabus</li>
-<li>This weekend: Complete <a href="https://docs.google.com/forms/d/e/1FAIpQLSdA6uWnig5oR3ITCsVBFDxC6IC5Nq1tYzo-atdChe8CVTTqag/viewform" target="_blank">intro survey</a></li>
+<li>This weekend: Complete <a
+href="https://docs.google.com/forms/d/e/1FAIpQLSdA6uWnig5oR3ITCsVBFDxC6IC5Nq1tYzo-atdChe8CVTTqag/viewform"
+target="_blank">intro survey</a></li>
 </ul>
 </div>
 <div id="code-examples-from-class" class="section level2">
 <h2>Code examples from class</h2>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># Data visualization</span></span>
-<span id="cb8-2"><a href="#cb8-2"></a><span class="kw">library</span>(fivethirtyeight)</span>
-<span id="cb8-3"><a href="#cb8-3"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb8-4"><a href="#cb8-4"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb8-5"><a href="#cb8-5"></a>year_bins &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;&#39;70-&#39;74&quot;</span>, <span class="st">&quot;&#39;75-&#39;79&quot;</span>, <span class="st">&quot;&#39;80-&#39;84&quot;</span>, <span class="st">&quot;&#39;85-&#39;89&quot;</span>, <span class="st">&quot;&#39;90-&#39;94&quot;</span>,</span>
-<span id="cb8-6"><a href="#cb8-6"></a>               <span class="st">&quot;&#39;95-&#39;99&quot;</span>, <span class="st">&quot;&#39;00-&#39;04&quot;</span>, <span class="st">&quot;&#39;05-&#39;09&quot;</span>, <span class="st">&quot;&#39;10-&#39;13&quot;</span>)</span>
-<span id="cb8-7"><a href="#cb8-7"></a></span>
-<span id="cb8-8"><a href="#cb8-8"></a>bechdel &lt;-<span class="st"> </span>bechdel <span class="op">%&gt;%</span></span>
-<span id="cb8-9"><a href="#cb8-9"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">five_year =</span> <span class="kw">cut</span>(year, <span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="dv">1969</span>, <span class="dv">2014</span>, <span class="dv">5</span>), <span class="dt">labels =</span> year_bins))</span>
-<span id="cb8-10"><a href="#cb8-10"></a></span>
-<span id="cb8-11"><a href="#cb8-11"></a><span class="kw">ggplot</span>(bechdel, <span class="kw">aes</span>(<span class="dt">x =</span> five_year, <span class="dt">fill =</span> clean_test)) <span class="op">+</span></span>
-<span id="cb8-12"><a href="#cb8-12"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="st">&quot;fill&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span></span>
-<span id="cb8-13"><a href="#cb8-13"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Year&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Proportion&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;Bechdel Test&quot;</span>) <span class="op">+</span></span>
-<span id="cb8-14"><a href="#cb8-14"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;YlGnBu&quot;</span>)</span>
-<span id="cb8-15"><a href="#cb8-15"></a></span>
-<span id="cb8-16"><a href="#cb8-16"></a><span class="co"># Data Wranling</span></span>
-<span id="cb8-17"><a href="#cb8-17"></a><span class="kw">library</span>(fec16)</span>
-<span id="cb8-18"><a href="#cb8-18"></a>all_transactions &lt;-<span class="st"> </span><span class="kw">read_all_transactions</span>()</span>
-<span id="cb8-19"><a href="#cb8-19"></a><span class="kw">View</span>(all_transactions)</span>
-<span id="cb8-20"><a href="#cb8-20"></a></span>
-<span id="cb8-21"><a href="#cb8-21"></a><span class="co"># Maps</span></span>
-<span id="cb8-22"><a href="#cb8-22"></a><span class="kw">library</span>(leaflet)</span>
-<span id="cb8-23"><a href="#cb8-23"></a><span class="kw">leaflet</span>() <span class="op">%&gt;%</span></span>
-<span id="cb8-24"><a href="#cb8-24"></a><span class="st">  </span><span class="kw">addTiles</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb8-25"><a href="#cb8-25"></a><span class="st">  </span><span class="kw">addMarkers</span>(<span class="dt">lng=</span><span class="op">-</span><span class="fl">72.64022</span>, <span class="dt">lat=</span><span class="fl">42.31706</span>, <span class="dt">popup=</span><span class="st">&quot;Smith College&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Data visualization</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fivethirtyeight)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>year_bins <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;&#39;70-&#39;74&quot;</span>, <span class="st">&quot;&#39;75-&#39;79&quot;</span>, <span class="st">&quot;&#39;80-&#39;84&quot;</span>, <span class="st">&quot;&#39;85-&#39;89&quot;</span>, <span class="st">&quot;&#39;90-&#39;94&quot;</span>,</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>               <span class="st">&quot;&#39;95-&#39;99&quot;</span>, <span class="st">&quot;&#39;00-&#39;04&quot;</span>, <span class="st">&quot;&#39;05-&#39;09&quot;</span>, <span class="st">&quot;&#39;10-&#39;13&quot;</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>bechdel <span class="ot">&lt;-</span> bechdel <span class="sc">%&gt;%</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">five_year =</span> <span class="fu">cut</span>(year, <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1969</span>, <span class="dv">2014</span>, <span class="dv">5</span>), <span class="at">labels =</span> year_bins))</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> five_year, <span class="at">fill =</span> clean_test)) <span class="sc">+</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">&quot;fill&quot;</span>, <span class="at">color =</span> <span class="st">&quot;black&quot;</span>) <span class="sc">+</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Year&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Proportion&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;Bechdel Test&quot;</span>) <span class="sc">+</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;YlGnBu&quot;</span>)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Data Wranling</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fec16)</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>all_transactions <span class="ot">&lt;-</span> <span class="fu">read_all_transactions</span>()</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(all_transactions)</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Maps</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng=</span><span class="sc">-</span><span class="fl">72.64022</span>, <span class="at">lat=</span><span class="fl">42.31706</span>, <span class="at">popup=</span><span class="st">&quot;Smith College&quot;</span>)</span></code></pre></div>
 </div>
 </div>
 

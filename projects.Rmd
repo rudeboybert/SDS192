@@ -270,6 +270,12 @@ Things to remember for next time:
 
 *Due Tuesday ~~11/23~~ 11/30 (after break) at 9pm.* 
 
+```{r, echo = FALSE, eval = TRUE}
+include_graphics("static/images/NJ.png")
+```
+
+*Example map courtesy Brianna Mateo and Michel Ruiz Fuentes*
+
 ## Basic outline
 
 Create maps using the `sf` package. Here are two **randomly** chosen examples to give a **qualitative** sense of the outcome. 

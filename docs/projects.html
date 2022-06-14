@@ -13,6 +13,7 @@
 
 <title>Projects</title>
 
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -32,7 +33,6 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -49,6 +49,7 @@
     </style>
 
 
+
 <style type="text/css">
   code {
     white-space: pre;
@@ -58,19 +59,19 @@
   }
 </style>
 <style type="text/css" data-origin="pandoc">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -90,7 +91,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {  background-color: #f8f8f8; }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
@@ -170,6 +171,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -395,7 +399,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -422,7 +426,7 @@ div.tocify {
   <a href="PS.html">Problem Sets</a>
 </li>
 <li>
-  <a href="projects.html#Final">Projects</a>
+  <a href="projects.html">Projects</a>
 </li>
 <li>
   <a href="midterms.html">Midterms</a>
@@ -453,9 +457,12 @@ h1{font-weight: 400;}
 <div id="extension-requests" class="section level1">
 <h1>Extension Requests</h1>
 <ul>
-<li>You have an extension “budget” of a maximum of 5 days for the rest of the semester; it’s up to you to keep track of your budget</li>
+<li>You have an extension “budget” of a maximum of 5 days for the rest
+of the semester; it’s up to you to keep track of your budget</li>
 <li>Request must be made before due date/time.</li>
-<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeCrhqs-iTD5qPcf4FfcFNHE_rwMuaeF37yQuwusRsP9xHJ_Q/viewform" target="_blank">Google Form</a></li>
+<li><a
+href="https://docs.google.com/forms/d/e/1FAIpQLSeCrhqs-iTD5qPcf4FfcFNHE_rwMuaeF37yQuwusRsP9xHJ_Q/viewform"
+target="_blank">Google Form</a></li>
 </ul>
 <hr />
 </div>
@@ -484,18 +491,26 @@ Things to remember for next time:
 <div id="basic-outline" class="section level2">
 <h2>Basic outline</h2>
 <ol style="list-style-type: decimal">
-<li>Identify a question about how you use your time <em>that you feel comfortable sharing with your partner and me</em>.</li>
-<li>Start the data collection process: start logging time in Google Calendar, macOS Calendar, or Outlook.</li>
-<li>Export the calendar to <code>.ics</code> file format and then import into R.
+<li>Identify a question about how you use your time <em>that you feel
+comfortable sharing with your partner and me</em>.</li>
+<li>Start the data collection process: start logging time in Google
+Calendar, macOS Calendar, or Outlook.</li>
+<li>Export the calendar to <code>.ics</code> file format and then import
+into R.
 <ul>
-<li>The screencast demonstrates how to do this with Google Calendar.</li>
+<li>The screencast demonstrates how to do this with Google
+Calendar.</li>
 <li>Test this early and test this often!</li>
 </ul></li>
-<li>Exchange data! You will pass your question and data to your partner, and they will do an analysis with two non-redundant data visualizations.</li>
+<li>Exchange data! You will pass your question and data to your partner,
+and they will do an analysis with two non-redundant data
+visualizations.</li>
 <li>Write a joint reflection piece on this experience. In particular
 <ul>
-<li>As someone who provides data: What expectations do you have when you give your data?</li>
-<li>As someone who analyzes other people’s data: What legal and ethical responsibilities do you have?</li>
+<li>As someone who provides data: What expectations do you have when you
+give your data?</li>
+<li>As someone who analyzes other people’s data: What legal and ethical
+responsibilities do you have?</li>
 <li>The joint reflection piece should be of no more than 500 words.</li>
 </ul></li>
 </ol>
@@ -512,39 +527,58 @@ Things to remember for next time:
 <li>Find your group in the <code>#mp1</code> channel. Please identify:
 <ul>
 <li>Your group number</li>
-<li>Who your group leader is: whoever in your group is listed as <code>member_1</code></li>
+<li>Who your group leader is: whoever in your group is listed as
+<code>member_1</code></li>
 </ul></li>
-<li>Download <a href="static/projects/MP1/MP1.zip" download><code>MP1.zip</code></a> and double-click it to “unzip” it</li>
+<li>Download
+<a href="static/projects/MP1/MP1.zip" download><code>MP1.zip</code></a>
+and double-click it to “unzip” it</li>
 <li>Knit the <code>MP1.Rmd</code> file once and read it over</li>
 <li>Group leader only:
 <ul>
-<li>Open the template joint reflection piece <a href="https://docs.google.com/document/d/1brhEHGmRRam5SA23O6cH3ZZN7CrShDv5bt6nbZ5zPT0/edit?usp=sharing" target="_blank">Google Doc</a></li>
+<li>Open the template joint reflection piece <a
+href="https://docs.google.com/document/d/1brhEHGmRRam5SA23O6cH3ZZN7CrShDv5bt6nbZ5zPT0/edit?usp=sharing"
+target="_blank">Google Doc</a></li>
 <li>Go to File (next to blue Google Doc icon) -&gt; Make a copy</li>
 <li>Share it with your partner so that you can both edit it</li>
 </ul></li>
 </ul>
 </div>
-<div id="suggestion-complete-your-minimally-viable-product" class="section level3">
+<div id="suggestion-complete-your-minimally-viable-product"
+class="section level3">
 <h3>2. Suggestion: Complete your Minimally Viable Product</h3>
 <p><img src="static/images/MVP_2.png" width="443" style="display: block; margin: auto;" /></p>
 <p>IMO when working on any project</p>
 <ul>
-<li>Don’t try to do everything completely and perfectly from the beginning. This leads to perfectionist thinking, which leads to procrastination and “analysis paralysis.”</li>
-<li>Do start by finishing a <a href="https://www.forbes.com/sites/quora/2018/02/27/what-is-a-minimum-viable-product-and-why-do-companies-need-them/#178bd8a2382c" target="_blank">minimially viable product</a> (image 1 in the bottom row of the image above). In other words:
+<li>Don’t try to do everything completely and perfectly from the
+beginning. This leads to perfectionist thinking, which leads to
+procrastination and “analysis paralysis.”</li>
+<li>Do start by finishing a <a
+href="https://www.forbes.com/sites/quora/2018/02/27/what-is-a-minimum-viable-product-and-why-do-companies-need-them/#178bd8a2382c"
+target="_blank">minimially viable product</a> (image 1 in the bottom row
+of the image above). In other words:
 <ul>
-<li><a href="https://lifehacker.com/done-is-better-than-perfect-5870379" target="_blank">Done is better than perfect</a></li>
-<li><a href="https://www.huffpost.com/entry/dont-let-the-perfect-be-t_b_158673" target="_blank">Don’t let perfect be the enemy of good</a></li>
+<li><a href="https://lifehacker.com/done-is-better-than-perfect-5870379"
+target="_blank">Done is better than perfect</a></li>
+<li><a
+href="https://www.huffpost.com/entry/dont-let-the-perfect-be-t_b_158673"
+target="_blank">Don’t let perfect be the enemy of good</a></li>
 </ul></li>
-<li>Once you’re done your MVP, gather feedback on how your project works. Based on this feedback, then iterate and improve.</li>
+<li>Once you’re done your MVP, gather feedback on how your project
+works. Based on this feedback, then iterate and improve.</li>
 </ul>
 </div>
 <div id="submit-three-things" class="section level3">
 <h3>3. Submit three things</h3>
 <p>There are three components to your grade:</p>
 <ol style="list-style-type: decimal">
-<li>Both group members: Submit the <code>MP1.pdf</code> of your analysis of your partner’s question on gradescope.</li>
-<li>Both group members: Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6w4CC9-PrWrpupNfosQUBVoCWBihRwdezYb2jJEj7-kNdfg/viewform" target="_blank">Google Form</a></li>
-<li>Group leader only: Submit a PDF of your joint reflection piece on gradescope</li>
+<li>Both group members: Submit the <code>MP1.pdf</code> of your analysis
+of your partner’s question on gradescope.</li>
+<li>Both group members: Fill out the peer evaluation <a
+href="https://docs.google.com/forms/d/e/1FAIpQLSd6w4CC9-PrWrpupNfosQUBVoCWBihRwdezYb2jJEj7-kNdfg/viewform"
+target="_blank">Google Form</a></li>
+<li>Group leader only: Submit a PDF of your joint reflection piece on
+gradescope</li>
 </ol>
 </div>
 <div id="grades" class="section level3">
@@ -564,11 +598,20 @@ Things to remember for next time:
 <div id="details" class="section level2">
 <h2>Details</h2>
 <ul>
-<li>Has to involve intervals of time: a start time and end time. For example, not “I went to sleep at.” but “I slept during these times.”</li>
-<li>Enter in at least two types of activities in your calendar. This activity type becomes the summary categorical variable with two levels.</li>
-<li>How long does the analysis need to be? No firm rule, but think: if there are two equally insightful reports, one is 20 pages and the other is 2 pages. which will you read? Or think when you visit a webpage. How long does it take you to decide if you’re going to read it.</li>
-<li>Graphs can’t be redundant: Think in terms of ink/information ratio: if the graphs are very redundant, then why not show just one?</li>
-<li>How many much analysis? 5 sentences or less for analysis of each graph.</li>
+<li>Has to involve intervals of time: a start time and end time. For
+example, not “I went to sleep at.” but “I slept during these
+times.”</li>
+<li>Enter in at least two types of activities in your calendar. This
+activity type becomes the summary categorical variable with two
+levels.</li>
+<li>How long does the analysis need to be? No firm rule, but think: if
+there are two equally insightful reports, one is 20 pages and the other
+is 2 pages. which will you read? Or think when you visit a webpage. How
+long does it take you to decide if you’re going to read it.</li>
+<li>Graphs can’t be redundant: Think in terms of ink/information ratio:
+if the graphs are very redundant, then why not show just one?</li>
+<li>How many much analysis? 5 sentences or less for analysis of each
+graph.</li>
 <li>You need to collect at least 10 days worth of data</li>
 </ul>
 <hr />
@@ -593,12 +636,25 @@ Things to remember for next time:
 </center>
 <div id="basic-outline-1" class="section level2">
 <h2>Basic outline</h2>
-<p>The theme of your analysis will be <strong>follow the money</strong> as quoted in the video above. You will work with a partner to analyze Federal Election Commission data based on the 2016 federal election cycle, as provided by the Federal Election Commission. We’ll be accessing this data in the <code>fec16</code> package, which was developed by Prof Ben Baumer, Rana Gahwagy, Irene Ryan, and Marium A. Tapal from Smith College. Check out Marium’s poster from the <a href="https://ww2.amstat.org/meetings/wsds/2020/onlineprogram/AbstractDetails.cfm?AbstractID=309585" target="_blank">Women in Statistics and Data Science 2020 conference</a>:</p>
+<p>The theme of your analysis will be <strong>follow the money</strong>
+as quoted in the video above. You will work with a partner to analyze
+Federal Election Commission data based on the 2016 federal election
+cycle, as provided by the Federal Election Commission. We’ll be
+accessing this data in the <code>fec16</code> package, which was
+developed by Prof Ben Baumer, Rana Gahwagy, Irene Ryan, and Marium A.
+Tapal from Smith College. Check out Marium’s poster from the <a
+href="https://ww2.amstat.org/meetings/wsds/2020/onlineprogram/AbstractDetails.cfm?AbstractID=309585"
+target="_blank">Women in Statistics and Data Science 2020
+conference</a>:</p>
 <p><img src="static/projects/MP2/fec16.png" width="1314" style="display: block; margin: auto;" /></p>
-<p>Here are two <strong>randomly</strong> chosen examples to give a <strong>qualitative</strong> sense of the outcome, there are many ways to do this project.</p>
+<p>Here are two <strong>randomly</strong> chosen examples to give a
+<strong>qualitative</strong> sense of the outcome, there are many ways
+to do this project.</p>
 <ul>
-<li><a href="static/projects/MP2/MP2_example_1.html" target="_blank">Example 1</a></li>
-<li><a href="static/projects/MP2/MP2_example_2.html" target="_blank">Example 2</a></li>
+<li><a href="static/projects/MP2/MP2_example_1.html"
+target="_blank">Example 1</a></li>
+<li><a href="static/projects/MP2/MP2_example_2.html"
+target="_blank">Example 2</a></li>
 </ul>
 </div>
 <div id="steps-1" class="section level2">
@@ -609,63 +665,86 @@ Things to remember for next time:
 <li>Find your group in the <code>#mp2</code> channel. Please identify:
 <ul>
 <li>Your group number</li>
-<li>Who your group leader is: whoever in your group is listed as <code>member_1</code></li>
+<li>Who your group leader is: whoever in your group is listed as
+<code>member_1</code></li>
 </ul></li>
-<li>Download <a href="static/projects/MP2/MP2.Rmd" download><code>MP2.Rmd</code></a></li>
+<li>Download
+<a href="static/projects/MP2/MP2.Rmd" download><code>MP2.Rmd</code></a></li>
 <li>Knit the <code>MP2.Rmd</code> file once and read it over</li>
-<li>Read the <code>fec16</code> <a href="static/projects/MP2/fec16.pdf" target="_blank">poster</a> Marium Tapal presented to get an overview of the package, especially the datasets: some include full data by default, others only include a sample for which if you want full data you need to download it from the web (this is because R packages have file size restrictions). See code below.</li>
+<li>Read the <code>fec16</code> <a href="static/projects/MP2/fec16.pdf"
+target="_blank">poster</a> Marium Tapal presented to get an overview of
+the package, especially the datasets: some include full data by default,
+others only include a sample for which if you want full data you need to
+download it from the web (this is because R packages have file size
+restrictions). See code below.</li>
 <li>This is A LOT of data; it will be easy to get lost
 <ul>
-<li><code>View()</code> is your best friend: simply looking at your data is so powerful, but also a step that’s so easily neglected</li>
-<li>Read the help files for documentation: Know what all the variables mean, and what the values mean.</li>
-<li>Start simple: Get that minimally viable first visualization done, then iteratively add complexity.</li>
+<li><code>View()</code> is your best friend: simply looking at your data
+is so powerful, but also a step that’s so easily neglected</li>
+<li>Read the help files for documentation: Know what all the variables
+mean, and what the values mean.</li>
+<li>Start simple: Get that minimally viable first visualization done,
+then iteratively add complexity.</li>
 </ul></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(fec16)</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># Look at help file</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a>?contributions</span>
-<span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="co"># By default the contributions data frame only contains the first 1000 rows:</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>contributions</span>
-<span id="cb1-8"><a href="#cb1-8"></a></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="co"># Download full contributions data from web and overwrite contributions using:</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="co"># read_all_*() function.</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="co"># You will need to install the usethis package for this line of code to work</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a>contributions &lt;-<span class="st"> </span><span class="kw">read_all_contributions</span>()</span>
-<span id="cb1-13"><a href="#cb1-13"></a></span>
-<span id="cb1-14"><a href="#cb1-14"></a><span class="co"># Now contributions has full 516,394 rows</span></span>
-<span id="cb1-15"><a href="#cb1-15"></a>contributions</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fec16)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at help file</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>?contributions</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># By default the contributions data frame only contains the first 1000 rows:</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>contributions</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Download full contributions data from web and overwrite contributions using:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># read_all_*() function.</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># You will need to install the usethis package for this line of code to work</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>contributions <span class="ot">&lt;-</span> <span class="fu">read_all_contributions</span>()</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Now contributions has full 516,394 rows</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>contributions</span></code></pre></div>
 </div>
 <div id="grading" class="section level3">
 <h3>2. Grading</h3>
 <ol style="list-style-type: decimal">
-<li><strong>Baseline:</strong> Projects that do not satisfy all “baseline” criteria can expect to get a grade of less than 7/10.
+<li><strong>Baseline:</strong> Projects that do not satisfy all
+“baseline” criteria can expect to get a grade of less than 7/10.
 <ul>
-<li>All visualizations have appropriately labeled axes, legends, titles, etc. Such information gives the data’s context.</li>
-<li>All visualizations are mindful of the <a href="https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842" target="_blank">ink/information ratio</a>.</li>
+<li>All visualizations have appropriately labeled axes, legends, titles,
+etc. Such information gives the data’s context.</li>
+<li>All visualizations are mindful of the <a
+href="https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842"
+target="_blank">ink/information ratio</a>.</li>
 <li>All code must be visible in your PDF.</li>
 <li>Citations must be included as footnotes.</li>
 </ul></li>
 <li><strong>Minimally viable product:</strong> Grade 7/10
 <ul>
 <li>Satisfy all “baseline” criteria.</li>
-<li>Create one data visualization that “follows the money” i.e. involves campaign contributions and include a written analysis.</li>
+<li>Create one data visualization that “follows the money” i.e. involves
+campaign contributions and include a written analysis.</li>
 </ul></li>
 <li><strong>Due diligence:</strong> Grade 8/10
 <ul>
 <li>Satisfy all “baseline” and “minimally viable product” criteria.</li>
-<li>The data visualization from the “minimally viable product” should be based on at least two joined data frames.</li>
+<li>The data visualization from the “minimally viable product” should be
+based on at least two joined data frames.</li>
 </ul></li>
 <li><strong>Point of diminishing returns:</strong> Grade 9/10
 <ul>
-<li>Satisfy all “baseline”, “minimally viable product”, and “due diligence” criteria.</li>
-<li>Create a second data visualization that builds on the first data visualization, but is also non-redundant to the first. Include a written analysis.</li>
+<li>Satisfy all “baseline”, “minimally viable product”, and “due
+diligence” criteria.</li>
+<li>Create a second data visualization that builds on the first data
+visualization, but is also non-redundant to the first. Include a written
+analysis.</li>
 </ul></li>
 <li><strong>Polishing the cannonball</strong> Grade &gt;9/10
 <ul>
-<li>Satisfy all “baseline”, “minimally viable product”, “due diligence”, and “point of diminishing returns” criteria.</li>
-<li>Written text does an exceptional job of not only addressing what money-driven effect on politics is being observed, but also attempts to address <em>why</em> this money-driven effect on politics is happening.</li>
+<li>Satisfy all “baseline”, “minimally viable product”, “due diligence”,
+and “point of diminishing returns” criteria.</li>
+<li>Written text does an exceptional job of not only addressing what
+money-driven effect on politics is being observed, but also attempts to
+address <em>why</em> this money-driven effect on politics is
+happening.</li>
 </ul></li>
 </ol>
 </div>
@@ -673,8 +752,11 @@ Things to remember for next time:
 <h3>3. What to submit</h3>
 <p>There are two components to your grade:</p>
 <ol style="list-style-type: decimal">
-<li>Group leader only: Submit the <code>MP2.pdf</code> of your analysis on gradescope</li>
-<li>Both group members: Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqF7w2Hb1o4e08oYSbndefg3kqHetKL-wLirhUMrfE7sYRuQ/viewform" target="_blank">Google Form</a></li>
+<li>Group leader only: Submit the <code>MP2.pdf</code> of your analysis
+on gradescope</li>
+<li>Both group members: Fill out the peer evaluation <a
+href="https://docs.google.com/forms/d/e/1FAIpQLSeqF7w2Hb1o4e08oYSbndefg3kqHetKL-wLirhUMrfE7sYRuQ/viewform"
+target="_blank">Google Form</a></li>
 </ol>
 <hr />
 </div>
@@ -688,14 +770,25 @@ Things to remember for next time:
 - Give example of joining sf object with data frame in examples.Rmd to create choropleth map of external variable
 -->
 <p><em>Due Tuesday <del>11/23</del> 11/30 (after break) at 9pm.</em></p>
+<p><img src="static/images/NJ.png" width="932" style="display: block; margin: auto;" /></p>
+<p><em>Example map courtesy Brianna Mateo and Michel Ruiz
+Fuentes</em></p>
 <div id="basic-outline-2" class="section level2">
 <h2>Basic outline</h2>
-<p>Create maps using the <code>sf</code> package. Here are two <strong>randomly</strong> chosen examples to give a <strong>qualitative</strong> sense of the outcome.</p>
+<p>Create maps using the <code>sf</code> package. Here are two
+<strong>randomly</strong> chosen examples to give a
+<strong>qualitative</strong> sense of the outcome.</p>
 <ul>
-<li><a href="static/projects/MP3/MP3_example_1.html" target="_blank">Example 1</a></li>
-<li><a href="static/projects/MP3/MP3_example_2.html" target="_blank">Example 2</a></li>
+<li><a href="static/projects/MP3/MP3_example_1.html"
+target="_blank">Example 1</a></li>
+<li><a href="static/projects/MP3/MP3_example_2.html"
+target="_blank">Example 2</a></li>
 </ul>
-<p>Note you do not need to submit a interactive map, just a static (non-interactive) map generated with the <code>sf</code> package. If you would like to learn how to make interactive maps on your own, check out the <a href="https://rstudio.github.io/leaflet/" target="_blank"><code>leaflet</code> package</a>.</p>
+<p>Note you do not need to submit a interactive map, just a static
+(non-interactive) map generated with the <code>sf</code> package. If you
+would like to learn how to make interactive maps on your own, check out
+the <a href="https://rstudio.github.io/leaflet/"
+target="_blank"><code>leaflet</code> package</a>.</p>
 </div>
 <div id="steps-2" class="section level2">
 <h2>Steps</h2>
@@ -707,25 +800,43 @@ Things to remember for next time:
 <li>Your group number</li>
 <li>Designate a group leader.</li>
 </ul></li>
-<li>Add the following to the folder that has your <code>MP3.Rproj</code> RStudio Project you created in <a href="index.html#Lec26">Lec26</a>:
+<li>Add the following to the folder that has your <code>MP3.Rproj</code>
+RStudio Project you created in <a href="index.html#Lec26">Lec26</a>:
 <ul>
-<li>Download <a href="static/projects/MP3/MP3.Rmd" download><code>MP3.Rmd</code></a> and add it to the above folder</li>
-<li>In the above folder create a new directory called <code>data/</code></li>
-<li>Download <a href="static/projects/MP3/ma_cities.csv" download><code>ma_cities.csv</code></a> and add it to the <code>data/</code> folder</li>
+<li>Download
+<a href="static/projects/MP3/MP3.Rmd" download><code>MP3.Rmd</code></a>
+and add it to the above folder</li>
+<li>In the above folder create a new directory called
+<code>data/</code></li>
+<li>Download
+<a href="static/projects/MP3/ma_cities.csv" download><code>ma_cities.csv</code></a>
+and add it to the <code>data/</code> folder</li>
 </ul></li>
 <li>Knit the <code>MP3.Rmd</code> file once and read it over</li>
-<li>Map making can get very complicated, so start simple. Get that minimally viable first visualization done, then iteratively add complexity.</li>
+<li>Map making can get very complicated, so start simple. Get that
+minimally viable first visualization done, then iteratively add
+complexity.</li>
 </ul>
 <p><img src="static/images/MVP_2.png" width="443" style="display: block; margin: auto;" /></p>
 </div>
 <div id="grading-1" class="section level3">
 <h3>2. Grading</h3>
 <ol style="list-style-type: decimal">
-<li><strong>Baseline:</strong> Projects that do not satisfy all “baseline” criteria can expect to get a grade of less than 8/10.
+<li><strong>Baseline:</strong> Projects that do not satisfy all
+“baseline” criteria can expect to get a grade of less than 8/10.
 <ul>
-<li><strong>This will be strictly evaluated</strong>: The <code>MP3.Rmd</code> R Markdown file must “knit” correctly when <em>someone else</em> knits it. This is known as producing <em>reproducible research</em>.</li>
-<li>Wherever possible, all maps have appropriately labeled axes, legends, and titles and all maps are mindful of the <a href="https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842" target="_blank">ink/information ratio</a>.</li>
-<li>From the report reader’s perspective, there should be no “superfluous” and non-informative output (e.g. instructions text). You must be empathetic to your reader, or your reader will just throw your report in the trash.</li>
+<li><strong>This will be strictly evaluated</strong>: The
+<code>MP3.Rmd</code> R Markdown file must “knit” correctly when
+<em>someone else</em> knits it. This is known as producing
+<em>reproducible research</em>.</li>
+<li>Wherever possible, all maps have appropriately labeled axes,
+legends, and titles and all maps are mindful of the <a
+href="https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842"
+target="_blank">ink/information ratio</a>.</li>
+<li>From the report reader’s perspective, there should be no
+“superfluous” and non-informative output (e.g. instructions text). You
+must be empathetic to your reader, or your reader will just throw your
+report in the trash.</li>
 <li>You submit your peer evaluation.</li>
 </ul></li>
 <li><strong>Minimally viable product:</strong> Grade: 8/10.
@@ -738,16 +849,20 @@ Things to remember for next time:
 <li>Satisfy all “baseline” and “minimally viable product” criteria.</li>
 <li>Add to the map by layering points on top of it. The points
 <ul>
-<li>Need to be imported from an external <code>.csv</code> file that you will find (cite source).</li>
+<li>Need to be imported from an external <code>.csv</code> file that you
+will find (cite source).</li>
 <li>Need to overlap the map.</li>
 </ul></li>
 </ul></li>
 <li><strong>Point of diminishing returns:</strong> Grade: 10/10.
 <ul>
-<li>Satisfy all “baseline”, “minimally viable product”, and “due diligence” criteria.</li>
-<li>Add to the map by also layering data from a shapefile on it. This shapefile data
+<li>Satisfy all “baseline”, “minimally viable product”, and “due
+diligence” criteria.</li>
+<li>Add to the map by also layering data from a shapefile on it. This
+shapefile data
 <ul>
-<li>Needs to be imported data from a shapefile you will find (cite source).</li>
+<li>Needs to be imported data from a shapefile you will find (cite
+source).</li>
 <li>Can be points, lines, or polygons.</li>
 <li>Need to overlap the map.</li>
 </ul></li>
@@ -758,8 +873,13 @@ Things to remember for next time:
 <h3>3. What to submit</h3>
 <p>There are two components to your grade:</p>
 <ol style="list-style-type: decimal">
-<li>Group leader only: Submit the <code>MP3.zip</code> file of your entire RStudio Project folder on <a href="https://moodle.smith.edu/course/view.php?id=42274" target="_blank">moodle</a>.</li>
-<li>Both group members: Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSdf2M_0oYOR8hwUgxoQFeMR5bKvz4FMZs7Z4k1L1uOy3e_dQw/viewform" target="_blank">Google Form</a></li>
+<li>Group leader only: Submit the <code>MP3.zip</code> file of your
+entire RStudio Project folder on <a
+href="https://moodle.smith.edu/course/view.php?id=42274"
+target="_blank">moodle</a>.</li>
+<li>Both group members: Fill out the peer evaluation <a
+href="https://docs.google.com/forms/d/e/1FAIpQLSdf2M_0oYOR8hwUgxoQFeMR5bKvz4FMZs7Z4k1L1uOy3e_dQw/viewform"
+target="_blank">Google Form</a></li>
 </ol>
 <hr />
 </div>
@@ -767,19 +887,23 @@ Things to remember for next time:
 </div>
 <div id="Final" class="section level1">
 <h1>Final Project</h1>
-<p><em>Assigned on Wed Dec 1, due Fri 12/17 at 2pm <del>9pm</del>.</em></p>
+<p><em>Assigned on Wed Dec 1, due Fri 12/17 at 2pm
+<del>9pm</del>.</em></p>
 <div id="basic-outline-3" class="section level2">
 <h2>Basic outline</h2>
-<p>Using an R Markdown website you will answer any scientific question of your choosing using data:</p>
+<p>Using an R Markdown website you will answer any scientific question
+of your choosing using data:</p>
 <ul>
 <li>Your website must at least have the following two pages:
 <ul>
-<li>An intro <code>index.html</code> page in blog-post style that summarizes your work. It should have
+<li>An intro <code>index.html</code> page in blog-post style that
+summarizes your work. It should have
 <ol style="list-style-type: decimal">
 <li>One visualization that best summarizes your work.</li>
 <li>No more than 200 words of text</li>
 </ol></li>
-<li>A second <code>more_info.html</code> page going more in-depth for people who want more details. In should have
+<li>A second <code>more_info.html</code> page going more in-depth for
+people who want more details. In should have
 <ol style="list-style-type: decimal">
 <li>Between 2-3 more visualizations.</li>
 <li>No more than 500 words of text</li>
@@ -787,72 +911,121 @@ Things to remember for next time:
 </ul></li>
 <li>Publishing to the web:
 <ul>
-<li>If your data/analysis is not sensitive or private in nature, publish your R Markdown Website using Netlify Drop</li>
-<li>If your data/analysis is sensitive or private in nature, please DM me on Slack and we’ll work something out.</li>
+<li>If your data/analysis is not sensitive or private in nature, publish
+your R Markdown Website using Netlify Drop</li>
+<li>If your data/analysis is sensitive or private in nature, please DM
+me on Slack and we’ll work something out.</li>
 </ul></li>
 </ul>
-<p>Here are some arbitrarily chosen examples. Note the topics covered this semester have shifted.</p>
+<p>Here are some arbitrarily chosen examples. Note the topics covered
+this semester have shifted.</p>
 <ol style="list-style-type: decimal">
-<li><a href="https://ctimmons1.github.io/webpage/index.html" target="_blank">America’s Leaky Pipes: The Environmental Impact of Oil Pipeline Spills</a></li>
-<li><a href="https://estherrose21.github.io/webpage/index.html" target="_blank">💵The Gigantic Gender Pay Gap💵</a></li>
-<li><a href="https://jcflohr.github.io/final-project/index.html" target="_blank">Putting Food on the Table in 50 States</a></li>
-<li><a href="https://lepidopterane-atsmith.github.io/sds192fp/index.html" target="_blank">Who Are The Noisemakers? | Analyzing the Loudest Parties in NYC</a></li>
-<li><a href="https://loblatt.github.io/final_project_webpage/index.html" target="_blank">Bigfoot: True or Real?</a></li>
+<li><a href="https://ctimmons1.github.io/webpage/index.html"
+target="_blank">America’s Leaky Pipes: The Environmental Impact of Oil
+Pipeline Spills</a></li>
+<li><a href="https://estherrose21.github.io/webpage/index.html"
+target="_blank">💵The Gigantic Gender Pay Gap💵</a></li>
+<li><a href="https://jcflohr.github.io/final-project/index.html"
+target="_blank">Putting Food on the Table in 50 States</a></li>
+<li><a
+href="https://lepidopterane-atsmith.github.io/sds192fp/index.html"
+target="_blank">Who Are The Noisemakers? | Analyzing the Loudest Parties
+in NYC</a></li>
+<li><a href="https://loblatt.github.io/final_project_webpage/index.html"
+target="_blank">Bigfoot: True or Real?</a></li>
 </ol>
 </div>
 <div id="getting-started-3" class="section level2">
 <h2>Getting started</h2>
 <ol style="list-style-type: decimal">
 <li>Join <code>#final_project</code> Slack channel</li>
-<li>Create groups of 2-3 students from any section and post in Google Sheet in <code>#final_project</code> channel in Slack</li>
-<li>Finding data. This is often the hardest part of such projects and I suggest you <strong>do this as soon as possible</strong>
+<li>Create groups of 2-3 students from any section and post in Google
+Sheet in <code>#final_project</code> channel in Slack</li>
+<li>Finding data. This is often the hardest part of such projects and I
+suggest you <strong>do this as soon as possible</strong>
 <ul>
-<li>Ideally, determine a research question you are interested in. Then find this data.</li>
-<li>Often however you can’t find data that answers your desired question, but rather only some modified form of your question. This is fine, done is better than perfect.</li>
-<li>If you are still stuck, find data first and then reverse-engineer a question. Not ideal, but again, done is better than perfect.</li>
+<li>Ideally, determine a research question you are interested in. Then
+find this data.</li>
+<li>Often however you can’t find data that answers your desired
+question, but rather only some modified form of your question. This is
+fine, done is better than perfect.</li>
+<li>If you are still stuck, find data first and then reverse-engineer a
+question. Not ideal, but again, done is better than perfect.</li>
 <li>Use Smith College data resources. In particular:
 <ul>
-<li>The Spinelli Center <a href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr" target="_blank">Data Research and Statistics Counselor</a> Osman Keshawarz</li>
-<li>The <a href="http://www.science.smith.edu/sal/" target="_blank">Spatial Analysis Lab</a></li>
+<li>The Spinelli Center <a
+href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr"
+target="_blank">Data Research and Statistics Counselor</a> Osman
+Keshawarz</li>
+<li>The <a href="http://www.science.smith.edu/sal/"
+target="_blank">Spatial Analysis Lab</a></li>
 </ul></li>
 </ul></li>
 <li>Setup the Final Project RStudio Project
 <ol style="list-style-type: decimal">
-<li>Download the following zip file: <a href="static/projects/final_project.zip" download><code>final_project.zip</code></a></li>
-<li>Move <code>final_project.zip</code> to your SDS192 folder on your computer</li>
-<li>Unzip <code>final_project.zip</code>. Windows users: be sure to “Extract all”</li>
-<li>In the resulting <code>final_project</code> folder, double-click the RStudio Project <code>final_project.Rproj</code> icon to open in RStudio Project mode</li>
+<li>Download the following zip file:
+<a href="static/projects/final_project.zip" download><code>final_project.zip</code></a></li>
+<li>Move <code>final_project.zip</code> to your SDS192 folder on your
+computer</li>
+<li>Unzip <code>final_project.zip</code>. Windows users: be sure to
+“Extract all”</li>
+<li>In the resulting <code>final_project</code> folder, double-click the
+RStudio Project <code>final_project.Rproj</code> icon to open in RStudio
+Project mode</li>
 </ol></li>
 </ol>
 </div>
 <div id="submitting-the-project" class="section level2">
 <h2>Submitting the project</h2>
 <ol style="list-style-type: decimal">
-<li>Group leader only: Submit a <code>final_project.zip</code> file of your entire RStudio Project folder on <a href="https://moodle.smith.edu/course/view.php?id=42274" target="_blank">moodle</a>.</li>
+<li>Group leader only: Submit a <code>final_project.zip</code> file of
+your entire RStudio Project folder on <a
+href="https://moodle.smith.edu/course/view.php?id=42274"
+target="_blank">moodle</a>.</li>
 <li>All group members:
 <ul>
-<li>Fill out the peer evaluation <a href="https://docs.google.com/forms/d/e/1FAIpQLSegFq2mD2-twioEq3aniLRnAJQR90vJuKY1VJzN3_ZP0KGQ3g/viewform" target="_blank">Google Form</a>. Note you will need the Netlify Drop URL of the website you deployed on the web (unless your project involves sensitive non-public data).</li>
-<li>Fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcVrUjjPEAM587UKIG_T7Nv7vsb351lcWL8SLZUw3qJ9UWAA/closedform" target="_blank">exit survey</a> Google Form</li>
+<li>Fill out the peer evaluation <a
+href="https://docs.google.com/forms/d/e/1FAIpQLSegFq2mD2-twioEq3aniLRnAJQR90vJuKY1VJzN3_ZP0KGQ3g/viewform"
+target="_blank">Google Form</a>. Note you will need the Netlify Drop URL
+of the website you deployed on the web (unless your project involves
+sensitive non-public data).</li>
+<li>Fill out <a
+href="https://docs.google.com/forms/d/e/1FAIpQLSdcVrUjjPEAM587UKIG_T7Nv7vsb351lcWL8SLZUw3qJ9UWAA/closedform"
+target="_blank">exit survey</a> Google Form</li>
 </ul></li>
 </ol>
 </div>
 <div id="grading-rubric" class="section level2">
 <h2>Grading rubric</h2>
 <ol style="list-style-type: decimal">
-<li><strong>Baseline:</strong> Projects that do not satisfy all “baseline” criteria can expect to get a grade of less than 8/10.
+<li><strong>Baseline:</strong> Projects that do not satisfy all
+“baseline” criteria can expect to get a grade of less than 8/10.
 <ul>
-<li>The RMarkdown Website must “build” correctly when someone else builds it. <em>This is known as producing reproducible research.</em></li>
-<li>Wherever possible, all visualizations have appropriately labeled axes, legends, titles, etc and are mindful of the <a href="https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842" target="_blank">ink/information ratio</a>.<br />
+<li>The RMarkdown Website must “build” correctly when someone else
+builds it. <em>This is known as producing reproducible
+research.</em></li>
+<li>Wherever possible, all visualizations have appropriately labeled
+axes, legends, titles, etc and are mindful of the <a
+href="https://medium.com/@sudharsanasai/declutter-your-chart-with-data-ink-ratio-6f6908727842"
+target="_blank">ink/information ratio</a>.<br />
 </li>
 <li>Your code is clean, commented, and well-indented.</li>
-<li>From the perspective of both the report reader and potential collaborators who might reproduce your work, no “superfluous” and non-informative inputs or outputs are included. <em>This is being mindful of the work you create for readers and collaborators, including future you.</em> Ex: Do not
+<li>From the perspective of both the report reader and potential
+collaborators who might reproduce your work, no “superfluous” and
+non-informative inputs or outputs are included. <em>This is being
+mindful of the work you create for readers and collaborators, including
+future you.</em> Ex: Do not
 <ol style="list-style-type: decimal">
 <li>Include my original instructions in the report.</li>
-<li>Include “Data dumps” like showing all the contents of a 1000 row data frame.</li>
-<li>Submit files in your RStudio Project folder that aren’t relevant to your analysis.</li>
+<li>Include “Data dumps” like showing all the contents of a 1000 row
+data frame.</li>
+<li>Submit files in your RStudio Project folder that aren’t relevant to
+your analysis.</li>
 </ol></li>
-<li>All accompanying write-ups are coherent and respect the word count limit.</li>
-<li>You submit both your peer evaluations and your exit survey responses.</li>
+<li>All accompanying write-ups are coherent and respect the word count
+limit.</li>
+<li>You submit both your peer evaluations and your exit survey
+responses.</li>
 </ul></li>
 <li><strong>Minimally viable product:</strong> Grade: 8/10.
 <ul>
@@ -862,17 +1035,22 @@ Things to remember for next time:
 <li><strong>Due diligence:</strong> Grade: 9/10.
 <ul>
 <li>Satisfy all “baseline” and “minimally viable product” criteria.</li>
-<li>Complete the second <code>more_info.html</code> page with 1 visualization.</li>
+<li>Complete the second <code>more_info.html</code> page with 1
+visualization.</li>
 </ul></li>
 <li><strong>Point of diminishing returns:</strong> Grade: 9.5/10.
 <ul>
-<li>Satisfy all “baseline”, “minimally viable product”, and “due diligence” criteria.</li>
-<li>Complete the second <code>more_info.html</code> page with 2-3 visualizations.</li>
+<li>Satisfy all “baseline”, “minimally viable product”, and “due
+diligence” criteria.</li>
+<li>Complete the second <code>more_info.html</code> page with 2-3
+visualizations.</li>
 </ul></li>
 <li><strong>Polishing the cannonball</strong>: Grade: 10/10
 <ul>
-<li>Satisfy all “baseline”, “minimally viable product”, “due diligence”, and “point of diminishing returns” criteria.</li>
-<li>Impress me by using the tools you’ve learned this semester. Yes, this criteria is deliberately vague.</li>
+<li>Satisfy all “baseline”, “minimally viable product”, “due diligence”,
+and “point of diminishing returns” criteria.</li>
+<li>Impress me by using the tools you’ve learned this semester. Yes,
+this criteria is deliberately vague.</li>
 </ul></li>
 </ol>
 </div>
